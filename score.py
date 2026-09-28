@@ -106,11 +106,15 @@ def main():
     ap.add_argument("--db")
     ap.add_argument("--out", default="out/snapshots.json")
     ap.add_argument("--run-at")
+    ap.add_argument("--calib", default="data/calibration.json")
     a = ap.parse_args()
 
     latest = json.load(open(a.data))
     snaps, outs = load_db(a.db)
     cal = calibration(snaps, outs)
+    prior = {}
+    if os.path.exists(a.calib):
+        prior = json.load(open(a.calib)).get("cities", {})
     run_at = datetime.fromisoformat(a.run_at.replace("Z", "+00:00")) if a.run_at else datetime.now(timezone.utc)
     fetched = datetime.fromisoformat(latest["fetched_at"])
     age_h = (run_at - fetched).total_seconds() / 3600
@@ -133,8 +137,18 @@ def main():
                 continue
             band = lead_band(max(lead, 0))
             c = cal.get((city, band))
-            bias_c = c["bias"] if c else 0.0
-            kern_c = max(c["sd"], MIN_KERNEL_C) if c else DEFAULT_KERNEL_C[band]
+            pc = ((prior.get(city) or {}).get("day2" if band == "far" else "day1") or {}).get("median")
+            if c:  # live log has enough resolved days for this city and lead
+                bias_c, kern_c = c["bias"], max(0.7 * c["sd"], MIN_KERNEL_C)
+                cal_note = f"Calibrated from {c['n']} logged runs: bias {bias_c:+.2f}°C, kernel {kern_c:.2f}°C."
+            elif pc:  # 60-day backfill of past forecasts vs airport observations
+                bias_c = pc["bias"]
+                kern_c = max(0.7 * pc["sd"] * (0.8 if band == "same" else 1.0), MIN_KERNEL_C)
+                cal_note = (f"Calibrated from {pc['n']}-day backfill: models ran {bias_c:+.2f}°C vs station, "
+                            f"miss sd {pc['sd']:.2f}°C, kernel {kern_c:.2f}°C.")
+            else:
+                bias_c, kern_c = 0.0, DEFAULT_KERNEL_C[band]
+                cal_note = f"No calibration yet (bias 0, kernel {kern_c}°C)."
 
             is_today = d == now_local.date().isoformat()
             obs = day.get("obs_max_so_far") if is_today else None
@@ -202,8 +216,7 @@ def main():
 
             note = (f"GitHub data fetched {latest['fetched_at']} ({age_h:.1f} h before run). "
                     f"{len(det)} models, {sum(len(v) for v in day.get('ensemble', {}).values())} ensemble members. "
-                    + (f"Calibrated from {c['n']} resolved runs: bias {bias_c:+.2f}°C, kernel {kern_c:.2f}°C."
-                       if c else f"No calibration yet (bias 0, kernel {kern_c}°C).")
+                    + cal_note
                     + (f" Same-day: high so far {obs}°C, combined with forecast for the hours after {day.get('rest_of_day_from')}." if use_rest else ""))
             doc = {
                 "city": city, "marketDate": d, "runAt": run_at.strftime("%Y-%m-%dT%H:%M:%SZ"),
