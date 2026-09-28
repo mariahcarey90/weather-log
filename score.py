@@ -29,6 +29,9 @@ from zoneinfo import ZoneInfo
 DEFAULT_KERNEL_C = {"same": 0.9, "day": 1.0, "far": 1.2}
 MIN_KERNEL_C = 0.6
 MIN_RESOLVED = 5
+MIN_LIVE = 30  # live-log calibration overrides the backfill only once it has this many runs
+ENS_PARENT = {"ecmwf_ifs025": "ecmwf_ifs025", "ncep_gefs025": "gfs_seamless", "gfs025": "gfs_seamless",
+              "icon_seamless_eps": "icon_seamless", "icon_seamless": "icon_seamless"}
 
 
 def c2f(c):
@@ -137,18 +140,32 @@ def main():
                 continue
             band = lead_band(max(lead, 0))
             c = cal.get((city, band))
-            pc = ((prior.get(city) or {}).get("day2" if band == "far" else "day1") or {}).get("median")
-            if c:  # live log has enough resolved days for this city and lead
-                bias_c, kern_c = c["bias"], max(0.7 * c["sd"], MIN_KERNEL_C)
+            lead_key = "day2" if band == "far" else "day1"
+            pcity = (prior.get(city) or {}).get(lead_key) or {}
+            pc = pcity.get("median")
+            pmodels = pcity.get("models", {})
+            if c and c["n"] >= MIN_LIVE:  # live log has plenty of resolved runs: single bias on the blend
+                bias_c, kern_c, per_model = c["bias"], max(0.7 * c["sd"], MIN_KERNEL_C), {}
                 cal_note = f"Calibrated from {c['n']} logged runs: bias {bias_c:+.2f}°C, kernel {kern_c:.2f}°C."
-            elif pc:  # 60-day backfill of past forecasts vs airport observations
+            elif pc:  # 60-day backfill: correct each model by its own bias, weight by its accuracy
                 bias_c = pc["bias"]
                 kern_c = max(0.7 * pc["sd"] * (0.8 if band == "same" else 1.0), MIN_KERNEL_C)
-                cal_note = (f"Calibrated from {pc['n']}-day backfill: models ran {bias_c:+.2f}°C vs station, "
-                            f"miss sd {pc['sd']:.2f}°C, kernel {kern_c:.2f}°C.")
+                per_model = pmodels
+                cal_note = (f"Per-model bias correction from {pc['n']}-day backfill (blend ran {bias_c:+.2f}°C "
+                            f"vs station, miss sd {pc['sd']:.2f}°C); kernel {kern_c:.2f}°C.")
             else:
-                bias_c, kern_c = 0.0, DEFAULT_KERNEL_C[band]
+                bias_c, kern_c, per_model = 0.0, DEFAULT_KERNEL_C[band], {}
                 cal_note = f"No calibration yet (bias 0, kernel {kern_c}°C)."
+
+            def corr(model):
+                """(bias, weight) for a model name, ensembles mapped to their parent model."""
+                parent = ENS_PARENT.get(model, model)
+                pm = per_model.get(parent)
+                if pm:
+                    return pm["bias"], 1.0 / max(pm["sd"], 0.5) ** 2
+                if per_model:  # uncalibrated model: blend bias, low weight
+                    return bias_c, 0.5 / max(pc["sd"] if pc else 1.0, 0.5) ** 2
+                return bias_c, 1.0
 
             is_today = d == now_local.date().isoformat()
             obs = day.get("obs_max_so_far") if is_today else None
@@ -156,21 +173,26 @@ def main():
             use_rest = is_today and obs is not None and "models_rest" in day
             det = day.get("models_rest" if use_rest else "models", {})
             ens = day.get("ensemble_rest" if use_rest else "ensemble", {})
-            members = []
-            for vals in ens.values():
-                members.extend(vals)
-            det_vals = list(det.values())
+            members, weights = [], []
+            ens_total = 0
+            for m, vals in ens.items():
+                bm, wm = corr(m)
+                members += [v - bm for v in vals]
+                weights += [wm / len(vals)] * len(vals)   # each ensemble counts once in total
+                ens_total += 1
+            dets = dict(det)
             if not use_rest and day.get("nws_grid_max") is not None:
-                det_vals.append(day["nws_grid_max"])
-            # weight deterministic runs so together they count as much as the ensembles
-            weights = [1.0] * len(members)
-            if det_vals:
-                w = (len(members) / len(det_vals)) if members else 1.0
-                members += det_vals
-                weights += [w] * len(det_vals)
-            members = [m - bias_c for m in members]
+                dets["nws_grid"] = day["nws_grid_max"]
+            for m, v in dets.items():
+                if per_model and m in per_model and per_model[m]["mae"] > 1.8:
+                    continue  # historically poor at this station
+                bm, wm = corr(m)
+                members.append(v - bm)
+                weights.append(wm)
+            if not per_model:
+                members = [x - bias_c for x in members]
             full_det = list(day.get("models", {}).values())
-            raw_c = statistics.median(full_det) if full_det else (statistics.median(members) if members else obs)
+            raw_c = statistics.median(full_det) if full_det else obs
             if raw_c is None:
                 continue
 

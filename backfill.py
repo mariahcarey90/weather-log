@@ -90,11 +90,14 @@ def main():
     start = end - timedelta(days=DAYS)
     cal = {"generated": datetime.utcnow().isoformat(timespec="seconds") + "Z",
            "window": [start.isoformat(), end.isoformat()], "cities": {}}
+    daily_rows = {}
     for st in STATIONS:
         print(st["key"])
         obs = observed_highs(st, start, end + timedelta(days=1))
         fc = past_forecasts(st)
         city = {"obs_days": len(obs)}
+        daily_rows[st["key"]] = {"unit": st["unit"], "obs": obs,
+                                 "fc": {lead: bymodel for lead, bymodel in fc.items()}}
         for lead, bymodel in fc.items():
             per_model, med_errs = {}, []
             for m, daily in bymodel.items():
@@ -118,6 +121,8 @@ def main():
         print(json.dumps(city, indent=1)[:1500])
     with open("data/calibration.json", "w") as f:
         json.dump(cal, f, indent=1)
+    with open("data/backfill_daily.json", "w") as f:
+        json.dump({"window": cal["window"], "cities": daily_rows}, f, separators=(",", ":"))
 
 
 if __name__ == "__main__":
