@@ -26,8 +26,8 @@ import argparse, glob, json, math, os, re, statistics
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
-DEFAULT_KERNEL_C = {"same": 0.9, "day": 1.0, "far": 1.2}
-MIN_KERNEL_C = 0.6
+DEFAULT_KERNEL_C = {"same": 0.7, "day": 0.8, "far": 1.0}
+MIN_KERNEL_C = 0.5
 MIN_RESOLVED = 5
 MIN_LIVE = 30  # live-log calibration overrides the backfill only once it has this many runs
 ENS_PARENT = {"ecmwf_ifs025": "ecmwf_ifs025", "ncep_gefs025": "gfs_seamless", "gfs025": "gfs_seamless",
@@ -149,7 +149,7 @@ def main():
                 cal_note = f"Calibrated from {c['n']} logged runs: bias {bias_c:+.2f}°C, kernel {kern_c:.2f}°C."
             elif pc:  # 60-day backfill: correct each model by its own bias, weight by its accuracy
                 bias_c = pc["bias"]
-                kern_c = max(0.7 * pc["sd"] * (0.8 if band == "same" else 1.0), MIN_KERNEL_C)
+                kern_c = max(0.5 * pc["sd"] * (0.8 if band == "same" else 1.0), MIN_KERNEL_C)
                 per_model = pmodels
                 cal_note = (f"Per-model bias correction from {pc['n']}-day backfill (blend ran {bias_c:+.2f}°C "
                             f"vs station, miss sd {pc['sd']:.2f}°C); kernel {kern_c:.2f}°C.")
