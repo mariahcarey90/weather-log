@@ -1,0 +1,4279 @@
+{
+ "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), NOAA/NWS, aviationweather.gov",
+ "errors": [],
+ "fetched_at": "2026-09-28T02:54:50+00:00",
+ "stations": {
+  "atlanta": {
+   "days": {
+    "2026-09-26": {
+     "ensemble": {
+      "ecmwf_ifs025": [
+       26.0,
+       26.2,
+       26.2,
+       26.2,
+       26.2,
+       26.3,
+       26.3,
+       26.3,
+       26.3,
+       26.3,
+       26.3,
+       26.4,
+       26.4,
+       26.4,
+       26.5,
+       26.5,
+       26.5,
+       26.5,
+       26.5,
+       26.6,
+       26.6,
+       26.6,
+       26.6,
+       26.7,
+       26.7,
+       26.7,
+       26.7,
+       26.7,
+       26.7,
+       26.7,
+       26.8,
+       26.8,
+       26.8,
+       26.8,
+       26.8,
+       26.8,
+       26.8,
+       26.9,
+       26.9,
+       27.0,
+       27.1,
+       27.1,
+       27.1,
+       27.2,
+       27.3,
+       27.3,
+       27.5,
+       27.5,
+       27.5,
+       27.6,
+       27.7
+      ],
+      "icon_seamless_eps": [
+       25.4,
+       25.6,
+       25.7,
+       25.7,
+       25.7,
+       25.7,
+       25.7,
+       25.8,
+       25.8,
+       25.8,
+       25.8,
+       25.8,
+       25.8,
+       25.9,
+       25.9,
+       25.9,
+       25.9,
+       25.9,
+       26.0,
+       26.0,
+       26.1,
+       26.1,
+       26.1,
+       26.1,
+       26.2,
+       26.2,
+       26.2,
+       26.3,
+       26.3,
+       26.3,
+       26.3,
+       26.3,
+       26.4,
+       26.5,
+       26.6,
+       26.6,
+       26.6,
+       26.7,
+       26.7,
+       26.7
+      ],
+      "ncep_gefs025": [
+       26.3,
+       26.8,
+       27.0,
+       27.2,
+       27.2,
+       27.2,
+       27.2,
+       27.2,
+       27.2,
+       27.4,
+       27.4,
+       27.5,
+       27.5,
+       27.5,
+       27.6,
+       27.6,
+       27.7,
+       27.7,
+       27.8,
+       27.8,
+       27.8,
+       27.9,
+       27.9,
+       27.9,
+       28.0,
+       28.0,
+       28.1,
+       28.3,
+       28.3,
+       28.3,
+       28.4
+      ]
+     },
+     "models": {
+      "cma_grapes_global": 25.3,
+      "ecmwf_aifs025_single": 26.1,
+      "ecmwf_ifs025": 26.5,
+      "gem_seamless": 26.7,
+      "gfs_seamless": 27.4,
+      "icon_seamless": 26.9,
+      "jma_seamless": 25.6,
+      "meteofrance_seamless": 27.0,
+      "ukmo_seamless": 26.4
+     },
+     "obs_count": 17,
+     "obs_last": "2026-09-27T03:52:00+00:00",
+     "obs_max_so_far": 26.7
+    },
+    "2026-09-27": {
+     "ensemble": {
+      "ecmwf_ifs025": [
+       23.9,
+       24.8,
+       24.8,
+       24.9,
+       25.0,
+       25.0,
+       25.2,
+       25.2,
+       25.3,
+       25.3,
+       25.4,
+       25.4,
+       25.6,
+       25.6,
+       25.6,
+       25.7,
+       25.7,
+       25.7,
+       25.8,
+       25.8,
+       25.8,
+       25.9,
+       25.9,
+       25.9,
+       26.0,
+       26.0,
+       26.1,
+       26.1,
+       26.1,
+       26.1,
+       26.1,
+       26.1,
+       26.2,
+       26.3,
+       26.3,
+       26.3,
+       26.4,
+       26.4,
+       26.4,
+       26.4,
+       26.4,
+       26.4,
+       26.5,
+       26.6,
+       26.6,
+       26.7,
+       26.9,
+       27.0,
+       27.1,
+       27.2,
+       27.3
+      ],
+      "icon_seamless_eps": [
+       22.4,
+       23.8,
+       24.0,
+       24.2,
+       24.5,
+       24.5,
+       24.6,
+       24.7,
+       24.8,
+       24.8,
+       24.9,
+       24.9,
+       24.9,
+       24.9,
+       25.0,
+       25.0,
+       25.0,
+       25.0,
+       25.1,
+       25.1,
+       25.2,
+       25.3,
+       25.4,
+       25.5,
+       25.5,
+       25.5,
+       25.5,
+       25.6,
+       25.7,
+       25.8,
+       26.0,
+       26.1,
+       26.1,
+       26.1,
+       26.3,
+       26.3,
+       26.4,
+       26.4,
+       26.5,
+       26.6
+      ],
+      "ncep_gefs025": [
+       25.3,
+       25.7,
+       25.8,
+       25.9,
+       25.9,
+       25.9,
+       25.9,
+       26.0,
+       26.0,
+       26.0,
+       26.0,
+       26.1,
+       26.2,
+       26.3,
+       26.3,
+       26.4,
+       26.4,
+       26.4,
+       26.4,
+       26.4,
+       26.6,
+       26.6,
+       26.8,
+       26.9,
+       27.0,
+       27.0,
+       27.0,
+       27.0,
+       27.0,
+       27.1,
+       27.3
+      ]
+     },
+     "market": {
+      "buckets": [
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "71\u00b0F or below",
+        "lastTrade": 0.001,
+        "threshold": "0",
+        "volume": 489.46093800000006,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "72-73\u00b0F",
+        "lastTrade": 0.001,
+        "threshold": "1",
+        "volume": 993.129819,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "74-75\u00b0F",
+        "lastTrade": 0.008,
+        "threshold": "2",
+        "volume": 403.163716,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "76-77\u00b0F",
+        "lastTrade": 0.001,
+        "threshold": "3",
+        "volume": 2642.878687,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "78-79\u00b0F",
+        "lastTrade": 0.01,
+        "threshold": "4",
+        "volume": 7630.654322999997,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 1,
+        "bestBid": 0.999,
+        "closed": false,
+        "label": "80-81\u00b0F",
+        "lastTrade": 0.999,
+        "threshold": "5",
+        "volume": 10193.739296,
+        "yes": 0.9995
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "82-83\u00b0F",
+        "lastTrade": 0.06,
+        "threshold": "6",
+        "volume": 7250.879461999999,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "84-85\u00b0F",
+        "lastTrade": 0.007,
+        "threshold": "7",
+        "volume": 4009.59786,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "86-87\u00b0F",
+        "lastTrade": 0.007,
+        "threshold": "8",
+        "volume": 4436.287725,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "88-89\u00b0F",
+        "lastTrade": 0.002,
+        "threshold": "9",
+        "volume": 2392.5863999999997,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "90\u00b0F or higher",
+        "lastTrade": 0.001,
+        "threshold": "10",
+        "volume": 396.648301,
+        "yes": 0.0005
+       }
+      ],
+      "closed": false,
+      "endDate": "2026-09-27T12:00:00Z",
+      "liquidity": 111057.70663,
+      "slug": "highest-temperature-in-atlanta-on-september-27-2026",
+      "title": "Highest temperature in Atlanta on September 27?",
+      "volume": 40839.02652700001
+     },
+     "models": {
+      "cma_grapes_global": 26.0,
+      "ecmwf_aifs025_single": 25.8,
+      "ecmwf_ifs025": 26.3,
+      "gem_seamless": 26.0,
+      "gfs_seamless": 27.2,
+      "icon_seamless": 26.6,
+      "jma_seamless": 25.8,
+      "meteofrance_seamless": 26.9,
+      "ukmo_seamless": 26.0
+     },
+     "nws_grid_max": 27.78,
+     "obs_count": 23,
+     "obs_last": "2026-09-28T02:52:00+00:00",
+     "obs_max_so_far": 27.2
+    },
+    "2026-09-28": {
+     "ensemble": {
+      "ecmwf_ifs025": [
+       26.0,
+       26.2,
+       26.2,
+       26.2,
+       26.3,
+       26.4,
+       26.5,
+       26.5,
+       26.5,
+       26.6,
+       26.6,
+       26.7,
+       26.7,
+       26.8,
+       26.8,
+       26.8,
+       27.0,
+       27.0,
+       27.0,
+       27.0,
+       27.0,
+       27.1,
+       27.1,
+       27.1,
+       27.2,
+       27.3,
+       27.3,
+       27.3,
+       27.3,
+       27.3,
+       27.3,
+       27.4,
+       27.4,
+       27.5,
+       27.6,
+       27.6,
+       27.6,
+       27.7,
+       27.7,
+       27.7,
+       27.8,
+       27.8,
+       27.8,
+       27.8,
+       28.0,
+       28.1,
+       28.3,
+       28.3,
+       28.5,
+       28.6,
+       28.9
+      ],
+      "icon_seamless_eps": [
+       23.2,
+       24.6,
+       24.9,
+       25.0,
+       25.1,
+       25.4,
+       25.6,
+       25.6,
+       25.6,
+       25.7,
+       25.7,
+       25.7,
+       25.8,
+       25.9,
+       25.9,
+       25.9,
+       25.9,
+       26.0,
+       26.0,
+       26.0,
+       26.1,
+       26.1,
+       26.1,
+       26.1,
+       26.3,
+       26.4,
+       26.4,
+       26.4,
+       26.4,
+       26.4,
+       26.4,
+       26.4,
+       26.4,
+       26.6,
+       26.6,
+       26.7,
+       26.8,
+       26.8,
+       26.9,
+       27.1
+      ],
+      "ncep_gefs025": [
+       26.4,
+       27.3,
+       27.7,
+       27.8,
+       28.1,
+       28.1,
+       28.1,
+       28.1,
+       28.3,
+       28.4,
+       28.6,
+       28.8,
+       28.8,
+       28.8,
+       28.8,
+       28.9,
+       28.9,
+       29.1,
+       29.1,
+       29.2,
+       29.2,
+       29.4,
+       29.5,
+       29.5,
+       29.5,
+       29.6,
+       29.7,
+       29.9,
+       29.9,
+       30.0,
+       30.1
+      ]
+     },
+     "market": {
+      "buckets": [
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "73\u00b0F or below",
+        "lastTrade": 0.002,
+        "threshold": "0",
+        "volume": 582.934028,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "74-75\u00b0F",
+        "lastTrade": 0.009,
+        "threshold": "1",
+        "volume": 227.089639,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.003,
+        "bestBid": 0.001,
+        "closed": false,
+        "label": "76-77\u00b0F",
+        "lastTrade": 0.001,
+        "threshold": "2",
+        "volume": 1152.246998,
+        "yes": 0.002
+       },
+       {
+        "bestAsk": 0.06,
+        "bestBid": 0.03,
+        "closed": false,
+        "label": "78-79\u00b0F",
+        "lastTrade": 0.05,
+        "threshold": "3",
+        "volume": 969.0281010000001,
+        "yes": 0.045
+       },
+       {
+        "bestAsk": 0.4,
+        "bestBid": 0.38,
+        "closed": false,
+        "label": "80-81\u00b0F",
+        "lastTrade": 0.4,
+        "threshold": "4",
+        "volume": 9101.834238,
+        "yes": 0.39
+       },
+       {
+        "bestAsk": 0.51,
+        "bestBid": 0.48,
+        "closed": false,
+        "label": "82-83\u00b0F",
+        "lastTrade": 0.5,
+        "threshold": "5",
+        "volume": 5225.6406689999985,
+        "yes": 0.495
+       },
+       {
+        "bestAsk": 0.07,
+        "bestBid": 0.06,
+        "closed": false,
+        "label": "84-85\u00b0F",
+        "lastTrade": 0.07,
+        "threshold": "6",
+        "volume": 1645.0733209999999,
+        "yes": 0.065
+       },
+       {
+        "bestAsk": 0.012,
+        "bestBid": 0.004,
+        "closed": false,
+        "label": "86-87\u00b0F",
+        "lastTrade": 0.004,
+        "threshold": "7",
+        "volume": 419.80473299999994,
+        "yes": 0.008
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "88-89\u00b0F",
+        "lastTrade": null,
+        "threshold": "8",
+        "volume": 256.73199999999997,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "90-91\u00b0F",
+        "lastTrade": null,
+        "threshold": "9",
+        "volume": 416.115436,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "92\u00b0F or higher",
+        "lastTrade": null,
+        "threshold": "10",
+        "volume": 25.0,
+        "yes": 0.0005
+       }
+      ],
+      "closed": false,
+      "endDate": "2026-09-28T12:00:00Z",
+      "liquidity": 29121.05751,
+      "slug": "highest-temperature-in-atlanta-on-september-28-2026",
+      "title": "Highest temperature in Atlanta on September 28?",
+      "volume": 20021.499162999997
+     },
+     "models": {
+      "cma_grapes_global": 24.1,
+      "ecmwf_aifs025_single": 26.2,
+      "ecmwf_ifs025": 27.0,
+      "gem_seamless": 25.5,
+      "gfs_seamless": 28.5,
+      "icon_seamless": 26.9,
+      "jma_seamless": 25.8,
+      "meteofrance_seamless": 26.6,
+      "ukmo_seamless": 25.0
+     },
+     "nws_grid_max": 28.33
+    }
+   },
+   "icao": "KATL",
+   "lat": 33.6367,
+   "local_now": "2026-09-27T22:54-04:00",
+   "lon": -84.4281,
+   "metar": [
+    {
+     "maxT": null,
+     "raw": "METAR KATL 280252Z 32005KT 10SM SCT250 18/08 A2993 RMK AO2 SLP129 T01830078 51010 $",
+     "t": "2026-09-28T02:52:00+00:00",
+     "temp": 18.3
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 280152Z 32006KT 10SM BKN250 20/07 A2992 RMK AO2 SLP126 T02000067 $",
+     "t": "2026-09-28T01:52:00+00:00",
+     "temp": 20
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 280052Z 32008KT 10SM SCT250 22/06 A2991 RMK AO2 SLP123 T02170056 $",
+     "t": "2026-09-28T00:52:00+00:00",
+     "temp": 21.7
+    },
+    {
+     "maxT": 27.2,
+     "raw": "METAR KATL 272352Z 34009KT 10SM SCT250 23/04 A2990 RMK AO2 SLP119 T02330039 10272 20228 53004 $",
+     "t": "2026-09-27T23:52:00+00:00",
+     "temp": 23.3
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 272252Z 32008KT 10SM SCT250 25/03 A2989 RMK AO2 SLP116 T02500033 $",
+     "t": "2026-09-27T22:52:00+00:00",
+     "temp": 25
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 272152Z 30010KT 10SM FEW250 27/07 A2989 RMK AO2 SLP114 T02670067 $",
+     "t": "2026-09-27T21:52:00+00:00",
+     "temp": 26.7
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 272052Z 32009KT 10SM FEW250 27/07 A2989 RMK AO2 SLP113 T02720067 56016 $",
+     "t": "2026-09-27T20:52:00+00:00",
+     "temp": 27.2
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 271952Z 31009G17KT 10SM FEW250 26/08 A2990 RMK AO2 SLP118 T02610078 $",
+     "t": "2026-09-27T19:52:00+00:00",
+     "temp": 26.1
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 271852Z 29005G17KT 10SM FEW250 26/09 A2991 RMK AO2 SLP122 T02560089 $",
+     "t": "2026-09-27T18:52:00+00:00",
+     "temp": 25.6
+    },
+    {
+     "maxT": 25,
+     "raw": "METAR KATL 271752Z 29006KT 10SM FEW250 24/09 A2994 RMK AO2 SLP131 T02440094 10250 20133 58011 $",
+     "t": "2026-09-27T17:52:00+00:00",
+     "temp": 24.4
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 271652Z 31006KT 10SM FEW160 FEW250 24/09 A2996 RMK AO2 SLP137 T02440094 $",
+     "t": "2026-09-27T16:52:00+00:00",
+     "temp": 24.4
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 271552Z 14004KT 10SM FEW160 FEW250 22/08 A2997 RMK AO2 SLP140 T02220083 $",
+     "t": "2026-09-27T15:52:00+00:00",
+     "temp": 22.2
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 271452Z 07005KT 10SM SCT160 SCT250 21/08 A2997 RMK AO2 SLP142 T02060078 51004 $",
+     "t": "2026-09-27T14:52:00+00:00",
+     "temp": 20.6
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 271352Z 06005KT 10SM SCT160 SCT250 20/08 A2997 RMK AO2 SLP142 T02000078 $",
+     "t": "2026-09-27T13:52:00+00:00",
+     "temp": 20
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 271252Z 33004KT 10SM FEW150 FEW200 FEW250 16/09 A2996 RMK AO2 SLP141 T01610094 $",
+     "t": "2026-09-27T12:52:00+00:00",
+     "temp": 16.1
+    },
+    {
+     "maxT": 17.8,
+     "raw": "METAR KATL 271152Z 30005KT 10SM FEW150 FEW200 SCT250 13/09 A2996 RMK AO2 SLP139 T01330089 10178 20128 53007 $",
+     "t": "2026-09-27T11:52:00+00:00",
+     "temp": 13.3
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 271052Z 34004KT 10SM FEW200 SCT250 13/09 A2995 RMK AO2 SLP134 T01330089 $",
+     "t": "2026-09-27T10:52:00+00:00",
+     "temp": 13.3
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 270952Z 32004KT 10SM SCT250 14/09 A2994 RMK AO2 SLP131 T01390089 $",
+     "t": "2026-09-27T09:52:00+00:00",
+     "temp": 13.9
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 270852Z 31003KT 10SM BKN250 14/09 A2993 RMK AO2 SLP130 T01440089 58006 $",
+     "t": "2026-09-27T08:52:00+00:00",
+     "temp": 14.4
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 270752Z 31005KT 10SM FEW200 SCT250 15/08 A2995 RMK AO2 SLP133 T01500083 $",
+     "t": "2026-09-27T07:52:00+00:00",
+     "temp": 15
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 270652Z 01006KT 10SM FEW200 SCT250 18/07 A2994 RMK AO2 SLP131 T01780072 $",
+     "t": "2026-09-27T06:52:00+00:00",
+     "temp": 17.8
+    },
+    {
+     "maxT": 22.8,
+     "raw": "METAR KATL 270552Z 32003KT 10SM FEW250 17/08 A2995 RMK AO2 SLP135 T01670078 10228 20167 57004 $",
+     "t": "2026-09-27T05:52:00+00:00",
+     "temp": 16.7
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 270452Z 34007KT 10SM SCT250 19/07 A2995 RMK AO2 SLP135 T01890072 402720156 $",
+     "t": "2026-09-27T04:52:00+00:00",
+     "temp": 18.9
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 270352Z 36007KT 10SM SCT250 19/08 A2997 RMK AO2 SLP140 T01940078 $",
+     "t": "2026-09-27T03:52:00+00:00",
+     "temp": 19.4
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 270252Z 33008KT 10SM BKN250 20/08 A2996 RMK AO2 SLP139 T02000083 51005 $",
+     "t": "2026-09-27T02:52:00+00:00",
+     "temp": 20
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 270152Z 31007KT 10SM FEW200 BKN250 20/09 A2996 RMK AO2 SLP139 T02000094 $",
+     "t": "2026-09-27T01:52:00+00:00",
+     "temp": 20
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 270052Z 32006KT 10SM FEW200 BKN250 22/09 A2996 RMK AO2 SLP138 T02170089 $",
+     "t": "2026-09-27T00:52:00+00:00",
+     "temp": 21.7
+    },
+    {
+     "maxT": 27.2,
+     "raw": "METAR KATL 262352Z 31005KT 10SM FEW200 SCT250 23/09 A2995 RMK AO2 SLP135 T02280089 10272 20228 56004 $",
+     "t": "2026-09-26T23:52:00+00:00",
+     "temp": 22.8
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 262252Z 31009KT 10SM FEW200 BKN250 25/11 A2995 RMK AO2 SLP136 T02500111 $",
+     "t": "2026-09-26T22:52:00+00:00",
+     "temp": 25
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 262152Z 31010KT 10SM FEW200 SCT250 27/12 A2995 RMK AO2 SLP136 T02670122 $",
+     "t": "2026-09-26T21:52:00+00:00",
+     "temp": 26.7
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 262052Z 32008KT 10SM FEW200 BKN250 27/12 A2996 RMK AO2 SLP139 T02670117 56029 $",
+     "t": "2026-09-26T20:52:00+00:00",
+     "temp": 26.7
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 261952Z 32008KT 10SM FEW200 SCT250 27/12 A2998 RMK AO2 SLP144 T02670117 $",
+     "t": "2026-09-26T19:52:00+00:00",
+     "temp": 26.7
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 261852Z 34007KT 310V010 10SM FEW055 FEW250 26/12 A3001 RMK AO2 SLP153 T02610122 $",
+     "t": "2026-09-26T18:52:00+00:00",
+     "temp": 26.1
+    },
+    {
+     "maxT": 26.1,
+     "raw": "METAR KATL 261752Z 27009KT 10SM FEW002 FEW055 SCT250 26/12 A3005 RMK AO2 SLP169 FU FEW002 NW T02560122 10261 20161 58008 $",
+     "t": "2026-09-26T17:52:00+00:00",
+     "temp": 25.6
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 261652Z VRB05KT 10SM FEW055 BKN250 24/09 A3007 RMK AO2 SLP174 T02440094 $",
+     "t": "2026-09-26T16:52:00+00:00",
+     "temp": 24.4
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 261552Z 18005KT 10SM SCT250 23/08 A3007 RMK AO2 SLP175 T02330083 $",
+     "t": "2026-09-26T15:52:00+00:00",
+     "temp": 23.3
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 261452Z 16005KT 10SM FEW250 22/07 A3008 RMK AO2 SLP177 T02220072 51005 $",
+     "t": "2026-09-26T14:52:00+00:00",
+     "temp": 22.2
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 261352Z 12003KT 10SM FEW130 FEW250 20/12 A3007 RMK AO2 SLP177 T02000117 $",
+     "t": "2026-09-26T13:52:00+00:00",
+     "temp": 20
+    },
+    {
+     "maxT": null,
+     "raw": "METAR KATL 261252Z 09003KT 10SM FEW200 SCT250 18/12 A3007 RMK AO2 SLP175 T01780117 $",
+     "t": "2026-09-26T12:52:00+00:00",
+     "temp": 17.8
+    },
+    {
+     "maxT": 17.8,
+     "raw": "METAR KATL 261152Z 09003KT 10SM FEW045 FEW200 SCT250 16/12 A3006 RMK AO2 SLP174 T01610122 10178 20156 53014 $",
+     "t": "2026-09-26T11:52:00+00:00",
+     "temp": 16.1
+    }
+   ],
+   "name": "Atlanta",
+   "tz": "America/New_York",
+   "unit": "F"
+  },
+  "lucknow": {
+   "days": {
+    "2026-09-27": {
+     "ensemble": {
+      "ecmwf_ifs025": [
+       24.0,
+       24.1,
+       24.4,
+       24.5,
+       24.5,
+       24.5,
+       24.6,
+       24.6,
+       24.6,
+       24.6,
+       24.6,
+       24.7,
+       24.7,
+       24.7,
+       24.8,
+       24.8,
+       24.9,
+       24.9,
+       24.9,
+       24.9,
+       25.0,
+       25.0,
+       25.0,
+       25.1,
+       25.1,
+       25.1,
+       25.1,
+       25.2,
+       25.2,
+       25.2,
+       25.2,
+       25.3,
+       25.3,
+       25.5,
+       25.6,
+       25.6,
+       25.7,
+       25.7,
+       25.7,
+       25.7,
+       25.8,
+       25.8,
+       25.9,
+       25.9,
+       25.9,
+       25.9,
+       25.9,
+       26.1,
+       26.5,
+       26.7,
+       26.9
+      ],
+      "icon_seamless_eps": [
+       22.9,
+       23.0,
+       23.1,
+       23.1,
+       23.1,
+       23.2,
+       23.2,
+       23.2,
+       23.2,
+       23.3,
+       23.3,
+       23.4,
+       23.4,
+       23.5,
+       23.5,
+       23.6,
+       23.6,
+       23.6,
+       23.7,
+       23.7,
+       23.7,
+       23.7,
+       23.8,
+       23.8,
+       23.9,
+       23.9,
+       24.2,
+       24.3,
+       24.3,
+       24.4,
+       24.4,
+       24.5,
+       24.6,
+       24.6,
+       24.6,
+       24.8,
+       24.8,
+       25.6,
+       25.7,
+       25.7
+      ],
+      "ncep_gefs025": [
+       23.5,
+       23.8,
+       23.9,
+       24.0,
+       24.0,
+       24.1,
+       24.1,
+       24.1,
+       24.3,
+       24.3,
+       24.3,
+       24.4,
+       24.6,
+       24.6,
+       24.6,
+       24.7,
+       24.7,
+       24.7,
+       24.8,
+       24.9,
+       25.0,
+       25.0,
+       25.1,
+       25.2,
+       25.3,
+       25.4,
+       25.6,
+       25.6,
+       25.8,
+       26.0,
+       26.3
+      ]
+     },
+     "models": {
+      "cma_grapes_global": 28.1,
+      "ecmwf_aifs025_single": 24.6,
+      "ecmwf_ifs025": 24.6,
+      "gem_seamless": 24.1,
+      "gfs_seamless": 24.9,
+      "icon_seamless": 23.3,
+      "jma_seamless": 24.8,
+      "meteofrance_seamless": 24.0,
+      "ukmo_seamless": 25.9
+     },
+     "obs_count": 48,
+     "obs_last": "2026-09-27T18:00:00+00:00",
+     "obs_max_so_far": 25
+    },
+    "2026-09-28": {
+     "ensemble": {
+      "ecmwf_ifs025": [
+       29.8,
+       29.8,
+       30.0,
+       30.0,
+       30.1,
+       30.1,
+       30.1,
+       30.2,
+       30.2,
+       30.2,
+       30.2,
+       30.3,
+       30.3,
+       30.3,
+       30.3,
+       30.4,
+       30.4,
+       30.4,
+       30.4,
+       30.4,
+       30.5,
+       30.5,
+       30.5,
+       30.6,
+       30.6,
+       30.6,
+       30.6,
+       30.6,
+       30.7,
+       30.7,
+       30.7,
+       30.8,
+       30.8,
+       30.8,
+       30.9,
+       30.9,
+       30.9,
+       30.9,
+       31.0,
+       31.0,
+       31.0,
+       31.0,
+       31.0,
+       31.1,
+       31.1,
+       31.1,
+       31.2,
+       31.2,
+       31.3,
+       31.4,
+       31.4
+      ],
+      "icon_seamless_eps": [
+       29.4,
+       29.5,
+       29.6,
+       29.7,
+       29.7,
+       29.9,
+       29.9,
+       30.0,
+       30.1,
+       30.1,
+       30.1,
+       30.2,
+       30.2,
+       30.2,
+       30.2,
+       30.3,
+       30.3,
+       30.3,
+       30.3,
+       30.3,
+       30.3,
+       30.3,
+       30.4,
+       30.4,
+       30.4,
+       30.5,
+       30.5,
+       30.5,
+       30.5,
+       30.5,
+       30.6,
+       30.7,
+       30.7,
+       30.7,
+       30.7,
+       30.8,
+       30.8,
+       30.8,
+       30.8,
+       30.9
+      ],
+      "ncep_gefs025": [
+       27.8,
+       28.1,
+       28.6,
+       28.7,
+       29.3,
+       29.3,
+       29.7,
+       29.9,
+       30.1,
+       30.3,
+       30.4,
+       30.4,
+       30.4,
+       30.4,
+       30.5,
+       30.6,
+       30.6,
+       30.7,
+       30.7,
+       30.8,
+       30.8,
+       31.0,
+       31.1,
+       31.1,
+       31.3,
+       31.4,
+       31.5,
+       31.6,
+       31.8,
+       32.1,
+       32.1
+      ]
+     },
+     "market": {
+      "buckets": [
+       {
+        "bestAsk": 0.002,
+        "bestBid": null,
+        "closed": false,
+        "label": "25\u00b0C or below",
+        "lastTrade": 0.002,
+        "threshold": "0",
+        "volume": 247.20722299999997,
+        "yes": 0.001
+       },
+       {
+        "bestAsk": 0.002,
+        "bestBid": 0.001,
+        "closed": false,
+        "label": "26\u00b0C",
+        "lastTrade": 0.004,
+        "threshold": "1",
+        "volume": 187.316,
+        "yes": 0.0015
+       },
+       {
+        "bestAsk": 0.02,
+        "bestBid": null,
+        "closed": false,
+        "label": "27\u00b0C",
+        "lastTrade": 0.02,
+        "threshold": "2",
+        "volume": 79.0,
+        "yes": 0.01
+       },
+       {
+        "bestAsk": 0.03,
+        "bestBid": 0.01,
+        "closed": false,
+        "label": "28\u00b0C",
+        "lastTrade": 0.04,
+        "threshold": "3",
+        "volume": 779.7661479999998,
+        "yes": 0.02
+       },
+       {
+        "bestAsk": 0.07,
+        "bestBid": 0.04,
+        "closed": false,
+        "label": "29\u00b0C",
+        "lastTrade": 0.13,
+        "threshold": "4",
+        "volume": 733.5377539999998,
+        "yes": 0.055
+       },
+       {
+        "bestAsk": 0.21,
+        "bestBid": 0.17,
+        "closed": false,
+        "label": "30\u00b0C",
+        "lastTrade": 0.18,
+        "threshold": "5",
+        "volume": 6658.430525000002,
+        "yes": 0.19
+       },
+       {
+        "bestAsk": 0.53,
+        "bestBid": 0.43,
+        "closed": false,
+        "label": "31\u00b0C",
+        "lastTrade": 0.54,
+        "threshold": "6",
+        "volume": 1766.6662499999995,
+        "yes": 0.48
+       },
+       {
+        "bestAsk": 0.28,
+        "bestBid": 0.2,
+        "closed": false,
+        "label": "32\u00b0C",
+        "lastTrade": 0.29,
+        "threshold": "7",
+        "volume": 1012.3089749999999,
+        "yes": 0.24
+       },
+       {
+        "bestAsk": 0.003,
+        "bestBid": 0.002,
+        "closed": false,
+        "label": "33\u00b0C",
+        "lastTrade": 0.004,
+        "threshold": "8",
+        "volume": 1028.2182,
+        "yes": 0.0025
+       },
+       {
+        "bestAsk": 0.003,
+        "bestBid": 0.001,
+        "closed": false,
+        "label": "34\u00b0C",
+        "lastTrade": 0.003,
+        "threshold": "9",
+        "volume": 160.377,
+        "yes": 0.002
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "35\u00b0C or higher",
+        "lastTrade": null,
+        "threshold": "10",
+        "volume": 104.977,
+        "yes": 0.0005
+       }
+      ],
+      "closed": false,
+      "endDate": "2026-09-28T12:00:00Z",
+      "liquidity": 12605.05723,
+      "slug": "highest-temperature-in-lucknow-on-september-28-2026",
+      "title": "Highest temperature in Lucknow on September 28?",
+      "volume": 12538.420755000001
+     },
+     "models": {
+      "cma_grapes_global": 33.4,
+      "ecmwf_aifs025_single": 30.4,
+      "ecmwf_ifs025": 30.7,
+      "gem_seamless": 28.8,
+      "gfs_seamless": 30.8,
+      "icon_seamless": 30.0,
+      "jma_seamless": 29.7,
+      "meteofrance_seamless": 29.0,
+      "ukmo_seamless": 31.4
+     },
+     "obs_count": 17,
+     "obs_last": "2026-09-28T02:30:00+00:00",
+     "obs_max_so_far": 25
+    },
+    "2026-09-29": {
+     "ensemble": {
+      "ecmwf_ifs025": [
+       29.3,
+       29.6,
+       29.6,
+       29.8,
+       29.8,
+       29.8,
+       29.9,
+       29.9,
+       30.1,
+       30.1,
+       30.1,
+       30.2,
+       30.2,
+       30.2,
+       30.3,
+       30.4,
+       30.4,
+       30.4,
+       30.5,
+       30.5,
+       30.5,
+       30.5,
+       30.5,
+       30.6,
+       30.6,
+       30.6,
+       30.6,
+       30.7,
+       30.7,
+       30.7,
+       30.7,
+       30.8,
+       30.9,
+       30.9,
+       30.9,
+       30.9,
+       31.0,
+       31.0,
+       31.0,
+       31.1,
+       31.1,
+       31.1,
+       31.2,
+       31.2,
+       31.3,
+       31.4,
+       31.5,
+       31.6,
+       31.6,
+       31.6,
+       31.8
+      ],
+      "icon_seamless_eps": [
+       29.9,
+       30.8,
+       30.8,
+       30.8,
+       30.9,
+       30.9,
+       30.9,
+       30.9,
+       30.9,
+       31.0,
+       31.0,
+       31.0,
+       31.0,
+       31.0,
+       31.0,
+       31.0,
+       31.1,
+       31.1,
+       31.2,
+       31.2,
+       31.3,
+       31.3,
+       31.3,
+       31.5,
+       31.5,
+       31.5,
+       31.5,
+       31.5,
+       31.5,
+       31.5,
+       31.6,
+       31.6,
+       31.6,
+       31.7,
+       31.7,
+       31.8,
+       31.8,
+       31.8,
+       31.9,
+       31.9
+      ],
+      "ncep_gefs025": [
+       29.7,
+       30.6,
+       30.7,
+       30.7,
+       30.9,
+       31.1,
+       31.1,
+       31.1,
+       31.1,
+       31.2,
+       31.2,
+       31.3,
+       31.3,
+       31.4,
+       31.4,
+       31.8,
+       31.9,
+       32.0,
+       32.2,
+       32.3,
+       32.4,
+       32.6,
+       32.7,
+       32.7,
+       33.1,
+       33.4,
+       33.6,
+       33.7,
+       33.8,
+       33.8,
+       34.0
+      ]
+     },
+     "market": {
+      "buckets": [
+       {
+        "bestAsk": 0.002,
+        "bestBid": 0.001,
+        "closed": false,
+        "label": "25\u00b0C or below",
+        "lastTrade": 0.001,
+        "threshold": "0",
+        "volume": 60.028999999999996,
+        "yes": 0.0015
+       },
+       {
+        "bestAsk": 0.002,
+        "bestBid": 0.001,
+        "closed": false,
+        "label": "26\u00b0C",
+        "lastTrade": null,
+        "threshold": "1",
+        "volume": 283.818,
+        "yes": 0.0015
+       },
+       {
+        "bestAsk": 0.009,
+        "bestBid": 0.002,
+        "closed": false,
+        "label": "27\u00b0C",
+        "lastTrade": null,
+        "threshold": "2",
+        "volume": 17.817,
+        "yes": 0.0055
+       },
+       {
+        "bestAsk": 0.009,
+        "bestBid": 0.001,
+        "closed": false,
+        "label": "28\u00b0C",
+        "lastTrade": null,
+        "threshold": "3",
+        "volume": 30.155299999999997,
+        "yes": 0.005
+       },
+       {
+        "bestAsk": 0.02,
+        "bestBid": null,
+        "closed": false,
+        "label": "29\u00b0C",
+        "lastTrade": 0.03,
+        "threshold": "4",
+        "volume": 68.0,
+        "yes": 0.01
+       },
+       {
+        "bestAsk": 0.07,
+        "bestBid": 0.04,
+        "closed": false,
+        "label": "30\u00b0C",
+        "lastTrade": 0.18,
+        "threshold": "5",
+        "volume": 189.468228,
+        "yes": 0.055
+       },
+       {
+        "bestAsk": 0.5,
+        "bestBid": 0.47,
+        "closed": false,
+        "label": "31\u00b0C",
+        "lastTrade": 0.5,
+        "threshold": "6",
+        "volume": 657.1354979999999,
+        "yes": 0.485
+       },
+       {
+        "bestAsk": 0.4,
+        "bestBid": 0.38,
+        "closed": false,
+        "label": "32\u00b0C",
+        "lastTrade": 0.44,
+        "threshold": "7",
+        "volume": 931.360118,
+        "yes": 0.39
+       },
+       {
+        "bestAsk": 0.06,
+        "bestBid": 0.04,
+        "closed": false,
+        "label": "33\u00b0C",
+        "lastTrade": 0.07,
+        "threshold": "8",
+        "volume": 57.57000000000001,
+        "yes": 0.05
+       },
+       {
+        "bestAsk": 0.011,
+        "bestBid": 0.004,
+        "closed": false,
+        "label": "34\u00b0C",
+        "lastTrade": null,
+        "threshold": "9",
+        "volume": 37.814,
+        "yes": 0.0075
+       },
+       {
+        "bestAsk": 0.004,
+        "bestBid": 0.002,
+        "closed": false,
+        "label": "35\u00b0C or higher",
+        "lastTrade": 0.002,
+        "threshold": "10",
+        "volume": 434.209075,
+        "yes": 0.003
+       }
+      ],
+      "closed": false,
+      "endDate": "2026-09-29T12:00:00Z",
+      "liquidity": 34130.74698,
+      "slug": "highest-temperature-in-lucknow-on-september-29-2026",
+      "title": "Highest temperature in Lucknow on September 29?",
+      "volume": 2767.3762189999998
+     },
+     "models": {
+      "cma_grapes_global": 34.1,
+      "ecmwf_aifs025_single": 30.8,
+      "ecmwf_ifs025": 30.9,
+      "gem_seamless": 30.4,
+      "gfs_seamless": 32.2,
+      "icon_seamless": 31.5,
+      "jma_seamless": 31.0,
+      "meteofrance_seamless": 29.7,
+      "ukmo_seamless": 33.0
+     }
+    }
+   },
+   "icao": "VILK",
+   "lat": 26.7606,
+   "local_now": "2026-09-28T08:24+05:30",
+   "lon": 80.8893,
+   "metar": [
+    {
+     "maxT": null,
+     "raw": "METAR VILK 280230Z 15004KT 3000 BR FEW020 SCT100 25/24 Q1008 NOSIG",
+     "t": "2026-09-28T02:30:00+00:00",
+     "temp": 25
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 280200Z 11003KT 2500 BR FEW020 SCT100 23/23 Q1008 BECMG 3000 BR",
+     "t": "2026-09-28T02:00:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 280130Z VRB02KT 2000 BR FEW020 SCT100 22/22 Q1008 NOSIG",
+     "t": "2026-09-28T01:30:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 280100Z 11003KT 2000 BR FEW020 SCT100 22/22 Q1007 NOSIG",
+     "t": "2026-09-28T01:00:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 280030Z 10003KT 1500 BR FEW020 SCT100 22/22 Q1007 NOSIG",
+     "t": "2026-09-28T00:30:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 280000Z VRB02KT 1200 R27/1500 BR FEW020 SCT100 22/22 Q1007 NOSIG",
+     "t": "2026-09-28T00:00:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 272330Z VRB02KT 2000 BR FEW020 SCT100 22/22 Q1007 BECMG 1500 BR",
+     "t": "2026-09-27T23:30:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 272300Z VRB02KT 2000 BR SCT020 SCT100 22/22 Q1006 NOSIG",
+     "t": "2026-09-27T23:00:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 272230Z VRB02KT 2000 BR SCT020 BKN100 22/22 Q1006 NOSIG",
+     "t": "2026-09-27T22:30:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 272200Z VRB02KT 2500 BR SCT020 BKN100 22/22 Q1006 NOSIG",
+     "t": "2026-09-27T22:00:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 272130Z VRB02KT 3000 BR SCT020 BKN100 22/22 Q1007 NOSIG",
+     "t": "2026-09-27T21:30:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 272100Z VRB02KT 3000 BR SCT020 BKN100 22/22 Q1007 NOSIG",
+     "t": "2026-09-27T21:00:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 272030Z VRB02KT 3000 BR SCT020 BKN100 22/22 Q1007 NOSIG",
+     "t": "2026-09-27T20:30:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 272000Z VRB02KT 3000 BR SCT020 BKN100 22/22 Q1007 NOSIG",
+     "t": "2026-09-27T20:00:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 271930Z VRB02KT 3500 BR SCT020 BKN100 23/23 Q1007 BECMG 3000 BR",
+     "t": "2026-09-27T19:30:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 271900Z VRB02KT 3500 BR SCT020 BKN100 23/23 Q1007 NOSIG",
+     "t": "2026-09-27T19:00:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 271830Z VRB02KT 3500 BR SCT020 BKN100 23/23 Q1007 NOSIG",
+     "t": "2026-09-27T18:30:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 271800Z VRB02KT 4000 BR SCT020 BKN100 23/23 Q1007 NOSIG",
+     "t": "2026-09-27T18:00:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 271730Z VRB02KT 4000 BR SCT020 BKN100 23/23 Q1008 NOSIG",
+     "t": "2026-09-27T17:30:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 271700Z VRB02KT 4000 BR SCT020 BKN100 23/23 Q1008 NOSIG",
+     "t": "2026-09-27T17:00:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 271630Z VRB02KT 4000 BR SCT020 BKN100 23/23 Q1008 NOSIG",
+     "t": "2026-09-27T16:30:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 271600Z VRB02KT 4000 BR SCT020 BKN100 23/23 Q1008 NOSIG",
+     "t": "2026-09-27T16:00:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 271530Z VRB02KT 4000 BR SCT020 BKN100 23/23 Q1008 NOSIG",
+     "t": "2026-09-27T15:30:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 271500Z VRB02KT 3500 BR SCT020 BKN100 23/23 Q1008 NOSIG",
+     "t": "2026-09-27T15:00:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 271430Z VRB02KT 3500 BR SCT020 BKN100 23/23 Q1007 NOSIG",
+     "t": "2026-09-27T14:30:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 271400Z VRB02KT 3500 BR SCT010 SCT018 BKN090 23/23 Q1007 BECMG 3000 BR",
+     "t": "2026-09-27T14:00:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 271330Z VRB02KT 4000 BR SCT010 SCT018 BKN090 23/23 Q1007 NOSIG",
+     "t": "2026-09-27T13:30:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 271300Z VRB02KT 4000 BR SCT010 SCT018 BKN090 23/23 Q1006 NOSIG",
+     "t": "2026-09-27T13:00:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 271230Z VRB02KT 4000 BR SCT008 SCT018 BKN090 23/23 Q1006 NOSIG",
+     "t": "2026-09-27T12:30:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 271200Z 18003KT 4000 BR SCT008 SCT015 BKN090 24/23 Q1006 NOSIG",
+     "t": "2026-09-27T12:00:00+00:00",
+     "temp": 24
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 271130Z 18003KT 4000 BR SCT008 BKN015 OVC080 23/23 Q1006 NOSIG",
+     "t": "2026-09-27T11:30:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 271100Z 18003KT 4000 DZ SCT008 BKN015 OVC080 23/23 Q1006 NOSIG",
+     "t": "2026-09-27T11:00:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 271030Z 18004KT 4000 DZ SCT008 BKN015 OVC080 23/23 Q1006 NOSIG",
+     "t": "2026-09-27T10:30:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 271000Z 23005KT 3500 DZ SCT008 BKN015 OVC080 23/23 Q1006 NOSIG",
+     "t": "2026-09-27T10:00:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 270930Z 18004KT 3500 DZ SCT008 BKN015 OVC080 23/23 Q1007 NOSIG",
+     "t": "2026-09-27T09:30:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 270900Z 20005KT 3000 DZ SCT008 BKN015 OVC080 23/23 Q1007 NOSIG",
+     "t": "2026-09-27T09:00:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 270830Z 21006KT 3000 -RA SCT012 BKN020 OVC090 23/23 Q1007 NOSIG",
+     "t": "2026-09-27T08:30:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 270800Z 18004KT 3000 DZ SCT012 BKN020 OVC090 23/23 Q1007 NOSIG",
+     "t": "2026-09-27T08:00:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 270730Z 19004KT 2500 DZ SCT012 BKN020 OVC090 23/23 Q1007 NOSIG",
+     "t": "2026-09-27T07:30:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 270700Z 19007KT 3000 -RA FEW012 BKN020 OVC090 23/22 Q1008 NOSIG",
+     "t": "2026-09-27T07:00:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 270630Z 19007KT 4000 BR SCT010 BKN018 OVC090 25/22 Q1007 NOSIG",
+     "t": "2026-09-27T06:30:00+00:00",
+     "temp": 25
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 270600Z 18005KT 4000 BR SCT010 BKN018 OVC090 24/22 Q1008 NOSIG",
+     "t": "2026-09-27T06:00:00+00:00",
+     "temp": 24
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 270530Z 18005KT 4000 BR SCT008 BKN018 OVC090 24/22 Q1008 NOSIG",
+     "t": "2026-09-27T05:30:00+00:00",
+     "temp": 24
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 270500Z 17006KT 4000 BR SCT008 BKN018 OVC090 24/22 Q1007 NOSIG",
+     "t": "2026-09-27T05:00:00+00:00",
+     "temp": 24
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 270430Z 17006KT 3500 -DZ SCT008 BKN018 OVC090 23/22 Q1007 NOSIG",
+     "t": "2026-09-27T04:30:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 270400Z 19005KT 2500 -DZ SCT008 BKN018 OVC090 23/22 Q1007 BECMG 3000 -DZ",
+     "t": "2026-09-27T04:00:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 270330Z 16006KT 2000 -RA SCT008 BKN018 OVC090 23/22 Q1007 BECMG 3000 -RA",
+     "t": "2026-09-27T03:30:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 270300Z 20006KT 2000 -RA SCT008 BKN018 OVC090 23/22 Q1006 NOSIG",
+     "t": "2026-09-27T03:00:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 270230Z 16005KT 1500 -RA SCT008 BKN018 OVC090 22/22 Q1006 NOSIG",
+     "t": "2026-09-27T02:30:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 270200Z 16008KT 1500 -RA SCT008 BKN018 OVC090 22/22 Q1005 NOSIG",
+     "t": "2026-09-27T02:00:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 270130Z 15009KT 2500 -RA SCT008 BKN018 OVC090 22/22 Q1005 NOSIG",
+     "t": "2026-09-27T01:30:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 270100Z 15009KT 2500 -RA SCT008 BKN018 OVC090 22/22 Q1004 NOSIG",
+     "t": "2026-09-27T01:00:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 270030Z 18006KT 2500 -RA SCT008 BKN018 OVC090 22/22 Q1004 NOSIG",
+     "t": "2026-09-27T00:30:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 270000Z 15007KT 2500 -RA SCT008 BKN018 OVC090 22/22 Q1003 NOSIG",
+     "t": "2026-09-27T00:00:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 262330Z 15009KT 3000 -RA SCT010 BKN018 OVC090 22/22 Q1003 BECMG 2500 -RA",
+     "t": "2026-09-26T23:30:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 262300Z 15007KT 4000 BR BKN018 OVC090 22/21 Q1002 NOSIG",
+     "t": "2026-09-26T23:00:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 262230Z 15008KT 4000 BR BKN018 OVC090 23/22 Q1002 NOSIG",
+     "t": "2026-09-26T22:30:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 262200Z 15008KT 4000 -DZ BKN018 OVC090 22/22 Q1002 NOSIG",
+     "t": "2026-09-26T22:00:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 262130Z 14008KT 4000 -DZ SCT018 OVC090 22/22 Q1002 NOSIG",
+     "t": "2026-09-26T21:30:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 262100Z 16007KT 4000 -DZ SCT018 OVC090 22/22 Q1002 NOSIG",
+     "t": "2026-09-26T21:00:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 262030Z 16007KT 4000 -DZ SCT018 OVC090 22/22 Q1002 NOSIG",
+     "t": "2026-09-26T20:30:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 262000Z 17007KT 4000 -DZ SCT018 OVC090 22/22 Q1002 NOSIG",
+     "t": "2026-09-26T20:00:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 261930Z COR 18008KT 3500 -DZ SCT018 OVC090 22/22 Q1002 NOSIG",
+     "t": "2026-09-26T19:30:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 261900Z 17008KT 3500 -DZ SCT018 OVC090 22/22 Q1001 NOSIG",
+     "t": "2026-09-26T19:00:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 261830Z 19010KT 3500 -DZ SCT018 OVC090 22/22 Q1001 NOSIG",
+     "t": "2026-09-26T18:30:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 261800Z 19008KT 3500 -DZ SCT018 OVC090 22/22 Q1001 NOSIG",
+     "t": "2026-09-26T18:00:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 261730Z 20008KT 4000 -DZ SCT018 OVC090 22/22 Q1001 NOSIG",
+     "t": "2026-09-26T17:30:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 261700Z 20005KT 4000 -DZ SCT018 OVC090 22/22 Q1000 NOSIG",
+     "t": "2026-09-26T17:00:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 261630Z 20007WKT 4000 -DZ SCT018 OVC090 22/22 Q1000 NOSIG",
+     "t": "2026-09-26T16:30:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 261600Z 20006KT 4000 -DZ SCT018 OVC090 22/22 Q1000 NOSIG",
+     "t": "2026-09-26T16:00:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 261530Z 16008KT 3000 -DZ SCT010 BKN020 OVC090 23/22 Q0999 BECMG 4000 -DZ",
+     "t": "2026-09-26T15:30:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 261500Z 12009KT 3000 -DZ SCT010 BKN015 OVC080 24/23 Q0999 NOSIG",
+     "t": "2026-09-26T15:00:00+00:00",
+     "temp": 24
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 261430Z 11009KT 2500 -DZ SCT010 BKN015 OVC080 24/23 Q0998 BECMG 3000 -DZ",
+     "t": "2026-09-26T14:30:00+00:00",
+     "temp": 24
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 261400Z 11010KT 2000 -RA SCT008 BKN015 OVC080 24/23 Q0998 NOSIG",
+     "t": "2026-09-26T14:00:00+00:00",
+     "temp": 24
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 261330Z 10010KT 2000 -RA SCT008 BKN015 OVC080 24/23 Q0997 NOSIG",
+     "t": "2026-09-26T13:30:00+00:00",
+     "temp": 24
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 261300Z 10010KT 2000 -RA SCT008 BKN015 OVC080 23/23 Q0997 NOSIG",
+     "t": "2026-09-26T13:00:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 261230Z 10013KT 2000 -RA SCT008 BKN015 FEW030CB OVC080 24/23 Q0997 NOSIG",
+     "t": "2026-09-26T12:30:00+00:00",
+     "temp": 24
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 261200Z 10011KT 2000 -DZ SCT008 BKN015 FEW030CB OVC080 25/24 Q0997 NOSIG",
+     "t": "2026-09-26T12:00:00+00:00",
+     "temp": 25
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 261130Z 08010G20KT 2000 -DZ SCT008 BKN015 FEW030CB OVC080 25/24 Q0996 NOSIG",
+     "t": "2026-09-26T11:30:00+00:00",
+     "temp": 25
+    },
+    {
+     "maxT": null,
+     "raw": "METAR VILK 261100Z 08010G20KT 2000 -RA SCT008 BKN015 FEW030CB OVC080 25/24 Q0996 NOSIG",
+     "t": "2026-09-26T11:00:00+00:00",
+     "temp": 25
+    }
+   ],
+   "name": "Lucknow",
+   "tz": "Asia/Kolkata",
+   "unit": "C"
+  },
+  "madrid": {
+   "days": {
+    "2026-09-27": {
+     "ensemble": {
+      "ecmwf_ifs025": [
+       29.4,
+       29.7,
+       29.8,
+       30.0,
+       30.1,
+       30.2,
+       30.4,
+       30.6,
+       30.6,
+       30.6,
+       30.7,
+       30.8,
+       30.9,
+       30.9,
+       30.9,
+       30.9,
+       30.9,
+       31.0,
+       31.0,
+       31.0,
+       31.0,
+       31.0,
+       31.0,
+       31.0,
+       31.0,
+       31.0,
+       31.0,
+       31.1,
+       31.1,
+       31.1,
+       31.1,
+       31.1,
+       31.2,
+       31.2,
+       31.2,
+       31.2,
+       31.3,
+       31.3,
+       31.3,
+       31.3,
+       31.3,
+       31.3,
+       31.4,
+       31.4,
+       31.5,
+       31.5,
+       31.6,
+       31.6,
+       31.7,
+       31.7,
+       31.9
+      ],
+      "icon_seamless_eps": [
+       28.3,
+       29.5,
+       29.8,
+       30.0,
+       30.1,
+       30.1,
+       30.2,
+       30.2,
+       30.3,
+       30.4,
+       30.4,
+       30.5,
+       30.5,
+       30.5,
+       30.5,
+       30.6,
+       30.6,
+       30.6,
+       30.7,
+       30.7,
+       30.7,
+       30.7,
+       30.8,
+       30.8,
+       30.9,
+       30.9,
+       30.9,
+       31.0,
+       31.0,
+       31.0,
+       31.1,
+       31.1,
+       31.2,
+       31.3,
+       31.3,
+       31.5,
+       31.5,
+       31.5,
+       31.5,
+       31.7
+      ],
+      "ncep_gefs025": [
+       27.9,
+       28.2,
+       28.4,
+       28.7,
+       28.9,
+       28.9,
+       28.9,
+       29.0,
+       29.2,
+       29.2,
+       29.2,
+       29.2,
+       29.2,
+       29.3,
+       29.3,
+       29.5,
+       29.5,
+       29.7,
+       29.7,
+       29.7,
+       29.8,
+       29.8,
+       29.8,
+       29.9,
+       29.9,
+       29.9,
+       29.9,
+       30.0,
+       30.1,
+       30.2,
+       30.2
+      ]
+     },
+     "models": {
+      "cma_grapes_global": 28.6,
+      "ecmwf_aifs025_single": 28.4,
+      "ecmwf_ifs025": 30.8,
+      "gem_seamless": 30.7,
+      "gfs_seamless": 30.4,
+      "icon_seamless": 30.5,
+      "jma_seamless": 29.9,
+      "meteofrance_seamless": 31.0,
+      "ukmo_seamless": 29.7
+     },
+     "obs_count": 48,
+     "obs_last": "2026-09-27T21:30:00+00:00",
+     "obs_max_so_far": 31
+    },
+    "2026-09-28": {
+     "ensemble": {
+      "ecmwf_ifs025": [
+       22.8,
+       23.1,
+       23.2,
+       23.2,
+       23.4,
+       23.5,
+       23.5,
+       23.7,
+       23.9,
+       23.9,
+       24.0,
+       24.0,
+       24.1,
+       24.1,
+       24.1,
+       24.2,
+       24.2,
+       24.2,
+       24.3,
+       24.3,
+       24.3,
+       24.3,
+       24.4,
+       24.4,
+       24.4,
+       24.4,
+       24.4,
+       24.4,
+       24.4,
+       24.4,
+       24.5,
+       24.5,
+       24.5,
+       24.5,
+       24.6,
+       24.8,
+       24.8,
+       24.8,
+       24.8,
+       24.8,
+       24.8,
+       24.8,
+       24.8,
+       25.0,
+       25.0,
+       25.0,
+       25.0,
+       25.1,
+       25.1,
+       25.1,
+       25.5
+      ],
+      "icon_seamless_eps": [
+       23.1,
+       23.3,
+       23.8,
+       24.0,
+       24.1,
+       24.3,
+       24.4,
+       24.5,
+       24.5,
+       24.6,
+       24.7,
+       24.7,
+       24.8,
+       25.0,
+       25.0,
+       25.4,
+       25.5,
+       25.5,
+       25.5,
+       25.7,
+       25.7,
+       25.9,
+       26.0,
+       26.1,
+       26.2,
+       26.4,
+       26.5,
+       26.5,
+       26.5,
+       26.6,
+       26.7,
+       26.8,
+       26.8,
+       26.8,
+       27.3,
+       27.6,
+       27.6,
+       27.9,
+       28.1,
+       28.2
+      ],
+      "ncep_gefs025": [
+       22.3,
+       22.7,
+       22.7,
+       22.9,
+       23.0,
+       23.1,
+       23.1,
+       23.2,
+       23.3,
+       23.3,
+       23.3,
+       23.3,
+       23.5,
+       23.7,
+       23.7,
+       23.7,
+       23.8,
+       23.8,
+       23.9,
+       24.0,
+       24.0,
+       24.0,
+       24.1,
+       24.1,
+       24.2,
+       24.2,
+       24.2,
+       24.4,
+       24.7,
+       25.3,
+       26.3
+      ]
+     },
+     "market": {
+      "buckets": [
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "22\u00b0C or below",
+        "lastTrade": 0.01,
+        "threshold": "0",
+        "volume": 2062.116685,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "23\u00b0C",
+        "lastTrade": 0.01,
+        "threshold": "1",
+        "volume": 5842.139182,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "24\u00b0C",
+        "lastTrade": 0.01,
+        "threshold": "2",
+        "volume": 10196.135532,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.005,
+        "bestBid": 0.002,
+        "closed": false,
+        "label": "25\u00b0C",
+        "lastTrade": 0.005,
+        "threshold": "3",
+        "volume": 15742.906277999999,
+        "yes": 0.0035
+       },
+       {
+        "bestAsk": 0.94,
+        "bestBid": 0.93,
+        "closed": false,
+        "label": "26\u00b0C",
+        "lastTrade": 0.9,
+        "threshold": "4",
+        "volume": 9945.898820999993,
+        "yes": 0.935
+       },
+       {
+        "bestAsk": 0.06,
+        "bestBid": 0.03,
+        "closed": false,
+        "label": "27\u00b0C",
+        "lastTrade": 0.05,
+        "threshold": "5",
+        "volume": 7628.454282,
+        "yes": 0.045
+       },
+       {
+        "bestAsk": 0.004,
+        "bestBid": 0.002,
+        "closed": false,
+        "label": "28\u00b0C",
+        "lastTrade": 0.006,
+        "threshold": "6",
+        "volume": 3704.607149,
+        "yes": 0.003
+       },
+       {
+        "bestAsk": 0.003,
+        "bestBid": null,
+        "closed": false,
+        "label": "29\u00b0C",
+        "lastTrade": 0.002,
+        "threshold": "7",
+        "volume": 1970.1167769999997,
+        "yes": 0.0015
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "30\u00b0C",
+        "lastTrade": 0.001,
+        "threshold": "8",
+        "volume": 1625.228541,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "31\u00b0C",
+        "lastTrade": 0.005,
+        "threshold": "9",
+        "volume": 1311.356808,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "32\u00b0C or higher",
+        "lastTrade": 0.002,
+        "threshold": "10",
+        "volume": 694.107031,
+        "yes": 0.0005
+       }
+      ],
+      "closed": false,
+      "endDate": "2026-09-28T12:00:00Z",
+      "liquidity": 54177.41657,
+      "slug": "highest-temperature-in-madrid-on-september-28-2026",
+      "title": "Highest temperature in Madrid on September 28?",
+      "volume": 60723.06708599999
+     },
+     "models": {
+      "cma_grapes_global": 20.7,
+      "ecmwf_aifs025_single": 23.0,
+      "ecmwf_ifs025": 24.8,
+      "gem_seamless": 23.8,
+      "gfs_seamless": 24.7,
+      "icon_seamless": 24.7,
+      "jma_seamless": 27.1,
+      "meteofrance_seamless": 25.0,
+      "ukmo_seamless": 23.0
+     },
+     "obs_count": 10,
+     "obs_last": "2026-09-28T02:30:00+00:00",
+     "obs_max_so_far": 26
+    },
+    "2026-09-29": {
+     "ensemble": {
+      "ecmwf_ifs025": [
+       23.5,
+       23.5,
+       23.9,
+       24.2,
+       24.2,
+       24.2,
+       24.4,
+       24.4,
+       24.6,
+       24.8,
+       24.9,
+       25.0,
+       25.0,
+       25.1,
+       25.1,
+       25.1,
+       25.1,
+       25.2,
+       25.3,
+       25.3,
+       25.4,
+       25.4,
+       25.4,
+       25.4,
+       25.4,
+       25.5,
+       25.5,
+       25.5,
+       25.5,
+       25.6,
+       25.6,
+       25.6,
+       25.6,
+       25.6,
+       25.7,
+       25.8,
+       25.8,
+       25.8,
+       25.8,
+       25.8,
+       25.9,
+       25.9,
+       25.9,
+       26.0,
+       26.1,
+       26.2,
+       26.3,
+       26.4,
+       26.4,
+       26.9,
+       26.9
+      ],
+      "icon_seamless_eps": [
+       23.8,
+       24.3,
+       24.7,
+       24.7,
+       25.0,
+       25.1,
+       25.3,
+       25.4,
+       25.4,
+       25.4,
+       25.5,
+       25.6,
+       25.6,
+       25.7,
+       25.7,
+       25.9,
+       25.9,
+       25.9,
+       26.0,
+       26.0,
+       26.0,
+       26.1,
+       26.1,
+       26.2,
+       26.2,
+       26.3,
+       26.3,
+       26.4,
+       26.5,
+       26.5,
+       26.5,
+       26.5,
+       26.6,
+       26.7,
+       26.7,
+       26.9,
+       27.1,
+       27.2,
+       27.2,
+       27.4
+      ],
+      "ncep_gefs025": [
+       22.6,
+       23.5,
+       23.9,
+       24.2,
+       24.3,
+       24.3,
+       24.4,
+       24.6,
+       24.6,
+       24.6,
+       24.7,
+       24.8,
+       24.9,
+       24.9,
+       25.3,
+       25.3,
+       25.3,
+       25.3,
+       25.5,
+       25.6,
+       25.6,
+       25.7,
+       25.8,
+       25.8,
+       25.8,
+       25.9,
+       26.2,
+       26.2,
+       26.2,
+       26.3,
+       26.4
+      ]
+     },
+     "market": {
+      "buckets": [
+       {
+        "bestAsk": 0.002,
+        "bestBid": 0.001,
+        "closed": false,
+        "label": "20\u00b0C or below",
+        "lastTrade": null,
+        "threshold": "0",
+        "volume": 133.9278,
+        "yes": 0.0015
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "21\u00b0C",
+        "lastTrade": null,
+        "threshold": "1",
+        "volume": 100.0,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.008,
+        "bestBid": null,
+        "closed": false,
+        "label": "22\u00b0C",
+        "lastTrade": 0.001,
+        "threshold": "2",
+        "volume": 255.26160000000002,
+        "yes": 0.004
+       },
+       {
+        "bestAsk": 0.01,
+        "bestBid": 0.002,
+        "closed": false,
+        "label": "23\u00b0C",
+        "lastTrade": null,
+        "threshold": "3",
+        "volume": 100.0594,
+        "yes": 0.006
+       },
+       {
+        "bestAsk": 0.02,
+        "bestBid": 0.01,
+        "closed": false,
+        "label": "24\u00b0C",
+        "lastTrade": 0.05,
+        "threshold": "4",
+        "volume": 109.80046700000001,
+        "yes": 0.015
+       },
+       {
+        "bestAsk": 0.17,
+        "bestBid": 0.14,
+        "closed": false,
+        "label": "25\u00b0C",
+        "lastTrade": 0.17,
+        "threshold": "5",
+        "volume": 538.062276,
+        "yes": 0.155
+       },
+       {
+        "bestAsk": 0.48,
+        "bestBid": 0.47,
+        "closed": false,
+        "label": "26\u00b0C",
+        "lastTrade": 0.47,
+        "threshold": "6",
+        "volume": 1899.183427,
+        "yes": 0.475
+       },
+       {
+        "bestAsk": 0.32,
+        "bestBid": 0.29,
+        "closed": false,
+        "label": "27\u00b0C",
+        "lastTrade": 0.32,
+        "threshold": "7",
+        "volume": 922.4784730000001,
+        "yes": 0.305
+       },
+       {
+        "bestAsk": 0.08,
+        "bestBid": 0.06,
+        "closed": false,
+        "label": "28\u00b0C",
+        "lastTrade": 0.07,
+        "threshold": "8",
+        "volume": 1805.5952900000002,
+        "yes": 0.07
+       },
+       {
+        "bestAsk": 0.007,
+        "bestBid": 0.003,
+        "closed": false,
+        "label": "29\u00b0C",
+        "lastTrade": null,
+        "threshold": "9",
+        "volume": 45.4454,
+        "yes": 0.005
+       },
+       {
+        "bestAsk": 0.009,
+        "bestBid": 0.001,
+        "closed": false,
+        "label": "30\u00b0C or higher",
+        "lastTrade": null,
+        "threshold": "10",
+        "volume": 18.141,
+        "yes": 0.005
+       }
+      ],
+      "closed": false,
+      "endDate": "2026-09-29T12:00:00Z",
+      "liquidity": 43235.40175,
+      "slug": "highest-temperature-in-madrid-on-september-29-2026",
+      "title": "Highest temperature in Madrid on September 29?",
+      "volume": 5927.955133
+     },
+     "models": {
+      "cma_grapes_global": 24.1,
+      "ecmwf_aifs025_single": 24.3,
+      "ecmwf_ifs025": 25.1,
+      "gem_seamless": 26.5,
+      "gfs_seamless": 25.2,
+      "icon_seamless": 26.1,
+      "jma_seamless": 23.7,
+      "meteofrance_seamless": 28.1,
+      "ukmo_seamless": 23.7
+     }
+    }
+   },
+   "icao": "LEMD",
+   "lat": 40.4719,
+   "local_now": "2026-09-28T04:54+02:00",
+   "lon": -3.5626,
+   "metar": [
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 280230Z 09002KT CAVOK 21/12 Q1018 NOSIG",
+     "t": "2026-09-28T02:30:00+00:00",
+     "temp": 21
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 280200Z VRB01KT CAVOK 21/12 Q1018 NOSIG",
+     "t": "2026-09-28T02:00:00+00:00",
+     "temp": 21
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 280130Z 10003KT 060V140 CAVOK 22/12 Q1018 NOSIG",
+     "t": "2026-09-28T01:30:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 280100Z 11005KT 070V160 CAVOK 23/12 Q1017 NOSIG",
+     "t": "2026-09-28T01:00:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 280030Z 12005KT 090V160 CAVOK 23/12 Q1017 NOSIG",
+     "t": "2026-09-28T00:30:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 280000Z 13007KT 090V150 CAVOK 23/11 Q1017 NOSIG",
+     "t": "2026-09-28T00:00:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 272330Z 14010KT 110V170 CAVOK 24/11 Q1018 NOSIG",
+     "t": "2026-09-27T23:30:00+00:00",
+     "temp": 24
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 272300Z 15012KT CAVOK 25/11 Q1018 NOSIG",
+     "t": "2026-09-27T23:00:00+00:00",
+     "temp": 25
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 272230Z 14009KT 110V170 CAVOK 25/09 Q1018 NOSIG",
+     "t": "2026-09-27T22:30:00+00:00",
+     "temp": 25
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 272200Z 15011KT CAVOK 26/08 Q1018 NOSIG",
+     "t": "2026-09-27T22:00:00+00:00",
+     "temp": 26
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 272130Z 14008KT 090V190 CAVOK 26/05 Q1018 NOSIG",
+     "t": "2026-09-27T21:30:00+00:00",
+     "temp": 26
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 272100Z 14004KT 070V180 CAVOK 25/03 Q1017 NOSIG",
+     "t": "2026-09-27T21:00:00+00:00",
+     "temp": 25
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 272030Z VRB02KT CAVOK 25/02 Q1017 NOSIG",
+     "t": "2026-09-27T20:30:00+00:00",
+     "temp": 25
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 272000Z 13003KT 070V170 CAVOK 26/02 Q1017 NOSIG",
+     "t": "2026-09-27T20:00:00+00:00",
+     "temp": 26
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 271930Z 15008KT 120V200 CAVOK 27/01 Q1017 NOSIG",
+     "t": "2026-09-27T19:30:00+00:00",
+     "temp": 27
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 271900Z 13004KT 100V160 CAVOK 27/02 Q1017 NOSIG",
+     "t": "2026-09-27T19:00:00+00:00",
+     "temp": 27
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 271830Z VRB02KT CAVOK 27/05 Q1017 NOSIG",
+     "t": "2026-09-27T18:30:00+00:00",
+     "temp": 27
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 271800Z 03003KT 010V100 CAVOK 27/07 Q1016 NOSIG",
+     "t": "2026-09-27T18:00:00+00:00",
+     "temp": 27
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 271730Z VRB02KT CAVOK 29/07 Q1016 NOSIG",
+     "t": "2026-09-27T17:30:00+00:00",
+     "temp": 29
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 271700Z 00000KT CAVOK 30/06 Q1016 NOSIG",
+     "t": "2026-09-27T17:00:00+00:00",
+     "temp": 30
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 271630Z 25003KT 190V290 CAVOK 30/06 Q1016 NOSIG",
+     "t": "2026-09-27T16:30:00+00:00",
+     "temp": 30
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 271600Z 26004KT 200V310 CAVOK 30/06 Q1016 NOSIG",
+     "t": "2026-09-27T16:00:00+00:00",
+     "temp": 30
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 271530Z 25005KT 210V290 CAVOK 31/06 Q1017 NOSIG",
+     "t": "2026-09-27T15:30:00+00:00",
+     "temp": 31
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 271500Z 24006KT 180V300 CAVOK 31/07 Q1017 NOSIG",
+     "t": "2026-09-27T15:00:00+00:00",
+     "temp": 31
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 271430Z 24003KT CAVOK 30/07 Q1017 NOSIG",
+     "t": "2026-09-27T14:30:00+00:00",
+     "temp": 30
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 271400Z 23002KT CAVOK 31/07 Q1018 NOSIG",
+     "t": "2026-09-27T14:00:00+00:00",
+     "temp": 31
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 271330Z 20006KT 150V280 CAVOK 30/07 Q1018 NOSIG",
+     "t": "2026-09-27T13:30:00+00:00",
+     "temp": 30
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 271300Z 20005KT 150V300 CAVOK 29/07 Q1018 NOSIG",
+     "t": "2026-09-27T13:00:00+00:00",
+     "temp": 29
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 271230Z 19005KT 150V260 CAVOK 29/07 Q1019 NOSIG",
+     "t": "2026-09-27T12:30:00+00:00",
+     "temp": 29
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 271200Z 17007KT 130V220 CAVOK 29/08 Q1019 NOSIG",
+     "t": "2026-09-27T12:00:00+00:00",
+     "temp": 29
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 271130Z 22003KT CAVOK 27/09 Q1020 NOSIG",
+     "t": "2026-09-27T11:30:00+00:00",
+     "temp": 27
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 271100Z 17002KT CAVOK 26/09 Q1020 NOSIG",
+     "t": "2026-09-27T11:00:00+00:00",
+     "temp": 26
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 271030Z 16002KT CAVOK 26/09 Q1020 NOSIG",
+     "t": "2026-09-27T10:30:00+00:00",
+     "temp": 26
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 271000Z 20002KT CAVOK 24/09 Q1020 NOSIG",
+     "t": "2026-09-27T10:00:00+00:00",
+     "temp": 24
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 270930Z 33004KT 290V360 CAVOK 23/09 Q1020 NOSIG",
+     "t": "2026-09-27T09:30:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 270900Z 35004KT 320V030 CAVOK 22/08 Q1020 NOSIG",
+     "t": "2026-09-27T09:00:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 270830Z 36004KT CAVOK 21/07 Q1020 NOSIG",
+     "t": "2026-09-27T08:30:00+00:00",
+     "temp": 21
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 270800Z 36004KT 320V030 CAVOK 20/07 Q1020 NOSIG",
+     "t": "2026-09-27T08:00:00+00:00",
+     "temp": 20
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 270730Z 35003KT CAVOK 18/06 Q1020 NOSIG",
+     "t": "2026-09-27T07:30:00+00:00",
+     "temp": 18
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 270700Z VRB02KT CAVOK 17/05 Q1020 NOSIG",
+     "t": "2026-09-27T07:00:00+00:00",
+     "temp": 17
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 270630Z VRB02KT CAVOK 17/05 Q1020 NOSIG",
+     "t": "2026-09-27T06:30:00+00:00",
+     "temp": 17
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 270600Z 35002KT CAVOK 17/05 Q1020 NOSIG",
+     "t": "2026-09-27T06:00:00+00:00",
+     "temp": 17
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 270530Z VRB01KT CAVOK 17/05 Q1020 NOSIG",
+     "t": "2026-09-27T05:30:00+00:00",
+     "temp": 17
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 270500Z VRB02KT CAVOK 18/05 Q1020 NOSIG",
+     "t": "2026-09-27T05:00:00+00:00",
+     "temp": 18
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 270430Z 33003KT CAVOK 18/05 Q1020 NOSIG",
+     "t": "2026-09-27T04:30:00+00:00",
+     "temp": 18
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 270400Z VRB01KT CAVOK 18/05 Q1020 NOSIG",
+     "t": "2026-09-27T04:00:00+00:00",
+     "temp": 18
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 270330Z VRB02KT CAVOK 18/05 Q1020 NOSIG",
+     "t": "2026-09-27T03:30:00+00:00",
+     "temp": 18
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 270300Z VRB02KT CAVOK 19/05 Q1019 NOSIG",
+     "t": "2026-09-27T03:00:00+00:00",
+     "temp": 19
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 270230Z VRB02KT CAVOK 19/05 Q1019 NOSIG",
+     "t": "2026-09-27T02:30:00+00:00",
+     "temp": 19
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 270200Z 34003KT 310V020 CAVOK 19/05 Q1020 NOSIG",
+     "t": "2026-09-27T02:00:00+00:00",
+     "temp": 19
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 270130Z 33004KT CAVOK 19/05 Q1020 NOSIG",
+     "t": "2026-09-27T01:30:00+00:00",
+     "temp": 19
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 270100Z 35004KT CAVOK 19/05 Q1020 NOSIG",
+     "t": "2026-09-27T01:00:00+00:00",
+     "temp": 19
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 270030Z 33003KT 300V010 CAVOK 20/04 Q1020 NOSIG",
+     "t": "2026-09-27T00:30:00+00:00",
+     "temp": 20
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 270000Z 35003KT CAVOK 20/05 Q1020 NOSIG",
+     "t": "2026-09-27T00:00:00+00:00",
+     "temp": 20
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 262330Z 34004KT 310V010 CAVOK 20/05 Q1020 NOSIG",
+     "t": "2026-09-26T23:30:00+00:00",
+     "temp": 20
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 262300Z 01003KT 350V060 CAVOK 21/05 Q1020 NOSIG",
+     "t": "2026-09-26T23:00:00+00:00",
+     "temp": 21
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 262230Z 02002KT CAVOK 21/05 Q1020 NOSIG",
+     "t": "2026-09-26T22:30:00+00:00",
+     "temp": 21
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 262200Z VRB02KT CAVOK 23/04 Q1020 NOSIG",
+     "t": "2026-09-26T22:00:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 262130Z VRB02KT CAVOK 23/05 Q1020 NOSIG",
+     "t": "2026-09-26T21:30:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 262100Z 13003KT 070V160 CAVOK 24/04 Q1020 NOSIG",
+     "t": "2026-09-26T21:00:00+00:00",
+     "temp": 24
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 262030Z 14004KT CAVOK 25/04 Q1019 NOSIG",
+     "t": "2026-09-26T20:30:00+00:00",
+     "temp": 25
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 262000Z 14002KT CAVOK 26/04 Q1019 NOSIG",
+     "t": "2026-09-26T20:00:00+00:00",
+     "temp": 26
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 261930Z VRB02KT CAVOK 27/04 Q1019 NOSIG",
+     "t": "2026-09-26T19:30:00+00:00",
+     "temp": 27
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 261900Z 13003KT CAVOK 28/03 Q1019 NOSIG",
+     "t": "2026-09-26T19:00:00+00:00",
+     "temp": 28
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 261830Z 13003KT CAVOK 28/03 Q1019 NOSIG",
+     "t": "2026-09-26T18:30:00+00:00",
+     "temp": 28
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 261800Z 15003KT 110V200 CAVOK 30/03 Q1019 NOSIG",
+     "t": "2026-09-26T18:00:00+00:00",
+     "temp": 30
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 261730Z 22003KT CAVOK 33/03 Q1019 NOSIG",
+     "t": "2026-09-26T17:30:00+00:00",
+     "temp": 33
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 261700Z 25006KT 220V290 CAVOK 33/03 Q1019 NOSIG",
+     "t": "2026-09-26T17:00:00+00:00",
+     "temp": 33
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 261630Z 26005G16KT 160V330 CAVOK 33/03 Q1019 NOSIG",
+     "t": "2026-09-26T16:30:00+00:00",
+     "temp": 33
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 261600Z 21004KT 130V290 CAVOK 34/03 Q1019 NOSIG",
+     "t": "2026-09-26T16:00:00+00:00",
+     "temp": 34
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 261530Z 26006G17KT 170V320 CAVOK 33/03 Q1019 NOSIG",
+     "t": "2026-09-26T15:30:00+00:00",
+     "temp": 33
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 261500Z 18006KT 110V260 CAVOK 33/03 Q1019 NOSIG",
+     "t": "2026-09-26T15:00:00+00:00",
+     "temp": 33
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 261430Z 21007G20KT 170V310 CAVOK 33/03 Q1019 NOSIG",
+     "t": "2026-09-26T14:30:00+00:00",
+     "temp": 33
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 261400Z 22006KT 170V260 CAVOK 33/04 Q1020 NOSIG",
+     "t": "2026-09-26T14:00:00+00:00",
+     "temp": 33
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 261330Z 20007G23KT CAVOK 32/05 Q1020 NOSIG",
+     "t": "2026-09-26T13:30:00+00:00",
+     "temp": 32
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 261300Z 17004G14KT 050V220 CAVOK 32/06 Q1020 NOSIG",
+     "t": "2026-09-26T13:00:00+00:00",
+     "temp": 32
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 261230Z 21003KT CAVOK 31/06 Q1021 NOSIG",
+     "t": "2026-09-26T12:30:00+00:00",
+     "temp": 31
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 261200Z 18004KT 130V220 CAVOK 30/06 Q1021 NOSIG",
+     "t": "2026-09-26T12:00:00+00:00",
+     "temp": 30
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 261130Z 21004KT 150V300 CAVOK 29/06 Q1022 NOSIG",
+     "t": "2026-09-26T11:30:00+00:00",
+     "temp": 29
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 261100Z 18003KT CAVOK 28/06 Q1022 NOSIG",
+     "t": "2026-09-26T11:00:00+00:00",
+     "temp": 28
+    }
+   ],
+   "name": "Madrid",
+   "tz": "Europe/Madrid",
+   "unit": "C"
+  },
+  "mexico-city": {
+   "days": {
+    "2026-09-26": {
+     "ensemble": {
+      "ecmwf_ifs025": [
+       23.2,
+       23.3,
+       23.6,
+       23.6,
+       23.8,
+       24.1,
+       24.2,
+       24.2,
+       24.4,
+       24.5,
+       24.6,
+       24.6,
+       25.1,
+       25.1,
+       25.3,
+       25.3,
+       25.4,
+       25.5,
+       25.5,
+       25.6,
+       25.6,
+       25.6,
+       25.7,
+       25.7,
+       25.8,
+       25.8,
+       25.9,
+       25.9,
+       26.0,
+       26.0,
+       26.0,
+       26.2,
+       26.3,
+       26.3,
+       26.3,
+       26.3,
+       26.3,
+       26.3,
+       26.4,
+       26.4,
+       26.4,
+       26.5,
+       26.6,
+       26.6,
+       26.8,
+       26.8,
+       27.1,
+       27.1,
+       27.2,
+       27.6,
+       28.6
+      ],
+      "icon_seamless_eps": [
+       23.2,
+       23.2,
+       23.5,
+       23.5,
+       24.1,
+       24.2,
+       24.4,
+       24.4,
+       24.4,
+       24.5,
+       24.7,
+       24.7,
+       24.8,
+       24.8,
+       24.9,
+       24.9,
+       25.0,
+       25.0,
+       25.0,
+       25.0,
+       25.0,
+       25.1,
+       25.1,
+       25.3,
+       25.3,
+       25.4,
+       25.4,
+       25.4,
+       25.4,
+       25.5,
+       25.5,
+       25.6,
+       25.7,
+       25.8,
+       25.8,
+       25.9,
+       25.9,
+       26.0,
+       26.2,
+       26.4
+      ],
+      "ncep_gefs025": [
+       21.2,
+       21.3,
+       21.4,
+       21.4,
+       21.5,
+       21.5,
+       21.5,
+       21.6,
+       21.6,
+       21.6,
+       21.7,
+       21.8,
+       21.8,
+       21.9,
+       21.9,
+       22.0,
+       22.0,
+       22.0,
+       22.0,
+       22.0,
+       22.0,
+       22.0,
+       22.0,
+       22.1,
+       22.1,
+       22.1,
+       22.1,
+       22.2,
+       22.3,
+       22.4,
+       22.7
+      ]
+     },
+     "models": {
+      "cma_grapes_global": 21.5,
+      "ecmwf_aifs025_single": 25.0,
+      "ecmwf_ifs025": 25.9,
+      "gem_seamless": 25.0,
+      "gfs_seamless": 25.0,
+      "icon_seamless": 25.9,
+      "jma_seamless": 24.5,
+      "meteofrance_seamless": 22.7,
+      "ukmo_seamless": 26.0
+     },
+     "obs_count": 29,
+     "obs_last": "2026-09-27T05:45:00+00:00",
+     "obs_max_so_far": 24
+    },
+    "2026-09-27": {
+     "ensemble": {
+      "ecmwf_ifs025": [
+       23.8,
+       24.0,
+       24.7,
+       25.2,
+       25.5,
+       25.5,
+       25.8,
+       25.8,
+       25.9,
+       26.0,
+       26.2,
+       26.2,
+       26.2,
+       26.3,
+       26.4,
+       26.4,
+       26.4,
+       26.5,
+       26.5,
+       26.6,
+       26.7,
+       26.7,
+       26.7,
+       26.7,
+       26.8,
+       26.8,
+       26.8,
+       26.8,
+       26.8,
+       26.8,
+       26.9,
+       26.9,
+       27.1,
+       27.1,
+       27.1,
+       27.2,
+       27.2,
+       27.3,
+       27.4,
+       27.4,
+       27.5,
+       27.7,
+       27.7,
+       27.8,
+       27.8,
+       27.9,
+       27.9,
+       28.0,
+       28.4,
+       28.5,
+       28.6
+      ],
+      "icon_seamless_eps": [
+       22.6,
+       24.2,
+       24.2,
+       24.3,
+       24.3,
+       24.7,
+       24.7,
+       24.7,
+       24.8,
+       24.9,
+       25.0,
+       25.0,
+       25.5,
+       25.5,
+       25.5,
+       25.5,
+       25.5,
+       25.6,
+       25.6,
+       25.6,
+       25.7,
+       25.7,
+       25.8,
+       25.8,
+       25.9,
+       26.0,
+       26.0,
+       26.0,
+       26.0,
+       26.1,
+       26.1,
+       26.1,
+       26.2,
+       26.2,
+       26.2,
+       26.3,
+       26.3,
+       26.5,
+       26.6,
+       26.8
+      ],
+      "ncep_gefs025": [
+       21.7,
+       21.9,
+       22.1,
+       22.2,
+       22.2,
+       22.2,
+       22.3,
+       22.3,
+       22.3,
+       22.3,
+       22.3,
+       22.4,
+       22.5,
+       22.5,
+       22.5,
+       22.5,
+       22.5,
+       22.6,
+       22.6,
+       22.6,
+       22.6,
+       22.6,
+       22.6,
+       22.7,
+       22.7,
+       22.7,
+       22.7,
+       22.7,
+       22.7,
+       22.8,
+       22.8
+      ]
+     },
+     "market": {
+      "buckets": [
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "18\u00b0C or below",
+        "lastTrade": 0.001,
+        "threshold": "0",
+        "volume": 22.967000000000002,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "19\u00b0C",
+        "lastTrade": null,
+        "threshold": "1",
+        "volume": 476.0,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "20\u00b0C",
+        "lastTrade": null,
+        "threshold": "2",
+        "volume": 475.0,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "21\u00b0C",
+        "lastTrade": null,
+        "threshold": "3",
+        "volume": 395.6820200000001,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "22\u00b0C",
+        "lastTrade": 0.016,
+        "threshold": "4",
+        "volume": 298.124657,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "23\u00b0C",
+        "lastTrade": 0.001,
+        "threshold": "5",
+        "volume": 274.28250299999996,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "24\u00b0C",
+        "lastTrade": 0.01,
+        "threshold": "6",
+        "volume": 403.4766670000001,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "25\u00b0C",
+        "lastTrade": 0.001,
+        "threshold": "7",
+        "volume": 3228.5772290000004,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 1,
+        "bestBid": 0.999,
+        "closed": false,
+        "label": "26\u00b0C",
+        "lastTrade": 0.999,
+        "threshold": "8",
+        "volume": 3827.6896880000013,
+        "yes": 0.9995
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "27\u00b0C",
+        "lastTrade": 0.14,
+        "threshold": "9",
+        "volume": 2245.827657000001,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "28\u00b0C or higher",
+        "lastTrade": 0.008,
+        "threshold": "10",
+        "volume": 422.5980829999999,
+        "yes": 0.0005
+       }
+      ],
+      "closed": false,
+      "endDate": "2026-09-27T12:00:00Z",
+      "liquidity": 54455.59625,
+      "slug": "highest-temperature-in-mexico-city-on-september-27-2026",
+      "title": "Highest temperature in Mexico City on September 27?",
+      "volume": 12070.225504000004
+     },
+     "models": {
+      "cma_grapes_global": 22.0,
+      "ecmwf_aifs025_single": 26.0,
+      "ecmwf_ifs025": 27.3,
+      "gem_seamless": 25.9,
+      "gfs_seamless": 26.1,
+      "icon_seamless": 25.9,
+      "jma_seamless": 24.0,
+      "meteofrance_seamless": 23.7,
+      "ukmo_seamless": 27.2
+     },
+     "obs_count": 24,
+     "obs_last": "2026-09-28T01:50:00+00:00",
+     "obs_max_so_far": 26
+    },
+    "2026-09-28": {
+     "ensemble": {
+      "ecmwf_ifs025": [
+       23.4,
+       23.6,
+       24.0,
+       24.1,
+       24.3,
+       24.3,
+       24.5,
+       24.7,
+       24.8,
+       24.9,
+       24.9,
+       24.9,
+       25.0,
+       25.0,
+       25.0,
+       25.0,
+       25.1,
+       25.1,
+       25.1,
+       25.2,
+       25.2,
+       25.2,
+       25.2,
+       25.2,
+       25.2,
+       25.3,
+       25.3,
+       25.5,
+       25.5,
+       25.5,
+       25.5,
+       25.6,
+       25.6,
+       25.6,
+       25.6,
+       25.6,
+       25.6,
+       25.6,
+       25.7,
+       25.7,
+       25.7,
+       25.7,
+       26.0,
+       26.2,
+       26.2,
+       26.2,
+       27.0,
+       27.3,
+       27.7,
+       27.8,
+       28.3
+      ],
+      "icon_seamless_eps": [
+       22.1,
+       22.5,
+       22.9,
+       23.0,
+       23.3,
+       23.4,
+       23.5,
+       23.5,
+       23.5,
+       23.6,
+       23.6,
+       23.6,
+       23.7,
+       23.8,
+       23.8,
+       23.9,
+       23.9,
+       23.9,
+       24.0,
+       24.0,
+       24.1,
+       24.1,
+       24.1,
+       24.1,
+       24.2,
+       24.4,
+       24.4,
+       24.5,
+       24.5,
+       24.6,
+       24.7,
+       24.8,
+       24.8,
+       25.0,
+       25.0,
+       25.3,
+       25.3,
+       25.6,
+       25.6,
+       26.8
+      ],
+      "ncep_gefs025": [
+       21.3,
+       21.7,
+       21.8,
+       22.2,
+       22.2,
+       22.2,
+       22.3,
+       22.5,
+       22.5,
+       22.5,
+       22.6,
+       22.7,
+       22.7,
+       22.8,
+       22.9,
+       23.0,
+       23.0,
+       23.0,
+       23.0,
+       23.1,
+       23.1,
+       23.3,
+       23.3,
+       23.4,
+       23.4,
+       23.5,
+       23.5,
+       23.7,
+       23.7,
+       24.0,
+       24.1
+      ]
+     },
+     "market": {
+      "buckets": [
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "17\u00b0C or below",
+        "lastTrade": null,
+        "threshold": "0",
+        "volume": 21.006,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "18\u00b0C",
+        "lastTrade": null,
+        "threshold": "1",
+        "volume": 15.0,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "19\u00b0C",
+        "lastTrade": null,
+        "threshold": "2",
+        "volume": 20.0,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "20\u00b0C",
+        "lastTrade": null,
+        "threshold": "3",
+        "volume": 20.0,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.001,
+        "bestBid": null,
+        "closed": false,
+        "label": "21\u00b0C",
+        "lastTrade": null,
+        "threshold": "4",
+        "volume": 184.93480599999998,
+        "yes": 0.0005
+       },
+       {
+        "bestAsk": 0.012,
+        "bestBid": null,
+        "closed": false,
+        "label": "22\u00b0C",
+        "lastTrade": 0.001,
+        "threshold": "5",
+        "volume": 467.737843,
+        "yes": 0.006
+       },
+       {
+        "bestAsk": 0.02,
+        "bestBid": null,
+        "closed": false,
+        "label": "23\u00b0C",
+        "lastTrade": 0.01,
+        "threshold": "6",
+        "volume": 158.09955,
+        "yes": 0.01
+       },
+       {
+        "bestAsk": 0.03,
+        "bestBid": 0.01,
+        "closed": false,
+        "label": "24\u00b0C",
+        "lastTrade": 0.02,
+        "threshold": "7",
+        "volume": 245.59956599999998,
+        "yes": 0.02
+       },
+       {
+        "bestAsk": 0.32,
+        "bestBid": 0.31,
+        "closed": false,
+        "label": "25\u00b0C",
+        "lastTrade": 0.31,
+        "threshold": "8",
+        "volume": 1317.6840149999998,
+        "yes": 0.315
+       },
+       {
+        "bestAsk": 0.52,
+        "bestBid": 0.49,
+        "closed": false,
+        "label": "26\u00b0C",
+        "lastTrade": 0.52,
+        "threshold": "9",
+        "volume": 1009.848595,
+        "yes": 0.505
+       },
+       {
+        "bestAsk": 0.16,
+        "bestBid": 0.15,
+        "closed": false,
+        "label": "27\u00b0C or higher",
+        "lastTrade": 0.18,
+        "threshold": "10",
+        "volume": 1991.5657049999993,
+        "yes": 0.155
+       }
+      ],
+      "closed": false,
+      "endDate": "2026-09-28T12:00:00Z",
+      "liquidity": 57613.98855,
+      "slug": "highest-temperature-in-mexico-city-on-september-28-2026",
+      "title": "Highest temperature in Mexico City on September 28?",
+      "volume": 5449.553002999999
+     },
+     "models": {
+      "cma_grapes_global": 21.7,
+      "ecmwf_aifs025_single": 26.6,
+      "ecmwf_ifs025": 26.3,
+      "gem_seamless": 25.9,
+      "gfs_seamless": 26.8,
+      "icon_seamless": 25.9,
+      "jma_seamless": 23.9,
+      "meteofrance_seamless": 23.0,
+      "ukmo_seamless": 25.5
+     }
+    }
+   },
+   "icao": "MMMX",
+   "lat": 19.4363,
+   "local_now": "2026-09-27T20:54-06:00",
+   "lon": -99.0721,
+   "metar": [
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 280150Z 02012KT 12SM SCT020 BKN080 20/12 A3023 NOSIG RMK 8/460 CI",
+     "t": "2026-09-28T01:50:00+00:00",
+     "temp": 20
+    },
+    {
+     "maxT": null,
+     "raw": "SPECI MMMX 280115Z 04010G20KT 12SM SCT020 BKN080 20/12 A3022 NOSIG RMK 8/460 CI",
+     "t": "2026-09-28T01:15:00+00:00",
+     "temp": 20
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 280045Z 04015KT 10SM VCRA SCT020CB BKN080 BKN220 22/11 A3022 NOSIG RMK 8/363 HZY PCPN SE",
+     "t": "2026-09-28T00:45:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "SPECI MMMX 280044Z 03015KT 10SM VCRA SCT020CB BKN080 BKN220 22/11 A3022 NOSIG RMK 8/363 HZY PCPN SE",
+     "t": "2026-09-28T00:44:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 272345Z 05015KT 12SM SCT020CB BKN080 BKN220 24/10 A3018 NOSIG RMK SLP038 57012 971 8/363",
+     "t": "2026-09-27T23:45:00+00:00",
+     "temp": 24
+    },
+    {
+     "maxT": null,
+     "raw": "SPECI MMMX 272340Z 05017KT 12SM SCT020CB BKN080 BKN220 24/10 A3018 NOSIG RMK 8/363",
+     "t": "2026-09-27T23:40:00+00:00",
+     "temp": 24
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 272250Z 04012KT 12SM BKN020CB BKN080 OVC220 26/08 A3017 TEMPO 6SM -RA RMK 8/363 BINOVC",
+     "t": "2026-09-27T22:50:00+00:00",
+     "temp": 26
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 272140Z 36010KT 12SM SCT020CB BKN080 BKN220 26/08 A3019 NOSIG RMK 8/363",
+     "t": "2026-09-27T21:40:00+00:00",
+     "temp": 26
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 272052Z 34006KT 12SM SCT020CB BKN080 BKN220 26/09 A3021 NOSIG RMK SLP050 57029 960 8/363",
+     "t": "2026-09-27T20:52:00+00:00",
+     "temp": 26
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 271948Z 00000KT 9SM BKN020TCU BKN220 25/10 A3025 NOSIG RMK 8/208 HZY FRMG CB E",
+     "t": "2026-09-27T19:48:00+00:00",
+     "temp": 25
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 271851Z 25008KT 9SM BKN020 BKN220 25/10 A3028 NOSIG RMK 8/208 HZY",
+     "t": "2026-09-27T18:51:00+00:00",
+     "temp": 25
+    },
+    {
+     "maxT": null,
+     "raw": "SPECI MMMX 271834Z 27008KT 9SM BKN020 BKN220 25/10 A3029 NOSIG RMK 8/208 HZY",
+     "t": "2026-09-27T18:34:00+00:00",
+     "temp": 25
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 271747Z 27008KT 9SM BKN020 BKN220 23/11 A3031 NOSIG RMK SLP091 52010 959 8/208 HZY",
+     "t": "2026-09-27T17:47:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 271649Z 00000KT 8SM BKN020 22/11 A3034 NOSIG RMK 8/200 HZY",
+     "t": "2026-09-27T16:49:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 271548Z 04005KT 8SM BKN020 21/11 A3034 NOSIG RMK 8/800 HZY ISOL CI",
+     "t": "2026-09-27T15:48:00+00:00",
+     "temp": 21
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 271447Z 04006KT 8SM BKN020 18/11 A3034 NOSIG RMK SLP112 52010 956 8/800 HZY ISOL CI",
+     "t": "2026-09-27T14:47:00+00:00",
+     "temp": 18
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 271350Z 05005KT 8SM BKN020 16/12 A3033 NOSIG RMK 8/800 HZY ISOL CI",
+     "t": "2026-09-27T13:50:00+00:00",
+     "temp": 16
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 271245Z 00000KT 7SM BKN020 BKN250 15/12 A3032 NOSIG RMK 8/808 HZY",
+     "t": "2026-09-27T12:45:00+00:00",
+     "temp": 15
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 271147Z 05005KT 8SM BKN025 BKN080 OVC250 15/12 A3032 NOSIG RMK SLP104 52004 951 8/577 HZY",
+     "t": "2026-09-27T11:47:00+00:00",
+     "temp": 15
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 271040Z 07003KT 8SM SCT025 BKN080 15/12 A3030 NOSIG RMK 8/570 CI HZY",
+     "t": "2026-09-27T10:40:00+00:00",
+     "temp": 15
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 270942Z 00000KT 8SM FEW025 BKN080 BKN250 15/11 A3030 NOSIG RMK 8/578 HZY",
+     "t": "2026-09-27T09:42:00+00:00",
+     "temp": 15
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 270843Z 30005KT 10SM SCT080 15/11 A3030 NOSIG RMK SLP086 57014 952 8/030 ISOL CI",
+     "t": "2026-09-27T08:43:00+00:00",
+     "temp": 15
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 270742Z 28007KT 12SM FEW080 16/11 A3032 NOSIG RMK 8/030 ISOL CI",
+     "t": "2026-09-27T07:42:00+00:00",
+     "temp": 16
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 270642Z 27005KT 12SM SKC 17/11 A3033 NOSIG RMK ISOL AC CI",
+     "t": "2026-09-27T06:42:00+00:00",
+     "temp": 17
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 270545Z 30008KT 12SM FEW080 17/11 A3035 NOSIG RMK SLP109 52011 951 8/030 ISOL SC CI",
+     "t": "2026-09-27T05:45:00+00:00",
+     "temp": 17
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 270442Z 31004KT 12SM FEW080 18/11 A3034 NOSIG RMK 8/030 ISOL SC CI",
+     "t": "2026-09-27T04:42:00+00:00",
+     "temp": 18
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 270343Z 02005KT 12SM FEW040 19/11 A3033 NOSIG RMK 8/500 ISOL AC",
+     "t": "2026-09-27T03:43:00+00:00",
+     "temp": 19
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 270245Z 36008KT 12SM FEW015 19/11 A3031 NOSIG RMK SLP107 52019 901 8/500 AC",
+     "t": "2026-09-27T02:45:00+00:00",
+     "temp": 19
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 270145Z 02010KT 12SM SCT015 19/11 A3029 NOSIG RMK 8/500 ISOL AC DSNT CB SE",
+     "t": "2026-09-27T01:45:00+00:00",
+     "temp": 19
+    },
+    {
+     "maxT": null,
+     "raw": "SPECI MMMX 270105Z 07012KT 12SM SCT015 BKN080 19/13 A3027 NOSIG RMK 8/530 ISOL CI",
+     "t": "2026-09-27T01:05:00+00:00",
+     "temp": 19
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 270045Z 06012KT 10SM BKN020 BKN080 21/12 A3027 NOSIG RMK 8/460 HZY CI OCNL DROPS PCPN S SW",
+     "t": "2026-09-27T00:45:00+00:00",
+     "temp": 21
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 262350Z 36008KT 12SM SCT020 BKN080 BKN220 22/10 A3025 NOSIG RMK SLP074 57001 911 8/463 DSNT CB E SE AND W",
+     "t": "2026-09-26T23:50:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "SPECI MMMX 262330Z 01008KT 10SM SCT020 SCT080 BKN220 22/10 A3024 NOSIG RMK 8/463 HZY PCPN S SW",
+     "t": "2026-09-26T23:30:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 262250Z 34010KT 10SM VCRA BKN020CB BKN080 20/11 A3024 NOSIG RMK 60005 8/960 HZY CI PCPN W NW",
+     "t": "2026-09-26T22:50:00+00:00",
+     "temp": 20
+    },
+    {
+     "maxT": null,
+     "raw": "SPECI MMMX 262248Z 36012KT 10SM VCRA BKN020CB BKN080 20/11 A3024 NOSIG RMK 8/960 HZY CI PCPN W NW RAE48",
+     "t": "2026-09-26T22:48:00+00:00",
+     "temp": 20
+    },
+    {
+     "maxT": null,
+     "raw": "SPECI MMMX 262230Z 03010G20KT 10SM -RA BKN020CB BKN080 OVC220 20/13 A3024 TEMPO 6SM TSRA RMK 8/963 HZY BINOVC RAB30",
+     "t": "2026-09-26T22:30:00+00:00",
+     "temp": 20
+    },
+    {
+     "maxT": null,
+     "raw": "SPECI MMMX 262221Z 01020KT 8SM RA BKN020CB BKN080 OVC220 22/12 A3023 TEMPO 6SM TSRA RMK 8/963 HZY RAB20",
+     "t": "2026-09-26T22:21:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "SPECI MMMX 262211Z 01012KT 8SM -RA BKN020CB BKN080 OVC220 24/10 A3023 TEMPO 6SM TSRA RMK 8/963 HZY VSBY LWR N NE RAB11",
+     "t": "2026-09-26T22:11:00+00:00",
+     "temp": 24
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 262150Z 32014KT 10SM SCT020CB BKN080 BKN220 23/10 A3023 NOSIG RMK 60005 8/363 HZY OCNL DROPS",
+     "t": "2026-09-26T21:50:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "SPECI MMMX 262130Z 33012KT 10SM SCT020CB BKN080 BKN220 23/10 A3023 NOSIG RMK 8/363 HZY OCNL DROPS RAE30",
+     "t": "2026-09-26T21:30:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "SPECI MMMX 262110Z 02010KT 10SM -RA BKN020CB BKN080 OVC220 24/09 A3024 TEMPO 6SM TSRA RMK 8/363 HZY BINOVC RAB10",
+     "t": "2026-09-26T21:10:00+00:00",
+     "temp": 24
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 262045Z 29010KT 10SM BKN020CB BKN080 OVC220 24/09 A3024 TEMPO 6SM TSRA RMK SLP063 57028 952 8/363 HZY BINOVC",
+     "t": "2026-09-26T20:45:00+00:00",
+     "temp": 24
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 261941Z 31008KT 10SM BKN020TCU BKN080 24/08 A3028 NOSIG RMK 8/230 HZY ISOL CI",
+     "t": "2026-09-26T19:41:00+00:00",
+     "temp": 24
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 261845Z 34005KT 10SM SCT020 BKN080 23/09 A3031 NOSIG RMK 8/130 HZY ISOL CI",
+     "t": "2026-09-26T18:45:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "SPECI MMMX 261833Z 00000KT 10SM SCT020 24/10 A3032 NOSIG RMK 8/100 HZY ISOL CI",
+     "t": "2026-09-26T18:33:00+00:00",
+     "temp": 24
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 261745Z 32005KT 10SM SCT020 22/09 A3035 NOSIG RMK SLP103 57007 904 8/100 HZY ISOL CI",
+     "t": "2026-09-26T17:45:00+00:00",
+     "temp": 22
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 261641Z 05010KT 10SM BKN020 21/10 A3037 NOSIG RMK 8/100 HZY ISOL CI",
+     "t": "2026-09-26T16:41:00+00:00",
+     "temp": 21
+    },
+    {
+     "maxT": null,
+     "raw": "SPECI MMMX 261633Z 03008KT 10SM BKN020 21/10 A3037 NOSIG RMK 8/100 HZY ISOL CI",
+     "t": "2026-09-26T16:33:00+00:00",
+     "temp": 21
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 261550Z 00000KT 10SM BKN020 19/11 A3039 NOSIG RMK 8/100 HZY ISOL AC",
+     "t": "2026-09-26T15:50:00+00:00",
+     "temp": 19
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 261443Z 30005KT 10SM BKN020 BKN080 18/11 A3037 NOSIG RMK SLP129 52015 900 8/830 HZY ISOL CI",
+     "t": "2026-09-26T14:43:00+00:00",
+     "temp": 18
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 261343Z 05007KT 10SM SCT020 BKN080 BKN220 17/12 A3035 NOSIG RMK 8/538 HZY ISOL CU",
+     "t": "2026-09-26T13:43:00+00:00",
+     "temp": 17
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 261243Z 03006KT 9SM SCT015 BKN080 16/11 A3034 NOSIG RMK 8/530 HZY LWR SC N",
+     "t": "2026-09-26T12:43:00+00:00",
+     "temp": 16
+    },
+    {
+     "maxT": null,
+     "raw": "METAR MMMX 261144Z 02005KT 8SM BKN020 BKN080 16/11 A3032 NOSIG RMK SLP106 52003 902 8/570 HZY",
+     "t": "2026-09-26T11:44:00+00:00",
+     "temp": 16
+    }
+   ],
+   "name": "Mexico City",
+   "tz": "America/Mexico_City",
+   "unit": "C"
+  }
+ }
+}
