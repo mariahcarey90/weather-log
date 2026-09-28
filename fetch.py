@@ -53,15 +53,25 @@ def get(url, tries=3, timeout=40):
     raise RuntimeError(f"{url} -> {last}")
 
 
-def daily_max_by_local_date(times, values):
-    """times are local ISO strings (Open-Meteo with timezone=...)."""
-    out = {}
+REST_KEY = "rest"  # pseudo-date key: max over the remaining hours of the station's local today
+NOW_LOCAL = {}     # station key -> "YYYY-MM-DDTHH:00" local, set in main()
+
+
+def daily_max_by_local_date(times, values, now_local=None):
+    """times are local ISO strings (Open-Meteo with timezone=...). Adds REST_KEY:
+    the max over hours from now_local to the end of that local day (None if none left)."""
+    out, rest = {}, None
     for t, v in zip(times, values):
         if v is None:
             continue
         d = t[:10]
         out[d] = max(out.get(d, -999), v)
-    return {d: round(v, 2) for d, v in out.items()}
+        if now_local and d == now_local[:10] and t[:13] >= now_local[:13]:
+            rest = v if rest is None else max(rest, v)
+    res = {d: round(v, 2) for d, v in out.items()}
+    if rest is not None:
+        res[REST_KEY] = round(rest, 2)
+    return res
 
 
 def fetch_open_meteo(base, st, models):
@@ -84,7 +94,7 @@ def fetch_open_meteo(base, st, models):
         return res
 
 
-def parse_hourly(results):
+def parse_hourly(results, now_local=None):
     """Return {series_name: {date: max}}. Unsuffixed keys get the single requested model's name."""
     series = {}
     for ms, p in results:
@@ -99,16 +109,16 @@ def parse_hourly(results):
                 name = (suffix + "_" if suffix else "") + ms[0]
             else:
                 name = suffix
-            series[name] = daily_max_by_local_date(times, h[k])
+            series[name] = daily_max_by_local_date(times, h[k], now_local)
     return series
 
 
 def fetch_models(st):
-    return parse_hourly(fetch_open_meteo("https://api.open-meteo.com/v1/forecast", st, DET_MODELS))
+    return parse_hourly(fetch_open_meteo("https://api.open-meteo.com/v1/forecast", st, DET_MODELS), NOW_LOCAL.get(st["key"]))
 
 
 def fetch_ensemble(st):
-    s = parse_hourly(fetch_open_meteo("https://ensemble-api.open-meteo.com/v1/ensemble", st, ENS_MODELS))
+    s = parse_hourly(fetch_open_meteo("https://ensemble-api.open-meteo.com/v1/ensemble", st, ENS_MODELS), NOW_LOCAL.get(st["key"]))
     # keys look like "member01_ecmwf_ifs025_ensemble" or "ecmwf_ifs025_ensemble" (control run)
     groups = {}
     for name, bydate in s.items():
@@ -205,6 +215,7 @@ def main():
         dates = [(local_now.date() + timedelta(days=i)).isoformat() for i in (-1, 0, 1)]
         rec = {k: st[k] for k in ("name", "icao", "lat", "lon", "tz", "unit")}
         rec["local_now"] = local_now.isoformat(timespec="minutes")
+        NOW_LOCAL[st["key"]] = local_now.strftime("%Y-%m-%dT%H:00")
         try:
             models = fetch_models(st)
         except Exception as e:
@@ -220,6 +231,11 @@ def main():
         for d in dates:
             day = {"models": {m: v[d] for m, v in models.items() if d in v},
                    "ensemble": {m: sorted(v[d]) for m, v in ens.items() if d in v}}
+            if d == local_now.date().isoformat():
+                # max over the rest of today (from the current local hour), for same-day markets
+                day["rest_of_day_from"] = NOW_LOCAL[st["key"]]
+                day["models_rest"] = {m: v[REST_KEY] for m, v in models.items() if REST_KEY in v}
+                day["ensemble_rest"] = {m: sorted(v[REST_KEY]) for m, v in ens.items() if REST_KEY in v}
             if st["key"] == "atlanta" and d in nws:
                 day["nws_grid_max"] = nws[d]
             day_obs = [o for o in obs if datetime.fromisoformat(o["t"]).astimezone(tz).date().isoformat() == d]
