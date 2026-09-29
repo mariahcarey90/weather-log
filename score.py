@@ -374,7 +374,7 @@ def main():
                 sum_m += p
                 buckets.append({"label": bk["label"], "lo": lo, "hi": hi,
                                 "market": round(bk["yes"], 4) if bk.get("yes") is not None else None,
-                                "model": p})
+                                "model": p, "depth": bk.get("depth")})
             for bk in buckets:
                 bk["model"] = round(bk["model"] / sum_m, 4) if sum_m else 0
             buckets.sort(key=lambda b: (-1e9 if b["lo"] is None else b["lo"]))
@@ -419,9 +419,14 @@ def main():
             docs.append({"doc_id": doc_id, "data": doc})
             top_m = max(buckets, key=lambda b: b["model"])
             top_k = max(buckets, key=lambda b: b["market"] or 0)
+            dp = top_m.get("depth") or {}
+            depth_txt = (f"; our pick's book: best {dp['best_ask']*100:.0f}c, ${dp.get('usd_within_2c', 0):.0f} within 2c, "
+                         f"$25 fills at {dp['avg_fill_25']*100:.1f}c" if dp.get("best_ask") and dp.get("avg_fill_25")
+                         else (f"; our pick's book: best {dp['best_ask']*100:.0f}c, ${dp.get('usd_within_2c', 0):.0f} within 2c, "
+                               f"too thin to fill $25" if dp.get("best_ask") else ""))
             report.append(f"{st['name']} {d} [{stab}: {', '.join(stab_why)}] (lead {lead:.0f}h): forecast {doc['forecastRaw']}{unit}; "
                           f"ours {top_m['label']} {top_m['model']:.0%} vs market {top_k['label']} {top_k['market']:.0%}; "
-                          f"gaps: {', '.join(gaps) or 'none'}")
+                          f"gaps: {', '.join(gaps) or 'none'}{depth_txt}")
 
     os.makedirs(os.path.dirname(a.out) or ".", exist_ok=True)
     json.dump(docs, open(a.out, "w"), ensure_ascii=False, indent=1)

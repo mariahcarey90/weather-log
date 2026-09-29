@@ -25,6 +25,13 @@ STATIONS = [
      "tz": "America/Mexico_City", "unit": "C", "slug": "mexico-city"},
     {"key": "lucknow", "name": "Lucknow", "icao": "VILK", "lat": 26.7606, "lon": 80.8893,
      "tz": "Asia/Kolkata", "unit": "C", "slug": "lucknow"},
+    # added after the 60-day city screen (data/screen): all settle on these airports per the market rules
+    {"key": "amsterdam", "name": "Amsterdam", "icao": "EHAM", "lat": 52.315, "lon": 4.79,
+     "tz": "Europe/Amsterdam", "unit": "C", "slug": "amsterdam"},
+    {"key": "shanghai", "name": "Shanghai", "icao": "ZSPD", "lat": 31.146, "lon": 121.8,
+     "tz": "Asia/Shanghai", "unit": "C", "slug": "shanghai"},
+    {"key": "ankara", "name": "Ankara", "icao": "LTAC", "lat": 40.128, "lon": 32.995,
+     "tz": "Europe/Istanbul", "unit": "C", "slug": "ankara"},
 ]
 
 DET_MODELS = ["ecmwf_ifs025", "ecmwf_aifs025_single", "gfs_seamless", "icon_seamless",
@@ -296,7 +303,36 @@ def month_name_slug(d):
     return f"{dt.strftime('%B').lower()}-{dt.day}-{dt.year}"
 
 
-def fetch_market(st, d):
+BOOK_MIN_YES, BOOK_MAX_YES = 0.02, 0.97  # only read books for buckets that are still live
+
+
+def book_depth(token_id):
+    """What buying the YES side would cost now, from the public CLOB order book:
+    best ask, dollars on offer within 1c and 2c of it, and the average price a
+    $10 and a $25 market order would pay (None if the book can't fill it)."""
+    book = get(f"https://clob.polymarket.com/book?token_id={token_id}")
+    asks = sorted(((float(a["price"]), float(a["size"])) for a in book.get("asks", [])), key=lambda x: x[0])
+    bids = sorted(((float(b["price"]), float(b["size"])) for b in book.get("bids", [])), key=lambda x: -x[0])
+    if not asks:
+        return {"best_ask": None, "best_bid": bids[0][0] if bids else None}
+    best = asks[0][0]
+    within = lambda c: round(sum(p * q for p, q in asks if p <= best + c + 1e-9), 2)
+
+    def avg_fill(dollars):
+        left, shares = dollars, 0.0
+        for p, q in asks:
+            take = min(left, p * q)
+            shares += take / p
+            left -= take
+            if left <= 1e-9:
+                return round(dollars / shares, 4)
+        return None
+    return {"best_ask": best, "best_bid": bids[0][0] if bids else None,
+            "usd_at_best": within(0), "usd_within_1c": within(0.01), "usd_within_2c": within(0.02),
+            "avg_fill_10": avg_fill(10), "avg_fill_25": avg_fill(25)}
+
+
+def fetch_market(st, d, with_books=False):
     slug = f"highest-temperature-in-{st['slug']}-on-{month_name_slug(d)}"
     ev = get(f"https://gamma-api.polymarket.com/events?slug={slug}")
     if not ev:
@@ -309,7 +345,16 @@ def fetch_market(st, d):
         except Exception:
             prices = []
         yes = float(prices[0]) if prices else None
+        depth = None
+        if with_books and yes is not None and BOOK_MIN_YES <= yes <= BOOK_MAX_YES and not m.get("closed"):
+            try:
+                tokens = json.loads(m.get("clobTokenIds") or "[]")
+                if tokens:
+                    depth = book_depth(tokens[0])
+            except Exception as e:
+                ERRORS.append(f"{st['key']} book {d} {m.get('groupItemTitle')}: {e}")
         buckets.append({
+            "depth": depth,
             "label": m.get("groupItemTitle") or m.get("question"),
             "yes": yes,
             "bestBid": m.get("bestBid"), "bestAsk": m.get("bestAsk"),
@@ -406,7 +451,7 @@ def main():
                 day["obs_last"] = max(o["t"] for o in day_obs)
             if d >= local_now.date().isoformat():
                 try:
-                    day["market"] = fetch_market(st, d)
+                    day["market"] = fetch_market(st, d, with_books=True)
                 except Exception as e:
                     ERRORS.append(f"{st['key']} market {d}: {e}")
             days[d] = day
