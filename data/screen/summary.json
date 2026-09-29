@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29T23:27:01Z",
+ "generated": "2026-09-29T23:33:47Z",
  "window": [
   "2026-07-30",
   "2026-09-28"
@@ -28,12 +28,12 @@
    ]
   },
   "paris": {
-   "icao": "LFPG",
-   "station": "Paris/De Gaulle Arpt",
-   "lat": 49.015,
-   "lon": 2.534,
+   "icao": "LFPB",
+   "station": "Paris/Le Bourge Arpt",
+   "lat": 48.967,
+   "lon": 2.428,
    "unit": "C",
-   "obs_days": 0,
+   "obs_days": 61,
    "models": [
     "ecmwf_ifs025",
     "gem_seamless",
@@ -46,15 +46,14 @@
    "avg_daily_volume": 83200,
    "rules_excerpt": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Paris-Le Bourget Airport Station in degrees Celsius on 28 Sep '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=lfpb\n\nIf NOAA data for the observation date is unavailable by 11:59 PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source.\n\nIn the event that there is no data for the observation date by 11:59 PM ET on the day following the o",
    "notes": [
-    "station not found in rules; used LFPG",
-    "observations failed: HTTP Error 503: Service Unavailable"
+    "station not found in rules; used LFPB"
    ]
   },
   "london": {
-   "icao": "EGLL",
-   "station": "London/Heathrow Intl",
-   "lat": 51.477,
-   "lon": -0.461,
+   "icao": "EGLC",
+   "station": "London City Arpt",
+   "lat": 51.505,
+   "lon": 0.055,
    "unit": "C",
    "obs_days": 61,
    "models": [
@@ -69,7 +68,7 @@
    "avg_daily_volume": 82275,
    "rules_excerpt": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the London City Airport Station in degrees Celsius on 28 Sep '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=eglc\n\nIf NOAA data for the observation date is unavailable by 11:59 PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source.\n\nIn the event that there is no data for the observation date by 11:59 PM ET on the day following the observ",
    "notes": [
-    "station not found in rules; used EGLL"
+    "station not found in rules; used EGLC"
    ]
   },
   "amsterdam": {
@@ -78,7 +77,7 @@
    "lat": 52.315,
    "lon": 4.79,
    "unit": "C",
-   "obs_days": 61,
+   "obs_days": 0,
    "models": [
     "ecmwf_ifs025",
     "gem_seamless",
@@ -91,7 +90,8 @@
    "avg_daily_volume": 38642,
    "rules_excerpt": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Amsterdam Airport Schiphol Station in degrees Celsius on 28 Sep '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=eham\n\nIf NOAA data for the observation date is unavailable by 11:59 PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source.\n\nIn the event that there is no data for the observation date by 11:59 PM ET on the day following the",
    "notes": [
-    "station not found in rules; used EHAM"
+    "station not found in rules; used EHAM",
+    "observations failed: HTTP Error 503: Service Unavailable"
    ]
   },
   "munich": {
@@ -122,7 +122,7 @@
    "lat": 31.146,
    "lon": 121.8,
    "unit": "C",
-   "obs_days": 61,
+   "obs_days": 0,
    "models": [
     "ecmwf_ifs025",
     "gem_seamless",
@@ -135,7 +135,8 @@
    "avg_daily_volume": 77591,
    "rules_excerpt": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Shanghai Pudong International Airport Station in degrees Celsius on 28 Sep '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=zspd\n\nIf NOAA data for the observation date is unavailable by 11:59 PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source.\n\nIn the event that there is no data for the observation date by 11:59 PM ET on the day fo",
    "notes": [
-    "station not found in rules; used ZSPD"
+    "station not found in rules; used ZSPD",
+    "observations failed: HTTP Error 503: Service Unavailable"
    ]
   },
   "miami": {
@@ -159,47 +160,9 @@
    "notes": [
     "station not found in rules; used KMIA"
    ]
-  },
-  "hong-kong": {
-   "icao": "VHHH",
-   "station": "Hong Kong Intl",
-   "lat": 22.309,
-   "lon": 113.922,
-   "unit": "C",
-   "obs_days": 61,
-   "models": [
-    "ecmwf_ifs025",
-    "gem_seamless",
-    "gfs_seamless",
-    "icon_seamless",
-    "jma_seamless",
-    "meteofrance_seamless",
-    "ukmo_seamless"
-   ],
-   "avg_daily_volume": 113890,
-   "rules_excerpt": "This market will resolve to the temperature range that contains the highest temperature recorded by the Hong Kong Observatory in degrees Celsius on 28 Sep '26.\n\nThe resolution source for this market will be information from the Hong Kong Observatory, specifically the \"Absolute Daily Max (deg. C)\" the specified date once information is finalized in the relevant \"Daily Extract\", available here: https://www.weather.gov.hk/en/cis/climat.htm\n\nIn the event that there is no data for the observation date by 11:59 PM ET on the seventh day following the observation date, this market will resolve to the lowest bracket.\n\nThis market will resolve once data for this date has been published on the resoluti",
-   "notes": [
-    "station not found in rules; used VHHH"
-   ]
   }
  },
  "scores": {
-  "amsterdam": {
-   "day1": {
-    "days": 59,
-    "top_hit": 0.525,
-    "within_one": 0.949,
-    "avg_p_win": 0.403,
-    "brier": 0.578
-   },
-   "day2": {
-    "days": 59,
-    "top_hit": 0.424,
-    "within_one": 0.932,
-    "avg_p_win": 0.351,
-    "brier": 0.655
-   }
-  },
   "ankara": {
    "day1": {
     "days": 59,
@@ -216,36 +179,20 @@
     "brier": 0.684
    }
   },
-  "hong-kong": {
-   "day1": {
-    "days": 59,
-    "top_hit": 0.339,
-    "within_one": 0.763,
-    "avg_p_win": 0.302,
-    "brier": 0.828
-   },
-   "day2": {
-    "days": 59,
-    "top_hit": 0.339,
-    "within_one": 0.746,
-    "avg_p_win": 0.278,
-    "brier": 0.848
-   }
-  },
   "london": {
    "day1": {
     "days": 59,
-    "top_hit": 0.407,
+    "top_hit": 0.424,
     "within_one": 0.915,
-    "avg_p_win": 0.314,
-    "brier": 0.724
+    "avg_p_win": 0.347,
+    "brier": 0.668
    },
    "day2": {
     "days": 59,
-    "top_hit": 0.339,
-    "within_one": 0.847,
-    "avg_p_win": 0.292,
-    "brier": 0.719
+    "top_hit": 0.407,
+    "within_one": 0.831,
+    "avg_p_win": 0.296,
+    "brier": 0.713
    }
   },
   "miami": {
@@ -280,20 +227,20 @@
     "brier": 0.707
    }
   },
-  "shanghai": {
+  "paris": {
    "day1": {
     "days": 59,
-    "top_hit": 0.525,
-    "within_one": 0.949,
-    "avg_p_win": 0.374,
-    "brier": 0.626
+    "top_hit": 0.441,
+    "within_one": 0.864,
+    "avg_p_win": 0.321,
+    "brier": 0.671
    },
    "day2": {
     "days": 59,
-    "top_hit": 0.39,
-    "within_one": 0.898,
-    "avg_p_win": 0.32,
-    "brier": 0.721
+    "top_hit": 0.407,
+    "within_one": 0.797,
+    "avg_p_win": 0.28,
+    "brier": 0.731
    }
   }
  }
