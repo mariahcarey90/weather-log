@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29T23:33:47Z",
+ "generated": "2026-09-29T23:36:16Z",
  "window": [
   "2026-07-30",
   "2026-09-28"
@@ -77,7 +77,7 @@
    "lat": 52.315,
    "lon": 4.79,
    "unit": "C",
-   "obs_days": 0,
+   "obs_days": 61,
    "models": [
     "ecmwf_ifs025",
     "gem_seamless",
@@ -90,8 +90,7 @@
    "avg_daily_volume": 38642,
    "rules_excerpt": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Amsterdam Airport Schiphol Station in degrees Celsius on 28 Sep '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=eham\n\nIf NOAA data for the observation date is unavailable by 11:59 PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source.\n\nIn the event that there is no data for the observation date by 11:59 PM ET on the day following the",
    "notes": [
-    "station not found in rules; used EHAM",
-    "observations failed: HTTP Error 503: Service Unavailable"
+    "station not found in rules; used EHAM"
    ]
   },
   "munich": {
@@ -122,7 +121,7 @@
    "lat": 31.146,
    "lon": 121.8,
    "unit": "C",
-   "obs_days": 0,
+   "obs_days": 61,
    "models": [
     "ecmwf_ifs025",
     "gem_seamless",
@@ -135,8 +134,7 @@
    "avg_daily_volume": 77591,
    "rules_excerpt": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Shanghai Pudong International Airport Station in degrees Celsius on 28 Sep '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=zspd\n\nIf NOAA data for the observation date is unavailable by 11:59 PM ET on the day following the observation date, the Weather Underground Daily Observations table will be used as the resolution source.\n\nIn the event that there is no data for the observation date by 11:59 PM ET on the day fo",
    "notes": [
-    "station not found in rules; used ZSPD",
-    "observations failed: HTTP Error 503: Service Unavailable"
+    "station not found in rules; used ZSPD"
    ]
   },
   "miami": {
@@ -163,6 +161,22 @@
   }
  },
  "scores": {
+  "amsterdam": {
+   "day1": {
+    "days": 59,
+    "top_hit": 0.525,
+    "within_one": 0.949,
+    "avg_p_win": 0.403,
+    "brier": 0.578
+   },
+   "day2": {
+    "days": 59,
+    "top_hit": 0.424,
+    "within_one": 0.932,
+    "avg_p_win": 0.351,
+    "brier": 0.655
+   }
+  },
   "ankara": {
    "day1": {
     "days": 59,
@@ -241,6 +255,22 @@
     "within_one": 0.797,
     "avg_p_win": 0.28,
     "brier": 0.731
+   }
+  },
+  "shanghai": {
+   "day1": {
+    "days": 59,
+    "top_hit": 0.525,
+    "within_one": 0.949,
+    "avg_p_win": 0.374,
+    "brier": 0.626
+   },
+   "day2": {
+    "days": 59,
+    "top_hit": 0.39,
+    "within_one": 0.898,
+    "avg_p_win": 0.32,
+    "brier": 0.721
    }
   }
  }
