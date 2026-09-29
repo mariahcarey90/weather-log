@@ -42,7 +42,8 @@ forecasts, worth PRIOR_N_STATION days. Weights follow the blended accuracy.
 Stability label (Settled / Mixed / Unsettled): how far the bias-corrected models
 spread (in the 60-day history, days with a tight spread missed by 0.53 C on
 average vs 0.81 C when they disagreed) plus weather flags from the conditions
-forecast: storms, rain, heavy cloud, a front (big pressure drop/rise, a 3 C jump
+forecast: storms, rain, heavy cloud, a front (pressure 6+ hPa off the same hour
+the day before, a 3 C jump
 in the daily max, or a wind shift), and morning fog. The thresholds are starting
 assumptions, logged with every run so they can be checked against results.
 
@@ -187,7 +188,7 @@ def stability(spread_c, cond):
         flags.append("rain likely")
     if (g("cloud_mean") or 0) >= 75:
         flags.append("heavy cloud")
-    front = ((g("pressure_change_hpa") or 0) >= 6 or abs(g("tmax_change_c") or 0) >= 3
+    front = (abs(g("pressure_change_hpa") or 0) >= 6 or abs(g("tmax_change_c") or 0) >= 3
              or ((g("wind_shift_deg") or 0) >= 90 and (g("wind_mean_kmh") or 0) >= 12))
     if front:
         flags.append("front / air-mass change")

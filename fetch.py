@@ -140,7 +140,7 @@ def fetch_conditions(st):
     by_date = {}
     for i, t in enumerate(times):
         by_date.setdefault(t[:10], []).append((int(t[11:13]), {v: (h.get(v) or [None] * len(times))[i] for v in COND_VARS}))
-    out, prev_max = {}, None
+    out, prev_max, prev_p12 = {}, None, None
     for d in sorted(by_date):
         rows = by_date[d]
         day = [r for hr, r in rows if 9 <= hr <= 18]
@@ -149,18 +149,19 @@ def fetch_conditions(st):
         tmax = max(vals([r for _, r in rows], "temperature_2m") or [None]) if rows else None
         wd9 = next((r["wind_direction_10m"] for hr, r in rows if hr == 9 and r.get("wind_direction_10m") is not None), None)
         wd17 = next((r["wind_direction_10m"] for hr, r in rows if hr == 17 and r.get("wind_direction_10m") is not None), None)
-        pres = vals([r for _, r in rows], "pressure_msl")
+        # same hour vs the day before, so the normal daily pressure cycle cancels out
+        p12 = next((r["pressure_msl"] for hr, r in rows if hr == 12 and r.get("pressure_msl") is not None), None)
         c = {
             "cloud_mean": round(statistics.fmean(vals(day, "cloud_cover")), 0) if vals(day, "cloud_cover") else None,
             "rain_chance_max": max(vals(day, "precipitation_probability") or [None]) if vals(day, "precipitation_probability") else None,
             "cape_max": max(vals(day, "cape")) if vals(day, "cape") else None,
             "wind_mean_kmh": round(statistics.fmean(vals(day, "wind_speed_10m")), 1) if vals(day, "wind_speed_10m") else None,
             "wind_shift_deg": round(_circ_diff(wd9, wd17)) if wd9 is not None and wd17 is not None else None,
-            "pressure_change_hpa": round(max(pres) - min(pres), 1) if len(pres) > 1 else None,
+            "pressure_change_hpa": round(p12 - prev_p12, 1) if p12 is not None and prev_p12 is not None else None,
             "morning_vis_min_m": min(vals(morn, "visibility")) if vals(morn, "visibility") else None,
             "tmax_change_c": round(tmax - prev_max, 1) if tmax is not None and prev_max is not None else None,
         }
-        prev_max = tmax
+        prev_max, prev_p12 = tmax, p12
         out[d] = c
     return out
 
