@@ -2,6 +2,11 @@ name: Screen candidate cities
 
 on:
   workflow_dispatch:
+    inputs:
+      only:
+        description: "space-separated city keys to rerun (blank = all)"
+        required: false
+        default: ""
   push:
     branches: [main]
     paths: ["screen.py", ".github/workflows/screen.yml"]
@@ -20,7 +25,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Screen
-        run: python3 screen.py
+        run: SCREEN_ONLY="${{ github.event.inputs.only }}" python3 screen.py
       - name: Commit
         run: |
           git config user.name "weather-log bot"

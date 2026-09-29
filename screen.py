@@ -19,13 +19,13 @@ from fetch import get
 CANDIDATES = [
     # key (Polymarket slug), fallback ICAO if the rules can't be parsed, IANA tz
     ("ankara", "LTAC", "Europe/Istanbul"),
-    ("paris", "LFPG", "Europe/Paris"),
-    ("london", "EGLL", "Europe/London"),
+    ("paris", "LFPB", "Europe/Paris"),          # rules: Paris-Le Bourget Airport
+    ("london", "EGLC", "Europe/London"),        # rules: London City Airport
     ("amsterdam", "EHAM", "Europe/Amsterdam"),
     ("munich", "EDDM", "Europe/Berlin"),
     ("shanghai", "ZSPD", "Asia/Shanghai"),
     ("miami", "KMIA", "America/New_York"),
-    ("hong-kong", "VHHH", "Asia/Hong_Kong"),
+    # hong-kong settles on the Hong Kong Observatory, not an airport METAR: not testable this way
 ]
 
 
@@ -71,11 +71,18 @@ def station_coords(icao):
 
 
 def main():
+    import sys
+    only = set(sys.argv[1:]) or set(os.environ.get("SCREEN_ONLY", "").split()) - {""}
     os.makedirs("data/screen", exist_ok=True)
     end = date.today() - timedelta(days=1)
     start = end - timedelta(days=DAYS)
     cities, meta = {}, {}
+    if only and os.path.exists("data/screen/summary.json"):  # rerun a few: keep the others
+        cities = json.load(open("data/screen/backfill_screen.json")).get("cities", {})
+        meta = json.load(open("data/screen/summary.json")).get("meta", {})
     for key, fallback, tz in CANDIDATES:
+        if only and key not in only:
+            continue
         print("==", key)
         mi = market_info(key)
         icao, note = mi["icao"] or fallback, []
