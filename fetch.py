@@ -147,8 +147,8 @@ def fetch_nws_hourly_katl():
     """NWS hourly forecast for the KATL grid point, in deg C: {local_iso_hour: temp}."""
     st = next(s for s in STATIONS if s["key"] == "atlanta")
     pts = get(f"https://api.weather.gov/points/{st['lat']},{st['lon']}")
-    url = pts["properties"]["forecastHourly"]
-    hourly = get(url + ("&" if "?" in url else "?") + "units=si")
+    # default US units: whole deg F is finer than whole deg C for 2 F market buckets
+    hourly = get(pts["properties"]["forecastHourly"])
     tz = ZoneInfo(st["tz"])
     out = {}
     for p in hourly["properties"]["periods"]:
