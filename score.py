@@ -27,15 +27,27 @@ Atlanta, the NWS hourly forecast for the rest of the day) join as extra members 
 no bias shift (they already target the station) and the weight of the best
 calibrated model there. They have no track record yet: the weight is a starting
 assumption to revisit once the tracker has scored days.
+
+Ensembles run on coarser grids than their parent models and can sit several
+degrees apart at an airport (Mexico City's GEFS runs ~3.8 C below GFS). Each
+ensemble is re-centred on its parent model for that day, so it adds spread,
+not a location error, before the parent's bias correction is applied.
+
+Same-day nowcast: from 10:00 local, each model's error over the last 3 hours
+of airport readings (minus its usual bias) shifts its forecast for the rest of
+the day by NOWCAST_ALPHA of that error; ensembles follow their parent model.
 """
 import argparse, glob, json, math, os, re, statistics
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 DEFAULT_KERNEL_C = {"same": 0.7, "day": 0.8, "far": 1.0}
 MIN_KERNEL_C = 0.5
 MIN_RESOLVED = 5
-MIN_LIVE = 30  # live-log calibration overrides the backfill only once it has this many runs
+MIN_LIVE = 30
+NOWCAST_ALPHA = 0.5    # share of this morning's forecast error assumed to persist to the peak
+NOWCAST_FROM_HOUR = 10  # earlier readings (fog, inversions) say little about the afternoon
+NOWCAST_WINDOW_H = 3  # live-log calibration overrides the backfill only once it has this many runs
 ENS_PARENT = {"ecmwf_ifs025": "ecmwf_ifs025", "ncep_gefs025": "gfs_seamless", "gfs025": "gfs_seamless",
               "icon_seamless_eps": "icon_seamless", "icon_seamless": "icon_seamless"}
 
@@ -179,10 +191,35 @@ def main():
             use_rest = is_today and obs is not None and "models_rest" in day
             det = day.get("models_rest" if use_rest else "models", {})
             ens = day.get("ensemble_rest" if use_rest else "ensemble", {})
+            # same-day nowcast: each model's anomaly vs this morning's readings
+            anomaly = {}
+            if use_rest and now_local.hour >= NOWCAST_FROM_HOUR:
+                recent = []
+                for o in st.get("metar", []):
+                    t = datetime.fromisoformat(o["t"])
+                    age_h = (run_at - t).total_seconds() / 3600
+                    if o.get("temp") is None or not (0 <= age_h <= NOWCAST_WINDOW_H):
+                        continue
+                    lt = (t.astimezone(tz) + timedelta(minutes=30)).strftime("%Y-%m-%dT%H:00")
+                    recent.append((lt, o["temp"]))
+                for m, hours in (day.get("models_hourly") or {}).items():
+                    errs = [ob - hours[h] for h, ob in recent if h in hours]
+                    if len(errs) >= 2:
+                        bm, _ = corr(m)
+                        anomaly[m] = statistics.fmean(errs) + bm  # beyond the model's usual bias
+            mean_anom = statistics.fmean(anomaly.values()) if anomaly else 0.0
+
             members, weights = [], []
             ens_total = 0
             for m, vals in ens.items():
                 bm, wm = corr(m)
+                parent = ENS_PARENT.get(m)
+                if parent in det and vals:  # re-centre on the parent model
+                    shift = det[parent] - statistics.fmean(vals)
+                    vals = [v + shift for v in vals]
+                if anomaly:
+                    an = anomaly.get(parent, mean_anom)
+                    vals = [v + NOWCAST_ALPHA * an for v in vals]
                 members += [v - bm for v in vals]
                 weights += [wm / len(vals)] * len(vals)   # each ensemble counts once in total
                 ens_total += 1
@@ -193,6 +230,8 @@ def main():
                 if per_model and m in per_model and per_model[m]["mae"] > 1.8:
                     continue  # historically poor at this station
                 bm, wm = corr(m)
+                if anomaly:
+                    v = v + NOWCAST_ALPHA * anomaly.get(m, mean_anom)
                 members.append(v - bm)
                 weights.append(wm)
             if not per_model:
@@ -251,6 +290,8 @@ def main():
                 sources["airport forecast (TAF) max"] = round(to_u(day["taf_max"]), 1)
             if day.get("nws_hourly_max") is not None:
                 sources["nws hourly max"] = round(to_u(day["nws_hourly_max"]), 1)
+            if anomaly:
+                sources["nowcast shift"] = round(NOWCAST_ALPHA * mean_anom * (9 / 5 if fahrenheit else 1), 1)
             if use_rest and mem_u:
                 sources["rest of today (median)"] = round(statistics.median(mem_u), 1)
             if obs is not None:
@@ -260,6 +301,8 @@ def main():
                     f"{len(det)} models, {sum(len(v) for v in day.get('ensemble', {}).values())} ensemble members. "
                     + cal_note
                     + (f" Station forecasts added: {', '.join(station_fc)}." if station_fc else "")
+                    + (f" Nowcast: models ran {mean_anom:+.1f}°C vs the last {NOWCAST_WINDOW_H} h of readings"
+                       f" beyond their usual bias; {NOWCAST_ALPHA:.0%} carried to the rest of the day." if anomaly else "")
                     + (f" Same-day: high so far {obs}°C, combined with forecast for the hours after {day.get('rest_of_day_from')}." if use_rest else ""))
             doc = {
                 "city": city, "marketDate": d, "runAt": run_at.strftime("%Y-%m-%dT%H:%M:%SZ"),

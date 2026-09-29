@@ -94,8 +94,12 @@ def fetch_open_meteo(base, st, models):
         return res
 
 
-def parse_hourly(results, now_local=None):
-    """Return {series_name: {date: max}}. Unsuffixed keys get the single requested model's name."""
+HOURLY_TODAY = {}  # station key -> {model: {"YYYY-MM-DDTHH:00": temp}} for the local today
+
+
+def parse_hourly(results, now_local=None, keep_today=None):
+    """Return {series_name: {date: max}}. Unsuffixed keys get the single requested model's name.
+    If keep_today is a dict, today's hourly values per series are stored in it."""
     series = {}
     for ms, p in results:
         h = p.get("hourly", {})
@@ -110,11 +114,16 @@ def parse_hourly(results, now_local=None):
             else:
                 name = suffix
             series[name] = daily_max_by_local_date(times, h[k], now_local)
+            if keep_today is not None and now_local:
+                keep_today[name] = {t: round(v, 2) for t, v in zip(times, h[k])
+                                    if v is not None and t[:10] == now_local[:10]}
     return series
 
 
 def fetch_models(st):
-    return parse_hourly(fetch_open_meteo("https://api.open-meteo.com/v1/forecast", st, DET_MODELS), NOW_LOCAL.get(st["key"]))
+    keep = HOURLY_TODAY.setdefault(st["key"], {})
+    return parse_hourly(fetch_open_meteo("https://api.open-meteo.com/v1/forecast", st, DET_MODELS),
+                        NOW_LOCAL.get(st["key"]), keep)
 
 
 def fetch_ensemble(st):
@@ -320,6 +329,7 @@ def main():
                 day["rest_of_day_from"] = NOW_LOCAL[st["key"]]
                 day["models_rest"] = {m: v[REST_KEY] for m, v in models.items() if REST_KEY in v}
                 day["ensemble_rest"] = {m: sorted(v[REST_KEY]) for m, v in ens.items() if REST_KEY in v}
+                day["models_hourly"] = {m: v for m, v in HOURLY_TODAY.get(st["key"], {}).items() if v}
             if st["key"] == "atlanta" and d in nws:
                 day["nws_grid_max"] = nws[d]
             if st["key"] == "atlanta":
