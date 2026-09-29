@@ -197,8 +197,8 @@ def main():
                 recent = []
                 for o in st.get("metar", []):
                     t = datetime.fromisoformat(o["t"])
-                    age_h = (run_at - t).total_seconds() / 3600
-                    if o.get("temp") is None or not (0 <= age_h <= NOWCAST_WINDOW_H):
+                    obs_age_h = (run_at - t).total_seconds() / 3600
+                    if o.get("temp") is None or not (0 <= obs_age_h <= NOWCAST_WINDOW_H):
                         continue
                     lt = (t.astimezone(tz) + timedelta(minutes=30)).strftime("%Y-%m-%dT%H:00")
                     recent.append((lt, o["temp"]))
