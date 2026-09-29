@@ -1,0 +1,35 @@
+name: Screen candidate cities
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["screen.py", ".github/workflows/screen.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch
+  cancel-in-progress: false
+
+jobs:
+  screen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Screen
+        run: python3 screen.py
+      - name: Commit
+        run: |
+          git config user.name "weather-log bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/screen
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "screen: $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 5
+          done
+          exit 1
