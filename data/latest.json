@@ -1,7 +1,7 @@
 {
  "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), NOAA/NWS, aviationweather.gov",
  "errors": [],
- "fetched_at": "2026-09-29T02:07:12+00:00",
+ "fetched_at": "2026-09-29T02:08:03+00:00",
  "stations": {
   "atlanta": {
    "days": {
@@ -555,8 +555,8 @@
       "ukmo_seamless": 22.2
      },
      "nws_grid_max": 27.78,
-     "nws_hourly_max": 20,
-     "nws_hourly_rest": 20,
+     "nws_hourly_max": 20.56,
+     "nws_hourly_rest": 20.0,
      "obs_count": 22,
      "obs_last": "2026-09-29T01:52:00+00:00",
      "obs_max_so_far": 26.7,
@@ -825,12 +825,12 @@
       "ukmo_seamless": 27.8
      },
      "nws_grid_max": 29.44,
-     "nws_hourly_max": 29
+     "nws_hourly_max": 28.89
     }
    },
    "icao": "KATL",
    "lat": 33.6367,
-   "local_now": "2026-09-28T22:07-04:00",
+   "local_now": "2026-09-28T22:08-04:00",
    "lon": -84.4281,
    "metar": [
     {
@@ -1904,7 +1904,7 @@
    },
    "icao": "VILK",
    "lat": 26.7606,
-   "local_now": "2026-09-29T07:37+05:30",
+   "local_now": "2026-09-29T07:38+05:30",
    "lon": 80.8893,
    "metar": [
     {
@@ -3094,18 +3094,18 @@
         "label": "24\u00b0C or below",
         "lastTrade": 0.06,
         "threshold": "0",
-        "volume": 310.25982600000003,
+        "volume": 310.259826,
         "yes": 0.055
        },
        {
         "bestAsk": 0.12,
-        "bestBid": 0.09,
+        "bestBid": 0.1,
         "closed": false,
         "label": "25\u00b0C",
         "lastTrade": 0.13,
         "threshold": "1",
         "volume": 1271.000744,
-        "yes": 0.105
+        "yes": 0.11
        },
        {
         "bestAsk": 0.35,
@@ -3124,7 +3124,7 @@
         "label": "27\u00b0C",
         "lastTrade": 0.29,
         "threshold": "3",
-        "volume": 826.6505730000001,
+        "volume": 834.6505730000001,
         "yes": 0.285
        },
        {
@@ -3200,7 +3200,7 @@
       ],
       "closed": false,
       "endDate": "2026-09-30T12:00:00Z",
-      "liquidity": 40928.40201,
+      "liquidity": 38658.74759,
       "slug": "highest-temperature-in-madrid-on-september-30-2026",
       "title": "Highest temperature in Madrid on September 30?",
       "volume": 8762.452269
@@ -3220,7 +3220,7 @@
    },
    "icao": "LEMD",
    "lat": 40.4719,
-   "local_now": "2026-09-29T04:07+02:00",
+   "local_now": "2026-09-29T04:08+02:00",
    "lon": -3.5626,
    "metar": [
     {
@@ -4542,7 +4542,7 @@
    },
    "icao": "MMMX",
    "lat": 19.4363,
-   "local_now": "2026-09-28T20:07-06:00",
+   "local_now": "2026-09-28T20:08-06:00",
    "lon": -99.0721,
    "metar": [
     {
