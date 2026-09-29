@@ -7,8 +7,8 @@ Runs on GitHub Actions (which has open internet). Writes:
 
 Standard library only. All temperatures stored in degrees Celsius.
 
-Weather data by Open-Meteo.com (CC BY 4.0), NOAA/NWS, aviationweather.gov.
-Market data from Polymarket's public Gamma API.
+Weather data by Open-Meteo.com (CC BY 4.0), NOAA/NWS, aviationweather.gov
+(METARs and TAFs). Market data from Polymarket's public Gamma API.
 """
 import json, os, re, statistics, sys, time, urllib.parse, urllib.request
 from datetime import datetime, timedelta, timezone
@@ -143,6 +143,80 @@ def fetch_nws_katl():
     return out
 
 
+def fetch_nws_hourly_katl():
+    """NWS hourly forecast for the KATL grid point, in deg C: {local_iso_hour: temp}."""
+    st = next(s for s in STATIONS if s["key"] == "atlanta")
+    pts = get(f"https://api.weather.gov/points/{st['lat']},{st['lon']}")
+    url = pts["properties"]["forecastHourly"]
+    hourly = get(url + ("&" if "?" in url else "?") + "units=si")
+    tz = ZoneInfo(st["tz"])
+    out = {}
+    for p in hourly["properties"]["periods"]:
+        t = p.get("temperature")
+        if isinstance(t, dict):  # newer schema: {"unitCode": ..., "value": ...}
+            unit, t = t.get("unitCode", ""), t.get("value")
+        else:
+            unit = p.get("temperatureUnit", "C")
+        if t is None:
+            continue
+        if unit.endswith("degF") or unit == "F":
+            t = (t - 32) * 5 / 9
+        start = datetime.fromisoformat(p["startTime"]).astimezone(tz)
+        out[start.strftime("%Y-%m-%dT%H:00")] = round(t, 2)
+    return out
+
+
+TAF_TX = re.compile(r"\bTX(M?)(\d{2})/(\d{2})(\d{2})Z")
+TAF_HEAD = re.compile(r"\b([A-Z]{4})\s+(\d{2})(\d{2})(\d{2})Z")
+
+
+def resolve_ddhh(dd, hh, near):
+    """TAF day-of-month + hour (UTC) -> the datetime closest to `near`."""
+    best = None
+    for dm in (-1, 0, 1):
+        y, m = near.year, near.month + dm
+        if m == 0:
+            y, m = y - 1, 12
+        elif m == 13:
+            y, m = y + 1, 1
+        try:
+            cand = datetime(y, m, dd, tzinfo=timezone.utc) + timedelta(hours=hh)  # hh may be 24
+        except ValueError:
+            continue
+        if best is None or abs(cand - near) < abs(best - near):
+            best = cand
+    return best
+
+
+def parse_taf_tx(raw, now):
+    """Forecast maximum temperatures (TX groups) in a raw TAF: [{"t": utc iso, "value": deg C}]."""
+    head = TAF_HEAD.search(raw)
+    issued = resolve_ddhh(int(head.group(2)), int(head.group(3)), now) if head else now
+    out = []
+    for neg, temp, dd, hh in TAF_TX.findall(raw):
+        t = resolve_ddhh(int(dd), int(hh), issued)
+        if t is not None:
+            out.append({"t": t.isoformat(), "value": -int(temp) if neg else int(temp)})
+    return out
+
+
+def fetch_taf(now):
+    """Latest TAF per station: {icao: {"raw", "issued", "tx": [...]}}. Not every office issues TX groups."""
+    ids = ",".join(s["icao"] for s in STATIONS)
+    rows = get(f"https://aviationweather.gov/api/data/taf?ids={ids}&format=json")
+    out = {}
+    for r in rows:
+        icao, raw = r.get("icaoId"), r.get("rawTAF")
+        if not icao or not raw:
+            continue
+        issued = r.get("issueTime")
+        prev = out.get(icao)
+        if prev and str(prev.get("issued") or "") >= str(issued or ""):
+            continue  # keep the newest TAF per station
+        out[icao] = {"raw": raw, "issued": issued, "tx": parse_taf_tx(raw, now)}
+    return out
+
+
 def fetch_metar():
     ids = ",".join(s["icao"] for s in STATIONS)
     rows = get(f"https://aviationweather.gov/api/data/metar?ids={ids}&format=json&hours=40")
@@ -208,6 +282,16 @@ def main():
     except Exception as e:
         nws = {}
         ERRORS.append(f"nws: {e}")
+    try:
+        nws_hourly = fetch_nws_hourly_katl()
+    except Exception as e:
+        nws_hourly = {}
+        ERRORS.append(f"nws hourly: {e}")
+    try:
+        tafs = fetch_taf(now)
+    except Exception as e:
+        tafs = {}
+        ERRORS.append(f"taf: {e}")
 
     for st in STATIONS:
         tz = ZoneInfo(st["tz"])
@@ -238,6 +322,20 @@ def main():
                 day["ensemble_rest"] = {m: sorted(v[REST_KEY]) for m, v in ens.items() if REST_KEY in v}
             if st["key"] == "atlanta" and d in nws:
                 day["nws_grid_max"] = nws[d]
+            if st["key"] == "atlanta":
+                hrs = {h: v for h, v in nws_hourly.items() if h[:10] == d}
+                if hrs:
+                    day["nws_hourly_max"] = max(hrs.values())
+                    rest = [v for h, v in hrs.items() if h >= NOW_LOCAL[st["key"]]]
+                    if d == local_now.date().isoformat() and rest:
+                        day["nws_hourly_rest"] = max(rest)
+            taf = tafs.get(st["icao"])
+            if taf:
+                tx = [x for x in taf["tx"]
+                      if datetime.fromisoformat(x["t"]).astimezone(tz).date().isoformat() == d]
+                if tx:
+                    day["taf_max"] = max(x["value"] for x in tx)
+                    day["taf_issued"] = taf["issued"]
             day_obs = [o for o in obs if datetime.fromisoformat(o["t"]).astimezone(tz).date().isoformat() == d]
             if day_obs:
                 day["obs_max_so_far"] = max(o["temp"] for o in day_obs)
@@ -251,6 +349,8 @@ def main():
             days[d] = day
         rec["days"] = days
         rec["metar"] = obs
+        if st["icao"] in tafs:
+            rec["taf"] = {k: tafs[st["icao"]][k] for k in ("raw", "issued")}
         out["stations"][st["key"]] = rec
 
     os.makedirs("data/history", exist_ok=True)
@@ -270,6 +370,7 @@ def main():
                             "p10": round(q[0], 2), "p50": round(statistics.median(vals), 2), "p90": round(q[-1], 2)}
             mk = day.get("market") or {}
             cd[d] = {"models": day.get("models"), "ens": e, "nws": day.get("nws_grid_max"),
+                     "nws_h": day.get("nws_hourly_max"), "taf": day.get("taf_max"),
                      "obs": day.get("obs_max_so_far"),
                      "mkt": {b["label"]: b["yes"] for b in mk.get("buckets", [])} if mk else None}
         compact["s"][k] = cd

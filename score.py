@@ -21,6 +21,12 @@ Method
   4. For today, the high can't finish below what the station already reported:
      truncate the distribution at the observed max so far and renormalise.
   5. Integrate over each market bucket (whole-degree settlement: [lo-0.5, hi+0.5]).
+
+Station forecasts made for the airport itself (a TAF's TX maximum; on market day in
+Atlanta, the NWS hourly forecast for the rest of the day) join as extra members with
+no bias shift (they already target the station) and the weight of the best
+calibrated model there. They have no track record yet: the weight is a starting
+assumption to revisit once the tracker has scored days.
 """
 import argparse, glob, json, math, os, re, statistics
 from datetime import datetime, timezone
@@ -191,6 +197,16 @@ def main():
                 weights.append(wm)
             if not per_model:
                 members = [x - bias_c for x in members]
+            # station forecasts: no bias shift, weight of the best calibrated model here
+            best_w = max((1.0 / max(pm["sd"], 0.5) ** 2 for pm in per_model.values()), default=1.0)
+            station_fc = {}
+            if day.get("taf_max") is not None:
+                station_fc["taf_max"] = day["taf_max"]
+            if use_rest and day.get("nws_hourly_rest") is not None:
+                station_fc["nws_hourly_rest"] = day["nws_hourly_rest"]
+            for v in station_fc.values():
+                members.append(v)
+                weights.append(best_w)
             full_det = list(day.get("models", {}).values())
             raw_c = statistics.median(full_det) if full_det else obs
             if raw_c is None:
@@ -231,6 +247,10 @@ def main():
                 sources["nws_grid"] = round(to_u(day["nws_grid_max"]), 1)
             for m, vals in day.get("ensemble", {}).items():
                 sources[f"{m} ens mean ({len(vals)})"] = round(to_u(statistics.fmean(vals)), 1)
+            if day.get("taf_max") is not None:
+                sources["airport forecast (TAF) max"] = round(to_u(day["taf_max"]), 1)
+            if day.get("nws_hourly_max") is not None:
+                sources["nws hourly max"] = round(to_u(day["nws_hourly_max"]), 1)
             if use_rest and mem_u:
                 sources["rest of today (median)"] = round(statistics.median(mem_u), 1)
             if obs is not None:
@@ -239,6 +259,7 @@ def main():
             note = (f"GitHub data fetched {latest['fetched_at']} ({age_h:.1f} h before run). "
                     f"{len(det)} models, {sum(len(v) for v in day.get('ensemble', {}).values())} ensemble members. "
                     + cal_note
+                    + (f" Station forecasts added: {', '.join(station_fc)}." if station_fc else "")
                     + (f" Same-day: high so far {obs}°C, combined with forecast for the hours after {day.get('rest_of_day_from')}." if use_rest else ""))
             doc = {
                 "city": city, "marketDate": d, "runAt": run_at.strftime("%Y-%m-%dT%H:%M:%SZ"),
