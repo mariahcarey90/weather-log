@@ -358,6 +358,22 @@ def main():
                     ERRORS.append(f"{st['key']} market {d}: {e}")
             days[d] = day
         rec["days"] = days
+        # settled (or settling) markets for the last two local days, for scoring outcomes
+        resolved = {}
+        for back in (2, 1):
+            d = (local_now.date() - timedelta(days=back)).isoformat()
+            try:
+                m = fetch_market(st, d)
+            except Exception as e:
+                ERRORS.append(f"{st['key']} resolved market {d}: {e}")
+                continue
+            if m:
+                win = [b["label"] for b in m["buckets"] if b.get("yes") is not None and b["yes"] >= 0.99]
+                m["winner"] = win[0] if len(win) == 1 and all(
+                    (b.get("yes") or 0) <= 0.01 for b in m["buckets"] if b["label"] != win[0]) else None
+                m["settled"] = bool(m["buckets"]) and all(b.get("closed") for b in m["buckets"])
+                resolved[d] = m
+        rec["resolved"] = resolved
         rec["metar"] = obs
         if st["icao"] in tafs:
             rec["taf"] = {k: tafs[st["icao"]][k] for k in ("raw", "issued")}

@@ -33,6 +33,12 @@ degrees apart at an airport (Mexico City's GEFS runs ~3.8 C below GFS). Each
 ensemble is re-centred on its parent model for that day, so it adds spread,
 not a location error, before the parent's bias correction is applied.
 
+Learning from results: every logged run records each source's forecast. Once
+days are scored, each source's bias and typical miss per city (one run per day,
+12-36 h ahead) are blended with its prior: the 60-day backfill for the models,
+and "no bias, as accurate as the best model" for the airport TAF and NWS
+forecasts, worth PRIOR_N_STATION days. Weights follow the blended accuracy.
+
 Same-day nowcast: from 10:00 local, each model's error over the last 3 hours
 of airport readings (minus its usual bias) shifts its forecast for the rest of
 the day by NOWCAST_ALPHA of that error; ensembles follow their parent model.
@@ -45,6 +51,9 @@ DEFAULT_KERNEL_C = {"same": 0.7, "day": 0.8, "far": 1.0}
 MIN_KERNEL_C = 0.5
 MIN_RESOLVED = 5
 MIN_LIVE = 30
+PRIOR_N_STATION = 8    # how many scored days the TAF/NWS starting assumption is worth
+STATION_SOURCES = {"taf_max": "airport forecast (TAF) max", "nws_grid": "nws_grid",
+                   "nws_hourly_rest": "nws hourly max"}
 NOWCAST_ALPHA = 0.5    # share of this morning's forecast error assumed to persist to the peak
 NOWCAST_FROM_HOUR = 10  # earlier readings (fog, inversions) say little about the afternoon
 NOWCAST_WINDOW_H = 3  # live-log calibration overrides the backfill only once it has this many runs
@@ -121,6 +130,43 @@ def calibration(snaps, outs):
     return cal
 
 
+def source_stats(snaps, outs):
+    """Per (city, source key): errors (forecast - observed, deg C) from scored days,
+    using one run per day: the 12-36 h run closest to 24 h ahead."""
+    best = {}
+    for s in snaps:
+        o = outs.get((s["city"], s["marketDate"]))
+        lh = s.get("leadHours")
+        if not o or o.get("observedHigh") is None or lh is None or not (12 <= lh <= 36):
+            continue
+        k = (s["city"], s["marketDate"])
+        if k not in best or abs(lh - 24) < abs(best[k]["leadHours"] - 24):
+            best[k] = s
+    names = {v: k for k, v in STATION_SOURCES.items()}
+    errs = {}
+    for (city, _), s in best.items():
+        f = s.get("unit") == "°F"
+        obs = outs[(city, s["marketDate"])]["observedHigh"]
+        for name, v in (s.get("sources") or {}).items():
+            if not isinstance(v, (int, float)) or "ens mean" in name or name.startswith(("observed", "rest of", "nowcast")):
+                continue
+            e = (v - obs) * (5 / 9 if f else 1)
+            errs.setdefault((city, names.get(name, name)), []).append(e)
+    return errs
+
+
+def blend_stats(prior_bias, prior_sd, prior_n, errs):
+    """Shrink live errors toward the prior: returns (bias, sd, live_n)."""
+    if not errs:
+        return prior_bias, prior_sd, 0
+    n = len(errs)
+    b = statistics.fmean(errs)
+    live_var = statistics.fmean([(e - b) ** 2 for e in errs]) if n > 1 else prior_sd ** 2
+    bias = (prior_n * prior_bias + n * b) / (prior_n + n)
+    sd = math.sqrt((prior_n * prior_sd ** 2 + n * live_var) / (prior_n + n))
+    return bias, sd, n
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", default="data/latest.json")
@@ -133,6 +179,8 @@ def main():
     latest = json.load(open(a.data))
     snaps, outs = load_db(a.db)
     cal = calibration(snaps, outs)
+    src_errs = source_stats(snaps, outs)
+    learned = {}  # (city, source) -> (bias, sd, live_n), for the report
     prior = {}
     if os.path.exists(a.calib):
         prior = json.load(open(a.calib)).get("cities", {})
@@ -175,12 +223,17 @@ def main():
                 bias_c, kern_c, per_model = 0.0, DEFAULT_KERNEL_C[band], {}
                 cal_note = f"No calibration yet (bias 0, kernel {kern_c}°C)."
 
+            best_sd = min((pm["sd"] for pm in per_model.values()), default=1.0)
+
             def corr(model):
                 """(bias, weight) for a model name, ensembles mapped to their parent model."""
                 parent = ENS_PARENT.get(model, model)
                 pm = per_model.get(parent)
                 if pm:
-                    return pm["bias"], 1.0 / max(pm["sd"], 0.5) ** 2
+                    b, sd, n = blend_stats(pm["bias"], pm["sd"], pm.get("n", 60), src_errs.get((city, parent)))
+                    if n:
+                        learned[(city, parent)] = (b, sd, n)
+                    return b, 1.0 / max(sd, 0.5) ** 2
                 if per_model:  # uncalibrated model: blend bias, low weight
                     return bias_c, 0.5 / max(pc["sd"] if pc else 1.0, 0.5) ** 2
                 return bias_c, 1.0
@@ -224,8 +277,6 @@ def main():
                 weights += [wm / len(vals)] * len(vals)   # each ensemble counts once in total
                 ens_total += 1
             dets = dict(det)
-            if not use_rest and day.get("nws_grid_max") is not None:
-                dets["nws_grid"] = day["nws_grid_max"]
             for m, v in dets.items():
                 if per_model and m in per_model and per_model[m]["mae"] > 1.8:
                     continue  # historically poor at this station
@@ -236,16 +287,21 @@ def main():
                 weights.append(wm)
             if not per_model:
                 members = [x - bias_c for x in members]
-            # station forecasts: no bias shift, weight of the best calibrated model here
-            best_w = max((1.0 / max(pm["sd"], 0.5) ** 2 for pm in per_model.values()), default=1.0)
+            # station forecasts (made for the airport): prior of no bias and the best model's
+            # accuracy, updated from scored days
             station_fc = {}
             if day.get("taf_max") is not None:
                 station_fc["taf_max"] = day["taf_max"]
+            if not use_rest and day.get("nws_grid_max") is not None:
+                station_fc["nws_grid"] = day["nws_grid_max"]
             if use_rest and day.get("nws_hourly_rest") is not None:
                 station_fc["nws_hourly_rest"] = day["nws_hourly_rest"]
-            for v in station_fc.values():
-                members.append(v)
-                weights.append(best_w)
+            for k, v in station_fc.items():
+                b, sd, n = blend_stats(0.0, best_sd, PRIOR_N_STATION, src_errs.get((city, k)))
+                if n:
+                    learned[(city, k)] = (b, sd, n)
+                members.append(v - b)
+                weights.append(1.0 / max(sd, 0.5) ** 2)
             full_det = list(day.get("models", {}).values())
             raw_c = statistics.median(full_det) if full_det else obs
             if raw_c is None:
@@ -327,6 +383,11 @@ def main():
     for e in latest.get("errors", []):
         print("  fetch error:", e[:200])
     print("calibration:", {f"{k[0]}/{k[1]}": {kk: round(vv, 2) for kk, vv in v.items()} for k, v in cal.items()} or "none yet")
+    if learned:
+        print("learned from scored days (bias C, typical miss C, days):",
+              {f"{c}/{k}": (round(b, 2), round(sd, 2), n) for (c, k), (b, sd, n) in sorted(learned.items())})
+    else:
+        print("learned from scored days: none yet")
     print("\n".join(report))
     print(f"wrote {len(docs)} docs to {a.out}")
 
