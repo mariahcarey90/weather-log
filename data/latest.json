@@ -1,7 +1,7 @@
 {
  "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), NOAA/NWS, aviationweather.gov",
  "errors": [],
- "fetched_at": "2026-09-29T01:36:16+00:00",
+ "fetched_at": "2026-09-29T01:59:06+00:00",
  "stations": {
   "atlanta": {
    "days": {
@@ -147,7 +147,7 @@
       "meteofrance_seamless": 26.9,
       "ukmo_seamless": 26.0
      },
-     "obs_count": 19,
+     "obs_count": 18,
      "obs_last": "2026-09-28T03:52:00+00:00",
      "obs_max_so_far": 27.2
     },
@@ -441,7 +441,7 @@
         "label": "76-77\u00b0F",
         "lastTrade": 0.003,
         "threshold": "2",
-        "volume": 2446.6439980000005,
+        "volume": 2446.643998,
         "yes": 0.0005
        },
        {
@@ -451,7 +451,7 @@
         "label": "78-79\u00b0F",
         "lastTrade": 0.001,
         "threshold": "3",
-        "volume": 5691.4624890000005,
+        "volume": 5691.462489,
         "yes": 0.0005
        },
        {
@@ -461,7 +461,7 @@
         "label": "80-81\u00b0F",
         "lastTrade": 0.999,
         "threshold": "4",
-        "volume": 16493.627429,
+        "volume": 16498.617429,
         "yes": 0.9995
        },
        {
@@ -471,7 +471,7 @@
         "label": "82-83\u00b0F",
         "lastTrade": 0.018,
         "threshold": "5",
-        "volume": 10516.541528999998,
+        "volume": 10518.401528999999,
         "yes": 0.0005
        },
        {
@@ -481,7 +481,7 @@
         "label": "84-85\u00b0F",
         "lastTrade": 0.002,
         "threshold": "6",
-        "volume": 4345.263612000001,
+        "volume": 4345.263612,
         "yes": 0.0005
        },
        {
@@ -491,7 +491,7 @@
         "label": "86-87\u00b0F",
         "lastTrade": 0.005,
         "threshold": "7",
-        "volume": 1380.3937329999999,
+        "volume": 1380.3937330000003,
         "yes": 0.0005
        },
        {
@@ -527,10 +527,10 @@
       ],
       "closed": false,
       "endDate": "2026-09-28T12:00:00Z",
-      "liquidity": 105707.3037,
+      "liquidity": 100964.83718,
       "slug": "highest-temperature-in-atlanta-on-september-28-2026",
       "title": "Highest temperature in Atlanta on September 28?",
-      "volume": 43508.275126
+      "volume": 43515.125126
      },
      "models": {
       "cma_grapes_global": 24.4,
@@ -548,15 +548,15 @@
       "ecmwf_aifs025_single": 20.7,
       "ecmwf_ifs025": 19.8,
       "gem_seamless": 18.7,
-      "gfs_seamless": 20.7,
+      "gfs_seamless": 19.5,
       "icon_seamless": 20.5,
       "jma_seamless": 19.0,
       "meteofrance_seamless": 21.1,
       "ukmo_seamless": 22.6
      },
      "nws_grid_max": 27.78,
-     "obs_count": 21,
-     "obs_last": "2026-09-29T00:52:00+00:00",
+     "obs_count": 22,
+     "obs_last": "2026-09-29T01:52:00+00:00",
      "obs_max_so_far": 26.7,
      "rest_of_day_from": "2026-09-28T21:00"
     },
@@ -700,7 +700,7 @@
         "label": "73\u00b0F or below",
         "lastTrade": 0.002,
         "threshold": "0",
-        "volume": 1436.9640000000002,
+        "volume": 1436.964,
         "yes": 0.0015
        },
        {
@@ -730,18 +730,18 @@
         "label": "78-79\u00b0F",
         "lastTrade": 0.002,
         "threshold": "3",
-        "volume": 148.199,
+        "volume": 148.19899999999998,
         "yes": 0.0005
        },
        {
-        "bestAsk": 0.057,
+        "bestAsk": 0.06,
         "bestBid": 0.03,
         "closed": false,
         "label": "80-81\u00b0F",
         "lastTrade": 0.057,
         "threshold": "4",
-        "volume": 2407.865322,
-        "yes": 0.0435
+        "volume": 2487.200068,
+        "yes": 0.045
        },
        {
         "bestAsk": 0.33,
@@ -750,7 +750,7 @@
         "label": "82-83\u00b0F",
         "lastTrade": 0.35,
         "threshold": "5",
-        "volume": 5454.683281,
+        "volume": 5466.933281,
         "yes": 0.325
        },
        {
@@ -760,7 +760,7 @@
         "label": "84-85\u00b0F",
         "lastTrade": 0.55,
         "threshold": "6",
-        "volume": 4913.4893520000005,
+        "volume": 4925.750222000001,
         "yes": 0.545
        },
        {
@@ -770,7 +770,7 @@
         "label": "86-87\u00b0F",
         "lastTrade": 0.14,
         "threshold": "7",
-        "volume": 4991.921456999999,
+        "volume": 5004.179883999999,
         "yes": 0.115
        },
        {
@@ -780,7 +780,7 @@
         "label": "88-89\u00b0F",
         "lastTrade": 0.004,
         "threshold": "8",
-        "volume": 1248.9275309999998,
+        "volume": 1261.1775309999998,
         "yes": 0.0035
        },
        {
@@ -806,17 +806,17 @@
       ],
       "closed": false,
       "endDate": "2026-09-29T12:00:00Z",
-      "liquidity": 41559.35359,
+      "liquidity": 37537.9876,
       "slug": "highest-temperature-in-atlanta-on-september-29-2026",
       "title": "Highest temperature in Atlanta on September 29?",
-      "volume": 21934.759616
+      "volume": 22063.113659
      },
      "models": {
       "cma_grapes_global": 26.0,
       "ecmwf_aifs025_single": 27.7,
       "ecmwf_ifs025": 28.5,
       "gem_seamless": 27.7,
-      "gfs_seamless": 29.9,
+      "gfs_seamless": 29.6,
       "icon_seamless": 28.2,
       "jma_seamless": 28.3,
       "meteofrance_seamless": 29.0,
@@ -827,9 +827,15 @@
    },
    "icao": "KATL",
    "lat": 33.6367,
-   "local_now": "2026-09-28T21:36-04:00",
+   "local_now": "2026-09-28T21:59-04:00",
    "lon": -84.4281,
    "metar": [
+    {
+     "maxT": null,
+     "raw": "METAR KATL 290152Z 31004KT 10SM FEW200 21/09 A2999 RMK AO2 SLP148 T02110094 $",
+     "t": "2026-09-29T01:52:00+00:00",
+     "temp": 21.1
+    },
     {
      "maxT": null,
      "raw": "METAR KATL 290052Z 31006KT 10SM FEW200 22/08 A2997 RMK AO2 SLP143 T02220083 $",
@@ -1063,12 +1069,6 @@
      "raw": "METAR KATL 271052Z 34004KT 10SM FEW200 SCT250 13/09 A2995 RMK AO2 SLP134 T01330089 $",
      "t": "2026-09-27T10:52:00+00:00",
      "temp": 13.3
-    },
-    {
-     "maxT": null,
-     "raw": "METAR KATL 270952Z 32004KT 10SM SCT250 14/09 A2994 RMK AO2 SLP131 T01390089 $",
-     "t": "2026-09-27T09:52:00+00:00",
-     "temp": 13.9
     }
    ],
    "name": "Atlanta",
@@ -1493,7 +1493,7 @@
         "label": "25\u00b0C or below",
         "lastTrade": 0.001,
         "threshold": "0",
-        "volume": 145.95999999999998,
+        "volume": 145.96,
         "yes": 0.0005
        },
        {
@@ -1523,7 +1523,7 @@
         "label": "28\u00b0C",
         "lastTrade": 0.002,
         "threshold": "3",
-        "volume": 166.26829999999998,
+        "volume": 166.2683,
         "yes": 0.0025
        },
        {
@@ -1538,33 +1538,33 @@
        },
        {
         "bestAsk": 0.028,
-        "bestBid": 0.02,
+        "bestBid": 0.021,
         "closed": false,
         "label": "30\u00b0C",
-        "lastTrade": 0.03,
+        "lastTrade": 0.028,
         "threshold": "5",
-        "volume": 597.1420109999999,
-        "yes": 0.024
+        "volume": 621.902011,
+        "yes": 0.0245
        },
        {
-        "bestAsk": 0.25,
-        "bestBid": 0.21,
+        "bestAsk": 0.26,
+        "bestBid": 0.22,
         "closed": false,
         "label": "31\u00b0C",
-        "lastTrade": 0.24,
+        "lastTrade": 0.25,
         "threshold": "6",
-        "volume": 2685.988666,
-        "yes": 0.23
+        "volume": 2706.408666,
+        "yes": 0.24
        },
        {
         "bestAsk": 0.7,
-        "bestBid": 0.65,
+        "bestBid": 0.67,
         "closed": false,
         "label": "32\u00b0C",
         "lastTrade": 0.7,
         "threshold": "7",
-        "volume": 3979.509558,
-        "yes": 0.675
+        "volume": 3989.5952730000004,
+        "yes": 0.685
        },
        {
         "bestAsk": 0.1,
@@ -1573,18 +1573,18 @@
         "label": "33\u00b0C",
         "lastTrade": 0.09,
         "threshold": "8",
-        "volume": 583.951859,
+        "volume": 583.9518589999999,
         "yes": 0.08
        },
        {
         "bestAsk": 0.004,
-        "bestBid": 0.002,
+        "bestBid": 0.001,
         "closed": false,
         "label": "34\u00b0C",
         "lastTrade": 0.004,
         "threshold": "9",
-        "volume": 1149.0084470000002,
-        "yes": 0.003
+        "volume": 1149.008447,
+        "yes": 0.0025
        },
        {
         "bestAsk": 0.002,
@@ -1599,10 +1599,10 @@
       ],
       "closed": false,
       "endDate": "2026-09-29T12:00:00Z",
-      "liquidity": 17190.92131,
+      "liquidity": 20902.61327,
       "slug": "highest-temperature-in-lucknow-on-september-29-2026",
       "title": "Highest temperature in Lucknow on September 29?",
-      "volume": 10996.048153
+      "volume": 11051.313868000001
      },
      "models": {
       "cma_grapes_global": 33.2,
@@ -1765,24 +1765,24 @@
      "market": {
       "buckets": [
        {
-        "bestAsk": 0.005,
+        "bestAsk": 0.004,
         "bestBid": 0.001,
         "closed": false,
         "label": "26\u00b0C or below",
         "lastTrade": 0.001,
         "threshold": "0",
-        "volume": 139.52779999999998,
-        "yes": 0.003
+        "volume": 139.5278,
+        "yes": 0.0025
        },
        {
-        "bestAsk": 0.003,
+        "bestAsk": 0.002,
         "bestBid": 0.001,
         "closed": false,
         "label": "27\u00b0C",
         "lastTrade": 0.001,
         "threshold": "1",
-        "volume": 20.331,
-        "yes": 0.002
+        "volume": 20.331000000000003,
+        "yes": 0.0015
        },
        {
         "bestAsk": 0.01,
@@ -1795,54 +1795,54 @@
         "yes": 0.006
        },
        {
-        "bestAsk": 0.02,
+        "bestAsk": 0.018,
         "bestBid": 0.002,
         "closed": false,
         "label": "29\u00b0C",
         "lastTrade": 0.002,
         "threshold": "3",
         "volume": 36.333,
-        "yes": 0.011
+        "yes": 0.01
        },
        {
-        "bestAsk": 0.04,
-        "bestBid": 0.014,
+        "bestAsk": 0.039,
+        "bestBid": 0.015,
         "closed": false,
         "label": "30\u00b0C",
         "lastTrade": null,
         "threshold": "4",
-        "volume": 79.3204,
+        "volume": 79.32039999999999,
         "yes": 0.027
        },
        {
-        "bestAsk": 0.23,
-        "bestBid": 0.18,
+        "bestAsk": 0.22,
+        "bestBid": 0.17,
         "closed": false,
         "label": "31\u00b0C",
         "lastTrade": 0.23,
         "threshold": "5",
         "volume": 411.761567,
-        "yes": 0.205
+        "yes": 0.195
        },
        {
-        "bestAsk": 0.59,
-        "bestBid": 0.57,
+        "bestAsk": 0.56,
+        "bestBid": 0.53,
         "closed": false,
         "label": "32\u00b0C",
         "lastTrade": 0.58,
         "threshold": "6",
         "volume": 372.594742,
-        "yes": 0.58
+        "yes": 0.545
        },
        {
-        "bestAsk": 0.22,
-        "bestBid": 0.18,
+        "bestAsk": 0.25,
+        "bestBid": 0.2,
         "closed": false,
         "label": "33\u00b0C",
-        "lastTrade": 0.22,
+        "lastTrade": 0.21,
         "threshold": "7",
-        "volume": 385.23091,
-        "yes": 0.2
+        "volume": 385.23091000000005,
+        "yes": 0.225
        },
        {
         "bestAsk": 0.04,
@@ -1855,14 +1855,14 @@
         "yes": 0.03
        },
        {
-        "bestAsk": 0.017,
-        "bestBid": 0.002,
+        "bestAsk": 0.004,
+        "bestBid": 0.003,
         "closed": false,
         "label": "35\u00b0C",
         "lastTrade": 0.001,
         "threshold": "9",
-        "volume": 54.614200000000004,
-        "yes": 0.0095
+        "volume": 54.6142,
+        "yes": 0.0035
        },
        {
         "bestAsk": 0.009,
@@ -1877,10 +1877,10 @@
       ],
       "closed": false,
       "endDate": "2026-09-30T12:00:00Z",
-      "liquidity": 29580.22887,
+      "liquidity": 23196.40403,
       "slug": "highest-temperature-in-lucknow-on-september-30-2026",
       "title": "Highest temperature in Lucknow on September 30?",
-      "volume": 1772.864369
+      "volume": 1772.8643690000001
      },
      "models": {
       "cma_grapes_global": 33.7,
@@ -1897,12 +1897,12 @@
    },
    "icao": "VILK",
    "lat": 26.7606,
-   "local_now": "2026-09-29T07:06+05:30",
+   "local_now": "2026-09-29T07:29+05:30",
    "lon": 80.8893,
    "metar": [
     {
      "maxT": null,
-     "raw": "METAR VILK 290130Z VRB02KT 1500 BR NSC 24/24 Q1010 NOSIG",
+     "raw": "METAR VILK 290130Z VRB02KT 1500 R27/P2000 BR NSC 24/24 Q1010 NOSIG",
      "t": "2026-09-29T01:30:00+00:00",
      "temp": 24
     },
@@ -2833,7 +2833,7 @@
         "label": "23\u00b0C",
         "lastTrade": null,
         "threshold": "3",
-        "volume": 286.2406,
+        "volume": 286.24060000000003,
         "yes": 0.001
        },
        {
@@ -2853,18 +2853,18 @@
         "label": "25\u00b0C",
         "lastTrade": 0.021,
         "threshold": "5",
-        "volume": 1741.0401390000002,
+        "volume": 1741.040139,
         "yes": 0.015
        },
        {
         "bestAsk": 0.33,
-        "bestBid": 0.3,
+        "bestBid": 0.31,
         "closed": false,
         "label": "26\u00b0C",
         "lastTrade": 0.33,
         "threshold": "6",
-        "volume": 4912.6316019999995,
-        "yes": 0.315
+        "volume": 4922.631601999999,
+        "yes": 0.32
        },
        {
         "bestAsk": 0.63,
@@ -2873,7 +2873,7 @@
         "label": "27\u00b0C",
         "lastTrade": 0.68,
         "threshold": "7",
-        "volume": 6485.370704999999,
+        "volume": 6490.370705,
         "yes": 0.61
        },
        {
@@ -2883,7 +2883,7 @@
         "label": "28\u00b0C",
         "lastTrade": 0.08,
         "threshold": "8",
-        "volume": 3773.0812750000005,
+        "volume": 3773.081275,
         "yes": 0.065
        },
        {
@@ -2893,7 +2893,7 @@
         "label": "29\u00b0C",
         "lastTrade": 0.004,
         "threshold": "9",
-        "volume": 1229.716014,
+        "volume": 1229.7160139999999,
         "yes": 0.005
        },
        {
@@ -2909,10 +2909,10 @@
       ],
       "closed": false,
       "endDate": "2026-09-29T12:00:00Z",
-      "liquidity": 24496.46505,
+      "liquidity": 25331.4791,
       "slug": "highest-temperature-in-madrid-on-september-29-2026",
       "title": "Highest temperature in Madrid on September 29?",
-      "volume": 20546.442034
+      "volume": 20561.442034
      },
      "models": {
       "cma_grapes_global": 24.6,
@@ -3081,48 +3081,48 @@
         "label": "24\u00b0C or below",
         "lastTrade": 0.06,
         "threshold": "0",
-        "volume": 310.259826,
+        "volume": 310.25982600000003,
         "yes": 0.06
        },
        {
-        "bestAsk": 0.14,
-        "bestBid": 0.12,
+        "bestAsk": 0.13,
+        "bestBid": 0.1,
         "closed": false,
         "label": "25\u00b0C",
         "lastTrade": 0.13,
         "threshold": "1",
         "volume": 1271.000744,
-        "yes": 0.13
+        "yes": 0.115
        },
        {
-        "bestAsk": 0.29,
-        "bestBid": 0.28,
+        "bestAsk": 0.35,
+        "bestBid": 0.34,
         "closed": false,
         "label": "26\u00b0C",
-        "lastTrade": 0.24,
+        "lastTrade": 0.29,
         "threshold": "2",
-        "volume": 3702.376588,
-        "yes": 0.285
+        "volume": 4107.796588,
+        "yes": 0.345
        },
        {
         "bestAsk": 0.29,
         "bestBid": 0.28,
         "closed": false,
         "label": "27\u00b0C",
-        "lastTrade": 0.28,
+        "lastTrade": 0.29,
         "threshold": "3",
-        "volume": 826.650573,
+        "volume": 826.6505730000001,
         "yes": 0.285
        },
        {
-        "bestAsk": 0.23,
-        "bestBid": 0.2,
+        "bestAsk": 0.22,
+        "bestBid": 0.19,
         "closed": false,
         "label": "28\u00b0C",
         "lastTrade": 0.19,
         "threshold": "4",
-        "volume": 1286.2273129999999,
-        "yes": 0.215
+        "volume": 1311.227313,
+        "yes": 0.205
        },
        {
         "bestAsk": 0.01,
@@ -3187,10 +3187,10 @@
       ],
       "closed": false,
       "endDate": "2026-09-30T12:00:00Z",
-      "liquidity": 34125.14997,
+      "liquidity": 37123.74086,
       "slug": "highest-temperature-in-madrid-on-september-30-2026",
       "title": "Highest temperature in Madrid on September 30?",
-      "volume": 8332.032269
+      "volume": 8762.452269
      },
      "models": {
       "cma_grapes_global": 24.1,
@@ -3207,7 +3207,7 @@
    },
    "icao": "LEMD",
    "lat": 40.4719,
-   "local_now": "2026-09-29T03:36+02:00",
+   "local_now": "2026-09-29T03:59+02:00",
    "lon": -3.5626,
    "metar": [
     {
@@ -3845,7 +3845,7 @@
       "meteofrance_seamless": 23.7,
       "ukmo_seamless": 27.2
      },
-     "obs_count": 25,
+     "obs_count": 24,
      "obs_last": "2026-09-28T05:53:00+00:00",
      "obs_max_so_far": 26
     },
@@ -4199,7 +4199,7 @@
         "label": "25\u00b0C",
         "lastTrade": 0.001,
         "threshold": "8",
-        "volume": 5764.28556,
+        "volume": 5764.285559999999,
         "yes": 0.0005
        },
        {
@@ -4209,7 +4209,7 @@
         "label": "26\u00b0C",
         "lastTrade": 0.999,
         "threshold": "9",
-        "volume": 4828.731719,
+        "volume": 4828.731718999999,
         "yes": 0.9995
        },
        {
@@ -4225,7 +4225,7 @@
       ],
       "closed": false,
       "endDate": "2026-09-28T12:00:00Z",
-      "liquidity": 93596.60277,
+      "liquidity": 93632.28486,
       "slug": "highest-temperature-in-mexico-city-on-september-28-2026",
       "title": "Highest temperature in Mexico City on September 28?",
       "volume": 18512.961467999998
@@ -4397,7 +4397,7 @@
         "label": "17\u00b0C or below",
         "lastTrade": 0.001,
         "threshold": "0",
-        "volume": 174.9298,
+        "volume": 174.92980000000003,
         "yes": 0.001
        },
        {
@@ -4437,7 +4437,7 @@
         "label": "21\u00b0C",
         "lastTrade": 0.001,
         "threshold": "4",
-        "volume": 148.5478,
+        "volume": 148.54780000000002,
         "yes": 0.0005
        },
        {
@@ -4447,7 +4447,7 @@
         "label": "22\u00b0C",
         "lastTrade": 0.005,
         "threshold": "5",
-        "volume": 99.99000000000001,
+        "volume": 99.99,
         "yes": 0.0005
        },
        {
@@ -4462,13 +4462,13 @@
        },
        {
         "bestAsk": 0.14,
-        "bestBid": 0.12,
+        "bestBid": 0.13,
         "closed": false,
         "label": "24\u00b0C",
         "lastTrade": 0.13,
         "threshold": "7",
         "volume": 1105.1841120000001,
-        "yes": 0.13
+        "yes": 0.135
        },
        {
         "bestAsk": 0.39,
@@ -4477,18 +4477,18 @@
         "label": "25\u00b0C",
         "lastTrade": 0.39,
         "threshold": "8",
-        "volume": 1649.879708,
+        "volume": 1649.8797079999997,
         "yes": 0.385
        },
        {
-        "bestAsk": 0.4,
-        "bestBid": 0.38,
+        "bestAsk": 0.39,
+        "bestBid": 0.37,
         "closed": false,
         "label": "26\u00b0C",
         "lastTrade": 0.44,
         "threshold": "9",
         "volume": 1159.218871,
-        "yes": 0.39
+        "yes": 0.38
        },
        {
         "bestAsk": 0.13,
@@ -4497,16 +4497,16 @@
         "label": "27\u00b0C or higher",
         "lastTrade": 0.11,
         "threshold": "10",
-        "volume": 460.437953,
+        "volume": 460.43795299999994,
         "yes": 0.105
        }
       ],
       "closed": false,
       "endDate": "2026-09-29T12:00:00Z",
-      "liquidity": 45751.74602,
+      "liquidity": 31181.79072,
       "slug": "highest-temperature-in-mexico-city-on-september-29-2026",
       "title": "Highest temperature in Mexico City on September 29?",
-      "volume": 5251.1555100000005
+      "volume": 5251.15551
      },
      "models": {
       "cma_grapes_global": 21.7,
@@ -4523,7 +4523,7 @@
    },
    "icao": "MMMX",
    "lat": 19.4363,
-   "local_now": "2026-09-28T19:36-06:00",
+   "local_now": "2026-09-28T19:59-06:00",
    "lon": -99.0721,
    "metar": [
     {
@@ -4806,12 +4806,6 @@
      "maxT": null,
      "raw": "METAR MMMX 271040Z 07003KT 8SM SCT025 BKN080 15/12 A3030 NOSIG RMK 8/570 CI HZY",
      "t": "2026-09-27T10:40:00+00:00",
-     "temp": 15
-    },
-    {
-     "maxT": null,
-     "raw": "METAR MMMX 270942Z 00000KT 8SM FEW025 BKN080 BKN250 15/11 A3030 NOSIG RMK 8/578 HZY",
-     "t": "2026-09-27T09:42:00+00:00",
      "temp": 15
     }
    ],
