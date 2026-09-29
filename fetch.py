@@ -120,6 +120,51 @@ def parse_hourly(results, now_local=None, keep_today=None):
     return series
 
 
+COND_VARS = ["cloud_cover", "precipitation_probability", "cape", "wind_speed_10m",
+             "wind_direction_10m", "pressure_msl", "visibility", "temperature_2m"]
+
+
+def _circ_diff(a, b):
+    d = abs(a - b) % 360
+    return 360 - d if d > 180 else d
+
+
+def fetch_conditions(st):
+    """Weather regime per local date from Open-Meteo's best-match forecast: daytime
+    (09-18 local) cloud, rain chance, storm energy (CAPE), wind; pressure change over
+    the day; morning (06-10) visibility for fog; change in the day's max vs the day before."""
+    q = {"latitude": st["lat"], "longitude": st["lon"], "hourly": ",".join(COND_VARS),
+         "timezone": st["tz"], "forecast_days": 3, "past_days": 1}
+    h = get("https://api.open-meteo.com/v1/forecast?" + urllib.parse.urlencode(q)).get("hourly", {})
+    times = h.get("time", [])
+    by_date = {}
+    for i, t in enumerate(times):
+        by_date.setdefault(t[:10], []).append((int(t[11:13]), {v: (h.get(v) or [None] * len(times))[i] for v in COND_VARS}))
+    out, prev_max = {}, None
+    for d in sorted(by_date):
+        rows = by_date[d]
+        day = [r for hr, r in rows if 9 <= hr <= 18]
+        morn = [r for hr, r in rows if 6 <= hr <= 10]
+        vals = lambda rs, k: [r[k] for r in rs if r.get(k) is not None]
+        tmax = max(vals([r for _, r in rows], "temperature_2m") or [None]) if rows else None
+        wd9 = next((r["wind_direction_10m"] for hr, r in rows if hr == 9 and r.get("wind_direction_10m") is not None), None)
+        wd17 = next((r["wind_direction_10m"] for hr, r in rows if hr == 17 and r.get("wind_direction_10m") is not None), None)
+        pres = vals([r for _, r in rows], "pressure_msl")
+        c = {
+            "cloud_mean": round(statistics.fmean(vals(day, "cloud_cover")), 0) if vals(day, "cloud_cover") else None,
+            "rain_chance_max": max(vals(day, "precipitation_probability") or [None]) if vals(day, "precipitation_probability") else None,
+            "cape_max": max(vals(day, "cape")) if vals(day, "cape") else None,
+            "wind_mean_kmh": round(statistics.fmean(vals(day, "wind_speed_10m")), 1) if vals(day, "wind_speed_10m") else None,
+            "wind_shift_deg": round(_circ_diff(wd9, wd17)) if wd9 is not None and wd17 is not None else None,
+            "pressure_change_hpa": round(max(pres) - min(pres), 1) if len(pres) > 1 else None,
+            "morning_vis_min_m": min(vals(morn, "visibility")) if vals(morn, "visibility") else None,
+            "tmax_change_c": round(tmax - prev_max, 1) if tmax is not None and prev_max is not None else None,
+        }
+        prev_max = tmax
+        out[d] = c
+    return out
+
+
 def fetch_models(st):
     keep = HOURLY_TODAY.setdefault(st["key"], {})
     return parse_hourly(fetch_open_meteo("https://api.open-meteo.com/v1/forecast", st, DET_MODELS),
@@ -319,6 +364,11 @@ def main():
         except Exception as e:
             ens = {}
             ERRORS.append(f"{st['key']} ensemble: {e}")
+        try:
+            conds = fetch_conditions(st)
+        except Exception as e:
+            conds = {}
+            ERRORS.append(f"{st['key']} conditions: {e}")
         obs = metar.get(st["icao"], [])
         days = {}
         for d in dates:
@@ -330,6 +380,8 @@ def main():
                 day["models_rest"] = {m: v[REST_KEY] for m, v in models.items() if REST_KEY in v}
                 day["ensemble_rest"] = {m: sorted(v[REST_KEY]) for m, v in ens.items() if REST_KEY in v}
                 day["models_hourly"] = {m: v for m, v in HOURLY_TODAY.get(st["key"], {}).items() if v}
+            if d in conds:
+                day["conditions"] = conds[d]
             if st["key"] == "atlanta" and d in nws:
                 day["nws_grid_max"] = nws[d]
             if st["key"] == "atlanta":
@@ -397,6 +449,7 @@ def main():
             mk = day.get("market") or {}
             cd[d] = {"models": day.get("models"), "ens": e, "nws": day.get("nws_grid_max"),
                      "nws_h": day.get("nws_hourly_max"), "taf": day.get("taf_max"),
+                     "cond": day.get("conditions"),
                      "obs": day.get("obs_max_so_far"),
                      "mkt": {b["label"]: b["yes"] for b in mk.get("buckets", [])} if mk else None}
         compact["s"][k] = cd

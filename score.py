@@ -39,6 +39,13 @@ days are scored, each source's bias and typical miss per city (one run per day,
 and "no bias, as accurate as the best model" for the airport TAF and NWS
 forecasts, worth PRIOR_N_STATION days. Weights follow the blended accuracy.
 
+Stability label (Settled / Mixed / Unsettled): how far the bias-corrected models
+spread (in the 60-day history, days with a tight spread missed by 0.53 C on
+average vs 0.81 C when they disagreed) plus weather flags from the conditions
+forecast: storms, rain, heavy cloud, a front (big pressure drop/rise, a 3 C jump
+in the daily max, or a wind shift), and morning fog. The thresholds are starting
+assumptions, logged with every run so they can be checked against results.
+
 Same-day nowcast: from 10:00 local, each model's error over the last 3 hours
 of airport readings (minus its usual bias) shifts its forecast for the rest of
 the day by NOWCAST_ALPHA of that error; ensembles follow their parent model.
@@ -54,6 +61,8 @@ MIN_LIVE = 30
 PRIOR_N_STATION = 8    # how many scored days the TAF/NWS starting assumption is worth
 STATION_SOURCES = {"taf_max": "airport forecast (TAF) max", "nws_grid": "nws_grid",
                    "nws_hourly_rest": "nws hourly max"}
+SPREAD_SETTLED_C = 1.0
+SPREAD_UNSETTLED_C = 1.4
 NOWCAST_ALPHA = 0.5    # share of this morning's forecast error assumed to persist to the peak
 NOWCAST_FROM_HOUR = 10  # earlier readings (fog, inversions) say little about the afternoon
 NOWCAST_WINDOW_H = 3  # live-log calibration overrides the backfill only once it has this many runs
@@ -165,6 +174,33 @@ def blend_stats(prior_bias, prior_sd, prior_n, errs):
     bias = (prior_n * prior_bias + n * b) / (prior_n + n)
     sd = math.sqrt((prior_n * prior_sd ** 2 + n * live_var) / (prior_n + n))
     return bias, sd, n
+
+
+def stability(spread_c, cond):
+    """(label, reasons) from model spread (deg C) and the day's conditions forecast."""
+    cond = cond or {}
+    g = lambda k: cond.get(k)
+    flags = []
+    if (g("cape_max") or 0) >= 1000 and (g("rain_chance_max") or 0) >= 40:
+        flags.append("storms likely")
+    elif (g("rain_chance_max") or 0) >= 50:
+        flags.append("rain likely")
+    if (g("cloud_mean") or 0) >= 75:
+        flags.append("heavy cloud")
+    front = ((g("pressure_change_hpa") or 0) >= 6 or abs(g("tmax_change_c") or 0) >= 3
+             or ((g("wind_shift_deg") or 0) >= 90 and (g("wind_mean_kmh") or 0) >= 12))
+    if front:
+        flags.append("front / air-mass change")
+    if g("morning_vis_min_m") is not None and g("morning_vis_min_m") < 1000:
+        flags.append("morning fog")
+    reasons = list(flags)
+    if spread_c is not None:
+        reasons.insert(0, f"models spread {spread_c:.1f}°C")
+    if (spread_c is not None and spread_c >= SPREAD_UNSETTLED_C) or "storms likely" in flags or front or len(flags) >= 2:
+        return "Unsettled", reasons
+    if (spread_c is None or spread_c <= SPREAD_SETTLED_C) and not flags:
+        return "Settled", reasons
+    return "Mixed", reasons
 
 
 def main():
@@ -302,6 +338,12 @@ def main():
                     learned[(city, k)] = (b, sd, n)
                 members.append(v - b)
                 weights.append(1.0 / max(sd, 0.5) ** 2)
+            # stability: spread of the bias-corrected models (full day), plus the conditions flags
+            # (only models with a track record here, as in the 60-day analysis; skip poor ones)
+            corr_full = [v - corr(m)[0] for m, v in day.get("models", {}).items()
+                         if (not per_model or m in per_model) and not (per_model and m in per_model and per_model[m]["mae"] > 1.8)]
+            spread_c = statistics.pstdev(corr_full) if len(corr_full) >= 4 else None
+            stab, stab_why = stability(spread_c, day.get("conditions"))
             full_det = list(day.get("models", {}).values())
             raw_c = statistics.median(full_det) if full_det else obs
             if raw_c is None:
@@ -368,12 +410,15 @@ def main():
                 "bias": round(bias_c * (9 / 5 if fahrenheit else 1), 2),
                 "sigma": round(ku, 2), "sources": sources, "buckets": buckets, "gaps": gaps,
                 "volume": mk.get("volume"), "liquidity": mk.get("liquidity"), "note": note,
+                "stability": stab, "stabilityReasons": stab_why,
+                "modelSpread": round(spread_c * (9 / 5 if fahrenheit else 1), 2) if spread_c is not None else None,
+                "conditions": day.get("conditions"),
             }
             doc_id = f"{city}_{d}_{run_at.strftime('%Y%m%dT%H%MZ')}"
             docs.append({"doc_id": doc_id, "data": doc})
             top_m = max(buckets, key=lambda b: b["model"])
             top_k = max(buckets, key=lambda b: b["market"] or 0)
-            report.append(f"{st['name']} {d} (lead {lead:.0f}h): forecast {doc['forecastRaw']}{unit}; "
+            report.append(f"{st['name']} {d} [{stab}: {', '.join(stab_why)}] (lead {lead:.0f}h): forecast {doc['forecastRaw']}{unit}; "
                           f"ours {top_m['label']} {top_m['model']:.0%} vs market {top_k['label']} {top_k['market']:.0%}; "
                           f"gaps: {', '.join(gaps) or 'none'}")
 
