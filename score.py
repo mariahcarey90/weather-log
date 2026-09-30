@@ -47,6 +47,13 @@ the day before, a 3 C jump
 in the daily max, or a wind shift), and morning fog. The thresholds are starting
 assumptions, logged with every run so they can be checked against results.
 
+Challenger versions (scored alongside, never shown as our pick): each bucket also
+carries "variants": "current" (the method above), "blend" (half ours, half the
+market's normalised price) and "emos" (non-homogeneous Gaussian regression fitted
+by emos.py on the 60-day history: mu = a + b*m, sigma = sqrt(c^2 + d^2 s^2) from
+the bias-corrected models' mean m and spread s; day-ahead markets only).
+paper.py paper-trades every variant's signals and review.py compares them.
+
 Same-day nowcast: from 10:00 local, each model's error over the last 3 hours
 of airport readings (minus its usual bias) shifts its forecast for the rest of
 the day by NOWCAST_ALPHA of that error; ensembles follow their parent model.
@@ -62,6 +69,7 @@ MIN_LIVE = 30
 PRIOR_N_STATION = 8    # how many scored days the TAF/NWS starting assumption is worth
 STATION_SOURCES = {"taf_max": "airport forecast (TAF) max", "nws_grid": "nws_grid",
                    "nws_hourly_rest": "nws hourly max"}
+BLEND_W_OURS = 0.5      # "blend" challenger: share of our odds vs the market's
 SPREAD_SETTLED_C = 1.0
 SPREAD_UNSETTLED_C = 1.4
 NOWCAST_ALPHA = 0.5    # share of this morning's forecast error assumed to persist to the peak
@@ -214,6 +222,7 @@ def main():
     a = ap.parse_args()
 
     latest = json.load(open(a.data))
+    emos = json.load(open("data/emos.json")).get("cities", {}) if os.path.exists("data/emos.json") else {}
     snaps, outs = load_db(a.db)
     cal = calibration(snaps, outs)
     src_errs = source_stats(snaps, outs)
@@ -377,6 +386,28 @@ def main():
                                 "model": p, "depth": bk.get("depth")})
             for bk in buckets:
                 bk["model"] = round(bk["model"] / sum_m, 4) if sum_m else 0
+            # challengers
+            mk_sum = sum(b["market"] or 0 for b in buckets)
+            ep = None
+            ec = (emos.get(city) or {}).get(lead_key)
+            if ec and not is_today and spread_c is not None and len(corr_full) >= 3:
+                mu_c = ec["a"] + ec["b"] * statistics.fmean(corr_full)
+                sg_c = math.sqrt(ec["c"] ** 2 + ec["d"] ** 2 * spread_c ** 2) + 1e-6
+                mu_u, sg_u = to_u(mu_c), sg_c * (9 / 5 if fahrenheit else 1)
+                ep = []
+                for b in buckets:
+                    lo_ = -1e9 if b["lo"] is None else b["lo"] - 0.5
+                    hi_ = 1e9 if b["hi"] is None else b["hi"] + 0.5
+                    ep.append(max(0.0, ncdf(hi_, mu_u, sg_u) - ncdf(lo_, mu_u, sg_u)))
+                es = sum(ep) or 1
+                ep = [x / es for x in ep]
+            for i, b in enumerate(buckets):
+                v = {"current": b["model"]}
+                if mk_sum > 0 and b["market"] is not None:
+                    v["blend"] = round(BLEND_W_OURS * b["model"] + (1 - BLEND_W_OURS) * b["market"] / mk_sum, 4)
+                if ep is not None:
+                    v["emos"] = round(ep[i], 4)
+                b["variants"] = v
             buckets.sort(key=lambda b: (-1e9 if b["lo"] is None else b["lo"]))
             gaps = [b["label"] for b in buckets if b["market"] is not None and abs(b["model"] - b["market"]) >= 0.10]
 

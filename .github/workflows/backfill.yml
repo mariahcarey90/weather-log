@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["backfill.py", ".github/workflows/backfill.yml"]
+    paths: ["backfill.py", "emos.py", ".github/workflows/backfill.yml"]
 
 permissions:
   contents: write
@@ -22,12 +22,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Backfill
-        run: python3 backfill.py
+        run: python3 backfill.py && python3 emos.py
       - name: Commit
         run: |
           git config user.name "weather-log bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/calibration.json data/backfill_daily.json
+          git add data/calibration.json data/backfill_daily.json data/emos.json
           if git diff --cached --quiet; then echo "no changes"; exit 0; fi
           git commit -m "calibration: $(date -u +%Y-%m-%d)"
           for i in 1 2 3; do
