@@ -314,7 +314,9 @@ def book_depth(token_id):
     asks = sorted(((float(a["price"]), float(a["size"])) for a in book.get("asks", [])), key=lambda x: x[0])
     bids = sorted(((float(b["price"]), float(b["size"])) for b in book.get("bids", [])), key=lambda x: -x[0])
     if not asks:
-        return {"best_ask": None, "best_bid": bids[0][0] if bids else None}
+        bb = bids[0][0] if bids else None
+        return {"best_ask": None, "best_bid": bb,
+                "bid_usd_within_2c": round(sum(p * q for p, q in bids if p >= bb - 0.02 - 1e-9), 2) if bids else 0.0}
     best = asks[0][0]
     within = lambda c: round(sum(p * q for p, q in asks if p <= best + c + 1e-9), 2)
 
@@ -327,9 +329,12 @@ def book_depth(token_id):
             if left <= 1e-9:
                 return round(dollars / shares, 4)
         return None
-    return {"best_ask": best, "best_bid": bids[0][0] if bids else None,
+    bb = bids[0][0] if bids else None
+    bid_usd_2c = round(sum(p * q for p, q in bids if bb is not None and p >= bb - 0.02 - 1e-9), 2) if bids else 0.0
+    return {"best_ask": best, "best_bid": bb,
             "usd_at_best": within(0), "usd_within_1c": within(0.01), "usd_within_2c": within(0.02),
-            "avg_fill_10": avg_fill(10), "avg_fill_25": avg_fill(25)}
+            "avg_fill_10": avg_fill(10), "avg_fill_25": avg_fill(25),
+            "bid_usd_within_2c": bid_usd_2c}
 
 
 def fetch_market(st, d, with_books=False):
