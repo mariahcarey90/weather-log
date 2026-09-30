@@ -1,7 +1,7 @@
 {
  "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), NOAA/NWS, aviationweather.gov",
  "errors": [],
- "fetched_at": "2026-09-30T00:08:27+00:00",
+ "fetched_at": "2026-09-30T00:33:41+00:00",
  "stations": {
   "amsterdam": {
    "days": {
@@ -163,10 +163,10 @@
     },
     "2026-09-30": {
      "conditions": {
-      "cape_max": 90.0,
+      "cape_max": 130.0,
       "cloud_mean": 100.0,
       "morning_vis_min_m": 25220.0,
-      "pressure_change_hpa": -1.8,
+      "pressure_change_hpa": -1.9,
       "rain_chance_max": 33,
       "tmax_change_c": -1.0,
       "wind_mean_kmh": 14.5,
@@ -479,129 +479,134 @@
         "yes": 0.0005
        },
        {
-        "bestAsk": 0.004,
-        "bestBid": 0.003,
+        "bestAsk": 0.015,
+        "bestBid": 0.01,
         "closed": false,
         "depth": null,
         "label": "21\u00b0C",
         "lastTrade": 0.003,
         "threshold": "4",
-        "volume": 587.723165,
-        "yes": 0.0035
+        "volume": 592.783165,
+        "yes": 0.0125
        },
        {
-        "bestAsk": 0.066,
-        "bestBid": 0.034,
+        "bestAsk": 0.06,
+        "bestBid": 0.036,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1253,
-         "avg_fill_25": 0.1495,
-         "best_ask": 0.066,
-         "best_bid": 0.034,
-         "usd_at_best": 0.4,
-         "usd_within_1c": 1.44,
-         "usd_within_2c": 1.83
+         "avg_fill_10": 0.0924,
+         "avg_fill_25": 0.1144,
+         "best_ask": 0.06,
+         "best_bid": 0.036,
+         "bid_usd_within_2c": 1.1,
+         "usd_at_best": 3.06,
+         "usd_within_1c": 3.41,
+         "usd_within_2c": 3.41
         },
         "label": "22\u00b0C",
         "lastTrade": 0.078,
         "threshold": "5",
-        "volume": 1179.830572,
-        "yes": 0.05
+        "volume": 1184.890572,
+        "yes": 0.048
        },
        {
-        "bestAsk": 0.25,
-        "bestBid": 0.22,
+        "bestAsk": 0.27,
+        "bestBid": 0.26,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.2552,
-         "avg_fill_25": 0.2615,
-         "best_ask": 0.25,
-         "best_bid": 0.22,
-         "usd_at_best": 4.66,
-         "usd_within_1c": 16.07,
-         "usd_within_2c": 84.48
+         "avg_fill_10": 0.31,
+         "avg_fill_25": 0.3113,
+         "best_ask": 0.31,
+         "best_bid": 0.27,
+         "bid_usd_within_2c": 105.81,
+         "usd_at_best": 21.7,
+         "usd_within_1c": 107.59,
+         "usd_within_2c": 111.29
         },
         "label": "23\u00b0C",
         "lastTrade": 0.26,
         "threshold": "6",
-        "volume": 2108.9343160000003,
-        "yes": 0.235
+        "volume": 2113.994316,
+        "yes": 0.265
        },
        {
-        "bestAsk": 0.42,
+        "bestAsk": 0.43,
         "bestBid": 0.4,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.4257,
-         "avg_fill_25": 0.4283,
+         "avg_fill_10": 0.4279,
+         "avg_fill_25": 0.4291,
          "best_ask": 0.42,
          "best_bid": 0.4,
-         "usd_at_best": 4.23,
-         "usd_within_1c": 277.35,
-         "usd_within_2c": 369.91
+         "bid_usd_within_2c": 376.72,
+         "usd_at_best": 2.1,
+         "usd_within_1c": 196.07,
+         "usd_within_2c": 382.25
         },
         "label": "24\u00b0C",
         "lastTrade": 0.43,
         "threshold": "7",
-        "volume": 3642.4855099999995,
-        "yes": 0.41
+        "volume": 3684.8589990000005,
+        "yes": 0.415
        },
        {
-        "bestAsk": 0.31,
-        "bestBid": 0.3,
+        "bestAsk": 0.25,
+        "bestBid": 0.23,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.3149,
-         "avg_fill_25": 0.3238,
-         "best_ask": 0.31,
-         "best_bid": 0.3,
-         "usd_at_best": 6.67,
-         "usd_within_1c": 8.27,
-         "usd_within_2c": 49.6
+         "avg_fill_10": 0.2642,
+         "avg_fill_25": 0.2734,
+         "best_ask": 0.25,
+         "best_bid": 0.23,
+         "bid_usd_within_2c": 110.0,
+         "usd_at_best": 3.75,
+         "usd_within_1c": 5.05,
+         "usd_within_2c": 6.4
         },
         "label": "25\u00b0C",
         "lastTrade": 0.3,
         "threshold": "8",
-        "volume": 5631.537805,
-        "yes": 0.305
+        "volume": 5649.465411,
+        "yes": 0.24
        },
        {
-        "bestAsk": 0.07,
-        "bestBid": 0.05,
+        "bestAsk": 0.06,
+        "bestBid": 0.04,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.07,
-         "avg_fill_25": 0.07,
-         "best_ask": 0.07,
-         "best_bid": 0.05,
-         "usd_at_best": 35.37,
-         "usd_within_1c": 42.39,
-         "usd_within_2c": 65.1
+         "avg_fill_10": 0.06,
+         "avg_fill_25": 0.0633,
+         "best_ask": 0.06,
+         "best_bid": 0.04,
+         "bid_usd_within_2c": 14.18,
+         "usd_at_best": 15.96,
+         "usd_within_1c": 45.48,
+         "usd_within_2c": 67.89
         },
         "label": "26\u00b0C",
         "lastTrade": 0.05,
         "threshold": "9",
-        "volume": 907.907532,
-        "yes": 0.06
+        "volume": 939.283312,
+        "yes": 0.05
        },
        {
-        "bestAsk": 0.004,
-        "bestBid": 0.003,
+        "bestAsk": 0.003,
+        "bestBid": 0.002,
         "closed": false,
         "depth": null,
         "label": "27\u00b0C or higher",
         "lastTrade": 0.003,
         "threshold": "10",
-        "volume": 357.287598,
-        "yes": 0.0035
+        "volume": 362.34759800000006,
+        "yes": 0.0025
        }
       ],
       "closed": false,
       "endDate": "2026-09-30T12:00:00Z",
-      "liquidity": 44998.11086,
+      "liquidity": 46729.87744,
       "slug": "highest-temperature-in-amsterdam-on-september-30-2026",
       "title": "Highest temperature in Amsterdam on September 30?",
-      "volume": 14828.949820999998
+      "volume": 14982.007873
      },
      "models": {
       "cma_grapes_global": 21.8,
@@ -824,17 +829,17 @@
        "2026-09-30T23:00": 19.1
       },
       "ukmo_seamless": {
-       "2026-09-30T00:00": 20.8,
-       "2026-09-30T01:00": 20.4,
-       "2026-09-30T02:00": 19.9,
-       "2026-09-30T03:00": 19.8,
-       "2026-09-30T04:00": 19.5,
-       "2026-09-30T05:00": 19.1,
-       "2026-09-30T06:00": 19.0,
-       "2026-09-30T07:00": 18.7,
-       "2026-09-30T08:00": 18.4,
+       "2026-09-30T00:00": 20.7,
+       "2026-09-30T01:00": 20.3,
+       "2026-09-30T02:00": 19.8,
+       "2026-09-30T03:00": 19.7,
+       "2026-09-30T04:00": 19.3,
+       "2026-09-30T05:00": 19.0,
+       "2026-09-30T06:00": 18.9,
+       "2026-09-30T07:00": 18.5,
+       "2026-09-30T08:00": 18.3,
        "2026-09-30T09:00": 18.8,
-       "2026-09-30T10:00": 19.7,
+       "2026-09-30T10:00": 19.8,
        "2026-09-30T11:00": 21.0,
        "2026-09-30T12:00": 22.3,
        "2026-09-30T13:00": 22.9,
@@ -861,17 +866,17 @@
       "meteofrance_seamless": 23.3,
       "ukmo_seamless": 24.3
      },
-     "obs_count": 4,
-     "obs_last": "2026-09-29T23:55:00+00:00",
+     "obs_count": 5,
+     "obs_last": "2026-09-30T00:25:00+00:00",
      "obs_max_so_far": 19,
      "rest_of_day_from": "2026-09-30T02:00"
     },
     "2026-10-01": {
      "conditions": {
-      "cape_max": 190.0,
+      "cape_max": 170.0,
       "cloud_mean": 81.0,
       "morning_vis_min_m": 7860.0,
-      "pressure_change_hpa": 5.5,
+      "pressure_change_hpa": 5.8,
       "rain_chance_max": 51,
       "tmax_change_c": -5.8,
       "wind_mean_kmh": 13.4,
@@ -1028,7 +1033,7 @@
         "label": "16\u00b0C",
         "lastTrade": null,
         "threshold": "1",
-        "volume": 115.37999899999998,
+        "volume": 115.379999,
         "yes": 0.0095
        },
        {
@@ -1047,18 +1052,19 @@
         "bestBid": 0.04,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0748,
-         "avg_fill_25": 0.0963,
+         "avg_fill_10": 0.0721,
+         "avg_fill_25": 0.0901,
          "best_ask": 0.05,
          "best_bid": 0.04,
+         "bid_usd_within_2c": 9.23,
          "usd_at_best": 0.25,
-         "usd_within_1c": 1.75,
-         "usd_within_2c": 2.1
+         "usd_within_1c": 2.95,
+         "usd_within_2c": 3.3
         },
         "label": "18\u00b0C",
         "lastTrade": 0.06,
         "threshold": "3",
-        "volume": 119.07754399999999,
+        "volume": 119.077544,
         "yes": 0.045
        },
        {
@@ -1070,9 +1076,10 @@
          "avg_fill_25": 0.1731,
          "best_ask": 0.17,
          "best_bid": 0.16,
+         "bid_usd_within_2c": 198.73,
          "usd_at_best": 17.0,
-         "usd_within_1c": 38.42,
-         "usd_within_2c": 59.13
+         "usd_within_1c": 34.82,
+         "usd_within_2c": 53.63
         },
         "label": "19\u00b0C",
         "lastTrade": 0.16,
@@ -1089,9 +1096,10 @@
          "avg_fill_25": 0.5,
          "best_ask": 0.5,
          "best_bid": 0.48,
+         "bid_usd_within_2c": 631.52,
          "usd_at_best": 108.0,
-         "usd_within_1c": 425.03,
-         "usd_within_2c": 8249.08
+         "usd_within_1c": 584.66,
+         "usd_within_2c": 3484.95
         },
         "label": "20\u00b0C",
         "lastTrade": 0.49,
@@ -1105,17 +1113,18 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.27,
-         "avg_fill_25": 0.2703,
+         "avg_fill_25": 0.27,
          "best_ask": 0.27,
          "best_bid": 0.26,
-         "usd_at_best": 24.3,
-         "usd_within_1c": 46.7,
-         "usd_within_2c": 167.77
+         "bid_usd_within_2c": 149.51,
+         "usd_at_best": 27.0,
+         "usd_within_1c": 74.6,
+         "usd_within_2c": 206.59
         },
         "label": "21\u00b0C",
         "lastTrade": 0.24,
         "threshold": "6",
-        "volume": 182.88615799999997,
+        "volume": 182.88615800000002,
         "yes": 0.265
        },
        {
@@ -1124,9 +1133,10 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.0637,
-         "avg_fill_25": 0.0857,
+         "avg_fill_25": 0.0852,
          "best_ask": 0.049,
          "best_bid": 0.023,
+         "bid_usd_within_2c": 10.89,
          "usd_at_best": 1.47,
          "usd_within_1c": 2.12,
          "usd_within_2c": 5.85
@@ -1156,7 +1166,7 @@
         "label": "24\u00b0C",
         "lastTrade": null,
         "threshold": "9",
-        "volume": 86.954,
+        "volume": 86.95400000000001,
         "yes": 0.006
        },
        {
@@ -1173,10 +1183,10 @@
       ],
       "closed": false,
       "endDate": "2026-10-01T12:00:00Z",
-      "liquidity": 33142.58711,
+      "liquidity": 39400.8882,
       "slug": "highest-temperature-in-amsterdam-on-october-1-2026",
       "title": "Highest temperature in Amsterdam on October 1?",
-      "volume": 2544.932514
+      "volume": 2573.927774
      },
      "models": {
       "cma_grapes_global": 19.4,
@@ -1193,9 +1203,15 @@
    },
    "icao": "EHAM",
    "lat": 52.315,
-   "local_now": "2026-09-30T02:08+02:00",
+   "local_now": "2026-09-30T02:33+02:00",
    "lon": 4.79,
    "metar": [
+    {
+     "maxT": null,
+     "raw": "METAR EHAM 300025Z 13009KT CAVOK 18/13 Q1015 NOSIG",
+     "t": "2026-09-30T00:25:00+00:00",
+     "temp": 18
+    },
     {
      "maxT": null,
      "raw": "METAR EHAM 292355Z 13009KT CAVOK 18/14 Q1015 NOSIG",
@@ -1809,7 +1825,7 @@
        "label": "23\u00b0C",
        "lastTrade": 0.001,
        "threshold": "7",
-       "volume": 3106.162591,
+       "volume": 3106.1625910000002,
        "yes": 0.0
       },
       {
@@ -1831,7 +1847,7 @@
        "label": "25\u00b0C",
        "lastTrade": 0.999,
        "threshold": "9",
-       "volume": 7536.230069,
+       "volume": 7536.230069000001,
        "yes": 1.0
       },
       {
@@ -1852,7 +1868,7 @@
      "settled": true,
      "slug": "highest-temperature-in-amsterdam-on-september-29-2026",
      "title": "Highest temperature in Amsterdam on September 29?",
-     "volume": 29320.591543,
+     "volume": 29320.591543000002,
      "winner": "25\u00b0C"
     }
    },
@@ -2321,13 +2337,14 @@
         "bestBid": 0.044,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1239,
-         "avg_fill_25": 0.1372,
+         "avg_fill_10": 0.1067,
+         "avg_fill_25": 0.1069,
          "best_ask": 0.105,
          "best_bid": 0.044,
+         "bid_usd_within_2c": 14.3,
          "usd_at_best": 1.06,
-         "usd_within_1c": 2.5,
-         "usd_within_2c": 3.7
+         "usd_within_1c": 25.37,
+         "usd_within_2c": 26.57
         },
         "label": "15\u00b0C",
         "lastTrade": 0.11,
@@ -2337,22 +2354,23 @@
        },
        {
         "bestAsk": 0.28,
-        "bestBid": 0.26,
+        "bestBid": 0.23,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.3004,
-         "avg_fill_25": 0.3061,
-         "best_ask": 0.29,
-         "best_bid": 0.24,
-         "usd_at_best": 1.45,
-         "usd_within_1c": 8.05,
-         "usd_within_2c": 41.22
+         "avg_fill_10": 0.28,
+         "avg_fill_25": 0.28,
+         "best_ask": 0.28,
+         "best_bid": 0.23,
+         "bid_usd_within_2c": 1143.17,
+         "usd_at_best": 59.49,
+         "usd_within_1c": 60.94,
+         "usd_within_2c": 67.54
         },
         "label": "16\u00b0C",
         "lastTrade": 0.29,
         "threshold": "3",
-        "volume": 868.6386239999999,
-        "yes": 0.27
+        "volume": 873.4807280000001,
+        "yes": 0.255
        },
        {
         "bestAsk": 0.46,
@@ -2363,53 +2381,56 @@
          "avg_fill_25": 0.46,
          "best_ask": 0.46,
          "best_bid": 0.42,
-         "usd_at_best": 95.27,
-         "usd_within_1c": 144.62,
-         "usd_within_2c": 149.78
+         "bid_usd_within_2c": 2832.58,
+         "usd_at_best": 145.87,
+         "usd_within_1c": 15109.91,
+         "usd_within_2c": 16222.44
         },
         "label": "17\u00b0C",
         "lastTrade": 0.46,
         "threshold": "4",
-        "volume": 712.3936570000001,
+        "volume": 712.393657,
         "yes": 0.44
        },
        {
         "bestAsk": 0.24,
-        "bestBid": 0.22,
+        "bestBid": 0.21,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.2573,
-         "avg_fill_25": 0.2648,
+         "avg_fill_10": 0.2522,
+         "avg_fill_25": 0.2568,
          "best_ask": 0.24,
-         "best_bid": 0.22,
-         "usd_at_best": 0.2,
-         "usd_within_1c": 5.45,
-         "usd_within_2c": 6.75
+         "best_bid": 0.21,
+         "bid_usd_within_2c": 79.07,
+         "usd_at_best": 1.2,
+         "usd_within_1c": 6.45,
+         "usd_within_2c": 251.88
         },
         "label": "18\u00b0C",
-        "lastTrade": 0.22,
+        "lastTrade": 0.24,
         "threshold": "5",
-        "volume": 1509.2783410000002,
-        "yes": 0.23
+        "volume": 1558.5603889999998,
+        "yes": 0.225
        },
        {
-        "bestAsk": 0.058,
-        "bestBid": 0.031,
+        "bestAsk": 0.032,
+        "bestBid": 0.03,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0886,
-         "avg_fill_25": 0.1267,
-         "best_ask": 0.058,
-         "best_bid": 0.031,
-         "usd_at_best": 2.32,
-         "usd_within_1c": 2.32,
-         "usd_within_2c": 3.02
+         "avg_fill_10": 0.0851,
+         "avg_fill_25": 0.1109,
+         "best_ask": 0.032,
+         "best_bid": 0.03,
+         "bid_usd_within_2c": 6.16,
+         "usd_at_best": 0.16,
+         "usd_within_1c": 0.56,
+         "usd_within_2c": 0.56
         },
         "label": "19\u00b0C",
         "lastTrade": 0.02,
         "threshold": "6",
         "volume": 490.610954,
-        "yes": 0.0445
+        "yes": 0.031
        },
        {
         "bestAsk": 0.008,
@@ -2419,7 +2440,7 @@
         "label": "20\u00b0C",
         "lastTrade": null,
         "threshold": "7",
-        "volume": 694.4742500000001,
+        "volume": 694.47425,
         "yes": 0.0055
        },
        {
@@ -2458,10 +2479,10 @@
       ],
       "closed": false,
       "endDate": "2026-09-30T12:00:00Z",
-      "liquidity": 34038.82976,
+      "liquidity": 57997.38904,
       "slug": "highest-temperature-in-ankara-on-september-30-2026",
       "title": "Highest temperature in Ankara on September 30?",
-      "volume": 6172.235914
+      "volume": 6377.04165
      },
      "models": {
       "cma_grapes_global": 15.5,
@@ -2721,8 +2742,8 @@
       "meteofrance_seamless": 17.7,
       "ukmo_seamless": 15.3
      },
-     "obs_count": 6,
-     "obs_last": "2026-09-29T23:50:00+00:00",
+     "obs_count": 7,
+     "obs_last": "2026-09-30T00:20:00+00:00",
      "obs_max_so_far": 14,
      "rest_of_day_from": "2026-09-30T03:00"
     },
@@ -2903,23 +2924,24 @@
         "yes": 0.007
        },
        {
-        "bestAsk": 0.057,
+        "bestAsk": 0.049,
         "bestBid": 0.033,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0582,
-         "avg_fill_25": 0.0776,
-         "best_ask": 0.054,
+         "avg_fill_10": 0.0569,
+         "avg_fill_25": 0.0712,
+         "best_ask": 0.049,
          "best_bid": 0.033,
-         "usd_at_best": 0.27,
-         "usd_within_1c": 9.27,
-         "usd_within_2c": 11.29
+         "bid_usd_within_2c": 17.81,
+         "usd_at_best": 0.24,
+         "usd_within_1c": 6.79,
+         "usd_within_2c": 13.7
         },
         "label": "15\u00b0C",
         "lastTrade": null,
         "threshold": "3",
         "volume": 26.28,
-        "yes": 0.045
+        "yes": 0.041
        },
        {
         "bestAsk": 0.17,
@@ -2930,14 +2952,15 @@
          "avg_fill_25": 0.17,
          "best_ask": 0.17,
          "best_bid": 0.16,
-         "usd_at_best": 28.1,
-         "usd_within_1c": 60.17,
-         "usd_within_2c": 95.72
+         "bid_usd_within_2c": 165.75,
+         "usd_at_best": 43.55,
+         "usd_within_1c": 83.03,
+         "usd_within_2c": 1112.68
         },
         "label": "16\u00b0C",
         "lastTrade": 0.16,
         "threshold": "4",
-        "volume": 127.17309999999999,
+        "volume": 127.1731,
         "yes": 0.165
        },
        {
@@ -2949,14 +2972,15 @@
          "avg_fill_25": 0.44,
          "best_ask": 0.44,
          "best_bid": 0.43,
-         "usd_at_best": 51.85,
-         "usd_within_1c": 184.94,
-         "usd_within_2c": 315.63
+         "bid_usd_within_2c": 314.95,
+         "usd_at_best": 107.55,
+         "usd_within_1c": 188.1,
+         "usd_within_2c": 3044.98
         },
         "label": "17\u00b0C",
         "lastTrade": 0.46,
         "threshold": "5",
-        "volume": 491.06979400000006,
+        "volume": 491.0697940000001,
         "yes": 0.435
        },
        {
@@ -2968,14 +2992,15 @@
          "avg_fill_25": 0.35,
          "best_ask": 0.35,
          "best_bid": 0.34,
-         "usd_at_best": 42.71,
-         "usd_within_1c": 164.46,
-         "usd_within_2c": 2126.8
+         "bid_usd_within_2c": 299.44,
+         "usd_at_best": 73.12,
+         "usd_within_1c": 200.31,
+         "usd_within_2c": 2426.49
         },
         "label": "18\u00b0C",
         "lastTrade": 0.35,
         "threshold": "6",
-        "volume": 287.953396,
+        "volume": 287.95339599999994,
         "yes": 0.345
        },
        {
@@ -2983,13 +3008,14 @@
         "bestBid": 0.04,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0589,
-         "avg_fill_25": 0.0704,
+         "avg_fill_10": 0.057,
+         "avg_fill_25": 0.0675,
          "best_ask": 0.05,
          "best_bid": 0.04,
-         "usd_at_best": 4.34,
-         "usd_within_1c": 5.34,
-         "usd_within_2c": 9.78
+         "bid_usd_within_2c": 3.78,
+         "usd_at_best": 4.23,
+         "usd_within_1c": 7.79,
+         "usd_within_2c": 14.25
         },
         "label": "19\u00b0C",
         "lastTrade": null,
@@ -3033,10 +3059,10 @@
       ],
       "closed": false,
       "endDate": "2026-10-01T12:00:00Z",
-      "liquidity": 52811.52783,
+      "liquidity": 45540.08042,
       "slug": "highest-temperature-in-ankara-on-october-1-2026",
       "title": "Highest temperature in Ankara on October 1?",
-      "volume": 2001.4868800000002
+      "volume": 2001.48688
      },
      "models": {
       "cma_grapes_global": 15.8,
@@ -3053,9 +3079,15 @@
    },
    "icao": "LTAC",
    "lat": 40.128,
-   "local_now": "2026-09-30T03:08+03:00",
+   "local_now": "2026-09-30T03:33+03:00",
    "lon": 32.995,
    "metar": [
+    {
+     "maxT": null,
+     "raw": "METAR LTAC 300020Z 03005KT 9999 SCT030 BKN080 11/09 Q1020 NOSIG",
+     "t": "2026-09-30T00:20:00+00:00",
+     "temp": 11
+    },
     {
      "maxT": null,
      "raw": "METAR LTAC 292350Z 01003KT 9999 SCT030 BKN080 11/10 Q1020 NOSIG",
@@ -3598,7 +3630,7 @@
        "label": "14\u00b0C or below",
        "lastTrade": 0.001,
        "threshold": "0",
-       "volume": 669.7896000000001,
+       "volume": 669.7896,
        "yes": 0.0
       },
       {
@@ -3620,7 +3652,7 @@
        "label": "16\u00b0C",
        "lastTrade": 0.999,
        "threshold": "2",
-       "volume": 6013.375501,
+       "volume": 6013.375500999999,
        "yes": 1.0
       },
       {
@@ -3631,7 +3663,7 @@
        "label": "17\u00b0C",
        "lastTrade": 0.01,
        "threshold": "3",
-       "volume": 3678.9174619999994,
+       "volume": 3678.9174620000003,
        "yes": 0.0
       },
       {
@@ -3653,7 +3685,7 @@
        "label": "19\u00b0C",
        "lastTrade": 0.006,
        "threshold": "5",
-       "volume": 2902.643146,
+       "volume": 2902.6431459999994,
        "yes": 0.0
       },
       {
@@ -3664,7 +3696,7 @@
        "label": "20\u00b0C",
        "lastTrade": 0.007,
        "threshold": "6",
-       "volume": 2814.687372,
+       "volume": 2814.6873720000003,
        "yes": 0.0
       },
       {
@@ -3675,7 +3707,7 @@
        "label": "21\u00b0C",
        "lastTrade": 0.001,
        "threshold": "7",
-       "volume": 735.5091779999999,
+       "volume": 735.509178,
        "yes": 0.0
       },
       {
@@ -3718,7 +3750,7 @@
      "settled": true,
      "slug": "highest-temperature-in-ankara-on-september-29-2026",
      "title": "Highest temperature in Ankara on September 29?",
-     "volume": 24752.93693,
+     "volume": 24752.936929999996,
      "winner": "16\u00b0C"
     }
    },
@@ -4201,7 +4233,7 @@
         "label": "78-79\u00b0F",
         "lastTrade": 0.001,
         "threshold": "3",
-        "volume": 1148.1939999999997,
+        "volume": 1148.194,
         "yes": 0.0005
        },
        {
@@ -4212,7 +4244,7 @@
         "label": "80-81\u00b0F",
         "lastTrade": 0.039,
         "threshold": "4",
-        "volume": 7438.992136999999,
+        "volume": 7438.992137,
         "yes": 0.0005
        },
        {
@@ -4223,7 +4255,7 @@
         "label": "82-83\u00b0F",
         "lastTrade": 0.01,
         "threshold": "5",
-        "volume": 14106.583241999997,
+        "volume": 14106.583242,
         "yes": 0.0005
        },
        {
@@ -4234,7 +4266,7 @@
         "label": "84-85\u00b0F",
         "lastTrade": 0.999,
         "threshold": "6",
-        "volume": 11874.573413,
+        "volume": 11874.573413000002,
         "yes": 0.9995
        },
        {
@@ -4245,7 +4277,7 @@
         "label": "86-87\u00b0F",
         "lastTrade": 0.003,
         "threshold": "7",
-        "volume": 8455.684246,
+        "volume": 8485.044245999998,
         "yes": 0.0005
        },
        {
@@ -4284,10 +4316,10 @@
       ],
       "closed": false,
       "endDate": "2026-09-29T12:00:00Z",
-      "liquidity": 162709.69508,
+      "liquidity": 169089.86982,
       "slug": "highest-temperature-in-atlanta-on-september-29-2026",
       "title": "Highest temperature in Atlanta on September 29?",
-      "volume": 50219.924908999994
+      "volume": 50249.284909
      },
      "models": {
       "cma_grapes_global": 25.9,
@@ -4717,7 +4749,7 @@
         "label": "78-79\u00b0F",
         "lastTrade": 0.001,
         "threshold": "1",
-        "volume": 309.92487100000005,
+        "volume": 309.924871,
         "yes": 0.002
        },
        {
@@ -4728,7 +4760,7 @@
         "label": "80-81\u00b0F",
         "lastTrade": 0.004,
         "threshold": "2",
-        "volume": 254.79260900000003,
+        "volume": 254.792609,
         "yes": 0.009
        },
        {
@@ -4744,41 +4776,43 @@
        },
        {
         "bestAsk": 0.16,
-        "bestBid": 0.12,
+        "bestBid": 0.11,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1694,
-         "avg_fill_25": 0.1697,
+         "avg_fill_10": 0.1613,
+         "avg_fill_25": 0.1664,
          "best_ask": 0.16,
-         "best_bid": 0.12,
-         "usd_at_best": 0.6,
-         "usd_within_1c": 30.26,
-         "usd_within_2c": 30.26
+         "best_bid": 0.11,
+         "bid_usd_within_2c": 29.17,
+         "usd_at_best": 8.6,
+         "usd_within_1c": 41.57,
+         "usd_within_2c": 92.42
         },
         "label": "84-85\u00b0F",
         "lastTrade": 0.14,
         "threshold": "4",
-        "volume": 3643.488815,
-        "yes": 0.14
+        "volume": 3643.488815000001,
+        "yes": 0.135
        },
        {
         "bestAsk": 0.62,
-        "bestBid": 0.59,
+        "bestBid": 0.61,
         "closed": false,
         "depth": {
          "avg_fill_10": 0.62,
          "avg_fill_25": 0.62,
          "best_ask": 0.62,
-         "best_bid": 0.59,
-         "usd_at_best": 300.14,
-         "usd_within_1c": 3917.82,
-         "usd_within_2c": 4262.14
+         "best_bid": 0.61,
+         "bid_usd_within_2c": 354.47,
+         "usd_at_best": 127.16,
+         "usd_within_1c": 155.44,
+         "usd_within_2c": 680.98
         },
         "label": "86-87\u00b0F",
         "lastTrade": 0.62,
         "threshold": "5",
-        "volume": 3956.710996,
-        "yes": 0.605
+        "volume": 3956.7109959999993,
+        "yes": 0.615
        },
        {
         "bestAsk": 0.25,
@@ -4789,34 +4823,36 @@
          "avg_fill_25": 0.25,
          "best_ask": 0.25,
          "best_bid": 0.22,
-         "usd_at_best": 36.5,
-         "usd_within_1c": 196.42,
-         "usd_within_2c": 196.42
+         "bid_usd_within_2c": 139.4,
+         "usd_at_best": 33.75,
+         "usd_within_1c": 206.01,
+         "usd_within_2c": 206.01
         },
         "label": "88-89\u00b0F",
         "lastTrade": 0.25,
         "threshold": "6",
-        "volume": 3630.090575000001,
+        "volume": 3630.0905750000006,
         "yes": 0.235
        },
        {
         "bestAsk": 0.029,
-        "bestBid": 0.02,
+        "bestBid": 0.016,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0467,
-         "avg_fill_25": 0.0669,
+         "avg_fill_10": 0.0461,
+         "avg_fill_25": 0.058,
          "best_ask": 0.029,
-         "best_bid": 0.02,
+         "best_bid": 0.016,
+         "bid_usd_within_2c": 5.97,
          "usd_at_best": 0.58,
          "usd_within_1c": 0.58,
-         "usd_within_2c": 4.82
+         "usd_within_2c": 6.94
         },
         "label": "90-91\u00b0F",
         "lastTrade": 0.018,
         "threshold": "7",
-        "volume": 1782.1722430000004,
-        "yes": 0.0245
+        "volume": 1782.172243,
+        "yes": 0.0225
        },
        {
         "bestAsk": 0.015,
@@ -4854,10 +4890,10 @@
       ],
       "closed": false,
       "endDate": "2026-09-30T12:00:00Z",
-      "liquidity": 38327.23246,
+      "liquidity": 40294.90473,
       "slug": "highest-temperature-in-atlanta-on-september-30-2026",
       "title": "Highest temperature in Atlanta on September 30?",
-      "volume": 15074.692503000002
+      "volume": 15074.692503
      },
      "models": {
       "cma_grapes_global": 26.6,
@@ -4876,7 +4912,7 @@
    },
    "icao": "KATL",
    "lat": 33.6367,
-   "local_now": "2026-09-29T20:08-04:00",
+   "local_now": "2026-09-29T20:33-04:00",
    "lon": -84.4281,
    "metar": [
     {
@@ -5256,7 +5292,7 @@
        "label": "78-79\u00b0F",
        "lastTrade": 0.001,
        "threshold": "3",
-       "volume": 5701.4624890000005,
+       "volume": 5701.462489,
        "yes": 0.0
       },
       {
@@ -5267,7 +5303,7 @@
        "label": "80-81\u00b0F",
        "lastTrade": 0.999,
        "threshold": "4",
-       "volume": 17649.037428999996,
+       "volume": 17649.037429,
        "yes": 1.0
       },
       {
@@ -5278,7 +5314,7 @@
        "label": "82-83\u00b0F",
        "lastTrade": 0.018,
        "threshold": "5",
-       "volume": 10600.541529,
+       "volume": 10600.541528999998,
        "yes": 0.0
       },
       {
@@ -5514,14 +5550,14 @@
     },
     "2026-09-30": {
      "conditions": {
-      "cape_max": 1390.0,
+      "cape_max": 1350.0,
       "cloud_mean": 8.0,
-      "morning_vis_min_m": 5980.0,
-      "pressure_change_hpa": 0.4,
+      "morning_vis_min_m": 5960.0,
+      "pressure_change_hpa": 1.2,
       "rain_chance_max": 10,
-      "tmax_change_c": -0.5,
-      "wind_mean_kmh": 10.7,
-      "wind_shift_deg": 7
+      "tmax_change_c": -0.6,
+      "wind_mean_kmh": 10.4,
+      "wind_shift_deg": 11
      },
      "ensemble": {
       "ecmwf_ifs025": [
@@ -5826,7 +5862,7 @@
         "label": "29\u00b0C",
         "lastTrade": 0.005,
         "threshold": "3",
-        "volume": 388.936844,
+        "volume": 388.93684399999995,
         "yes": 0.0005
        },
        {
@@ -5837,7 +5873,7 @@
         "label": "30\u00b0C",
         "lastTrade": 0.011,
         "threshold": "4",
-        "volume": 502.934671,
+        "volume": 502.93467100000004,
         "yes": 0.009
        },
        {
@@ -5848,54 +5884,57 @@
          "avg_fill_10": 0.38,
          "avg_fill_25": 0.38,
          "best_ask": 0.38,
-         "best_bid": 0.36,
-         "usd_at_best": 119.12,
-         "usd_within_1c": 170.6,
-         "usd_within_2c": 370.6
+         "best_bid": 0.35,
+         "bid_usd_within_2c": 161.62,
+         "usd_at_best": 139.64,
+         "usd_within_1c": 297.59,
+         "usd_within_2c": 379.59
         },
         "label": "31\u00b0C",
-        "lastTrade": 0.38,
+        "lastTrade": 0.37,
         "threshold": "5",
-        "volume": 3042.4121639999994,
+        "volume": 3042.4121640000003,
         "yes": 0.37
        },
        {
         "bestAsk": 0.56,
-        "bestBid": 0.51,
+        "bestBid": 0.52,
         "closed": false,
         "depth": {
          "avg_fill_10": 0.56,
-         "avg_fill_25": 0.5644,
+         "avg_fill_25": 0.56,
          "best_ask": 0.56,
-         "best_bid": 0.51,
-         "usd_at_best": 14.0,
-         "usd_within_1c": 302.13,
-         "usd_within_2c": 322.72
+         "best_bid": 0.52,
+         "bid_usd_within_2c": 317.14,
+         "usd_at_best": 175.98,
+         "usd_within_1c": 350.29,
+         "usd_within_2c": 10889.25
         },
         "label": "32\u00b0C",
-        "lastTrade": 0.55,
+        "lastTrade": 0.52,
         "threshold": "6",
         "volume": 1337.920148,
-        "yes": 0.535
+        "yes": 0.54
        },
        {
         "bestAsk": 0.12,
-        "bestBid": 0.07,
+        "bestBid": 0.06,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1284,
-         "avg_fill_25": 0.1351,
-         "best_ask": 0.11,
+         "avg_fill_10": 0.1351,
+         "avg_fill_25": 0.1387,
+         "best_ask": 0.12,
          "best_bid": 0.06,
-         "usd_at_best": 0.55,
-         "usd_within_1c": 2.35,
-         "usd_within_2c": 8.27
+         "bid_usd_within_2c": 11.84,
+         "usd_at_best": 0.99,
+         "usd_within_1c": 3.59,
+         "usd_within_2c": 23.05
         },
         "label": "33\u00b0C",
-        "lastTrade": 0.1,
+        "lastTrade": 0.07,
         "threshold": "7",
-        "volume": 1860.8575809999998,
-        "yes": 0.095
+        "volume": 1868.6275809999997,
+        "yes": 0.09
        },
        {
         "bestAsk": 0.002,
@@ -5905,7 +5944,7 @@
         "label": "34\u00b0C",
         "lastTrade": 0.001,
         "threshold": "8",
-        "volume": 993.0630319999999,
+        "volume": 993.063032,
         "yes": 0.0015
        },
        {
@@ -5916,7 +5955,7 @@
         "label": "35\u00b0C",
         "lastTrade": 0.001,
         "threshold": "9",
-        "volume": 88.299844,
+        "volume": 88.29984400000001,
         "yes": 0.001
        },
        {
@@ -5933,10 +5972,10 @@
       ],
       "closed": false,
       "endDate": "2026-09-30T12:00:00Z",
-      "liquidity": 18581.27673,
+      "liquidity": 18814.34225,
       "slug": "highest-temperature-in-lucknow-on-september-30-2026",
       "title": "Highest temperature in Lucknow on September 30?",
-      "volume": 9977.520009999998
+      "volume": 9985.29001
      },
      "models": {
       "cma_grapes_global": 32.5,
@@ -6199,18 +6238,18 @@
      "obs_count": 12,
      "obs_last": "2026-09-30T00:00:00+00:00",
      "obs_max_so_far": 25,
-     "rest_of_day_from": "2026-09-30T05:00"
+     "rest_of_day_from": "2026-09-30T06:00"
     },
     "2026-10-01": {
      "conditions": {
-      "cape_max": 1130.0,
-      "cloud_mean": 0.0,
-      "morning_vis_min_m": 4800.0,
-      "pressure_change_hpa": 1.3,
+      "cape_max": 1200.0,
+      "cloud_mean": 2.0,
+      "morning_vis_min_m": 4780.0,
+      "pressure_change_hpa": 1.1,
       "rain_chance_max": 0,
-      "tmax_change_c": 1.0,
-      "wind_mean_kmh": 8.3,
-      "wind_shift_deg": 20
+      "tmax_change_c": 0.9,
+      "wind_mean_kmh": 7.9,
+      "wind_shift_deg": 18
      },
      "ensemble": {
       "ecmwf_ifs025": [
@@ -6352,7 +6391,7 @@
         "label": "27\u00b0C or below",
         "lastTrade": 0.001,
         "threshold": "0",
-        "volume": 213.99320000000003,
+        "volume": 213.9932,
         "yes": 0.0045
        },
        {
@@ -6374,7 +6413,7 @@
         "label": "29\u00b0C",
         "lastTrade": null,
         "threshold": "2",
-        "volume": 303.27106000000003,
+        "volume": 305.27306,
         "yes": 0.011
        },
        {
@@ -6393,13 +6432,14 @@
         "bestBid": 0.03,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0905,
-         "avg_fill_25": 0.1027,
+         "avg_fill_10": 0.0846,
+         "avg_fill_25": 0.0907,
          "best_ask": 0.06,
          "best_bid": 0.03,
+         "bid_usd_within_2c": 41.18,
          "usd_at_best": 0.36,
          "usd_within_1c": 0.36,
-         "usd_within_2c": 2.44
+         "usd_within_2c": 4.05
         },
         "label": "31\u00b0C",
         "lastTrade": null,
@@ -6416,47 +6456,50 @@
          "avg_fill_25": 0.43,
          "best_ask": 0.43,
          "best_bid": 0.4,
-         "usd_at_best": 130.29,
-         "usd_within_1c": 392.76,
-         "usd_within_2c": 8558.47
+         "bid_usd_within_2c": 242.75,
+         "usd_at_best": 113.09,
+         "usd_within_1c": 398.69,
+         "usd_within_2c": 4310.87
         },
         "label": "32\u00b0C",
         "lastTrade": 0.43,
         "threshold": "5",
-        "volume": 1330.6611840000003,
+        "volume": 1330.661184,
         "yes": 0.415
        },
        {
-        "bestAsk": 0.47,
+        "bestAsk": 0.46,
         "bestBid": 0.45,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.47,
-         "avg_fill_25": 0.47,
-         "best_ask": 0.47,
+         "avg_fill_10": 0.46,
+         "avg_fill_25": 0.46,
+         "best_ask": 0.46,
          "best_bid": 0.45,
-         "usd_at_best": 160.74,
-         "usd_within_1c": 333.63,
-         "usd_within_2c": 4439.83
+         "bid_usd_within_2c": 15336.29,
+         "usd_at_best": 41.92,
+         "usd_within_1c": 57.77,
+         "usd_within_2c": 346.11
         },
         "label": "33\u00b0C",
         "lastTrade": 0.47,
         "threshold": "6",
-        "volume": 423.416038,
-        "yes": 0.46
+        "volume": 423.41603799999996,
+        "yes": 0.455
        },
        {
         "bestAsk": 0.12,
         "bestBid": 0.08,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1201,
-         "avg_fill_25": 0.128,
+         "avg_fill_10": 0.12,
+         "avg_fill_25": 0.1253,
          "best_ask": 0.12,
          "best_bid": 0.08,
-         "usd_at_best": 9.93,
-         "usd_within_1c": 20.33,
-         "usd_within_2c": 23.37
+         "bid_usd_within_2c": 20.84,
+         "usd_at_best": 11.25,
+         "usd_within_1c": 26.87,
+         "usd_within_2c": 38.09
         },
         "label": "34\u00b0C",
         "lastTrade": 0.12,
@@ -6472,7 +6515,7 @@
         "label": "35\u00b0C",
         "lastTrade": 0.003,
         "threshold": "8",
-        "volume": 126.46628800000002,
+        "volume": 126.466288,
         "yes": 0.0055
        },
        {
@@ -6500,10 +6543,10 @@
       ],
       "closed": false,
       "endDate": "2026-10-01T12:00:00Z",
-      "liquidity": 42556.18825,
+      "liquidity": 68760.86802,
       "slug": "highest-temperature-in-lucknow-on-october-1-2026",
       "title": "Highest temperature in Lucknow on October 1?",
-      "volume": 3459.134054
+      "volume": 3461.136054
      },
      "models": {
       "cma_grapes_global": 34.1,
@@ -6520,7 +6563,7 @@
    },
    "icao": "VILK",
    "lat": 26.7606,
-   "local_now": "2026-09-30T05:38+05:30",
+   "local_now": "2026-09-30T06:03+05:30",
    "lon": 80.8893,
    "metar": [
     {
@@ -6912,12 +6955,6 @@
      "raw": "METAR VILK 281600Z VRB02KT 4000 BR FEW020 27/26 Q1010 NOSIG",
      "t": "2026-09-28T16:00:00+00:00",
      "temp": 27
-    },
-    {
-     "maxT": null,
-     "raw": "METAR VILK 281530Z 25003KT 4000 BR FEW020 27/26 Q1010 TEMPO 3000 BR",
-     "t": "2026-09-28T15:30:00+00:00",
-     "temp": 27
     }
    ],
    "name": "Lucknow",
@@ -7109,7 +7146,7 @@
        "label": "29\u00b0C",
        "lastTrade": 0.003,
        "threshold": "4",
-       "volume": 159.959999,
+       "volume": 159.95999899999998,
        "yes": 0.0
       },
       {
@@ -7120,7 +7157,7 @@
        "label": "30\u00b0C",
        "lastTrade": 0.01,
        "threshold": "5",
-       "volume": 1309.8466789999998,
+       "volume": 1309.846679,
        "yes": 0.0
       },
       {
@@ -7142,7 +7179,7 @@
        "label": "32\u00b0C",
        "lastTrade": 0.02,
        "threshold": "7",
-       "volume": 6732.743967,
+       "volume": 6732.743966999999,
        "yes": 0.0
       },
       {
@@ -7164,7 +7201,7 @@
        "label": "34\u00b0C",
        "lastTrade": 0.004,
        "threshold": "9",
-       "volume": 1307.8304469999998,
+       "volume": 1307.830447,
        "yes": 0.0
       },
       {
@@ -7175,7 +7212,7 @@
        "label": "35\u00b0C or higher",
        "lastTrade": 0.002,
        "threshold": "10",
-       "volume": 1026.5378459999997,
+       "volume": 1026.537846,
        "yes": 0.0
       }
      ],
@@ -7646,27 +7683,28 @@
         "label": "25\u00b0C",
         "lastTrade": 0.001,
         "threshold": "1",
-        "volume": 3541.7537620000003,
+        "volume": 3543.7557620000007,
         "yes": 0.0015
        },
        {
-        "bestAsk": 0.24,
-        "bestBid": 0.2,
+        "bestAsk": 0.3,
+        "bestBid": 0.25,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.2488,
-         "avg_fill_25": 0.2495,
-         "best_ask": 0.24,
-         "best_bid": 0.2,
-         "usd_at_best": 1.2,
-         "usd_within_1c": 65.56,
-         "usd_within_2c": 65.56
+         "avg_fill_10": 0.3,
+         "avg_fill_25": 0.3059,
+         "best_ask": 0.3,
+         "best_bid": 0.25,
+         "bid_usd_within_2c": 83.91,
+         "usd_at_best": 9.96,
+         "usd_within_1c": 28.25,
+         "usd_within_2c": 68.25
         },
         "label": "26\u00b0C",
-        "lastTrade": 0.2,
+        "lastTrade": 0.3,
         "threshold": "2",
-        "volume": 8829.477712000002,
-        "yes": 0.22
+        "volume": 9191.484672999999,
+        "yes": 0.275
        },
        {
         "bestAsk": 0.37,
@@ -7674,67 +7712,70 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.37,
-         "avg_fill_25": 0.3715,
+         "avg_fill_25": 0.3728,
          "best_ask": 0.37,
          "best_bid": 0.36,
-         "usd_at_best": 21.09,
-         "usd_within_1c": 237.3,
-         "usd_within_2c": 2331.19
+         "bid_usd_within_2c": 305.82,
+         "usd_at_best": 17.76,
+         "usd_within_1c": 157.86,
+         "usd_within_2c": 2329.74
         },
         "label": "27\u00b0C",
         "lastTrade": 0.37,
         "threshold": "3",
-        "volume": 3391.529189,
+        "volume": 3398.2091889999997,
         "yes": 0.365
        },
        {
         "bestAsk": 0.27,
-        "bestBid": 0.26,
+        "bestBid": 0.25,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.278,
-         "avg_fill_25": 0.2792,
+         "avg_fill_10": 0.2762,
+         "avg_fill_25": 0.2785,
          "best_ask": 0.27,
          "best_bid": 0.25,
-         "usd_at_best": 1.91,
-         "usd_within_1c": 68.55,
-         "usd_within_2c": 133.13
+         "bid_usd_within_2c": 107.69,
+         "usd_at_best": 3.74,
+         "usd_within_1c": 97.82,
+         "usd_within_2c": 99.27
         },
         "label": "28\u00b0C",
-        "lastTrade": 0.26,
+        "lastTrade": 0.28,
         "threshold": "4",
-        "volume": 5297.471505999999,
-        "yes": 0.265
+        "volume": 5371.632577999999,
+        "yes": 0.26
        },
        {
-        "bestAsk": 0.104,
+        "bestAsk": 0.097,
         "bestBid": 0.078,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.139,
-         "avg_fill_25": 0.1529,
-         "best_ask": 0.134,
-         "best_bid": 0.095,
-         "usd_at_best": 0.86,
-         "usd_within_1c": 8.35,
-         "usd_within_2c": 8.35
+         "avg_fill_10": 0.1254,
+         "avg_fill_25": 0.1318,
+         "best_ask": 0.112,
+         "best_bid": 0.078,
+         "bid_usd_within_2c": 6.88,
+         "usd_at_best": 1.12,
+         "usd_within_1c": 3.5,
+         "usd_within_2c": 3.5
         },
         "label": "29\u00b0C",
-        "lastTrade": 0.174,
+        "lastTrade": 0.086,
         "threshold": "5",
-        "volume": 4653.518926000001,
-        "yes": 0.091
+        "volume": 4722.684890999999,
+        "yes": 0.0875
        },
        {
         "bestAsk": 0.006,
-        "bestBid": 0.003,
+        "bestBid": 0.002,
         "closed": false,
         "depth": null,
         "label": "30\u00b0C",
         "lastTrade": 0.036,
         "threshold": "6",
         "volume": 2986.287883,
-        "yes": 0.0045
+        "yes": 0.004
        },
        {
         "bestAsk": 0.001,
@@ -7744,7 +7785,7 @@
         "label": "31\u00b0C",
         "lastTrade": 0.004,
         "threshold": "7",
-        "volume": 295.71125,
+        "volume": 295.71125000000006,
         "yes": 0.0005
        },
        {
@@ -7783,10 +7824,10 @@
       ],
       "closed": false,
       "endDate": "2026-09-30T12:00:00Z",
-      "liquidity": 39685.586,
+      "liquidity": 42679.34563,
       "slug": "highest-temperature-in-madrid-on-september-30-2026",
       "title": "Highest temperature in Madrid on September 30?",
-      "volume": 31279.188889
+      "volume": 31793.204886999996
      },
      "models": {
       "cma_grapes_global": 23.9,
@@ -8226,7 +8267,7 @@
         "label": "25\u00b0C",
         "lastTrade": 0.002,
         "threshold": "2",
-        "volume": 167.458694,
+        "volume": 167.45869400000004,
         "yes": 0.0095
        },
        {
@@ -8234,10 +8275,11 @@
         "bestBid": 0.013,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0503,
-         "avg_fill_25": 0.0587,
+         "avg_fill_10": 0.0469,
+         "avg_fill_25": 0.0534,
          "best_ask": 0.029,
          "best_bid": 0.013,
+         "bid_usd_within_2c": 1.05,
          "usd_at_best": 0.15,
          "usd_within_1c": 1.17,
          "usd_within_2c": 2.28
@@ -8257,9 +8299,10 @@
          "avg_fill_25": 0.089,
          "best_ask": 0.08,
          "best_bid": 0.05,
+         "bid_usd_within_2c": 65.87,
          "usd_at_best": 4.4,
          "usd_within_1c": 22.33,
-         "usd_within_2c": 29.84
+         "usd_within_2c": 30.34
         },
         "label": "27\u00b0C",
         "lastTrade": 0.09,
@@ -8268,23 +8311,24 @@
         "yes": 0.065
        },
        {
-        "bestAsk": 0.47,
-        "bestBid": 0.46,
+        "bestAsk": 0.46,
+        "bestBid": 0.45,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.47,
-         "avg_fill_25": 0.47,
-         "best_ask": 0.47,
-         "best_bid": 0.46,
-         "usd_at_best": 63.67,
-         "usd_within_1c": 144.31,
-         "usd_within_2c": 378.6
+         "avg_fill_10": 0.46,
+         "avg_fill_25": 0.46,
+         "best_ask": 0.46,
+         "best_bid": 0.45,
+         "bid_usd_within_2c": 2746.83,
+         "usd_at_best": 111.98,
+         "usd_within_1c": 144.62,
+         "usd_within_2c": 343.71
         },
         "label": "28\u00b0C",
-        "lastTrade": 0.47,
+        "lastTrade": 0.46,
         "threshold": "5",
-        "volume": 626.566623,
-        "yes": 0.465
+        "volume": 679.9787279999999,
+        "yes": 0.455
        },
        {
         "bestAsk": 0.43,
@@ -8292,12 +8336,13 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.43,
-         "avg_fill_25": 0.4346,
+         "avg_fill_25": 0.43,
          "best_ask": 0.43,
          "best_bid": 0.42,
-         "usd_at_best": 13.33,
-         "usd_within_1c": 30.93,
-         "usd_within_2c": 39.93
+         "bid_usd_within_2c": 246.15,
+         "usd_at_best": 73.53,
+         "usd_within_1c": 82.33,
+         "usd_within_2c": 91.33
         },
         "label": "29\u00b0C",
         "lastTrade": 0.43,
@@ -8310,13 +8355,14 @@
         "bestBid": 0.04,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0646,
-         "avg_fill_25": 0.0808,
+         "avg_fill_10": 0.0667,
+         "avg_fill_25": 0.082,
          "best_ask": 0.06,
          "best_bid": 0.04,
+         "bid_usd_within_2c": 5.94,
          "usd_at_best": 6.36,
-         "usd_within_1c": 8.17,
-         "usd_within_2c": 10.02
+         "usd_within_1c": 6.36,
+         "usd_within_2c": 8.92
         },
         "label": "30\u00b0C",
         "lastTrade": 0.06,
@@ -8360,10 +8406,10 @@
       ],
       "closed": false,
       "endDate": "2026-10-01T12:00:00Z",
-      "liquidity": 41624.81426,
+      "liquidity": 41131.68921,
       "slug": "highest-temperature-in-madrid-on-october-1-2026",
       "title": "Highest temperature in Madrid on October 1?",
-      "volume": 4049.853285
+      "volume": 4103.26539
      },
      "models": {
       "cma_grapes_global": 24.4,
@@ -8380,7 +8426,7 @@
    },
    "icao": "LEMD",
    "lat": 40.4719,
-   "local_now": "2026-09-30T02:08+02:00",
+   "local_now": "2026-09-30T02:33+02:00",
    "lon": -3.5626,
    "metar": [
     {
@@ -8772,12 +8818,6 @@
      "raw": "METAR LEMD 281600Z 14003KT 090V240 9999 -DZ FEW020 SCT070TCU BKN080 18/15 Q1019 NOSIG",
      "t": "2026-09-28T16:00:00+00:00",
      "temp": 18
-    },
-    {
-     "maxT": null,
-     "raw": "METAR LEMD 281530Z 16006KT 080V200 9999 -DZ FEW020 SCT070TCU BKN080 18/14 Q1020 NOSIG",
-     "t": "2026-09-28T15:30:00+00:00",
-     "temp": 18
     }
    ],
    "name": "Madrid",
@@ -8958,7 +8998,7 @@
        "label": "23\u00b0C",
        "lastTrade": 0.002,
        "threshold": "3",
-       "volume": 869.9406,
+       "volume": 869.9405999999999,
        "yes": 0.0
       },
       {
@@ -8991,7 +9031,7 @@
        "label": "26\u00b0C",
        "lastTrade": 0.999,
        "threshold": "6",
-       "volume": 11579.543219,
+       "volume": 11579.543218999997,
        "yes": 1.0
       },
       {
@@ -9013,7 +9053,7 @@
        "label": "28\u00b0C",
        "lastTrade": 0.003,
        "threshold": "8",
-       "volume": 7049.004947999999,
+       "volume": 7049.004948,
        "yes": 0.0
       },
       {
@@ -9024,7 +9064,7 @@
        "label": "29\u00b0C",
        "lastTrade": 0.003,
        "threshold": "9",
-       "volume": 2166.971347,
+       "volume": 2166.9713469999997,
        "yes": 0.0
       },
       {
@@ -9045,7 +9085,7 @@
      "settled": true,
      "slug": "highest-temperature-in-madrid-on-september-29-2026",
      "title": "Highest temperature in Madrid on September 29?",
-     "volume": 46202.09698,
+     "volume": 46202.096979999995,
      "winner": "26\u00b0C"
     }
    },
@@ -9216,14 +9256,14 @@
     },
     "2026-09-29": {
      "conditions": {
-      "cape_max": 1070.0,
+      "cape_max": 960.0,
       "cloud_mean": 79.0,
       "morning_vis_min_m": 13440.0,
-      "pressure_change_hpa": -2.8,
+      "pressure_change_hpa": -1.6,
       "rain_chance_max": 95,
-      "tmax_change_c": 1.0,
-      "wind_mean_kmh": 6.5,
-      "wind_shift_deg": 13
+      "tmax_change_c": -0.3,
+      "wind_mean_kmh": 6.6,
+      "wind_shift_deg": 114
      },
      "ensemble": {
       "ecmwf_ifs025": [
@@ -9605,13 +9645,13 @@
         "label": "27\u00b0C or higher",
         "lastTrade": 0.11,
         "threshold": "10",
-        "volume": 3934.271718000001,
+        "volume": 3934.271717999999,
         "yes": 0.0005
        }
       ],
       "closed": false,
       "endDate": "2026-09-29T12:00:00Z",
-      "liquidity": 118107.90359,
+      "liquidity": 123185.62009,
       "slug": "highest-temperature-in-mexico-city-on-september-29-2026",
       "title": "Highest temperature in Mexico City on September 29?",
       "volume": 25573.162095
@@ -9881,14 +9921,14 @@
     },
     "2026-09-30": {
      "conditions": {
-      "cape_max": 1240.0,
-      "cloud_mean": 95.0,
-      "morning_vis_min_m": 1580.0,
-      "pressure_change_hpa": 2.4,
+      "cape_max": 1080.0,
+      "cloud_mean": 96.0,
+      "morning_vis_min_m": 4100.0,
+      "pressure_change_hpa": 0.7,
       "rain_chance_max": 94,
-      "tmax_change_c": -2.9,
-      "wind_mean_kmh": 6.0,
-      "wind_shift_deg": 171
+      "tmax_change_c": 0.7,
+      "wind_mean_kmh": 3.6,
+      "wind_shift_deg": 92
      },
      "ensemble": {
       "ecmwf_ifs025": [
@@ -10078,7 +10118,7 @@
         "yes": 0.005
        },
        {
-        "bestAsk": 0.017,
+        "bestAsk": 0.014,
         "bestBid": 0.001,
         "closed": false,
         "depth": null,
@@ -10086,7 +10126,7 @@
         "lastTrade": 0.001,
         "threshold": "5",
         "volume": 183.0054,
-        "yes": 0.009
+        "yes": 0.0075
        },
        {
         "bestAsk": 0.014,
@@ -10100,42 +10140,44 @@
         "yes": 0.0095
        },
        {
-        "bestAsk": 0.1,
+        "bestAsk": 0.09,
         "bestBid": 0.06,
         "closed": false,
         "depth": {
          "avg_fill_10": 0.0995,
-         "avg_fill_25": 0.1008,
+         "avg_fill_25": 0.0999,
          "best_ask": 0.09,
          "best_bid": 0.06,
+         "bid_usd_within_2c": 82.94,
          "usd_at_best": 0.45,
-         "usd_within_1c": 22.2,
-         "usd_within_2c": 39.47
+         "usd_within_1c": 24.67,
+         "usd_within_2c": 41.94
         },
         "label": "24\u00b0C",
         "lastTrade": 0.09,
         "threshold": "7",
-        "volume": 890.5855610000001,
-        "yes": 0.08
+        "volume": 890.585561,
+        "yes": 0.075
        },
        {
-        "bestAsk": 0.38,
-        "bestBid": 0.36,
+        "bestAsk": 0.33,
+        "bestBid": 0.3,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.3871,
-         "avg_fill_25": 0.3888,
-         "best_ask": 0.38,
-         "best_bid": 0.36,
-         "usd_at_best": 2.82,
-         "usd_within_1c": 93.3,
-         "usd_within_2c": 166.19
+         "avg_fill_10": 0.33,
+         "avg_fill_25": 0.33,
+         "best_ask": 0.33,
+         "best_bid": 0.3,
+         "bid_usd_within_2c": 93.96,
+         "usd_at_best": 37.62,
+         "usd_within_1c": 132.84,
+         "usd_within_2c": 151.04
         },
         "label": "25\u00b0C",
-        "lastTrade": 0.36,
+        "lastTrade": 0.38,
         "threshold": "8",
-        "volume": 2394.439106,
-        "yes": 0.37
+        "volume": 2617.201798,
+        "yes": 0.315
        },
        {
         "bestAsk": 0.46,
@@ -10143,12 +10185,13 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.46,
-         "avg_fill_25": 0.46,
+         "avg_fill_25": 0.4626,
          "best_ask": 0.46,
          "best_bid": 0.43,
-         "usd_at_best": 84.92,
-         "usd_within_1c": 344.71,
-         "usd_within_2c": 586.47
+         "bid_usd_within_2c": 521.83,
+         "usd_at_best": 18.4,
+         "usd_within_1c": 244.06,
+         "usd_within_2c": 348.06
         },
         "label": "26\u00b0C",
         "lastTrade": 0.44,
@@ -10157,31 +10200,32 @@
         "yes": 0.445
        },
        {
-        "bestAsk": 0.12,
-        "bestBid": 0.1,
+        "bestAsk": 0.2,
+        "bestBid": 0.16,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1287,
-         "avg_fill_25": 0.1423,
-         "best_ask": 0.12,
-         "best_bid": 0.1,
-         "usd_at_best": 1.22,
-         "usd_within_1c": 12.94,
-         "usd_within_2c": 12.94
+         "avg_fill_10": 0.2,
+         "avg_fill_25": 0.2,
+         "best_ask": 0.2,
+         "best_bid": 0.16,
+         "bid_usd_within_2c": 174.29,
+         "usd_at_best": 35.79,
+         "usd_within_1c": 99.64,
+         "usd_within_2c": 99.64
         },
         "label": "27\u00b0C or higher",
-        "lastTrade": 0.18,
+        "lastTrade": 0.2,
         "threshold": "10",
-        "volume": 3297.84522,
-        "yes": 0.11
+        "volume": 3626.095042,
+        "yes": 0.18
        }
       ],
       "closed": false,
       "endDate": "2026-09-30T12:00:00Z",
-      "liquidity": 38368.06046,
+      "liquidity": 34671.10142,
       "slug": "highest-temperature-in-mexico-city-on-september-30-2026",
       "title": "Highest temperature in Mexico City on September 30?",
-      "volume": 9135.566728000002
+      "volume": 9686.579242
      },
      "models": {
       "cma_grapes_global": 21.7,
@@ -10200,7 +10244,7 @@
    },
    "icao": "MMMX",
    "lat": 19.4363,
-   "local_now": "2026-09-29T18:08-06:00",
+   "local_now": "2026-09-29T18:33-06:00",
    "lon": -99.0721,
    "metar": [
     {
@@ -10671,7 +10715,7 @@
        "label": "25\u00b0C",
        "lastTrade": 0.001,
        "threshold": "8",
-       "volume": 5774.285560000001,
+       "volume": 5774.28556,
        "yes": 0.0
       },
       {
@@ -10693,7 +10737,7 @@
        "label": "27\u00b0C or higher",
        "lastTrade": 0.04,
        "threshold": "10",
-       "volume": 4827.877447000001,
+       "volume": 4827.877446999999,
        "yes": 0.0
       }
      ],
@@ -10874,14 +10918,14 @@
     },
     "2026-09-30": {
      "conditions": {
-      "cape_max": 90.0,
+      "cape_max": 70.0,
       "cloud_mean": 100.0,
-      "morning_vis_min_m": 6360.0,
-      "pressure_change_hpa": 0.4,
+      "morning_vis_min_m": 6460.0,
+      "pressure_change_hpa": 0.3,
       "rain_chance_max": 82,
-      "tmax_change_c": -1.1,
-      "wind_mean_kmh": 13.3,
-      "wind_shift_deg": 44
+      "tmax_change_c": -0.6,
+      "wind_mean_kmh": 12.3,
+      "wind_shift_deg": 45
      },
      "ensemble": {
       "ecmwf_ifs025": [
@@ -11190,60 +11234,63 @@
         "yes": 0.0005
        },
        {
-        "bestAsk": 0.26,
-        "bestBid": 0.18,
+        "bestAsk": 0.24,
+        "bestBid": 0.17,
         "closed": false,
         "depth": {
          "avg_fill_10": 0.24,
-         "avg_fill_25": 0.2404,
+         "avg_fill_25": 0.2441,
          "best_ask": 0.24,
-         "best_bid": 0.18,
-         "usd_at_best": 24.0,
-         "usd_within_1c": 49.0,
-         "usd_within_2c": 60.36
+         "best_bid": 0.17,
+         "bid_usd_within_2c": 19.36,
+         "usd_at_best": 14.4,
+         "usd_within_1c": 50.65,
+         "usd_within_2c": 59.68
         },
         "label": "24\u00b0C",
-        "lastTrade": 0.15,
+        "lastTrade": 0.18,
         "threshold": "4",
-        "volume": 9288.178087000002,
-        "yes": 0.22
+        "volume": 9410.538086999999,
+        "yes": 0.205
        },
        {
-        "bestAsk": 0.56,
-        "bestBid": 0.52,
+        "bestAsk": 0.57,
+        "bestBid": 0.55,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.56,
-         "avg_fill_25": 0.56,
-         "best_ask": 0.56,
-         "best_bid": 0.52,
-         "usd_at_best": 189.16,
-         "usd_within_1c": 193.13,
-         "usd_within_2c": 197.27
+         "avg_fill_10": 0.5844,
+         "avg_fill_25": 0.6123,
+         "best_ask": 0.57,
+         "best_bid": 0.55,
+         "bid_usd_within_2c": 83.43,
+         "usd_at_best": 0.97,
+         "usd_within_1c": 5.11,
+         "usd_within_2c": 9.42
         },
         "label": "25\u00b0C",
-        "lastTrade": 0.54,
+        "lastTrade": 0.53,
         "threshold": "5",
-        "volume": 7780.728945999999,
-        "yes": 0.54
+        "volume": 7785.900613,
+        "yes": 0.56
        },
        {
         "bestAsk": 0.22,
         "bestBid": 0.18,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.23,
-         "avg_fill_25": 0.23,
-         "best_ask": 0.23,
-         "best_bid": 0.19,
-         "usd_at_best": 29.97,
-         "usd_within_1c": 128.02,
-         "usd_within_2c": 129.27
+         "avg_fill_10": 0.22,
+         "avg_fill_25": 0.2255,
+         "best_ask": 0.22,
+         "best_bid": 0.18,
+         "bid_usd_within_2c": 34.2,
+         "usd_at_best": 11.0,
+         "usd_within_1c": 35.15,
+         "usd_within_2c": 133.2
         },
         "label": "26\u00b0C",
-        "lastTrade": 0.22,
+        "lastTrade": 0.18,
         "threshold": "6",
-        "volume": 7094.724317,
+        "volume": 7107.419969999999,
         "yes": 0.2
        },
        {
@@ -11252,17 +11299,18 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.0484,
-         "avg_fill_25": 0.065,
+         "avg_fill_25": 0.0662,
          "best_ask": 0.044,
          "best_bid": 0.043,
-         "usd_at_best": 0.44,
-         "usd_within_1c": 8.05,
-         "usd_within_2c": 8.05
+         "bid_usd_within_2c": 17.86,
+         "usd_at_best": 0.22,
+         "usd_within_1c": 8.1,
+         "usd_within_2c": 8.42
         },
         "label": "27\u00b0C",
-        "lastTrade": 0.05,
+        "lastTrade": 0.043,
         "threshold": "7",
-        "volume": 2133.738186,
+        "volume": 2205.1181859999997,
         "yes": 0.0435
        },
        {
@@ -11273,7 +11321,7 @@
         "label": "28\u00b0C",
         "lastTrade": 0.006,
         "threshold": "8",
-        "volume": 886.2768580000001,
+        "volume": 886.276858,
         "yes": 0.001
        },
        {
@@ -11284,7 +11332,7 @@
         "label": "29\u00b0C",
         "lastTrade": null,
         "threshold": "9",
-        "volume": 334.545053,
+        "volume": 334.54505300000005,
         "yes": 0.0005
        },
        {
@@ -11301,10 +11349,10 @@
       ],
       "closed": false,
       "endDate": "2026-09-30T12:00:00Z",
-      "liquidity": 75487.65286,
+      "liquidity": 76383.43524,
       "slug": "highest-temperature-in-shanghai-on-september-30-2026",
       "title": "Highest temperature in Shanghai on September 30?",
-      "volume": 35400.660518
+      "volume": 36075.467513999996
      },
      "models": {
       "cma_grapes_global": 25.1,
@@ -11573,14 +11621,14 @@
     },
     "2026-10-01": {
      "conditions": {
-      "cape_max": 40.0,
+      "cape_max": 60.0,
       "cloud_mean": 98.0,
       "morning_vis_min_m": 20680.0,
       "pressure_change_hpa": 4.4,
       "rain_chance_max": 61,
       "tmax_change_c": 0.8,
-      "wind_mean_kmh": 16.7,
-      "wind_shift_deg": 15
+      "wind_mean_kmh": 16.0,
+      "wind_shift_deg": 14
      },
      "ensemble": {
       "ecmwf_ifs025": [
@@ -11749,22 +11797,23 @@
        },
        {
         "bestAsk": 0.11,
-        "bestBid": 0.09,
+        "bestBid": 0.08,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1194,
-         "avg_fill_25": 0.1198,
+         "avg_fill_10": 0.11,
+         "avg_fill_25": 0.1103,
          "best_ask": 0.11,
          "best_bid": 0.08,
-         "usd_at_best": 0.55,
-         "usd_within_1c": 37.07,
-         "usd_within_2c": 41.73
+         "bid_usd_within_2c": 72.88,
+         "usd_at_best": 24.25,
+         "usd_within_1c": 73.52,
+         "usd_within_2c": 90.03
         },
         "label": "23\u00b0C",
         "lastTrade": 0.12,
         "threshold": "3",
-        "volume": 1132.967634,
-        "yes": 0.1
+        "volume": 1332.967634,
+        "yes": 0.095
        },
        {
         "bestAsk": 0.29,
@@ -11772,12 +11821,13 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.29,
-         "avg_fill_25": 0.2935,
+         "avg_fill_25": 0.29,
          "best_ask": 0.29,
          "best_bid": 0.28,
-         "usd_at_best": 15.95,
-         "usd_within_1c": 72.97,
-         "usd_within_2c": 86.31
+         "bid_usd_within_2c": 151.54,
+         "usd_at_best": 27.55,
+         "usd_within_1c": 136.74,
+         "usd_within_2c": 167.74
         },
         "label": "24\u00b0C",
         "lastTrade": 0.23,
@@ -11786,61 +11836,64 @@
         "yes": 0.285
        },
        {
-        "bestAsk": 0.38,
-        "bestBid": 0.37,
+        "bestAsk": 0.39,
+        "bestBid": 0.36,
         "closed": false,
         "depth": {
          "avg_fill_10": 0.39,
-         "avg_fill_25": 0.3954,
+         "avg_fill_25": 0.39,
          "best_ask": 0.39,
-         "best_bid": 0.37,
-         "usd_at_best": 11.23,
-         "usd_within_1c": 113.1,
-         "usd_within_2c": 394.22
+         "best_bid": 0.36,
+         "bid_usd_within_2c": 432.91,
+         "usd_at_best": 30.73,
+         "usd_within_1c": 209.2,
+         "usd_within_2c": 2503.07
         },
         "label": "25\u00b0C",
         "lastTrade": 0.39,
         "threshold": "5",
-        "volume": 1808.9634600000002,
+        "volume": 1808.96346,
         "yes": 0.375
        },
        {
-        "bestAsk": 0.27,
+        "bestAsk": 0.26,
         "bestBid": 0.25,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.2743,
-         "avg_fill_25": 0.2777,
-         "best_ask": 0.27,
+         "avg_fill_10": 0.26,
+         "avg_fill_25": 0.2642,
+         "best_ask": 0.26,
          "best_bid": 0.25,
-         "usd_at_best": 5.59,
-         "usd_within_1c": 63.15,
-         "usd_within_2c": 198.54
+         "bid_usd_within_2c": 101.71,
+         "usd_at_best": 14.3,
+         "usd_within_1c": 94.07,
+         "usd_within_2c": 248.46
         },
         "label": "26\u00b0C",
         "lastTrade": 0.27,
         "threshold": "6",
         "volume": 1690.199897,
-        "yes": 0.26
+        "yes": 0.255
        },
        {
         "bestAsk": 0.029,
-        "bestBid": 0.02,
+        "bestBid": 0.017,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0477,
-         "avg_fill_25": 0.0587,
+         "avg_fill_10": 0.0439,
+         "avg_fill_25": 0.0565,
          "best_ask": 0.029,
-         "best_bid": 0.02,
-         "usd_at_best": 0.18,
-         "usd_within_1c": 1.01,
-         "usd_within_2c": 4.24
+         "best_bid": 0.017,
+         "bid_usd_within_2c": 6.83,
+         "usd_at_best": 0.47,
+         "usd_within_1c": 1.3,
+         "usd_within_2c": 7.72
         },
         "label": "27\u00b0C",
         "lastTrade": 0.023,
         "threshold": "7",
         "volume": 567.7559610000001,
-        "yes": 0.0245
+        "yes": 0.023
        },
        {
         "bestAsk": 0.002,
@@ -11850,7 +11903,7 @@
         "label": "28\u00b0C",
         "lastTrade": 0.001,
         "threshold": "8",
-        "volume": 199.58499999999998,
+        "volume": 199.585,
         "yes": 0.0015
        },
        {
@@ -11878,10 +11931,10 @@
       ],
       "closed": false,
       "endDate": "2026-10-01T12:00:00Z",
-      "liquidity": 41886.34556,
+      "liquidity": 44164.94502,
       "slug": "highest-temperature-in-shanghai-on-october-1-2026",
       "title": "Highest temperature in Shanghai on October 1?",
-      "volume": 9743.421718
+      "volume": 10065.552489
      },
      "models": {
       "cma_grapes_global": 24.1,
@@ -11900,7 +11953,7 @@
    },
    "icao": "ZSPD",
    "lat": 31.146,
-   "local_now": "2026-09-30T08:08+08:00",
+   "local_now": "2026-09-30T08:33+08:00",
    "lon": 121.8,
    "metar": [
     {
@@ -12505,7 +12558,7 @@
        "label": "26\u00b0C",
        "lastTrade": 0.999,
        "threshold": "6",
-       "volume": 14682.552897,
+       "volume": 14682.552896999998,
        "yes": 1.0
       },
       {
@@ -12538,7 +12591,7 @@
        "label": "29\u00b0C",
        "lastTrade": 0.002,
        "threshold": "9",
-       "volume": 2300.200129,
+       "volume": 2300.2001290000003,
        "yes": 0.0
       },
       {
@@ -12559,7 +12612,7 @@
      "settled": true,
      "slug": "highest-temperature-in-shanghai-on-september-29-2026",
      "title": "Highest temperature in Shanghai on September 29?",
-     "volume": 83178.885439,
+     "volume": 83178.88543899999,
      "winner": "26\u00b0C"
     }
    },
