@@ -81,6 +81,22 @@ def daily_max_by_local_date(times, values, now_local=None):
     return res
 
 
+def daily_min_by_local_date(times, values, now_local=None):
+    """Like daily_max_by_local_date, for the daily minimum (REST_KEY: min over the rest of today)."""
+    out, rest = {}, None
+    for t, v in zip(times, values):
+        if v is None:
+            continue
+        d = t[:10]
+        out[d] = min(out.get(d, 999), v)
+        if now_local and d == now_local[:10] and t[:13] >= now_local[:13]:
+            rest = v if rest is None else min(rest, v)
+    res = {d: round(v, 2) for d, v in out.items()}
+    if rest is not None:
+        res[REST_KEY] = round(rest, 2)
+    return res
+
+
 def fetch_open_meteo(base, st, models):
     """Try all models in one call; on failure fall back to one call per model.
     Returns list of (requested_models, payload)."""
@@ -104,7 +120,7 @@ def fetch_open_meteo(base, st, models):
 HOURLY_TODAY = {}  # station key -> {model: {"YYYY-MM-DDTHH:00": temp}} for the local today
 
 
-def parse_hourly(results, now_local=None, keep_today=None):
+def parse_hourly(results, now_local=None, keep_today=None, mins=None):
     """Return {series_name: {date: max}}. Unsuffixed keys get the single requested model's name.
     If keep_today is a dict, today's hourly values per series are stored in it."""
     series = {}
@@ -121,6 +137,8 @@ def parse_hourly(results, now_local=None, keep_today=None):
             else:
                 name = suffix
             series[name] = daily_max_by_local_date(times, h[k], now_local)
+            if mins is not None:
+                mins[name] = daily_min_by_local_date(times, h[k], now_local)
             if keep_today is not None and now_local:
                 keep_today[name] = {t: round(v, 2) for t, v in zip(times, h[k])
                                     if v is not None and t[:10] == now_local[:10]}
@@ -173,22 +191,32 @@ def fetch_conditions(st):
     return out
 
 
+MODEL_MINS = {}  # station key -> {model: {date: daily min}} (for lowest-temperature markets)
+ENS_MINS = {}    # station key -> {ensemble model: {date: [member daily mins]}}
+
+
 def fetch_models(st):
     keep = HOURLY_TODAY.setdefault(st["key"], {})
+    mins = MODEL_MINS.setdefault(st["key"], {})
     return parse_hourly(fetch_open_meteo("https://api.open-meteo.com/v1/forecast", st, DET_MODELS),
-                        NOW_LOCAL.get(st["key"]), keep)
+                        NOW_LOCAL.get(st["key"]), keep, mins)
 
 
 def fetch_ensemble(st):
-    s = parse_hourly(fetch_open_meteo("https://ensemble-api.open-meteo.com/v1/ensemble", st, ENS_MODELS), NOW_LOCAL.get(st["key"]))
+    mins = {}
+    s = parse_hourly(fetch_open_meteo("https://ensemble-api.open-meteo.com/v1/ensemble", st, ENS_MODELS),
+                     NOW_LOCAL.get(st["key"]), None, mins)
     # keys look like "member01_ecmwf_ifs025_ensemble" or "ecmwf_ifs025_ensemble" (control run)
-    groups = {}
-    for name, bydate in s.items():
-        m = re.sub(r"^member\d+_", "", name)
-        m = re.sub(r"_ensemble$", "", m)
-        for d, v in bydate.items():
-            groups.setdefault(m, {}).setdefault(d, []).append(v)
-    return groups
+    def group(series):
+        groups = {}
+        for name, bydate in series.items():
+            m = re.sub(r"^member\d+_", "", name)
+            m = re.sub(r"_ensemble$", "", m)
+            for d, v in bydate.items():
+                groups.setdefault(m, {}).setdefault(d, []).append(v)
+        return groups
+    ENS_MINS[st["key"]] = group(mins)
+    return group(s)
 
 
 def fetch_nws_katl():
@@ -202,6 +230,22 @@ def fetch_nws_katl():
         d = start.astimezone(tz).date().isoformat()
         if v["value"] is not None:
             out[d] = round(v["value"], 2)  # deg C
+    return out
+
+
+def fetch_nws_katl_min():
+    """NWS gridded daily minimum for KATL, deg C by local date."""
+    st = next(s for s in STATIONS if s["key"] == "atlanta")
+    pts = get(f"https://api.weather.gov/points/{st['lat']},{st['lon']}")
+    grid = get(pts["properties"]["forecastGridData"])
+    tz = ZoneInfo(st["tz"])
+    out = {}
+    for v in grid["properties"]["minTemperature"]["values"]:
+        start = datetime.fromisoformat(v["validTime"].split("/")[0])
+        # the overnight minimum belongs to the morning it ends on
+        d = (start.astimezone(tz) + timedelta(hours=12)).date().isoformat()
+        if v["value"] is not None:
+            out[d] = round(v["value"], 2)
     return out
 
 
@@ -229,6 +273,7 @@ def fetch_nws_hourly_katl():
 
 
 TAF_TX = re.compile(r"\bTX(M?)(\d{2})/(\d{2})(\d{2})Z")
+TAF_TN = re.compile(r"\bTN(M?)(\d{2})/(\d{2})(\d{2})Z")
 TAF_HEAD = re.compile(r"\b([A-Z]{4})\s+(\d{2})(\d{2})(\d{2})Z")
 
 
@@ -250,12 +295,13 @@ def resolve_ddhh(dd, hh, near):
     return best
 
 
-def parse_taf_tx(raw, now):
-    """Forecast maximum temperatures (TX groups) in a raw TAF: [{"t": utc iso, "value": deg C}]."""
+def parse_taf_tx(raw, now, pattern=None):
+    """Forecast maximum temperatures (TX groups; TN with pattern=TAF_TN) in a raw TAF:
+    [{"t": utc iso, "value": deg C}]."""
     head = TAF_HEAD.search(raw)
     issued = resolve_ddhh(int(head.group(2)), int(head.group(3)), now) if head else now
     out = []
-    for neg, temp, dd, hh in TAF_TX.findall(raw):
+    for neg, temp, dd, hh in (pattern or TAF_TX).findall(raw):
         t = resolve_ddhh(int(dd), int(hh), issued)
         if t is not None:
             out.append({"t": t.isoformat(), "value": -int(temp) if neg else int(temp)})
@@ -275,7 +321,8 @@ def fetch_taf(now):
         prev = out.get(icao)
         if prev and str(prev.get("issued") or "") >= str(issued or ""):
             continue  # keep the newest TAF per station
-        out[icao] = {"raw": raw, "issued": issued, "tx": parse_taf_tx(raw, now)}
+        out[icao] = {"raw": raw, "issued": issued, "tx": parse_taf_tx(raw, now),
+                     "tn": parse_taf_tx(raw, now, TAF_TN)}
     return out
 
 
@@ -337,8 +384,8 @@ def book_depth(token_id):
             "bid_usd_within_2c": bid_usd_2c}
 
 
-def fetch_market(st, d, with_books=False):
-    slug = f"highest-temperature-in-{st['slug']}-on-{month_name_slug(d)}"
+def fetch_market(st, d, with_books=False, kind="highest"):
+    slug = f"{kind}-temperature-in-{st['slug']}-on-{month_name_slug(d)}"
     ev = get(f"https://gamma-api.polymarket.com/events?slug={slug}")
     if not ev:
         return None
@@ -370,7 +417,8 @@ def fetch_market(st, d, with_books=False):
         })
     return {"slug": slug, "title": ev.get("title"), "closed": ev.get("closed"),
             "volume": float(ev.get("volume") or 0), "liquidity": float(ev.get("liquidity") or 0),
-            "endDate": ev.get("endDate"), "buckets": buckets}
+            "endDate": ev.get("endDate"), "buckets": buckets,
+            "rules": (ev.get("description") or "")[:400]}
 
 
 def main():
@@ -387,6 +435,11 @@ def main():
     except Exception as e:
         nws = {}
         ERRORS.append(f"nws: {e}")
+    try:
+        nws_min = fetch_nws_katl_min()
+    except Exception as e:
+        nws_min = {}
+        ERRORS.append(f"nws min: {e}")
     try:
         nws_hourly = fetch_nws_hourly_katl()
     except Exception as e:
@@ -477,6 +530,53 @@ def main():
                 m["settled"] = bool(m["buckets"]) and all(b.get("closed") for b in m["buckets"])
                 resolved[d] = m
         rec["resolved"] = resolved
+        # lowest-temperature markets (paper-trading track): same layout as "days", with daily minima
+        mmins, emins = MODEL_MINS.get(st["key"], {}), ENS_MINS.get(st["key"], {})
+        low_days = {}
+        for d in dates:
+            ld = {"models": {m: v[d] for m, v in mmins.items() if d in v},
+                  "ensemble": {m: sorted(v[d]) for m, v in emins.items() if d in v}}
+            if d == local_now.date().isoformat():
+                ld["rest_of_day_from"] = NOW_LOCAL[st["key"]]
+                ld["models_rest"] = {m: v[REST_KEY] for m, v in mmins.items() if REST_KEY in v}
+                ld["ensemble_rest"] = {m: sorted(v[REST_KEY]) for m, v in emins.items() if REST_KEY in v}
+            if d in conds:
+                ld["conditions"] = conds[d]
+            if st["key"] == "atlanta" and d in nws_min:
+                ld["nws_grid_min"] = nws_min[d]
+            taf = tafs.get(st["icao"])
+            if taf:
+                tn = [x for x in taf.get("tn", [])
+                      if datetime.fromisoformat(x["t"]).astimezone(tz).date().isoformat() == d]
+                if tn:
+                    ld["taf_min"] = min(x["value"] for x in tn)
+            day_obs = [o for o in obs if datetime.fromisoformat(o["t"]).astimezone(tz).date().isoformat() == d]
+            if day_obs:
+                ld["obs_min_so_far"] = min(o["temp"] for o in day_obs)
+                ld["obs_count"] = len(day_obs)
+                ld["obs_last"] = max(o["t"] for o in day_obs)
+            if d >= local_now.date().isoformat():
+                try:
+                    ld["market"] = fetch_market(st, d, with_books=True, kind="lowest")
+                except Exception as e:
+                    ERRORS.append(f"{st['key']} low market {d}: {e}")
+            low_days[d] = ld
+        rec["low_days"] = low_days
+        low_res = {}
+        for back in (2, 1):
+            d = (local_now.date() - timedelta(days=back)).isoformat()
+            try:
+                m = fetch_market(st, d, kind="lowest")
+            except Exception as e:
+                ERRORS.append(f"{st['key']} resolved low market {d}: {e}")
+                continue
+            if m:
+                win = [b["label"] for b in m["buckets"] if b.get("yes") is not None and b["yes"] >= 0.99]
+                m["winner"] = win[0] if len(win) == 1 and all(
+                    (b.get("yes") or 0) <= 0.01 for b in m["buckets"] if b["label"] != win[0]) else None
+                m["settled"] = bool(m["buckets"]) and all(b.get("closed") for b in m["buckets"])
+                low_res[d] = m
+        rec["low_resolved"] = low_res
         rec["metar"] = obs
         if st["icao"] in tafs:
             rec["taf"] = {k: tafs[st["icao"]][k] for k in ("raw", "issued")}

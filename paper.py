@@ -50,13 +50,16 @@ def main():
     ap.add_argument("--db", required=True)
     ap.add_argument("--data", default="data/latest.json")
     ap.add_argument("--out", required=True)
+    ap.add_argument("--kind", choices=["high", "low"], default="high",
+                    help="low: lowest-temperature markets (outcomes_low, snapshots_low)")
     a = ap.parse_args()
+    sfx = "_low" if a.kind == "low" else ""
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
 
     paper = load_dir(os.path.join(a.db, "paper"))
     results = load_dir(os.path.join(a.db, "paper_results"))
-    outcomes = {(o["city"], o["date"]): o for o in load_dir(os.path.join(a.db, "outcomes")).values()}
-    snapdb = list(load_dir(os.path.join(a.db, "snapshots")).values())
+    outcomes = {(o["city"], o["date"]): o for o in load_dir(os.path.join(a.db, "outcomes" + sfx)).values()}
+    snapdb = list(load_dir(os.path.join(a.db, "snapshots" + sfx)).values())
     run = [e["data"] for e in json.load(open(a.snaps))]
     writes, opened, settled = [], [], []
 
@@ -81,7 +84,7 @@ def main():
                 continue
             taken.add(key)
             doc_id = f"{v}_{s['city']}_{s['marketDate']}_{slug(b['label'])}"
-            data = {"variant": v, "city": s["city"], "marketDate": s["marketDate"], "bucket": b["label"],
+            data = {"kind": a.kind, "variant": v, "city": s["city"], "marketDate": s["marketDate"], "bucket": b["label"],
                     "lo": b.get("lo"), "hi": b.get("hi"), "stake": STAKE, "price": round(fill, 4),
                     "bestAsk": ask, "entryMid": b.get("market"), "shares": round(STAKE / fill, 2),
                     "ourOdds": round(p, 4), "edge": round(edge, 4), "stability": s.get("stability"),
@@ -92,7 +95,7 @@ def main():
 
     # --- settle
     for doc_id, p in paper.items():
-        if doc_id in results:
+        if doc_id in results or (p.get("kind", "high") != a.kind):
             continue
         o = outcomes.get((p["city"], p["marketDate"]))
         if not o:

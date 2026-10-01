@@ -112,14 +112,14 @@ def parse_bucket(label):
     return None, None
 
 
-def load_db(dirpath):
+def load_db(dirpath, suffix=""):
     snaps, outs = [], {}
     if not dirpath:
         return snaps, outs
-    for f in glob.glob(os.path.join(dirpath, "snapshots", "*.json")):
+    for f in glob.glob(os.path.join(dirpath, "snapshots" + suffix, "*.json")):
         d = json.load(open(f))
         snaps.append(d.get("data", d))
-    for f in glob.glob(os.path.join(dirpath, "outcomes", "*.json")):
+    for f in glob.glob(os.path.join(dirpath, "outcomes" + suffix, "*.json")):
         d = json.load(open(f))
         d = d.get("data", d)
         outs[(d["city"], d["date"])] = d
@@ -218,12 +218,31 @@ def main():
     ap.add_argument("--db")
     ap.add_argument("--out", default="out/snapshots.json")
     ap.add_argument("--run-at")
-    ap.add_argument("--calib", default="data/calibration.json")
+    ap.add_argument("--calib")
+    ap.add_argument("--kind", choices=["high", "low"], default="high",
+                    help="low: score the lowest-temperature markets (paper-trading track)")
     a = ap.parse_args()
+    LOW = a.kind == "low"
+    if a.calib is None:
+        a.calib = "data/calibration_low.json" if LOW else "data/calibration.json"
 
     latest = json.load(open(a.data))
-    emos = json.load(open("data/emos.json")).get("cities", {}) if os.path.exists("data/emos.json") else {}
-    snaps, outs = load_db(a.db)
+    if LOW:
+        # map each station's low_days onto the field names the scorer reads
+        for st_ in latest["stations"].values():
+            mapped = {}
+            for d_, ld in (st_.get("low_days") or {}).items():
+                m_ = {k: v for k, v in ld.items() if k not in ("obs_min_so_far", "taf_min", "nws_grid_min")}
+                if ld.get("obs_min_so_far") is not None:
+                    m_["obs_max_so_far"] = ld["obs_min_so_far"]
+                if ld.get("taf_min") is not None:
+                    m_["taf_max"] = ld["taf_min"]
+                if ld.get("nws_grid_min") is not None:
+                    m_["nws_grid_max"] = ld["nws_grid_min"]
+                mapped[d_] = m_
+            st_["days"] = mapped
+    emos = {} if LOW else (json.load(open("data/emos.json")).get("cities", {}) if os.path.exists("data/emos.json") else {})
+    snaps, outs = load_db(a.db, "_low" if LOW else "")
     cal = calibration(snaps, outs)
     src_errs = source_stats(snaps, outs)
     learned = {}  # (city, source) -> (bias, sd, live_n), for the report
@@ -246,9 +265,9 @@ def main():
                 continue
             if d < now_local.date().isoformat():
                 continue
-            peak = datetime.fromisoformat(d + "T15:00").replace(tzinfo=tz)
+            peak = datetime.fromisoformat(d + ("T06:00" if LOW else "T15:00")).replace(tzinfo=tz)
             lead = (peak - run_at).total_seconds() / 3600
-            if lead < -2:  # past ~17:00 local: the high is in, skip
+            if lead < -2:  # past ~17:00 local (08:00 for lows): the extreme is in, skip
                 continue
             band = lead_band(max(lead, 0))
             c = cal.get((city, band))
@@ -365,7 +384,13 @@ def main():
             obs_u = to_u(obs) if obs is not None else None
 
             def cdf(x):
-                """P(settled high <= x) with x on the continuous scale."""
+                """P(settled high <= x) with x on the continuous scale (for lows: the settled low)."""
+                if LOW:
+                    if obs_u is not None and x >= obs_u:
+                        return 1.0  # the low can't finish above what was already recorded
+                    if not mem_u:
+                        return 0.0
+                    return sum(wi * ncdf(x, m, ku) for m, wi in zip(mem_u, weights)) / sum(weights)
                 if obs_u is not None and x < obs_u:
                     return 0.0
                 if not mem_u:  # nothing left of the day: high is what was observed
@@ -407,7 +432,7 @@ def main():
                     v["blend"] = round(BLEND_W_OURS * b["model"] + (1 - BLEND_W_OURS) * b["market"] / mk_sum, 4)
                 if ep is not None:
                     v["emos"] = round(ep[i], 4)
-                b["variants"] = v
+                b["variants"] = {("low_" + k): val for k, val in v.items()} if LOW else v
             buckets.sort(key=lambda b: (-1e9 if b["lo"] is None else b["lo"]))
             gaps = [b["label"] for b in buckets if b["market"] is not None and abs(b["model"] - b["market"]) >= 0.10]
 
@@ -433,7 +458,7 @@ def main():
                     + (f" Station forecasts added: {', '.join(station_fc)}." if station_fc else "")
                     + (f" Nowcast: models ran {mean_anom:+.1f}°C vs the last {NOWCAST_WINDOW_H} h of readings"
                        f" beyond their usual bias; {NOWCAST_ALPHA:.0%} carried to the rest of the day." if anomaly else "")
-                    + (f" Same-day: high so far {obs}°C, combined with forecast for the hours after {day.get('rest_of_day_from')}." if use_rest else ""))
+                    + (f" Same-day: {'low' if LOW else 'high'} so far {obs}°C, combined with forecast for the hours after {day.get('rest_of_day_from')}." if use_rest else ""))
             doc = {
                 "city": city, "marketDate": d, "runAt": run_at.strftime("%Y-%m-%dT%H:%M:%SZ"),
                 "leadHours": round(lead, 1), "unit": unit,
@@ -446,7 +471,9 @@ def main():
                 "modelSpread": round(spread_c * (9 / 5 if fahrenheit else 1), 2) if spread_c is not None else None,
                 "conditions": day.get("conditions"),
             }
-            doc_id = f"{city}_{d}_{run_at.strftime('%Y%m%dT%H%MZ')}"
+            if LOW:
+                doc["kind"] = "low"
+            doc_id = f"{city}_{d}_{'low_' if LOW else ''}{run_at.strftime('%Y%m%dT%H%MZ')}"
             docs.append({"doc_id": doc_id, "data": doc})
             top_m = max(buckets, key=lambda b: b["model"])
             top_k = max(buckets, key=lambda b: b["market"] or 0)
@@ -455,7 +482,7 @@ def main():
                          f"$25 fills at {dp['avg_fill_25']*100:.1f}c" if dp.get("best_ask") and dp.get("avg_fill_25")
                          else (f"; our pick's book: best {dp['best_ask']*100:.0f}c, ${dp.get('usd_within_2c', 0):.0f} within 2c, "
                                f"too thin to fill $25" if dp.get("best_ask") else ""))
-            report.append(f"{st['name']} {d} [{stab}: {', '.join(stab_why)}] (lead {lead:.0f}h): forecast {doc['forecastRaw']}{unit}; "
+            report.append(f"{'LOW ' if LOW else ''}{st['name']} {d} [{stab}: {', '.join(stab_why)}] (lead {lead:.0f}h): forecast {doc['forecastRaw']}{unit}; "
                           f"ours {top_m['label']} {top_m['model']:.0%} vs market {top_k['label']} {top_k['market']:.0%}; "
                           f"gaps: {', '.join(gaps) or 'none'}{depth_txt}")
 

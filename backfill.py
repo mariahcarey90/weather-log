@@ -29,6 +29,10 @@ def get_text(url):
         return r.read().decode("utf-8", "replace")
 
 
+OBS_LOWS = {}   # station key -> {date: observed daily low, market unit}; filled by observed_highs
+FC_LOWS = {}    # station key -> {lead: {model: {date: forecast daily min}}}; filled by past_forecasts
+
+
 def observed_highs(st, start, end):
     q = [("station", st["icao"] if st["icao"] != "KATL" else "ATL"), ("data", "tmpf"),
          ("year1", start.year), ("month1", start.month), ("day1", start.day),
@@ -36,7 +40,7 @@ def observed_highs(st, start, end):
          ("tz", st["tz"]), ("format", "onlycomma"), ("latlon", "no"), ("missing", "empty"),
          ("trace", "empty"), ("direct", "no"), ("report_type", "3"), ("report_type", "4")]
     txt = get_text("https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py?" + urllib.parse.urlencode(q))
-    highs = {}
+    highs, lows = {}, {}
     for row in csv.DictReader(io.StringIO(txt)):
         t, v = row.get("valid"), row.get("tmpf")
         if not t or not v:
@@ -47,9 +51,10 @@ def observed_highs(st, start, end):
             continue
         d = t[:10]
         highs[d] = max(highs.get(d, -999), f)
-    out = {}
-    for d, f in highs.items():
-        out[d] = round(f) if st["unit"] == "F" else round((f - 32) * 5 / 9)
+        lows[d] = min(lows.get(d, 999), f)
+    conv = lambda f: round(f) if st["unit"] == "F" else round((f - 32) * 5 / 9)
+    out = {d: conv(f) for d, f in highs.items()}
+    OBS_LOWS[st["key"]] = {d: conv(f) for d, f in lows.items()}
     return out  # whole degrees in market unit
 
 
@@ -69,11 +74,13 @@ def past_forecasts(st):
             vals = h.get(fld) or h.get(f"{fld}_{m}")
             if not vals:
                 continue
-            daily = {}
+            daily, dmin = {}, {}
             for t, v in zip(h["time"], vals):
                 if v is not None:
                     daily[t[:10]] = max(daily.get(t[:10], -999), v)
+                    dmin[t[:10]] = min(dmin.get(t[:10], 999), v)
             res.setdefault(lead, {})[m] = daily
+            FC_LOWS.setdefault(st["key"], {}).setdefault(lead, {})[m] = dmin
     return res
 
 
@@ -83,6 +90,31 @@ def summarize(errs):
     return {"n": len(errs), "bias": round(statistics.fmean(errs), 2),
             "sd": round(statistics.stdev(errs), 2),
             "mae": round(statistics.fmean(abs(e) for e in errs), 2)}
+
+
+def build(obs, fc, unit, start, end):
+    """Per-lead calibration (per model and the model median) for one station."""
+    city = {"obs_days": len(obs)}
+    for lead, bymodel in fc.items():
+        per_model, med_errs = {}, []
+        for m, daily in bymodel.items():
+            errs = []
+            for d, v in daily.items():
+                if d in obs and start.isoformat() <= d <= end.isoformat():
+                    ov_c = (obs[d] - 32) * 5 / 9 if unit == "F" else obs[d]
+                    errs.append(v - ov_c)
+            s = summarize(errs)
+            if s:
+                per_model[m] = s
+        dates = sorted(set().union(*[set(x) for x in bymodel.values()])) if bymodel else []
+        for d in dates:
+            if d in obs and start.isoformat() <= d <= end.isoformat():
+                vs = [bymodel[m][d] for m in bymodel if d in bymodel[m]]
+                if len(vs) >= 3:
+                    ov_c = (obs[d] - 32) * 5 / 9 if unit == "F" else obs[d]
+                    med_errs.append(statistics.median(vs) - ov_c)
+        city[lead] = {"median": summarize(med_errs), "models": per_model}
+    return city
 
 
 def main():
@@ -123,6 +155,20 @@ def main():
         json.dump(cal, f, indent=1)
     with open("data/backfill_daily.json", "w") as f:
         json.dump({"window": cal["window"], "cities": daily_rows}, f, separators=(",", ":"))
+
+    # the same for daily lows (lowest-temperature markets)
+    cal_low = {"generated": cal["generated"], "window": cal["window"], "cities": {}}
+    rows_low = {}
+    for st in STATIONS:
+        obs, fc = OBS_LOWS.get(st["key"], {}), FC_LOWS.get(st["key"], {})
+        if not obs or not fc:
+            continue
+        cal_low["cities"][st["key"]] = build(obs, fc, st["unit"], start, end)
+        rows_low[st["key"]] = {"unit": st["unit"], "obs": obs, "fc": fc}
+    with open("data/calibration_low.json", "w") as f:
+        json.dump(cal_low, f, indent=1)
+    with open("data/backfill_daily_low.json", "w") as f:
+        json.dump({"window": cal["window"], "cities": rows_low}, f, separators=(",", ":"))
 
 
 if __name__ == "__main__":
