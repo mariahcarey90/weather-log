@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["markets/discover.py", "markets/probe_xtracker.py", ".github/workflows/discover.yml"]
+    paths: ["markets/discover.py", "markets/probe_xtracker.py", "markets/probe_music.py", ".github/workflows/discover.yml"]
 
 permissions:
   contents: write
@@ -20,9 +20,9 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: Discover
-        run: python3 markets/discover.py
-      - name: Probe post counter
-        run: python3 markets/probe_xtracker.py
+        run: python3 markets/discover.py || true
+      - name: Probe music sources
+        run: python3 markets/probe_music.py
       - name: Commit
         run: |
           git config user.name "weather-log bot"
