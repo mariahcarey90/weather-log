@@ -1,0 +1,48 @@
+name: Fetch Spotify chart market data
+
+on:
+  schedule:
+    # every 6 hours, ~25 min before the six-hourly Claude run
+    - cron: "40 5,11,17,23 * * *"
+  workflow_dispatch:
+    inputs:
+      backfill:
+        description: "Also rebuild the backtest file (price history of recent windows)"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: ["markets/music_fetch.py", ".github/workflows/music.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch
+  cancel-in-progress: false
+
+jobs:
+  music:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - name: Fetch
+        run: |
+          if [ "${{ github.event_name }}" = "push" ] || [ "${{ inputs.backfill }}" = "true" ]; then
+            python3 markets/music_fetch.py --backfill
+          else
+            python3 markets/music_fetch.py
+          fi
+      - name: Commit data
+        run: |
+          git config user.name "weather-log bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add markets/data
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "music data: $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 5
+          done
+          exit 1
