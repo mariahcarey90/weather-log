@@ -18,7 +18,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: fetch
+  group: posts
   cancel-in-progress: false
 
 jobs:

@@ -18,7 +18,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: fetch
+  group: music
   cancel-in-progress: false
 
 jobs:
