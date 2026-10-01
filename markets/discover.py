@@ -24,10 +24,32 @@ def get_text(url, timeout=40):
         return r.status, r.read().decode("utf-8", "replace")
 
 
-def scan_events():
-    found, seen = [], set()
+SEARCH_TERMS = ["tweets", "elon musk tweets", "posts", "truth social posts", "spotify", "billboard",
+                "hot 100", "top song", "#1 song", "top artist", "album", "streams"]
+TAG_SLUGS = ["tweets", "elon-tweets", "tweet-markets", "music", "spotify", "billboard", "pop-culture", "mentions"]
+
+
+def candidate_batches():
+    """Yield (source, list of events) from search, tags and plain listing."""
+    for t in SEARCH_TERMS:
+        for closed in ("false", "true"):
+            q = {"q": t, "limit_per_type": 50, "events_status": "active" if closed == "false" else "resolved"}
+            try:
+                r = get("https://gamma-api.polymarket.com/public-search?" + urllib.parse.urlencode(q))
+                yield f"search:{t}:{closed}", (r or {}).get("events") or []
+            except Exception as e:
+                print("search error", t, closed, e)
+            time.sleep(0.3)
+    for tag in TAG_SLUGS:
+        for closed in ("false", "true"):
+            q = {"limit": 500, "tag_slug": tag, "closed": closed, "order": "startDate", "ascending": "false"}
+            try:
+                yield f"tag:{tag}:{closed}", get("https://gamma-api.polymarket.com/events?" + urllib.parse.urlencode(q)) or []
+            except Exception as e:
+                print("tag error", tag, closed, e)
+            time.sleep(0.3)
     for closed in ("false", "true"):
-        for offset in range(0, 4000, 500):
+        for offset in range(0, 2500, 500):
             q = {"limit": 500, "offset": offset, "closed": closed, "order": "startDate", "ascending": "false"}
             try:
                 evs = get("https://gamma-api.polymarket.com/events?" + urllib.parse.urlencode(q))
@@ -36,13 +58,31 @@ def scan_events():
                 break
             if not evs:
                 break
+            yield f"list:{closed}:{offset}", evs
+            time.sleep(0.3)
+
+
+def scan_events():
+    found, seen, stats, titles = [], set(), {}, []
+    for src, evs in candidate_batches():
+            stats[src] = len(evs)
             for ev in evs:
+                if src.startswith("search") and len(titles) < 300:
+                    titles.append(ev.get("title"))
                 title = ev.get("title") or ""
                 kind = next((k for k, p in PATTERNS.items() if p.search(title)), None)
                 if not kind or ev.get("slug") in seen:
                     continue
                 seen.add(ev.get("slug"))
                 mk = ev.get("markets") or []
+                if not mk or "outcomePrices" not in mk[0]:
+                    try:
+                        full = get("https://gamma-api.polymarket.com/events?slug=" + urllib.parse.quote(ev["slug"]))
+                        if full:
+                            ev = full[0]
+                            mk = ev.get("markets") or []
+                    except Exception as e:
+                        print("slug error", ev.get("slug"), e)
                 outs = []
                 for m in mk:
                     try:
@@ -56,9 +96,9 @@ def scan_events():
                               "volume": float(ev.get("volume") or 0), "liquidity": float(ev.get("liquidity") or 0),
                               "resolutionSource": ev.get("resolutionSource") or (mk[0].get("resolutionSource") if mk else None),
                               "rules": (ev.get("description") or (mk[0].get("description") if mk else "") or "")[:1500],
-                              "n_outcomes": len(mk), "outcomes": outs[:40]})
-            time.sleep(0.5)
-    return found
+                              "n_outcomes": len(mk), "outcomes": outs[:40], "via": src})
+    print("batches:", json.dumps(stats))
+    return found, stats, titles
 
 
 SOURCES = {
@@ -90,9 +130,9 @@ def probe_sources():
 
 def main():
     os.makedirs("markets/data", exist_ok=True)
-    events = scan_events()
+    events, stats, titles = scan_events()
     sources = probe_sources()
-    json.dump({"events": events, "sources": sources}, open("markets/data/discovery.json", "w"), indent=1, ensure_ascii=False)
+    json.dump({"events": events, "scan": stats, "searchTitles": titles, "sources": sources}, open("markets/data/discovery.json", "w"), indent=1, ensure_ascii=False)
     print(len(events), "events;", {k: v.get("ok") for k, v in sources.items()})
 
 
