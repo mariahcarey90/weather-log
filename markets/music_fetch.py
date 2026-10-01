@@ -12,6 +12,8 @@ Live mode (default) writes markets/data/music_latest.json:
             the last ~5 weeks, from kworb.net's per-track Spotify chart history; candidates are
             the top 15 on the latest global and US daily charts plus every song a market names
   resolved: markets that ended in the last 10 days with Polymarket's winner (99%+)
+Also keeps markets/data/music_hist.json, our own growing copy of every candidate's daily
+  streams (kworb shows only each song's last ~31 chart days), for later backtests.
 --backfill also writes markets/data/music_backfill.json: settled weekly markets since
   BACKFILL_FROM with their songs, the winner and each song's hourly price history, plus
   the daily streams of every song they name.
@@ -54,7 +56,8 @@ def norm(s):
 
 
 def key_of(title, artist):
-    return norm(title) + "|" + norm(artist.split(",")[0].split("&")[0])
+    first = re.split(r",|&| ft\.? | feat\.? | featuring | x | and | with ", artist, flags=re.I)[0]
+    return norm(title) + "|" + norm(first)
 
 
 # ---------------- kworb ----------------
@@ -274,6 +277,17 @@ def main():
         except Exception as e:
             print("track error", tid, e)
         time.sleep(0.7)
+
+    # keep our own growing copy of the daily history (kworb shows only ~31 chart days per song)
+    hpath = os.path.join(OUT, "music_hist.json")
+    hist = json.load(open(hpath)) if os.path.exists(hpath) else {}
+    keep = (now - timedelta(days=200)).date().isoformat()
+    for tid, t in tracks.items():
+        h = hist.setdefault(tid, {"name": t["name"], "daily": {}})
+        h["name"] = t["name"]
+        h["daily"].update(t["daily"])
+        h["daily"] = {d: v for d, v in sorted(h["daily"].items()) if d >= keep}
+    json.dump(hist, open(hpath, "w"), ensure_ascii=False, separators=(",", ":"))
 
     recent_since = (now - timedelta(days=TRACK_DAYS)).date().isoformat()
     live_tracks = {tid: {"name": t["name"], "daily": {d: v for d, v in t["daily"].items() if d >= recent_since},

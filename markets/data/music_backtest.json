@@ -1,0 +1,120 @@
+{
+ "params": {
+  "sigma": 0.07,
+  "sigma_min": 0.08,
+  "decay": 0.98,
+  "new_week_other": 0.15
+ },
+ "ours": {
+  "n": 72,
+  "logloss": 0.455,
+  "brier": 0.269,
+  "top_hit": 0.778
+ },
+ "market": {
+  "n": 72,
+  "logloss": 0.245,
+  "brier": 0.12,
+  "top_hit": 0.917
+ },
+ "blend": {
+  "n": 72,
+  "logloss": 0.322,
+  "brier": 0.163,
+  "top_hit": 0.931
+ },
+ "paper_ours": {
+  "trades": 7,
+  "wins": 2,
+  "pnl": 338.39,
+  "roi": 1.934
+ },
+ "paper_blend": {
+  "trades": 7,
+  "wins": 2,
+  "pnl": 338.39,
+  "roi": 1.934
+ },
+ "by_market": {
+  "global_1": {
+   "ours": {
+    "n": 18,
+    "logloss": 0.015,
+    "brier": 0.002,
+    "top_hit": 1.0
+   },
+   "market": {
+    "n": 18,
+    "logloss": 0.033,
+    "brier": 0.002,
+    "top_hit": 1.0
+   },
+   "paper": {
+    "trades": 0,
+    "wins": 0,
+    "pnl": 0.0,
+    "roi": null
+   }
+  },
+  "global_2": {
+   "ours": {
+    "n": 18,
+    "logloss": 0.489,
+    "brier": 0.238,
+    "top_hit": 0.944
+   },
+   "market": {
+    "n": 18,
+    "logloss": 0.328,
+    "brier": 0.155,
+    "top_hit": 0.889
+   },
+   "paper": {
+    "trades": 2,
+    "wins": 1,
+    "pnl": 106.25,
+    "roi": 2.125
+   }
+  },
+  "us_1": {
+   "ours": {
+    "n": 18,
+    "logloss": 0.474,
+    "brier": 0.312,
+    "top_hit": 0.722
+   },
+   "market": {
+    "n": 18,
+    "logloss": 0.113,
+    "brier": 0.041,
+    "top_hit": 1.0
+   },
+   "paper": {
+    "trades": 2,
+    "wins": 0,
+    "pnl": -50.0,
+    "roi": -1.0
+   }
+  },
+  "us_2": {
+   "ours": {
+    "n": 18,
+    "logloss": 0.844,
+    "brier": 0.522,
+    "top_hit": 0.444
+   },
+   "market": {
+    "n": 18,
+    "logloss": 0.506,
+    "brier": 0.28,
+    "top_hit": 0.778
+   },
+   "paper": {
+    "trades": 3,
+    "wins": 1,
+    "pnl": 282.14,
+    "roi": 3.762
+   }
+  }
+ }
+}
