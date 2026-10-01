@@ -7,9 +7,9 @@
  },
  "ours": {
   "n": 72,
-  "logloss": 0.455,
-  "brier": 0.269,
-  "top_hit": 0.778
+  "logloss": 0.484,
+  "brier": 0.281,
+  "top_hit": 0.764
  },
  "market": {
   "n": 72,
@@ -19,8 +19,8 @@
  },
  "blend": {
   "n": 72,
-  "logloss": 0.322,
-  "brier": 0.163,
+  "logloss": 0.333,
+  "brier": 0.167,
   "top_hit": 0.931
  },
  "paper_ours": {
@@ -39,8 +39,8 @@
   "global_1": {
    "ours": {
     "n": 18,
-    "logloss": 0.015,
-    "brier": 0.002,
+    "logloss": 0.018,
+    "brier": 0.003,
     "top_hit": 1.0
    },
    "market": {
@@ -59,9 +59,9 @@
   "global_2": {
    "ours": {
     "n": 18,
-    "logloss": 0.489,
-    "brier": 0.238,
-    "top_hit": 0.944
+    "logloss": 0.6,
+    "brier": 0.285,
+    "top_hit": 0.889
    },
    "market": {
     "n": 18,
