@@ -1,0 +1,66 @@
+{
+ "events": [],
+ "sources": {
+  "xtracker_io": {
+   "url": "https://www.xtracker.io/",
+   "ok": true,
+   "status": 200,
+   "bytes": 1923,
+   "sample": " Truth Tracker Truth Tracker "
+  },
+  "xtracker_polymarket": {
+   "url": "https://xtracker.polymarket.com/",
+   "ok": true,
+   "status": 200,
+   "bytes": 11054,
+   "sample": " XTracker - Social Media Analytics Post tracker API Docs Home Loading users... "
+  },
+  "xtracker_api_users": {
+   "url": "https://xtracker.polymarket.com/api/users",
+   "ok": true,
+   "status": 200,
+   "bytes": 17525,
+   "sample": "{\"success\":true,\"data\":[{\"id\":\"e210d4ec-9cc6-4900-a94f-4e523713ae0b\",\"handle\":\"mctest99035814\",\"name\":\"Mission Control E2E 99035814\",\"platform\":\"X\",\"platformId\":null,\"avatarUrl\":null,\"bio\":null,\"verified\":false,\"lastSync\":null,\"lastSyncError\":null,\"createdAt\":\"2026-08-24T19:17:16.021Z\",\"updatedAt\":\"2026-08-24T19:17:16.021Z\",\"trackings\":[],\"_count\":{\"posts\":0}},{\"id\":\"0479a0ae-931d-4c31-91fc-d4f72e6dc8f2\",\"handle\":\"ZelenskyyUa\",\"name\":\"Volodymyr Zelenskyy / Володимир Зеленський\",\"platform\":\"X\",\"platformId\":\"1120633726478823425\",\"avatarUrl\":\"https://pbs.twimg.com/profile_images/1585550046740848642/OpGKpqx9_normal.jpg\",\"bio\":\"President of Ukraine / Президент України\",\"verified\":true,\"lastSync\":\"2026-10-01T03:45:30.513Z\",\"lastSyncError\":null,\"createdAt\":\"2026-03-16T19:09:10.124Z\",\"updatedAt\":\"2026-10-01T03:45:30.514Z\",\"trackings\":[{\"id\":\"5f88ce33-8d8a-4422-91f9-bdd00c6baa44\",\"userId\":\"0479a0ae-931d-4c31-91fc-d4f72e6dc8f2\",\"title\":\"Zelenskyy # posts October 2 - October 9, 2026?\",\"startDate\":\"2026-10-02T16:00:00.000Z\",\"endDate\":\"2026-10-09T15:59:59.000Z\",\"target\":null,\"marketLink\":\"https://polymarket.com/event/zelenskyy-of-tweets-october-2-october-9-2026\",\"isActive\":true,\"metrics\":{},\"config\":{},\"createdAt\":\"2026-09-29T04:00:04.043Z\",\"updatedAt\":\"2026-09-29T04:00:04.043Z\",\"postCount\":0},{\"id\":\"74bbcff8-0422-4487-a4fd-a60e1e85543f\",\"userId\":\"0479a0ae-931d-4c31-91fc-d4f72e6dc8f2\",\"title\":\"Zelenskyy # posts September 29 - October 6, 2026?\",\"startDate\":\"2026-09-29T16:00:00.000Z\",\"endDa"
+  },
+  "kworb_global_daily": {
+   "url": "https://kworb.net/spotify/country/global_daily.html",
+   "ok": true,
+   "status": 200,
+   "bytes": 88933,
+   "sample": " Spotify Daily Chart - Global ITUNES WORLDWIDE ARTISTS CHARTS BETTER LOVE RADIO SPOTIFY YOUTUBE TRENDING HOME Countries Artists Listeners Top Lists Spotify Daily Chart - Global - 2026/09/29 | Totals Pos P+ Artist and Title Days Pk (x?) Streams Streams+ 7Day 7Day+ Total 1 = Taylor Swift - Patient Zero 5 1 (x3) 6,117,512 -1,491,231 36,894,024 +6,117,512 36,894,024 2 = KAROL G - BbY WOW (w/ Judeline , rusowsky ) 49 1 (x31) 5,482,451 -108,855 40,502,082 -348,673 223,977,835 3 = ADÉLA - Nicole Kidman 26 2 (x4) 3,742,080 -92,447 26,496,754 +47,304 72,166,296 4 = ADÉLA - Ain't In LA 63 2 (x2) 3,438,854 -99,878 24,347,096 -91,537 146,894,318 5 +1 Olivia Rodrigo - the cure 131 1 (x1) 3,348,676 -107,221 21,850,681 +446,479 442,938,795 6 -1 Malcolm Todd - Earrings 184 1 (x5) 3,295,770 -164,790 24,029,738 -99,453 589,812,801 7 +4 Temper City - Self Aware 177 5 2,819,232 -77,101 20,070,438 -162,757 487,354,918 8 +2 Justin Bieber - Beauty And A Beat (w/ Nicki Minaj ) 215 1 (x31) 2,793,697 -112,735 21,082,747 -155,305 860,251,782 9 +3 Olivia Rodrigo - stupid song 110 1 (x10) 2,786,267 -48,776 18,250,746 +286,302 356,016,839 10 -1 Katy Perry - The One That Got Away 195 3 (x1) 2,770,914 -145,777 20,536,423 -128,138 555,044,937 11 +3 Taylor Swift - The Fate of Ophelia 362 1 (x78) 2,621,224 -192,647 20,119,880 +270,950 1,668,377,748 12 +3 The Goo Goo Dolls - Iris 1111 8 2,610,162 -113,438 18,800,509 -286,456 2,375,080,161 13 -5 Taylor Swift - Babylon 5 4 2,578,142 -352,691 19,876,617 +2,578,142"
+  },
+  "kworb_us_daily": {
+   "url": "https://kworb.net/spotify/country/us_daily.html",
+   "ok": true,
+   "status": 200,
+   "bytes": 86095,
+   "sample": " Spotify Daily Chart - United States ITUNES WORLDWIDE ARTISTS CHARTS BETTER LOVE RADIO SPOTIFY YOUTUBE TRENDING HOME Countries Artists Listeners Top Lists Spotify Daily Chart - United States - 2026/09/29 | Totals Pos P+ Artist and Title Days Pk (x?) Streams Streams+ 7Day 7Day+ Total 1 = Taylor Swift - Patient Zero 5 1 (x5) 2,348,147 -651,948 15,340,123 +2,348,147 15,340,123 2 = Ella Langley - Choosin' Texas 348 1 (x127) 1,246,655 -78,038 9,340,988 +52,700 451,092,674 3 +3 ADÉLA - Nicole Kidman 26 1 (x1) 1,170,756 -14,170 8,450,820 -32,413 23,548,131 4 -1 Taylor Swift - Babylon 5 3 (x3) 1,136,232 -164,159 9,254,662 +1,136,232 9,254,662 5 -1 Taylor Swift - Cleveland! 5 2 (x2) 1,056,989 -202,141 9,839,668 +1,056,989 9,839,668 6 -1 Taylor Swift - Pink Clouding 5 3 (x1) 1,028,534 -168,535 9,004,333 +1,028,534 9,004,333 7 = Malcolm Todd - Earrings 269 1 (x1) 998,911 -41,985 7,252,708 -32,816 237,368,871 8 = KAROL G - BbY WOW (w/ Judeline , rusowsky ) 49 2 (x11) 984,770 -30,175 7,242,383 -41,311 41,117,368 9 +1 Olivia Rodrigo - stupid song 110 1 (x12) 937,048 -11,346 6,092,997 +121,263 121,898,041 10 -1 Olivia Rodrigo - the cure 131 1 (x1) 934,565 -26,122 5,907,328 +158,182 132,193,074 11 = The Killers - Mr. Brightside 2221 4 763,279 -21,429 5,627,843 -22,554 892,038,133 12 = ADÉLA - Ain't In LA 63 7 736,306 -18,811 5,237,961 -12,347 33,783,693 13 +2 Whiskey Myers - Broken Window Serenade 426 10 662,786 +2,895 4,588,033 +1,831 225,241,202 14 = Mac Miller - Cinderella (w/ Ty Dolla $i"
+  },
+  "kworb_global_weekly": {
+   "url": "https://kworb.net/spotify/country/global_weekly.html",
+   "ok": true,
+   "status": 200,
+   "bytes": 75623,
+   "sample": " Spotify Weekly Chart - Global ITUNES WORLDWIDE ARTISTS CHARTS BETTER LOVE RADIO SPOTIFY YOUTUBE TRENDING HOME Countries Artists Listeners Top Lists Spotify Weekly Chart - Global - 2026/09/24 | Totals Pos P+ Artist and Title Wks Pk (x?) Streams Streams+ Total 1 = KAROL G - BbY WOW (w/ Judeline , rusowsky ) 6 1 (x4) 41,473,109 -1,071,969 192,840,116 2 +14 ADÉLA - Nicole Kidman 3 2 (x1) 24,764,342 +6,888,386 53,527,080 3 +2 ADÉLA - Ain't In LA 8 3 (x1) 23,926,210 +3,479,707 127,051,000 4 -2 Malcolm Todd - Earrings 26 1 (x1) 23,900,899 +6,994 575,950,583 5 -2 Justin Bieber - Beauty And A Beat (w/ Nicki Minaj ) 29 1 (x4) 21,187,360 -359,527 835,339,048 6 +1 Temper City - Self Aware 25 5 20,529,647 +857,052 476,634,986 7 -3 Katy Perry - The One That Got Away 27 4 20,510,330 -364,281 539,190,917 8 = Olivia Rodrigo - the cure 18 2 (x1) 19,643,518 +259,796 426,921,532 9 +1 The Goo Goo Dolls - Iris 160 9 19,352,827 +115,459 2,374,654,181 10 -4 Tame Impala - Loser 8 2 (x2) 18,585,483 -1,737,295 169,675,220 11 +4 Lady Gaga - Die With A Smile (w/ Bruno Mars ) 110 1 (x30) 18,533,635 +548,146 3,955,069,081 12 -3 sombr - back to friends 79 1 (x1) 18,516,293 -777,091 2,169,242,053 13 +5 Dominic Fike - Babydoll 45 1 (x1) 18,171,494 +738,478 1,039,576,004 14 -2 Ariana Grande - hate that i made you love me 17 1 (x3) 17,898,623 -609,663 473,071,340 15 -2 Shakira - Dai Dai (w/ Burna Boy ) 18 1 (x6) 17,267,301 -1,046,979 452,589,922 16 -5 Ravyn Lenae - Love Me Not 79 8 17,247,208 -1,705,274 1,396,"
+  },
+  "kworb_us_weekly": {
+   "url": "https://kworb.net/spotify/country/us_weekly.html",
+   "ok": true,
+   "status": 200,
+   "bytes": 73758,
+   "sample": " Spotify Weekly Chart - United States ITUNES WORLDWIDE ARTISTS CHARTS BETTER LOVE RADIO SPOTIFY YOUTUBE TRENDING HOME Countries Artists Listeners Top Lists Spotify Weekly Chart - United States - 2026/09/24 | Totals Pos P+ Artist and Title Wks Pk (x?) Streams Streams+ Total 1 = Ella Langley - Choosin' Texas 49 1 (x16) 8,845,550 +326,966 444,459,867 2 +2 ADÉLA - Nicole Kidman 3 2 (x1) 8,173,141 +2,260,597 17,655,058 3 -1 KAROL G - BbY WOW (w/ Judeline , rusowsky ) 6 2 (x2) 7,339,809 -185,065 35,314,012 4 -1 Malcolm Todd - Earrings 38 2 (x6) 7,244,461 +74,534 232,912,815 5 +1 The Killers - Mr. Brightside 317 5 5,538,553 +107,560 884,940,585 6 -1 Olivia Rodrigo - stupid song 15 1 (x2) 5,516,664 -113,672 117,400,341 7 = Olivia Rodrigo - the cure 18 2 (x2) 5,225,666 -61,873 127,815,702 8 +6 ADÉLA - Ain't In LA 8 8 5,123,702 +776,092 29,333,664 9 NEW Morgan Wallen - Last Thing You Need (from GTAVI: The Album) (w/ Grand Theft Auto VI ) 1 9 5,085,272 5,085,272 10 = Mac Miller - Cinderella (w/ Ty Dolla $ign ) 29 6 4,841,682 +84,706 125,256,856 11 = Ella Langley - Be Her 32 3 (x1) 4,687,310 -44,879 188,839,825 12 -3 Steve Lacy - oh yeah? 8 2 (x1) 4,610,982 -284,145 45,160,537 13 -5 Tame Impala - Loser 10 3 (x1) 4,598,780 -425,678 49,721,273 14 -2 Whiskey Myers - Broken Window Serenade 60 12 4,523,978 -56,866 221,598,924 15 +1 STELLA LEFTY - Boston 24 7 4,415,321 +224,873 105,598,600 16 -3 Olivia Dean - Man I Need 57 2 (x4) 4,382,599 -29,287 379,029,788 17 +2 Dominic Fike - Babydoll 66 1"
+  },
+  "spotify_charts_api": {
+   "url": "https://charts-spotify-com-service.spotify.com/public/v0/charts",
+   "ok": true,
+   "status": 200,
+   "bytes": 83562,
+   "sample": "{\"chartEntryViewResponses\":[{\"countryFilters\":[],\"displayChart\":{\"date\":\"2026-09-24\",\"chartMetadata\":{\"uri\":\"spotify:chart:7zE64clO2DB2y74QymNWRn\",\"alias\":\"REGIONAL_GLOBAL_WEEKLY\",\"entityType\":\"TRACK\",\"readableTitle\":\"Weekly Top Songs: Global\",\"backgroundColor\":\"#773795\",\"textColor\":\"#FFFFFF\",\"dimensions\":{\"latestDate\":\"2026-09-24\",\"earliestDate\":\"2016-12-29\",\"country\":\"GLOBAL\",\"chartType\":\"TOP_TRACK\",\"recurrence\":\"WEEKLY\",\"genre\":\"\",\"city\":\"\"}},\"description\":\"Your weekly update of the most played tracks right now.\"},\"entries\":[{\"chartEntryData\":{\"currentRank\":1,\"previousRank\":1,\"peakRank\":0,\"appearancesOnChart\":0,\"consecutiveAppearancesOnChart\":0,\"entryStatus\":\"NO_CHANGE\",\"peakDate\":\"\",\"entryRank\":0,\"entryDate\":\"\"},\"missingRequiredFields\":false,\"trackMetadata\":{\"trackName\":\"BbY WOW\",\"trackUri\":\"spotify:track:3h5T5JypYU7huFiVYhv1dr\",\"displayImageUri\":\"https://i.scdn.co/image/ab67616d00001e0221deb742375f88edfb2e7368\",\"artists\":[{\"name\":\"KAROL G\",\"spotifyUri\":\"spotify:artist:790FomKkXshlbRYZFtlgla\",\"externalUrl\":\"\"},{\"name\":\"Judeline\",\"spotifyUri\":\"spotify:artist:1H6X7yhnXZg73f9bssaj1Q\",\"externalUrl\":\"\"},{\"name\":\"rusowsky\",\"spotifyUri\":\"spotify:artist:1XEVu7gdRFfzEFqsPrancH\",\"externalUrl\":\"\"}],\"producers\":[],\"labels\":[],\"songWriters\":[],\"releaseDate\":\"\"}},{\"chartEntryData\":{\"currentRank\":2,\"previousRank\":16,\"peakRank\":0,\"appearancesOnChart\":0,\"consecutiveAppearancesOnChart\":0,\"entryStatus\":\"MOVED_UP\",\"peakDate\":\"\",\"entryRank\":0,\"entryDate\":\"\"},\"missingRequiredFields\":false,\"tra"
+  },
+  "nitter_check": {
+   "url": "https://nitter.net/elonmusk",
+   "ok": false,
+   "error": "URLError(ConnectionRefusedError(111, 'Connection refused'))"
+  }
+ }
+}
