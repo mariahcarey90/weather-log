@@ -1,7 +1,7 @@
 {
  "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), NOAA/NWS, aviationweather.gov",
  "errors": [],
- "fetched_at": "2026-10-02T11:35:16+00:00",
+ "fetched_at": "2026-10-02T12:08:36+00:00",
  "stations": {
   "amsterdam": {
    "days": {
@@ -157,7 +157,7 @@
       "meteofrance_seamless": 20.3,
       "ukmo_seamless": 20.8
      },
-     "obs_count": 36,
+     "obs_count": 35,
      "obs_last": "2026-10-01T21:55:00+00:00",
      "obs_max_so_far": 21
     },
@@ -497,59 +497,59 @@
         "label": "19\u00b0C",
         "lastTrade": 0.011,
         "threshold": "5",
-        "volume": 3611.9511629999997,
+        "volume": 3924.251163,
         "yes": 0.0005
        },
        {
-        "bestAsk": 0.61,
-        "bestBid": 0.56,
+        "bestAsk": 0.71,
+        "bestBid": 0.6,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.62,
-         "avg_fill_25": 0.6255,
-         "best_ask": 0.62,
-         "best_bid": 0.56,
-         "bid_usd_within_2c": 99.28,
-         "usd_at_best": 11.16,
-         "usd_within_1c": 30.45,
-         "usd_within_2c": 33.65
+         "avg_fill_10": 0.71,
+         "avg_fill_25": 0.7175,
+         "best_ask": 0.71,
+         "best_bid": 0.6,
+         "bid_usd_within_2c": 26.68,
+         "usd_at_best": 12.96,
+         "usd_within_1c": 18.1,
+         "usd_within_2c": 25.6
         },
         "label": "20\u00b0C",
-        "lastTrade": 0.55,
+        "lastTrade": 0.7,
         "threshold": "6",
-        "volume": 5125.140786999999,
-        "yes": 0.585
+        "volume": 5419.269584999999,
+        "yes": 0.655
        },
        {
-        "bestAsk": 0.42,
-        "bestBid": 0.4,
+        "bestAsk": 0.41,
+        "bestBid": 0.28,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.42,
-         "avg_fill_25": 0.42,
-         "best_ask": 0.42,
-         "best_bid": 0.39,
-         "bid_usd_within_2c": 11.54,
-         "usd_at_best": 63.27,
-         "usd_within_1c": 63.27,
-         "usd_within_2c": 63.27
+         "avg_fill_10": 0.41,
+         "avg_fill_25": 0.4123,
+         "best_ask": 0.41,
+         "best_bid": 0.28,
+         "bid_usd_within_2c": 17.56,
+         "usd_at_best": 19.23,
+         "usd_within_1c": 57.84,
+         "usd_within_2c": 71.06
         },
         "label": "21\u00b0C",
-        "lastTrade": 0.42,
+        "lastTrade": 0.28,
         "threshold": "7",
-        "volume": 8152.767382,
-        "yes": 0.41
+        "volume": 8400.205094,
+        "yes": 0.345
        },
        {
-        "bestAsk": 0.009,
+        "bestAsk": 0.005,
         "bestBid": 0.004,
         "closed": false,
         "depth": null,
         "label": "22\u00b0C",
         "lastTrade": 0.009,
         "threshold": "8",
-        "volume": 3770.649109000001,
-        "yes": 0.0065
+        "volume": 3962.409109,
+        "yes": 0.0045
        },
        {
         "bestAsk": 0.002,
@@ -576,15 +576,15 @@
       ],
       "closed": false,
       "endDate": "2026-10-02T12:00:00Z",
-      "liquidity": 85969.60769,
+      "liquidity": 89267.38612,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Amsterdam Airport Schiphol Station in degrees Celsius on 2 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=eham\n\n",
       "slug": "highest-temperature-in-amsterdam-on-october-2-2026",
       "title": "Highest temperature in Amsterdam on October 2?",
-      "volume": 24199.242424
+      "volume": 25189.137836
      },
      "models": {
-      "cma_grapes_global": 18.9,
-      "ecmwf_aifs025_single": 18.8,
+      "cma_grapes_global": 19.4,
+      "ecmwf_aifs025_single": 18.7,
       "ecmwf_ifs025": 19.2,
       "gem_seamless": 20.0,
       "gfs_seamless": 20.2,
@@ -601,47 +601,47 @@
        "2026-10-02T03:00": 11.8,
        "2026-10-02T04:00": 11.9,
        "2026-10-02T05:00": 12.0,
-       "2026-10-02T06:00": 11.9,
-       "2026-10-02T07:00": 11.9,
-       "2026-10-02T08:00": 12.2,
+       "2026-10-02T06:00": 11.8,
+       "2026-10-02T07:00": 11.5,
+       "2026-10-02T08:00": 11.8,
        "2026-10-02T09:00": 13.2,
-       "2026-10-02T10:00": 14.6,
-       "2026-10-02T11:00": 15.9,
-       "2026-10-02T12:00": 17.0,
-       "2026-10-02T13:00": 17.9,
-       "2026-10-02T14:00": 18.6,
-       "2026-10-02T15:00": 18.9,
-       "2026-10-02T16:00": 18.9,
-       "2026-10-02T17:00": 18.4,
-       "2026-10-02T18:00": 17.1,
-       "2026-10-02T19:00": 15.2,
-       "2026-10-02T20:00": 13.8,
-       "2026-10-02T21:00": 13.0,
-       "2026-10-02T22:00": 12.6,
-       "2026-10-02T23:00": 12.2
+       "2026-10-02T10:00": 15.2,
+       "2026-10-02T11:00": 16.9,
+       "2026-10-02T12:00": 17.9,
+       "2026-10-02T13:00": 18.6,
+       "2026-10-02T14:00": 19.1,
+       "2026-10-02T15:00": 19.4,
+       "2026-10-02T16:00": 19.4,
+       "2026-10-02T17:00": 18.9,
+       "2026-10-02T18:00": 17.6,
+       "2026-10-02T19:00": 15.7,
+       "2026-10-02T20:00": 14.2,
+       "2026-10-02T21:00": 13.4,
+       "2026-10-02T22:00": 12.9,
+       "2026-10-02T23:00": 12.5
       },
       "ecmwf_aifs025_single": {
        "2026-10-02T00:00": 14.5,
        "2026-10-02T01:00": 14.1,
        "2026-10-02T02:00": 13.7,
-       "2026-10-02T03:00": 13.2,
-       "2026-10-02T04:00": 12.7,
-       "2026-10-02T05:00": 12.3,
-       "2026-10-02T06:00": 12.0,
-       "2026-10-02T07:00": 11.9,
-       "2026-10-02T08:00": 12.1,
-       "2026-10-02T09:00": 12.9,
-       "2026-10-02T10:00": 14.1,
+       "2026-10-02T03:00": 13.3,
+       "2026-10-02T04:00": 12.8,
+       "2026-10-02T05:00": 12.4,
+       "2026-10-02T06:00": 12.1,
+       "2026-10-02T07:00": 12.0,
+       "2026-10-02T08:00": 12.3,
+       "2026-10-02T09:00": 13.0,
+       "2026-10-02T10:00": 14.2,
        "2026-10-02T11:00": 15.6,
        "2026-10-02T12:00": 17.0,
-       "2026-10-02T13:00": 18.2,
-       "2026-10-02T14:00": 18.8,
-       "2026-10-02T15:00": 18.8,
-       "2026-10-02T16:00": 18.4,
+       "2026-10-02T13:00": 18.1,
+       "2026-10-02T14:00": 18.7,
+       "2026-10-02T15:00": 18.7,
+       "2026-10-02T16:00": 18.3,
        "2026-10-02T17:00": 17.7,
        "2026-10-02T18:00": 16.9,
-       "2026-10-02T19:00": 16.0,
-       "2026-10-02T20:00": 15.3,
+       "2026-10-02T19:00": 16.1,
+       "2026-10-02T20:00": 15.4,
        "2026-10-02T21:00": 14.7,
        "2026-10-02T22:00": 14.0,
        "2026-10-02T23:00": 13.3
@@ -830,8 +830,8 @@
       }
      },
      "models_rest": {
-      "cma_grapes_global": 18.9,
-      "ecmwf_aifs025_single": 18.8,
+      "cma_grapes_global": 19.4,
+      "ecmwf_aifs025_single": 18.7,
       "ecmwf_ifs025": 19.2,
       "gem_seamless": 20.0,
       "gfs_seamless": 20.2,
@@ -840,10 +840,10 @@
       "meteofrance_seamless": 20.2,
       "ukmo_seamless": 19.8
      },
-     "obs_count": 27,
-     "obs_last": "2026-10-02T11:25:00+00:00",
+     "obs_count": 28,
+     "obs_last": "2026-10-02T11:55:00+00:00",
      "obs_max_so_far": 20,
-     "rest_of_day_from": "2026-10-02T13:00"
+     "rest_of_day_from": "2026-10-02T14:00"
     },
     "2026-10-03": {
      "conditions": {
@@ -1018,49 +1018,49 @@
         "label": "16\u00b0C",
         "lastTrade": 0.001,
         "threshold": "2",
-        "volume": 209.63939999999997,
+        "volume": 209.63940000000002,
         "yes": 0.0005
        },
        {
         "bestAsk": 0.003,
-        "bestBid": 0.002,
+        "bestBid": 0.001,
         "closed": false,
         "depth": null,
         "label": "17\u00b0C",
         "lastTrade": 0.002,
         "threshold": "3",
-        "volume": 263.447496,
-        "yes": 0.0025
+        "volume": 274.32749600000005,
+        "yes": 0.002
        },
        {
-        "bestAsk": 0.02,
-        "bestBid": 0.006,
+        "bestAsk": 0.019,
+        "bestBid": 0.008,
         "closed": false,
         "depth": null,
         "label": "18\u00b0C",
         "lastTrade": 0.02,
         "threshold": "4",
-        "volume": 546.055306,
-        "yes": 0.013
+        "volume": 551.9353060000001,
+        "yes": 0.0135
        },
        {
         "bestAsk": 0.16,
         "bestBid": 0.14,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1659,
-         "avg_fill_25": 0.1683,
+         "avg_fill_10": 0.1688,
+         "avg_fill_25": 0.1695,
          "best_ask": 0.16,
          "best_bid": 0.14,
-         "bid_usd_within_2c": 69.75,
-         "usd_at_best": 4.0,
-         "usd_within_1c": 66.53,
-         "usd_within_2c": 135.38
+         "bid_usd_within_2c": 71.19,
+         "usd_at_best": 1.12,
+         "usd_within_1c": 54.13,
+         "usd_within_2c": 105.19
         },
         "label": "19\u00b0C",
-        "lastTrade": 0.15,
+        "lastTrade": 0.17,
         "threshold": "5",
-        "volume": 798.4355169999999,
+        "volume": 832.0978700000001,
         "yes": 0.15
        },
        {
@@ -1072,58 +1072,58 @@
          "avg_fill_25": 0.59,
          "best_ask": 0.59,
          "best_bid": 0.56,
-         "bid_usd_within_2c": 606.4,
-         "usd_at_best": 47.2,
-         "usd_within_1c": 489.91,
-         "usd_within_2c": 4223.2
+         "bid_usd_within_2c": 203.41,
+         "usd_at_best": 184.37,
+         "usd_within_1c": 664.95,
+         "usd_within_2c": 3895.76
         },
         "label": "20\u00b0C",
         "lastTrade": 0.59,
         "threshold": "6",
-        "volume": 1706.20719,
+        "volume": 1729.036343,
         "yes": 0.575
        },
        {
-        "bestAsk": 0.28,
-        "bestBid": 0.27,
+        "bestAsk": 0.29,
+        "bestBid": 0.28,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.28,
-         "avg_fill_25": 0.28,
-         "best_ask": 0.28,
-         "best_bid": 0.27,
-         "bid_usd_within_2c": 91.48,
-         "usd_at_best": 31.48,
-         "usd_within_1c": 78.34,
-         "usd_within_2c": 215.49
+         "avg_fill_10": 0.29,
+         "avg_fill_25": 0.2904,
+         "best_ask": 0.29,
+         "best_bid": 0.28,
+         "bid_usd_within_2c": 6.93,
+         "usd_at_best": 24.02,
+         "usd_within_1c": 60.02,
+         "usd_within_2c": 92.27
         },
         "label": "21\u00b0C",
-        "lastTrade": 0.28,
+        "lastTrade": 0.29,
         "threshold": "7",
-        "volume": 1310.6488140000001,
-        "yes": 0.275
+        "volume": 1376.9902430000004,
+        "yes": 0.285
        },
        {
-        "bestAsk": 0.013,
-        "bestBid": 0.011,
+        "bestAsk": 0.012,
+        "bestBid": 0.004,
         "closed": false,
         "depth": null,
         "label": "22\u00b0C",
-        "lastTrade": 0.012,
+        "lastTrade": 0.006,
         "threshold": "8",
-        "volume": 362.03085699999997,
-        "yes": 0.012
+        "volume": 367.91085699999996,
+        "yes": 0.008
        },
        {
         "bestAsk": 0.003,
-        "bestBid": 0.002,
+        "bestBid": 0.001,
         "closed": false,
         "depth": null,
         "label": "23\u00b0C",
         "lastTrade": 0.006,
         "threshold": "9",
-        "volume": 421.149229,
-        "yes": 0.0025
+        "volume": 427.029229,
+        "yes": 0.002
        },
        {
         "bestAsk": 0.003,
@@ -1133,21 +1133,21 @@
         "label": "24\u00b0C or higher",
         "lastTrade": 0.001,
         "threshold": "10",
-        "volume": 471.33033399999994,
+        "volume": 492.210334,
         "yes": 0.002
        }
       ],
       "closed": false,
       "endDate": "2026-10-03T12:00:00Z",
-      "liquidity": 43086.74861,
+      "liquidity": 44987.90234,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Amsterdam Airport Schiphol Station in degrees Celsius on 3 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=eham\n\n",
       "slug": "highest-temperature-in-amsterdam-on-october-3-2026",
       "title": "Highest temperature in Amsterdam on October 3?",
-      "volume": 6388.070693
+      "volume": 6560.303628000001
      },
      "models": {
-      "cma_grapes_global": 18.6,
-      "ecmwf_aifs025_single": 19.1,
+      "cma_grapes_global": 18.5,
+      "ecmwf_aifs025_single": 18.9,
       "ecmwf_ifs025": 18.9,
       "gem_seamless": 19.4,
       "gfs_seamless": 19.5,
@@ -1160,7 +1160,7 @@
    },
    "icao": "EHAM",
    "lat": 52.315,
-   "local_now": "2026-10-02T13:35+02:00",
+   "local_now": "2026-10-02T14:08+02:00",
    "lon": 4.79,
    "low_days": {
     "2026-10-01": {
@@ -1306,7 +1306,7 @@
      },
      "models": {
       "cma_grapes_global": 12.8,
-      "ecmwf_aifs025_single": 15.1,
+      "ecmwf_aifs025_single": 15.0,
       "ecmwf_ifs025": 14.5,
       "gem_seamless": 12.5,
       "gfs_seamless": 15.6,
@@ -1315,7 +1315,7 @@
       "meteofrance_seamless": 12.6,
       "ukmo_seamless": 16.1
      },
-     "obs_count": 36,
+     "obs_count": 35,
      "obs_last": "2026-10-01T21:55:00+00:00",
      "obs_min_so_far": 13
     },
@@ -1604,7 +1604,7 @@
         "yes": 0.0005
        },
        {
-        "bestAsk": 0.005,
+        "bestAsk": 0.009,
         "bestBid": 0.001,
         "closed": false,
         "depth": null,
@@ -1612,7 +1612,7 @@
         "lastTrade": null,
         "threshold": "1",
         "volume": 40.404,
-        "yes": 0.003
+        "yes": 0.005
        },
        {
         "bestAsk": 0.74,
@@ -1646,7 +1646,7 @@
          "bid_usd_within_2c": 0.2,
          "usd_at_best": 192.0,
          "usd_within_1c": 318.1,
-         "usd_within_2c": 481.27
+         "usd_within_2c": 540.07
         },
         "label": "10\u00b0C",
         "lastTrade": null,
@@ -1655,24 +1655,19 @@
         "yes": 0.49
        },
        {
-        "bestAsk": 0.99,
+        "bestAsk": 1,
         "bestBid": 0.04,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.99,
-         "avg_fill_25": 0.99,
-         "best_ask": 0.99,
+         "best_ask": null,
          "best_bid": 0.04,
-         "bid_usd_within_2c": 9.3,
-         "usd_at_best": 198.0,
-         "usd_within_1c": 198.0,
-         "usd_within_2c": 198.0
+         "bid_usd_within_2c": 9.3
         },
         "label": "11\u00b0C",
         "lastTrade": null,
         "threshold": "4",
         "volume": 100.0,
-        "yes": 0.515
+        "yes": 0.52
        },
        {
         "bestAsk": 0.001,
@@ -1743,15 +1738,15 @@
       ],
       "closed": false,
       "endDate": "2026-10-02T12:00:00Z",
-      "liquidity": 82283.86462,
+      "liquidity": 80734.3022,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Amsterdam Airport Schiphol Station in degrees Celsius on 2 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=eham\n\nIf",
       "slug": "lowest-temperature-in-amsterdam-on-october-2-2026",
       "title": "Lowest temperature in Amsterdam on October 2?",
       "volume": 1690.414
      },
      "models": {
-      "cma_grapes_global": 11.8,
-      "ecmwf_aifs025_single": 11.9,
+      "cma_grapes_global": 11.5,
+      "ecmwf_aifs025_single": 12.0,
       "ecmwf_ifs025": 11.6,
       "gem_seamless": 10.7,
       "gfs_seamless": 13.4,
@@ -1761,7 +1756,7 @@
       "ukmo_seamless": 13.3
      },
      "models_rest": {
-      "cma_grapes_global": 12.2,
+      "cma_grapes_global": 12.5,
       "ecmwf_aifs025_single": 13.3,
       "ecmwf_ifs025": 13.2,
       "gem_seamless": 10.7,
@@ -1771,10 +1766,10 @@
       "meteofrance_seamless": 11.6,
       "ukmo_seamless": 15.4
      },
-     "obs_count": 27,
-     "obs_last": "2026-10-02T11:25:00+00:00",
+     "obs_count": 28,
+     "obs_last": "2026-10-02T11:55:00+00:00",
      "obs_min_so_far": 11,
-     "rest_of_day_from": "2026-10-02T13:00"
+     "rest_of_day_from": "2026-10-02T14:00"
     },
     "2026-10-03": {
      "conditions": {
@@ -1920,7 +1915,7 @@
      "market": {
       "buckets": [
        {
-        "bestAsk": 0.019,
+        "bestAsk": 0.01,
         "bestBid": 0.001,
         "closed": false,
         "depth": null,
@@ -1928,7 +1923,7 @@
         "lastTrade": null,
         "threshold": "0",
         "volume": 0.0,
-        "yes": 0.01
+        "yes": 0.0055
        },
        {
         "bestAsk": 0.67,
@@ -2133,15 +2128,15 @@
       ],
       "closed": false,
       "endDate": "2026-10-03T12:00:00Z",
-      "liquidity": 950.711,
+      "liquidity": 1184.251,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Amsterdam Airport Schiphol Station in degrees Celsius on 3 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=eham\n\nIf",
       "slug": "lowest-temperature-in-amsterdam-on-october-3-2026",
       "title": "Lowest temperature in Amsterdam on October 3?",
       "volume": 0.0
      },
      "models": {
-      "cma_grapes_global": 10.1,
-      "ecmwf_aifs025_single": 9.9,
+      "cma_grapes_global": 10.2,
+      "ecmwf_aifs025_single": 9.8,
       "ecmwf_ifs025": 9.8,
       "gem_seamless": 8.4,
       "gfs_seamless": 12.8,
@@ -2423,6 +2418,12 @@
     }
    },
    "metar": [
+    {
+     "maxT": null,
+     "raw": "METAR EHAM 021155Z 19009KT 160V230 9999 FEW020 20/12 Q1031 NOSIG",
+     "t": "2026-10-02T11:55:00+00:00",
+     "temp": 20
+    },
     {
      "maxT": null,
      "raw": "METAR EHAM 021125Z 20009KT 180V240 9999 FEW015 20/14 Q1032 NOSIG",
@@ -2794,12 +2795,6 @@
      "raw": "METAR EHAM 010455Z 17007KT 8000 SCT006 BKN011 19/18 Q1016 TEMPO 6000 RADZ BKN006 BECMG 25008KT",
      "t": "2026-10-01T04:55:00+00:00",
      "temp": 19
-    },
-    {
-     "maxT": null,
-     "raw": "METAR EHAM 010425Z 17007KT 140V200 8000 -RADZ FEW009 BKN014 19/18 Q1016 TEMPO 6000 BKN008",
-     "t": "2026-10-01T04:25:00+00:00",
-     "temp": 19
     }
    ],
    "name": "Amsterdam",
@@ -3014,7 +3009,7 @@
        "label": "21\u00b0C",
        "lastTrade": 0.999,
        "threshold": "6",
-       "volume": 14255.807354999999,
+       "volume": 14255.807354999995,
        "yes": 1.0
       },
       {
@@ -3025,7 +3020,7 @@
        "label": "22\u00b0C",
        "lastTrade": 0.002,
        "threshold": "7",
-       "volume": 10024.942133999999,
+       "volume": 10024.942133999997,
        "yes": 0.0
       },
       {
@@ -3234,7 +3229,7 @@
       "meteofrance_seamless": 16.5,
       "ukmo_seamless": 14.8
      },
-     "obs_count": 34,
+     "obs_count": 32,
      "obs_last": "2026-10-01T20:50:00+00:00",
      "obs_max_so_far": 17
     },
@@ -3245,9 +3240,9 @@
       "morning_vis_min_m": 23040.0,
       "pressure_change_hpa": 0.1,
       "rain_chance_max": 0,
-      "tmax_change_c": 0.2,
-      "wind_mean_kmh": 12.9,
-      "wind_shift_deg": 88
+      "tmax_change_c": -0.1,
+      "wind_mean_kmh": 13.7,
+      "wind_shift_deg": 87
      },
      "ensemble": {
       "ecmwf_ifs025": [
@@ -3381,27 +3376,34 @@
      },
      "ensemble_rest": {
       "ecmwf_ifs025": [
+       15.1,
+       15.2,
+       15.3,
+       15.3,
        15.4,
        15.5,
+       15.5,
        15.6,
-       15.6,
-       15.7,
-       15.9,
+       15.8,
+       15.8,
        15.9,
        16.0,
-       16.1,
-       16.2,
-       16.2,
-       16.2,
+       16.0,
        16.2,
        16.3,
        16.4,
        16.4,
+       16.4,
+       16.4,
+       16.4,
+       16.4,
+       16.5,
+       16.5,
        16.5,
        16.6,
        16.6,
-       16.6,
-       16.6,
+       16.7,
+       16.7,
        16.7,
        16.8,
        16.8,
@@ -3414,41 +3416,35 @@
        16.9,
        16.9,
        17.0,
-       17.0,
-       17.0,
-       17.0,
+       17.1,
        17.1,
        17.1,
        17.2,
        17.2,
-       17.2,
-       17.2,
-       17.3,
-       17.3,
-       17.3,
        17.3,
        17.4,
-       17.6,
-       17.6,
-       17.7,
+       17.4,
+       17.5,
+       17.5,
        18.0
       ],
       "icon_seamless_eps": [
-       14.7,
+       14.0,
        15.1,
+       15.1,
+       15.2,
+       15.2,
        15.2,
        15.3,
        15.3,
        15.3,
        15.4,
+       15.4,
        15.5,
        15.5,
-       15.6,
-       15.6,
        15.7,
        15.7,
        15.7,
-       15.8,
        15.8,
        15.8,
        15.9,
@@ -3458,7 +3454,6 @@
        16.0,
        16.0,
        16.0,
-       16.1,
        16.1,
        16.1,
        16.2,
@@ -3469,8 +3464,8 @@
        16.3,
        16.3,
        16.4,
+       16.4,
        16.5,
-       16.6,
        16.6,
        16.7,
        16.8
@@ -3519,7 +3514,7 @@
         "label": "13\u00b0C or below",
         "lastTrade": 0.005,
         "threshold": "0",
-        "volume": 468.80763699999994,
+        "volume": 468.807637,
         "yes": 0.0005
        },
        {
@@ -3530,7 +3525,7 @@
         "label": "14\u00b0C",
         "lastTrade": 0.009,
         "threshold": "1",
-        "volume": 917.2568879999999,
+        "volume": 917.256888,
         "yes": 0.0005
        },
        {
@@ -3552,7 +3547,7 @@
         "label": "16\u00b0C",
         "lastTrade": 0.001,
         "threshold": "3",
-        "volume": 4853.59113,
+        "volume": 4878.54113,
         "yes": 0.0005
        },
        {
@@ -3563,59 +3558,59 @@
         "label": "17\u00b0C",
         "lastTrade": 0.009,
         "threshold": "4",
-        "volume": 2100.97141,
+        "volume": 3920.9314099999997,
         "yes": 0.0005
        },
        {
-        "bestAsk": 0.92,
-        "bestBid": 0.81,
+        "bestAsk": 0.98,
+        "bestBid": 0.96,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.93,
-         "avg_fill_25": 0.93,
-         "best_ask": 0.93,
-         "best_bid": 0.89,
-         "bid_usd_within_2c": 4.57,
-         "usd_at_best": 73.46,
-         "usd_within_1c": 73.46,
-         "usd_within_2c": 119.54
+         "avg_fill_10": 0.979,
+         "avg_fill_25": 0.979,
+         "best_ask": 0.979,
+         "best_bid": 0.952,
+         "bid_usd_within_2c": 51.32,
+         "usd_at_best": 45.81,
+         "usd_within_1c": 490.67,
+         "usd_within_2c": 951.58
         },
         "label": "18\u00b0C",
-        "lastTrade": 0.92,
+        "lastTrade": 0.97,
         "threshold": "5",
-        "volume": 3683.726253,
-        "yes": 0.865
+        "volume": 4369.569759000001,
+        "yes": 0.97
        },
        {
-        "bestAsk": 0.08,
-        "bestBid": 0.055,
+        "bestAsk": 0.049,
+        "bestBid": 0.022,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1935,
-         "avg_fill_25": 0.2198,
-         "best_ask": 0.08,
-         "best_bid": 0.056,
-         "bid_usd_within_2c": 7.4,
-         "usd_at_best": 0.41,
-         "usd_within_1c": 0.41,
-         "usd_within_2c": 0.41
+         "avg_fill_10": 0.0924,
+         "avg_fill_25": 0.1917,
+         "best_ask": 0.051,
+         "best_bid": 0.021,
+         "bid_usd_within_2c": 6.68,
+         "usd_at_best": 2.2,
+         "usd_within_1c": 4.72,
+         "usd_within_2c": 4.72
         },
         "label": "19\u00b0C",
-        "lastTrade": 0.08,
+        "lastTrade": 0.05,
         "threshold": "6",
-        "volume": 1246.9065940000003,
-        "yes": 0.0675
+        "volume": 1717.9941729999998,
+        "yes": 0.0355
        },
        {
-        "bestAsk": 0.009,
+        "bestAsk": 0.006,
         "bestBid": 0.002,
         "closed": false,
         "depth": null,
         "label": "20\u00b0C",
-        "lastTrade": 0.012,
+        "lastTrade": 0.008,
         "threshold": "7",
-        "volume": 864.5806620000001,
-        "yes": 0.0055
+        "volume": 1242.685172,
+        "yes": 0.004
        },
        {
         "bestAsk": 0.001,
@@ -3653,19 +3648,19 @@
       ],
       "closed": false,
       "endDate": "2026-10-02T12:00:00Z",
-      "liquidity": 85163.13365,
+      "liquidity": 86797.26724,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Esenbo\u011fa Intl Airport Station in degrees Celsius on 2 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=ltac\n\nIf NO",
       "slug": "highest-temperature-in-ankara-on-october-2-2026",
       "title": "Highest temperature in Ankara on October 2?",
-      "volume": 16432.098413
+      "volume": 19812.044008
      },
      "models": {
-      "cma_grapes_global": 16.6,
-      "ecmwf_aifs025_single": 16.1,
+      "cma_grapes_global": 17.1,
+      "ecmwf_aifs025_single": 16.2,
       "ecmwf_ifs025": 16.4,
       "gem_seamless": 16.8,
       "gfs_seamless": 16.4,
-      "icon_seamless": 15.8,
+      "icon_seamless": 15.5,
       "jma_seamless": 16.1,
       "meteofrance_seamless": 16.9,
       "ukmo_seamless": 14.6
@@ -3677,25 +3672,25 @@
        "2026-10-02T02:00": 9.9,
        "2026-10-02T03:00": 9.6,
        "2026-10-02T04:00": 9.5,
-       "2026-10-02T05:00": 9.6,
+       "2026-10-02T05:00": 9.5,
        "2026-10-02T06:00": 9.7,
-       "2026-10-02T07:00": 10.0,
-       "2026-10-02T08:00": 10.4,
-       "2026-10-02T09:00": 11.1,
-       "2026-10-02T10:00": 12.2,
-       "2026-10-02T11:00": 13.5,
-       "2026-10-02T12:00": 14.6,
-       "2026-10-02T13:00": 15.5,
-       "2026-10-02T14:00": 16.2,
-       "2026-10-02T15:00": 16.6,
-       "2026-10-02T16:00": 16.6,
-       "2026-10-02T17:00": 16.2,
-       "2026-10-02T18:00": 15.5,
+       "2026-10-02T07:00": 10.1,
+       "2026-10-02T08:00": 10.7,
+       "2026-10-02T09:00": 11.4,
+       "2026-10-02T10:00": 12.6,
+       "2026-10-02T11:00": 13.9,
+       "2026-10-02T12:00": 15.1,
+       "2026-10-02T13:00": 16.0,
+       "2026-10-02T14:00": 16.7,
+       "2026-10-02T15:00": 17.1,
+       "2026-10-02T16:00": 16.9,
+       "2026-10-02T17:00": 16.4,
+       "2026-10-02T18:00": 15.7,
        "2026-10-02T19:00": 14.5,
-       "2026-10-02T20:00": 13.3,
-       "2026-10-02T21:00": 12.2,
-       "2026-10-02T22:00": 11.3,
-       "2026-10-02T23:00": 10.5
+       "2026-10-02T20:00": 13.1,
+       "2026-10-02T21:00": 11.9,
+       "2026-10-02T22:00": 11.2,
+       "2026-10-02T23:00": 10.7
       },
       "ecmwf_aifs025_single": {
        "2026-10-02T00:00": 9.1,
@@ -3703,25 +3698,25 @@
        "2026-10-02T02:00": 8.1,
        "2026-10-02T03:00": 7.9,
        "2026-10-02T04:00": 8.0,
-       "2026-10-02T05:00": 8.3,
-       "2026-10-02T06:00": 8.7,
-       "2026-10-02T07:00": 9.3,
-       "2026-10-02T08:00": 9.9,
-       "2026-10-02T09:00": 10.6,
-       "2026-10-02T10:00": 11.4,
-       "2026-10-02T11:00": 12.6,
-       "2026-10-02T12:00": 13.8,
-       "2026-10-02T13:00": 14.9,
-       "2026-10-02T14:00": 15.7,
-       "2026-10-02T15:00": 16.1,
-       "2026-10-02T16:00": 16.0,
+       "2026-10-02T05:00": 8.4,
+       "2026-10-02T06:00": 8.9,
+       "2026-10-02T07:00": 9.5,
+       "2026-10-02T08:00": 10.2,
+       "2026-10-02T09:00": 10.9,
+       "2026-10-02T10:00": 11.8,
+       "2026-10-02T11:00": 12.9,
+       "2026-10-02T12:00": 14.0,
+       "2026-10-02T13:00": 15.1,
+       "2026-10-02T14:00": 15.9,
+       "2026-10-02T15:00": 16.2,
+       "2026-10-02T16:00": 16.1,
        "2026-10-02T17:00": 15.5,
        "2026-10-02T18:00": 14.7,
        "2026-10-02T19:00": 13.7,
        "2026-10-02T20:00": 12.8,
        "2026-10-02T21:00": 12.1,
-       "2026-10-02T22:00": 11.4,
-       "2026-10-02T23:00": 10.7
+       "2026-10-02T22:00": 11.5,
+       "2026-10-02T23:00": 10.9
       },
       "ecmwf_ifs025": {
        "2026-10-02T00:00": 10.0,
@@ -3814,18 +3809,18 @@
        "2026-10-02T09:00": 9.4,
        "2026-10-02T10:00": 11.5,
        "2026-10-02T11:00": 13.1,
-       "2026-10-02T12:00": 14.2,
-       "2026-10-02T13:00": 15.1,
-       "2026-10-02T14:00": 15.6,
-       "2026-10-02T15:00": 15.7,
-       "2026-10-02T16:00": 15.8,
-       "2026-10-02T17:00": 15.1,
-       "2026-10-02T18:00": 14.3,
-       "2026-10-02T19:00": 13.0,
-       "2026-10-02T20:00": 12.2,
-       "2026-10-02T21:00": 12.0,
-       "2026-10-02T22:00": 11.7,
-       "2026-10-02T23:00": 11.4
+       "2026-10-02T12:00": 14.1,
+       "2026-10-02T13:00": 15.0,
+       "2026-10-02T14:00": 15.4,
+       "2026-10-02T15:00": 15.5,
+       "2026-10-02T16:00": 15.2,
+       "2026-10-02T17:00": 14.6,
+       "2026-10-02T18:00": 14.0,
+       "2026-10-02T19:00": 12.7,
+       "2026-10-02T20:00": 12.0,
+       "2026-10-02T21:00": 11.8,
+       "2026-10-02T22:00": 11.4,
+       "2026-10-02T23:00": 11.1
       },
       "jma_seamless": {
        "2026-10-02T00:00": 11.8,
@@ -3907,31 +3902,31 @@
       }
      },
      "models_rest": {
-      "cma_grapes_global": 16.6,
-      "ecmwf_aifs025_single": 16.1,
-      "ecmwf_ifs025": 16.4,
+      "cma_grapes_global": 17.1,
+      "ecmwf_aifs025_single": 16.2,
+      "ecmwf_ifs025": 16.2,
       "gem_seamless": 16.8,
       "gfs_seamless": 16.4,
-      "icon_seamless": 15.8,
+      "icon_seamless": 15.5,
       "jma_seamless": 16.1,
       "meteofrance_seamless": 16.9,
-      "ukmo_seamless": 14.6
+      "ukmo_seamless": 14.3
      },
-     "obs_count": 29,
-     "obs_last": "2026-10-02T11:20:00+00:00",
+     "obs_count": 30,
+     "obs_last": "2026-10-02T11:50:00+00:00",
      "obs_max_so_far": 18,
-     "rest_of_day_from": "2026-10-02T14:00"
+     "rest_of_day_from": "2026-10-02T15:00"
     },
     "2026-10-03": {
      "conditions": {
       "cape_max": 10.0,
-      "cloud_mean": 37.0,
-      "morning_vis_min_m": 34180.0,
-      "pressure_change_hpa": 4.2,
+      "cloud_mean": 25.0,
+      "morning_vis_min_m": 35640.0,
+      "pressure_change_hpa": 4.3,
       "rain_chance_max": 0,
-      "tmax_change_c": -0.2,
-      "wind_mean_kmh": 20.4,
-      "wind_shift_deg": 43
+      "tmax_change_c": 0.0,
+      "wind_mean_kmh": 21.2,
+      "wind_shift_deg": 42
      },
      "ensemble": {
       "ecmwf_ifs025": [
@@ -4084,39 +4079,30 @@
         "label": "13\u00b0C",
         "lastTrade": 0.001,
         "threshold": "1",
-        "volume": 289.9612,
+        "volume": 289.96119999999996,
         "yes": 0.0005
        },
        {
-        "bestAsk": 0.008,
-        "bestBid": 0.002,
+        "bestAsk": 0.006,
+        "bestBid": 0.001,
         "closed": false,
         "depth": null,
         "label": "14\u00b0C",
         "lastTrade": null,
         "threshold": "2",
-        "volume": 239.70534599999996,
-        "yes": 0.005
+        "volume": 285.518346,
+        "yes": 0.0035
        },
        {
-        "bestAsk": 0.03,
-        "bestBid": 0.029,
+        "bestAsk": 0.016,
+        "bestBid": 0.003,
         "closed": false,
-        "depth": {
-         "avg_fill_10": 0.0355,
-         "avg_fill_25": 0.0463,
-         "best_ask": 0.03,
-         "best_bid": 0.029,
-         "bid_usd_within_2c": 0.02,
-         "usd_at_best": 2.4,
-         "usd_within_1c": 6.64,
-         "usd_within_2c": 15.36
-        },
+        "depth": null,
         "label": "15\u00b0C",
-        "lastTrade": 0.03,
+        "lastTrade": 0.011,
         "threshold": "3",
-        "volume": 225.10418299999998,
-        "yes": 0.0295
+        "volume": 270.934383,
+        "yes": 0.0095
        },
        {
         "bestAsk": 0.17,
@@ -4126,16 +4112,16 @@
          "avg_fill_10": 0.17,
          "avg_fill_25": 0.17,
          "best_ask": 0.17,
-         "best_bid": 0.15,
-         "bid_usd_within_2c": 58.26,
-         "usd_at_best": 33.78,
-         "usd_within_1c": 73.44,
-         "usd_within_2c": 1116.79
+         "best_bid": 0.16,
+         "bid_usd_within_2c": 4.25,
+         "usd_at_best": 25.55,
+         "usd_within_1c": 49.83,
+         "usd_within_2c": 93.33
         },
         "label": "16\u00b0C",
         "lastTrade": 0.15,
         "threshold": "4",
-        "volume": 2952.6666370000003,
+        "volume": 2993.487226,
         "yes": 0.16
        },
        {
@@ -4143,19 +4129,19 @@
         "bestBid": 0.56,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.57,
-         "avg_fill_25": 0.57,
-         "best_ask": 0.57,
+         "avg_fill_10": 0.58,
+         "avg_fill_25": 0.58,
+         "best_ask": 0.58,
          "best_bid": 0.56,
-         "bid_usd_within_2c": 255.95,
-         "usd_at_best": 119.7,
-         "usd_within_1c": 335.81,
-         "usd_within_2c": 4332.04
+         "bid_usd_within_2c": 47.6,
+         "usd_at_best": 79.33,
+         "usd_within_1c": 165.5,
+         "usd_within_2c": 400.62
         },
         "label": "17\u00b0C",
-        "lastTrade": 0.56,
+        "lastTrade": 0.57,
         "threshold": "5",
-        "volume": 1411.9587589999996,
+        "volume": 1492.7877209999997,
         "yes": 0.565
        },
        {
@@ -4163,31 +4149,31 @@
         "bestBid": 0.28,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.29,
-         "avg_fill_25": 0.29,
+         "avg_fill_10": 0.2941,
+         "avg_fill_25": 0.2976,
          "best_ask": 0.29,
          "best_bid": 0.28,
-         "bid_usd_within_2c": 87.95,
-         "usd_at_best": 44.95,
-         "usd_within_1c": 65.46,
-         "usd_within_2c": 164.72
+         "bid_usd_within_2c": 32.56,
+         "usd_at_best": 5.8,
+         "usd_within_1c": 53.32,
+         "usd_within_2c": 69.53
         },
         "label": "18\u00b0C",
         "lastTrade": 0.29,
         "threshold": "6",
-        "volume": 3236.0094200000003,
+        "volume": 3593.1349400000004,
         "yes": 0.285
        },
        {
-        "bestAsk": 0.016,
-        "bestBid": 0.009,
+        "bestAsk": 0.014,
+        "bestBid": 0.008,
         "closed": false,
         "depth": null,
         "label": "19\u00b0C",
         "lastTrade": 0.012,
         "threshold": "7",
-        "volume": 672.0622759999999,
-        "yes": 0.0125
+        "volume": 712.882276,
+        "yes": 0.011
        },
        {
         "bestAsk": 0.001,
@@ -4225,19 +4211,19 @@
       ],
       "closed": false,
       "endDate": "2026-10-03T12:00:00Z",
-      "liquidity": 44917.41909,
+      "liquidity": 46700.2666,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Esenbo\u011fa Intl Airport Station in degrees Celsius on 3 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=ltac\n\nIf NO",
       "slug": "highest-temperature-in-ankara-on-october-3-2026",
       "title": "Highest temperature in Ankara on October 3?",
-      "volume": 9850.164826
+      "volume": 10461.403097
      },
      "models": {
-      "cma_grapes_global": 14.9,
-      "ecmwf_aifs025_single": 16.5,
+      "cma_grapes_global": 15.0,
+      "ecmwf_aifs025_single": 16.6,
       "ecmwf_ifs025": 16.4,
       "gem_seamless": 16.0,
       "gfs_seamless": 16.1,
-      "icon_seamless": 15.6,
+      "icon_seamless": 15.5,
       "jma_seamless": 15.9,
       "meteofrance_seamless": 16.6,
       "ukmo_seamless": 14.9
@@ -4246,7 +4232,7 @@
    },
    "icao": "LTAC",
    "lat": 40.128,
-   "local_now": "2026-10-02T14:35+03:00",
+   "local_now": "2026-10-02T15:08+03:00",
    "lon": 32.995,
    "low_days": {
     "2026-10-01": {
@@ -4401,7 +4387,7 @@
       "meteofrance_seamless": 9.8,
       "ukmo_seamless": 8.9
      },
-     "obs_count": 34,
+     "obs_count": 32,
      "obs_last": "2026-10-01T20:50:00+00:00",
      "obs_min_so_far": 10
     },
@@ -4412,9 +4398,9 @@
       "morning_vis_min_m": 23040.0,
       "pressure_change_hpa": 0.1,
       "rain_chance_max": 0,
-      "tmax_change_c": 0.2,
-      "wind_mean_kmh": 12.9,
-      "wind_shift_deg": 88
+      "tmax_change_c": -0.1,
+      "wind_mean_kmh": 13.7,
+      "wind_shift_deg": 87
      },
      "ensemble": {
       "ecmwf_ifs025": [
@@ -4684,7 +4670,7 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.172,
-         "avg_fill_25": 0.276,
+         "avg_fill_25": 0.2659,
          "best_ask": 0.13,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
@@ -4699,50 +4685,59 @@
         "yes": 0.065
        },
        {
-        "bestAsk": 0.038,
+        "bestAsk": 0.139,
         "bestBid": null,
         "closed": false,
-        "depth": null,
+        "depth": {
+         "avg_fill_10": 0.1531,
+         "avg_fill_25": 0.2208,
+         "best_ask": 0.139,
+         "best_bid": null,
+         "bid_usd_within_2c": 0.0,
+         "usd_at_best": 0.7,
+         "usd_within_1c": 6.12,
+         "usd_within_2c": 8.51
+        },
         "label": "4\u00b0C",
         "lastTrade": null,
         "threshold": "1",
         "volume": 20.0,
-        "yes": 0.019
+        "yes": 0.0695
        },
        {
-        "bestAsk": 0.21,
+        "bestAsk": 0.2,
         "bestBid": null,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.3103,
-         "avg_fill_25": 0.4863,
-         "best_ask": 0.21,
+         "avg_fill_10": 0.2795,
+         "avg_fill_25": 0.4441,
+         "best_ask": 0.19,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
-         "usd_at_best": 1.26,
-         "usd_within_1c": 1.26,
-         "usd_within_2c": 1.26
+         "usd_at_best": 1.14,
+         "usd_within_1c": 2.34,
+         "usd_within_2c": 2.34
         },
         "label": "5\u00b0C",
         "lastTrade": null,
         "threshold": "2",
         "volume": 15.0,
-        "yes": 0.105
+        "yes": 0.1
        },
        {
         "bestAsk": 1,
-        "bestBid": 0.8,
+        "bestBid": 0.81,
         "closed": false,
         "depth": {
          "best_ask": null,
-         "best_bid": 0.8,
-         "bid_usd_within_2c": 43.91
+         "best_bid": 0.81,
+         "bid_usd_within_2c": 48.79
         },
         "label": "6\u00b0C",
         "lastTrade": 0.99,
         "threshold": "3",
         "volume": 200.0,
-        "yes": 0.9
+        "yes": 0.905
        },
        {
         "bestAsk": 0.001,
@@ -4824,7 +4819,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-02T12:00:00Z",
-      "liquidity": 93134.53475,
+      "liquidity": 93264.18093,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Esenbo\u011fa Intl Airport Station in degrees Celsius on 2 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=ltac\n\nIf NOAA",
       "slug": "lowest-temperature-in-ankara-on-october-2-2026",
       "title": "Lowest temperature in Ankara on October 2?",
@@ -4842,31 +4837,31 @@
       "ukmo_seamless": 8.0
      },
      "models_rest": {
-      "cma_grapes_global": 10.5,
-      "ecmwf_aifs025_single": 10.7,
+      "cma_grapes_global": 10.7,
+      "ecmwf_aifs025_single": 10.9,
       "ecmwf_ifs025": 10.5,
       "gem_seamless": 9.0,
       "gfs_seamless": 12.0,
-      "icon_seamless": 11.4,
+      "icon_seamless": 11.1,
       "jma_seamless": 12.5,
       "meteofrance_seamless": 11.5,
       "ukmo_seamless": 10.2
      },
-     "obs_count": 29,
-     "obs_last": "2026-10-02T11:20:00+00:00",
+     "obs_count": 30,
+     "obs_last": "2026-10-02T11:50:00+00:00",
      "obs_min_so_far": 6,
-     "rest_of_day_from": "2026-10-02T14:00"
+     "rest_of_day_from": "2026-10-02T15:00"
     },
     "2026-10-03": {
      "conditions": {
       "cape_max": 10.0,
-      "cloud_mean": 37.0,
-      "morning_vis_min_m": 34180.0,
-      "pressure_change_hpa": 4.2,
+      "cloud_mean": 25.0,
+      "morning_vis_min_m": 35640.0,
+      "pressure_change_hpa": 4.3,
       "rain_chance_max": 0,
-      "tmax_change_c": -0.2,
-      "wind_mean_kmh": 20.4,
-      "wind_shift_deg": 43
+      "tmax_change_c": 0.0,
+      "wind_mean_kmh": 21.2,
+      "wind_shift_deg": 42
      },
      "ensemble": {
       "ecmwf_ifs025": [
@@ -5223,19 +5218,19 @@
       ],
       "closed": false,
       "endDate": "2026-10-03T12:00:00Z",
-      "liquidity": 505.6476,
+      "liquidity": 501.1376,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Esenbo\u011fa Intl Airport Station in degrees Celsius on 3 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=ltac\n\nIf NOAA",
       "slug": "lowest-temperature-in-ankara-on-october-3-2026",
       "title": "Lowest temperature in Ankara on October 3?",
       "volume": 0.0
      },
      "models": {
-      "cma_grapes_global": 8.2,
-      "ecmwf_aifs025_single": 8.1,
+      "cma_grapes_global": 8.1,
+      "ecmwf_aifs025_single": 8.2,
       "ecmwf_ifs025": 7.8,
       "gem_seamless": 4.4,
       "gfs_seamless": 9.5,
-      "icon_seamless": 7.8,
+      "icon_seamless": 7.7,
       "jma_seamless": 10.4,
       "meteofrance_seamless": 8.5,
       "ukmo_seamless": 8.2
@@ -5420,7 +5415,7 @@
        "label": "8\u00b0C",
        "lastTrade": null,
        "threshold": "3",
-       "volume": 62.9973,
+       "volume": 62.997299999999996,
        "yes": 0.0
       },
       {
@@ -5513,6 +5508,12 @@
     }
    },
    "metar": [
+    {
+     "maxT": null,
+     "raw": "METAR LTAC 021150Z 06011KT 9999 SCT040 SCT100 17/03 Q1020 NOSIG",
+     "t": "2026-10-02T11:50:00+00:00",
+     "temp": 17
+    },
     {
      "maxT": null,
      "raw": "METAR LTAC 021120Z 07011KT 9999 SCT040 SCT100 18/04 Q1020 NOSIG",
@@ -5878,18 +5879,6 @@
      "raw": "METAR LTAC 010520Z 05010KT 9999 SCT040 SCT100 12/07 Q1021 NOSIG",
      "t": "2026-10-01T05:20:00+00:00",
      "temp": 12
-    },
-    {
-     "maxT": null,
-     "raw": "METAR LTAC 010450Z 05011KT 9999 SCT033 SCT100 11/07 Q1021 NOSIG",
-     "t": "2026-10-01T04:50:00+00:00",
-     "temp": 11
-    },
-    {
-     "maxT": null,
-     "raw": "METAR LTAC 010420Z 05010KT 9999 SCT033 BKN100 10/07 Q1020 NOSIG",
-     "t": "2026-10-01T04:20:00+00:00",
-     "temp": 10
     }
    ],
    "name": "Ankara",
@@ -6093,7 +6082,7 @@
        "label": "17\u00b0C",
        "lastTrade": 0.999,
        "threshold": "5",
-       "volume": 4367.225096999999,
+       "volume": 4367.225097,
        "yes": 1.0
       },
       {
@@ -6104,7 +6093,7 @@
        "label": "18\u00b0C",
        "lastTrade": 0.095,
        "threshold": "6",
-       "volume": 7662.000995,
+       "volume": 7662.000994999999,
        "yes": 0.0
       },
       {
@@ -6115,7 +6104,7 @@
        "label": "19\u00b0C",
        "lastTrade": 0.001,
        "threshold": "7",
-       "volume": 1529.1362580000002,
+       "volume": 1529.136258,
        "yes": 0.0
       },
       {
@@ -6126,7 +6115,7 @@
        "label": "20\u00b0C",
        "lastTrade": 0.004,
        "threshold": "8",
-       "volume": 719.328816,
+       "volume": 719.3288160000001,
        "yes": 0.0
       },
       {
@@ -6325,20 +6314,20 @@
       "ukmo_seamless": 27.7
      },
      "nws_grid_max": 31.11,
-     "obs_count": 29,
+     "obs_count": 28,
      "obs_last": "2026-10-02T03:52:00+00:00",
      "obs_max_so_far": 29.4
     },
     "2026-10-02": {
      "conditions": {
-      "cape_max": 370.0,
-      "cloud_mean": 54.0,
-      "morning_vis_min_m": 1400.0,
-      "pressure_change_hpa": -1.5,
+      "cape_max": 350.0,
+      "cloud_mean": 59.0,
+      "morning_vis_min_m": 11000.0,
+      "pressure_change_hpa": -2.0,
       "rain_chance_max": 21,
-      "tmax_change_c": 1.3,
-      "wind_mean_kmh": 7.3,
-      "wind_shift_deg": 70
+      "tmax_change_c": 1.5,
+      "wind_mean_kmh": 6.5,
+      "wind_shift_deg": 26
      },
      "ensemble": {
       "ecmwf_ifs025": [
@@ -6437,37 +6426,37 @@
        30.5
       ],
       "ncep_gefs025": [
-       28.7,
-       29.2,
-       29.7,
-       29.8,
-       30.0,
-       30.3,
-       30.4,
+       29.5,
+       29.9,
+       30.1,
        30.4,
        30.6,
        30.7,
        30.7,
+       30.7,
+       30.7,
        30.8,
        30.8,
-       31.0,
-       31.0,
-       31.0,
+       30.9,
+       30.9,
+       31.2,
        31.3,
        31.3,
        31.3,
        31.4,
        31.5,
-       31.6,
-       31.6,
-       31.6,
+       31.5,
+       31.5,
+       31.5,
+       31.7,
        31.7,
        31.9,
-       32.0,
-       32.0,
-       32.4,
-       32.4,
-       32.9
+       32.1,
+       32.5,
+       32.5,
+       32.6,
+       32.7,
+       33.3
       ]
      },
      "ensemble_rest": {
@@ -6567,37 +6556,37 @@
        30.5
       ],
       "ncep_gefs025": [
-       28.7,
-       29.2,
-       29.7,
-       29.8,
-       30.0,
-       30.3,
-       30.4,
+       29.5,
+       29.9,
+       30.1,
        30.4,
        30.6,
        30.7,
        30.7,
+       30.7,
+       30.7,
        30.8,
        30.8,
-       31.0,
-       31.0,
-       31.0,
+       30.9,
+       30.9,
+       31.2,
        31.3,
        31.3,
        31.3,
        31.4,
        31.5,
-       31.6,
-       31.6,
-       31.6,
+       31.5,
+       31.5,
+       31.5,
+       31.7,
        31.7,
        31.9,
-       32.0,
-       32.0,
-       32.4,
-       32.4,
-       32.9
+       32.1,
+       32.5,
+       32.5,
+       32.6,
+       32.7,
+       33.3
       ]
      },
      "market": {
@@ -6610,7 +6599,7 @@
         "label": "79\u00b0F or below",
         "lastTrade": 0.008,
         "threshold": "0",
-        "volume": 635.1679999999999,
+        "volume": 635.168,
         "yes": 0.004
        },
        {
@@ -6625,44 +6614,44 @@
         "yes": 0.002
        },
        {
-        "bestAsk": 0.058,
-        "bestBid": 0.046,
+        "bestAsk": 0.047,
+        "bestBid": 0.043,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.072,
-         "avg_fill_25": 0.0809,
-         "best_ask": 0.054,
-         "best_bid": 0.046,
-         "bid_usd_within_2c": 10.07,
-         "usd_at_best": 0.81,
-         "usd_within_1c": 1.08,
-         "usd_within_2c": 1.08
+         "avg_fill_10": 0.0888,
+         "avg_fill_25": 0.1224,
+         "best_ask": 0.046,
+         "best_bid": 0.042,
+         "bid_usd_within_2c": 7.47,
+         "usd_at_best": 0.8,
+         "usd_within_1c": 1.22,
+         "usd_within_2c": 1.22
         },
         "label": "82-83\u00b0F",
         "lastTrade": 0.047,
         "threshold": "2",
         "volume": 4346.7901600000005,
-        "yes": 0.052
+        "yes": 0.045
        },
        {
-        "bestAsk": 0.48,
+        "bestAsk": 0.46,
         "bestBid": 0.45,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.478,
-         "avg_fill_25": 0.4851,
-         "best_ask": 0.47,
-         "best_bid": 0.45,
-         "bid_usd_within_2c": 232.95,
-         "usd_at_best": 4.7,
-         "usd_within_1c": 7.1,
-         "usd_within_2c": 302.19
+         "avg_fill_10": 0.4654,
+         "avg_fill_25": 0.4681,
+         "best_ask": 0.46,
+         "best_bid": 0.44,
+         "bid_usd_within_2c": 250.67,
+         "usd_at_best": 4.55,
+         "usd_within_1c": 116.41,
+         "usd_within_2c": 220.94
         },
         "label": "84-85\u00b0F",
-        "lastTrade": 0.45,
+        "lastTrade": 0.46,
         "threshold": "3",
-        "volume": 7900.272097999998,
-        "yes": 0.465
+        "volume": 7900.2720979999995,
+        "yes": 0.455
        },
        {
         "bestAsk": 0.45,
@@ -6670,13 +6659,13 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.4554,
-         "avg_fill_25": 0.4582,
+         "avg_fill_25": 0.4599,
          "best_ask": 0.45,
          "best_bid": 0.42,
-         "bid_usd_within_2c": 260.91,
+         "bid_usd_within_2c": 114.0,
          "usd_at_best": 4.5,
-         "usd_within_1c": 184.11,
-         "usd_within_2c": 240.82
+         "usd_within_1c": 20.56,
+         "usd_within_2c": 93.71
         },
         "label": "86-87\u00b0F",
         "lastTrade": 0.45,
@@ -6689,19 +6678,19 @@
         "bestBid": 0.07,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1071,
-         "avg_fill_25": 0.1088,
-         "best_ask": 0.09,
+         "avg_fill_10": 0.1063,
+         "avg_fill_25": 0.1145,
+         "best_ask": 0.1,
          "best_bid": 0.07,
-         "bid_usd_within_2c": 116.01,
-         "usd_at_best": 0.45,
-         "usd_within_1c": 2.12,
-         "usd_within_2c": 37.64
+         "bid_usd_within_2c": 23.11,
+         "usd_at_best": 3.5,
+         "usd_within_1c": 15.83,
+         "usd_within_2c": 17.03
         },
         "label": "88-89\u00b0F",
         "lastTrade": 0.07,
         "threshold": "5",
-        "volume": 4791.370801999998,
+        "volume": 4791.3708019999995,
         "yes": 0.08
        },
        {
@@ -6745,7 +6734,7 @@
         "label": "96-97\u00b0F",
         "lastTrade": 0.002,
         "threshold": "9",
-        "volume": 316.628,
+        "volume": 316.62800000000004,
         "yes": 0.0005
        },
        {
@@ -6762,18 +6751,18 @@
       ],
       "closed": false,
       "endDate": "2026-10-02T12:00:00Z",
-      "liquidity": 31921.30225,
+      "liquidity": 31270.79915,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Hartsfield-Jackson International Airport Station in degrees Fahrenheit on 2 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/times",
       "slug": "highest-temperature-in-atlanta-on-october-2-2026",
       "title": "Highest temperature in Atlanta on October 2?",
       "volume": 29705.984956999997
      },
      "models": {
-      "cma_grapes_global": 28.3,
-      "ecmwf_aifs025_single": 28.8,
+      "cma_grapes_global": 28.2,
+      "ecmwf_aifs025_single": 28.4,
       "ecmwf_ifs025": 30.5,
       "gem_seamless": 29.6,
-      "gfs_seamless": 30.7,
+      "gfs_seamless": 30.9,
       "icon_seamless": 29.5,
       "jma_seamless": 28.0,
       "meteofrance_seamless": 31.1,
@@ -6781,56 +6770,56 @@
      },
      "models_hourly": {
       "cma_grapes_global": {
-       "2026-10-02T00:00": 21.4,
-       "2026-10-02T01:00": 21.0,
-       "2026-10-02T02:00": 20.6,
-       "2026-10-02T03:00": 20.1,
-       "2026-10-02T04:00": 19.7,
-       "2026-10-02T05:00": 19.5,
-       "2026-10-02T06:00": 19.3,
-       "2026-10-02T07:00": 19.3,
-       "2026-10-02T08:00": 19.6,
-       "2026-10-02T09:00": 20.5,
-       "2026-10-02T10:00": 21.8,
-       "2026-10-02T11:00": 23.1,
-       "2026-10-02T12:00": 24.4,
-       "2026-10-02T13:00": 25.6,
+       "2026-10-02T00:00": 21.6,
+       "2026-10-02T01:00": 21.4,
+       "2026-10-02T02:00": 21.2,
+       "2026-10-02T03:00": 20.9,
+       "2026-10-02T04:00": 20.5,
+       "2026-10-02T05:00": 20.3,
+       "2026-10-02T06:00": 20.1,
+       "2026-10-02T07:00": 20.0,
+       "2026-10-02T08:00": 20.3,
+       "2026-10-02T09:00": 21.1,
+       "2026-10-02T10:00": 22.4,
+       "2026-10-02T11:00": 23.6,
+       "2026-10-02T12:00": 24.7,
+       "2026-10-02T13:00": 25.8,
        "2026-10-02T14:00": 26.7,
-       "2026-10-02T15:00": 27.5,
-       "2026-10-02T16:00": 28.1,
-       "2026-10-02T17:00": 28.3,
-       "2026-10-02T18:00": 27.9,
-       "2026-10-02T19:00": 27.0,
-       "2026-10-02T20:00": 26.1,
-       "2026-10-02T21:00": 25.3,
-       "2026-10-02T22:00": 24.5,
-       "2026-10-02T23:00": 23.8
+       "2026-10-02T15:00": 27.4,
+       "2026-10-02T16:00": 28.0,
+       "2026-10-02T17:00": 28.2,
+       "2026-10-02T18:00": 27.8,
+       "2026-10-02T19:00": 26.9,
+       "2026-10-02T20:00": 26.0,
+       "2026-10-02T21:00": 25.0,
+       "2026-10-02T22:00": 24.0,
+       "2026-10-02T23:00": 23.2
       },
       "ecmwf_aifs025_single": {
-       "2026-10-02T00:00": 22.6,
-       "2026-10-02T01:00": 21.8,
-       "2026-10-02T02:00": 21.1,
-       "2026-10-02T03:00": 20.6,
+       "2026-10-02T00:00": 22.5,
+       "2026-10-02T01:00": 21.6,
+       "2026-10-02T02:00": 20.9,
+       "2026-10-02T03:00": 20.5,
        "2026-10-02T04:00": 20.1,
        "2026-10-02T05:00": 19.8,
-       "2026-10-02T06:00": 19.6,
-       "2026-10-02T07:00": 19.7,
-       "2026-10-02T08:00": 20.1,
-       "2026-10-02T09:00": 21.1,
-       "2026-10-02T10:00": 22.7,
-       "2026-10-02T11:00": 24.5,
-       "2026-10-02T12:00": 26.4,
-       "2026-10-02T13:00": 27.8,
-       "2026-10-02T14:00": 28.7,
-       "2026-10-02T15:00": 28.8,
-       "2026-10-02T16:00": 28.4,
-       "2026-10-02T17:00": 27.7,
+       "2026-10-02T06:00": 19.8,
+       "2026-10-02T07:00": 19.9,
+       "2026-10-02T08:00": 20.4,
+       "2026-10-02T09:00": 21.3,
+       "2026-10-02T10:00": 22.8,
+       "2026-10-02T11:00": 24.4,
+       "2026-10-02T12:00": 26.1,
+       "2026-10-02T13:00": 27.4,
+       "2026-10-02T14:00": 28.2,
+       "2026-10-02T15:00": 28.4,
+       "2026-10-02T16:00": 28.1,
+       "2026-10-02T17:00": 27.5,
        "2026-10-02T18:00": 26.8,
-       "2026-10-02T19:00": 26.0,
-       "2026-10-02T20:00": 25.3,
-       "2026-10-02T21:00": 24.7,
-       "2026-10-02T22:00": 24.2,
-       "2026-10-02T23:00": 23.6
+       "2026-10-02T19:00": 26.1,
+       "2026-10-02T20:00": 25.5,
+       "2026-10-02T21:00": 24.9,
+       "2026-10-02T22:00": 24.4,
+       "2026-10-02T23:00": 23.8
       },
       "ecmwf_ifs025": {
        "2026-10-02T00:00": 23.2,
@@ -6891,24 +6880,24 @@
        "2026-10-02T03:00": 22.2,
        "2026-10-02T04:00": 21.8,
        "2026-10-02T05:00": 21.7,
-       "2026-10-02T06:00": 20.9,
-       "2026-10-02T07:00": 20.4,
-       "2026-10-02T08:00": 20.7,
-       "2026-10-02T09:00": 21.5,
-       "2026-10-02T10:00": 23.1,
-       "2026-10-02T11:00": 25.3,
-       "2026-10-02T12:00": 27.9,
-       "2026-10-02T13:00": 29.4,
-       "2026-10-02T14:00": 30.0,
-       "2026-10-02T15:00": 30.7,
-       "2026-10-02T16:00": 30.4,
-       "2026-10-02T17:00": 30.7,
-       "2026-10-02T18:00": 30.3,
-       "2026-10-02T19:00": 29.2,
-       "2026-10-02T20:00": 27.6,
-       "2026-10-02T21:00": 26.6,
-       "2026-10-02T22:00": 25.6,
-       "2026-10-02T23:00": 25.6
+       "2026-10-02T06:00": 21.2,
+       "2026-10-02T07:00": 21.6,
+       "2026-10-02T08:00": 22.1,
+       "2026-10-02T09:00": 22.8,
+       "2026-10-02T10:00": 23.6,
+       "2026-10-02T11:00": 25.9,
+       "2026-10-02T12:00": 28.2,
+       "2026-10-02T13:00": 29.6,
+       "2026-10-02T14:00": 30.3,
+       "2026-10-02T15:00": 30.9,
+       "2026-10-02T16:00": 30.3,
+       "2026-10-02T17:00": 30.3,
+       "2026-10-02T18:00": 28.0,
+       "2026-10-02T19:00": 27.0,
+       "2026-10-02T20:00": 26.3,
+       "2026-10-02T21:00": 25.4,
+       "2026-10-02T22:00": 25.0,
+       "2026-10-02T23:00": 24.8
       },
       "icon_seamless": {
        "2026-10-02T00:00": 23.2,
@@ -7016,11 +7005,11 @@
       }
      },
      "models_rest": {
-      "cma_grapes_global": 28.3,
-      "ecmwf_aifs025_single": 28.8,
+      "cma_grapes_global": 28.2,
+      "ecmwf_aifs025_single": 28.4,
       "ecmwf_ifs025": 30.5,
       "gem_seamless": 29.6,
-      "gfs_seamless": 30.7,
+      "gfs_seamless": 30.9,
       "icon_seamless": 29.5,
       "jma_seamless": 28.0,
       "meteofrance_seamless": 31.1,
@@ -7029,19 +7018,19 @@
      "nws_grid_max": 31.11,
      "nws_hourly_max": 30.56,
      "nws_hourly_rest": 30.56,
-     "obs_count": 8,
-     "obs_last": "2026-10-02T10:52:00+00:00",
+     "obs_count": 9,
+     "obs_last": "2026-10-02T11:52:00+00:00",
      "obs_max_so_far": 23.9,
-     "rest_of_day_from": "2026-10-02T07:00"
+     "rest_of_day_from": "2026-10-02T08:00"
     },
     "2026-10-03": {
      "conditions": {
       "cape_max": 720.0,
       "cloud_mean": 100.0,
       "morning_vis_min_m": 15900.0,
-      "pressure_change_hpa": 0.3,
+      "pressure_change_hpa": 0.8,
       "rain_chance_max": 33,
-      "tmax_change_c": -2.2,
+      "tmax_change_c": -2.4,
       "wind_mean_kmh": 3.4,
       "wind_shift_deg": 164
      },
@@ -7142,36 +7131,36 @@
        30.6
       ],
       "ncep_gefs025": [
-       25.8,
-       26.7,
-       27.4,
+       27.2,
        27.7,
-       27.9,
-       28.2,
-       28.4,
+       28.1,
        28.5,
+       28.7,
+       28.7,
+       28.8,
        28.9,
-       28.9,
-       28.9,
-       29.0,
+       29.1,
+       29.1,
        29.2,
        29.6,
-       29.6,
        29.8,
-       29.8,
+       30.1,
        30.3,
-       30.7,
-       30.7,
-       30.8,
-       30.8,
+       30.3,
+       30.3,
+       30.4,
+       30.5,
+       30.6,
+       30.6,
        30.9,
-       31.0,
-       31.0,
-       31.1,
-       31.3,
-       32.0,
-       32.1,
-       32.5,
+       31.2,
+       31.6,
+       31.8,
+       31.9,
+       32.2,
+       32.2,
+       32.9,
+       33.1,
        33.2
       ]
      },
@@ -7201,125 +7190,125 @@
        },
        {
         "bestAsk": 0.003,
-        "bestBid": 0.001,
+        "bestBid": null,
         "closed": false,
         "depth": null,
         "label": "76-77\u00b0F",
         "lastTrade": null,
         "threshold": "2",
-        "volume": 135.443,
-        "yes": 0.002
+        "volume": 142.543,
+        "yes": 0.0015
        },
        {
-        "bestAsk": 0.007,
-        "bestBid": 0.005,
+        "bestAsk": 0.006,
+        "bestBid": 0.002,
         "closed": false,
         "depth": null,
         "label": "78-79\u00b0F",
         "lastTrade": null,
         "threshold": "3",
-        "volume": 149.482,
-        "yes": 0.006
+        "volume": 179.48749999999998,
+        "yes": 0.004
        },
        {
-        "bestAsk": 0.031,
-        "bestBid": 0.022,
+        "bestAsk": 0.057,
+        "bestBid": 0.031,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0756,
-         "avg_fill_25": 0.0989,
-         "best_ask": 0.031,
-         "best_bid": 0.023,
-         "bid_usd_within_2c": 9.5,
-         "usd_at_best": 0.15,
-         "usd_within_1c": 0.55,
-         "usd_within_2c": 0.55
+         "avg_fill_10": 0.066,
+         "avg_fill_25": 0.0764,
+         "best_ask": 0.057,
+         "best_bid": 0.034,
+         "bid_usd_within_2c": 5.12,
+         "usd_at_best": 2.0,
+         "usd_within_1c": 4.52,
+         "usd_within_2c": 9.93
         },
         "label": "80-81\u00b0F",
         "lastTrade": 0.07,
         "threshold": "4",
-        "volume": 205.520041,
-        "yes": 0.0265
+        "volume": 235.52390400000002,
+        "yes": 0.044
        },
        {
-        "bestAsk": 0.33,
+        "bestAsk": 0.35,
         "bestBid": 0.32,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.3366,
-         "avg_fill_25": 0.3386,
-         "best_ask": 0.33,
-         "best_bid": 0.32,
-         "bid_usd_within_2c": 410.94,
-         "usd_at_best": 3.3,
-         "usd_within_1c": 29.34,
-         "usd_within_2c": 192.3
+         "avg_fill_10": 0.35,
+         "avg_fill_25": 0.35,
+         "best_ask": 0.35,
+         "best_bid": 0.31,
+         "bid_usd_within_2c": 117.82,
+         "usd_at_best": 81.21,
+         "usd_within_1c": 345.18,
+         "usd_within_2c": 2291.06
         },
         "label": "82-83\u00b0F",
-        "lastTrade": 0.32,
+        "lastTrade": 0.33,
         "threshold": "5",
-        "volume": 1699.4599440000002,
-        "yes": 0.325
+        "volume": 1801.559944,
+        "yes": 0.335
        },
        {
-        "bestAsk": 0.41,
+        "bestAsk": 0.42,
         "bestBid": 0.39,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.4,
-         "avg_fill_25": 0.4,
-         "best_ask": 0.4,
-         "best_bid": 0.37,
-         "bid_usd_within_2c": 244.0,
-         "usd_at_best": 36.0,
-         "usd_within_1c": 279.79,
-         "usd_within_2c": 469.74
+         "avg_fill_10": 0.42,
+         "avg_fill_25": 0.42,
+         "best_ask": 0.42,
+         "best_bid": 0.39,
+         "bid_usd_within_2c": 189.7,
+         "usd_at_best": 39.9,
+         "usd_within_1c": 217.92,
+         "usd_within_2c": 2903.32
         },
         "label": "84-85\u00b0F",
-        "lastTrade": 0.4,
+        "lastTrade": 0.41,
         "threshold": "6",
-        "volume": 661.101758,
-        "yes": 0.4
+        "volume": 868.937658,
+        "yes": 0.405
        },
        {
-        "bestAsk": 0.25,
-        "bestBid": 0.24,
+        "bestAsk": 0.24,
+        "bestBid": 0.23,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.26,
-         "avg_fill_25": 0.26,
-         "best_ask": 0.26,
-         "best_bid": 0.24,
-         "bid_usd_within_2c": 145.19,
-         "usd_at_best": 72.65,
-         "usd_within_1c": 183.89,
-         "usd_within_2c": 269.44
+         "avg_fill_10": 0.2451,
+         "avg_fill_25": 0.248,
+         "best_ask": 0.24,
+         "best_bid": 0.23,
+         "bid_usd_within_2c": 132.66,
+         "usd_at_best": 4.8,
+         "usd_within_1c": 95.03,
+         "usd_within_2c": 178.83
         },
         "label": "86-87\u00b0F",
         "lastTrade": 0.25,
         "threshold": "7",
-        "volume": 3420.738443,
-        "yes": 0.245
+        "volume": 3472.836338,
+        "yes": 0.235
        },
        {
-        "bestAsk": 0.043,
-        "bestBid": 0.03,
+        "bestAsk": 0.042,
+        "bestBid": 0.018,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.043,
-         "avg_fill_25": 0.0527,
-         "best_ask": 0.043,
-         "best_bid": 0.03,
-         "bid_usd_within_2c": 1.52,
-         "usd_at_best": 13.12,
-         "usd_within_1c": 14.58,
-         "usd_within_2c": 16.17
+         "avg_fill_10": 0.0428,
+         "avg_fill_25": 0.0477,
+         "best_ask": 0.042,
+         "best_bid": 0.018,
+         "bid_usd_within_2c": 1.29,
+         "usd_at_best": 1.91,
+         "usd_within_1c": 17.8,
+         "usd_within_2c": 21.94
         },
         "label": "88-89\u00b0F",
         "lastTrade": 0.034,
         "threshold": "8",
-        "volume": 246.35664099999997,
-        "yes": 0.0365
+        "volume": 276.363841,
+        "yes": 0.03
        },
        {
         "bestAsk": 0.01,
@@ -7329,7 +7318,7 @@
         "label": "90-91\u00b0F",
         "lastTrade": null,
         "threshold": "9",
-        "volume": 167.991233,
+        "volume": 197.99989899999997,
         "yes": 0.0065
        },
        {
@@ -7340,21 +7329,21 @@
         "label": "92\u00b0F or higher",
         "lastTrade": null,
         "threshold": "10",
-        "volume": 124.38000000000001,
+        "volume": 154.382,
         "yes": 0.002
        }
       ],
       "closed": false,
       "endDate": "2026-10-03T12:00:00Z",
-      "liquidity": 38610.99058,
+      "liquidity": 41618.04837,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Hartsfield-Jackson International Airport Station in degrees Fahrenheit on 3 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/times",
       "slug": "highest-temperature-in-atlanta-on-october-3-2026",
       "title": "Highest temperature in Atlanta on October 3?",
-      "volume": 7356.47306
+      "volume": 7875.634084
      },
      "models": {
-      "cma_grapes_global": 28.0,
-      "ecmwf_aifs025_single": 27.0,
+      "cma_grapes_global": 29.0,
+      "ecmwf_aifs025_single": 27.1,
       "ecmwf_ifs025": 29.2,
       "gem_seamless": 28.4,
       "gfs_seamless": 28.5,
@@ -7369,7 +7358,7 @@
    },
    "icao": "KATL",
    "lat": 33.6367,
-   "local_now": "2026-10-02T07:35-04:00",
+   "local_now": "2026-10-02T08:08-04:00",
    "lon": -84.4281,
    "low_days": {
     "2026-10-01": {
@@ -7524,20 +7513,20 @@
       "meteofrance_seamless": 17.8,
       "ukmo_seamless": 17.9
      },
-     "obs_count": 29,
+     "obs_count": 28,
      "obs_last": "2026-10-02T03:52:00+00:00",
      "obs_min_so_far": 18.3
     },
     "2026-10-02": {
      "conditions": {
-      "cape_max": 370.0,
-      "cloud_mean": 54.0,
-      "morning_vis_min_m": 1400.0,
-      "pressure_change_hpa": -1.5,
+      "cape_max": 350.0,
+      "cloud_mean": 59.0,
+      "morning_vis_min_m": 11000.0,
+      "pressure_change_hpa": -2.0,
       "rain_chance_max": 21,
-      "tmax_change_c": 1.3,
-      "wind_mean_kmh": 7.3,
-      "wind_shift_deg": 70
+      "tmax_change_c": 1.5,
+      "wind_mean_kmh": 6.5,
+      "wind_shift_deg": 26
      },
      "ensemble": {
       "ecmwf_ifs025": [
@@ -7636,14 +7625,9 @@
        20.6
       ],
       "ncep_gefs025": [
-       19.9,
        20.1,
        20.1,
        20.2,
-       20.2,
-       20.3,
-       20.3,
-       20.3,
        20.3,
        20.3,
        20.4,
@@ -7654,9 +7638,9 @@
        20.4,
        20.4,
        20.4,
-       20.4,
-       20.4,
-       20.4,
+       20.5,
+       20.5,
+       20.5,
        20.5,
        20.5,
        20.5,
@@ -7666,38 +7650,18 @@
        20.6,
        20.6,
        20.6,
-       20.7
+       20.6,
+       20.7,
+       20.7,
+       20.8,
+       20.8,
+       20.9
       ]
      },
      "ensemble_rest": {
       "ecmwf_ifs025": [
-       18.5,
        18.9,
-       18.9,
-       19.0,
-       19.0,
-       19.0,
-       19.1,
-       19.1,
-       19.1,
-       19.1,
-       19.2,
-       19.2,
-       19.2,
-       19.2,
-       19.2,
        19.3,
-       19.3,
-       19.3,
-       19.3,
-       19.3,
-       19.3,
-       19.3,
-       19.3,
-       19.3,
-       19.4,
-       19.4,
-       19.4,
        19.4,
        19.4,
        19.4,
@@ -7705,42 +7669,65 @@
        19.4,
        19.5,
        19.5,
-       19.5,
+       19.6,
+       19.6,
+       19.6,
+       19.6,
+       19.6,
        19.6,
        19.6,
        19.6,
        19.7,
        19.7,
        19.7,
+       19.7,
+       19.8,
+       19.8,
+       19.8,
+       19.8,
        19.8,
        19.8,
        19.8,
        19.9,
        19.9,
-       20.0,
+       19.9,
+       19.9,
+       19.9,
+       19.9,
        20.0,
        20.0,
        20.1,
-       20.1
+       20.1,
+       20.1,
+       20.1,
+       20.2,
+       20.3,
+       20.3,
+       20.3,
+       20.4,
+       20.4,
+       20.4,
+       20.5,
+       20.5,
+       20.5,
+       20.7
       ],
       "icon_seamless_eps": [
        18.3,
-       18.3,
+       18.5,
        18.5,
        18.6,
        18.7,
-       18.7,
-       18.7,
        18.8,
-       18.8,
+       18.9,
        18.9,
        18.9,
        18.9,
        19.0,
+       19.0,
+       19.1,
        19.3,
        19.4,
-       19.4,
-       19.5,
        19.5,
        19.5,
        19.6,
@@ -7749,54 +7736,56 @@
        19.6,
        19.7,
        19.7,
-       19.8,
-       19.8,
+       19.7,
        19.8,
        19.9,
-       20.0,
+       19.9,
        20.0,
        20.0,
        20.1,
        20.1,
        20.2,
+       20.2,
        20.3,
        20.3,
        20.4,
+       20.4,
        20.5,
-       20.6
+       20.5,
+       20.7
       ],
       "ncep_gefs025": [
-       19.9,
-       20.1,
-       20.1,
-       20.2,
-       20.2,
-       20.3,
-       20.3,
-       20.3,
-       20.3,
-       20.3,
        20.4,
-       20.4,
-       20.4,
-       20.4,
-       20.4,
-       20.4,
-       20.4,
-       20.4,
-       20.4,
-       20.4,
-       20.4,
-       20.5,
-       20.5,
-       20.5,
-       20.5,
        20.5,
        20.6,
        20.6,
-       20.6,
-       20.6,
-       20.7
+       20.7,
+       20.7,
+       20.7,
+       20.7,
+       20.7,
+       20.8,
+       20.8,
+       20.8,
+       20.8,
+       20.8,
+       20.9,
+       20.9,
+       20.9,
+       20.9,
+       20.9,
+       20.9,
+       20.9,
+       20.9,
+       20.9,
+       20.9,
+       21.0,
+       21.0,
+       21.0,
+       21.1,
+       21.1,
+       21.1,
+       21.2
       ]
      },
      "market": {
@@ -7813,99 +7802,104 @@
         "yes": 0.0035
        },
        {
-        "bestAsk": 0.9,
+        "bestAsk": 0.88,
         "bestBid": null,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.9,
-         "avg_fill_25": 0.9,
-         "best_ask": 0.9,
+         "avg_fill_10": 0.86,
+         "avg_fill_25": 0.86,
+         "best_ask": 0.86,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
-         "usd_at_best": 306.0,
-         "usd_within_1c": 306.0,
-         "usd_within_2c": 306.0
+         "usd_at_best": 208.55,
+         "usd_within_1c": 243.35,
+         "usd_within_2c": 243.35
         },
         "label": "62-63\u00b0F",
         "lastTrade": null,
         "threshold": "1",
         "volume": 0.0,
-        "yes": 0.45
+        "yes": 0.44
        },
        {
-        "bestAsk": 1,
+        "bestAsk": 0.88,
         "bestBid": null,
         "closed": false,
         "depth": {
-         "best_ask": null,
+         "avg_fill_10": 0.88,
+         "avg_fill_25": 0.88,
+         "best_ask": 0.88,
          "best_bid": null,
-         "bid_usd_within_2c": 0.0
+         "bid_usd_within_2c": 0.0,
+         "usd_at_best": 249.26,
+         "usd_within_1c": 284.86,
+         "usd_within_2c": 302.86
         },
         "label": "64-65\u00b0F",
         "lastTrade": null,
         "threshold": "2",
         "volume": 0.0,
-        "yes": 0.5
+        "yes": 0.44
        },
        {
-        "bestAsk": 0.98,
-        "bestBid": 0.02,
+        "bestAsk": 0.95,
+        "bestBid": null,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.9851,
-         "avg_fill_25": 0.988,
-         "best_ask": 0.98,
-         "best_bid": 0.02,
-         "bid_usd_within_2c": 0.2,
-         "usd_at_best": 4.9,
-         "usd_within_1c": 64.3,
-         "usd_within_2c": 64.3
+         "avg_fill_10": 0.95,
+         "avg_fill_25": 0.95,
+         "best_ask": 0.95,
+         "best_bid": null,
+         "bid_usd_within_2c": 0.0,
+         "usd_at_best": 38.0,
+         "usd_within_1c": 118.52,
+         "usd_within_2c": 131.5
         },
         "label": "66-67\u00b0F",
         "lastTrade": null,
         "threshold": "3",
         "volume": 0.0,
-        "yes": 0.5
+        "yes": 0.475
        },
        {
-        "bestAsk": 0.96,
+        "bestAsk": 0.45,
         "bestBid": 0.02,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.9652,
-         "avg_fill_25": 0.9681,
-         "best_ask": 0.96,
+         "avg_fill_10": 0.68,
+         "avg_fill_25": 0.6986,
+         "best_ask": 0.68,
          "best_bid": 0.02,
          "bid_usd_within_2c": 0.2,
-         "usd_at_best": 4.8,
-         "usd_within_1c": 43.6,
-         "usd_within_2c": 43.6
+         "usd_at_best": 22.27,
+         "usd_within_1c": 22.27,
+         "usd_within_2c": 22.27
         },
         "label": "68-69\u00b0F",
         "lastTrade": null,
         "threshold": "4",
         "volume": 5.0,
-        "yes": 0.49
+        "yes": 0.235
        },
        {
-        "bestAsk": 0.95,
-        "bestBid": 0.09,
+        "bestAsk": 0.979,
+        "bestBid": 0.566,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.95,
-         "avg_fill_25": 0.9637,
-         "best_ask": 0.95,
-         "best_bid": 0.09,
-         "bid_usd_within_2c": 20.38,
-         "usd_at_best": 13.82,
-         "usd_within_1c": 13.82,
-         "usd_within_2c": 13.82
+         "avg_fill_10": 0.9876,
+         "avg_fill_25": 0.9926,
+         "best_ask": 0.979,
+         "best_bid": 0.566,
+         "bid_usd_within_2c": 23.18,
+         "usd_at_best": 4.89,
+         "usd_within_1c": 4.89,
+         "usd_within_2c": 1870.13
         },
         "label": "70-71\u00b0F",
         "lastTrade": 0.01,
         "threshold": "5",
-        "volume": 29.55,
-        "yes": 0.52
+        "volume": 31.848851,
+        "yes": 0.7725
        },
        {
         "bestAsk": 0.001,
@@ -7965,48 +7959,48 @@
       ],
       "closed": false,
       "endDate": "2026-10-02T12:00:00Z",
-      "liquidity": 55628.55019,
+      "liquidity": 55345.68158,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Hartsfield-Jackson International Airport Station in degrees Fahrenheit on 2 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeser",
       "slug": "lowest-temperature-in-atlanta-on-october-2-2026",
       "title": "Lowest temperature in Atlanta on October 2?",
-      "volume": 157.55
+      "volume": 159.848851
      },
      "models": {
-      "cma_grapes_global": 19.3,
-      "ecmwf_aifs025_single": 19.6,
+      "cma_grapes_global": 20.0,
+      "ecmwf_aifs025_single": 19.8,
       "ecmwf_ifs025": 19.6,
       "gem_seamless": 19.7,
-      "gfs_seamless": 20.4,
+      "gfs_seamless": 21.2,
       "icon_seamless": 20.9,
       "jma_seamless": 20.7,
       "meteofrance_seamless": 19.8,
       "ukmo_seamless": 20.4
      },
      "models_rest": {
-      "cma_grapes_global": 19.3,
-      "ecmwf_aifs025_single": 19.7,
-      "ecmwf_ifs025": 19.6,
-      "gem_seamless": 19.7,
-      "gfs_seamless": 20.4,
-      "icon_seamless": 20.9,
-      "jma_seamless": 20.7,
-      "meteofrance_seamless": 19.8,
+      "cma_grapes_global": 20.3,
+      "ecmwf_aifs025_single": 20.4,
+      "ecmwf_ifs025": 20.0,
+      "gem_seamless": 19.8,
+      "gfs_seamless": 22.1,
+      "icon_seamless": 21.0,
+      "jma_seamless": 20.9,
+      "meteofrance_seamless": 20.0,
       "ukmo_seamless": 20.4
      },
      "nws_grid_min": 20.56,
-     "obs_count": 8,
-     "obs_last": "2026-10-02T10:52:00+00:00",
+     "obs_count": 9,
+     "obs_last": "2026-10-02T11:52:00+00:00",
      "obs_min_so_far": 21,
-     "rest_of_day_from": "2026-10-02T07:00"
+     "rest_of_day_from": "2026-10-02T08:00"
     },
     "2026-10-03": {
      "conditions": {
       "cape_max": 720.0,
       "cloud_mean": 100.0,
       "morning_vis_min_m": 15900.0,
-      "pressure_change_hpa": 0.3,
+      "pressure_change_hpa": 0.8,
       "rain_chance_max": 33,
-      "tmax_change_c": -2.2,
+      "tmax_change_c": -2.4,
       "wind_mean_kmh": 3.4,
       "wind_shift_deg": 164
      },
@@ -8107,37 +8101,37 @@
        21.7
       ],
       "ncep_gefs025": [
-       20.7,
+       20.6,
        20.8,
+       20.9,
        21.1,
-       21.1,
        21.2,
        21.2,
        21.2,
-       21.2,
-       21.3,
        21.3,
        21.3,
        21.4,
-       21.6,
-       21.6,
+       21.4,
+       21.4,
        21.7,
        21.7,
+       21.7,
+       21.8,
        21.8,
        21.9,
        21.9,
        21.9,
-       21.9,
        22.0,
-       22.1,
-       22.1,
-       22.1,
+       22.0,
+       22.2,
+       22.2,
+       22.2,
+       22.2,
        22.2,
        22.3,
        22.4,
        22.4,
-       22.6,
-       22.7
+       22.5
       ]
      },
      "market": {
@@ -8231,7 +8225,7 @@
          "avg_fill_25": 0.67,
          "best_ask": 0.67,
          "best_bid": 0.04,
-         "bid_usd_within_2c": 56.12,
+         "bid_usd_within_2c": 56.92,
          "usd_at_best": 50.25,
          "usd_within_1c": 54.5,
          "usd_within_2c": 54.5
@@ -8308,7 +8302,7 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.1757,
-         "avg_fill_25": 0.3206,
+         "avg_fill_25": 0.3198,
          "best_ask": 0.1,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
@@ -8347,14 +8341,14 @@
         "bestBid": null,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.98,
-         "avg_fill_25": 0.98,
-         "best_ask": 0.98,
+         "avg_fill_10": 0.97,
+         "avg_fill_25": 0.97,
+         "best_ask": 0.97,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
-         "usd_at_best": 618.13,
-         "usd_within_1c": 618.13,
-         "usd_within_2c": 618.13
+         "usd_at_best": 184.3,
+         "usd_within_1c": 802.43,
+         "usd_within_2c": 802.43
         },
         "label": "82\u00b0F or higher",
         "lastTrade": null,
@@ -8365,15 +8359,15 @@
       ],
       "closed": false,
       "endDate": "2026-10-03T12:00:00Z",
-      "liquidity": 851.6176,
+      "liquidity": 852.6476,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Hartsfield-Jackson International Airport Station in degrees Fahrenheit on 3 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeser",
       "slug": "lowest-temperature-in-atlanta-on-october-3-2026",
       "title": "Lowest temperature in Atlanta on October 3?",
       "volume": 0.0
      },
      "models": {
-      "cma_grapes_global": 21.7,
-      "ecmwf_aifs025_single": 21.7,
+      "cma_grapes_global": 21.1,
+      "ecmwf_aifs025_single": 21.6,
       "ecmwf_ifs025": 20.5,
       "gem_seamless": 20.8,
       "gfs_seamless": 20.8,
@@ -8563,7 +8557,7 @@
        "label": "64-65\u00b0F",
        "lastTrade": 0.999,
        "threshold": "3",
-       "volume": 255.53020299999997,
+       "volume": 255.530203,
        "yes": 1.0
       },
       {
@@ -8656,6 +8650,12 @@
     }
    },
    "metar": [
+    {
+     "maxT": 22.8,
+     "raw": "METAR KATL 021152Z 14004KT 10SM BKN010 OVC015 22/20 A3013 RMK AO2 SLP195 T02170200 10228 20211 53010",
+     "t": "2026-10-02T11:52:00+00:00",
+     "temp": 21.7
+    },
     {
      "maxT": null,
      "raw": "METAR KATL 021052Z 14004KT 10SM BKN011 OVC015 21/20 A3012 RMK AO2 SLP190 BINOVC T02110200",
@@ -8871,12 +8871,6 @@
      "raw": "METAR KATL 010552Z 08007KT 10SM CLR 21/15 A3010 RMK AO2 SLP181 T02060150 10267 20206 58003 $",
      "t": "2026-10-01T05:52:00+00:00",
      "temp": 20.6
-    },
-    {
-     "maxT": null,
-     "raw": "METAR KATL 010452Z 09006KT 10SM FEW250 21/15 A3010 RMK AO2 SLP185 T02110150 403060167 $",
-     "t": "2026-10-01T04:52:00+00:00",
-     "temp": 21.1
     }
    ],
    "name": "Atlanta",
@@ -9047,7 +9041,7 @@
        "label": "80-81\u00b0F",
        "lastTrade": 0.004,
        "threshold": "2",
-       "volume": 433.29688200000004,
+       "volume": 433.296882,
        "yes": 0.0
       },
       {
@@ -9058,7 +9052,7 @@
        "label": "82-83\u00b0F",
        "lastTrade": 0.034,
        "threshold": "3",
-       "volume": 3335.681945,
+       "volume": 3335.6819450000003,
        "yes": 0.0
       },
       {
@@ -9069,7 +9063,7 @@
        "label": "84-85\u00b0F",
        "lastTrade": 0.999,
        "threshold": "4",
-       "volume": 14984.064410000003,
+       "volume": 14984.064409999997,
        "yes": 1.0
       },
       {
@@ -9091,7 +9085,7 @@
        "label": "88-89\u00b0F",
        "lastTrade": 0.006,
        "threshold": "6",
-       "volume": 12771.512987,
+       "volume": 12771.512987000004,
        "yes": 0.0
       },
       {
@@ -9102,7 +9096,7 @@
        "label": "90-91\u00b0F",
        "lastTrade": 0.004,
        "threshold": "7",
-       "volume": 2261.4260790000003,
+       "volume": 2261.426079,
        "yes": 0.0
       },
       {
@@ -9113,7 +9107,7 @@
        "label": "92-93\u00b0F",
        "lastTrade": 0.001,
        "threshold": "8",
-       "volume": 879.3013319999999,
+       "volume": 879.301332,
        "yes": 0.0
       },
       {
@@ -9146,13 +9140,13 @@
      "settled": true,
      "slug": "highest-temperature-in-atlanta-on-october-1-2026",
      "title": "Highest temperature in Atlanta on October 1?",
-     "volume": 47045.409167000005,
+     "volume": 47045.409167,
      "winner": "84-85\u00b0F"
     }
    },
    "taf": {
-    "issued": "2026-10-02T09:31:00.000Z",
-    "raw": "TAF KATL 020931Z 0210/0312 13003KT P6SM SCT008 BKN015 TEMPO 0211/0215 BKN008 FM021500 14006KT P6SM FEW015 SCT030 FM021900 17006KT P6SM VCSH SCT035 BKN050 PROB30 0221/0302 6SM -SHRA BKN040 FM030300 VRB03KT P6SM BKN100"
+    "issued": "2026-10-02T11:35:00.000Z",
+    "raw": "TAF KATL 021135Z 0212/0318 13004KT P6SM SCT008 BKN015 TEMPO 0212/0215 BKN008 FM021500 14006KT P6SM FEW015 SCT030 FM021900 17006KT P6SM VCSH SCT035 BKN050 PROB30 0221/0302 6SM -SHRA BKN040 FM030300 VRB03KT P6SM BKN100 FM031000 VRB03KT P6SM FEW008 BKN020"
    },
    "tz": "America/New_York",
    "unit": "F"
@@ -9311,7 +9305,7 @@
       "meteofrance_seamless": 30.9,
       "ukmo_seamless": 32.7
      },
-     "obs_count": 28,
+     "obs_count": 27,
      "obs_last": "2026-10-01T18:00:00+00:00",
      "obs_max_so_far": 32
     },
@@ -9596,7 +9590,7 @@
         "label": "27\u00b0C or below",
         "lastTrade": 0.006,
         "threshold": "0",
-        "volume": 795.4055409999999,
+        "volume": 795.405541,
         "yes": 0.0005
        },
        {
@@ -9618,7 +9612,7 @@
         "label": "29\u00b0C",
         "lastTrade": 0.001,
         "threshold": "2",
-        "volume": 426.469858,
+        "volume": 426.46985800000004,
         "yes": 0.0005
        },
        {
@@ -9629,7 +9623,7 @@
         "label": "30\u00b0C",
         "lastTrade": 0.006,
         "threshold": "3",
-        "volume": 452.57985899999994,
+        "volume": 452.579859,
         "yes": 0.0005
        },
        {
@@ -9651,7 +9645,7 @@
         "label": "32\u00b0C",
         "lastTrade": 0.009,
         "threshold": "5",
-        "volume": 6943.0336800000005,
+        "volume": 6948.0336800000005,
         "yes": 0.0005
        },
        {
@@ -9662,7 +9656,7 @@
         "label": "33\u00b0C",
         "lastTrade": 0.999,
         "threshold": "6",
-        "volume": 5159.731587000001,
+        "volume": 5382.831586999999,
         "yes": 0.9995
        },
        {
@@ -9673,7 +9667,7 @@
         "label": "34\u00b0C",
         "lastTrade": 0.057,
         "threshold": "7",
-        "volume": 2384.0505670000002,
+        "volume": 2549.660567,
         "yes": 0.0005
        },
        {
@@ -9684,7 +9678,7 @@
         "label": "35\u00b0C",
         "lastTrade": 0.005,
         "threshold": "8",
-        "volume": 1098.2577489999999,
+        "volume": 1098.257749,
         "yes": 0.0005
        },
        {
@@ -9712,15 +9706,15 @@
       ],
       "closed": false,
       "endDate": "2026-10-02T12:00:00Z",
-      "liquidity": 86701.78236,
+      "liquidity": 87053.7736,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Chaudhary Charan Singh Intl Airport Station in degrees Celsius on 2 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?si",
       "slug": "highest-temperature-in-lucknow-on-october-2-2026",
       "title": "Highest temperature in Lucknow on October 2?",
-      "volume": 22520.814276
+      "volume": 22914.524276
      },
      "models": {
-      "cma_grapes_global": 34.4,
-      "ecmwf_aifs025_single": 33.0,
+      "cma_grapes_global": 33.5,
+      "ecmwf_aifs025_single": 33.1,
       "ecmwf_ifs025": 31.9,
       "gem_seamless": 32.3,
       "gfs_seamless": 32.6,
@@ -9740,21 +9734,21 @@
        "2026-10-02T06:00": 25.6,
        "2026-10-02T07:00": 26.7,
        "2026-10-02T08:00": 28.0,
-       "2026-10-02T09:00": 29.4,
-       "2026-10-02T10:00": 31.0,
-       "2026-10-02T11:00": 32.3,
-       "2026-10-02T12:00": 33.4,
-       "2026-10-02T13:00": 34.2,
-       "2026-10-02T14:00": 34.4,
-       "2026-10-02T15:00": 33.7,
-       "2026-10-02T16:00": 32.4,
-       "2026-10-02T17:00": 31.1,
-       "2026-10-02T18:00": 29.9,
-       "2026-10-02T19:00": 28.8,
-       "2026-10-02T20:00": 27.9,
-       "2026-10-02T21:00": 27.3,
-       "2026-10-02T22:00": 26.9,
-       "2026-10-02T23:00": 26.5
+       "2026-10-02T09:00": 29.3,
+       "2026-10-02T10:00": 30.7,
+       "2026-10-02T11:00": 31.8,
+       "2026-10-02T12:00": 32.7,
+       "2026-10-02T13:00": 33.4,
+       "2026-10-02T14:00": 33.5,
+       "2026-10-02T15:00": 32.9,
+       "2026-10-02T16:00": 31.7,
+       "2026-10-02T17:00": 30.5,
+       "2026-10-02T18:00": 29.4,
+       "2026-10-02T19:00": 28.3,
+       "2026-10-02T20:00": 27.4,
+       "2026-10-02T21:00": 26.9,
+       "2026-10-02T22:00": 26.5,
+       "2026-10-02T23:00": 26.1
       },
       "ecmwf_aifs025_single": {
        "2026-10-02T00:00": 25.8,
@@ -9764,23 +9758,23 @@
        "2026-10-02T04:00": 25.1,
        "2026-10-02T05:00": 25.4,
        "2026-10-02T06:00": 26.2,
-       "2026-10-02T07:00": 27.4,
-       "2026-10-02T08:00": 28.8,
-       "2026-10-02T09:00": 30.3,
-       "2026-10-02T10:00": 31.5,
-       "2026-10-02T11:00": 32.3,
-       "2026-10-02T12:00": 32.8,
-       "2026-10-02T13:00": 33.0,
-       "2026-10-02T14:00": 33.0,
-       "2026-10-02T15:00": 32.9,
-       "2026-10-02T16:00": 32.6,
+       "2026-10-02T07:00": 27.5,
+       "2026-10-02T08:00": 28.9,
+       "2026-10-02T09:00": 30.4,
+       "2026-10-02T10:00": 31.6,
+       "2026-10-02T11:00": 32.5,
+       "2026-10-02T12:00": 32.9,
+       "2026-10-02T13:00": 33.1,
+       "2026-10-02T14:00": 33.1,
+       "2026-10-02T15:00": 33.0,
+       "2026-10-02T16:00": 32.7,
        "2026-10-02T17:00": 32.2,
        "2026-10-02T18:00": 31.6,
        "2026-10-02T19:00": 30.6,
-       "2026-10-02T20:00": 29.5,
-       "2026-10-02T21:00": 28.4,
+       "2026-10-02T20:00": 29.6,
+       "2026-10-02T21:00": 28.5,
        "2026-10-02T22:00": 27.5,
-       "2026-10-02T23:00": 26.7
+       "2026-10-02T23:00": 26.8
       },
       "ecmwf_ifs025": {
        "2026-10-02T00:00": 25.8,
@@ -9966,7 +9960,7 @@
       }
      },
      "models_rest": {
-      "cma_grapes_global": 31.1,
+      "cma_grapes_global": 30.5,
       "ecmwf_aifs025_single": 32.2,
       "ecmwf_ifs025": 29.0,
       "gem_seamless": 30.1,
@@ -9976,8 +9970,8 @@
       "meteofrance_seamless": 29.5,
       "ukmo_seamless": 31.0
      },
-     "obs_count": 35,
-     "obs_last": "2026-10-02T11:30:00+00:00",
+     "obs_count": 36,
+     "obs_last": "2026-10-02T12:00:00+00:00",
      "obs_max_so_far": 33,
      "rest_of_day_from": "2026-10-02T17:00"
     },
@@ -10132,7 +10126,7 @@
         "label": "27\u00b0C or below",
         "lastTrade": 0.001,
         "threshold": "0",
-        "volume": 56.801,
+        "volume": 56.800999999999995,
         "yes": 0.0025
        },
        {
@@ -10180,24 +10174,24 @@
         "yes": 0.0035
        },
        {
-        "bestAsk": 0.106,
-        "bestBid": 0.082,
+        "bestAsk": 0.107,
+        "bestBid": 0.083,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1065,
-         "avg_fill_25": 0.11,
-         "best_ask": 0.106,
-         "best_bid": 0.082,
-         "bid_usd_within_2c": 13.9,
-         "usd_at_best": 5.3,
-         "usd_within_1c": 18.77,
-         "usd_within_2c": 25.13
+         "avg_fill_10": 0.1091,
+         "avg_fill_25": 0.1236,
+         "best_ask": 0.107,
+         "best_bid": 0.083,
+         "bid_usd_within_2c": 9.51,
+         "usd_at_best": 5.35,
+         "usd_within_1c": 9.17,
+         "usd_within_2c": 13.78
         },
         "label": "32\u00b0C",
         "lastTrade": 0.107,
         "threshold": "5",
         "volume": 267.217052,
-        "yes": 0.094
+        "yes": 0.095
        },
        {
         "bestAsk": 0.68,
@@ -10208,47 +10202,47 @@
          "avg_fill_25": 0.68,
          "best_ask": 0.68,
          "best_bid": 0.64,
-         "bid_usd_within_2c": 328.67,
+         "bid_usd_within_2c": 197.07,
          "usd_at_best": 64.5,
-         "usd_within_1c": 431.63,
-         "usd_within_2c": 41950.63
+         "usd_within_1c": 274.55,
+         "usd_within_2c": 42732.12
         },
         "label": "33\u00b0C",
         "lastTrade": 0.68,
         "threshold": "6",
-        "volume": 490.980456,
+        "volume": 493.758234,
         "yes": 0.66
        },
        {
-        "bestAsk": 0.28,
+        "bestAsk": 0.26,
         "bestBid": 0.23,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.28,
-         "avg_fill_25": 0.28,
-         "best_ask": 0.28,
+         "avg_fill_10": 0.2634,
+         "avg_fill_25": 0.2673,
+         "best_ask": 0.26,
          "best_bid": 0.23,
-         "bid_usd_within_2c": 334.47,
-         "usd_at_best": 80.39,
-         "usd_within_1c": 303.57,
-         "usd_within_2c": 13824.65
+         "bid_usd_within_2c": 11746.86,
+         "usd_at_best": 6.5,
+         "usd_within_1c": 85.72,
+         "usd_within_2c": 119.88
         },
         "label": "34\u00b0C",
         "lastTrade": 0.3,
         "threshold": "7",
         "volume": 101.80699,
-        "yes": 0.255
+        "yes": 0.245
        },
        {
-        "bestAsk": 0.013,
+        "bestAsk": 0.012,
         "bestBid": 0.003,
         "closed": false,
         "depth": null,
         "label": "35\u00b0C",
         "lastTrade": 0.027,
         "threshold": "8",
-        "volume": 682.3392660000001,
-        "yes": 0.008
+        "volume": 682.339266,
+        "yes": 0.0075
        },
        {
         "bestAsk": 0.006,
@@ -10275,15 +10269,15 @@
       ],
       "closed": false,
       "endDate": "2026-10-03T12:00:00Z",
-      "liquidity": 83471.84714,
+      "liquidity": 54507.61787,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Chaudhary Charan Singh Intl Airport Station in degrees Celsius on 3 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?si",
       "slug": "highest-temperature-in-lucknow-on-october-3-2026",
       "title": "Highest temperature in Lucknow on October 3?",
-      "volume": 3419.925802
+      "volume": 3422.70358
      },
      "models": {
-      "cma_grapes_global": 35.2,
-      "ecmwf_aifs025_single": 33.5,
+      "cma_grapes_global": 34.5,
+      "ecmwf_aifs025_single": 33.6,
       "ecmwf_ifs025": 32.3,
       "gem_seamless": 33.0,
       "gfs_seamless": 33.2,
@@ -10296,7 +10290,7 @@
    },
    "icao": "VILK",
    "lat": 26.7606,
-   "local_now": "2026-10-02T17:05+05:30",
+   "local_now": "2026-10-02T17:38+05:30",
    "lon": 80.8893,
    "low_days": {
     "2026-10-01": {
@@ -10451,7 +10445,7 @@
       "meteofrance_seamless": 22.8,
       "ukmo_seamless": 23.5
      },
-     "obs_count": 28,
+     "obs_count": 27,
      "obs_last": "2026-10-01T18:00:00+00:00",
      "obs_min_so_far": 26
     },
@@ -10729,7 +10723,7 @@
      "market": {
       "buckets": [
        {
-        "bestAsk": 0.009,
+        "bestAsk": 0.01,
         "bestBid": 0.001,
         "closed": false,
         "depth": null,
@@ -10737,7 +10731,7 @@
         "lastTrade": null,
         "threshold": "0",
         "volume": 13.100999999999999,
-        "yes": 0.005
+        "yes": 0.0055
        },
        {
         "bestAsk": 0.039,
@@ -10764,8 +10758,8 @@
         "bestBid": null,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1632,
-         "avg_fill_25": 0.3117,
+         "avg_fill_10": 0.1636,
+         "avg_fill_25": 0.325,
          "best_ask": 0.09,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
@@ -10892,7 +10886,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-02T12:00:00Z",
-      "liquidity": 51976.60059,
+      "liquidity": 52007.40249,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Chaudhary Charan Singh Intl Airport Station in degrees Celsius on 2 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site",
       "slug": "lowest-temperature-in-lucknow-on-october-2-2026",
       "title": "Lowest temperature in Lucknow on October 2?",
@@ -10910,8 +10904,8 @@
       "ukmo_seamless": 23.9
      },
      "models_rest": {
-      "cma_grapes_global": 26.5,
-      "ecmwf_aifs025_single": 26.7,
+      "cma_grapes_global": 26.1,
+      "ecmwf_aifs025_single": 26.8,
       "ecmwf_ifs025": 24.9,
       "gem_seamless": 24.4,
       "gfs_seamless": 26.3,
@@ -10920,8 +10914,8 @@
       "meteofrance_seamless": 25.0,
       "ukmo_seamless": 26.7
      },
-     "obs_count": 35,
-     "obs_last": "2026-10-02T11:30:00+00:00",
+     "obs_count": 36,
+     "obs_last": "2026-10-02T12:00:00+00:00",
      "obs_min_so_far": 23,
      "rest_of_day_from": "2026-10-02T17:00"
     },
@@ -11085,7 +11079,7 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.1321,
-         "avg_fill_25": 0.2124,
+         "avg_fill_25": 0.2121,
          "best_ask": 0.13,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
@@ -11168,7 +11162,7 @@
          "avg_fill_25": 0.67,
          "best_ask": 0.67,
          "best_bid": 0.04,
-         "bid_usd_within_2c": 53.0,
+         "bid_usd_within_2c": 57.6,
          "usd_at_best": 50.25,
          "usd_within_1c": 54.5,
          "usd_within_2c": 54.5
@@ -11188,7 +11182,7 @@
          "avg_fill_25": 0.67,
          "best_ask": 0.67,
          "best_bid": 0.15,
-         "bid_usd_within_2c": 77.49,
+         "bid_usd_within_2c": 73.29,
          "usd_at_best": 50.25,
          "usd_within_1c": 54.5,
          "usd_within_2c": 54.5
@@ -11244,14 +11238,14 @@
         "bestBid": null,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1881,
-         "avg_fill_25": 0.334,
+         "avg_fill_10": 0.19,
+         "avg_fill_25": 0.335,
          "best_ask": 0.14,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
          "usd_at_best": 1.3,
-         "usd_within_1c": 5.71,
-         "usd_within_2c": 5.71
+         "usd_within_1c": 1.3,
+         "usd_within_2c": 6.06
         },
         "label": "27\u00b0C",
         "lastTrade": null,
@@ -11264,8 +11258,8 @@
         "bestBid": null,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1931,
-         "avg_fill_25": 0.37,
+         "avg_fill_10": 0.1926,
+         "avg_fill_25": 0.3655,
          "best_ask": 0.13,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
@@ -11282,15 +11276,15 @@
       ],
       "closed": false,
       "endDate": "2026-10-03T12:00:00Z",
-      "liquidity": 2535.8864,
+      "liquidity": 2660.9773,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Chaudhary Charan Singh Intl Airport Station in degrees Celsius on 3 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site",
       "slug": "lowest-temperature-in-lucknow-on-october-3-2026",
       "title": "Lowest temperature in Lucknow on October 3?",
       "volume": 24.0
      },
      "models": {
-      "cma_grapes_global": 24.2,
-      "ecmwf_aifs025_single": 25.1,
+      "cma_grapes_global": 24.0,
+      "ecmwf_aifs025_single": 25.2,
       "ecmwf_ifs025": 23.3,
       "gem_seamless": 21.6,
       "gfs_seamless": 24.0,
@@ -11501,7 +11495,7 @@
        "label": "23\u00b0C",
        "lastTrade": 0.999,
        "threshold": "5",
-       "volume": 280.48666000000003,
+       "volume": 280.48666,
        "yes": 1.0
       },
       {
@@ -11572,6 +11566,12 @@
     }
    },
    "metar": [
+    {
+     "maxT": null,
+     "raw": "METAR VILK 021200Z 26005KT 5000 HZ FEW020 30/24 Q1013 NOSIG",
+     "t": "2026-10-02T12:00:00+00:00",
+     "temp": 30
+    },
     {
      "maxT": null,
      "raw": "METAR VILK 021130Z 29008KT 5000 HZ FEW020 SCT025 31/23 Q1012 NOSIG",
@@ -11943,12 +11943,6 @@
      "raw": "METAR VILK 010500Z 33005KT 5000 HZ NSC 31/22 Q1013 NOSIG",
      "t": "2026-10-01T05:00:00+00:00",
      "temp": 31
-    },
-    {
-     "maxT": null,
-     "raw": "METAR VILK 010430Z 30005KT 5000 HZ NSC 31/23 Q1013 NOSIG",
-     "t": "2026-10-01T04:30:00+00:00",
-     "temp": 31
     }
    ],
    "name": "Lucknow",
@@ -12163,7 +12157,7 @@
        "label": "33\u00b0C",
        "lastTrade": 0.002,
        "threshold": "6",
-       "volume": 7638.6391650000005,
+       "volume": 7638.639164999999,
        "yes": 0.0
       },
       {
@@ -12174,7 +12168,7 @@
        "label": "34\u00b0C",
        "lastTrade": 0.01,
        "threshold": "7",
-       "volume": 2383.520911,
+       "volume": 2383.5209109999996,
        "yes": 0.0
       },
       {
@@ -12218,7 +12212,7 @@
      "settled": true,
      "slug": "highest-temperature-in-lucknow-on-october-1-2026",
      "title": "Highest temperature in Lucknow on October 1?",
-     "volume": 24769.422398000002,
+     "volume": 24769.422398,
      "winner": "32\u00b0C"
     }
    },
@@ -12383,20 +12377,20 @@
       "meteofrance_seamless": 28.3,
       "ukmo_seamless": 27.9
      },
-     "obs_count": 35,
+     "obs_count": 34,
      "obs_last": "2026-10-01T21:30:00+00:00",
      "obs_max_so_far": 29
     },
     "2026-10-02": {
      "conditions": {
-      "cape_max": 530.0,
-      "cloud_mean": 83.0,
+      "cape_max": 600.0,
+      "cloud_mean": 78.0,
       "morning_vis_min_m": 21180.0,
-      "pressure_change_hpa": 3.1,
+      "pressure_change_hpa": 3.0,
       "rain_chance_max": 55,
-      "tmax_change_c": -3.1,
-      "wind_mean_kmh": 6.3,
-      "wind_shift_deg": 34
+      "tmax_change_c": -3.0,
+      "wind_mean_kmh": 6.4,
+      "wind_shift_deg": 25
      },
      "ensemble": {
       "ecmwf_ifs025": [
@@ -12495,37 +12489,37 @@
        25.6
       ],
       "ncep_gefs025": [
-       23.2,
-       23.3,
+       22.4,
+       22.7,
+       22.7,
+       22.8,
+       23.1,
+       23.1,
+       23.4,
+       23.6,
+       23.6,
+       23.7,
+       23.7,
        24.0,
+       24.0,
+       24.1,
+       24.1,
+       24.2,
+       24.2,
+       24.2,
        24.3,
        24.4,
-       24.4,
-       24.4,
-       24.7,
+       24.5,
+       24.5,
        24.7,
        24.8,
        24.8,
        24.8,
        24.9,
+       24.9,
        25.1,
-       25.3,
-       25.4,
-       25.4,
-       25.6,
-       25.6,
-       25.7,
-       25.9,
-       25.9,
-       25.9,
-       25.9,
-       26.0,
-       26.2,
-       26.2,
-       26.3,
-       26.4,
-       26.5,
-       26.8
+       25.2,
+       25.4
       ]
      },
      "ensemble_rest": {
@@ -12625,37 +12619,37 @@
        25.6
       ],
       "ncep_gefs025": [
-       23.2,
-       23.3,
+       22.4,
+       22.7,
+       22.7,
+       22.8,
+       23.1,
+       23.1,
+       23.4,
+       23.6,
+       23.6,
+       23.7,
+       23.7,
        24.0,
+       24.0,
+       24.1,
+       24.1,
+       24.2,
+       24.2,
+       24.2,
        24.3,
        24.4,
-       24.4,
-       24.4,
-       24.7,
+       24.5,
+       24.5,
        24.7,
        24.8,
        24.8,
        24.8,
        24.9,
+       24.9,
        25.1,
-       25.3,
-       25.4,
-       25.4,
-       25.6,
-       25.6,
-       25.7,
-       25.9,
-       25.9,
-       25.9,
-       25.9,
-       26.0,
-       26.2,
-       26.2,
-       26.3,
-       26.4,
-       26.5,
-       26.8
+       25.2,
+       25.4
       ]
      },
      "market": {
@@ -12716,116 +12710,116 @@
         "yes": 0.0005
        },
        {
-        "bestAsk": 0.005,
+        "bestAsk": 0.001,
         "bestBid": null,
         "closed": false,
         "depth": null,
         "label": "21\u00b0C",
         "lastTrade": 0.006,
         "threshold": "5",
-        "volume": 3326.707936,
-        "yes": 0.0025
+        "volume": 3326.7079360000002,
+        "yes": 0.0005
        },
        {
-        "bestAsk": 0.003,
-        "bestBid": 0.002,
+        "bestAsk": 0.001,
+        "bestBid": null,
         "closed": false,
         "depth": null,
         "label": "22\u00b0C",
-        "lastTrade": 0.023,
+        "lastTrade": 0.001,
         "threshold": "6",
-        "volume": 2686.1883659999994,
-        "yes": 0.0025
+        "volume": 3128.4242239999994,
+        "yes": 0.0005
        },
        {
-        "bestAsk": 0.015,
+        "bestAsk": 0.01,
         "bestBid": 0.007,
         "closed": false,
         "depth": null,
         "label": "23\u00b0C",
         "lastTrade": 0.01,
         "threshold": "7",
-        "volume": 3835.0253150000003,
-        "yes": 0.011
+        "volume": 4010.8453150000005,
+        "yes": 0.0085
        },
        {
-        "bestAsk": 0.142,
-        "bestBid": 0.115,
+        "bestAsk": 0.053,
+        "bestBid": 0.032,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1517,
-         "avg_fill_25": 0.1778,
-         "best_ask": 0.149,
-         "best_bid": 0.103,
-         "bid_usd_within_2c": 5.7,
-         "usd_at_best": 2.23,
-         "usd_within_1c": 13.51,
-         "usd_within_2c": 13.51
+         "avg_fill_10": 0.1289,
+         "avg_fill_25": 0.1712,
+         "best_ask": 0.053,
+         "best_bid": 0.037,
+         "bid_usd_within_2c": 5.1,
+         "usd_at_best": 1.11,
+         "usd_within_1c": 1.38,
+         "usd_within_2c": 2.37
         },
         "label": "24\u00b0C",
-        "lastTrade": 0.166,
+        "lastTrade": 0.052,
         "threshold": "8",
-        "volume": 7162.547462999999,
-        "yes": 0.1285
+        "volume": 7426.554633999998,
+        "yes": 0.0425
        },
        {
-        "bestAsk": 0.41,
-        "bestBid": 0.34,
+        "bestAsk": 0.35,
+        "bestBid": 0.29,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.4195,
-         "avg_fill_25": 0.4323,
-         "best_ask": 0.41,
-         "best_bid": 0.34,
-         "bid_usd_within_2c": 16.65,
-         "usd_at_best": 2.05,
-         "usd_within_1c": 8.35,
-         "usd_within_2c": 14.8
+         "avg_fill_10": 0.33,
+         "avg_fill_25": 0.3466,
+         "best_ask": 0.33,
+         "best_bid": 0.31,
+         "bid_usd_within_2c": 2.0,
+         "usd_at_best": 13.93,
+         "usd_within_1c": 13.93,
+         "usd_within_2c": 13.93
         },
         "label": "25\u00b0C",
-        "lastTrade": 0.44,
+        "lastTrade": 0.25,
         "threshold": "9",
-        "volume": 6610.119947999999,
-        "yes": 0.375
+        "volume": 6729.192300999999,
+        "yes": 0.32
        },
        {
-        "bestAsk": 0.49,
-        "bestBid": 0.46,
+        "bestAsk": 0.7,
+        "bestBid": 0.61,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.5484,
-         "avg_fill_25": 0.5828,
-         "best_ask": 0.49,
-         "best_bid": 0.45,
-         "bid_usd_within_2c": 35.7,
-         "usd_at_best": 0.24,
-         "usd_within_1c": 0.24,
-         "usd_within_2c": 0.24
+         "avg_fill_10": 0.6759,
+         "avg_fill_25": 0.709,
+         "best_ask": 0.67,
+         "best_bid": 0.61,
+         "bid_usd_within_2c": 33.15,
+         "usd_at_best": 4.08,
+         "usd_within_1c": 10.88,
+         "usd_within_2c": 10.88
         },
         "label": "26\u00b0C or higher",
-        "lastTrade": 0.47,
+        "lastTrade": 0.69,
         "threshold": "10",
-        "volume": 16122.283156000001,
-        "yes": 0.475
+        "volume": 16440.508544999997,
+        "yes": 0.655
        }
       ],
       "closed": false,
       "endDate": "2026-10-02T12:00:00Z",
-      "liquidity": 99840.87195,
+      "liquidity": 109917.15757,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Adolfo Su\u00e1rez Madrid-Barajas Airport Station in degrees Celsius on 2 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?s",
       "slug": "highest-temperature-in-madrid-on-october-2-2026",
       "title": "Highest temperature in Madrid on October 2?",
-      "volume": 42623.487358
+      "volume": 43942.84812899999
      },
      "models": {
-      "cma_grapes_global": 22.9,
-      "ecmwf_aifs025_single": 23.1,
+      "cma_grapes_global": 22.6,
+      "ecmwf_aifs025_single": 22.1,
       "ecmwf_ifs025": 24.8,
       "gem_seamless": 23.8,
       "gfs_seamless": 25.4,
-      "icon_seamless": 24.1,
+      "icon_seamless": 24.2,
       "jma_seamless": 23.4,
-      "meteofrance_seamless": 24.5,
+      "meteofrance_seamless": 24.4,
       "ukmo_seamless": 26.3
      },
      "models_hourly": {
@@ -12836,50 +12830,50 @@
        "2026-10-02T03:00": 15.8,
        "2026-10-02T04:00": 15.6,
        "2026-10-02T05:00": 15.5,
-       "2026-10-02T06:00": 15.5,
-       "2026-10-02T07:00": 15.6,
-       "2026-10-02T08:00": 15.7,
-       "2026-10-02T09:00": 15.9,
-       "2026-10-02T10:00": 16.2,
-       "2026-10-02T11:00": 17.0,
-       "2026-10-02T12:00": 18.6,
-       "2026-10-02T13:00": 20.6,
-       "2026-10-02T14:00": 22.1,
-       "2026-10-02T15:00": 22.8,
-       "2026-10-02T16:00": 22.9,
-       "2026-10-02T17:00": 22.7,
-       "2026-10-02T18:00": 22.3,
-       "2026-10-02T19:00": 21.5,
+       "2026-10-02T06:00": 15.6,
+       "2026-10-02T07:00": 15.9,
+       "2026-10-02T08:00": 16.3,
+       "2026-10-02T09:00": 16.9,
+       "2026-10-02T10:00": 17.7,
+       "2026-10-02T11:00": 18.6,
+       "2026-10-02T12:00": 19.7,
+       "2026-10-02T13:00": 21.0,
+       "2026-10-02T14:00": 21.9,
+       "2026-10-02T15:00": 22.4,
+       "2026-10-02T16:00": 22.6,
+       "2026-10-02T17:00": 22.5,
+       "2026-10-02T18:00": 22.1,
+       "2026-10-02T19:00": 21.4,
        "2026-10-02T20:00": 20.8,
-       "2026-10-02T21:00": 20.3,
-       "2026-10-02T22:00": 19.9,
-       "2026-10-02T23:00": 19.4
+       "2026-10-02T21:00": 20.4,
+       "2026-10-02T22:00": 20.0,
+       "2026-10-02T23:00": 19.6
       },
       "ecmwf_aifs025_single": {
        "2026-10-02T00:00": 18.9,
-       "2026-10-02T01:00": 17.8,
+       "2026-10-02T01:00": 17.7,
        "2026-10-02T02:00": 16.9,
-       "2026-10-02T03:00": 16.3,
-       "2026-10-02T04:00": 15.8,
-       "2026-10-02T05:00": 15.5,
-       "2026-10-02T06:00": 15.4,
-       "2026-10-02T07:00": 15.5,
-       "2026-10-02T08:00": 15.8,
-       "2026-10-02T09:00": 16.6,
-       "2026-10-02T10:00": 18.0,
-       "2026-10-02T11:00": 19.5,
-       "2026-10-02T12:00": 21.0,
-       "2026-10-02T13:00": 22.2,
-       "2026-10-02T14:00": 23.0,
-       "2026-10-02T15:00": 23.1,
-       "2026-10-02T16:00": 22.9,
-       "2026-10-02T17:00": 22.4,
-       "2026-10-02T18:00": 21.8,
-       "2026-10-02T19:00": 21.1,
-       "2026-10-02T20:00": 20.6,
-       "2026-10-02T21:00": 20.0,
-       "2026-10-02T22:00": 19.4,
-       "2026-10-02T23:00": 18.8
+       "2026-10-02T03:00": 16.4,
+       "2026-10-02T04:00": 16.1,
+       "2026-10-02T05:00": 16.0,
+       "2026-10-02T06:00": 16.0,
+       "2026-10-02T07:00": 16.2,
+       "2026-10-02T08:00": 16.6,
+       "2026-10-02T09:00": 17.2,
+       "2026-10-02T10:00": 18.2,
+       "2026-10-02T11:00": 19.4,
+       "2026-10-02T12:00": 20.5,
+       "2026-10-02T13:00": 21.4,
+       "2026-10-02T14:00": 22.0,
+       "2026-10-02T15:00": 22.1,
+       "2026-10-02T16:00": 21.9,
+       "2026-10-02T17:00": 21.5,
+       "2026-10-02T18:00": 21.1,
+       "2026-10-02T19:00": 20.5,
+       "2026-10-02T20:00": 20.1,
+       "2026-10-02T21:00": 19.6,
+       "2026-10-02T22:00": 19.1,
+       "2026-10-02T23:00": 18.5
       },
       "ecmwf_ifs025": {
        "2026-10-02T00:00": 19.2,
@@ -12971,19 +12965,19 @@
        "2026-10-02T08:00": 16.6,
        "2026-10-02T09:00": 16.8,
        "2026-10-02T10:00": 17.0,
-       "2026-10-02T11:00": 17.8,
+       "2026-10-02T11:00": 18.0,
        "2026-10-02T12:00": 18.9,
-       "2026-10-02T13:00": 20.1,
-       "2026-10-02T14:00": 21.3,
-       "2026-10-02T15:00": 22.4,
-       "2026-10-02T16:00": 23.4,
-       "2026-10-02T17:00": 24.0,
-       "2026-10-02T18:00": 24.1,
-       "2026-10-02T19:00": 21.9,
-       "2026-10-02T20:00": 20.3,
-       "2026-10-02T21:00": 19.4,
-       "2026-10-02T22:00": 19.2,
-       "2026-10-02T23:00": 19.2
+       "2026-10-02T13:00": 20.0,
+       "2026-10-02T14:00": 21.5,
+       "2026-10-02T15:00": 22.8,
+       "2026-10-02T16:00": 23.7,
+       "2026-10-02T17:00": 24.2,
+       "2026-10-02T18:00": 23.8,
+       "2026-10-02T19:00": 21.4,
+       "2026-10-02T20:00": 21.3,
+       "2026-10-02T21:00": 19.7,
+       "2026-10-02T22:00": 19.3,
+       "2026-10-02T23:00": 19.0
       },
       "jma_seamless": {
        "2026-10-02T00:00": 20.4,
@@ -13025,12 +13019,12 @@
        "2026-10-02T10:00": 17.1,
        "2026-10-02T11:00": 18.5,
        "2026-10-02T12:00": 19.6,
-       "2026-10-02T13:00": 20.2,
-       "2026-10-02T14:00": 21.4,
-       "2026-10-02T15:00": 22.0,
-       "2026-10-02T16:00": 23.0,
-       "2026-10-02T17:00": 23.9,
-       "2026-10-02T18:00": 24.5,
+       "2026-10-02T13:00": 20.5,
+       "2026-10-02T14:00": 21.8,
+       "2026-10-02T15:00": 21.9,
+       "2026-10-02T16:00": 22.8,
+       "2026-10-02T17:00": 23.8,
+       "2026-10-02T18:00": 24.4,
        "2026-10-02T19:00": 24.2,
        "2026-10-02T20:00": 20.8,
        "2026-10-02T21:00": 19.2,
@@ -13065,33 +13059,33 @@
       }
      },
      "models_rest": {
-      "cma_grapes_global": 22.9,
-      "ecmwf_aifs025_single": 23.1,
+      "cma_grapes_global": 22.6,
+      "ecmwf_aifs025_single": 22.1,
       "ecmwf_ifs025": 24.8,
       "gem_seamless": 23.8,
       "gfs_seamless": 25.4,
-      "icon_seamless": 24.1,
+      "icon_seamless": 24.2,
       "jma_seamless": 23.4,
-      "meteofrance_seamless": 24.5,
+      "meteofrance_seamless": 24.4,
       "ukmo_seamless": 26.3
      },
-     "obs_count": 30,
-     "obs_last": "2026-10-02T11:00:00+00:00",
-     "obs_max_so_far": 21,
-     "rest_of_day_from": "2026-10-02T13:00",
+     "obs_count": 32,
+     "obs_last": "2026-10-02T12:00:00+00:00",
+     "obs_max_so_far": 23,
+     "rest_of_day_from": "2026-10-02T14:00",
      "taf_issued": "2026-10-02T11:00:00.000Z",
      "taf_max": 26
     },
     "2026-10-03": {
      "conditions": {
-      "cape_max": 150.0,
+      "cape_max": 200.0,
       "cloud_mean": 100.0,
-      "morning_vis_min_m": 22880.0,
-      "pressure_change_hpa": -1.6,
+      "morning_vis_min_m": 21820.0,
+      "pressure_change_hpa": -1.2,
       "rain_chance_max": 63,
-      "tmax_change_c": -3.6,
-      "wind_mean_kmh": 4.5,
-      "wind_shift_deg": 29
+      "tmax_change_c": -4.2,
+      "wind_mean_kmh": 4.8,
+      "wind_shift_deg": 33
      },
      "ensemble": {
       "ecmwf_ifs025": [
@@ -13190,37 +13184,37 @@
        24.6
       ],
       "ncep_gefs025": [
-       20.0,
-       21.0,
-       21.0,
-       21.1,
-       21.1,
+       19.9,
+       19.9,
+       20.6,
+       20.6,
+       20.7,
+       20.7,
+       20.8,
        21.2,
-       21.3,
-       21.4,
        21.4,
        21.7,
        21.8,
-       22.0,
-       22.4,
-       22.4,
-       22.6,
+       21.9,
+       21.9,
+       22.2,
+       22.2,
+       22.5,
+       22.5,
        22.6,
        22.7,
+       22.7,
+       22.8,
        22.8,
        22.9,
-       23.1,
        23.2,
+       23.2,
+       23.3,
        23.5,
        23.7,
-       23.8,
-       23.9,
-       24.0,
        24.1,
-       24.1,
-       24.3,
-       24.6,
-       24.9
+       24.2,
+       25.1
       ]
      },
      "market": {
@@ -13237,15 +13231,15 @@
         "yes": 0.0025
        },
        {
-        "bestAsk": 0.003,
-        "bestBid": 0.001,
+        "bestAsk": 0.018,
+        "bestBid": 0.002,
         "closed": false,
         "depth": null,
         "label": "18\u00b0C",
         "lastTrade": 0.002,
         "threshold": "1",
         "volume": 671.0,
-        "yes": 0.002
+        "yes": 0.01
        },
        {
         "bestAsk": 0.011,
@@ -13259,44 +13253,44 @@
         "yes": 0.0065
        },
        {
-        "bestAsk": 0.069,
-        "bestBid": 0.049,
+        "bestAsk": 0.059,
+        "bestBid": 0.05,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0705,
-         "avg_fill_25": 0.0719,
-         "best_ask": 0.069,
-         "best_bid": 0.049,
-         "bid_usd_within_2c": 2.93,
-         "usd_at_best": 1.38,
-         "usd_within_1c": 30.32,
-         "usd_within_2c": 48.03
+         "avg_fill_10": 0.0667,
+         "avg_fill_25": 0.0714,
+         "best_ask": 0.059,
+         "best_bid": 0.05,
+         "bid_usd_within_2c": 2.13,
+         "usd_at_best": 2.54,
+         "usd_within_1c": 2.84,
+         "usd_within_2c": 38.12
         },
         "label": "20\u00b0C",
         "lastTrade": 0.049,
         "threshold": "3",
-        "volume": 461.754399,
-        "yes": 0.059
+        "volume": 463.85743899999994,
+        "yes": 0.0545
        },
        {
-        "bestAsk": 0.18,
-        "bestBid": 0.179,
+        "bestAsk": 0.251,
+        "bestBid": 0.221,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1803,
-         "avg_fill_25": 0.1849,
-         "best_ask": 0.18,
-         "best_bid": 0.179,
-         "bid_usd_within_2c": 62.49,
-         "usd_at_best": 7.2,
-         "usd_within_1c": 31.05,
-         "usd_within_2c": 64.66
+         "avg_fill_10": 0.2435,
+         "avg_fill_25": 0.2478,
+         "best_ask": 0.243,
+         "best_bid": 0.221,
+         "bid_usd_within_2c": 107.12,
+         "usd_at_best": 4.86,
+         "usd_within_1c": 17.06,
+         "usd_within_2c": 116.02
         },
         "label": "21\u00b0C",
-        "lastTrade": 0.171,
+        "lastTrade": 0.192,
         "threshold": "4",
-        "volume": 634.6413040000001,
-        "yes": 0.1795
+        "volume": 726.7507570000001,
+        "yes": 0.236
        },
        {
         "bestAsk": 0.36,
@@ -13307,79 +13301,79 @@
          "avg_fill_25": 0.36,
          "best_ask": 0.36,
          "best_bid": 0.35,
-         "bid_usd_within_2c": 278.97,
+         "bid_usd_within_2c": 202.22,
          "usd_at_best": 59.4,
-         "usd_within_1c": 186.69,
-         "usd_within_2c": 2389.46
+         "usd_within_1c": 76.05,
+         "usd_within_2c": 201.49
         },
         "label": "22\u00b0C",
         "lastTrade": 0.35,
         "threshold": "5",
-        "volume": 1671.0369620000001,
+        "volume": 1709.4984980000002,
         "yes": 0.355
        },
        {
-        "bestAsk": 0.28,
-        "bestBid": 0.27,
+        "bestAsk": 0.27,
+        "bestBid": 0.26,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.28,
-         "avg_fill_25": 0.2846,
-         "best_ask": 0.28,
-         "best_bid": 0.27,
-         "bid_usd_within_2c": 132.12,
-         "usd_at_best": 13.38,
-         "usd_within_1c": 103.28,
-         "usd_within_2c": 1856.18
+         "avg_fill_10": 0.2745,
+         "avg_fill_25": 0.2778,
+         "best_ask": 0.27,
+         "best_bid": 0.26,
+         "bid_usd_within_2c": 87.22,
+         "usd_at_best": 5.4,
+         "usd_within_1c": 82.1,
+         "usd_within_2c": 156.38
         },
         "label": "23\u00b0C",
         "lastTrade": 0.28,
         "threshold": "6",
-        "volume": 1480.810466,
-        "yes": 0.275
+        "volume": 1491.810466,
+        "yes": 0.265
        },
        {
         "bestAsk": 0.07,
-        "bestBid": 0.06,
+        "bestBid": 0.05,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0833,
-         "avg_fill_25": 0.0885,
+         "avg_fill_10": 0.07,
+         "avg_fill_25": 0.07,
          "best_ask": 0.07,
-         "best_bid": 0.06,
-         "bid_usd_within_2c": 14.16,
-         "usd_at_best": 2.66,
-         "usd_within_1c": 3.06,
-         "usd_within_2c": 22.92
+         "best_bid": 0.05,
+         "bid_usd_within_2c": 15.73,
+         "usd_at_best": 34.72,
+         "usd_within_1c": 35.12,
+         "usd_within_2c": 36.35
         },
         "label": "24\u00b0C",
         "lastTrade": 0.12,
         "threshold": "7",
-        "volume": 1580.2875070000002,
-        "yes": 0.065
+        "volume": 1610.6032870000001,
+        "yes": 0.06
        },
        {
-        "bestAsk": 0.031,
+        "bestAsk": 0.034,
         "bestBid": 0.03,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0382,
-         "avg_fill_25": 0.0559,
-         "best_ask": 0.031,
+         "avg_fill_10": 0.0543,
+         "avg_fill_25": 0.0807,
+         "best_ask": 0.034,
          "best_bid": 0.03,
-         "bid_usd_within_2c": 8.58,
-         "usd_at_best": 3.07,
-         "usd_within_1c": 6.16,
-         "usd_within_2c": 13.72
+         "bid_usd_within_2c": 6.85,
+         "usd_at_best": 0.68,
+         "usd_within_1c": 1.14,
+         "usd_within_2c": 6.38
         },
         "label": "25\u00b0C",
         "lastTrade": 0.03,
         "threshold": "8",
-        "volume": 864.7300699999998,
-        "yes": 0.0305
+        "volume": 865.7609699999998,
+        "yes": 0.032
        },
        {
-        "bestAsk": 0.012,
+        "bestAsk": 0.01,
         "bestBid": 0.006,
         "closed": false,
         "depth": null,
@@ -13387,10 +13381,10 @@
         "lastTrade": 0.034,
         "threshold": "9",
         "volume": 134.408976,
-        "yes": 0.009
+        "yes": 0.008
        },
        {
-        "bestAsk": 0.003,
+        "bestAsk": 0.004,
         "bestBid": 0.001,
         "closed": false,
         "depth": null,
@@ -13398,24 +13392,24 @@
         "lastTrade": 0.003,
         "threshold": "10",
         "volume": 805.224226,
-        "yes": 0.002
+        "yes": 0.0025
        }
       ],
       "closed": false,
       "endDate": "2026-10-03T12:00:00Z",
-      "liquidity": 35081.31582,
+      "liquidity": 37867.16017,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Adolfo Su\u00e1rez Madrid-Barajas Airport Station in degrees Celsius on 3 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?s",
       "slug": "highest-temperature-in-madrid-on-october-3-2026",
       "title": "Highest temperature in Madrid on October 3?",
-      "volume": 8801.87851
+      "volume": 8976.899219
      },
      "models": {
-      "cma_grapes_global": 21.7,
-      "ecmwf_aifs025_single": 20.1,
+      "cma_grapes_global": 22.2,
+      "ecmwf_aifs025_single": 19.9,
       "ecmwf_ifs025": 20.2,
       "gem_seamless": 18.4,
       "gfs_seamless": 23.3,
-      "icon_seamless": 20.5,
+      "icon_seamless": 20.0,
       "jma_seamless": 22.3,
       "meteofrance_seamless": 23.0,
       "ukmo_seamless": 23.3
@@ -13424,7 +13418,7 @@
    },
    "icao": "LEMD",
    "lat": 40.4719,
-   "local_now": "2026-10-02T13:35+02:00",
+   "local_now": "2026-10-02T14:08+02:00",
    "lon": -3.5626,
    "low_days": {
     "2026-10-01": {
@@ -13579,20 +13573,20 @@
       "meteofrance_seamless": 15.1,
       "ukmo_seamless": 15.1
      },
-     "obs_count": 35,
+     "obs_count": 34,
      "obs_last": "2026-10-01T21:30:00+00:00",
      "obs_min_so_far": 15
     },
     "2026-10-02": {
      "conditions": {
-      "cape_max": 530.0,
-      "cloud_mean": 83.0,
+      "cape_max": 600.0,
+      "cloud_mean": 78.0,
       "morning_vis_min_m": 21180.0,
-      "pressure_change_hpa": 3.1,
+      "pressure_change_hpa": 3.0,
       "rain_chance_max": 55,
-      "tmax_change_c": -3.1,
-      "wind_mean_kmh": 6.3,
-      "wind_shift_deg": 34
+      "tmax_change_c": -3.0,
+      "wind_mean_kmh": 6.4,
+      "wind_shift_deg": 25
      },
      "ensemble": {
       "ecmwf_ifs025": [
@@ -13698,8 +13692,13 @@
        16.5,
        16.5,
        16.5,
+       16.5,
        16.6,
        16.6,
+       16.6,
+       16.7,
+       16.7,
+       16.7,
        16.7,
        16.7,
        16.7,
@@ -13707,21 +13706,16 @@
        16.8,
        16.8,
        16.8,
-       16.9,
-       16.9,
-       16.9,
-       16.9,
-       16.9,
+       16.8,
+       16.8,
+       16.8,
        16.9,
        16.9,
        17.0,
+       17.0,
        17.1,
        17.1,
-       17.1,
-       17.2,
-       17.2,
-       17.3,
-       17.3
+       17.2
       ]
      },
      "ensemble_rest": {
@@ -13806,58 +13800,58 @@
        19.3,
        19.3,
        19.3,
-       19.3,
        19.4,
        19.4,
        19.4,
-       19.5,
+       19.4,
        19.6,
        19.6,
        19.7,
        19.7,
        19.9,
        20.0,
+       20.1,
        20.3,
-       20.7
+       21.0
       ],
       "ncep_gefs025": [
-       18.6,
-       18.9,
-       18.9,
-       19.1,
-       19.1,
-       19.3,
-       19.3,
+       18.7,
+       18.7,
+       19.0,
+       19.2,
+       19.4,
+       19.4,
        19.5,
        19.6,
        19.6,
        19.6,
-       19.6,
+       19.7,
        19.8,
+       19.8,
+       19.8,
+       19.9,
+       19.9,
+       19.9,
+       19.9,
+       19.9,
        20.0,
        20.0,
        20.1,
        20.1,
-       20.2,
        20.2,
        20.3,
        20.3,
        20.3,
        20.4,
        20.4,
-       20.5,
-       20.7,
        20.8,
-       20.8,
-       20.9,
-       21.2,
-       21.3
+       20.9
       ]
      },
      "market": {
       "buckets": [
        {
-        "bestAsk": 0.005,
+        "bestAsk": 0.017,
         "bestBid": 0.001,
         "closed": false,
         "depth": null,
@@ -13865,15 +13859,15 @@
         "lastTrade": null,
         "threshold": "0",
         "volume": 0.0,
-        "yes": 0.003
+        "yes": 0.009
        },
        {
         "bestAsk": 0.08,
         "bestBid": null,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.143,
-         "avg_fill_25": 0.2467,
+         "avg_fill_10": 0.1342,
+         "avg_fill_25": 0.2462,
          "best_ask": 0.08,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
@@ -13918,8 +13912,8 @@
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
          "usd_at_best": 38.8,
-         "usd_within_1c": 87.8,
-         "usd_within_2c": 87.8
+         "usd_within_1c": 38.8,
+         "usd_within_2c": 38.8
         },
         "label": "15\u00b0C",
         "lastTrade": null,
@@ -13928,19 +13922,24 @@
         "yes": 0.485
        },
        {
-        "bestAsk": 1,
+        "bestAsk": 0.99,
         "bestBid": 0.03,
         "closed": false,
         "depth": {
-         "best_ask": null,
+         "avg_fill_10": 0.99,
+         "avg_fill_25": 0.99,
+         "best_ask": 0.99,
          "best_bid": 0.03,
-         "bid_usd_within_2c": 1.4
+         "bid_usd_within_2c": 1.4,
+         "usd_at_best": 198.0,
+         "usd_within_1c": 198.0,
+         "usd_within_2c": 198.0
         },
         "label": "16\u00b0C",
         "lastTrade": null,
         "threshold": "4",
         "volume": 0.0,
-        "yes": 0.515
+        "yes": 0.51
        },
        {
         "bestAsk": 0.001,
@@ -14011,7 +14010,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-02T12:00:00Z",
-      "liquidity": 82420.31909,
+      "liquidity": 81864.01909,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Adolfo Su\u00e1rez Madrid-Barajas Airport Station in degrees Celsius on 2 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?sit",
       "slug": "lowest-temperature-in-madrid-on-october-2-2026",
       "title": "Lowest temperature in Madrid on October 2?",
@@ -14019,7 +14018,7 @@
      },
      "models": {
       "cma_grapes_global": 15.5,
-      "ecmwf_aifs025_single": 15.4,
+      "ecmwf_aifs025_single": 16.0,
       "ecmwf_ifs025": 15.5,
       "gem_seamless": 15.6,
       "gfs_seamless": 17.2,
@@ -14029,31 +14028,31 @@
       "ukmo_seamless": 16.2
      },
      "models_rest": {
-      "cma_grapes_global": 19.4,
-      "ecmwf_aifs025_single": 18.8,
+      "cma_grapes_global": 19.6,
+      "ecmwf_aifs025_single": 18.5,
       "ecmwf_ifs025": 17.4,
       "gem_seamless": 17.1,
       "gfs_seamless": 18.8,
-      "icon_seamless": 19.2,
+      "icon_seamless": 19.0,
       "jma_seamless": 21.0,
       "meteofrance_seamless": 17.6,
       "ukmo_seamless": 20.1
      },
-     "obs_count": 30,
-     "obs_last": "2026-10-02T11:00:00+00:00",
+     "obs_count": 32,
+     "obs_last": "2026-10-02T12:00:00+00:00",
      "obs_min_so_far": 16,
-     "rest_of_day_from": "2026-10-02T13:00"
+     "rest_of_day_from": "2026-10-02T14:00"
     },
     "2026-10-03": {
      "conditions": {
-      "cape_max": 150.0,
+      "cape_max": 200.0,
       "cloud_mean": 100.0,
-      "morning_vis_min_m": 22880.0,
-      "pressure_change_hpa": -1.6,
+      "morning_vis_min_m": 21820.0,
+      "pressure_change_hpa": -1.2,
       "rain_chance_max": 63,
-      "tmax_change_c": -3.6,
-      "wind_mean_kmh": 4.5,
-      "wind_shift_deg": 29
+      "tmax_change_c": -4.2,
+      "wind_mean_kmh": 4.8,
+      "wind_shift_deg": 33
      },
      "ensemble": {
       "ecmwf_ifs025": [
@@ -14152,9 +14151,8 @@
        18.7
       ],
       "ncep_gefs025": [
-       17.0,
-       17.1,
-       17.2,
+       16.7,
+       17.3,
        17.4,
        17.5,
        17.5,
@@ -14162,10 +14160,14 @@
        17.5,
        17.5,
        17.5,
+       17.5,
+       17.5,
+       17.5,
+       17.5,
        17.6,
        17.6,
        17.6,
-       17.6,
+       17.7,
        17.7,
        17.7,
        17.7,
@@ -14173,39 +14175,36 @@
        17.7,
        17.8,
        17.8,
-       17.8,
-       18.0,
+       17.9,
+       17.9,
+       17.9,
        18.0,
        18.0,
        18.1,
-       18.1,
-       18.1,
-       18.2,
-       18.4,
-       18.4
+       18.1
       ]
      },
      "market": {
       "buckets": [
        {
-        "bestAsk": 0.98,
+        "bestAsk": 0.97,
         "bestBid": null,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.97,
-         "avg_fill_25": 0.9722,
-         "best_ask": 0.97,
+         "avg_fill_10": 0.98,
+         "avg_fill_25": 0.98,
+         "best_ask": 0.98,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
-         "usd_at_best": 19.4,
-         "usd_within_1c": 435.65,
-         "usd_within_2c": 683.15
+         "usd_at_best": 563.25,
+         "usd_within_1c": 810.75,
+         "usd_within_2c": 810.75
         },
         "label": "13\u00b0C or below",
         "lastTrade": 0.18,
         "threshold": "0",
         "volume": 5.555556,
-        "yes": 0.49
+        "yes": 0.485
        },
        {
         "bestAsk": 0.68,
@@ -14276,7 +14275,7 @@
          "avg_fill_25": 0.7246,
          "best_ask": 0.68,
          "best_bid": 0.03,
-         "bid_usd_within_2c": 17.2,
+         "bid_usd_within_2c": 16.2,
          "usd_at_best": 3.24,
          "usd_within_1c": 3.24,
          "usd_within_2c": 7.91
@@ -14308,27 +14307,27 @@
         "yes": 0.34
        },
        {
-        "bestAsk": 0.679,
+        "bestAsk": 0.678,
         "bestBid": 0.003,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.6843,
-         "avg_fill_25": 0.7104,
-         "best_ask": 0.679,
+         "avg_fill_10": 0.678,
+         "avg_fill_25": 0.6817,
+         "best_ask": 0.678,
          "best_bid": 0.003,
          "bid_usd_within_2c": 0.41,
-         "usd_at_best": 3.4,
-         "usd_within_1c": 7.65,
-         "usd_within_2c": 7.65
+         "usd_at_best": 13.56,
+         "usd_within_1c": 21.21,
+         "usd_within_2c": 21.21
         },
         "label": "19\u00b0C",
         "lastTrade": 0.01,
         "threshold": "6",
         "volume": 153.0,
-        "yes": 0.341
+        "yes": 0.3405
        },
        {
-        "bestAsk": 0.015,
+        "bestAsk": 0.008,
         "bestBid": 0.001,
         "closed": false,
         "depth": null,
@@ -14336,10 +14335,10 @@
         "lastTrade": 0.01,
         "threshold": "7",
         "volume": 100.0,
-        "yes": 0.008
+        "yes": 0.0045
        },
        {
-        "bestAsk": 0.01,
+        "bestAsk": 0.006,
         "bestBid": 0.001,
         "closed": false,
         "depth": null,
@@ -14347,10 +14346,10 @@
         "lastTrade": null,
         "threshold": "8",
         "volume": 0.0,
-        "yes": 0.0055
+        "yes": 0.0035
        },
        {
-        "bestAsk": 0.014,
+        "bestAsk": 0.008,
         "bestBid": 0.001,
         "closed": false,
         "depth": null,
@@ -14358,10 +14357,10 @@
         "lastTrade": 0.01,
         "threshold": "9",
         "volume": 100.0,
-        "yes": 0.0075
+        "yes": 0.0045
        },
        {
-        "bestAsk": 0.014,
+        "bestAsk": 0.008,
         "bestBid": 0.001,
         "closed": false,
         "depth": null,
@@ -14369,19 +14368,19 @@
         "lastTrade": 0.01,
         "threshold": "10",
         "volume": 100.0,
-        "yes": 0.0075
+        "yes": 0.0045
        }
       ],
       "closed": false,
       "endDate": "2026-10-03T12:00:00Z",
-      "liquidity": 6463.35954,
+      "liquidity": 8021.78904,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Adolfo Su\u00e1rez Madrid-Barajas Airport Station in degrees Celsius on 3 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?sit",
       "slug": "lowest-temperature-in-madrid-on-october-3-2026",
       "title": "Lowest temperature in Madrid on October 3?",
       "volume": 465.908491
      },
      "models": {
-      "cma_grapes_global": 17.0,
+      "cma_grapes_global": 17.2,
       "ecmwf_aifs025_single": 16.3,
       "ecmwf_ifs025": 16.7,
       "gem_seamless": 16.0,
@@ -14665,6 +14664,18 @@
     }
    },
    "metar": [
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 021200Z 07003KT 9999 SCT028 SCT060 23/16 Q1025 NOSIG",
+     "t": "2026-10-02T12:00:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR LEMD 021130Z 08002KT 9999 SCT028 SCT060 23/16 Q1025 NOSIG",
+     "t": "2026-10-02T11:30:00+00:00",
+     "temp": 23
+    },
     {
      "maxT": null,
      "raw": "METAR LEMD 021100Z 02004KT 330V080 9999 SCT028 SCT060 21/16 Q1025 NOSIG",
@@ -15048,12 +15059,6 @@
      "raw": "METAR LEMD 010500Z 34005KT 9999 SCT080 15/10 Q1022 NOSIG",
      "t": "2026-10-01T05:00:00+00:00",
      "temp": 15
-    },
-    {
-     "maxT": null,
-     "raw": "METAR LEMD 010430Z 35006KT 9999 SCT080 16/11 Q1021 NOSIG",
-     "t": "2026-10-01T04:30:00+00:00",
-     "temp": 16
     }
    ],
    "name": "Madrid",
@@ -15213,7 +15218,7 @@
        "label": "24\u00b0C",
        "lastTrade": 0.001,
        "threshold": "1",
-       "volume": 1153.448183,
+       "volume": 1153.4481830000002,
        "yes": 0.0
       },
       {
@@ -15246,7 +15251,7 @@
        "label": "27\u00b0C",
        "lastTrade": 0.001,
        "threshold": "4",
-       "volume": 6349.446362000001,
+       "volume": 6349.446362,
        "yes": 0.0
       },
       {
@@ -15257,7 +15262,7 @@
        "label": "28\u00b0C",
        "lastTrade": 0.01,
        "threshold": "5",
-       "volume": 9490.69699,
+       "volume": 9490.696990000002,
        "yes": 0.0
       },
       {
@@ -15268,7 +15273,7 @@
        "label": "29\u00b0C",
        "lastTrade": 0.999,
        "threshold": "6",
-       "volume": 13246.863488000003,
+       "volume": 13246.863487999999,
        "yes": 1.0
       },
       {
@@ -15279,7 +15284,7 @@
        "label": "30\u00b0C",
        "lastTrade": 0.006,
        "threshold": "7",
-       "volume": 7325.501660000001,
+       "volume": 7325.50166,
        "yes": 0.0
       },
       {
@@ -15323,7 +15328,7 @@
      "settled": true,
      "slug": "highest-temperature-in-madrid-on-october-1-2026",
      "title": "Highest temperature in Madrid on October 1?",
-     "volume": 46082.79288000001,
+     "volume": 46082.79288,
      "winner": "29\u00b0C"
     }
    },
@@ -15766,15 +15771,15 @@
      "market": {
       "buckets": [
        {
-        "bestAsk": 0.003,
+        "bestAsk": 0.005,
         "bestBid": null,
         "closed": false,
         "depth": null,
         "label": "16\u00b0C or below",
         "lastTrade": null,
         "threshold": "0",
-        "volume": 198.29799500000001,
-        "yes": 0.0015
+        "volume": 198.297995,
+        "yes": 0.0025
        },
        {
         "bestAsk": 0.001,
@@ -15817,28 +15822,28 @@
         "label": "20\u00b0C",
         "lastTrade": null,
         "threshold": "4",
-        "volume": 158.0093,
+        "volume": 163.0093,
         "yes": 0.008
        },
        {
-        "bestAsk": 0.045,
-        "bestBid": 0.031,
+        "bestAsk": 0.059,
+        "bestBid": 0.05,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0895,
-         "avg_fill_25": 0.1177,
-         "best_ask": 0.045,
-         "best_bid": 0.031,
-         "bid_usd_within_2c": 10.18,
-         "usd_at_best": 0.72,
-         "usd_within_1c": 0.72,
-         "usd_within_2c": 3.23
+         "avg_fill_10": 0.0938,
+         "avg_fill_25": 0.127,
+         "best_ask": 0.053,
+         "best_bid": 0.032,
+         "bid_usd_within_2c": 25.13,
+         "usd_at_best": 0.85,
+         "usd_within_1c": 3.48,
+         "usd_within_2c": 3.48
         },
         "label": "21\u00b0C",
         "lastTrade": 0.03,
         "threshold": "5",
         "volume": 119.29902299999999,
-        "yes": 0.038
+        "yes": 0.0545
        },
        {
         "bestAsk": 0.13,
@@ -15849,10 +15854,10 @@
          "avg_fill_25": 0.1397,
          "best_ask": 0.13,
          "best_bid": 0.1,
-         "bid_usd_within_2c": 63.54,
+         "bid_usd_within_2c": 102.68,
          "usd_at_best": 0.65,
-         "usd_within_1c": 32.85,
-         "usd_within_2c": 97.11
+         "usd_within_1c": 50.42,
+         "usd_within_2c": 81.17
         },
         "label": "22\u00b0C",
         "lastTrade": 0.14,
@@ -15862,23 +15867,23 @@
        },
        {
         "bestAsk": 0.36,
-        "bestBid": 0.33,
+        "bestBid": 0.34,
         "closed": false,
         "depth": {
          "avg_fill_10": 0.36,
-         "avg_fill_25": 0.36,
+         "avg_fill_25": 0.3655,
          "best_ask": 0.36,
-         "best_bid": 0.33,
-         "bid_usd_within_2c": 184.44,
-         "usd_at_best": 84.28,
-         "usd_within_1c": 201.85,
-         "usd_within_2c": 210.78
+         "best_bid": 0.34,
+         "bid_usd_within_2c": 181.97,
+         "usd_at_best": 11.16,
+         "usd_within_1c": 196.94,
+         "usd_within_2c": 198.84
         },
         "label": "23\u00b0C",
         "lastTrade": 0.36,
         "threshold": "7",
-        "volume": 1384.7221540000003,
-        "yes": 0.345
+        "volume": 1384.7221539999998,
+        "yes": 0.35
        },
        {
         "bestAsk": 0.42,
@@ -15889,10 +15894,10 @@
          "avg_fill_25": 0.42,
          "best_ask": 0.42,
          "best_bid": 0.39,
-         "bid_usd_within_2c": 396.14,
-         "usd_at_best": 128.56,
-         "usd_within_1c": 545.19,
-         "usd_within_2c": 550.17
+         "bid_usd_within_2c": 416.48,
+         "usd_at_best": 167.46,
+         "usd_within_1c": 438.35,
+         "usd_within_2c": 531.32
         },
         "label": "24\u00b0C",
         "lastTrade": 0.42,
@@ -15905,19 +15910,19 @@
         "bestBid": 0.11,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1456,
-         "avg_fill_25": 0.1482,
+         "avg_fill_10": 0.14,
+         "avg_fill_25": 0.14,
          "best_ask": 0.14,
          "best_bid": 0.11,
-         "bid_usd_within_2c": 172.3,
-         "usd_at_best": 4.2,
-         "usd_within_1c": 84.08,
-         "usd_within_2c": 85.68
+         "bid_usd_within_2c": 222.5,
+         "usd_at_best": 35.7,
+         "usd_within_1c": 115.28,
+         "usd_within_2c": 116.88
         },
         "label": "25\u00b0C",
         "lastTrade": 0.14,
         "threshold": "9",
-        "volume": 797.1830840000001,
+        "volume": 797.183084,
         "yes": 0.125
        },
        {
@@ -15934,14 +15939,14 @@
       ],
       "closed": false,
       "endDate": "2026-10-02T12:00:00Z",
-      "liquidity": 17482.22431,
+      "liquidity": 16237.56459,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Benito Ju\u00e1rez International Airport Station in degrees Celsius on 2 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?si",
       "slug": "highest-temperature-in-mexico-city-on-october-2-2026",
       "title": "Highest temperature in Mexico City on October 2?",
-      "volume": 6029.523096000001
+      "volume": 6034.523096
      },
      "models": {
-      "cma_grapes_global": 20.4,
+      "cma_grapes_global": 20.6,
       "ecmwf_aifs025_single": 23.7,
       "ecmwf_ifs025": 23.0,
       "gem_seamless": 20.4,
@@ -15953,56 +15958,56 @@
      },
      "models_hourly": {
       "cma_grapes_global": {
-       "2026-10-02T00:00": 17.7,
-       "2026-10-02T01:00": 17.7,
-       "2026-10-02T02:00": 17.5,
-       "2026-10-02T03:00": 17.3,
-       "2026-10-02T04:00": 16.9,
-       "2026-10-02T05:00": 16.4,
-       "2026-10-02T06:00": 16.2,
+       "2026-10-02T00:00": 18.0,
+       "2026-10-02T01:00": 17.8,
+       "2026-10-02T02:00": 17.4,
+       "2026-10-02T03:00": 17.0,
+       "2026-10-02T04:00": 16.6,
+       "2026-10-02T05:00": 16.2,
+       "2026-10-02T06:00": 16.1,
        "2026-10-02T07:00": 16.4,
-       "2026-10-02T08:00": 16.7,
-       "2026-10-02T09:00": 17.2,
-       "2026-10-02T10:00": 17.8,
-       "2026-10-02T11:00": 18.6,
-       "2026-10-02T12:00": 19.2,
-       "2026-10-02T13:00": 19.8,
-       "2026-10-02T14:00": 20.3,
-       "2026-10-02T15:00": 20.4,
-       "2026-10-02T16:00": 19.7,
-       "2026-10-02T17:00": 18.7,
-       "2026-10-02T18:00": 17.8,
-       "2026-10-02T19:00": 17.3,
-       "2026-10-02T20:00": 16.9,
-       "2026-10-02T21:00": 16.6,
-       "2026-10-02T22:00": 16.5,
-       "2026-10-02T23:00": 16.5
+       "2026-10-02T08:00": 16.9,
+       "2026-10-02T09:00": 17.6,
+       "2026-10-02T10:00": 18.3,
+       "2026-10-02T11:00": 19.2,
+       "2026-10-02T12:00": 19.9,
+       "2026-10-02T13:00": 20.3,
+       "2026-10-02T14:00": 20.6,
+       "2026-10-02T15:00": 20.6,
+       "2026-10-02T16:00": 20.0,
+       "2026-10-02T17:00": 19.1,
+       "2026-10-02T18:00": 18.4,
+       "2026-10-02T19:00": 18.0,
+       "2026-10-02T20:00": 17.8,
+       "2026-10-02T21:00": 17.6,
+       "2026-10-02T22:00": 17.3,
+       "2026-10-02T23:00": 17.0
       },
       "ecmwf_aifs025_single": {
-       "2026-10-02T00:00": 17.5,
-       "2026-10-02T01:00": 17.2,
-       "2026-10-02T02:00": 16.8,
-       "2026-10-02T03:00": 16.4,
-       "2026-10-02T04:00": 16.2,
-       "2026-10-02T05:00": 16.3,
-       "2026-10-02T06:00": 16.6,
-       "2026-10-02T07:00": 17.4,
-       "2026-10-02T08:00": 18.6,
-       "2026-10-02T09:00": 20.1,
-       "2026-10-02T10:00": 21.6,
-       "2026-10-02T11:00": 22.8,
+       "2026-10-02T00:00": 16.6,
+       "2026-10-02T01:00": 16.3,
+       "2026-10-02T02:00": 15.9,
+       "2026-10-02T03:00": 15.7,
+       "2026-10-02T04:00": 15.6,
+       "2026-10-02T05:00": 15.7,
+       "2026-10-02T06:00": 16.1,
+       "2026-10-02T07:00": 17.0,
+       "2026-10-02T08:00": 18.4,
+       "2026-10-02T09:00": 19.9,
+       "2026-10-02T10:00": 21.5,
+       "2026-10-02T11:00": 22.7,
        "2026-10-02T12:00": 23.5,
        "2026-10-02T13:00": 23.7,
-       "2026-10-02T14:00": 23.6,
-       "2026-10-02T15:00": 23.2,
-       "2026-10-02T16:00": 22.6,
-       "2026-10-02T17:00": 22.0,
-       "2026-10-02T18:00": 21.4,
-       "2026-10-02T19:00": 20.8,
-       "2026-10-02T20:00": 20.1,
-       "2026-10-02T21:00": 19.3,
-       "2026-10-02T22:00": 18.5,
-       "2026-10-02T23:00": 17.8
+       "2026-10-02T14:00": 23.5,
+       "2026-10-02T15:00": 23.0,
+       "2026-10-02T16:00": 22.3,
+       "2026-10-02T17:00": 21.7,
+       "2026-10-02T18:00": 21.1,
+       "2026-10-02T19:00": 20.5,
+       "2026-10-02T20:00": 19.8,
+       "2026-10-02T21:00": 19.1,
+       "2026-10-02T22:00": 18.4,
+       "2026-10-02T23:00": 17.7
       },
       "ecmwf_ifs025": {
        "2026-10-02T00:00": 15.9,
@@ -16188,7 +16193,7 @@
       }
      },
      "models_rest": {
-      "cma_grapes_global": 20.4,
+      "cma_grapes_global": 20.6,
       "ecmwf_aifs025_single": 23.7,
       "ecmwf_ifs025": 23.0,
       "gem_seamless": 20.4,
@@ -16198,11 +16203,11 @@
       "meteofrance_seamless": 21.8,
       "ukmo_seamless": 22.9
      },
-     "obs_count": 6,
-     "obs_last": "2026-10-02T11:19:00+00:00",
+     "obs_count": 7,
+     "obs_last": "2026-10-02T11:50:00+00:00",
      "obs_max_so_far": 16,
-     "rest_of_day_from": "2026-10-02T05:00",
-     "taf_issued": "2026-10-02T11:22:00.000Z",
+     "rest_of_day_from": "2026-10-02T06:00",
+     "taf_issued": "2026-10-02T12:05:00.000Z",
      "taf_max": 26
     },
     "2026-10-03": {
@@ -16422,28 +16427,28 @@
         "label": "21\u00b0C",
         "lastTrade": 0.022,
         "threshold": "6",
-        "volume": 192.85107500000004,
+        "volume": 192.851075,
         "yes": 0.0155
        },
        {
-        "bestAsk": 0.055,
+        "bestAsk": 0.05,
         "bestBid": 0.031,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0799,
-         "avg_fill_25": 0.0953,
-         "best_ask": 0.055,
+         "avg_fill_10": 0.0781,
+         "avg_fill_25": 0.1001,
+         "best_ask": 0.056,
          "best_bid": 0.031,
-         "bid_usd_within_2c": 8.18,
-         "usd_at_best": 0.28,
-         "usd_within_1c": 0.84,
-         "usd_within_2c": 0.84
+         "bid_usd_within_2c": 7.01,
+         "usd_at_best": 0.84,
+         "usd_within_1c": 1.12,
+         "usd_within_2c": 1.12
         },
         "label": "22\u00b0C",
         "lastTrade": 0.039,
         "threshold": "7",
-        "volume": 224.11264800000004,
-        "yes": 0.043
+        "volume": 224.112648,
+        "yes": 0.0405
        },
        {
         "bestAsk": 0.34,
@@ -16454,15 +16459,15 @@
          "avg_fill_25": 0.3434,
          "best_ask": 0.34,
          "best_bid": 0.33,
-         "bid_usd_within_2c": 482.8,
+         "bid_usd_within_2c": 1896.33,
          "usd_at_best": 16.29,
-         "usd_within_1c": 90.49,
-         "usd_within_2c": 282.81
+         "usd_within_1c": 60.04,
+         "usd_within_2c": 153.47
         },
         "label": "23\u00b0C",
         "lastTrade": 0.34,
         "threshold": "8",
-        "volume": 712.7625779999998,
+        "volume": 712.762578,
         "yes": 0.335
        },
        {
@@ -16470,14 +16475,14 @@
         "bestBid": 0.44,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.4525,
-         "avg_fill_25": 0.457,
+         "avg_fill_10": 0.45,
+         "avg_fill_25": 0.45,
          "best_ask": 0.45,
          "best_bid": 0.44,
-         "bid_usd_within_2c": 2867.44,
-         "usd_at_best": 7.5,
-         "usd_within_1c": 141.81,
-         "usd_within_2c": 409.12
+         "bid_usd_within_2c": 300.39,
+         "usd_at_best": 70.5,
+         "usd_within_1c": 120.83,
+         "usd_within_2c": 293.6
         },
         "label": "24\u00b0C",
         "lastTrade": 0.45,
@@ -16486,37 +16491,37 @@
         "yes": 0.445
        },
        {
-        "bestAsk": 0.19,
-        "bestBid": 0.17,
+        "bestAsk": 0.18,
+        "bestBid": 0.15,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1923,
-         "avg_fill_25": 0.1969,
-         "best_ask": 0.19,
-         "best_bid": 0.17,
-         "bid_usd_within_2c": 183.84,
-         "usd_at_best": 7.6,
-         "usd_within_1c": 42.2,
-         "usd_within_2c": 148.69
+         "avg_fill_10": 0.18,
+         "avg_fill_25": 0.18,
+         "best_ask": 0.18,
+         "best_bid": 0.15,
+         "bid_usd_within_2c": 61.72,
+         "usd_at_best": 48.96,
+         "usd_within_1c": 112.45,
+         "usd_within_2c": 118.65
         },
         "label": "25\u00b0C or higher",
         "lastTrade": 0.21,
         "threshold": "10",
-        "volume": 923.5268750000001,
-        "yes": 0.18
+        "volume": 923.526875,
+        "yes": 0.165
        }
       ],
       "closed": false,
       "endDate": "2026-10-03T12:00:00Z",
-      "liquidity": 41142.95157,
+      "liquidity": 36978.49684,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Benito Ju\u00e1rez International Airport Station in degrees Celsius on 3 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?si",
       "slug": "highest-temperature-in-mexico-city-on-october-3-2026",
       "title": "Highest temperature in Mexico City on October 3?",
       "volume": 3650.775466
      },
      "models": {
-      "cma_grapes_global": 21.1,
-      "ecmwf_aifs025_single": 23.7,
+      "cma_grapes_global": 20.6,
+      "ecmwf_aifs025_single": 23.6,
       "ecmwf_ifs025": 23.7,
       "gem_seamless": 22.4,
       "gfs_seamless": 24.2,
@@ -16529,7 +16534,7 @@
    },
    "icao": "MMMX",
    "lat": 19.4363,
-   "local_now": "2026-10-02T05:35-06:00",
+   "local_now": "2026-10-02T06:08-06:00",
    "lon": -99.0721,
    "low_days": {
     "2026-10-01": {
@@ -16831,16 +16836,14 @@
      },
      "ensemble_rest": {
       "ecmwf_ifs025": [
-       13.6,
+       13.7,
        14.0,
        14.1,
        14.2,
        14.3,
-       14.3,
        14.4,
        14.4,
-       14.4,
-       14.4,
+       14.5,
        14.5,
        14.5,
        14.6,
@@ -16848,10 +16851,6 @@
        14.6,
        14.6,
        14.6,
-       14.6,
-       14.7,
-       14.7,
-       14.7,
        14.7,
        14.7,
        14.7,
@@ -16864,6 +16863,9 @@
        14.8,
        14.8,
        14.8,
+       14.9,
+       14.9,
+       14.9,
        14.9,
        14.9,
        14.9,
@@ -16871,16 +16873,19 @@
        15.0,
        15.1,
        15.1,
-       15.1,
-       15.1,
        15.2,
        15.2,
        15.2,
-       15.4,
+       15.2,
+       15.2,
+       15.3,
+       15.3,
        15.4,
        15.5,
+       15.5,
        15.6,
-       15.6,
+       15.7,
+       15.8,
        16.1
       ],
       "icon_seamless_eps": [
@@ -16890,15 +16895,15 @@
        14.8,
        15.0,
        15.2,
-       15.2,
+       15.3,
        15.3,
        15.4,
        15.4,
        15.4,
-       15.4,
        15.5,
        15.5,
        15.5,
+       15.5,
        15.6,
        15.6,
        15.6,
@@ -16907,7 +16912,7 @@
        15.7,
        15.7,
        15.7,
-       15.7,
+       15.8,
        15.8,
        15.8,
        15.9,
@@ -16919,7 +16924,7 @@
        16.2,
        16.2,
        16.3,
-       16.4,
+       16.5,
        16.5,
        16.6,
        16.9,
@@ -16927,16 +16932,16 @@
       ],
       "ncep_gefs025": [
        13.1,
-       13.1,
-       13.1,
        13.2,
+       13.3,
        13.4,
        13.4,
        13.4,
+       13.4,
        13.6,
        13.6,
-       13.6,
-       13.6,
+       13.7,
+       13.7,
        13.7,
        13.8,
        13.8,
@@ -16952,7 +16957,7 @@
        14.2,
        14.2,
        14.2,
-       14.2,
+       14.3,
        14.4,
        14.4,
        14.6,
@@ -17138,15 +17143,15 @@
       ],
       "closed": false,
       "endDate": "2026-10-02T12:00:00Z",
-      "liquidity": 39883.29097,
+      "liquidity": 39866.32097,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Benito Ju\u00e1rez International Airport Station in degrees Celsius on 2 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site",
       "slug": "lowest-temperature-in-mexico-city-on-october-2-2026",
       "title": "Lowest temperature in Mexico City on October 2?",
       "volume": 185.0
      },
      "models": {
-      "cma_grapes_global": 16.2,
-      "ecmwf_aifs025_single": 16.2,
+      "cma_grapes_global": 16.1,
+      "ecmwf_aifs025_single": 15.6,
       "ecmwf_ifs025": 14.8,
       "gem_seamless": 14.5,
       "gfs_seamless": 16.7,
@@ -17156,21 +17161,21 @@
       "ukmo_seamless": 15.8
      },
      "models_rest": {
-      "cma_grapes_global": 16.2,
-      "ecmwf_aifs025_single": 16.3,
-      "ecmwf_ifs025": 14.8,
+      "cma_grapes_global": 16.1,
+      "ecmwf_aifs025_single": 16.1,
+      "ecmwf_ifs025": 14.9,
       "gem_seamless": 14.5,
       "gfs_seamless": 16.7,
       "icon_seamless": 15.9,
-      "jma_seamless": 14.4,
-      "meteofrance_seamless": 15.3,
+      "jma_seamless": 14.7,
+      "meteofrance_seamless": 15.4,
       "ukmo_seamless": 15.8
      },
-     "obs_count": 6,
-     "obs_last": "2026-10-02T11:19:00+00:00",
+     "obs_count": 7,
+     "obs_last": "2026-10-02T11:50:00+00:00",
      "obs_min_so_far": 15,
-     "rest_of_day_from": "2026-10-02T05:00",
-     "taf_min": 13
+     "rest_of_day_from": "2026-10-02T06:00",
+     "taf_min": 14
     },
     "2026-10-03": {
      "conditions": {
@@ -17361,7 +17366,7 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.118,
-         "avg_fill_25": 0.212,
+         "avg_fill_25": 0.2122,
          "best_ask": 0.11,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
@@ -17445,9 +17450,9 @@
          "best_ask": 0.67,
          "best_bid": 0.03,
          "bid_usd_within_2c": 12.32,
-         "usd_at_best": 53.6,
-         "usd_within_1c": 61.25,
-         "usd_within_2c": 64.7
+         "usd_at_best": 50.25,
+         "usd_within_1c": 54.5,
+         "usd_within_2c": 54.5
         },
         "label": "13\u00b0C",
         "lastTrade": null,
@@ -17464,7 +17469,7 @@
          "avg_fill_25": 0.67,
          "best_ask": 0.67,
          "best_bid": 0.03,
-         "bid_usd_within_2c": 12.32,
+         "bid_usd_within_2c": 13.52,
          "usd_at_best": 50.25,
          "usd_within_1c": 54.5,
          "usd_within_2c": 54.5
@@ -17516,36 +17521,36 @@
         "yes": 0.45
        },
        {
-        "bestAsk": 0.71,
+        "bestAsk": 0.74,
         "bestBid": null,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.71,
-         "avg_fill_25": 0.71,
-         "best_ask": 0.71,
+         "avg_fill_10": 0.74,
+         "avg_fill_25": 0.74,
+         "best_ask": 0.74,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
-         "usd_at_best": 61.06,
-         "usd_within_1c": 75.46,
-         "usd_within_2c": 75.46
+         "usd_at_best": 100.64,
+         "usd_within_1c": 115.66,
+         "usd_within_2c": 115.66
         },
         "label": "17\u00b0C or higher",
         "lastTrade": null,
         "threshold": "10",
         "volume": 0.0,
-        "yes": 0.355
+        "yes": 0.37
        }
       ],
       "closed": false,
       "endDate": "2026-10-03T12:00:00Z",
-      "liquidity": 1620.1717,
+      "liquidity": 1629.2067,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Benito Ju\u00e1rez International Airport Station in degrees Celsius on 3 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site",
       "slug": "lowest-temperature-in-mexico-city-on-october-3-2026",
       "title": "Lowest temperature in Mexico City on October 3?",
       "volume": 1.974026
      },
      "models": {
-      "cma_grapes_global": 14.3,
+      "cma_grapes_global": 14.5,
       "ecmwf_aifs025_single": 15.3,
       "ecmwf_ifs025": 14.5,
       "gem_seamless": 12.9,
@@ -17830,6 +17835,12 @@
    "metar": [
     {
      "maxT": null,
+     "raw": "METAR MMMX 021150Z 10003KT 4SM SCT015 OVC070 15/13 A3020 NOSIG RMK SLP081 52005 960 8/67/ HZY",
+     "t": "2026-10-02T11:50:00+00:00",
+     "temp": 15
+    },
+    {
+     "maxT": null,
      "raw": "SPECI MMMX 021119Z 06003KT 4SM BKN015 OVC070 15/14 A3020 NOSIG RMK 8/67/ HZY BCFG N NW",
      "t": "2026-10-02T11:19:00+00:00",
      "temp": 15
@@ -18097,12 +18108,6 @@
      "raw": "METAR MMMX 010546Z 05003KT 7SM FEW010 BKN100 OVC250 16/14 A3027 NOSIG RMK SLP075 52005 901 8/577 LWR SC SW HZY",
      "t": "2026-10-01T05:46:00+00:00",
      "temp": 16
-    },
-    {
-     "maxT": null,
-     "raw": "METAR MMMX 010445Z 00000KT 8SM FEW010 SCT100 OVC250 16/14 A3027 NOSIG RMK 8/477 LWR SC SW HZY",
-     "t": "2026-10-01T04:45:00+00:00",
-     "temp": 16
     }
    ],
    "name": "Mexico City",
@@ -18350,7 +18355,7 @@
        "label": "26\u00b0C",
        "lastTrade": 0.05,
        "threshold": "9",
-       "volume": 2994.5498910000006,
+       "volume": 2994.549891,
        "yes": 0.0
       },
       {
@@ -18361,7 +18366,7 @@
        "label": "27\u00b0C or higher",
        "lastTrade": 0.007,
        "threshold": "10",
-       "volume": 1684.912967,
+       "volume": 1684.9129670000002,
        "yes": 0.0
       }
      ],
@@ -18377,8 +18382,8 @@
     }
    },
    "taf": {
-    "issued": "2026-10-02T11:22:00.000Z",
-    "raw": "TAF MMMX 021122Z 0212/0312 07005KT 6SM HZ SCT015 SCT080 TX26/0221Z TN13/0212Z TEMPO 0212/0214 5SM HZ BKN010 FM021600 20006KT 6SM HZ SCT020 BKN200 TEMPO 0221/0301 3SM TSRA BKN015CB OVC080 FM030100 00000KT 6SM RA BKN015 OVC080 BECMG 0303/0305 6SM HZ"
+    "issued": "2026-10-02T12:05:00.000Z",
+    "raw": "TAF COR MMMX 021205Z 0206/0306 28005KT P6SM SCT015 SCT080 TX26/0221Z TN14/0212Z TEMPO 0211/0215 5SM HZ BKN010 FM021600 20006KT 6SM HZ SCT020 BKN200 TEMPO 0221/0301 3SM TSRA BKN015CB OVC080 FM030100 00000KT 6SM RA BKN015 OVC080 BECMG 0303/0305 6SM HZ"
    },
    "tz": "America/Mexico_City",
    "unit": "C"
@@ -18537,7 +18542,7 @@
       "meteofrance_seamless": 24.4,
       "ukmo_seamless": 24.5
      },
-     "obs_count": 24,
+     "obs_count": 22,
      "obs_last": "2026-10-01T15:30:00+00:00",
      "obs_max_so_far": 25
     },
@@ -18685,38 +18690,42 @@
      "ensemble_rest": {
       "ecmwf_ifs025": [
        20.8,
-       21.4,
+       21.2,
+       21.3,
+       21.6,
+       21.7,
+       21.7,
        21.7,
        21.7,
        21.8,
        21.8,
        21.9,
-       21.9,
-       21.9,
-       21.9,
-       21.9,
-       22.1,
-       22.1,
+       22.0,
+       22.0,
+       22.2,
+       22.2,
+       22.2,
        22.2,
        22.3,
        22.3,
        22.3,
        22.3,
        22.3,
+       22.3,
+       22.3,
+       22.3,
        22.4,
        22.4,
-       22.4,
-       22.4,
-       22.4,
-       22.4,
-       22.4,
+       22.5,
+       22.5,
+       22.5,
+       22.5,
+       22.5,
+       22.5,
        22.5,
        22.6,
        22.6,
        22.6,
-       22.6,
-       22.6,
-       22.6,
        22.7,
        22.7,
        22.7,
@@ -18725,29 +18734,25 @@
        22.7,
        22.7,
        22.7,
-       22.8,
-       22.8,
-       22.8,
-       22.8,
+       22.7,
        22.8,
        22.9,
        22.9,
-       23.0,
        23.0,
        23.2
       ],
       "icon_seamless_eps": [
+       20.1,
        20.2,
        20.3,
-       20.3,
+       20.4,
        20.6,
        20.7,
        20.8,
        20.8,
        20.8,
        20.8,
-       20.9,
-       21.0,
+       20.8,
        21.0,
        21.0,
        21.1,
@@ -18769,21 +18774,25 @@
        21.6,
        21.7,
        21.7,
+       21.7,
        21.8,
-       21.9,
        21.9,
        21.9,
        21.9,
        22.0,
        22.1,
-       22.3
+       22.2
       ],
       "ncep_gefs025": [
        20.8,
        21.3,
        21.3,
+       21.3,
+       21.3,
+       21.3,
        21.4,
-       21.4,
+       21.5,
+       21.5,
        21.5,
        21.5,
        21.6,
@@ -18792,6 +18801,7 @@
        21.6,
        21.6,
        21.6,
+       21.6,
        21.7,
        21.7,
        21.7,
@@ -18801,15 +18811,10 @@
        21.8,
        21.8,
        21.8,
-       21.8,
-       21.8,
-       21.8,
        21.9,
        21.9,
        21.9,
-       21.9,
-       21.9,
-       22.0
+       21.9
       ]
      },
      "market": {
@@ -18877,7 +18882,7 @@
         "label": "24\u00b0C",
         "lastTrade": 0.999,
         "threshold": "5",
-        "volume": 18432.735947999994,
+        "volume": 18451.125947999997,
         "yes": 0.9995
        },
        {
@@ -18888,7 +18893,7 @@
         "label": "25\u00b0C",
         "lastTrade": 0.002,
         "threshold": "6",
-        "volume": 16364.176563999998,
+        "volume": 16364.176563999996,
         "yes": 0.0005
        },
        {
@@ -18899,7 +18904,7 @@
         "label": "26\u00b0C",
         "lastTrade": 0.001,
         "threshold": "7",
-        "volume": 10419.915384000002,
+        "volume": 10419.915384,
         "yes": 0.0005
        },
        {
@@ -18910,7 +18915,7 @@
         "label": "27\u00b0C",
         "lastTrade": 0.004,
         "threshold": "8",
-        "volume": 2429.310938,
+        "volume": 2429.3109379999996,
         "yes": 0.0005
        },
        {
@@ -18938,7 +18943,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-02T12:00:00Z",
-      "liquidity": 108889.23638,
+      "liquidity": 113573.7762,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Shanghai Pudong International Airport Station in degrees Celsius on 2 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?",
       "slug": "highest-temperature-in-shanghai-on-october-2-2026",
       "title": "Highest temperature in Shanghai on October 2?",
@@ -18969,18 +18974,18 @@
        "2026-10-02T09:00": 22.8,
        "2026-10-02T10:00": 23.3,
        "2026-10-02T11:00": 23.5,
-       "2026-10-02T12:00": 23.4,
-       "2026-10-02T13:00": 23.0,
-       "2026-10-02T14:00": 22.7,
-       "2026-10-02T15:00": 22.6,
-       "2026-10-02T16:00": 22.5,
-       "2026-10-02T17:00": 22.5,
-       "2026-10-02T18:00": 22.3,
-       "2026-10-02T19:00": 22.1,
-       "2026-10-02T20:00": 21.9,
-       "2026-10-02T21:00": 21.8,
-       "2026-10-02T22:00": 21.7,
-       "2026-10-02T23:00": 21.5
+       "2026-10-02T12:00": 23.3,
+       "2026-10-02T13:00": 22.8,
+       "2026-10-02T14:00": 22.4,
+       "2026-10-02T15:00": 22.2,
+       "2026-10-02T16:00": 22.1,
+       "2026-10-02T17:00": 22.0,
+       "2026-10-02T18:00": 21.8,
+       "2026-10-02T19:00": 21.6,
+       "2026-10-02T20:00": 21.5,
+       "2026-10-02T21:00": 21.5,
+       "2026-10-02T22:00": 21.5,
+       "2026-10-02T23:00": 21.4
       },
       "ecmwf_aifs025_single": {
        "2026-10-02T00:00": 22.3,
@@ -19003,10 +19008,10 @@
        "2026-10-02T17:00": 22.9,
        "2026-10-02T18:00": 22.7,
        "2026-10-02T19:00": 22.5,
-       "2026-10-02T20:00": 22.4,
-       "2026-10-02T21:00": 22.2,
-       "2026-10-02T22:00": 22.1,
-       "2026-10-02T23:00": 21.9
+       "2026-10-02T20:00": 22.3,
+       "2026-10-02T21:00": 22.1,
+       "2026-10-02T22:00": 21.9,
+       "2026-10-02T23:00": 21.8
       },
       "ecmwf_ifs025": {
        "2026-10-02T00:00": 22.4,
@@ -19192,20 +19197,20 @@
       }
      },
      "models_rest": {
-      "cma_grapes_global": 22.1,
-      "ecmwf_aifs025_single": 22.5,
+      "cma_grapes_global": 21.5,
+      "ecmwf_aifs025_single": 22.3,
       "ecmwf_ifs025": 22.3,
       "gem_seamless": 22.6,
-      "gfs_seamless": 21.5,
+      "gfs_seamless": 21.4,
       "icon_seamless": 21.1,
       "jma_seamless": 23.4,
       "meteofrance_seamless": 23.2,
-      "ukmo_seamless": 22.5
+      "ukmo_seamless": 22.3
      },
-     "obs_count": 39,
-     "obs_last": "2026-10-02T11:00:00+00:00",
+     "obs_count": 41,
+     "obs_last": "2026-10-02T12:00:00+00:00",
      "obs_max_so_far": 24,
-     "rest_of_day_from": "2026-10-02T19:00"
+     "rest_of_day_from": "2026-10-02T20:00"
     },
     "2026-10-03": {
      "conditions": {
@@ -19373,126 +19378,135 @@
         "yes": 0.0005
        },
        {
-        "bestAsk": 0.019,
-        "bestBid": 0.007,
-        "closed": false,
-        "depth": null,
-        "label": "21\u00b0C",
-        "lastTrade": 0.005,
-        "threshold": "2",
-        "volume": 1352.1634999999999,
-        "yes": 0.013
-       },
-       {
-        "bestAsk": 0.143,
-        "bestBid": 0.133,
+        "bestAsk": 0.039,
+        "bestBid": 0.025,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1506,
-         "avg_fill_25": 0.1549,
-         "best_ask": 0.144,
-         "best_bid": 0.133,
-         "bid_usd_within_2c": 67.56,
-         "usd_at_best": 0.72,
-         "usd_within_1c": 8.22,
-         "usd_within_2c": 94.68
+         "avg_fill_10": 0.0784,
+         "avg_fill_25": 0.1143,
+         "best_ask": 0.039,
+         "best_bid": 0.025,
+         "bid_usd_within_2c": 4.95,
+         "usd_at_best": 0.78,
+         "usd_within_1c": 2.52,
+         "usd_within_2c": 2.52
+        },
+        "label": "21\u00b0C",
+        "lastTrade": 0.03,
+        "threshold": "2",
+        "volume": 1708.52338,
+        "yes": 0.032
+       },
+       {
+        "bestAsk": 0.13,
+        "bestBid": 0.106,
+        "closed": false,
+        "depth": {
+         "avg_fill_10": 0.1299,
+         "avg_fill_25": 0.1346,
+         "best_ask": 0.118,
+         "best_bid": 0.106,
+         "bid_usd_within_2c": 91.67,
+         "usd_at_best": 0.59,
+         "usd_within_1c": 1.87,
+         "usd_within_2c": 26.28
         },
         "label": "22\u00b0C",
-        "lastTrade": 0.143,
+        "lastTrade": 0.119,
         "threshold": "3",
-        "volume": 1981.7826479999999,
-        "yes": 0.138
+        "volume": 2365.734505,
+        "yes": 0.118
        },
        {
-        "bestAsk": 0.38,
-        "bestBid": 0.37,
-        "closed": false,
-        "depth": {
-         "avg_fill_10": 0.38,
-         "avg_fill_25": 0.3809,
-         "best_ask": 0.38,
-         "best_bid": 0.37,
-         "bid_usd_within_2c": 263.61,
-         "usd_at_best": 22.8,
-         "usd_within_1c": 36.52,
-         "usd_within_2c": 3817.92
-        },
-        "label": "23\u00b0C",
-        "lastTrade": 0.38,
-        "threshold": "4",
-        "volume": 3942.792595,
-        "yes": 0.375
-       },
-       {
-        "bestAsk": 0.37,
+        "bestAsk": 0.39,
         "bestBid": 0.36,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.37,
-         "avg_fill_25": 0.37,
-         "best_ask": 0.37,
+         "avg_fill_10": 0.39,
+         "avg_fill_25": 0.3956,
+         "best_ask": 0.39,
          "best_bid": 0.36,
-         "bid_usd_within_2c": 139.16,
-         "usd_at_best": 33.94,
-         "usd_within_1c": 129.02,
-         "usd_within_2c": 8725.35
+         "bid_usd_within_2c": 190.53,
+         "usd_at_best": 10.92,
+         "usd_within_1c": 69.2,
+         "usd_within_2c": 172.17
+        },
+        "label": "23\u00b0C",
+        "lastTrade": 0.37,
+        "threshold": "4",
+        "volume": 4151.3625950000005,
+        "yes": 0.375
+       },
+       {
+        "bestAsk": 0.35,
+        "bestBid": 0.34,
+        "closed": false,
+        "depth": {
+         "avg_fill_10": 0.35,
+         "avg_fill_25": 0.3536,
+         "best_ask": 0.35,
+         "best_bid": 0.34,
+         "bid_usd_within_2c": 81.96,
+         "usd_at_best": 15.75,
+         "usd_within_1c": 67.95,
+         "usd_within_2c": 73.11
         },
         "label": "24\u00b0C",
         "lastTrade": 0.37,
         "threshold": "5",
-        "volume": 2446.4079460000003,
-        "yes": 0.365
+        "volume": 2591.9079460000003,
+        "yes": 0.345
        },
        {
-        "bestAsk": 0.14,
-        "bestBid": 0.13,
+        "bestAsk": 0.1,
+        "bestBid": 0.09,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.14,
-         "avg_fill_25": 0.1407,
-         "best_ask": 0.14,
-         "best_bid": 0.13,
-         "bid_usd_within_2c": 3.52,
-         "usd_at_best": 23.18,
-         "usd_within_1c": 76.27,
-         "usd_within_2c": 141.49
+         "avg_fill_10": 0.1094,
+         "avg_fill_25": 0.1278,
+         "best_ask": 0.1,
+         "best_bid": 0.09,
+         "bid_usd_within_2c": 18.97,
+         "usd_at_best": 3.43,
+         "usd_within_1c": 6.51,
+         "usd_within_2c": 10.23
         },
         "label": "25\u00b0C",
-        "lastTrade": 0.14,
+        "lastTrade": 0.13,
         "threshold": "6",
-        "volume": 3841.086918999999,
-        "yes": 0.135
+        "volume": 4117.451206999998,
+        "yes": 0.095
        },
        {
-        "bestAsk": 0.026,
-        "bestBid": 0.02,
+        "bestAsk": 0.039,
+        "bestBid": 0.023,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0312,
-         "avg_fill_25": 0.0469,
-         "best_ask": 0.026,
-         "best_bid": 0.02,
-         "bid_usd_within_2c": 12.35,
-         "usd_at_best": 1.17,
-         "usd_within_1c": 6.93,
-         "usd_within_2c": 9.6
+         "avg_fill_10": 0.0804,
+         "avg_fill_25": 0.1094,
+         "best_ask": 0.038,
+         "best_bid": 0.023,
+         "bid_usd_within_2c": 46.7,
+         "usd_at_best": 0.76,
+         "usd_within_1c": 1.35,
+         "usd_within_2c": 1.6
         },
         "label": "26\u00b0C",
-        "lastTrade": null,
+        "lastTrade": 0.047,
         "threshold": "7",
-        "volume": 478.199454,
-        "yes": 0.023
+        "volume": 1145.772039,
+        "yes": 0.031
        },
        {
-        "bestAsk": 0.01,
-        "bestBid": 0.004,
+        "bestAsk": 0.004,
+        "bestBid": 0.001,
         "closed": false,
         "depth": null,
         "label": "27\u00b0C",
         "lastTrade": 0.006,
         "threshold": "8",
-        "volume": 526.6367090000001,
-        "yes": 0.007
+        "volume": 682.616709,
+        "yes": 0.0025
        },
        {
         "bestAsk": 0.001,
@@ -19519,15 +19533,15 @@
       ],
       "closed": false,
       "endDate": "2026-10-03T12:00:00Z",
-      "liquidity": 74982.41887,
+      "liquidity": 29309.16048,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Shanghai Pudong International Airport Station in degrees Celsius on 3 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?",
       "slug": "highest-temperature-in-shanghai-on-october-3-2026",
       "title": "Highest temperature in Shanghai on October 3?",
-      "volume": 15922.009800999998
+      "volume": 17049.359288999996
      },
      "models": {
-      "cma_grapes_global": 22.1,
-      "ecmwf_aifs025_single": 22.5,
+      "cma_grapes_global": 21.2,
+      "ecmwf_aifs025_single": 21.6,
       "ecmwf_ifs025": 24.9,
       "gem_seamless": 25.7,
       "gfs_seamless": 22.2,
@@ -19542,7 +19556,7 @@
    },
    "icao": "ZSPD",
    "lat": 31.146,
-   "local_now": "2026-10-02T19:35+08:00",
+   "local_now": "2026-10-02T20:08+08:00",
    "lon": 121.8,
    "low_days": {
     "2026-10-01": {
@@ -19697,7 +19711,7 @@
       "meteofrance_seamless": 22.6,
       "ukmo_seamless": 21.9
      },
-     "obs_count": 24,
+     "obs_count": 22,
      "obs_last": "2026-10-01T15:30:00+00:00",
      "obs_min_so_far": 23
     },
@@ -19859,7 +19873,7 @@
        21.6,
        21.6,
        21.6,
-       21.6,
+       21.7,
        21.7,
        21.7,
        21.7,
@@ -19877,7 +19891,7 @@
        22.1,
        22.1,
        22.1,
-       22.1,
+       22.2,
        22.2,
        22.2,
        22.2,
@@ -19894,34 +19908,34 @@
        22.4,
        22.6,
        22.6,
-       22.9
+       23.0
       ],
       "icon_seamless_eps": [
-       19.5,
+       19.6,
        19.7,
        19.9,
-       20.0,
-       20.1,
        20.2,
        20.2,
        20.3,
        20.3,
+       20.3,
+       20.3,
        20.6,
        20.6,
-       20.7,
-       20.8,
        20.8,
        20.8,
        20.8,
        20.9,
        20.9,
-       20.9,
        21.0,
        21.0,
        21.0,
-       21.0,
+       21.1,
+       21.1,
        21.2,
        21.2,
+       21.2,
+       21.3,
        21.3,
        21.3,
        21.4,
@@ -19929,13 +19943,13 @@
        21.4,
        21.5,
        21.5,
-       21.6,
        21.7,
        21.7,
        21.7,
        21.8,
        21.8,
-       21.9,
+       21.8,
+       22.0,
        22.0
       ],
       "ncep_gefs025": [
@@ -19949,11 +19963,11 @@
        20.8,
        21.0,
        21.0,
-       21.0,
        21.1,
        21.1,
        21.1,
        21.1,
+       21.2,
        21.2,
        21.2,
        21.3,
@@ -19967,7 +19981,7 @@
        21.6,
        21.6,
        21.6,
-       21.6,
+       21.7,
        21.7,
        21.7
       ]
@@ -20020,63 +20034,63 @@
        },
        {
         "bestAsk": 0.08,
-        "bestBid": 0.07,
+        "bestBid": 0.03,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.115,
-         "avg_fill_25": 0.2183,
+         "avg_fill_10": 0.2726,
+         "avg_fill_25": 0.44,
          "best_ask": 0.08,
-         "best_bid": 0.07,
-         "bid_usd_within_2c": 8.68,
+         "best_bid": 0.03,
+         "bid_usd_within_2c": 2.43,
          "usd_at_best": 0.72,
-         "usd_within_1c": 2.52,
-         "usd_within_2c": 5.17
+         "usd_within_1c": 0.72,
+         "usd_within_2c": 0.72
         },
         "label": "20\u00b0C",
         "lastTrade": 0.08,
         "threshold": "4",
         "volume": 670.827346,
-        "yes": 0.075
+        "yes": 0.055
        },
        {
-        "bestAsk": 0.4,
-        "bestBid": 0.22,
+        "bestAsk": 0.51,
+        "bestBid": 0.11,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.4585,
-         "avg_fill_25": 0.5763,
-         "best_ask": 0.4,
-         "best_bid": 0.22,
-         "bid_usd_within_2c": 8.6,
-         "usd_at_best": 5.53,
-         "usd_within_1c": 5.53,
-         "usd_within_2c": 5.53
+         "avg_fill_10": 0.5755,
+         "avg_fill_25": 0.7247,
+         "best_ask": 0.5,
+         "best_bid": 0.11,
+         "bid_usd_within_2c": 2.88,
+         "usd_at_best": 6.92,
+         "usd_within_1c": 6.92,
+         "usd_within_2c": 6.92
         },
         "label": "21\u00b0C",
         "lastTrade": 0.24,
         "threshold": "5",
-        "volume": 1071.9670770000002,
+        "volume": 1071.9670769999998,
         "yes": 0.31
        },
        {
         "bestAsk": 0.72,
-        "bestBid": 0.33,
+        "bestBid": 0.14,
         "closed": false,
         "depth": {
          "avg_fill_10": 0.72,
-         "avg_fill_25": 0.7245,
+         "avg_fill_25": 0.7239,
          "best_ask": 0.72,
-         "best_bid": 0.33,
-         "bid_usd_within_2c": 1.65,
-         "usd_at_best": 13.68,
-         "usd_within_1c": 28.28,
-         "usd_within_2c": 28.28
+         "best_bid": 0.14,
+         "bid_usd_within_2c": 8.3,
+         "usd_at_best": 15.12,
+         "usd_within_1c": 37.87,
+         "usd_within_2c": 37.87
         },
         "label": "22\u00b0C",
         "lastTrade": 0.27,
         "threshold": "6",
         "volume": 2026.6917359999998,
-        "yes": 0.525
+        "yes": 0.43
        },
        {
         "bestAsk": 0.001,
@@ -20125,15 +20139,15 @@
       ],
       "closed": false,
       "endDate": "2026-10-02T12:00:00Z",
-      "liquidity": 41278.04545,
+      "liquidity": 41123.15673,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Shanghai Pudong International Airport Station in degrees Celsius on 2 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?si",
       "slug": "lowest-temperature-in-shanghai-on-october-2-2026",
       "title": "Lowest temperature in Shanghai on October 2?",
-      "volume": 5566.514158999999
+      "volume": 5609.494159
      },
      "models": {
       "cma_grapes_global": 21.3,
-      "ecmwf_aifs025_single": 21.9,
+      "ecmwf_aifs025_single": 21.8,
       "ecmwf_ifs025": 21.9,
       "gem_seamless": 22.3,
       "gfs_seamless": 20.9,
@@ -20143,20 +20157,20 @@
       "ukmo_seamless": 21.8
      },
      "models_rest": {
-      "cma_grapes_global": 21.5,
-      "ecmwf_aifs025_single": 21.9,
+      "cma_grapes_global": 21.4,
+      "ecmwf_aifs025_single": 21.8,
       "ecmwf_ifs025": 21.9,
       "gem_seamless": 22.3,
       "gfs_seamless": 20.9,
       "icon_seamless": 20.6,
-      "jma_seamless": 23.1,
+      "jma_seamless": 23.2,
       "meteofrance_seamless": 22.3,
       "ukmo_seamless": 21.9
      },
-     "obs_count": 39,
-     "obs_last": "2026-10-02T11:00:00+00:00",
+     "obs_count": 41,
+     "obs_last": "2026-10-02T12:00:00+00:00",
      "obs_min_so_far": 22,
-     "rest_of_day_from": "2026-10-02T19:00"
+     "rest_of_day_from": "2026-10-02T20:00"
     },
     "2026-10-03": {
      "conditions": {
@@ -20307,13 +20321,13 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.0607,
-         "avg_fill_25": 0.0639,
+         "avg_fill_25": 0.0638,
          "best_ask": 0.06,
          "best_bid": 0.001,
          "bid_usd_within_2c": 0.02,
-         "usd_at_best": 2.52,
-         "usd_within_1c": 21.98,
-         "usd_within_2c": 21.98
+         "usd_at_best": 3.0,
+         "usd_within_1c": 21.97,
+         "usd_within_2c": 21.97
         },
         "label": "16\u00b0C or below",
         "lastTrade": null,
@@ -20326,14 +20340,14 @@
         "bestBid": null,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.47,
-         "avg_fill_25": 0.4711,
-         "best_ask": 0.47,
+         "avg_fill_10": 0.49,
+         "avg_fill_25": 0.4904,
+         "best_ask": 0.49,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
-         "usd_at_best": 22.09,
-         "usd_within_1c": 31.69,
-         "usd_within_2c": 31.69
+         "usd_at_best": 24.01,
+         "usd_within_1c": 34.01,
+         "usd_within_2c": 34.01
         },
         "label": "17\u00b0C",
         "lastTrade": null,
@@ -20346,14 +20360,14 @@
         "bestBid": null,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.47,
-         "avg_fill_25": 0.4711,
-         "best_ask": 0.47,
+         "avg_fill_10": 0.49,
+         "avg_fill_25": 0.4904,
+         "best_ask": 0.49,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
-         "usd_at_best": 22.09,
-         "usd_within_1c": 31.69,
-         "usd_within_2c": 31.69
+         "usd_at_best": 24.01,
+         "usd_within_1c": 42.01,
+         "usd_within_2c": 42.01
         },
         "label": "18\u00b0C",
         "lastTrade": null,
@@ -20362,24 +20376,24 @@
         "yes": 0.235
        },
        {
-        "bestAsk": 0.38,
+        "bestAsk": 0.67,
         "bestBid": 0.03,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.4731,
-         "avg_fill_25": 0.4946,
-         "best_ask": 0.38,
+         "avg_fill_10": 0.4855,
+         "avg_fill_25": 0.5816,
+         "best_ask": 0.48,
          "best_bid": 0.03,
          "bid_usd_within_2c": 6.32,
-         "usd_at_best": 2.28,
-         "usd_within_1c": 2.28,
-         "usd_within_2c": 2.28
+         "usd_at_best": 9.6,
+         "usd_within_1c": 9.6,
+         "usd_within_2c": 9.6
         },
         "label": "19\u00b0C",
         "lastTrade": null,
         "threshold": "3",
         "volume": 0.0,
-        "yes": 0.205
+        "yes": 0.35
        },
        {
         "bestAsk": 0.67,
@@ -20402,18 +20416,18 @@
         "yes": 0.355
        },
        {
-        "bestAsk": 0.34,
-        "bestBid": 0.13,
+        "bestAsk": 0.33,
+        "bestBid": 0.14,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.34,
-         "avg_fill_25": 0.3441,
-         "best_ask": 0.34,
-         "best_bid": 0.13,
-         "bid_usd_within_2c": 4.94,
-         "usd_at_best": 14.45,
-         "usd_within_1c": 88.14,
-         "usd_within_2c": 91.74
+         "avg_fill_10": 0.33,
+         "avg_fill_25": 0.3305,
+         "best_ask": 0.33,
+         "best_bid": 0.14,
+         "bid_usd_within_2c": 6.41,
+         "usd_at_best": 23.59,
+         "usd_within_1c": 44.16,
+         "usd_within_2c": 117.85
         },
         "label": "21\u00b0C",
         "lastTrade": 0.34,
@@ -20422,24 +20436,24 @@
         "yes": 0.235
        },
        {
-        "bestAsk": 0.47,
+        "bestAsk": 0.39,
         "bestBid": 0.03,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.47,
-         "avg_fill_25": 0.4702,
-         "best_ask": 0.47,
+         "avg_fill_10": 0.39,
+         "avg_fill_25": 0.3929,
+         "best_ask": 0.39,
          "best_bid": 0.03,
-         "bid_usd_within_2c": 2.32,
-         "usd_at_best": 24.44,
-         "usd_within_1c": 34.04,
-         "usd_within_2c": 34.04
+         "bid_usd_within_2c": 1.32,
+         "usd_at_best": 17.55,
+         "usd_within_1c": 31.32,
+         "usd_within_2c": 31.32
         },
         "label": "22\u00b0C",
         "lastTrade": 0.68,
         "threshold": "6",
         "volume": 70.783079,
-        "yes": 0.25
+        "yes": 0.21
        },
        {
         "bestAsk": 0.15,
@@ -20497,15 +20511,15 @@
       ],
       "closed": false,
       "endDate": "2026-10-03T12:00:00Z",
-      "liquidity": 3262.0199,
+      "liquidity": 3264.0741,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Shanghai Pudong International Airport Station in degrees Celsius on 3 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?si",
       "slug": "lowest-temperature-in-shanghai-on-october-3-2026",
       "title": "Lowest temperature in Shanghai on October 3?",
-      "volume": 781.5120830000001
+      "volume": 781.512083
      },
      "models": {
-      "cma_grapes_global": 20.1,
-      "ecmwf_aifs025_single": 21.0,
+      "cma_grapes_global": 20.2,
+      "ecmwf_aifs025_single": 20.8,
       "ecmwf_ifs025": 19.9,
       "gem_seamless": 21.5,
       "gfs_seamless": 19.1,
@@ -20788,6 +20802,18 @@
     }
    },
    "metar": [
+    {
+     "maxT": null,
+     "raw": "METAR ZSPD 021200Z 05006MPS CAVOK 23/16 Q1020 NOSIG",
+     "t": "2026-10-02T12:00:00+00:00",
+     "temp": 23
+    },
+    {
+     "maxT": null,
+     "raw": "METAR ZSPD 021130Z 04005MPS 010V070 CAVOK 23/15 Q1020 NOSIG",
+     "t": "2026-10-02T11:30:00+00:00",
+     "temp": 23
+    },
     {
      "maxT": null,
      "raw": "METAR ZSPD 021100Z 05005MPS CAVOK 23/15 Q1020 NOSIG",
@@ -21153,18 +21179,6 @@
      "raw": "METAR ZSPD 010500Z 02008MPS 9999 SCT023 25/20 Q1017 NOSIG",
      "t": "2026-10-01T05:00:00+00:00",
      "temp": 25
-    },
-    {
-     "maxT": null,
-     "raw": "METAR ZSPD 010430Z 02008MPS 9999 SCT023 25/21 Q1017 NOSIG",
-     "t": "2026-10-01T04:30:00+00:00",
-     "temp": 25
-    },
-    {
-     "maxT": null,
-     "raw": "METAR ZSPD 010400Z 02007MPS 9999 SCT023 24/21 Q1017 NOSIG",
-     "t": "2026-10-01T04:00:00+00:00",
-     "temp": 24
     }
    ],
    "name": "Shanghai",
@@ -21335,7 +21349,7 @@
        "label": "22\u00b0C",
        "lastTrade": 0.001,
        "threshold": "2",
-       "volume": 7928.233741,
+       "volume": 7928.233740999999,
        "yes": 0.0
       },
       {
@@ -21357,7 +21371,7 @@
        "label": "24\u00b0C",
        "lastTrade": 0.001,
        "threshold": "4",
-       "volume": 55053.64660900001,
+       "volume": 55053.646609,
        "yes": 0.0
       },
       {
@@ -21368,7 +21382,7 @@
        "label": "25\u00b0C",
        "lastTrade": 0.999,
        "threshold": "5",
-       "volume": 16047.342148999987,
+       "volume": 16047.342148999998,
        "yes": 1.0
       },
       {
@@ -21379,7 +21393,7 @@
        "label": "26\u00b0C",
        "lastTrade": 0.01,
        "threshold": "6",
-       "volume": 14191.606454999997,
+       "volume": 14191.606454999996,
        "yes": 0.0
       },
       {
@@ -21401,7 +21415,7 @@
        "label": "28\u00b0C",
        "lastTrade": 0.004,
        "threshold": "8",
-       "volume": 6038.588586999999,
+       "volume": 6038.588587,
        "yes": 0.0
       },
       {
@@ -21434,7 +21448,7 @@
      "settled": true,
      "slug": "highest-temperature-in-shanghai-on-october-1-2026",
      "title": "Highest temperature in Shanghai on October 1?",
-     "volume": 129540.64951899998,
+     "volume": 129540.649519,
      "winner": "25\u00b0C"
     }
    },
