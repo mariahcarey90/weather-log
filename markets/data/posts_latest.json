@@ -1,44 +1,44 @@
 {
- "fetched_at": "2026-10-02T12:08:39.000Z",
+ "fetched_at": "2026-10-02T16:50:21.000Z",
  "users": {
   "elonmusk": {
    "name": "Elon Musk",
-   "lastSync": "2026-10-02T12:05:28.750Z",
-   "lastSyncError": null
-  },
-  "realDonaldTrump": {
-   "name": "Donald J. Trump",
-   "lastSync": "2026-10-02T12:06:31.869Z",
-   "lastSyncError": null
-  },
-  "ZelenskyyUa": {
-   "name": "Volodymyr Zelenskyy / Володимир Зеленський",
-   "lastSync": "2026-10-02T12:05:30.491Z",
-   "lastSyncError": null
-  },
-  "tedcruz": {
-   "name": "Ted Cruz",
-   "lastSync": "2026-10-02T12:05:32.166Z",
-   "lastSyncError": null
-  },
-  "cz_binance": {
-   "name": "CZ 🔶 BNB",
-   "lastSync": "2026-10-02T12:05:33.823Z",
-   "lastSyncError": null
-  },
-  "WhiteHouse": {
-   "name": "The White House",
-   "lastSync": "2026-10-02T12:05:35.392Z",
-   "lastSyncError": null
-  },
-  "NYCMayor": {
-   "name": "Mayor Zohran Kwame Mamdani",
-   "lastSync": "2026-10-02T12:05:37.082Z",
+   "lastSync": "2026-10-02T16:45:28.581Z",
    "lastSyncError": null
   },
   "khamenei_ir": {
    "name": "Khamenei.ir",
-   "lastSync": "2026-10-02T12:05:38.703Z",
+   "lastSync": "2026-10-02T16:45:30.080Z",
+   "lastSyncError": null
+  },
+  "NYCMayor": {
+   "name": "Mayor Zohran Kwame Mamdani",
+   "lastSync": "2026-10-02T16:45:31.757Z",
+   "lastSyncError": null
+  },
+  "WhiteHouse": {
+   "name": "The White House",
+   "lastSync": "2026-10-02T16:45:33.537Z",
+   "lastSyncError": null
+  },
+  "cz_binance": {
+   "name": "CZ 🔶 BNB",
+   "lastSync": "2026-10-02T16:45:35.446Z",
+   "lastSyncError": null
+  },
+  "tedcruz": {
+   "name": "Ted Cruz",
+   "lastSync": "2026-10-02T16:45:37.370Z",
+   "lastSyncError": null
+  },
+  "ZelenskyyUa": {
+   "name": "Volodymyr Zelenskyy / Володимир Зеленський",
+   "lastSync": "2026-10-02T16:45:39.100Z",
+   "lastSyncError": null
+  },
+  "realDonaldTrump": {
+   "name": "Donald J. Trump",
+   "lastSync": "2026-10-02T16:46:10.519Z",
    "lastSyncError": null
   }
  },
@@ -51,15 +51,15 @@
    "slug": "elon-musk-of-tweets-october-2026",
    "start": "2026-10-01T04:00:00.000Z",
    "end": "2026-11-01T03:59:59.000Z",
-   "counterTotal": 59,
+   "counterTotal": 61,
    "counterStats": {
-    "pace": 915,
+    "pace": 946,
     "percentComplete": 6,
     "daysRemaining": 30
    },
-   "histCount": 59,
-   "volume": 209001.241111,
-   "liquidity": 188399.84159,
+   "histCount": 61,
+   "volume": 209026.619527,
+   "liquidity": 213318.35446,
    "ranges": [
     {
      "label": "<20",
@@ -173,7 +173,7 @@
      "label": "240-259",
      "lo": 240,
      "hi": 259,
-     "market": 0.002,
+     "market": 0.0015,
      "token": "30027296242752151460148367452926694123307529353606512021643830630114708307936",
      "closed": false,
      "depth": null
@@ -317,19 +317,10 @@
      "label": "540-559",
      "lo": 540,
      "hi": 559,
-     "market": 0.008,
+     "market": 0.004,
      "token": "6760245027570078872597693201403724973618835001659413443991859890452307815545",
      "closed": false,
-     "depth": {
-      "best_ask": 0.014,
-      "best_bid": 0.002,
-      "usd_at_best": 2.73,
-      "usd_within_1c": 7.46,
-      "usd_within_2c": 7.46,
-      "avg_fill_10": 0.0187,
-      "avg_fill_25": 0.037,
-      "bid_usd_within_2c": 2.06
-     }
+     "depth": null
     },
     {
      "label": "560-579",
@@ -343,9 +334,9 @@
       "best_bid": 0.004,
       "usd_at_best": 0.08,
       "usd_within_1c": 0.29,
-      "usd_within_2c": 8.39,
-      "avg_fill_10": 0.0277,
-      "avg_fill_25": 0.049,
+      "usd_within_2c": 12.23,
+      "avg_fill_10": 0.0244,
+      "avg_fill_25": 0.0393,
       "bid_usd_within_2c": 3.15
      }
     },
@@ -358,49 +349,49 @@
      "closed": false,
      "depth": {
       "best_ask": 0.014,
-      "best_bid": 0.004,
+      "best_bid": 0.006,
       "usd_at_best": 0.21,
       "usd_within_1c": 1.2,
       "usd_within_2c": 11.1,
       "avg_fill_10": 0.0289,
       "avg_fill_25": 0.0465,
-      "bid_usd_within_2c": 3.89
+      "bid_usd_within_2c": 4.45
      }
     },
     {
      "label": "600-619",
      "lo": 600,
      "hi": 619,
-     "market": 0.0075,
+     "market": 0.0095,
      "token": "77313499291300756091872207239763137107320661338851742025685294299319626847405",
      "closed": false,
      "depth": {
       "best_ask": 0.01,
       "best_bid": 0.005,
       "usd_at_best": 0.05,
-      "usd_within_1c": 3.06,
-      "usd_within_2c": 3.06,
-      "avg_fill_10": 0.0297,
-      "avg_fill_25": 0.0434,
-      "bid_usd_within_2c": 7.17
+      "usd_within_1c": 3.67,
+      "usd_within_2c": 3.67,
+      "avg_fill_10": 0.0285,
+      "avg_fill_25": 0.0387,
+      "bid_usd_within_2c": 6.2
      }
     },
     {
      "label": "620-639",
      "lo": 620,
      "hi": 639,
-     "market": 0.0115,
+     "market": 0.01,
      "token": "77131169595562963390244919525808962411079762654683364636056529549209394425816",
      "closed": false,
      "depth": {
-      "best_ask": 0.02,
-      "best_bid": 0.003,
-      "usd_at_best": 3.9,
-      "usd_within_1c": 10.15,
-      "usd_within_2c": 10.15,
-      "avg_fill_10": 0.0248,
-      "avg_fill_25": 0.0396,
-      "bid_usd_within_2c": 5.74
+      "best_ask": 0.014,
+      "best_bid": 0.004,
+      "usd_at_best": 0.1,
+      "usd_within_1c": 0.77,
+      "usd_within_2c": 9.62,
+      "avg_fill_10": 0.0279,
+      "avg_fill_25": 0.0447,
+      "bid_usd_within_2c": 5.62
      }
     },
     {
@@ -413,47 +404,47 @@
      "depth": {
       "best_ask": 0.02,
       "best_bid": 0.008,
-      "usd_at_best": 0.88,
+      "usd_at_best": 0.89,
       "usd_within_1c": 1.19,
       "usd_within_2c": 10.49,
       "avg_fill_10": 0.0338,
       "avg_fill_25": 0.0437,
-      "bid_usd_within_2c": 7.15
+      "bid_usd_within_2c": 7.2
      }
     },
     {
      "label": "660-679",
      "lo": 660,
      "hi": 679,
-     "market": 0.0195,
+     "market": 0.017,
      "token": "69984797564970409246829635858543655643978901859330366895058935083411698229666",
      "closed": false,
      "depth": {
-      "best_ask": 0.029,
-      "best_bid": 0.01,
-      "usd_at_best": 0.24,
-      "usd_within_1c": 11.1,
-      "usd_within_2c": 25.41,
-      "avg_fill_10": 0.0358,
-      "avg_fill_25": 0.0404,
-      "bid_usd_within_2c": 13.47
+      "best_ask": 0.026,
+      "best_bid": 0.008,
+      "usd_at_best": 0.98,
+      "usd_within_1c": 2.11,
+      "usd_within_2c": 26.18,
+      "avg_fill_10": 0.0344,
+      "avg_fill_25": 0.0394,
+      "bid_usd_within_2c": 14.01
      }
     },
     {
      "label": "680-699",
      "lo": 680,
      "hi": 699,
-     "market": 0.011,
+     "market": 0.009,
      "token": "104641311903886593335531205263710248394021821993774963711555237126156698385199",
      "closed": false,
      "depth": {
-      "best_ask": 0.017,
+      "best_ask": 0.016,
       "best_bid": 0.005,
-      "usd_at_best": 3.23,
-      "usd_within_1c": 5.12,
-      "usd_within_2c": 5.12,
-      "avg_fill_10": 0.0263,
-      "avg_fill_25": 0.0404,
+      "usd_at_best": 3.04,
+      "usd_within_1c": 4.06,
+      "usd_within_2c": 4.06,
+      "avg_fill_10": 0.0274,
+      "avg_fill_25": 0.0415,
       "bid_usd_within_2c": 10.08
      }
     },
@@ -461,72 +452,72 @@
      "label": "700-719",
      "lo": 700,
      "hi": 719,
-     "market": 0.0195,
+     "market": 0.0205,
      "token": "45459517133430256991910555577422415287683193642703403489929763002397303232003",
      "closed": false,
      "depth": {
       "best_ask": 0.031,
-      "best_bid": 0.008,
+      "best_bid": 0.01,
       "usd_at_best": 0.74,
       "usd_within_1c": 17.48,
       "usd_within_2c": 20.33,
       "avg_fill_10": 0.0328,
-      "avg_fill_25": 0.0387,
-      "bid_usd_within_2c": 11.49
+      "avg_fill_25": 0.0386,
+      "bid_usd_within_2c": 14.85
      }
     },
     {
      "label": "720-739",
      "lo": 720,
      "hi": 739,
-     "market": 0.0185,
+     "market": 0.017,
      "token": "11711069863887354782397770015978992676768958191350601002648742976178552713883",
      "closed": false,
      "depth": {
-      "best_ask": 0.029,
-      "best_bid": 0.008,
-      "usd_at_best": 2.98,
-      "usd_within_1c": 6.0,
-      "usd_within_2c": 6.0,
-      "avg_fill_10": 0.0359,
-      "avg_fill_25": 0.0583,
-      "bid_usd_within_2c": 22.68
+      "best_ask": 0.024,
+      "best_bid": 0.01,
+      "usd_at_best": 2.09,
+      "usd_within_1c": 5.32,
+      "usd_within_2c": 5.55,
+      "avg_fill_10": 0.0352,
+      "avg_fill_25": 0.0576,
+      "bid_usd_within_2c": 22.52
      }
     },
     {
      "label": "740-759",
      "lo": 740,
      "hi": 759,
-     "market": 0.02,
+     "market": 0.0195,
      "token": "90743219743834800379813955914235235559014927118909099884702621017836283469331",
      "closed": false,
      "depth": {
       "best_ask": 0.03,
-      "best_bid": 0.01,
+      "best_bid": 0.009,
       "usd_at_best": 1.27,
-      "usd_within_1c": 1.64,
-      "usd_within_2c": 13.98,
-      "avg_fill_10": 0.0447,
-      "avg_fill_25": 0.0565,
-      "bid_usd_within_2c": 17.81
+      "usd_within_1c": 1.88,
+      "usd_within_2c": 13.54,
+      "avg_fill_10": 0.0426,
+      "avg_fill_25": 0.0549,
+      "bid_usd_within_2c": 17.42
      }
     },
     {
      "label": "760-779",
      "lo": 760,
      "hi": 779,
-     "market": 0.025,
+     "market": 0.0255,
      "token": "70522129333771914716971021415816944008452851383457853404561826333424454843876",
      "closed": false,
      "depth": {
-      "best_ask": 0.036,
-      "best_bid": 0.014,
-      "usd_at_best": 0.27,
-      "usd_within_1c": 0.27,
-      "usd_within_2c": 0.76,
-      "avg_fill_10": 0.0591,
-      "avg_fill_25": 0.0717,
-      "bid_usd_within_2c": 13.01
+      "best_ask": 0.035,
+      "best_bid": 0.018,
+      "usd_at_best": 0.65,
+      "usd_within_1c": 0.88,
+      "usd_within_2c": 1.11,
+      "avg_fill_10": 0.055,
+      "avg_fill_25": 0.0671,
+      "bid_usd_within_2c": 13.53
      }
     },
     {
@@ -539,12 +530,12 @@
      "depth": {
       "best_ask": 0.045,
       "best_bid": 0.029,
-      "usd_at_best": 5.56,
-      "usd_within_1c": 8.6,
-      "usd_within_2c": 17.88,
-      "avg_fill_10": 0.0468,
-      "avg_fill_25": 0.0551,
-      "bid_usd_within_2c": 44.13
+      "usd_at_best": 5.11,
+      "usd_within_1c": 8.15,
+      "usd_within_2c": 17.43,
+      "avg_fill_10": 0.0473,
+      "avg_fill_25": 0.0556,
+      "bid_usd_within_2c": 43.86
      }
     },
     {
@@ -557,12 +548,12 @@
      "depth": {
       "best_ask": 0.11,
       "best_bid": 0.1,
-      "usd_at_best": 26.96,
-      "usd_within_1c": 50.13,
-      "usd_within_2c": 147.77,
+      "usd_at_best": 31.91,
+      "usd_within_1c": 86.86,
+      "usd_within_2c": 166.81,
       "avg_fill_10": 0.11,
       "avg_fill_25": 0.11,
-      "bid_usd_within_2c": 85.91
+      "bid_usd_within_2c": 110.75
      }
     },
     {
@@ -575,12 +566,12 @@
      "depth": {
       "best_ask": 0.12,
       "best_bid": 0.11,
-      "usd_at_best": 7.8,
-      "usd_within_1c": 58.45,
-      "usd_within_2c": 163.59,
-      "avg_fill_10": 0.1221,
-      "avg_fill_25": 0.1267,
-      "bid_usd_within_2c": 108.06
+      "usd_at_best": 5.6,
+      "usd_within_1c": 18.8,
+      "usd_within_2c": 223.94,
+      "avg_fill_10": 0.1242,
+      "avg_fill_25": 0.1299,
+      "bid_usd_within_2c": 185.33
      }
     },
     {
@@ -593,12 +584,12 @@
      "depth": {
       "best_ask": 0.15,
       "best_bid": 0.13,
-      "usd_at_best": 98.25,
-      "usd_within_1c": 150.26,
-      "usd_within_2c": 158.93,
+      "usd_at_best": 102.0,
+      "usd_within_1c": 170.01,
+      "usd_within_2c": 178.51,
       "avg_fill_10": 0.15,
       "avg_fill_25": 0.15,
-      "bid_usd_within_2c": 261.94
+      "bid_usd_within_2c": 337.46
      }
     },
     {
@@ -612,11 +603,11 @@
       "best_ask": 0.14,
       "best_bid": 0.13,
       "usd_at_best": 7.7,
-      "usd_within_1c": 223.25,
-      "usd_within_2c": 272.39,
+      "usd_within_1c": 262.24,
+      "usd_within_2c": 303.23,
       "avg_fill_10": 0.1422,
       "avg_fill_25": 0.1468,
-      "bid_usd_within_2c": 177.37
+      "bid_usd_within_2c": 226.6
      }
     },
     {
@@ -630,11 +621,11 @@
       "best_ask": 0.12,
       "best_bid": 0.11,
       "usd_at_best": 6.0,
-      "usd_within_1c": 49.2,
-      "usd_within_2c": 139.33,
+      "usd_within_1c": 120.86,
+      "usd_within_2c": 183.2,
       "avg_fill_10": 0.1238,
       "avg_fill_25": 0.1275,
-      "bid_usd_within_2c": 176.94
+      "bid_usd_within_2c": 190.87
      }
     },
     {
@@ -648,1274 +639,11 @@
       "best_ask": 0.29,
       "best_bid": 0.27,
       "usd_at_best": 79.22,
-      "usd_within_1c": 197.48,
-      "usd_within_2c": 212.98,
+      "usd_within_1c": 308.04,
+      "usd_within_2c": 391.74,
       "avg_fill_10": 0.29,
       "avg_fill_25": 0.29,
-      "bid_usd_within_2c": 667.42
-     }
-    }
-   ]
-  },
-  {
-   "id": "1f1a0254-7f71-447a-9a10-9be2b8d016de",
-   "handle": "realDonaldTrump",
-   "name": "Donald J. Trump",
-   "title": "Donald Trump # Truth Social posts October 2 - October 9, 2026?",
-   "slug": "donald-trump-of-truth-social-posts-october-2-october-9-2026",
-   "start": "2026-10-02T16:00:00.000Z",
-   "end": "2026-10-09T15:59:59.000Z",
-   "counterTotal": 0,
-   "counterStats": {
-    "pace": 0,
-    "percentComplete": 0,
-    "daysRemaining": 8
-   },
-   "histCount": 0,
-   "volume": 4917.269843,
-   "liquidity": 13272.42134,
-   "ranges": [
-    {
-     "label": "<20",
-     "lo": null,
-     "hi": 19,
-     "market": 0.0055,
-     "token": "4932742634776461352101952190209192420709367347352959820953256130799631928400",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": 0.001,
-      "usd_at_best": 0.34,
-      "usd_within_1c": 0.34,
-      "usd_within_2c": 0.34,
-      "avg_fill_10": 0.056,
-      "avg_fill_25": 0.0995,
-      "bid_usd_within_2c": 0.01
-     }
-    },
-    {
-     "label": "20-39",
-     "lo": 20,
-     "hi": 39,
-     "market": 0.011,
-     "token": "62840846161945605765250250659301928207161386623885052894963487302965112304314",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.02,
-      "best_bid": 0.002,
-      "usd_at_best": 0.78,
-      "usd_within_1c": 0.78,
-      "usd_within_2c": 0.78,
-      "avg_fill_10": 0.0587,
-      "avg_fill_25": 0.0899,
-      "bid_usd_within_2c": 0.45
-     }
-    },
-    {
-     "label": "40-59",
-     "lo": 40,
-     "hi": 59,
-     "market": 0.0265,
-     "token": "68049457016739146602685427011397012211792814306071981250479323098146586385630",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.045,
-      "best_bid": 0.003,
-      "usd_at_best": 0.4,
-      "usd_within_1c": 2.03,
-      "usd_within_2c": 2.03,
-      "avg_fill_10": 0.0794,
-      "avg_fill_25": 0.1021,
-      "bid_usd_within_2c": 0.6
-     }
-    },
-    {
-     "label": "60-79",
-     "lo": 60,
-     "hi": 79,
-     "market": 0.0255,
-     "token": "88279423266375493142670146479847033748006412421017255895111404201862671875694",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.044,
-      "best_bid": 0.002,
-      "usd_at_best": 0.39,
-      "usd_within_1c": 1.99,
-      "usd_within_2c": 1.99,
-      "avg_fill_10": 0.1025,
-      "avg_fill_25": 0.1262,
-      "bid_usd_within_2c": 0.45
-     }
-    },
-    {
-     "label": "80-99",
-     "lo": 80,
-     "hi": 99,
-     "market": 0.08,
-     "token": "6947999567433239861785606271474108231123925485993221735578010282883006628110",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.14,
-      "best_bid": 0.06,
-      "usd_at_best": 14.14,
-      "usd_within_1c": 14.14,
-      "usd_within_2c": 35.74,
-      "avg_fill_10": 0.14,
-      "avg_fill_25": 0.148,
-      "bid_usd_within_2c": 3.9
-     }
-    },
-    {
-     "label": "100-119",
-     "lo": 100,
-     "hi": 119,
-     "market": 0.16,
-     "token": "15371436538133237079912319380274876272783723048830068905226433426873809058832",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.18,
-      "best_bid": 0.14,
-      "usd_at_best": 70.38,
-      "usd_within_1c": 70.38,
-      "usd_within_2c": 70.38,
-      "avg_fill_10": 0.18,
-      "avg_fill_25": 0.18,
-      "bid_usd_within_2c": 43.12
-     }
-    },
-    {
-     "label": "120-139",
-     "lo": 120,
-     "hi": 139,
-     "market": 0.135,
-     "token": "69805618457403857571312383745441212820753249059418438719778595839480331694425",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.15,
-      "best_bid": 0.12,
-      "usd_at_best": 9.02,
-      "usd_within_1c": 54.44,
-      "usd_within_2c": 71.44,
-      "avg_fill_10": 0.1509,
-      "avg_fill_25": 0.1562,
-      "bid_usd_within_2c": 22.19
-     }
-    },
-    {
-     "label": "140-159",
-     "lo": 140,
-     "hi": 159,
-     "market": 0.17,
-     "token": "26964667592401488093665421616381061151711407378315644559457551606891734390562",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.17,
-      "best_bid": 0.16,
-      "usd_at_best": 34.0,
-      "usd_within_1c": 45.72,
-      "usd_within_2c": 45.72,
-      "avg_fill_10": 0.17,
-      "avg_fill_25": 0.17,
-      "bid_usd_within_2c": 114.03
-     }
-    },
-    {
-     "label": "160-179",
-     "lo": 160,
-     "hi": 179,
-     "market": 0.185,
-     "token": "113905848360098245401085180348600280622796609445782173572769069621106886449584",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.19,
-      "best_bid": 0.18,
-      "usd_at_best": 75.43,
-      "usd_within_1c": 171.03,
-      "usd_within_2c": 297.03,
-      "avg_fill_10": 0.19,
-      "avg_fill_25": 0.19,
-      "bid_usd_within_2c": 92.98
-     }
-    },
-    {
-     "label": "180-199",
-     "lo": 180,
-     "hi": 199,
-     "market": 0.12,
-     "token": "68085681083054783841999592097021810533944760773078243870129189916426202765068",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.13,
-      "best_bid": 0.11,
-      "usd_at_best": 2.6,
-      "usd_within_1c": 13.24,
-      "usd_within_2c": 40.0,
-      "avg_fill_10": 0.1373,
-      "avg_fill_25": 0.1433,
-      "bid_usd_within_2c": 50.46
-     }
-    },
-    {
-     "label": "200+",
-     "lo": 200,
-     "hi": null,
-     "market": 0.245,
-     "token": "83107854039119506604778363529113921322993890641837698626333016850303448422365",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.26,
-      "best_bid": 0.23,
-      "usd_at_best": 2.6,
-      "usd_within_1c": 132.96,
-      "usd_within_2c": 132.96,
-      "avg_fill_10": 0.2673,
-      "avg_fill_25": 0.2689,
-      "bid_usd_within_2c": 197.06
-     }
-    }
-   ]
-  },
-  {
-   "id": "5f88ce33-8d8a-4422-91f9-bdd00c6baa44",
-   "handle": "ZelenskyyUa",
-   "name": "Volodymyr Zelenskyy / Володимир Зеленський",
-   "title": "Zelenskyy # posts October 2 - October 9, 2026?",
-   "slug": "zelenskyy-of-tweets-october-2-october-9-2026",
-   "start": "2026-10-02T16:00:00.000Z",
-   "end": "2026-10-09T15:59:59.000Z",
-   "counterTotal": 0,
-   "counterStats": {
-    "pace": 0,
-    "percentComplete": 0,
-    "daysRemaining": 8
-   },
-   "histCount": 0,
-   "volume": 3451.817343,
-   "liquidity": 6952.08379,
-   "ranges": [
-    {
-     "label": "<20",
-     "lo": null,
-     "hi": 19,
-     "market": 0.0005,
-     "token": "11157146780159159451720753675097774605193654978859387874468569534131742467869",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "20-39",
-     "lo": 20,
-     "hi": 39,
-     "market": 0.005,
-     "token": "84263994071999508264271323498391327778184587528191456265454974512276077891105",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": null,
-      "usd_at_best": 0.54,
-      "usd_within_1c": 0.54,
-      "usd_within_2c": 3.24,
-      "avg_fill_10": 0.0505,
-      "avg_fill_25": 0.1049,
-      "bid_usd_within_2c": 0.0
-     }
-    },
-    {
-     "label": "40-59",
-     "lo": 40,
-     "hi": 59,
-     "market": 0.035,
-     "token": "82612724193250493852970613944700758647914702367953055729112366931172570215240",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.05,
-      "best_bid": 0.02,
-      "usd_at_best": 0.72,
-      "usd_within_1c": 0.72,
-      "usd_within_2c": 0.72,
-      "avg_fill_10": 0.0911,
-      "avg_fill_25": 0.1687,
-      "bid_usd_within_2c": 1.35
-     }
-    },
-    {
-     "label": "60-79",
-     "lo": 60,
-     "hi": 79,
-     "market": 0.145,
-     "token": "83808978363747673648767351098996676632099549420457839634471633921945315916504",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.23,
-      "best_bid": 0.06,
-      "usd_at_best": 1.38,
-      "usd_within_1c": 6.18,
-      "usd_within_2c": 6.18,
-      "avg_fill_10": 0.2609,
-      "avg_fill_25": 0.3197,
-      "bid_usd_within_2c": 16.38
-     }
-    },
-    {
-     "label": "80-99",
-     "lo": 80,
-     "hi": 99,
-     "market": 0.465,
-     "token": "55461591401639746719054041914296923744108946094198624475335583882796680639024",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.47,
-      "best_bid": 0.46,
-      "usd_at_best": 201.16,
-      "usd_within_1c": 377.8,
-      "usd_within_2c": 431.16,
-      "avg_fill_10": 0.47,
-      "avg_fill_25": 0.47,
-      "bid_usd_within_2c": 505.78
-     }
-    },
-    {
-     "label": "100-119",
-     "lo": 100,
-     "hi": 119,
-     "market": 0.28,
-     "token": "102579194410963018154479405967846563633074319058126971879978532494451354961962",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.35,
-      "best_bid": 0.21,
-      "usd_at_best": 3.87,
-      "usd_within_1c": 3.87,
-      "usd_within_2c": 3.87,
-      "avg_fill_10": 0.4206,
-      "avg_fill_25": 0.4597,
-      "bid_usd_within_2c": 6.11
-     }
-    },
-    {
-     "label": "120-139",
-     "lo": 120,
-     "hi": 139,
-     "market": 0.0145,
-     "token": "42855081030168894230859040204055150980185042566109220214011690396659695605228",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.025,
-      "best_bid": 0.004,
-      "usd_at_best": 0.23,
-      "usd_within_1c": 0.23,
-      "usd_within_2c": 0.23,
-      "avg_fill_10": 0.1677,
-      "avg_fill_25": 0.2606,
-      "bid_usd_within_2c": 3.41
-     }
-    },
-    {
-     "label": "140-159",
-     "lo": 140,
-     "hi": 159,
-     "market": 0.0055,
-     "token": "28813555986522104784498819271289360824558345108897161719706799578665415103920",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": 0.001,
-      "usd_at_best": 0.41,
-      "usd_within_1c": 0.41,
-      "usd_within_2c": 0.95,
-      "avg_fill_10": 0.1024,
-      "avg_fill_25": 0.1825,
-      "bid_usd_within_2c": 0.04
-     }
-    },
-    {
-     "label": "160-179",
-     "lo": 160,
-     "hi": 179,
-     "market": 0.014,
-     "token": "94683744547908274200057029024265194538301053488550391279420077011362952345612",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.027,
-      "best_bid": 0.001,
-      "usd_at_best": 0.79,
-      "usd_within_1c": 1.24,
-      "usd_within_2c": 1.24,
-      "avg_fill_10": 0.1119,
-      "avg_fill_25": 0.1911,
-      "bid_usd_within_2c": 0.01
-     }
-    },
-    {
-     "label": "180-199",
-     "lo": 180,
-     "hi": 199,
-     "market": 0.0055,
-     "token": "75543680923577781502512531681404401636079371453084651912085946288048345416723",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": 0.001,
-      "usd_at_best": 0.3,
-      "usd_within_1c": 0.3,
-      "usd_within_2c": 0.3,
-      "avg_fill_10": 0.1683,
-      "avg_fill_25": 0.2496,
-      "bid_usd_within_2c": 0.0
-     }
-    },
-    {
-     "label": "200+",
-     "lo": 200,
-     "hi": null,
-     "market": 0.005,
-     "token": "102276486303268631154121499790960064632124425617035649560228560781586018455828",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": null,
-      "usd_at_best": 0.39,
-      "usd_within_1c": 0.39,
-      "usd_within_2c": 0.39,
-      "avg_fill_10": 0.1459,
-      "avg_fill_25": 0.2349,
-      "bid_usd_within_2c": 0.0
-     }
-    }
-   ]
-  },
-  {
-   "id": "dd1eb14b-6542-418d-8c17-44dd002b4049",
-   "handle": "tedcruz",
-   "name": "Ted Cruz",
-   "title": "Ted Cruz # posts October 2 - October 9, 2026?",
-   "slug": "ted-cruz-of-tweets-october-2-october-9-2026",
-   "start": "2026-10-02T16:00:00.000Z",
-   "end": "2026-10-09T15:59:59.000Z",
-   "counterTotal": 0,
-   "counterStats": {
-    "pace": 0,
-    "percentComplete": 0,
-    "daysRemaining": 8
-   },
-   "histCount": 0,
-   "volume": 1752.671614,
-   "liquidity": 2707.58154,
-   "ranges": [
-    {
-     "label": "<20",
-     "lo": null,
-     "hi": 19,
-     "market": 0.005,
-     "token": "12003455860401196996013410204351120585803352974626604935465315970935923384976",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.009,
-      "best_bid": 0.001,
-      "usd_at_best": 0.27,
-      "usd_within_1c": 0.37,
-      "usd_within_2c": 0.37,
-      "avg_fill_10": 0.0549,
-      "avg_fill_25": 0.1083,
-      "bid_usd_within_2c": 0.16
-     }
-    },
-    {
-     "label": "20-39",
-     "lo": 20,
-     "hi": 39,
-     "market": 0.122,
-     "token": "95351359608024925855820313464467706363905028811851580561531356165748384035453",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.23,
-      "best_bid": 0.004,
-      "usd_at_best": 1.84,
-      "usd_within_1c": 9.7,
-      "usd_within_2c": 9.7,
-      "avg_fill_10": 0.2414,
-      "avg_fill_25": 0.3534,
-      "bid_usd_within_2c": 0.69
-     }
-    },
-    {
-     "label": "40-59",
-     "lo": 40,
-     "hi": 59,
-     "market": 0.265,
-     "token": "113528908261499751167047618711537740783103103156605082895940340060679545344167",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.595,
-      "best_bid": 0.001,
-      "usd_at_best": 2.97,
-      "usd_within_1c": 81.92,
-      "usd_within_2c": 81.92,
-      "avg_fill_10": 0.5957,
-      "avg_fill_25": 0.5967,
-      "bid_usd_within_2c": 0.07
-     }
-    },
-    {
-     "label": "60-79",
-     "lo": 60,
-     "hi": 79,
-     "market": 0.2145,
-     "token": "104022850839802267555937360973664925883822394130434768409420980400996998791992",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.161,
-      "best_bid": 0.01,
-      "usd_at_best": 3.22,
-      "usd_within_1c": 3.22,
-      "usd_within_2c": 3.22,
-      "avg_fill_10": 0.3039,
-      "avg_fill_25": 0.4109,
-      "bid_usd_within_2c": 0.57
-     }
-    },
-    {
-     "label": "80-99",
-     "lo": 80,
-     "hi": 99,
-     "market": 0.21,
-     "token": "25691360239855714899231686615716204229227403619141646507802088908645232455698",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.31,
-      "best_bid": 0.18,
-      "usd_at_best": 6.2,
-      "usd_within_1c": 6.2,
-      "usd_within_2c": 6.2,
-      "avg_fill_10": 0.3304,
-      "avg_fill_25": 0.4401,
-      "bid_usd_within_2c": 3.78
-     }
-    },
-    {
-     "label": "100-119",
-     "lo": 100,
-     "hi": 119,
-     "market": 0.4,
-     "token": "38382946671996131781418114092991591803214948434564238927954580556580689955485",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.61,
-      "best_bid": 0.31,
-      "usd_at_best": 12.22,
-      "usd_within_1c": 12.22,
-      "usd_within_2c": 37.42,
-      "avg_fill_10": 0.61,
-      "avg_fill_25": 0.6201,
-      "bid_usd_within_2c": 6.2
-     }
-    },
-    {
-     "label": "120-139",
-     "lo": 120,
-     "hi": 139,
-     "market": 0.22,
-     "token": "7710743222801658684667644243647833696654364048210952982404433214957010852778",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.24,
-      "best_bid": 0.2,
-      "usd_at_best": 26.21,
-      "usd_within_1c": 36.46,
-      "usd_within_2c": 36.46,
-      "avg_fill_10": 0.24,
-      "avg_fill_25": 0.24,
-      "bid_usd_within_2c": 25.89
-     }
-    },
-    {
-     "label": "140-159",
-     "lo": 140,
-     "hi": 159,
-     "market": 0.14,
-     "token": "20758528405083229638075537624185919464719136412440316750273692741122495293282",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.15,
-      "best_bid": 0.13,
-      "usd_at_best": 19.44,
-      "usd_within_1c": 26.0,
-      "usd_within_2c": 26.0,
-      "avg_fill_10": 0.15,
-      "avg_fill_25": 0.1521,
-      "bid_usd_within_2c": 30.57
-     }
-    },
-    {
-     "label": "160-179",
-     "lo": 160,
-     "hi": 179,
-     "market": 0.13,
-     "token": "62395562450598350386286446976513275612790092803268564657619343202491683828992",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.28,
-      "best_bid": 0.02,
-      "usd_at_best": 9.18,
-      "usd_within_1c": 11.5,
-      "usd_within_2c": 11.5,
-      "avg_fill_10": 0.2808,
-      "avg_fill_25": 0.38,
-      "bid_usd_within_2c": 2.55
-     }
-    },
-    {
-     "label": "180-199",
-     "lo": 180,
-     "hi": 199,
-     "market": 0.036,
-     "token": "3322081824970936259491771417799685403563261554989013809032488978790581075315",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.062,
-      "best_bid": 0.01,
-      "usd_at_best": 6.2,
-      "usd_within_1c": 11.87,
-      "usd_within_2c": 11.87,
-      "avg_fill_10": 0.0648,
-      "avg_fill_25": 0.122,
-      "bid_usd_within_2c": 1.3
-     }
-    },
-    {
-     "label": "200+",
-     "lo": 200,
-     "hi": null,
-     "market": 0.024,
-     "token": "2920534579649458587817790428194986745672607193233497162932691388749288204866",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.047,
-      "best_bid": 0.001,
-      "usd_at_best": 0.94,
-      "usd_within_1c": 0.94,
-      "usd_within_2c": 2.14,
-      "avg_fill_10": 0.1024,
-      "avg_fill_25": 0.2067,
-      "bid_usd_within_2c": 0.02
-     }
-    }
-   ]
-  },
-  {
-   "id": "aa4ad5f2-0149-45e9-9503-1e1bb8a32da9",
-   "handle": "cz_binance",
-   "name": "CZ 🔶 BNB",
-   "title": "CZ # posts October 2 - October 9, 2026?",
-   "slug": "cz-binance-of-tweets-october-2-october-9-2026",
-   "start": "2026-10-02T16:00:00.000Z",
-   "end": "2026-10-09T15:59:59.000Z",
-   "counterTotal": 0,
-   "counterStats": {
-    "pace": 0,
-    "percentComplete": 0,
-    "daysRemaining": 8
-   },
-   "histCount": 0,
-   "volume": 433.81899400000003,
-   "liquidity": 6181.59718,
-   "ranges": [
-    {
-     "label": "<20",
-     "lo": null,
-     "hi": 19,
-     "market": 0.45,
-     "token": "17273599964189839890245358451270520679173799423944212319594110376077070501578",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.47,
-      "best_bid": 0.43,
-      "usd_at_best": 131.9,
-      "usd_within_1c": 289.34,
-      "usd_within_2c": 289.34,
-      "avg_fill_10": 0.47,
-      "avg_fill_25": 0.47,
-      "bid_usd_within_2c": 309.21
-     }
-    },
-    {
-     "label": "20-39",
-     "lo": 20,
-     "hi": 39,
-     "market": 0.45,
-     "token": "108342856664406259630569013189022062090047475610732448230982254370414388389589",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.57,
-      "best_bid": 0.33,
-      "usd_at_best": 5.7,
-      "usd_within_1c": 129.24,
-      "usd_within_2c": 250.19,
-      "avg_fill_10": 0.5743,
-      "avg_fill_25": 0.5777,
-      "bid_usd_within_2c": 1.65
-     }
-    },
-    {
-     "label": "40-59",
-     "lo": 40,
-     "hi": 59,
-     "market": 0.15,
-     "token": "25456759967091932907388583920044974521757031869437950740718566330285003769153",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.28,
-      "best_bid": 0.02,
-      "usd_at_best": 5.6,
-      "usd_within_1c": 11.3,
-      "usd_within_2c": 11.3,
-      "avg_fill_10": 0.2822,
-      "avg_fill_25": 0.3893,
-      "bid_usd_within_2c": 0.87
-     }
-    },
-    {
-     "label": "60-79",
-     "lo": 60,
-     "hi": 79,
-     "market": 0.276,
-     "token": "39441855134977361751832661084298457564018938417230628550050676735878311212372",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.551,
-      "best_bid": null,
-      "usd_at_best": 104.69,
-      "usd_within_1c": 221.89,
-      "usd_within_2c": 250.44,
-      "avg_fill_10": 0.551,
-      "avg_fill_25": 0.551,
-      "bid_usd_within_2c": 0.0
-     }
-    },
-    {
-     "label": "80-99",
-     "lo": 80,
-     "hi": 99,
-     "market": 0.005,
-     "token": "115510684363993055059889817599286157892947774953682824632050842704701725768370",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": null,
-      "usd_at_best": 0.05,
-      "usd_within_1c": 0.05,
-      "usd_within_2c": 0.05,
-      "avg_fill_10": 0.3593,
-      "avg_fill_25": 0.4454,
-      "bid_usd_within_2c": 0.0
-     }
-    },
-    {
-     "label": "100-119",
-     "lo": 100,
-     "hi": 119,
-     "market": 0.005,
-     "token": "32496839493328156552889141395366103901696274415937900081409380723188797580757",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": null,
-      "usd_at_best": 0.05,
-      "usd_within_1c": 0.05,
-      "usd_within_2c": 0.05,
-      "avg_fill_10": 0.3653,
-      "avg_fill_25": 0.455,
-      "bid_usd_within_2c": 0.0
-     }
-    },
-    {
-     "label": "120-139",
-     "lo": 120,
-     "hi": 139,
-     "market": 0.005,
-     "token": "58804064016095254444135999232228517417358428802087461772743872270377168131832",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": null,
-      "usd_at_best": 0.05,
-      "usd_within_1c": 0.05,
-      "usd_within_2c": 0.05,
-      "avg_fill_10": 0.3658,
-      "avg_fill_25": 0.4557,
-      "bid_usd_within_2c": 0.0
-     }
-    },
-    {
-     "label": "140-159",
-     "lo": 140,
-     "hi": 159,
-     "market": 0.005,
-     "token": "114029677825009596099604201126264141409376694839263793759249162655788961252497",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": null,
-      "usd_at_best": 0.05,
-      "usd_within_1c": 0.05,
-      "usd_within_2c": 0.05,
-      "avg_fill_10": 0.3666,
-      "avg_fill_25": 0.4571,
-      "bid_usd_within_2c": 0.0
-     }
-    },
-    {
-     "label": "160-179",
-     "lo": 160,
-     "hi": 179,
-     "market": 0.005,
-     "token": "80495439114683832990971780294387274801738269496889105988795448227029488832036",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": null,
-      "usd_at_best": 0.05,
-      "usd_within_1c": 0.05,
-      "usd_within_2c": 0.05,
-      "avg_fill_10": 0.3704,
-      "avg_fill_25": 0.4632,
-      "bid_usd_within_2c": 0.0
-     }
-    },
-    {
-     "label": "180-199",
-     "lo": 180,
-     "hi": 199,
-     "market": 0.005,
-     "token": "18777350793352383366968506563158766214173034180203328058810455839674367151692",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": null,
-      "usd_at_best": 0.05,
-      "usd_within_1c": 0.05,
-      "usd_within_2c": 0.05,
-      "avg_fill_10": 0.3567,
-      "avg_fill_25": 0.4412,
-      "bid_usd_within_2c": 0.0
-     }
-    },
-    {
-     "label": "200+",
-     "lo": 200,
-     "hi": null,
-     "market": 0.005,
-     "token": "112930078386082272202487068263684007094124978446008057162921942932946731250907",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": null,
-      "usd_at_best": 0.05,
-      "usd_within_1c": 0.05,
-      "usd_within_2c": 0.05,
-      "avg_fill_10": 0.3746,
-      "avg_fill_25": 0.4699,
-      "bid_usd_within_2c": 0.0
-     }
-    }
-   ]
-  },
-  {
-   "id": "08d2da65-48da-46de-b0a1-07e15db58b58",
-   "handle": "WhiteHouse",
-   "name": "The White House",
-   "title": "White House # posts October 2 - October 9, 2026?",
-   "slug": "white-house-of-tweets-october-2-october-9-2026",
-   "start": "2026-10-02T16:00:00.000Z",
-   "end": "2026-10-09T15:59:59.000Z",
-   "counterTotal": 0,
-   "counterStats": {
-    "pace": 0,
-    "percentComplete": 0,
-    "daysRemaining": 8
-   },
-   "histCount": 0,
-   "volume": 1559.178064,
-   "liquidity": 19363.35708,
-   "ranges": [
-    {
-     "label": "<20",
-     "lo": null,
-     "hi": 19,
-     "market": 0.0025,
-     "token": "102020780702338438990757239105774281982999658351469016416570075596173479401643",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "20-39",
-     "lo": 20,
-     "hi": 39,
-     "market": 0.0025,
-     "token": "11269137966102604690208100744664959703841793768918920225361271140635068969384",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "40-59",
-     "lo": 40,
-     "hi": 59,
-     "market": 0.0025,
-     "token": "92629207600464801261020425456400476874063530932596501893060455657916387298370",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "60-79",
-     "lo": 60,
-     "hi": 79,
-     "market": 0.0025,
-     "token": "107457688248542551261516625217273768996961572913731018702840020913018969655593",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "80-99",
-     "lo": 80,
-     "hi": 99,
-     "market": 0.0055,
-     "token": "4024885149878717797433567041044427954820715398011888002277903546186671747102",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": 0.001,
-      "usd_at_best": 0.23,
-      "usd_within_1c": 0.23,
-      "usd_within_2c": 0.83,
-      "avg_fill_10": 0.0803,
-      "avg_fill_25": 0.0998,
-      "bid_usd_within_2c": 0.53
-     }
-    },
-    {
-     "label": "100-119",
-     "lo": 100,
-     "hi": 119,
-     "market": 0.0155,
-     "token": "63638106697193940735442779441806924330163529957585856809659400900376402145708",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.029,
-      "best_bid": 0.002,
-      "usd_at_best": 0.81,
-      "usd_within_1c": 1.41,
-      "usd_within_2c": 1.41,
-      "avg_fill_10": 0.0773,
-      "avg_fill_25": 0.0967,
-      "bid_usd_within_2c": 0.97
-     }
-    },
-    {
-     "label": "120-139",
-     "lo": 120,
-     "hi": 139,
-     "market": 0.0055,
-     "token": "92869293574561762560707543431178160490751095868486528881622914794229189886229",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": 0.001,
-      "usd_at_best": 0.39,
-      "usd_within_1c": 0.39,
-      "usd_within_2c": 0.39,
-      "avg_fill_10": 0.1002,
-      "avg_fill_25": 0.1284,
-      "bid_usd_within_2c": 1.56
-     }
-    },
-    {
-     "label": "140-159",
-     "lo": 140,
-     "hi": 159,
-     "market": 0.043,
-     "token": "95644783004081224240492805759118353728693473645115797073388298006883698608956",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.083,
-      "best_bid": 0.003,
-      "usd_at_best": 1.5,
-      "usd_within_1c": 1.5,
-      "usd_within_2c": 1.5,
-      "avg_fill_10": 0.1101,
-      "avg_fill_25": 0.1142,
-      "bid_usd_within_2c": 1.11
-     }
-    },
-    {
-     "label": "160-179",
-     "lo": 160,
-     "hi": 179,
-     "market": 0.06,
-     "token": "106668645028631904602896256792995992562063462566679956891994987658892952071306",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.11,
-      "best_bid": 0.01,
-      "usd_at_best": 5.5,
-      "usd_within_1c": 62.95,
-      "usd_within_2c": 62.95,
-      "avg_fill_10": 0.1143,
-      "avg_fill_25": 0.1176,
-      "bid_usd_within_2c": 0.1
-     }
-    },
-    {
-     "label": "180-199",
-     "lo": 180,
-     "hi": 199,
-     "market": 0.245,
-     "token": "93131476143672245161272108870410781411171700297274916290952970790264435897666",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.25,
-      "best_bid": 0.24,
-      "usd_at_best": 132.47,
-      "usd_within_1c": 234.47,
-      "usd_within_2c": 250.67,
-      "avg_fill_10": 0.25,
-      "avg_fill_25": 0.25,
-      "bid_usd_within_2c": 303.25
-     }
-    },
-    {
-     "label": "200+",
-     "lo": 200,
-     "hi": null,
-     "market": 0.695,
-     "token": "35769101369365141104332900022406436976044248278062929948049695677536157689948",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.73,
-      "best_bid": 0.66,
-      "usd_at_best": 406.39,
-      "usd_within_1c": 406.39,
-      "usd_within_2c": 413.89,
-      "avg_fill_10": 0.73,
-      "avg_fill_25": 0.73,
-      "bid_usd_within_2c": 839.71
-     }
-    }
-   ]
-  },
-  {
-   "id": "201ebb31-1b67-45eb-b2ff-f96a341e9792",
-   "handle": "NYCMayor",
-   "name": "Mayor Zohran Kwame Mamdani",
-   "title": "NYC Mayor # posts October 2 - October 9, 2026?",
-   "slug": "nyc-mayor-of-tweets-october-2-october-9-2026",
-   "start": "2026-10-02T16:00:00.000Z",
-   "end": "2026-10-09T15:59:59.000Z",
-   "counterTotal": 0,
-   "counterStats": {
-    "pace": 0,
-    "percentComplete": 0,
-    "daysRemaining": 8
-   },
-   "histCount": 0,
-   "volume": 1976.0545120000002,
-   "liquidity": 6804.14898,
-   "ranges": [
-    {
-     "label": "<20",
-     "lo": null,
-     "hi": 19,
-     "market": 0.032,
-     "token": "100359411119069206058406222876328738098936052969137351155971877577652023848096",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.061,
-      "best_bid": 0.003,
-      "usd_at_best": 0.37,
-      "usd_within_1c": 2.46,
-      "usd_within_2c": 5.66,
-      "avg_fill_10": 0.0805,
-      "avg_fill_25": 0.1059,
-      "bid_usd_within_2c": 0.57
-     }
-    },
-    {
-     "label": "20-39",
-     "lo": 20,
-     "hi": 39,
-     "market": 0.855,
-     "token": "102540764586507876658285590605430283654309529289231078194767286298409041077471",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.86,
-      "best_bid": 0.85,
-      "usd_at_best": 25.84,
-      "usd_within_1c": 189.13,
-      "usd_within_2c": 263.69,
-      "avg_fill_10": 0.86,
-      "avg_fill_25": 0.86,
-      "bid_usd_within_2c": 290.61
-     }
-    },
-    {
-     "label": "40-59",
-     "lo": 40,
-     "hi": 59,
-     "market": 0.05,
-     "token": "100391688933526727693419401826373556003577721878295094790280921694342721938553",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.07,
-      "best_bid": 0.03,
-      "usd_at_best": 2.96,
-      "usd_within_1c": 2.96,
-      "usd_within_2c": 2.96,
-      "avg_fill_10": 0.1104,
-      "avg_fill_25": 0.1312,
-      "bid_usd_within_2c": 4.53
-     }
-    },
-    {
-     "label": "60-79",
-     "lo": 60,
-     "hi": 79,
-     "market": 0.0075,
-     "token": "38754515572274479096976068886717916511568578538453635577566116897701151920773",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": 0.005,
-      "usd_at_best": 0.95,
-      "usd_within_1c": 0.95,
-      "usd_within_2c": 1.23,
-      "avg_fill_10": 0.0679,
-      "avg_fill_25": 0.1173,
-      "bid_usd_within_2c": 2.06
-     }
-    },
-    {
-     "label": "80-99",
-     "lo": 80,
-     "hi": 99,
-     "market": 0.0055,
-     "token": "30341776451255033228107019894442907121265628328774045698293215883009057495247",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": 0.001,
-      "usd_at_best": 0.86,
-      "usd_within_1c": 0.86,
-      "usd_within_2c": 1.13,
-      "avg_fill_10": 0.0736,
-      "avg_fill_25": 0.1217,
-      "bid_usd_within_2c": 0.07
-     }
-    },
-    {
-     "label": "100-119",
-     "lo": 100,
-     "hi": 119,
-     "market": 0.005,
-     "token": "111453136911553374476579380862955194532916122079820848334618269745735945786273",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": null,
-      "usd_at_best": 0.35,
-      "usd_within_1c": 0.35,
-      "usd_within_2c": 0.59,
-      "avg_fill_10": 0.1414,
-      "avg_fill_25": 0.2185,
-      "bid_usd_within_2c": 0.0
-     }
-    },
-    {
-     "label": "120-139",
-     "lo": 120,
-     "hi": 139,
-     "market": 0.005,
-     "token": "73216384499328684266524828450033420688313171379606242002746896265211029797466",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": null,
-      "usd_at_best": 0.12,
-      "usd_within_1c": 0.12,
-      "usd_within_2c": 0.36,
-      "avg_fill_10": 0.1662,
-      "avg_fill_25": 0.2038,
-      "bid_usd_within_2c": 0.0
-     }
-    },
-    {
-     "label": "140-159",
-     "lo": 140,
-     "hi": 159,
-     "market": 0.0055,
-     "token": "12082157302621865167497713952773498317956426216748410643402988643340836884996",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": 0.001,
-      "usd_at_best": 0.25,
-      "usd_within_1c": 0.25,
-      "usd_within_2c": 1.17,
-      "avg_fill_10": 0.073,
-      "avg_fill_25": 0.122,
-      "bid_usd_within_2c": 0.09
-     }
-    },
-    {
-     "label": "160-179",
-     "lo": 160,
-     "hi": 179,
-     "market": 0.005,
-     "token": "71093476571844642937884118812927180979379874382195312773940390202064567436495",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": null,
-      "usd_at_best": 0.58,
-      "usd_within_1c": 2.3,
-      "usd_within_2c": 2.62,
-      "avg_fill_10": 0.0474,
-      "avg_fill_25": 0.0871,
-      "bid_usd_within_2c": 0.0
-     }
-    },
-    {
-     "label": "180-199",
-     "lo": 180,
-     "hi": 199,
-     "market": 0.0055,
-     "token": "41775449385356397643594749733995708480379310514083695723762638241700163644580",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": 0.001,
-      "usd_at_best": 0.52,
-      "usd_within_1c": 2.04,
-      "usd_within_2c": 2.31,
-      "avg_fill_10": 0.0496,
-      "avg_fill_25": 0.0852,
-      "bid_usd_within_2c": 0.05
-     }
-    },
-    {
-     "label": "200+",
-     "lo": 200,
-     "hi": null,
-     "market": 0.0055,
-     "token": "7228726959108360731403175344026638305273254283223901917388106057326618254593",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": 0.001,
-      "usd_at_best": 0.52,
-      "usd_within_1c": 2.04,
-      "usd_within_2c": 2.31,
-      "avg_fill_10": 0.0526,
-      "avg_fill_25": 0.0966,
-      "bid_usd_within_2c": 0.02
+      "bid_usd_within_2c": 738.47
      }
     }
    ]
@@ -1931,12 +659,12 @@
    "counterTotal": 0,
    "counterStats": {
     "pace": 0,
-    "percentComplete": 0,
-    "daysRemaining": 8
+    "percentComplete": 14,
+    "daysRemaining": 7
    },
    "histCount": 0,
-   "volume": 188488.171512,
-   "liquidity": 368440.99008,
+   "volume": 215053.043478,
+   "liquidity": 243699.61365,
    "ranges": [
     {
      "label": "<20",
@@ -1978,7 +706,7 @@
      "label": "80-99",
      "lo": 80,
      "hi": 99,
-     "market": 0.003,
+     "market": 0.0025,
      "token": "61261764971303123561607947554538126138552009524006804154946685499233281999857",
      "closed": false,
      "depth": null
@@ -1987,126 +715,126 @@
      "label": "100-119",
      "lo": 100,
      "hi": 119,
-     "market": 0.0055,
+     "market": 0.0065,
      "token": "109601055627065823399462675439845826152087335902257094267567711134498682219022",
      "closed": false,
      "depth": {
-      "best_ask": 0.006,
-      "best_bid": 0.005,
-      "usd_at_best": 30.64,
-      "usd_within_1c": 55.23,
-      "usd_within_2c": 79.69,
-      "avg_fill_10": 0.006,
-      "avg_fill_25": 0.006,
-      "bid_usd_within_2c": 91.09
+      "best_ask": 0.007,
+      "best_bid": 0.006,
+      "usd_at_best": 5.6,
+      "usd_within_1c": 31.29,
+      "usd_within_2c": 33.29,
+      "avg_fill_10": 0.0079,
+      "avg_fill_25": 0.0104,
+      "bid_usd_within_2c": 20.28
      }
     },
     {
      "label": "120-139",
      "lo": 120,
      "hi": 139,
-     "market": 0.0115,
+     "market": 0.0125,
      "token": "39661358926434896914976911166999039109339828681876187368441553318325382851448",
      "closed": false,
      "depth": {
-      "best_ask": 0.014,
-      "best_bid": 0.009,
-      "usd_at_best": 9.8,
-      "usd_within_1c": 54.68,
-      "usd_within_2c": 70.86,
-      "avg_fill_10": 0.014,
-      "avg_fill_25": 0.0146,
-      "bid_usd_within_2c": 233.05
+      "best_ask": 0.015,
+      "best_bid": 0.01,
+      "usd_at_best": 6.0,
+      "usd_within_1c": 38.46,
+      "usd_within_2c": 47.22,
+      "avg_fill_10": 0.0157,
+      "avg_fill_25": 0.0174,
+      "bid_usd_within_2c": 28.98
      }
     },
     {
      "label": "140-159",
      "lo": 140,
      "hi": 159,
-     "market": 0.04,
+     "market": 0.054,
      "token": "72109256434965444337413573752520909483132129094625590628535610622550011668962",
      "closed": false,
      "depth": {
-      "best_ask": 0.05,
-      "best_bid": 0.03,
-      "usd_at_best": 48.14,
-      "usd_within_1c": 108.92,
-      "usd_within_2c": 141.14,
-      "avg_fill_10": 0.05,
-      "avg_fill_25": 0.05,
-      "bid_usd_within_2c": 33.18
+      "best_ask": 0.055,
+      "best_bid": 0.053,
+      "usd_at_best": 0.57,
+      "usd_within_1c": 85.56,
+      "usd_within_2c": 112.61,
+      "avg_fill_10": 0.0578,
+      "avg_fill_25": 0.0579,
+      "bid_usd_within_2c": 94.51
      }
     },
     {
      "label": "160-179",
      "lo": 160,
      "hi": 179,
-     "market": 0.115,
+     "market": 0.12,
      "token": "101909721884605867817934592776807667987516626593147634886120485529706782397863",
      "closed": false,
      "depth": {
-      "best_ask": 0.12,
+      "best_ask": 0.13,
       "best_bid": 0.11,
-      "usd_at_best": 0.05,
-      "usd_within_1c": 58.9,
-      "usd_within_2c": 242.33,
-      "avg_fill_10": 0.1299,
-      "avg_fill_25": 0.13,
-      "bid_usd_within_2c": 242.96
+      "usd_at_best": 13.93,
+      "usd_within_1c": 73.09,
+      "usd_within_2c": 142.84,
+      "avg_fill_10": 0.13,
+      "avg_fill_25": 0.1342,
+      "bid_usd_within_2c": 163.89
      }
     },
     {
      "label": "180-199",
      "lo": 180,
      "hi": 199,
-     "market": 0.235,
+     "market": 0.245,
      "token": "43846047583431803324544643116334318791736993188673835671012187060596144747312",
      "closed": false,
      "depth": {
-      "best_ask": 0.24,
-      "best_bid": 0.23,
-      "usd_at_best": 74.4,
-      "usd_within_1c": 259.99,
-      "usd_within_2c": 522.3,
-      "avg_fill_10": 0.24,
-      "avg_fill_25": 0.24,
-      "bid_usd_within_2c": 721.84
+      "best_ask": 0.25,
+      "best_bid": 0.24,
+      "usd_at_best": 147.22,
+      "usd_within_1c": 232.5,
+      "usd_within_2c": 366.34,
+      "avg_fill_10": 0.25,
+      "avg_fill_25": 0.25,
+      "bid_usd_within_2c": 267.66
      }
     },
     {
      "label": "200-219",
      "lo": 200,
      "hi": 219,
-     "market": 0.265,
+     "market": 0.255,
      "token": "90353309972429243695949493501903494397912718575005929226909513731901507416345",
      "closed": false,
      "depth": {
-      "best_ask": 0.27,
-      "best_bid": 0.26,
-      "usd_at_best": 221.72,
-      "usd_within_1c": 569.62,
-      "usd_within_2c": 838.08,
-      "avg_fill_10": 0.27,
-      "avg_fill_25": 0.27,
-      "bid_usd_within_2c": 517.3
+      "best_ask": 0.26,
+      "best_bid": 0.25,
+      "usd_at_best": 189.97,
+      "usd_within_1c": 449.88,
+      "usd_within_2c": 672.76,
+      "avg_fill_10": 0.26,
+      "avg_fill_25": 0.26,
+      "bid_usd_within_2c": 387.8
      }
     },
     {
      "label": "220-239",
      "lo": 220,
      "hi": 239,
-     "market": 0.165,
+     "market": 0.155,
      "token": "39786739012054871110748084775134583920766929983415774530902181102090479387472",
      "closed": false,
      "depth": {
-      "best_ask": 0.17,
-      "best_bid": 0.16,
-      "usd_at_best": 19.74,
-      "usd_within_1c": 235.02,
-      "usd_within_2c": 353.74,
-      "avg_fill_10": 0.17,
-      "avg_fill_25": 0.172,
-      "bid_usd_within_2c": 680.19
+      "best_ask": 0.16,
+      "best_bid": 0.15,
+      "usd_at_best": 38.24,
+      "usd_within_1c": 91.26,
+      "usd_within_2c": 145.44,
+      "avg_fill_10": 0.16,
+      "avg_fill_25": 0.16,
+      "bid_usd_within_2c": 243.84
      }
     },
     {
@@ -2119,127 +847,118 @@
      "depth": {
       "best_ask": 0.09,
       "best_bid": 0.08,
-      "usd_at_best": 6.1,
-      "usd_within_1c": 146.8,
-      "usd_within_2c": 281.11,
-      "avg_fill_10": 0.0937,
-      "avg_fill_25": 0.0974,
-      "bid_usd_within_2c": 202.2
+      "usd_at_best": 23.89,
+      "usd_within_1c": 231.48,
+      "usd_within_2c": 295.06,
+      "avg_fill_10": 0.09,
+      "avg_fill_25": 0.0904,
+      "bid_usd_within_2c": 133.35
      }
     },
     {
      "label": "260-279",
      "lo": 260,
      "hi": 279,
-     "market": 0.0435,
+     "market": 0.0345,
      "token": "102286721925787737357351300204266061154242826446149515976063906216258921729116",
      "closed": false,
      "depth": {
-      "best_ask": 0.046,
-      "best_bid": 0.041,
-      "usd_at_best": 9.7,
-      "usd_within_1c": 80.33,
-      "usd_within_2c": 102.61,
-      "avg_fill_10": 0.046,
-      "avg_fill_25": 0.0476,
-      "bid_usd_within_2c": 57.64
+      "best_ask": 0.038,
+      "best_bid": 0.031,
+      "usd_at_best": 19.0,
+      "usd_within_1c": 64.41,
+      "usd_within_2c": 73.56,
+      "avg_fill_10": 0.038,
+      "avg_fill_25": 0.0385,
+      "bid_usd_within_2c": 135.6
      }
     },
     {
      "label": "280-299",
      "lo": 280,
      "hi": 299,
-     "market": 0.023,
+     "market": 0.0145,
      "token": "30090700934287810623214181977078047464499097978446545801906018387310601054841",
      "closed": false,
      "depth": {
-      "best_ask": 0.028,
-      "best_bid": 0.018,
-      "usd_at_best": 0.2,
-      "usd_within_1c": 51.63,
-      "usd_within_2c": 61.32,
-      "avg_fill_10": 0.029,
-      "avg_fill_25": 0.0292,
-      "bid_usd_within_2c": 216.96
+      "best_ask": 0.017,
+      "best_bid": 0.012,
+      "usd_at_best": 3.4,
+      "usd_within_1c": 37.34,
+      "usd_within_2c": 39.19,
+      "avg_fill_10": 0.0176,
+      "avg_fill_25": 0.0186,
+      "bid_usd_within_2c": 147.39
      }
     },
     {
      "label": "300-319",
      "lo": 300,
      "hi": 319,
-     "market": 0.0155,
+     "market": 0.008,
      "token": "113293840029135632963861141564126091802352811380773051246196935591923053115278",
      "closed": false,
      "depth": {
-      "best_ask": 0.02,
-      "best_bid": 0.011,
-      "usd_at_best": 14.38,
-      "usd_within_1c": 38.9,
-      "usd_within_2c": 47.28,
-      "avg_fill_10": 0.02,
-      "avg_fill_25": 0.0207,
-      "bid_usd_within_2c": 159.51
+      "best_ask": 0.01,
+      "best_bid": 0.006,
+      "usd_at_best": 0.05,
+      "usd_within_1c": 26.68,
+      "usd_within_2c": 30.88,
+      "avg_fill_10": 0.0114,
+      "avg_fill_25": 0.015,
+      "bid_usd_within_2c": 57.77
      }
     },
     {
      "label": "320-339",
      "lo": 320,
      "hi": 339,
-     "market": 0.017,
+     "market": 0.0075,
      "token": "19219601612558766249187057676946071976427664626054374291624457934791210975181",
      "closed": false,
      "depth": {
-      "best_ask": 0.018,
-      "best_bid": 0.016,
-      "usd_at_best": 12.72,
-      "usd_within_1c": 35.4,
-      "usd_within_2c": 43.75,
-      "avg_fill_10": 0.018,
-      "avg_fill_25": 0.0189,
-      "bid_usd_within_2c": 87.87
+      "best_ask": 0.009,
+      "best_bid": 0.006,
+      "usd_at_best": 0.05,
+      "usd_within_1c": 26.31,
+      "usd_within_2c": 33.97,
+      "avg_fill_10": 0.0107,
+      "avg_fill_25": 0.0135,
+      "bid_usd_within_2c": 34.24
      }
     },
     {
      "label": "340-359",
      "lo": 340,
      "hi": 359,
-     "market": 0.0145,
+     "market": 0.0055,
      "token": "47502046267320775128157144627312641812215188470030369909377316291312665218402",
      "closed": false,
      "depth": {
-      "best_ask": 0.015,
-      "best_bid": 0.014,
-      "usd_at_best": 15.53,
-      "usd_within_1c": 36.95,
-      "usd_within_2c": 38.27,
-      "avg_fill_10": 0.015,
-      "avg_fill_25": 0.0155,
-      "bid_usd_within_2c": 89.58
+      "best_ask": 0.006,
+      "best_bid": 0.005,
+      "usd_at_best": 1.2,
+      "usd_within_1c": 19.49,
+      "usd_within_2c": 21.49,
+      "avg_fill_10": 0.0072,
+      "avg_fill_25": 0.0103,
+      "bid_usd_within_2c": 177.64
      }
     },
     {
      "label": "360-379",
      "lo": 360,
      "hi": 379,
-     "market": 0.0105,
+     "market": 0.0035,
      "token": "104720202127169681359968090551306958570013207252549098271526255043188317436930",
      "closed": false,
-     "depth": {
-      "best_ask": 0.011,
-      "best_bid": 0.01,
-      "usd_at_best": 9.25,
-      "usd_within_1c": 27.73,
-      "usd_within_2c": 31.39,
-      "avg_fill_10": 0.0111,
-      "avg_fill_25": 0.0124,
-      "bid_usd_within_2c": 156.76
-     }
+     "depth": null
     },
     {
      "label": "380-399",
      "lo": 380,
      "hi": 399,
-     "market": 0.0025,
+     "market": 0.0015,
      "token": "84216793589929527717122491070284842934380990179338478923416881411584447986880",
      "closed": false,
      "depth": null
@@ -2248,7 +967,7 @@
      "label": "400-419",
      "lo": 400,
      "hi": 419,
-     "market": 0.0015,
+     "market": 0.0005,
      "token": "12771730943327480256754615424882239051179601163204181880437483397946587939511",
      "closed": false,
      "depth": null
@@ -2257,7 +976,7 @@
      "label": "420-439",
      "lo": 420,
      "hi": 439,
-     "market": 0.0015,
+     "market": 0.0005,
      "token": "105212678997841018765412214648012151680701559197863844298813339107697805928903",
      "closed": false,
      "depth": null
@@ -2275,7 +994,7 @@
      "label": "460-479",
      "lo": 460,
      "hi": 479,
-     "market": 0.0015,
+     "market": 0.0005,
      "token": "79998461997786466249235850070463833161006501987557421886788247075623319718539",
      "closed": false,
      "depth": null
@@ -2284,7 +1003,7 @@
      "label": "480-499",
      "lo": 480,
      "hi": 499,
-     "market": 0.0015,
+     "market": 0.0005,
      "token": "92994207539470233712974265766288703893534619793832910669025685179683830811097",
      "closed": false,
      "depth": null
@@ -2293,7 +1012,7 @@
      "label": "500+",
      "lo": 500,
      "hi": null,
-     "market": 0.002,
+     "market": 0.0005,
      "token": "19882639398939112868900230484998137260685423273428433738269505153334536430169",
      "closed": false,
      "depth": null
@@ -2311,427 +1030,1535 @@
    "counterTotal": 0,
    "counterStats": {
     "pace": 0,
-    "percentComplete": 0,
-    "daysRemaining": 8
+    "percentComplete": 14,
+    "daysRemaining": 7
    },
    "histCount": 0,
-   "volume": 1016.722158,
-   "liquidity": 12297.41889,
+   "volume": 1194.0761579999999,
+   "liquidity": 370.4732,
    "ranges": [
     {
      "label": "<5",
      "lo": null,
      "hi": 4,
-     "market": 0.978,
+     "market": 0.5015,
      "token": "28571486198908409256221761877654754043735094688466697132135043510762898430541",
      "closed": false,
-     "depth": null
+     "depth": {
+      "best_ask": 0.999,
+      "best_bid": 0.004,
+      "usd_at_best": 1782.22,
+      "usd_within_1c": 1782.22,
+      "usd_within_2c": 1782.22,
+      "avg_fill_10": 0.999,
+      "avg_fill_25": 0.999,
+      "bid_usd_within_2c": 4.18
+     }
     },
     {
      "label": "5-9",
      "lo": 5,
      "hi": 9,
-     "market": 0.008,
+     "market": 0.4995,
      "token": "21875544994481347190731010944456921625016652206713066461441413975948023942491",
      "closed": false,
      "depth": {
-      "best_ask": 0.016,
-      "best_bid": 0.002,
-      "usd_at_best": 0.16,
-      "usd_within_1c": 2.7,
-      "usd_within_2c": 12.64,
-      "avg_fill_10": 0.0276,
-      "avg_fill_25": 0.0407,
-      "bid_usd_within_2c": 0.27
+      "best_ask": 0.999,
+      "best_bid": null,
+      "usd_at_best": 2791.21,
+      "usd_within_1c": 2791.21,
+      "usd_within_2c": 2791.21,
+      "avg_fill_10": 0.999,
+      "avg_fill_25": 0.999,
+      "bid_usd_within_2c": 0.0
      }
     },
     {
      "label": "10-14",
      "lo": 10,
      "hi": 14,
-     "market": 0.005,
+     "market": 0.0295,
      "token": "113099242946062653799056170581478776064698034520578650492938654585114549509602",
      "closed": false,
      "depth": {
-      "best_ask": 0.009,
-      "best_bid": 0.001,
-      "usd_at_best": 0.14,
-      "usd_within_1c": 0.23,
-      "usd_within_2c": 0.23,
-      "avg_fill_10": 0.0332,
-      "avg_fill_25": 0.0489,
-      "bid_usd_within_2c": 0.25
+      "best_ask": 0.059,
+      "best_bid": null,
+      "usd_at_best": 0.94,
+      "usd_within_1c": 0.94,
+      "usd_within_2c": 0.94,
+      "avg_fill_10": 0.399,
+      "avg_fill_25": 0.6238,
+      "bid_usd_within_2c": 0.0
      }
     },
     {
      "label": "15-19",
      "lo": 15,
      "hi": 19,
-     "market": 0.005,
+     "market": 0.1845,
      "token": "69426154919608344152903339760302579102493734976055912723688143236665302965639",
      "closed": false,
      "depth": {
-      "best_ask": 0.009,
-      "best_bid": 0.001,
-      "usd_at_best": 0.14,
-      "usd_within_1c": 0.23,
-      "usd_within_2c": 0.23,
-      "avg_fill_10": 0.0301,
-      "avg_fill_25": 0.0472,
-      "bid_usd_within_2c": 0.24
+      "best_ask": 0.369,
+      "best_bid": null,
+      "usd_at_best": 5.9,
+      "usd_within_1c": 13.3,
+      "usd_within_2c": 13.3,
+      "avg_fill_10": 0.3694,
+      "avg_fill_25": 0.4845,
+      "bid_usd_within_2c": 0.0
      }
     },
     {
      "label": "20-24",
      "lo": 20,
      "hi": 24,
-     "market": 0.0075,
+     "market": 0.044,
      "token": "102243323134361440961518041527978418933729245029371706784770581727075961304035",
      "closed": false,
      "depth": {
-      "best_ask": 0.014,
-      "best_bid": 0.001,
-      "usd_at_best": 0.92,
-      "usd_within_1c": 5.63,
-      "usd_within_2c": 13.58,
-      "avg_fill_10": 0.0226,
-      "avg_fill_25": 0.0329,
-      "bid_usd_within_2c": 0.23
+      "best_ask": 0.078,
+      "best_bid": 0.01,
+      "usd_at_best": 1.25,
+      "usd_within_1c": 1.25,
+      "usd_within_2c": 1.25,
+      "avg_fill_10": 0.3738,
+      "avg_fill_25": 0.5985,
+      "bid_usd_within_2c": 0.06
      }
     },
     {
      "label": "25-29",
      "lo": 25,
      "hi": 29,
-     "market": 0.007,
+     "market": 0.1245,
      "token": "11326781657206877548086197208102365803064284201709725215983775924138682984699",
      "closed": false,
      "depth": {
-      "best_ask": 0.013,
-      "best_bid": 0.001,
-      "usd_at_best": 0.21,
-      "usd_within_1c": 3.81,
-      "usd_within_2c": 10.57,
-      "avg_fill_10": 0.0242,
-      "avg_fill_25": 0.036,
-      "bid_usd_within_2c": 0.23
+      "best_ask": 0.249,
+      "best_bid": null,
+      "usd_at_best": 3.98,
+      "usd_within_1c": 3.98,
+      "usd_within_2c": 3.98,
+      "avg_fill_10": 0.2686,
+      "avg_fill_25": 0.4057,
+      "bid_usd_within_2c": 0.0
      }
     },
     {
      "label": "30-34",
      "lo": 30,
      "hi": 34,
-     "market": 0.007,
+     "market": 0.1245,
      "token": "68837820207889412967341090313439384925329394516094062157893165997680212850234",
      "closed": false,
      "depth": {
-      "best_ask": 0.013,
-      "best_bid": 0.001,
-      "usd_at_best": 0.21,
-      "usd_within_1c": 5.25,
-      "usd_within_2c": 5.25,
-      "avg_fill_10": 0.0258,
-      "avg_fill_25": 0.0359,
-      "bid_usd_within_2c": 0.22
+      "best_ask": 0.249,
+      "best_bid": null,
+      "usd_at_best": 3.98,
+      "usd_within_1c": 8.98,
+      "usd_within_2c": 8.98,
+      "avg_fill_10": 0.2629,
+      "avg_fill_25": 0.403,
+      "bid_usd_within_2c": 0.0
      }
     },
     {
      "label": "35-39",
      "lo": 35,
      "hi": 39,
-     "market": 0.005,
+     "market": 0.03,
      "token": "19645944157137166890780602562683561488497375998456249067711256360380716893753",
      "closed": false,
      "depth": {
-      "best_ask": 0.009,
+      "best_ask": 0.059,
       "best_bid": 0.001,
-      "usd_at_best": 0.14,
-      "usd_within_1c": 1.0,
-      "usd_within_2c": 8.13,
-      "avg_fill_10": 0.0276,
-      "avg_fill_25": 0.0429,
-      "bid_usd_within_2c": 0.21
+      "usd_at_best": 0.89,
+      "usd_within_1c": 0.89,
+      "usd_within_2c": 0.89,
+      "avg_fill_10": 0.3827,
+      "avg_fill_25": 0.6072,
+      "bid_usd_within_2c": 0.01
      }
     },
     {
      "label": "40-44",
      "lo": 40,
      "hi": 44,
-     "market": 0.005,
+     "market": 0.4985,
      "token": "67690911740371189671101463743409924770103187318433698065392110373238123598873",
      "closed": false,
      "depth": {
-      "best_ask": 0.009,
+      "best_ask": 0.996,
       "best_bid": 0.001,
-      "usd_at_best": 0.14,
-      "usd_within_1c": 1.08,
-      "usd_within_2c": 8.31,
-      "avg_fill_10": 0.0268,
-      "avg_fill_25": 0.0438,
-      "bid_usd_within_2c": 0.21
+      "usd_at_best": 263.94,
+      "usd_within_1c": 3856.51,
+      "usd_within_2c": 3856.51,
+      "avg_fill_10": 0.996,
+      "avg_fill_25": 0.996,
+      "bid_usd_within_2c": 0.01
      }
     },
     {
      "label": "45-49",
      "lo": 45,
      "hi": 49,
-     "market": 0.005,
+     "market": 0.0355,
      "token": "51491604690977045535468998567597932283710124190334908130217236648546011542899",
      "closed": false,
      "depth": {
-      "best_ask": 0.009,
+      "best_ask": 0.07,
       "best_bid": 0.001,
-      "usd_at_best": 0.14,
-      "usd_within_1c": 1.08,
-      "usd_within_2c": 8.31,
-      "avg_fill_10": 0.0266,
-      "avg_fill_25": 0.0419,
-      "bid_usd_within_2c": 0.22
+      "usd_at_best": 1.05,
+      "usd_within_1c": 2.47,
+      "usd_within_2c": 2.47,
+      "avg_fill_10": 0.2298,
+      "avg_fill_25": 0.4248,
+      "bid_usd_within_2c": 0.04
      }
     },
     {
      "label": "50-54",
      "lo": 50,
      "hi": 54,
-     "market": 0.005,
+     "market": 0.0355,
      "token": "33665874129948593784686985838158883685839735800221565810840410231842899295203",
      "closed": false,
      "depth": {
-      "best_ask": 0.009,
+      "best_ask": 0.07,
       "best_bid": 0.001,
-      "usd_at_best": 0.14,
-      "usd_within_1c": 1.75,
-      "usd_within_2c": 3.55,
-      "avg_fill_10": 0.0308,
-      "avg_fill_25": 0.0481,
-      "bid_usd_within_2c": 0.21
+      "usd_at_best": 1.05,
+      "usd_within_1c": 3.89,
+      "usd_within_2c": 3.89,
+      "avg_fill_10": 0.1636,
+      "avg_fill_25": 0.3283,
+      "bid_usd_within_2c": 0.05
      }
     },
     {
      "label": "55-59",
      "lo": 55,
      "hi": 59,
-     "market": 0.005,
+     "market": 0.0355,
      "token": "106412505873531227229291062656063823336032469934207882160666793597899938621383",
      "closed": false,
      "depth": {
-      "best_ask": 0.009,
+      "best_ask": 0.07,
       "best_bid": 0.001,
-      "usd_at_best": 0.14,
-      "usd_within_1c": 1.75,
-      "usd_within_2c": 3.55,
-      "avg_fill_10": 0.0316,
-      "avg_fill_25": 0.0485,
-      "bid_usd_within_2c": 0.21
+      "usd_at_best": 0.56,
+      "usd_within_1c": 3.4,
+      "usd_within_2c": 3.4,
+      "avg_fill_10": 0.1802,
+      "avg_fill_25": 0.3525,
+      "bid_usd_within_2c": 0.05
      }
     },
     {
      "label": "60+",
      "lo": 60,
      "hi": null,
-     "market": 0.005,
+     "market": 0.0355,
      "token": "98763277438637205766176328810113263396965064078855324609333853075851815699976",
      "closed": false,
      "depth": {
-      "best_ask": 0.009,
+      "best_ask": 0.07,
       "best_bid": 0.001,
-      "usd_at_best": 0.14,
-      "usd_within_1c": 1.75,
-      "usd_within_2c": 3.55,
-      "avg_fill_10": 0.0318,
-      "avg_fill_25": 0.0478,
-      "bid_usd_within_2c": 0.2
+      "usd_at_best": 0.98,
+      "usd_within_1c": 3.82,
+      "usd_within_2c": 3.82,
+      "avg_fill_10": 0.1608,
+      "avg_fill_25": 0.3238,
+      "bid_usd_within_2c": 0.04
      }
     }
    ]
   },
   {
-   "id": "6ae38c39-2b4f-4f29-919a-b2a96fe65961",
-   "handle": "realDonaldTrump",
-   "name": "Donald J. Trump",
-   "title": "Donald Trump # Truth Social posts September 29 - October 6, 2026?",
-   "slug": "donald-trump-of-truth-social-posts-september-29-october-6-2026",
-   "start": "2026-09-29T16:00:00.000Z",
-   "end": "2026-10-06T15:59:59.000Z",
-   "counterTotal": 57,
+   "id": "201ebb31-1b67-45eb-b2ff-f96a341e9792",
+   "handle": "NYCMayor",
+   "name": "Mayor Zohran Kwame Mamdani",
+   "title": "NYC Mayor # posts October 2 - October 9, 2026?",
+   "slug": "nyc-mayor-of-tweets-october-2-october-9-2026",
+   "start": "2026-10-02T16:00:00.000Z",
+   "end": "2026-10-09T15:59:59.000Z",
+   "counterTotal": 0,
    "counterStats": {
-    "pace": 133,
-    "percentComplete": 43,
-    "daysRemaining": 5
+    "pace": 0,
+    "percentComplete": 14,
+    "daysRemaining": 7
    },
-   "histCount": 57,
-   "volume": 24458.750155,
-   "liquidity": 10032.8546,
+   "histCount": 0,
+   "volume": 2044.324512,
+   "liquidity": 2643.53661,
    "ranges": [
     {
      "label": "<20",
      "lo": null,
      "hi": 19,
-     "market": 0.0,
-     "token": "82957672654790270895687111829896854022365968253662335238771271384802372663313",
-     "closed": true,
-     "depth": null
+     "market": 0.036,
+     "token": "100359411119069206058406222876328738098936052969137351155971877577652023848096",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.07,
+      "best_bid": 0.002,
+      "usd_at_best": 1.4,
+      "usd_within_1c": 3.0,
+      "usd_within_2c": 4.8,
+      "avg_fill_10": 0.0996,
+      "avg_fill_25": 0.1778,
+      "bid_usd_within_2c": 1.42
+     }
     },
     {
      "label": "20-39",
      "lo": 20,
      "hi": 39,
-     "market": 0.0,
-     "token": "94508343874746934739838637859458804305317626171950225373162657769442225795215",
-     "closed": true,
-     "depth": null
+     "market": 0.94,
+     "token": "102540764586507876658285590605430283654309529289231078194767286298409041077471",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.99,
+      "best_bid": 0.89,
+      "usd_at_best": 273.64,
+      "usd_within_1c": 273.64,
+      "usd_within_2c": 273.64,
+      "avg_fill_10": 0.99,
+      "avg_fill_25": 0.99,
+      "bid_usd_within_2c": 16.91
+     }
     },
     {
      "label": "40-59",
      "lo": 40,
      "hi": 59,
-     "market": 0.0005,
-     "token": "77991944857158734392026161890970870264972559025441123675219891410949271023767",
+     "market": 0.075,
+     "token": "100391688933526727693419401826373556003577721878295094790280921694342721938553",
      "closed": false,
-     "depth": null
+     "depth": {
+      "best_ask": 0.26,
+      "best_bid": null,
+      "usd_at_best": 2.6,
+      "usd_within_1c": 8.27,
+      "usd_within_2c": 8.27,
+      "avg_fill_10": 0.2771,
+      "avg_fill_25": 0.394,
+      "bid_usd_within_2c": 0.0
+     }
     },
     {
      "label": "60-79",
      "lo": 60,
      "hi": 79,
-     "market": 0.016,
-     "token": "40140556807997401646718010299453324710531850569450353209257394106328796681251",
+     "market": 0.005,
+     "token": "38754515572274479096976068886717916511568578538453635577566116897701151920773",
      "closed": false,
      "depth": {
-      "best_ask": 0.03,
-      "best_bid": 0.002,
-      "usd_at_best": 1.3,
-      "usd_within_1c": 2.44,
-      "usd_within_2c": 2.44,
-      "avg_fill_10": 0.0803,
-      "avg_fill_25": 0.136,
-      "bid_usd_within_2c": 0.05
+      "best_ask": 0.009,
+      "best_bid": 0.001,
+      "usd_at_best": 0.41,
+      "usd_within_1c": 0.64,
+      "usd_within_2c": 0.64,
+      "avg_fill_10": 0.0832,
+      "avg_fill_25": 0.1694,
+      "bid_usd_within_2c": 0.02
      }
     },
     {
      "label": "80-99",
      "lo": 80,
      "hi": 99,
-     "market": 0.023,
-     "token": "42824266987346629582699069557462744412458264453438461808242989056755638783753",
+     "market": 0.005,
+     "token": "30341776451255033228107019894442907121265628328774045698293215883009057495247",
      "closed": false,
      "depth": {
-      "best_ask": 0.043,
-      "best_bid": 0.003,
-      "usd_at_best": 1.03,
-      "usd_within_1c": 1.03,
-      "usd_within_2c": 1.03,
-      "avg_fill_10": 0.1051,
-      "avg_fill_25": 0.158,
-      "bid_usd_within_2c": 0.65
+      "best_ask": 0.009,
+      "best_bid": 0.001,
+      "usd_at_best": 0.41,
+      "usd_within_1c": 0.55,
+      "usd_within_2c": 0.55,
+      "avg_fill_10": 0.0946,
+      "avg_fill_25": 0.1879,
+      "bid_usd_within_2c": 0.0
      }
     },
     {
      "label": "100-119",
      "lo": 100,
      "hi": 119,
-     "market": 0.095,
-     "token": "4881153282568550287178426559482221632589843017378385893190430531883200535717",
+     "market": 0.0055,
+     "token": "111453136911553374476579380862955194532916122079820848334618269745735945786273",
      "closed": false,
      "depth": {
-      "best_ask": 0.12,
-      "best_bid": 0.07,
-      "usd_at_best": 113.58,
-      "usd_within_1c": 113.58,
-      "usd_within_2c": 113.58,
-      "avg_fill_10": 0.12,
-      "avg_fill_25": 0.12,
-      "bid_usd_within_2c": 29.75
+      "best_ask": 0.01,
+      "best_bid": 0.001,
+      "usd_at_best": 0.18,
+      "usd_within_1c": 0.18,
+      "usd_within_2c": 0.42,
+      "avg_fill_10": 0.1652,
+      "avg_fill_25": 0.3306,
+      "bid_usd_within_2c": 0.0
      }
     },
     {
      "label": "120-139",
      "lo": 120,
      "hi": 139,
-     "market": 0.12,
-     "token": "17013979624617017752032711786662186391403509957562995963743250041054769833902",
+     "market": 0.0055,
+     "token": "73216384499328684266524828450033420688313171379606242002746896265211029797466",
      "closed": false,
      "depth": {
-      "best_ask": 0.13,
-      "best_bid": 0.11,
-      "usd_at_best": 0.65,
-      "usd_within_1c": 0.65,
-      "usd_within_2c": 0.65,
-      "avg_fill_10": 0.1659,
-      "avg_fill_25": 0.1683,
-      "bid_usd_within_2c": 1.65
+      "best_ask": 0.01,
+      "best_bid": 0.001,
+      "usd_at_best": 0.12,
+      "usd_within_1c": 0.12,
+      "usd_within_2c": 0.36,
+      "avg_fill_10": 0.1831,
+      "avg_fill_25": 0.3588,
+      "bid_usd_within_2c": 0.02
      }
     },
     {
      "label": "140-159",
      "lo": 140,
      "hi": 159,
-     "market": 0.185,
-     "token": "97942935418228454579213386342168178601873374070607106354685287690630475240260",
+     "market": 0.0055,
+     "token": "12082157302621865167497713952773498317956426216748410643402988643340836884996",
      "closed": false,
      "depth": {
-      "best_ask": 0.2,
-      "best_bid": 0.16,
-      "usd_at_best": 15.02,
-      "usd_within_1c": 102.83,
-      "usd_within_2c": 191.2,
-      "avg_fill_10": 0.2,
-      "avg_fill_25": 0.2039,
-      "bid_usd_within_2c": 92.09
+      "best_ask": 0.01,
+      "best_bid": 0.001,
+      "usd_at_best": 0.25,
+      "usd_within_1c": 0.25,
+      "usd_within_2c": 0.57,
+      "avg_fill_10": 0.131,
+      "avg_fill_25": 0.2736,
+      "bid_usd_within_2c": 0.02
      }
     },
     {
      "label": "160-179",
      "lo": 160,
      "hi": 179,
-     "market": 0.165,
-     "token": "62647046365895190844995790490658017017996315383411131608676087468710063046394",
+     "market": 0.005,
+     "token": "71093476571844642937884118812927180979379874382195312773940390202064567436495",
      "closed": false,
      "depth": {
-      "best_ask": 0.19,
-      "best_bid": 0.14,
-      "usd_at_best": 9.52,
-      "usd_within_1c": 88.77,
-      "usd_within_2c": 88.77,
-      "avg_fill_10": 0.1905,
-      "avg_fill_25": 0.1961,
-      "bid_usd_within_2c": 98.25
+      "best_ask": 0.009,
+      "best_bid": 0.001,
+      "usd_at_best": 0.05,
+      "usd_within_1c": 0.31,
+      "usd_within_2c": 0.31,
+      "avg_fill_10": 0.1169,
+      "avg_fill_25": 0.2215,
+      "bid_usd_within_2c": 0.02
      }
     },
     {
      "label": "180-199",
      "lo": 180,
      "hi": 199,
-     "market": 0.19,
-     "token": "69590856292634474236652608702097104264209897141469455484220900796913826755708",
+     "market": 0.0055,
+     "token": "41775449385356397643594749733995708480379310514083695723762638241700163644580",
      "closed": false,
      "depth": {
-      "best_ask": 0.2,
-      "best_bid": 0.18,
-      "usd_at_best": 97.44,
-      "usd_within_1c": 97.44,
-      "usd_within_2c": 129.12,
-      "avg_fill_10": 0.2,
-      "avg_fill_25": 0.2,
-      "bid_usd_within_2c": 68.13
+      "best_ask": 0.01,
+      "best_bid": 0.001,
+      "usd_at_best": 0.42,
+      "usd_within_1c": 1.68,
+      "usd_within_2c": 1.95,
+      "avg_fill_10": 0.068,
+      "avg_fill_25": 0.1484,
+      "bid_usd_within_2c": 0.02
      }
     },
     {
      "label": "200+",
      "lo": 200,
      "hi": null,
-     "market": 0.27,
-     "token": "60321079380581897869468912215090440818101349128314458858339316110208633515665",
+     "market": 0.0055,
+     "token": "7228726959108360731403175344026638305273254283223901917388106057326618254593",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.01,
+      "best_bid": 0.001,
+      "usd_at_best": 0.42,
+      "usd_within_1c": 1.68,
+      "usd_within_2c": 1.95,
+      "avg_fill_10": 0.0589,
+      "avg_fill_25": 0.1307,
+      "bid_usd_within_2c": 0.02
+     }
+    }
+   ]
+  },
+  {
+   "id": "08d2da65-48da-46de-b0a1-07e15db58b58",
+   "handle": "WhiteHouse",
+   "name": "The White House",
+   "title": "White House # posts October 2 - October 9, 2026?",
+   "slug": "white-house-of-tweets-october-2-october-9-2026",
+   "start": "2026-10-02T16:00:00.000Z",
+   "end": "2026-10-09T15:59:59.000Z",
+   "counterTotal": 1,
+   "counterStats": {
+    "pace": 7,
+    "percentComplete": 14,
+    "daysRemaining": 7
+   },
+   "histCount": 1,
+   "volume": 1673.178064,
+   "liquidity": 3139.88551,
+   "ranges": [
+    {
+     "label": "<20",
+     "lo": null,
+     "hi": 19,
+     "market": 0.151,
+     "token": "102020780702338438990757239105774281982999658351469016416570075596173479401643",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.299,
+      "best_bid": 0.003,
+      "usd_at_best": 4.19,
+      "usd_within_1c": 94.19,
+      "usd_within_2c": 94.19,
+      "avg_fill_10": 0.2996,
+      "avg_fill_25": 0.2998,
+      "bid_usd_within_2c": 0.62
+     }
+    },
+    {
+     "label": "20-39",
+     "lo": 20,
+     "hi": 39,
+     "market": 0.151,
+     "token": "11269137966102604690208100744664959703841793768918920225361271140635068969384",
      "closed": false,
      "depth": {
       "best_ask": 0.3,
-      "best_bid": 0.24,
-      "usd_at_best": 104.1,
-      "usd_within_1c": 119.6,
-      "usd_within_2c": 119.6,
+      "best_bid": 0.002,
+      "usd_at_best": 92.4,
+      "usd_within_1c": 92.4,
+      "usd_within_2c": 92.4,
       "avg_fill_10": 0.3,
       "avg_fill_25": 0.3,
-      "bid_usd_within_2c": 142.3
+      "bid_usd_within_2c": 0.42
+     }
+    },
+    {
+     "label": "40-59",
+     "lo": 40,
+     "hi": 59,
+     "market": 0.005,
+     "token": "92629207600464801261020425456400476874063530932596501893060455657916387298370",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.01,
+      "best_bid": null,
+      "usd_at_best": 4.73,
+      "usd_within_1c": 4.73,
+      "usd_within_2c": 4.73,
+      "avg_fill_10": 0.0209,
+      "avg_fill_25": 0.0505,
+      "bid_usd_within_2c": 0.0
+     }
+    },
+    {
+     "label": "60-79",
+     "lo": 60,
+     "hi": 79,
+     "market": 0.0025,
+     "token": "107457688248542551261516625217273768996961572913731018702840020913018969655593",
+     "closed": false,
+     "depth": null
+    },
+    {
+     "label": "80-99",
+     "lo": 80,
+     "hi": 99,
+     "market": 0.0055,
+     "token": "4024885149878717797433567041044427954820715398011888002277903546186671747102",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.01,
+      "best_bid": 0.001,
+      "usd_at_best": 0.23,
+      "usd_within_1c": 0.23,
+      "usd_within_2c": 0.47,
+      "avg_fill_10": 0.2335,
+      "avg_fill_25": 0.4255,
+      "bid_usd_within_2c": 0.03
+     }
+    },
+    {
+     "label": "100-119",
+     "lo": 100,
+     "hi": 119,
+     "market": 0.25,
+     "token": "63638106697193940735442779441806924330163529957585856809659400900376402145708",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.499,
+      "best_bid": 0.001,
+      "usd_at_best": 9.0,
+      "usd_within_1c": 109.0,
+      "usd_within_2c": 109.0,
+      "avg_fill_10": 0.4991,
+      "avg_fill_25": 0.4996,
+      "bid_usd_within_2c": 0.02
+     }
+    },
+    {
+     "label": "120-139",
+     "lo": 120,
+     "hi": 139,
+     "market": 0.185,
+     "token": "92869293574561762560707543431178160490751095868486528881622914794229189886229",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.37,
+      "best_bid": null,
+      "usd_at_best": 47.73,
+      "usd_within_1c": 47.73,
+      "usd_within_2c": 47.73,
+      "avg_fill_10": 0.37,
+      "avg_fill_25": 0.37,
+      "bid_usd_within_2c": 0.0
+     }
+    },
+    {
+     "label": "140-159",
+     "lo": 140,
+     "hi": 159,
+     "market": 0.101,
+     "token": "95644783004081224240492805759118353728693473645115797073388298006883698608956",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.2,
+      "best_bid": 0.002,
+      "usd_at_best": 2.81,
+      "usd_within_1c": 2.81,
+      "usd_within_2c": 2.81,
+      "avg_fill_10": 0.2601,
+      "avg_fill_25": 0.3783,
+      "bid_usd_within_2c": 0.4
+     }
+    },
+    {
+     "label": "160-179",
+     "lo": 160,
+     "hi": 179,
+     "market": 0.195,
+     "token": "106668645028631904602896256792995992562063462566679956891994987658892952071306",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.37,
+      "best_bid": 0.02,
+      "usd_at_best": 14.8,
+      "usd_within_1c": 14.8,
+      "usd_within_2c": 14.8,
+      "avg_fill_10": 0.37,
+      "avg_fill_25": 0.4664,
+      "bid_usd_within_2c": 0.15
+     }
+    },
+    {
+     "label": "180-199",
+     "lo": 180,
+     "hi": 199,
+     "market": 0.495,
+     "token": "93131476143672245161272108870410781411171700297274916290952970790264435897666",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.86,
+      "best_bid": 0.13,
+      "usd_at_best": 4.3,
+      "usd_within_1c": 21.7,
+      "usd_within_2c": 21.7,
+      "avg_fill_10": 0.8657,
+      "avg_fill_25": 0.8745,
+      "bid_usd_within_2c": 2.6
+     }
+    },
+    {
+     "label": "200+",
+     "lo": 200,
+     "hi": null,
+     "market": 0.545,
+     "token": "35769101369365141104332900022406436976044248278062929948049695677536157689948",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.98,
+      "best_bid": 0.11,
+      "usd_at_best": 16.66,
+      "usd_within_1c": 191.29,
+      "usd_within_2c": 191.29,
+      "avg_fill_10": 0.98,
+      "avg_fill_25": 0.9833,
+      "bid_usd_within_2c": 89.9
+     }
+    }
+   ]
+  },
+  {
+   "id": "aa4ad5f2-0149-45e9-9503-1e1bb8a32da9",
+   "handle": "cz_binance",
+   "name": "CZ 🔶 BNB",
+   "title": "CZ # posts October 2 - October 9, 2026?",
+   "slug": "cz-binance-of-tweets-october-2-october-9-2026",
+   "start": "2026-10-02T16:00:00.000Z",
+   "end": "2026-10-09T15:59:59.000Z",
+   "counterTotal": 0,
+   "counterStats": {
+    "pace": 0,
+    "percentComplete": 14,
+    "daysRemaining": 7
+   },
+   "histCount": 0,
+   "volume": 433.81899400000003,
+   "liquidity": 176.28581,
+   "ranges": [
+    {
+     "label": "<20",
+     "lo": null,
+     "hi": 19,
+     "market": 0.34,
+     "token": "17273599964189839890245358451270520679173799423944212319594110376077070501578",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.67,
+      "best_bid": 0.01,
+      "usd_at_best": 3.35,
+      "usd_within_1c": 3.35,
+      "usd_within_2c": 3.35,
+      "avg_fill_10": 0.8534,
+      "avg_fill_25": 0.9305,
+      "bid_usd_within_2c": 0.05
+     }
+    },
+    {
+     "label": "20-39",
+     "lo": 20,
+     "hi": 39,
+     "market": 0.5,
+     "token": "108342856664406259630569013189022062090047475610732448230982254370414388389589",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.67,
+      "best_bid": 0.33,
+      "usd_at_best": 3.35,
+      "usd_within_1c": 3.35,
+      "usd_within_2c": 3.35,
+      "avg_fill_10": 0.8534,
+      "avg_fill_25": 0.9305,
+      "bid_usd_within_2c": 1.65
+     }
+    },
+    {
+     "label": "40-59",
+     "lo": 40,
+     "hi": 59,
+     "market": 0.126,
+     "token": "25456759967091932907388583920044974521757031869437950740718566330285003769153",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.25,
+      "best_bid": 0.002,
+      "usd_at_best": 5.0,
+      "usd_within_1c": 5.0,
+      "usd_within_2c": 5.0,
+      "avg_fill_10": 0.3329,
+      "avg_fill_25": 0.4834,
+      "bid_usd_within_2c": 0.4
+     }
+    },
+    {
+     "label": "60-79",
+     "lo": 60,
+     "hi": 79,
+     "market": 0.3355,
+     "token": "39441855134977361751832661084298457564018938417230628550050676735878311212372",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.67,
+      "best_bid": 0.001,
+      "usd_at_best": 3.35,
+      "usd_within_1c": 3.35,
+      "usd_within_2c": 3.35,
+      "avg_fill_10": 0.8574,
+      "avg_fill_25": 0.937,
+      "bid_usd_within_2c": 0.02
+     }
+    },
+    {
+     "label": "80-99",
+     "lo": 80,
+     "hi": 99,
+     "market": 0.335,
+     "token": "115510684363993055059889817599286157892947774953682824632050842704701725768370",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.67,
+      "best_bid": null,
+      "usd_at_best": 3.35,
+      "usd_within_1c": 3.35,
+      "usd_within_2c": 3.35,
+      "avg_fill_10": 0.8564,
+      "avg_fill_25": 0.935,
+      "bid_usd_within_2c": 0.0
+     }
+    },
+    {
+     "label": "100-119",
+     "lo": 100,
+     "hi": 119,
+     "market": 0.336,
+     "token": "32496839493328156552889141395366103901696274415937900081409380723188797580757",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.67,
+      "best_bid": 0.002,
+      "usd_at_best": 3.35,
+      "usd_within_1c": 3.35,
+      "usd_within_2c": 3.35,
+      "avg_fill_10": 0.8564,
+      "avg_fill_25": 0.935,
+      "bid_usd_within_2c": 0.4
+     }
+    },
+    {
+     "label": "120-139",
+     "lo": 120,
+     "hi": 139,
+     "market": 0.3355,
+     "token": "58804064016095254444135999232228517417358428802087461772743872270377168131832",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.67,
+      "best_bid": 0.001,
+      "usd_at_best": 3.35,
+      "usd_within_1c": 3.35,
+      "usd_within_2c": 3.35,
+      "avg_fill_10": 0.8564,
+      "avg_fill_25": 0.935,
+      "bid_usd_within_2c": 0.05
+     }
+    },
+    {
+     "label": "140-159",
+     "lo": 140,
+     "hi": 159,
+     "market": 0.335,
+     "token": "114029677825009596099604201126264141409376694839263793759249162655788961252497",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.67,
+      "best_bid": null,
+      "usd_at_best": 3.35,
+      "usd_within_1c": 3.35,
+      "usd_within_2c": 3.35,
+      "avg_fill_10": 0.8574,
+      "avg_fill_25": 0.9366,
+      "bid_usd_within_2c": 0.0
+     }
+    },
+    {
+     "label": "160-179",
+     "lo": 160,
+     "hi": 179,
+     "market": 0.1685,
+     "token": "80495439114683832990971780294387274801738269496889105988795448227029488832036",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.336,
+      "best_bid": 0.001,
+      "usd_at_best": 6.72,
+      "usd_within_1c": 6.72,
+      "usd_within_2c": 6.72,
+      "avg_fill_10": 0.4017,
+      "avg_fill_25": 0.6256,
+      "bid_usd_within_2c": 0.05
+     }
+    },
+    {
+     "label": "180-199",
+     "lo": 180,
+     "hi": 199,
+     "market": 0.1685,
+     "token": "18777350793352383366968506563158766214173034180203328058810455839674367151692",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.071,
+      "best_bid": 0.001,
+      "usd_at_best": 1.42,
+      "usd_within_1c": 3.01,
+      "usd_within_2c": 3.01,
+      "avg_fill_10": 0.1652,
+      "avg_fill_25": 0.3162,
+      "bid_usd_within_2c": 0.11
+     }
+    },
+    {
+     "label": "200+",
+     "lo": 200,
+     "hi": null,
+     "market": 0.3355,
+     "token": "112930078386082272202487068263684007094124978446008057162921942932946731250907",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.071,
+      "best_bid": 0.001,
+      "usd_at_best": 1.42,
+      "usd_within_1c": 3.01,
+      "usd_within_2c": 3.01,
+      "avg_fill_10": 0.2051,
+      "avg_fill_25": 0.3919,
+      "bid_usd_within_2c": 0.11
+     }
+    }
+   ]
+  },
+  {
+   "id": "dd1eb14b-6542-418d-8c17-44dd002b4049",
+   "handle": "tedcruz",
+   "name": "Ted Cruz",
+   "title": "Ted Cruz # posts October 2 - October 9, 2026?",
+   "slug": "ted-cruz-of-tweets-october-2-october-9-2026",
+   "start": "2026-10-02T16:00:00.000Z",
+   "end": "2026-10-09T15:59:59.000Z",
+   "counterTotal": 1,
+   "counterStats": {
+    "pace": 7,
+    "percentComplete": 14,
+    "daysRemaining": 7
+   },
+   "histCount": 1,
+   "volume": 1752.671614,
+   "liquidity": 2917.70222,
+   "ranges": [
+    {
+     "label": "<20",
+     "lo": null,
+     "hi": 19,
+     "market": 0.0025,
+     "token": "12003455860401196996013410204351120585803352974626604935465315970935923384976",
+     "closed": false,
+     "depth": null
+    },
+    {
+     "label": "20-39",
+     "lo": 20,
+     "hi": 39,
+     "market": 0.051,
+     "token": "95351359608024925855820313464467706363905028811851580561531356165748384035453",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.1,
+      "best_bid": 0.002,
+      "usd_at_best": 50.0,
+      "usd_within_1c": 50.0,
+      "usd_within_2c": 50.0,
+      "avg_fill_10": 0.1,
+      "avg_fill_25": 0.1,
+      "bid_usd_within_2c": 0.4
+     }
+    },
+    {
+     "label": "40-59",
+     "lo": 40,
+     "hi": 59,
+     "market": 0.145,
+     "token": "113528908261499751167047618711537740783103103156605082895940340060679545344167",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.27,
+      "best_bid": 0.02,
+      "usd_at_best": 140.4,
+      "usd_within_1c": 140.4,
+      "usd_within_2c": 140.4,
+      "avg_fill_10": 0.27,
+      "avg_fill_25": 0.27,
+      "bid_usd_within_2c": 0.55
+     }
+    },
+    {
+     "label": "60-79",
+     "lo": 60,
+     "hi": 79,
+     "market": 0.2,
+     "token": "104022850839802267555937360973664925883822394130434768409420980400996998791992",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.379,
+      "best_bid": 0.02,
+      "usd_at_best": 3.79,
+      "usd_within_1c": 11.39,
+      "usd_within_2c": 11.39,
+      "avg_fill_10": 0.3796,
+      "avg_fill_25": 0.505,
+      "bid_usd_within_2c": 0.15
+     }
+    },
+    {
+     "label": "80-99",
+     "lo": 80,
+     "hi": 99,
+     "market": 0.145,
+     "token": "25691360239855714899231686615716204229227403619141646507802088908645232455698",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.27,
+      "best_bid": 0.02,
+      "usd_at_best": 5.4,
+      "usd_within_1c": 5.4,
+      "usd_within_2c": 5.4,
+      "avg_fill_10": 0.3206,
+      "avg_fill_25": 0.3919,
+      "bid_usd_within_2c": 1.15
+     }
+    },
+    {
+     "label": "100-119",
+     "lo": 100,
+     "hi": 119,
+     "market": 0.535,
+     "token": "38382946671996131781418114092991591803214948434564238927954580556580689955485",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.71,
+      "best_bid": 0.34,
+      "usd_at_best": 7.1,
+      "usd_within_1c": 89.18,
+      "usd_within_2c": 89.18,
+      "avg_fill_10": 0.7129,
+      "avg_fill_25": 0.7171,
+      "bid_usd_within_2c": 6.8
+     }
+    },
+    {
+     "label": "120-139",
+     "lo": 120,
+     "hi": 139,
+     "market": 0.28,
+     "token": "7710743222801658684667644243647833696654364048210952982404433214957010852778",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.29,
+      "best_bid": 0.27,
+      "usd_at_best": 11.6,
+      "usd_within_1c": 53.57,
+      "usd_within_2c": 53.57,
+      "avg_fill_10": 0.29,
+      "avg_fill_25": 0.2953,
+      "bid_usd_within_2c": 35.06
+     }
+    },
+    {
+     "label": "140-159",
+     "lo": 140,
+     "hi": 159,
+     "market": 0.135,
+     "token": "20758528405083229638075537624185919464719136412440316750273692741122495293282",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.48,
+      "best_bid": null,
+      "usd_at_best": 4.8,
+      "usd_within_1c": 8.23,
+      "usd_within_2c": 28.23,
+      "avg_fill_10": 0.4869,
+      "avg_fill_25": 0.4947,
+      "bid_usd_within_2c": 0.0
+     }
+    },
+    {
+     "label": "160-179",
+     "lo": 160,
+     "hi": 179,
+     "market": 0.23,
+     "token": "62395562450598350386286446976513275612790092803268564657619343202491683828992",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.36,
+      "best_bid": null,
+      "usd_at_best": 3.6,
+      "usd_within_1c": 11.0,
+      "usd_within_2c": 11.0,
+      "avg_fill_10": 0.3663,
+      "avg_fill_25": 0.4264,
+      "bid_usd_within_2c": 0.0
+     }
+    },
+    {
+     "label": "180-199",
+     "lo": 180,
+     "hi": 199,
+     "market": 0.2155,
+     "token": "3322081824970936259491771417799685403563261554989013809032488978790581075315",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.767,
+      "best_bid": null,
+      "usd_at_best": 23.01,
+      "usd_within_1c": 47.61,
+      "usd_within_2c": 141.9,
+      "avg_fill_10": 0.767,
+      "avg_fill_25": 0.7671,
+      "bid_usd_within_2c": 0.0
+     }
+    },
+    {
+     "label": "200+",
+     "lo": 200,
+     "hi": null,
+     "market": 0.194,
+     "token": "2920534579649458587817790428194986745672607193233497162932691388749288204866",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.386,
+      "best_bid": 0.001,
+      "usd_at_best": 3.86,
+      "usd_within_1c": 11.6,
+      "usd_within_2c": 11.6,
+      "avg_fill_10": 0.3866,
+      "avg_fill_25": 0.5183,
+      "bid_usd_within_2c": 0.07
+     }
+    }
+   ]
+  },
+  {
+   "id": "5f88ce33-8d8a-4422-91f9-bdd00c6baa44",
+   "handle": "ZelenskyyUa",
+   "name": "Volodymyr Zelenskyy / Володимир Зеленський",
+   "title": "Zelenskyy # posts October 2 - October 9, 2026?",
+   "slug": "zelenskyy-of-tweets-october-2-october-9-2026",
+   "start": "2026-10-02T16:00:00.000Z",
+   "end": "2026-10-09T15:59:59.000Z",
+   "counterTotal": 2,
+   "counterStats": {
+    "pace": 14,
+    "percentComplete": 14,
+    "daysRemaining": 7
+   },
+   "histCount": 2,
+   "volume": 3478.8173429999997,
+   "liquidity": 4543.37835,
+   "ranges": [
+    {
+     "label": "<20",
+     "lo": null,
+     "hi": 19,
+     "market": 0.036,
+     "token": "11157146780159159451720753675097774605193654978859387874468569534131742467869",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.071,
+      "best_bid": 0.001,
+      "usd_at_best": 3.86,
+      "usd_within_1c": 3.86,
+      "usd_within_2c": 3.86,
+      "avg_fill_10": 0.1292,
+      "avg_fill_25": 0.1962,
+      "bid_usd_within_2c": 0.05
+     }
+    },
+    {
+     "label": "20-39",
+     "lo": 20,
+     "hi": 39,
+     "market": 0.036,
+     "token": "84263994071999508264271323498391327778184587528191456265454974512276077891105",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.071,
+      "best_bid": 0.001,
+      "usd_at_best": 4.57,
+      "usd_within_1c": 4.57,
+      "usd_within_2c": 4.57,
+      "avg_fill_10": 0.1176,
+      "avg_fill_25": 0.1851,
+      "bid_usd_within_2c": 0.06
+     }
+    },
+    {
+     "label": "40-59",
+     "lo": 40,
+     "hi": 59,
+     "market": 0.101,
+     "token": "82612724193250493852970613944700758647914702367953055729112366931172570215240",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.199,
+      "best_bid": 0.003,
+      "usd_at_best": 3.38,
+      "usd_within_1c": 63.38,
+      "usd_within_2c": 63.38,
+      "avg_fill_10": 0.1997,
+      "avg_fill_25": 0.1999,
+      "bid_usd_within_2c": 0.67
+     }
+    },
+    {
+     "label": "60-79",
+     "lo": 60,
+     "hi": 79,
+     "market": 0.19,
+     "token": "83808978363747673648767351098996676632099549420457839634471633921945315916504",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.38,
+      "best_bid": null,
+      "usd_at_best": 19.76,
+      "usd_within_1c": 27.56,
+      "usd_within_2c": 53.56,
+      "avg_fill_10": 0.38,
+      "avg_fill_25": 0.3821,
+      "bid_usd_within_2c": 0.0
+     }
+    },
+    {
+     "label": "80-99",
+     "lo": 80,
+     "hi": 99,
+     "market": 0.455,
+     "token": "55461591401639746719054041914296923744108946094198624475335583882796680639024",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.48,
+      "best_bid": 0.43,
+      "usd_at_best": 131.9,
+      "usd_within_1c": 272.04,
+      "usd_within_2c": 272.04,
+      "avg_fill_10": 0.48,
+      "avg_fill_25": 0.48,
+      "bid_usd_within_2c": 216.33
+     }
+    },
+    {
+     "label": "100-119",
+     "lo": 100,
+     "hi": 119,
+     "market": 0.28,
+     "token": "102579194410963018154479405967846563633074319058126971879978532494451354961962",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.35,
+      "best_bid": 0.21,
+      "usd_at_best": 4.22,
+      "usd_within_1c": 4.22,
+      "usd_within_2c": 4.22,
+      "avg_fill_10": 0.454,
+      "avg_fill_25": 0.522,
+      "bid_usd_within_2c": 19.72
+     }
+    },
+    {
+     "label": "120-139",
+     "lo": 120,
+     "hi": 139,
+     "market": 0.0395,
+     "token": "42855081030168894230859040204055150980185042566109220214011690396659695605228",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.055,
+      "best_bid": 0.002,
+      "usd_at_best": 4.58,
+      "usd_within_1c": 4.58,
+      "usd_within_2c": 4.58,
+      "avg_fill_10": 0.0989,
+      "avg_fill_25": 0.1905,
+      "bid_usd_within_2c": 0.43
+     }
+    },
+    {
+     "label": "140-159",
+     "lo": 140,
+     "hi": 159,
+     "market": 0.0055,
+     "token": "28813555986522104784498819271289360824558345108897161719706799578665415103920",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.01,
+      "best_bid": 0.001,
+      "usd_at_best": 0.41,
+      "usd_within_1c": 0.41,
+      "usd_within_2c": 0.65,
+      "avg_fill_10": 0.1353,
+      "avg_fill_25": 0.2314,
+      "bid_usd_within_2c": 0.03
+     }
+    },
+    {
+     "label": "160-179",
+     "lo": 160,
+     "hi": 179,
+     "market": 0.036,
+     "token": "94683744547908274200057029024265194538301053488550391279420077011362952345612",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.071,
+      "best_bid": 0.001,
+      "usd_at_best": 4.92,
+      "usd_within_1c": 4.92,
+      "usd_within_2c": 4.92,
+      "avg_fill_10": 0.1185,
+      "avg_fill_25": 0.21,
+      "bid_usd_within_2c": 0.06
+     }
+    },
+    {
+     "label": "180-199",
+     "lo": 180,
+     "hi": 199,
+     "market": 0.036,
+     "token": "75543680923577781502512531681404401636079371453084651912085946288048345416723",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.071,
+      "best_bid": 0.001,
+      "usd_at_best": 5.68,
+      "usd_within_1c": 5.68,
+      "usd_within_2c": 5.68,
+      "avg_fill_10": 0.1062,
+      "avg_fill_25": 0.1892,
+      "bid_usd_within_2c": 0.06
+     }
+    },
+    {
+     "label": "200+",
+     "lo": 200,
+     "hi": null,
+     "market": 0.036,
+     "token": "102276486303268631154121499790960064632124425617035649560228560781586018455828",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.071,
+      "best_bid": 0.001,
+      "usd_at_best": 4.92,
+      "usd_within_1c": 4.92,
+      "usd_within_2c": 4.92,
+      "avg_fill_10": 0.117,
+      "avg_fill_25": 0.2023,
+      "bid_usd_within_2c": 0.06
+     }
+    }
+   ]
+  },
+  {
+   "id": "1f1a0254-7f71-447a-9a10-9be2b8d016de",
+   "handle": "realDonaldTrump",
+   "name": "Donald J. Trump",
+   "title": "Donald Trump # Truth Social posts October 2 - October 9, 2026?",
+   "slug": "donald-trump-of-truth-social-posts-october-2-october-9-2026",
+   "start": "2026-10-02T16:00:00.000Z",
+   "end": "2026-10-09T15:59:59.000Z",
+   "counterTotal": 0,
+   "counterStats": {
+    "pace": 0,
+    "percentComplete": 14,
+    "daysRemaining": 7
+   },
+   "histCount": 0,
+   "volume": 5196.069843,
+   "liquidity": 4083.47793,
+   "ranges": [
+    {
+     "label": "<20",
+     "lo": null,
+     "hi": 19,
+     "market": 0.0355,
+     "token": "4932742634776461352101952190209192420709367347352959820953256130799631928400",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.07,
+      "best_bid": 0.001,
+      "usd_at_best": 8.75,
+      "usd_within_1c": 8.75,
+      "usd_within_2c": 8.75,
+      "avg_fill_10": 0.078,
+      "avg_fill_25": 0.1505,
+      "bid_usd_within_2c": 0.03
+     }
+    },
+    {
+     "label": "20-39",
+     "lo": 20,
+     "hi": 39,
+     "market": 0.03,
+     "token": "62840846161945605765250250659301928207161386623885052894963487302965112304314",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.059,
+      "best_bid": 0.001,
+      "usd_at_best": 1.18,
+      "usd_within_1c": 1.18,
+      "usd_within_2c": 1.18,
+      "avg_fill_10": 0.1504,
+      "avg_fill_25": 0.1833,
+      "bid_usd_within_2c": 0.03
+     }
+    },
+    {
+     "label": "40-59",
+     "lo": 40,
+     "hi": 59,
+     "market": 0.05,
+     "token": "68049457016739146602685427011397012211792814306071981250479323098146586385630",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.095,
+      "best_bid": 0.002,
+      "usd_at_best": 2.47,
+      "usd_within_1c": 7.43,
+      "usd_within_2c": 7.43,
+      "avg_fill_10": 0.1221,
+      "avg_fill_25": 0.216,
+      "bid_usd_within_2c": 0.46
+     }
+    },
+    {
+     "label": "60-79",
+     "lo": 60,
+     "hi": 79,
+     "market": 0.0355,
+     "token": "88279423266375493142670146479847033748006412421017255895111404201862671875694",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.07,
+      "best_bid": 0.001,
+      "usd_at_best": 1.75,
+      "usd_within_1c": 1.75,
+      "usd_within_2c": 1.75,
+      "avg_fill_10": 0.2303,
+      "avg_fill_25": 0.3252,
+      "bid_usd_within_2c": 0.02
+     }
+    },
+    {
+     "label": "80-99",
+     "lo": 80,
+     "hi": 99,
+     "market": 0.12,
+     "token": "6947999567433239861785606271474108231123925485993221735578010282883006628110",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.16,
+      "best_bid": 0.08,
+      "usd_at_best": 16.0,
+      "usd_within_1c": 16.0,
+      "usd_within_2c": 16.0,
+      "avg_fill_10": 0.16,
+      "avg_fill_25": 0.1926,
+      "bid_usd_within_2c": 7.23
+     }
+    },
+    {
+     "label": "100-119",
+     "lo": 100,
+     "hi": 119,
+     "market": 0.205,
+     "token": "15371436538133237079912319380274876272783723048830068905226433426873809058832",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.23,
+      "best_bid": 0.16,
+      "usd_at_best": 4.6,
+      "usd_within_1c": 6.04,
+      "usd_within_2c": 6.04,
+      "avg_fill_10": 0.2551,
+      "avg_fill_25": 0.2863,
+      "bid_usd_within_2c": 3.63
+     }
+    },
+    {
+     "label": "120-139",
+     "lo": 120,
+     "hi": 139,
+     "market": 0.135,
+     "token": "69805618457403857571312383745441212820753249059418438719778595839480331694425",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.15,
+      "best_bid": 0.12,
+      "usd_at_best": 7.51,
+      "usd_within_1c": 31.79,
+      "usd_within_2c": 31.79,
+      "avg_fill_10": 0.1524,
+      "avg_fill_25": 0.1569,
+      "bid_usd_within_2c": 26.73
+     }
+    },
+    {
+     "label": "140-159",
+     "lo": 140,
+     "hi": 159,
+     "market": 0.16,
+     "token": "26964667592401488093665421616381061151711407378315644559457551606891734390562",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.18,
+      "best_bid": 0.14,
+      "usd_at_best": 7.02,
+      "usd_within_1c": 26.02,
+      "usd_within_2c": 76.9,
+      "avg_fill_10": 0.1829,
+      "avg_fill_25": 0.1871,
+      "bid_usd_within_2c": 88.76
+     }
+    },
+    {
+     "label": "160-179",
+     "lo": 160,
+     "hi": 179,
+     "market": 0.14,
+     "token": "113905848360098245401085180348600280622796609445782173572769069621106886449584",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.18,
+      "best_bid": 0.1,
+      "usd_at_best": 4.68,
+      "usd_within_1c": 31.53,
+      "usd_within_2c": 31.53,
+      "avg_fill_10": 0.1852,
+      "avg_fill_25": 0.188,
+      "bid_usd_within_2c": 16.44
+     }
+    },
+    {
+     "label": "180-199",
+     "lo": 180,
+     "hi": 199,
+     "market": 0.12,
+     "token": "68085681083054783841999592097021810533944760773078243870129189916426202765068",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.17,
+      "best_bid": 0.07,
+      "usd_at_best": 20.83,
+      "usd_within_1c": 20.83,
+      "usd_within_2c": 20.83,
+      "avg_fill_10": 0.17,
+      "avg_fill_25": 0.1787,
+      "bid_usd_within_2c": 10.62
+     }
+    },
+    {
+     "label": "200+",
+     "lo": 200,
+     "hi": null,
+     "market": 0.225,
+     "token": "83107854039119506604778363529113921322993890641837698626333016850303448422365",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.25,
+      "best_bid": 0.19,
+      "usd_at_best": 34.0,
+      "usd_within_1c": 73.94,
+      "usd_within_2c": 73.94,
+      "avg_fill_10": 0.25,
+      "avg_fill_25": 0.25,
+      "bid_usd_within_2c": 54.97
      }
     }
    ]
@@ -2744,15 +2571,15 @@
    "slug": "white-house-of-tweets-september-29-october-6-2026",
    "start": "2026-09-29T16:00:00.000Z",
    "end": "2026-10-06T15:59:59.000Z",
-   "counterTotal": 143,
+   "counterTotal": 165,
    "counterStats": {
-    "pace": 334,
-    "percentComplete": 43,
-    "daysRemaining": 5
+    "pace": 289,
+    "percentComplete": 57,
+    "daysRemaining": 4
    },
-   "histCount": 143,
+   "histCount": 165,
    "volume": 4166.274004,
-   "liquidity": 2938.33604,
+   "liquidity": 9205.37669,
    "ranges": [
     {
      "label": "<20",
@@ -2821,7 +2648,7 @@
      "label": "140-159",
      "lo": 140,
      "hi": 159,
-     "market": 0.002,
+     "market": 0.0005,
      "token": "28029373951650681338541896414135437048307074680872367170395313759700397435520",
      "closed": false,
      "depth": null
@@ -2839,17 +2666,17 @@
      "label": "180-199",
      "lo": 180,
      "hi": 199,
-     "market": 0.0145,
+     "market": 0.018,
      "token": "54410289261354580040173052657967776114905809955209186610551067030603309676354",
      "closed": false,
      "depth": {
-      "best_ask": 0.028,
+      "best_ask": 0.036,
       "best_bid": null,
-      "usd_at_best": 0.84,
-      "usd_within_1c": 2.66,
-      "usd_within_2c": 2.66,
-      "avg_fill_10": 0.0588,
-      "avg_fill_25": 0.0799,
+      "usd_at_best": 3.06,
+      "usd_within_1c": 8.47,
+      "usd_within_2c": 12.64,
+      "avg_fill_10": 0.0415,
+      "avg_fill_25": 0.0606,
       "bid_usd_within_2c": 0.0
      }
     },
@@ -2857,7 +2684,7 @@
      "label": "200+",
      "lo": 200,
      "hi": null,
-     "market": 0.987,
+     "market": 0.995,
      "token": "108289882884453575858821102175721056979741359375527224107939056497520846276831",
      "closed": false,
      "depth": null
@@ -2872,15 +2699,15 @@
    "slug": "zelenskyy-of-tweets-september-29-october-6-2026",
    "start": "2026-09-29T16:00:00.000Z",
    "end": "2026-10-06T15:59:59.000Z",
-   "counterTotal": 49,
+   "counterTotal": 55,
    "counterStats": {
-    "pace": 114,
-    "percentComplete": 43,
-    "daysRemaining": 5
+    "pace": 96,
+    "percentComplete": 57,
+    "daysRemaining": 4
    },
-   "histCount": 49,
-   "volume": 4628.423785999999,
-   "liquidity": 845.18672,
+   "histCount": 55,
+   "volume": 5005.3371019999995,
+   "liquidity": 1033.25629,
    "ranges": [
     {
      "label": "<20",
@@ -2904,145 +2731,136 @@
      "label": "40-59",
      "lo": 40,
      "hi": 59,
-     "market": 0.071,
+     "market": 0.011,
      "token": "14832849441772291439732894788515202570242118776200066328641177777334601103670",
      "closed": false,
      "depth": {
       "best_ask": 0.021,
-      "best_bid": 0.002,
+      "best_bid": 0.001,
       "usd_at_best": 0.14,
       "usd_within_1c": 0.14,
       "usd_within_2c": 0.14,
-      "avg_fill_10": 0.3151,
-      "avg_fill_25": 0.4879,
-      "bid_usd_within_2c": 0.18
+      "avg_fill_10": 0.2431,
+      "avg_fill_25": 0.3828,
+      "bid_usd_within_2c": 0.09
      }
     },
     {
      "label": "60-79",
      "lo": 60,
      "hi": 79,
-     "market": 0.17,
+     "market": 0.15,
      "token": "71353353893448044690469913868765682891398184682221028376342920627491150821162",
      "closed": false,
      "depth": {
-      "best_ask": 0.64,
-      "best_bid": 0.02,
-      "usd_at_best": 16.64,
-      "usd_within_1c": 16.64,
-      "usd_within_2c": 16.64,
-      "avg_fill_10": 0.64,
-      "avg_fill_25": 0.6497,
-      "bid_usd_within_2c": 0.51
+      "best_ask": 0.28,
+      "best_bid": 0.01,
+      "usd_at_best": 2.24,
+      "usd_within_1c": 2.24,
+      "usd_within_2c": 2.24,
+      "avg_fill_10": 0.3143,
+      "avg_fill_25": 0.3235,
+      "bid_usd_within_2c": 0.5
      }
     },
     {
      "label": "80-99",
      "lo": 80,
      "hi": 99,
-     "market": 0.39,
+     "market": 0.515,
      "token": "96716475944634975887438051472760755501564301022654449536550616014655492658997",
      "closed": false,
      "depth": {
       "best_ask": 0.59,
-      "best_bid": 0.28,
-      "usd_at_best": 18.29,
-      "usd_within_1c": 18.29,
-      "usd_within_2c": 18.29,
+      "best_bid": 0.42,
+      "usd_at_best": 11.8,
+      "usd_within_1c": 11.8,
+      "usd_within_2c": 16.68,
       "avg_fill_10": 0.59,
-      "avg_fill_25": 0.6388,
-      "bid_usd_within_2c": 7.28
+      "avg_fill_25": 0.6373,
+      "bid_usd_within_2c": 8.4
      }
     },
     {
      "label": "100-119",
      "lo": 100,
      "hi": 119,
-     "market": 0.3,
+     "market": 0.345,
      "token": "85380756749859076633260408715020484120623281041262476425334152707320149088510",
      "closed": false,
      "depth": {
-      "best_ask": 0.58,
-      "best_bid": 0.09,
-      "usd_at_best": 17.4,
-      "usd_within_1c": 17.4,
-      "usd_within_2c": 20.4,
-      "avg_fill_10": 0.58,
-      "avg_fill_25": 0.6053,
-      "bid_usd_within_2c": 5.65
+      "best_ask": 0.38,
+      "best_bid": 0.31,
+      "usd_at_best": 31.31,
+      "usd_within_1c": 31.31,
+      "usd_within_2c": 31.31,
+      "avg_fill_10": 0.38,
+      "avg_fill_25": 0.38,
+      "bid_usd_within_2c": 30.1
      }
     },
     {
      "label": "120-139",
      "lo": 120,
      "hi": 139,
-     "market": 0.1175,
+     "market": 0.079,
      "token": "77311657630257034492007956472776536227711838324839604349538528079975530066702",
      "closed": false,
      "depth": {
-      "best_ask": 0.179,
-      "best_bid": 0.004,
-      "usd_at_best": 2.69,
-      "usd_within_1c": 4.5,
-      "usd_within_2c": 4.5,
-      "avg_fill_10": 0.2781,
-      "avg_fill_25": 0.4471,
-      "bid_usd_within_2c": 4.28
+      "best_ask": 0.152,
+      "best_bid": 0.006,
+      "usd_at_best": 1.7,
+      "usd_within_1c": 1.7,
+      "usd_within_2c": 1.7,
+      "avg_fill_10": 0.2189,
+      "avg_fill_25": 0.3156,
+      "bid_usd_within_2c": 6.01
      }
     },
     {
      "label": "140-159",
      "lo": 140,
      "hi": 159,
-     "market": 0.006,
+     "market": 0.0055,
      "token": "57757216330378144302242702156244666418050677291584288122404170676183708688843",
      "closed": false,
      "depth": {
       "best_ask": 0.01,
-      "best_bid": 0.002,
+      "best_bid": 0.001,
       "usd_at_best": 0.12,
       "usd_within_1c": 0.12,
       "usd_within_2c": 0.12,
-      "avg_fill_10": 0.2123,
-      "avg_fill_25": 0.3629,
-      "bid_usd_within_2c": 0.91
+      "avg_fill_10": 0.1947,
+      "avg_fill_25": 0.3005,
+      "bid_usd_within_2c": 0.11
      }
     },
     {
      "label": "160-179",
      "lo": 160,
      "hi": 179,
-     "market": 0.0055,
+     "market": 0.005,
      "token": "82319887233937179018068736385458762489790208621187359694023604798079433251247",
      "closed": false,
      "depth": {
       "best_ask": 0.01,
-      "best_bid": 0.001,
+      "best_bid": null,
       "usd_at_best": 0.1,
       "usd_within_1c": 0.61,
       "usd_within_2c": 0.61,
-      "avg_fill_10": 0.103,
-      "avg_fill_25": 0.2124,
-      "bid_usd_within_2c": 0.01
+      "avg_fill_10": 0.096,
+      "avg_fill_25": 0.1808,
+      "bid_usd_within_2c": 0.0
      }
     },
     {
      "label": "180-199",
      "lo": 180,
      "hi": 199,
-     "market": 0.0055,
+     "market": 0.0005,
      "token": "22992161811480671636589512599113366655583725442679421249863512039985982706685",
      "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": 0.001,
-      "usd_at_best": 0.2,
-      "usd_within_1c": 0.2,
-      "usd_within_2c": 0.2,
-      "avg_fill_10": 0.2125,
-      "avg_fill_25": 0.366,
-      "bid_usd_within_2c": 0.01
-     }
+     "depth": null
     },
     {
      "label": "200+",
@@ -3057,9 +2875,9 @@
       "usd_at_best": 0.12,
       "usd_within_1c": 0.12,
       "usd_within_2c": 0.36,
-      "avg_fill_10": 0.2636,
-      "avg_fill_25": 0.428,
-      "bid_usd_within_2c": 0.2
+      "avg_fill_10": 0.2149,
+      "avg_fill_25": 0.3561,
+      "bid_usd_within_2c": 0.18
      }
     }
    ]
@@ -3072,75 +2890,66 @@
    "slug": "nyc-mayor-of-tweets-september-29-october-6-2026",
    "start": "2026-09-29T16:00:00.000Z",
    "end": "2026-10-06T15:59:59.000Z",
-   "counterTotal": 14,
+   "counterTotal": 15,
    "counterStats": {
-    "pace": 33,
-    "percentComplete": 43,
-    "daysRemaining": 5
+    "pace": 26,
+    "percentComplete": 57,
+    "daysRemaining": 4
    },
-   "histCount": 14,
-   "volume": 3141.918337,
-   "liquidity": 12735.47067,
+   "histCount": 15,
+   "volume": 3317.901337,
+   "liquidity": 5078.52047,
    "ranges": [
     {
      "label": "<20",
      "lo": null,
      "hi": 19,
-     "market": 0.0055,
+     "market": 0.0025,
      "token": "20288217178533991241983460054596542596472138168746089474143366018664289643302",
      "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": 0.001,
-      "usd_at_best": 0.72,
-      "usd_within_1c": 1.37,
-      "usd_within_2c": 1.97,
-      "avg_fill_10": 0.0436,
-      "avg_fill_25": 0.0633,
-      "bid_usd_within_2c": 0.17
-     }
+     "depth": null
     },
     {
      "label": "20-39",
      "lo": 20,
      "hi": 39,
-     "market": 0.895,
+     "market": 0.91,
      "token": "78152025776187845896220894270983858886185057480942390537227635198103060577332",
      "closed": false,
      "depth": {
-      "best_ask": 0.91,
-      "best_bid": 0.88,
-      "usd_at_best": 640.63,
-      "usd_within_1c": 783.23,
-      "usd_within_2c": 836.19,
-      "avg_fill_10": 0.91,
-      "avg_fill_25": 0.91,
-      "bid_usd_within_2c": 680.85
+      "best_ask": 0.98,
+      "best_bid": 0.87,
+      "usd_at_best": 56.78,
+      "usd_within_1c": 265.18,
+      "usd_within_2c": 265.18,
+      "avg_fill_10": 0.98,
+      "avg_fill_25": 0.98,
+      "bid_usd_within_2c": 38.46
      }
     },
     {
      "label": "40-59",
      "lo": 40,
      "hi": 59,
-     "market": 0.09,
+     "market": 0.085,
      "token": "73287152383123391605929925258491967869422926317290834784930999216139007341451",
      "closed": false,
      "depth": {
-      "best_ask": 0.1,
-      "best_bid": 0.08,
-      "usd_at_best": 66.87,
-      "usd_within_1c": 66.87,
-      "usd_within_2c": 83.09,
-      "avg_fill_10": 0.1,
-      "avg_fill_25": 0.1,
-      "bid_usd_within_2c": 83.46
+      "best_ask": 0.14,
+      "best_bid": 0.03,
+      "usd_at_best": 2.8,
+      "usd_within_1c": 11.27,
+      "usd_within_2c": 11.27,
+      "avg_fill_10": 0.1471,
+      "avg_fill_25": 0.1705,
+      "bid_usd_within_2c": 3.86
      }
     },
     {
      "label": "60-79",
      "lo": 60,
      "hi": 79,
-     "market": 0.004,
+     "market": 0.003,
      "token": "93830500860531557217436965520456178974397001026982205771231454481891268385303",
      "closed": false,
      "depth": null
@@ -3155,11 +2964,11 @@
      "depth": {
       "best_ask": 0.01,
       "best_bid": 0.002,
-      "usd_at_best": 0.92,
-      "usd_within_1c": 1.22,
-      "usd_within_2c": 1.22,
-      "avg_fill_10": 0.0483,
-      "avg_fill_25": 0.0681,
+      "usd_at_best": 0.91,
+      "usd_within_1c": 1.21,
+      "usd_within_2c": 1.21,
+      "avg_fill_10": 0.0601,
+      "avg_fill_25": 0.1003,
       "bid_usd_within_2c": 0.04
      }
     },
@@ -3176,8 +2985,8 @@
       "usd_at_best": 0.92,
       "usd_within_1c": 1.22,
       "usd_within_2c": 1.22,
-      "avg_fill_10": 0.0474,
-      "avg_fill_25": 0.0661,
+      "avg_fill_10": 0.0593,
+      "avg_fill_25": 0.0964,
       "bid_usd_within_2c": 0.0
      }
     },
@@ -3194,8 +3003,8 @@
       "usd_at_best": 0.92,
       "usd_within_1c": 1.22,
       "usd_within_2c": 1.22,
-      "avg_fill_10": 0.0464,
-      "avg_fill_25": 0.064,
+      "avg_fill_10": 0.0595,
+      "avg_fill_25": 0.098,
       "bid_usd_within_2c": 0.0
      }
     },
@@ -3212,8 +3021,8 @@
       "usd_at_best": 0.92,
       "usd_within_1c": 1.22,
       "usd_within_2c": 1.22,
-      "avg_fill_10": 0.0485,
-      "avg_fill_25": 0.0686,
+      "avg_fill_10": 0.0595,
+      "avg_fill_25": 0.0998,
       "bid_usd_within_2c": 0.0
      }
     },
@@ -3230,8 +3039,8 @@
       "usd_at_best": 0.67,
       "usd_within_1c": 0.67,
       "usd_within_2c": 0.97,
-      "avg_fill_10": 0.0571,
-      "avg_fill_25": 0.0742,
+      "avg_fill_10": 0.0758,
+      "avg_fill_25": 0.1154,
       "bid_usd_within_2c": 0.0
      }
     },
@@ -3248,8 +3057,8 @@
       "usd_at_best": 0.87,
       "usd_within_1c": 2.13,
       "usd_within_2c": 2.43,
-      "avg_fill_10": 0.038,
-      "avg_fill_25": 0.0579,
+      "avg_fill_10": 0.0449,
+      "avg_fill_25": 0.0839,
       "bid_usd_within_2c": 0.0
      }
     },
@@ -3266,8 +3075,8 @@
       "usd_at_best": 0.87,
       "usd_within_1c": 2.13,
       "usd_within_2c": 2.43,
-      "avg_fill_10": 0.0383,
-      "avg_fill_25": 0.0586,
+      "avg_fill_10": 0.0449,
+      "avg_fill_25": 0.0808,
       "bid_usd_within_2c": 0.0
      }
     }
@@ -3281,15 +3090,15 @@
    "slug": "ted-cruz-of-tweets-september-29-october-6-2026",
    "start": "2026-09-29T16:00:00.000Z",
    "end": "2026-10-06T15:59:59.000Z",
-   "counterTotal": 52,
+   "counterTotal": 53,
    "counterStats": {
-    "pace": 121,
-    "percentComplete": 43,
-    "daysRemaining": 5
+    "pace": 93,
+    "percentComplete": 57,
+    "daysRemaining": 4
    },
-   "histCount": 52,
-   "volume": 2407.439928,
-   "liquidity": 1475.86679,
+   "histCount": 53,
+   "volume": 2409.441928,
+   "liquidity": 4155.04268,
    "ranges": [
     {
      "label": "<20",
@@ -3313,53 +3122,44 @@
      "label": "40-59",
      "lo": 40,
      "hi": 59,
-     "market": 0.0055,
+     "market": 0.003,
      "token": "112271272213329155428807727565431223718401305443089077746560476485208319509438",
      "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": 0.001,
-      "usd_at_best": 0.24,
-      "usd_within_1c": 0.37,
-      "usd_within_2c": 0.37,
-      "avg_fill_10": 0.1867,
-      "avg_fill_25": 0.3045,
-      "bid_usd_within_2c": 0.14
-     }
+     "depth": null
     },
     {
      "label": "60-79",
      "lo": 60,
      "hi": 79,
-     "market": 0.2005,
+     "market": 0.225,
      "token": "15384442556875159042641793785279538914982573624202356269064926223359424310733",
      "closed": false,
      "depth": {
-      "best_ask": 0.399,
-      "best_bid": 0.002,
-      "usd_at_best": 3.99,
-      "usd_within_1c": 3.99,
-      "usd_within_2c": 3.99,
-      "avg_fill_10": 0.4476,
-      "avg_fill_25": 0.4705,
-      "bid_usd_within_2c": 0.42
+      "best_ask": 0.449,
+      "best_bid": 0.001,
+      "usd_at_best": 17.96,
+      "usd_within_1c": 22.46,
+      "usd_within_2c": 22.46,
+      "avg_fill_10": 0.449,
+      "avg_fill_25": 0.4523,
+      "bid_usd_within_2c": 0.02
      }
     },
     {
      "label": "80-99",
      "lo": 80,
      "hi": 99,
-     "market": 0.295,
+     "market": 0.265,
      "token": "88141153829292121614860662748802489514697837008042843069689184253835408911140",
      "closed": false,
      "depth": {
-      "best_ask": 0.55,
+      "best_ask": 0.49,
       "best_bid": 0.04,
-      "usd_at_best": 22.0,
-      "usd_within_1c": 33.2,
-      "usd_within_2c": 33.2,
-      "avg_fill_10": 0.55,
-      "avg_fill_25": 0.5512,
+      "usd_at_best": 19.6,
+      "usd_within_1c": 39.6,
+      "usd_within_2c": 39.6,
+      "avg_fill_10": 0.49,
+      "avg_fill_25": 0.4921,
       "bid_usd_within_2c": 2.15
      }
     },
@@ -3367,36 +3167,36 @@
      "label": "100-119",
      "lo": 100,
      "hi": 119,
-     "market": 0.415,
+     "market": 0.43,
      "token": "68268253117334309705658851136443630235030519439547863091481795152443407355300",
      "closed": false,
      "depth": {
-      "best_ask": 0.45,
-      "best_bid": 0.38,
-      "usd_at_best": 106.2,
-      "usd_within_1c": 106.2,
-      "usd_within_2c": 106.2,
-      "avg_fill_10": 0.45,
-      "avg_fill_25": 0.45,
-      "bid_usd_within_2c": 79.72
+      "best_ask": 0.44,
+      "best_bid": 0.42,
+      "usd_at_best": 119.52,
+      "usd_within_1c": 157.18,
+      "usd_within_2c": 157.18,
+      "avg_fill_10": 0.44,
+      "avg_fill_25": 0.44,
+      "bid_usd_within_2c": 148.74
      }
     },
     {
      "label": "120-139",
      "lo": 120,
      "hi": 139,
-     "market": 0.23,
+     "market": 0.22,
      "token": "3213972475730280525659427883010511643023449727074298279850874901691444173217",
      "closed": false,
      "depth": {
-      "best_ask": 0.35,
-      "best_bid": 0.12,
-      "usd_at_best": 7.0,
-      "usd_within_1c": 7.0,
-      "usd_within_2c": 7.0,
-      "avg_fill_10": 0.3986,
-      "avg_fill_25": 0.495,
-      "bid_usd_within_2c": 5.11
+      "best_ask": 0.33,
+      "best_bid": 0.11,
+      "usd_at_best": 6.6,
+      "usd_within_1c": 6.6,
+      "usd_within_2c": 6.6,
+      "avg_fill_10": 0.3819,
+      "avg_fill_25": 0.4677,
+      "bid_usd_within_2c": 4.4
      }
     },
     {
@@ -3412,8 +3212,8 @@
       "usd_at_best": 3.5,
       "usd_within_1c": 3.5,
       "usd_within_2c": 3.5,
-      "avg_fill_10": 0.27,
-      "avg_fill_25": 0.3857,
+      "avg_fill_10": 0.2556,
+      "avg_fill_25": 0.3492,
       "bid_usd_within_2c": 0.51
      }
     },
@@ -3430,8 +3230,8 @@
       "usd_at_best": 4.5,
       "usd_within_1c": 4.5,
       "usd_within_2c": 8.5,
-      "avg_fill_10": 0.2086,
-      "avg_fill_25": 0.3232,
+      "avg_fill_10": 0.2072,
+      "avg_fill_25": 0.3091,
       "bid_usd_within_2c": 0.15
      }
     },
@@ -3448,8 +3248,8 @@
       "usd_at_best": 1.85,
       "usd_within_1c": 1.85,
       "usd_within_2c": 1.85,
-      "avg_fill_10": 0.2459,
-      "avg_fill_25": 0.3597,
+      "avg_fill_10": 0.2543,
+      "avg_fill_25": 0.3808,
       "bid_usd_within_2c": 0.01
      }
     },
@@ -3466,9 +3266,200 @@
       "usd_at_best": 0.22,
       "usd_within_1c": 0.42,
       "usd_within_2c": 0.72,
-      "avg_fill_10": 0.167,
-      "avg_fill_25": 0.2829,
+      "avg_fill_10": 0.1702,
+      "avg_fill_25": 0.2924,
       "bid_usd_within_2c": 0.02
+     }
+    }
+   ]
+  },
+  {
+   "id": "6ae38c39-2b4f-4f29-919a-b2a96fe65961",
+   "handle": "realDonaldTrump",
+   "name": "Donald J. Trump",
+   "title": "Donald Trump # Truth Social posts September 29 - October 6, 2026?",
+   "slug": "donald-trump-of-truth-social-posts-september-29-october-6-2026",
+   "start": "2026-09-29T16:00:00.000Z",
+   "end": "2026-10-06T15:59:59.000Z",
+   "counterTotal": 59,
+   "counterStats": {
+    "pace": 103,
+    "percentComplete": 57,
+    "daysRemaining": 4
+   },
+   "histCount": 59,
+   "volume": 25367.70263,
+   "liquidity": 9035.47566,
+   "ranges": [
+    {
+     "label": "<20",
+     "lo": null,
+     "hi": 19,
+     "market": 0.0,
+     "token": "82957672654790270895687111829896854022365968253662335238771271384802372663313",
+     "closed": true,
+     "depth": null
+    },
+    {
+     "label": "20-39",
+     "lo": 20,
+     "hi": 39,
+     "market": 0.0,
+     "token": "94508343874746934739838637859458804305317626171950225373162657769442225795215",
+     "closed": true,
+     "depth": null
+    },
+    {
+     "label": "40-59",
+     "lo": 40,
+     "hi": 59,
+     "market": 0.0005,
+     "token": "77991944857158734392026161890970870264972559025441123675219891410949271023767",
+     "closed": false,
+     "depth": null
+    },
+    {
+     "label": "60-79",
+     "lo": 60,
+     "hi": 79,
+     "market": 0.016,
+     "token": "40140556807997401646718010299453324710531850569450353209257394106328796681251",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.03,
+      "best_bid": 0.001,
+      "usd_at_best": 1.0,
+      "usd_within_1c": 2.14,
+      "usd_within_2c": 2.14,
+      "avg_fill_10": 0.076,
+      "avg_fill_25": 0.1213,
+      "bid_usd_within_2c": 0.02
+     }
+    },
+    {
+     "label": "80-99",
+     "lo": 80,
+     "hi": 99,
+     "market": 0.0165,
+     "token": "42824266987346629582699069557462744412458264453438461808242989056755638783753",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.03,
+      "best_bid": 0.003,
+      "usd_at_best": 0.57,
+      "usd_within_1c": 0.57,
+      "usd_within_2c": 0.78,
+      "avg_fill_10": 0.0896,
+      "avg_fill_25": 0.135,
+      "bid_usd_within_2c": 0.95
+     }
+    },
+    {
+     "label": "100-119",
+     "lo": 100,
+     "hi": 119,
+     "market": 0.1,
+     "token": "4881153282568550287178426559482221632589843017378385893190430531883200535717",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.12,
+      "best_bid": 0.08,
+      "usd_at_best": 83.82,
+      "usd_within_1c": 112.42,
+      "usd_within_2c": 112.42,
+      "avg_fill_10": 0.12,
+      "avg_fill_25": 0.12,
+      "bid_usd_within_2c": 13.38
+     }
+    },
+    {
+     "label": "120-139",
+     "lo": 120,
+     "hi": 139,
+     "market": 0.135,
+     "token": "17013979624617017752032711786662186391403509957562995963743250041054769833902",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.17,
+      "best_bid": 0.11,
+      "usd_at_best": 4.03,
+      "usd_within_1c": 4.03,
+      "usd_within_2c": 8.78,
+      "avg_fill_10": 0.1825,
+      "avg_fill_25": 0.1955,
+      "bid_usd_within_2c": 1.1
+     }
+    },
+    {
+     "label": "140-159",
+     "lo": 140,
+     "hi": 159,
+     "market": 0.195,
+     "token": "97942935418228454579213386342168178601873374070607106354685287690630475240260",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.21,
+      "best_bid": 0.18,
+      "usd_at_best": 6.3,
+      "usd_within_1c": 168.16,
+      "usd_within_2c": 168.16,
+      "avg_fill_10": 0.2136,
+      "avg_fill_25": 0.2174,
+      "bid_usd_within_2c": 118.07
+     }
+    },
+    {
+     "label": "160-179",
+     "lo": 160,
+     "hi": 179,
+     "market": 0.185,
+     "token": "62647046365895190844995790490658017017996315383411131608676087468710063046394",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.19,
+      "best_bid": 0.17,
+      "usd_at_best": 20.14,
+      "usd_within_1c": 46.11,
+      "usd_within_2c": 46.11,
+      "avg_fill_10": 0.19,
+      "avg_fill_25": 0.1919,
+      "bid_usd_within_2c": 44.14
+     }
+    },
+    {
+     "label": "180-199",
+     "lo": 180,
+     "hi": 199,
+     "market": 0.185,
+     "token": "69590856292634474236652608702097104264209897141469455484220900796913826755708",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.2,
+      "best_bid": 0.17,
+      "usd_at_best": 23.29,
+      "usd_within_1c": 23.29,
+      "usd_within_2c": 45.29,
+      "avg_fill_10": 0.2,
+      "avg_fill_25": 0.2012,
+      "bid_usd_within_2c": 197.78
+     }
+    },
+    {
+     "label": "200+",
+     "lo": 200,
+     "hi": null,
+     "market": 0.265,
+     "token": "60321079380581897869468912215090440818101349128314458858339316110208633515665",
+     "closed": false,
+     "depth": {
+      "best_ask": 0.29,
+      "best_bid": 0.24,
+      "usd_at_best": 53.13,
+      "usd_within_1c": 68.13,
+      "usd_within_2c": 68.13,
+      "avg_fill_10": 0.29,
+      "avg_fill_25": 0.29,
+      "bid_usd_within_2c": 95.04
      }
     }
    ]
@@ -3481,15 +3472,15 @@
    "slug": "cz-binance-of-tweets-september-29-october-6-2026",
    "start": "2026-09-29T16:00:00.000Z",
    "end": "2026-10-06T15:59:59.000Z",
-   "counterTotal": 7,
+   "counterTotal": 10,
    "counterStats": {
-    "pace": 16,
-    "percentComplete": 43,
-    "daysRemaining": 5
+    "pace": 18,
+    "percentComplete": 57,
+    "daysRemaining": 4
    },
-   "histCount": 7,
-   "volume": 2839.794716,
-   "liquidity": 2693.55851,
+   "histCount": 10,
+   "volume": 2848.224716,
+   "liquidity": 3792.52566,
    "ranges": [
     {
      "label": "<20",
@@ -3503,7 +3494,7 @@
       "best_bid": 0.29,
       "usd_at_best": 29.0,
       "usd_within_1c": 29.0,
-      "usd_within_2c": 47.0,
+      "usd_within_2c": 164.6,
       "avg_fill_10": 0.58,
       "avg_fill_25": 0.58,
       "bid_usd_within_2c": 1.45
@@ -3519,12 +3510,12 @@
      "depth": {
       "best_ask": 0.44,
       "best_bid": 0.42,
-      "usd_at_best": 54.56,
-      "usd_within_1c": 162.38,
-      "usd_within_2c": 172.04,
+      "usd_at_best": 69.52,
+      "usd_within_1c": 143.09,
+      "usd_within_2c": 152.75,
       "avg_fill_10": 0.44,
       "avg_fill_25": 0.44,
-      "bid_usd_within_2c": 157.54
+      "bid_usd_within_2c": 176.07
      }
     },
     {
@@ -3537,11 +3528,11 @@
      "depth": {
       "best_ask": 0.07,
       "best_bid": 0.02,
-      "usd_at_best": 1.75,
-      "usd_within_1c": 2.55,
-      "usd_within_2c": 2.55,
-      "avg_fill_10": 0.194,
-      "avg_fill_25": 0.2953,
+      "usd_at_best": 2.45,
+      "usd_within_1c": 3.25,
+      "usd_within_2c": 3.25,
+      "avg_fill_10": 0.1637,
+      "avg_fill_25": 0.259,
       "bid_usd_within_2c": 0.15
      }
     },
@@ -3558,8 +3549,8 @@
       "usd_at_best": 0.3,
       "usd_within_1c": 0.7,
       "usd_within_2c": 1.0,
-      "avg_fill_10": 0.0969,
-      "avg_fill_25": 0.1888,
+      "avg_fill_10": 0.0979,
+      "avg_fill_25": 0.1934,
       "bid_usd_within_2c": 0.02
      }
     },
@@ -3594,8 +3585,8 @@
       "usd_at_best": 0.75,
       "usd_within_1c": 1.15,
       "usd_within_2c": 1.9,
-      "avg_fill_10": 0.0572,
-      "avg_fill_25": 0.1224,
+      "avg_fill_10": 0.0574,
+      "avg_fill_25": 0.124,
       "bid_usd_within_2c": 0.0
      }
     },
@@ -3621,8 +3612,8 @@
       "usd_at_best": 1.08,
       "usd_within_1c": 1.47,
       "usd_within_2c": 2.41,
-      "avg_fill_10": 0.0493,
-      "avg_fill_25": 0.1079,
+      "avg_fill_10": 0.0494,
+      "avg_fill_25": 0.1087,
       "bid_usd_within_2c": 0.0
      }
     },
@@ -3639,8 +3630,8 @@
       "usd_at_best": 0.51,
       "usd_within_1c": 0.81,
       "usd_within_2c": 0.81,
-      "avg_fill_10": 0.1066,
-      "avg_fill_25": 0.2014,
+      "avg_fill_10": 0.1087,
+      "avg_fill_25": 0.2095,
       "bid_usd_within_2c": 0.0
      }
     },
@@ -3657,8 +3648,8 @@
       "usd_at_best": 0.75,
       "usd_within_1c": 0.75,
       "usd_within_2c": 1.5,
-      "avg_fill_10": 0.0769,
-      "avg_fill_25": 0.1572,
+      "avg_fill_10": 0.0775,
+      "avg_fill_25": 0.1603,
       "bid_usd_within_2c": 0.0
      }
     }
@@ -3675,12 +3666,12 @@
    "counterTotal": 0,
    "counterStats": {
     "pace": 0,
-    "percentComplete": 43,
-    "daysRemaining": 5
+    "percentComplete": 57,
+    "daysRemaining": 4
    },
    "histCount": 0,
-   "volume": 8429.905829,
-   "liquidity": 20021.9222,
+   "volume": 8454.371971,
+   "liquidity": 21829.03645,
    "ranges": [
     {
      "label": "<5",
@@ -3704,8 +3695,8 @@
       "usd_at_best": 0.36,
       "usd_within_1c": 0.36,
       "usd_within_2c": 2.08,
-      "avg_fill_10": 0.0377,
-      "avg_fill_25": 0.0489,
+      "avg_fill_10": 0.0379,
+      "avg_fill_25": 0.0497,
       "bid_usd_within_2c": 0.11
      }
     },
@@ -3713,17 +3704,17 @@
      "label": "10-14",
      "lo": 10,
      "hi": 14,
-     "market": 0.014,
+     "market": 0.0145,
      "token": "53171660742447839928755495106348323767015735242815407460079290096298247421053",
      "closed": false,
      "depth": {
-      "best_ask": 0.028,
+      "best_ask": 0.029,
       "best_bid": null,
-      "usd_at_best": 1.12,
-      "usd_within_1c": 3.18,
-      "usd_within_2c": 7.74,
-      "avg_fill_10": 0.0398,
-      "avg_fill_25": 0.0517,
+      "usd_at_best": 1.16,
+      "usd_within_1c": 2.06,
+      "usd_within_2c": 15.69,
+      "avg_fill_10": 0.0421,
+      "avg_fill_25": 0.0521,
       "bid_usd_within_2c": 0.0
      }
     },
@@ -3767,7 +3758,7 @@
      "label": "35-39",
      "lo": 35,
      "hi": 39,
-     "market": 0.003,
+     "market": 0.0035,
      "token": "60479669624247535151290698519898308569471501183000444484972840590743588511533",
      "closed": false,
      "depth": null
@@ -3827,15 +3818,15 @@
    "slug": "elon-musk-of-tweets-september-29-october-6-2026",
    "start": "2026-09-29T16:00:00.000Z",
    "end": "2026-10-06T15:59:59.000Z",
-   "counterTotal": 109,
+   "counterTotal": 111,
    "counterStats": {
-    "pace": 254,
-    "percentComplete": 43,
-    "daysRemaining": 5
+    "pace": 194,
+    "percentComplete": 57,
+    "daysRemaining": 4
    },
-   "histCount": 109,
-   "volume": 549694.033339,
-   "liquidity": 341619.20094,
+   "histCount": 111,
+   "volume": 611474.7861779999,
+   "liquidity": 420971.62319,
    "ranges": [
     {
      "label": "<20",
@@ -3913,169 +3904,160 @@
      "label": "160-179",
      "lo": 160,
      "hi": 179,
-     "market": 0.0185,
+     "market": 0.0205,
      "token": "77604852105764741000105655215051469588612444220265825252792648892883193728470",
      "closed": false,
      "depth": {
-      "best_ask": 0.019,
-      "best_bid": 0.018,
-      "usd_at_best": 10.36,
-      "usd_within_1c": 197.77,
-      "usd_within_2c": 204.51,
-      "avg_fill_10": 0.019,
-      "avg_fill_25": 0.0196,
-      "bid_usd_within_2c": 71.84
+      "best_ask": 0.021,
+      "best_bid": 0.02,
+      "usd_at_best": 0.14,
+      "usd_within_1c": 157.04,
+      "usd_within_2c": 164.92,
+      "avg_fill_10": 0.0225,
+      "avg_fill_25": 0.0228,
+      "bid_usd_within_2c": 73.67
      }
     },
     {
      "label": "180-199",
      "lo": 180,
      "hi": 199,
-     "market": 0.125,
+     "market": 0.14,
      "token": "105670894847427826987262727147620535938936194997296190540713548837269101695911",
      "closed": false,
      "depth": {
-      "best_ask": 0.13,
-      "best_bid": 0.12,
-      "usd_at_best": 86.73,
-      "usd_within_1c": 355.36,
-      "usd_within_2c": 493.16,
-      "avg_fill_10": 0.13,
-      "avg_fill_25": 0.13,
-      "bid_usd_within_2c": 180.15
+      "best_ask": 0.15,
+      "best_bid": 0.13,
+      "usd_at_best": 81.02,
+      "usd_within_1c": 342.4,
+      "usd_within_2c": 656.9,
+      "avg_fill_10": 0.15,
+      "avg_fill_25": 0.15,
+      "bid_usd_within_2c": 295.47
      }
     },
     {
      "label": "200-219",
      "lo": 200,
      "hi": 219,
-     "market": 0.255,
+     "market": 0.275,
      "token": "55072800443490980305168532340115848669497981731599003944724099539486805830868",
      "closed": false,
      "depth": {
-      "best_ask": 0.26,
-      "best_bid": 0.25,
-      "usd_at_best": 33.19,
-      "usd_within_1c": 291.05,
-      "usd_within_2c": 489.16,
-      "avg_fill_10": 0.26,
-      "avg_fill_25": 0.26,
-      "bid_usd_within_2c": 482.33
+      "best_ask": 0.28,
+      "best_bid": 0.27,
+      "usd_at_best": 83.55,
+      "usd_within_1c": 191.0,
+      "usd_within_2c": 400.54,
+      "avg_fill_10": 0.28,
+      "avg_fill_25": 0.28,
+      "bid_usd_within_2c": 669.4
      }
     },
     {
      "label": "220-239",
      "lo": 220,
      "hi": 239,
-     "market": 0.275,
+     "market": 0.28,
      "token": "4630983254807820714748615593537523370035685908290467327271179594066345272626",
      "closed": false,
      "depth": {
-      "best_ask": 0.28,
+      "best_ask": 0.29,
       "best_bid": 0.27,
-      "usd_at_best": 1.41,
-      "usd_within_1c": 301.58,
-      "usd_within_2c": 726.38,
-      "avg_fill_10": 0.2885,
-      "avg_fill_25": 0.2894,
-      "bid_usd_within_2c": 829.41
+      "usd_at_best": 115.82,
+      "usd_within_1c": 736.66,
+      "usd_within_2c": 854.46,
+      "avg_fill_10": 0.29,
+      "avg_fill_25": 0.29,
+      "bid_usd_within_2c": 540.96
      }
     },
     {
      "label": "240-259",
      "lo": 240,
      "hi": 259,
-     "market": 0.185,
+     "market": 0.155,
      "token": "72997708891615492693684201278916739422934628384302925346756783530804668793900",
      "closed": false,
      "depth": {
-      "best_ask": 0.19,
-      "best_bid": 0.18,
-      "usd_at_best": 75.04,
-      "usd_within_1c": 513.65,
-      "usd_within_2c": 826.53,
-      "avg_fill_10": 0.19,
-      "avg_fill_25": 0.19,
-      "bid_usd_within_2c": 366.11
+      "best_ask": 0.16,
+      "best_bid": 0.15,
+      "usd_at_best": 73.77,
+      "usd_within_1c": 229.49,
+      "usd_within_2c": 456.87,
+      "avg_fill_10": 0.16,
+      "avg_fill_25": 0.16,
+      "bid_usd_within_2c": 620.03
      }
     },
     {
      "label": "260-279",
      "lo": 260,
      "hi": 279,
-     "market": 0.0905,
+     "market": 0.0675,
      "token": "107589266508623116704993689270989107310777268637087042628517401765674108886612",
      "closed": false,
      "depth": {
-      "best_ask": 0.091,
-      "best_bid": 0.09,
-      "usd_at_best": 9.62,
-      "usd_within_1c": 122.6,
-      "usd_within_2c": 295.58,
-      "avg_fill_10": 0.0911,
-      "avg_fill_25": 0.0926,
-      "bid_usd_within_2c": 182.42
+      "best_ask": 0.068,
+      "best_bid": 0.067,
+      "usd_at_best": 6.8,
+      "usd_within_1c": 102.96,
+      "usd_within_2c": 211.4,
+      "avg_fill_10": 0.0683,
+      "avg_fill_25": 0.0689,
+      "bid_usd_within_2c": 181.82
      }
     },
     {
      "label": "280-299",
      "lo": 280,
      "hi": 299,
-     "market": 0.0335,
+     "market": 0.022,
      "token": "66572589159569163729992867706677506494217769253398264519049062647032576984153",
      "closed": false,
      "depth": {
-      "best_ask": 0.036,
-      "best_bid": 0.031,
-      "usd_at_best": 12.6,
-      "usd_within_1c": 78.75,
-      "usd_within_2c": 81.97,
-      "avg_fill_10": 0.036,
-      "avg_fill_25": 0.0365,
-      "bid_usd_within_2c": 107.66
+      "best_ask": 0.026,
+      "best_bid": 0.018,
+      "usd_at_best": 19.4,
+      "usd_within_1c": 84.49,
+      "usd_within_2c": 87.91,
+      "avg_fill_10": 0.026,
+      "avg_fill_25": 0.0262,
+      "bid_usd_within_2c": 299.9
      }
     },
     {
      "label": "300-319",
      "lo": 300,
      "hi": 319,
-     "market": 0.0165,
+     "market": 0.0105,
      "token": "51452717176443865746643137904958631533217040994630142116435151638209994717392",
      "closed": false,
      "depth": {
-      "best_ask": 0.019,
-      "best_bid": 0.014,
-      "usd_at_best": 14.34,
-      "usd_within_1c": 42.88,
-      "usd_within_2c": 49.77,
-      "avg_fill_10": 0.019,
-      "avg_fill_25": 0.0196,
-      "bid_usd_within_2c": 130.66
+      "best_ask": 0.011,
+      "best_bid": 0.01,
+      "usd_at_best": 1.59,
+      "usd_within_1c": 35.36,
+      "usd_within_2c": 35.36,
+      "avg_fill_10": 0.012,
+      "avg_fill_25": 0.0129,
+      "bid_usd_within_2c": 94.5
      }
     },
     {
      "label": "320-339",
      "lo": 320,
      "hi": 339,
-     "market": 0.006,
+     "market": 0.0045,
      "token": "59397361640056738797298902756372574415398970806168866681455960229181862624599",
      "closed": false,
-     "depth": {
-      "best_ask": 0.007,
-      "best_bid": 0.005,
-      "usd_at_best": 0.7,
-      "usd_within_1c": 23.61,
-      "usd_within_2c": 26.11,
-      "avg_fill_10": 0.0086,
-      "avg_fill_25": 0.0108,
-      "bid_usd_within_2c": 41.69
-     }
+     "depth": null
     },
     {
      "label": "340-359",
      "lo": 340,
      "hi": 359,
-     "market": 0.0045,
+     "market": 0.0025,
      "token": "67208528128143453481085242433021249264737302807235899085950919370170789265914",
      "closed": false,
      "depth": null
@@ -4084,7 +4066,7 @@
      "label": "360-379",
      "lo": 360,
      "hi": 379,
-     "market": 0.0025,
+     "market": 0.0015,
      "token": "3174222954722315010074568328737939380992888125024768391839971962925184997830",
      "closed": false,
      "depth": null
@@ -4093,7 +4075,7 @@
      "label": "380-399",
      "lo": 380,
      "hi": 399,
-     "market": 0.002,
+     "market": 0.0015,
      "token": "60951905264514813740124690575277449779730358444359478970562218563647424485051",
      "closed": false,
      "depth": null
@@ -4102,7 +4084,7 @@
      "label": "400-419",
      "lo": 400,
      "hi": 419,
-     "market": 0.0015,
+     "market": 0.0005,
      "token": "100393938448713842111179146609805070956327624448402772748335487733246313303481",
      "closed": false,
      "depth": null
@@ -4166,20 +4148,29 @@
    "counterStats": {
     "pace": 0,
     "percentComplete": 0,
-    "daysRemaining": 4
+    "daysRemaining": 3
    },
    "histCount": 0,
-   "volume": 13202.877123,
-   "liquidity": 86595.55273,
+   "volume": 14977.877123,
+   "liquidity": 88313.77568,
    "ranges": [
     {
      "label": "<40",
      "lo": null,
      "hi": 39,
-     "market": 0.12,
+     "market": 0.115,
      "token": "78869700580884779419674945729691893552821656684307228948849280148849994214676",
      "closed": false,
-     "depth": null
+     "depth": {
+      "best_ask": 0.12,
+      "best_bid": 0.11,
+      "usd_at_best": 18.55,
+      "usd_within_1c": 93.29,
+      "usd_within_2c": 179.15,
+      "avg_fill_10": 0.12,
+      "avg_fill_25": 0.1224,
+      "bid_usd_within_2c": 82.29
+     }
     },
     {
      "label": "40-64",
@@ -4188,7 +4179,16 @@
      "market": 0.595,
      "token": "88923784042149602759788459509825275108643079269087209193433882748359615428235",
      "closed": false,
-     "depth": null
+     "depth": {
+      "best_ask": 0.6,
+      "best_bid": 0.59,
+      "usd_at_best": 52.61,
+      "usd_within_1c": 646.53,
+      "usd_within_2c": 990.26,
+      "avg_fill_10": 0.6,
+      "avg_fill_25": 0.6,
+      "bid_usd_within_2c": 710.89
+     }
     },
     {
      "label": "65-89",
@@ -4197,16 +4197,34 @@
      "market": 0.265,
      "token": "67938972208289602172056346464839725929609525757406600693451154869557350238612",
      "closed": false,
-     "depth": null
+     "depth": {
+      "best_ask": 0.27,
+      "best_bid": 0.26,
+      "usd_at_best": 75.11,
+      "usd_within_1c": 207.46,
+      "usd_within_2c": 571.1,
+      "avg_fill_10": 0.27,
+      "avg_fill_25": 0.27,
+      "bid_usd_within_2c": 161.69
+     }
     },
     {
      "label": "90-114",
      "lo": 90,
      "hi": 114,
-     "market": 0.038,
+     "market": 0.0345,
      "token": "93681564937944679821661488180998495058545544241451254009518390872814462369040",
      "closed": false,
-     "depth": null
+     "depth": {
+      "best_ask": 0.041,
+      "best_bid": 0.028,
+      "usd_at_best": 0.81,
+      "usd_within_1c": 93.51,
+      "usd_within_2c": 99.99,
+      "avg_fill_10": 0.0419,
+      "avg_fill_25": 0.042,
+      "bid_usd_within_2c": 534.44
+     }
     },
     {
      "label": "115-139",
@@ -4215,7 +4233,16 @@
      "market": 0.011,
      "token": "102077492504371278623220186504765216508042292866882000010544534685208819987640",
      "closed": false,
-     "depth": null
+     "depth": {
+      "best_ask": 0.016,
+      "best_bid": 0.006,
+      "usd_at_best": 12.67,
+      "usd_within_1c": 30.5,
+      "usd_within_2c": 31.74,
+      "avg_fill_10": 0.016,
+      "avg_fill_25": 0.0181,
+      "bid_usd_within_2c": 82.88
+     }
     },
     {
      "label": "140-164",
@@ -4224,7 +4251,16 @@
      "market": 0.006,
      "token": "86109632513823079205853493631193751876882184698328354165134697761458263449539",
      "closed": false,
-     "depth": null
+     "depth": {
+      "best_ask": 0.01,
+      "best_bid": 0.002,
+      "usd_at_best": 7.64,
+      "usd_within_1c": 17.22,
+      "usd_within_2c": 20.12,
+      "avg_fill_10": 0.0102,
+      "avg_fill_25": 0.0142,
+      "bid_usd_within_2c": 11.03
+     }
     },
     {
      "label": "165-189",
@@ -4233,7 +4269,16 @@
      "market": 0.0055,
      "token": "58576151557717650104847572004146697913178231756526781689776055283480473807156",
      "closed": false,
-     "depth": null
+     "depth": {
+      "best_ask": 0.01,
+      "best_bid": 0.002,
+      "usd_at_best": 7.65,
+      "usd_within_1c": 41.3,
+      "usd_within_2c": 48.9,
+      "avg_fill_10": 0.0102,
+      "avg_fill_25": 0.0128,
+      "bid_usd_within_2c": 4.86
+     }
     },
     {
      "label": "190-214",
@@ -4242,7 +4287,16 @@
      "market": 0.0055,
      "token": "99610904218272678535111607806833287903049505688109751063716284588861947015844",
      "closed": false,
-     "depth": null
+     "depth": {
+      "best_ask": 0.01,
+      "best_bid": 0.001,
+      "usd_at_best": 7.34,
+      "usd_within_1c": 38.49,
+      "usd_within_2c": 41.85,
+      "avg_fill_10": 0.0103,
+      "avg_fill_25": 0.0134,
+      "bid_usd_within_2c": 0.79
+     }
     },
     {
      "label": "215-239",
@@ -4272,15 +4326,15 @@
    "slug": "elon-musk-of-tweets-october-1-october-3-2026",
    "start": "2026-10-01T16:00:00.000Z",
    "end": "2026-10-03T15:59:59.000Z",
-   "counterTotal": 42,
+   "counterTotal": 44,
    "counterStats": {
-    "pace": 84,
-    "percentComplete": 50,
-    "daysRemaining": 2
+    "pace": 44,
+    "percentComplete": 100,
+    "daysRemaining": 1
    },
-   "histCount": 42,
-   "volume": 155786.796576,
-   "liquidity": 89212.55616,
+   "histCount": 44,
+   "volume": 190667.606799,
+   "liquidity": 101012.39305,
    "ranges": [
     {
      "label": "<40",
@@ -4295,79 +4349,79 @@
      "label": "40-64",
      "lo": 40,
      "hi": 64,
-     "market": 0.175,
+     "market": 0.195,
      "token": "40041411454673085045832118582514612486036267843927365744170105378143058138240",
      "closed": false,
      "depth": {
-      "best_ask": 0.18,
-      "best_bid": 0.17,
-      "usd_at_best": 193.7,
-      "usd_within_1c": 947.68,
-      "usd_within_2c": 1256.84,
-      "avg_fill_10": 0.18,
-      "avg_fill_25": 0.18,
-      "bid_usd_within_2c": 249.55
+      "best_ask": 0.2,
+      "best_bid": 0.19,
+      "usd_at_best": 40.45,
+      "usd_within_1c": 317.61,
+      "usd_within_2c": 487.89,
+      "avg_fill_10": 0.2,
+      "avg_fill_25": 0.2,
+      "bid_usd_within_2c": 156.07
      }
     },
     {
      "label": "65-89",
      "lo": 65,
      "hi": 89,
-     "market": 0.655,
+     "market": 0.72,
      "token": "38165869271516540682684473414677505137306331641018401657492234796057277457991",
      "closed": false,
      "depth": {
-      "best_ask": 0.65,
-      "best_bid": 0.63,
-      "usd_at_best": 251.8,
-      "usd_within_1c": 727.08,
-      "usd_within_2c": 928.08,
-      "avg_fill_10": 0.65,
-      "avg_fill_25": 0.65,
-      "bid_usd_within_2c": 852.82
+      "best_ask": 0.73,
+      "best_bid": 0.71,
+      "usd_at_best": 103.66,
+      "usd_within_1c": 320.92,
+      "usd_within_2c": 904.02,
+      "avg_fill_10": 0.73,
+      "avg_fill_25": 0.73,
+      "bid_usd_within_2c": 1347.89
      }
     },
     {
      "label": "90-114",
      "lo": 90,
      "hi": 114,
-     "market": 0.148,
+     "market": 0.0765,
      "token": "29404518511281529105387177485168279893886782362920547151529411591590621354165",
      "closed": false,
      "depth": {
-      "best_ask": 0.15,
-      "best_bid": 0.146,
-      "usd_at_best": 29.3,
-      "usd_within_1c": 114.18,
-      "usd_within_2c": 120.39,
-      "avg_fill_10": 0.15,
-      "avg_fill_25": 0.15,
-      "bid_usd_within_2c": 226.22
+      "best_ask": 0.076,
+      "best_bid": 0.075,
+      "usd_at_best": 25.25,
+      "usd_within_1c": 66.16,
+      "usd_within_2c": 66.16,
+      "avg_fill_10": 0.076,
+      "avg_fill_25": 0.076,
+      "bid_usd_within_2c": 156.45
      }
     },
     {
      "label": "115-139",
      "lo": 115,
      "hi": 139,
-     "market": 0.012,
+     "market": 0.0055,
      "token": "108791858335878515397422044525924800037017710847204847946284694730807755203431",
      "closed": false,
      "depth": {
-      "best_ask": 0.013,
-      "best_bid": 0.012,
-      "usd_at_best": 1.71,
-      "usd_within_1c": 41.06,
-      "usd_within_2c": 41.28,
-      "avg_fill_10": 0.0148,
-      "avg_fill_25": 0.0169,
-      "bid_usd_within_2c": 159.78
+      "best_ask": 0.006,
+      "best_bid": 0.005,
+      "usd_at_best": 1.1,
+      "usd_within_1c": 19.92,
+      "usd_within_2c": 43.5,
+      "avg_fill_10": 0.0088,
+      "avg_fill_25": 0.012,
+      "bid_usd_within_2c": 65.54
      }
     },
     {
      "label": "140-164",
      "lo": 140,
      "hi": 164,
-     "market": 0.0015,
+     "market": 0.0005,
      "token": "33940117437553018111758925221240267506239993793086171388081968003361718704136",
      "closed": false,
      "depth": null
@@ -4409,1157 +4463,19 @@
      "depth": null
     }
    ]
-  },
+  }
+ ],
+ "resolved": [
   {
-   "id": "62fc6b25-f908-44da-ba89-774d1ad0cb99",
-   "handle": "khamenei_ir",
-   "name": "Khamenei.ir",
-   "title": "Khamenei # posts September 25 - October 2, 2026?",
-   "slug": "khamenei-of-tweets-september-25-october-2-2026",
-   "start": "2026-09-25T16:00:00.000Z",
-   "end": "2026-10-02T15:59:59.000Z",
-   "counterTotal": 1,
-   "counterStats": {
-    "pace": 1,
-    "percentComplete": 100,
-    "daysRemaining": 1
-   },
-   "histCount": 1,
-   "volume": 17007.282303,
-   "liquidity": 13576.66468,
-   "ranges": [
-    {
-     "label": "<5",
-     "lo": null,
-     "hi": 4,
-     "market": 0.9925,
-     "token": "106089482648242992952706025948801018158672628385473588377251808414446421858223",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "5-9",
-     "lo": 5,
-     "hi": 9,
-     "market": 0.0035,
-     "token": "98355806177152016371422370211237496150445024898716060732490583917999024218101",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "10-14",
-     "lo": 10,
-     "hi": 14,
-     "market": 0.0015,
-     "token": "58788945331834555321448250234334268251253830137573402966850626516023410913538",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "15-19",
-     "lo": 15,
-     "hi": 19,
-     "market": 0.0015,
-     "token": "3179274418837232169647818847043086933205337642721390198343060278060895546542",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "20-24",
-     "lo": 20,
-     "hi": 24,
-     "market": 0.001,
-     "token": "32352870489620378334692590314232969034755630728822256449053037159846426225781",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "25-29",
-     "lo": 25,
-     "hi": 29,
-     "market": 0.001,
-     "token": "38517529970289431998413479707007334383627969396089553964205819926239688672606",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "30-34",
-     "lo": 30,
-     "hi": 34,
-     "market": 0.003,
-     "token": "14425042112904658063765044048632457348416111603900928642227631633006403474199",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "35-39",
-     "lo": 35,
-     "hi": 39,
-     "market": 0.001,
-     "token": "47850105519489069564765186802292617572485281836866277302693504653100660667795",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "40-44",
-     "lo": 40,
-     "hi": 44,
-     "market": 0.0015,
-     "token": "44305502569898284769435091430968919793065597482196182072473541831121283775700",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "45-49",
-     "lo": 45,
-     "hi": 49,
-     "market": 0.001,
-     "token": "37935724122427402824510073413499134955381135716010544999103371710266941016230",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "50-54",
-     "lo": 50,
-     "hi": 54,
-     "market": 0.0015,
-     "token": "64366883781142551893770409954687013283135136781683442376596330456412476801679",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "55-59",
-     "lo": 55,
-     "hi": 59,
-     "market": 0.0015,
-     "token": "58676007486290343232078652574653906992718319724161776819885338201114901803171",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "60+",
-     "lo": 60,
-     "hi": null,
-     "market": 0.0015,
-     "token": "93597525571645222715893351691193589475925271300165088234565047260264876179111",
-     "closed": false,
-     "depth": null
-    }
-   ]
-  },
-  {
-   "id": "2df04d9f-4b37-4ea9-937b-7919e36345b0",
    "handle": "NYCMayor",
-   "name": "Mayor Zohran Kwame Mamdani",
    "title": "NYC Mayor # posts September 25 - October 2, 2026?",
    "slug": "nyc-mayor-of-tweets-september-25-october-2-2026",
    "start": "2026-09-25T16:00:00.000Z",
    "end": "2026-10-02T15:59:59.000Z",
-   "counterTotal": 32,
-   "counterStats": {
-    "pace": 32,
-    "percentComplete": 100,
-    "daysRemaining": 1
-   },
-   "histCount": 32,
-   "volume": 10746.171751,
-   "liquidity": 7932.76873,
-   "ranges": [
-    {
-     "label": "<20",
-     "lo": null,
-     "hi": 19,
-     "market": 0.0,
-     "token": "64908321777830451778130858540353840150457704023639464930552902986422600095473",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "20-39",
-     "lo": 20,
-     "hi": 39,
-     "market": 0.995,
-     "token": "31451173899328609499679174744248360905170271179566401833976639900653698887145",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "40-59",
-     "lo": 40,
-     "hi": 59,
-     "market": 0.019,
-     "token": "64439276426660617286054073504384074174778676610230954366095762701556774741688",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.037,
-      "best_bid": 0.001,
-      "usd_at_best": 0.69,
-      "usd_within_1c": 2.37,
-      "usd_within_2c": 6.04,
-      "avg_fill_10": 0.0605,
-      "avg_fill_25": 0.1102,
-      "bid_usd_within_2c": 0.13
-     }
-    },
-    {
-     "label": "60-79",
-     "lo": 60,
-     "hi": 79,
-     "market": 0.0005,
-     "token": "97544283372049472398188883033146813891129580752689465207500493822493744633604",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "80-99",
-     "lo": 80,
-     "hi": 99,
-     "market": 0.0005,
-     "token": "112947788880875375454901535593478802934004479042577384447787445307339761494143",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "100-119",
-     "lo": 100,
-     "hi": 119,
-     "market": 0.0005,
-     "token": "15294310708785407025879390451550375486763592239675705441765776686924808176931",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "120-139",
-     "lo": 120,
-     "hi": 139,
-     "market": 0.0005,
-     "token": "21860192101387938905882638123938474181399912895400435979784251127001979843543",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "140-159",
-     "lo": 140,
-     "hi": 159,
-     "market": 0.0005,
-     "token": "88489179367942188425975185624592364549280341943386989402988162647288617383877",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "160-179",
-     "lo": 160,
-     "hi": 179,
-     "market": 0.0005,
-     "token": "1226671680311911575793509191493519983088095749712659461571734850404111330914",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "180-199",
-     "lo": 180,
-     "hi": 199,
-     "market": 0.0005,
-     "token": "25124207685599077300408155345236350417093359953531667390278205711449903312255",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "200+",
-     "lo": 200,
-     "hi": null,
-     "market": 0.0005,
-     "token": "10216398299193859406064175807937546355707013656040392770203798361745207926870",
-     "closed": false,
-     "depth": null
-    }
-   ]
+   "histCount": 33,
+   "winner": "20-39",
+   "settled": false
   },
-  {
-   "id": "724b988a-4930-4dae-bc87-77b37f185a0d",
-   "handle": "realDonaldTrump",
-   "name": "Donald J. Trump",
-   "title": "Donald Trump # Truth Social posts September 25 - October 2, 2026?",
-   "slug": "donald-trump-of-truth-social-posts-september-25-october-2-2026",
-   "start": "2026-09-25T16:00:00.000Z",
-   "end": "2026-10-02T15:59:59.000Z",
-   "counterTotal": 191,
-   "counterStats": {
-    "pace": 191,
-    "percentComplete": 100,
-    "daysRemaining": 1
-   },
-   "histCount": 191,
-   "volume": 49056.712038,
-   "liquidity": 368.0645,
-   "ranges": [
-    {
-     "label": "<20",
-     "lo": null,
-     "hi": 19,
-     "market": 0.0,
-     "token": "80006702159216140211492043898523892655841465218497567068089542894369135020694",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "20-39",
-     "lo": 20,
-     "hi": 39,
-     "market": 0.0,
-     "token": "64031299279071424100014217091485674521214983245596759694405493162416188932260",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "40-59",
-     "lo": 40,
-     "hi": 59,
-     "market": 0.0,
-     "token": "32693805286190790400221461272827838425460161617871330726529507332813132178173",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "60-79",
-     "lo": 60,
-     "hi": 79,
-     "market": 0.0,
-     "token": "51915997724424358295666615658393789277585083065617074647778343134248123053507",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "80-99",
-     "lo": 80,
-     "hi": 99,
-     "market": 0.0,
-     "token": "54860155828255752856929832448279905665479642028429337793233007623139867341643",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "100-119",
-     "lo": 100,
-     "hi": 119,
-     "market": 0.0,
-     "token": "6945846249698861026886673612420315352859034679455767369379567368929785938384",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "120-139",
-     "lo": 120,
-     "hi": 139,
-     "market": 0.0,
-     "token": "36868069253379974532292932634665128109844179501576339117577789492851667607070",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "140-159",
-     "lo": 140,
-     "hi": 159,
-     "market": 0.0,
-     "token": "23712662649633354851879457114485721983835738537179822920971592729903415167682",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "160-179",
-     "lo": 160,
-     "hi": 179,
-     "market": 0.0,
-     "token": "29971035935830804909840291309562748315821035646160541166623889128002481334461",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "180-199",
-     "lo": 180,
-     "hi": 199,
-     "market": 0.565,
-     "token": "17655644621448237310068559282922750229471590441032840128854984671267576093815",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.79,
-      "best_bid": 0.45,
-      "usd_at_best": 3.95,
-      "usd_within_1c": 43.34,
-      "usd_within_2c": 129.63,
-      "avg_fill_10": 0.796,
-      "avg_fill_25": 0.7984,
-      "bid_usd_within_2c": 15.54
-     }
-    },
-    {
-     "label": "200+",
-     "lo": 200,
-     "hi": null,
-     "market": 0.425,
-     "token": "43564844557155787183876741935107040230845537603880686215425310725367313731106",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.53,
-      "best_bid": 0.22,
-      "usd_at_best": 21.04,
-      "usd_within_1c": 21.04,
-      "usd_within_2c": 21.04,
-      "avg_fill_10": 0.53,
-      "avg_fill_25": 0.536,
-      "bid_usd_within_2c": 33.52
-     }
-    }
-   ]
-  },
-  {
-   "id": "0909ecd8-2cc4-4aa8-8503-8137a8fe3174",
-   "handle": "tedcruz",
-   "name": "Ted Cruz",
-   "title": "Ted Cruz # posts September 25 - October 2, 2026?",
-   "slug": "ted-cruz-of-tweets-september-25-october-2-2026",
-   "start": "2026-09-25T16:00:00.000Z",
-   "end": "2026-10-02T15:59:59.000Z",
-   "counterTotal": 90,
-   "counterStats": {
-    "pace": 90,
-    "percentComplete": 100,
-    "daysRemaining": 1
-   },
-   "histCount": 90,
-   "volume": 5283.521411,
-   "liquidity": 2112.40196,
-   "ranges": [
-    {
-     "label": "<20",
-     "lo": null,
-     "hi": 19,
-     "market": 0.0,
-     "token": "88486840869163770464606954560097490520637145959142935046998787298064824962939",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "20-39",
-     "lo": 20,
-     "hi": 39,
-     "market": 0.0,
-     "token": "68898794240710049829812091941143965928606604375086683138945762054614730650866",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "40-59",
-     "lo": 40,
-     "hi": 59,
-     "market": 0.0,
-     "token": "38937023461860399677413031663784484960613349359385452136163442347797493410041",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "60-79",
-     "lo": 60,
-     "hi": 79,
-     "market": 0.0,
-     "token": "75859410463880664662255057054261905492014638915870440031172226867257363187946",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "80-99",
-     "lo": 80,
-     "hi": 99,
-     "market": 0.645,
-     "token": "44490110488408097289959747376747679065917953165357733838014326062424993993020",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.96,
-      "best_bid": 0.33,
-      "usd_at_best": 19.96,
-      "usd_within_1c": 39.36,
-      "usd_within_2c": 75.03,
-      "avg_fill_10": 0.96,
-      "avg_fill_25": 0.962,
-      "bid_usd_within_2c": 9.7
-     }
-    },
-    {
-     "label": "100-119",
-     "lo": 100,
-     "hi": 119,
-     "market": 0.19,
-     "token": "68420245133063194497116343601282165953127979786887487428422498387402791349346",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.64,
-      "best_bid": 0.02,
-      "usd_at_best": 8.01,
-      "usd_within_1c": 8.01,
-      "usd_within_2c": 8.01,
-      "avg_fill_10": 0.6577,
-      "avg_fill_25": 0.7047,
-      "bid_usd_within_2c": 2.64
-     }
-    },
-    {
-     "label": "120-139",
-     "lo": 120,
-     "hi": 139,
-     "market": 0.0235,
-     "token": "46223775147216133379125179286618055188869006635999418762524199980514917176543",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.046,
-      "best_bid": 0.001,
-      "usd_at_best": 0.35,
-      "usd_within_1c": 2.71,
-      "usd_within_2c": 2.71,
-      "avg_fill_10": 0.0675,
-      "avg_fill_25": 0.1388,
-      "bid_usd_within_2c": 0.12
-     }
-    },
-    {
-     "label": "140-159",
-     "lo": 140,
-     "hi": 159,
-     "market": 0.009,
-     "token": "30417293371160174958907321026355664194376637656962863267940184918375939851255",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.017,
-      "best_bid": 0.001,
-      "usd_at_best": 0.34,
-      "usd_within_1c": 1.9,
-      "usd_within_2c": 2.5,
-      "avg_fill_10": 0.0581,
-      "avg_fill_25": 0.1318,
-      "bid_usd_within_2c": 0.06
-     }
-    },
-    {
-     "label": "160-179",
-     "lo": 160,
-     "hi": 179,
-     "market": 0.002,
-     "token": "9519590231093750908365577387236345371614056573831660592645341849488101287114",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "180-199",
-     "lo": 180,
-     "hi": 199,
-     "market": 0.004,
-     "token": "111242753502288578531245393977639026820450365598233280498479131790706182234554",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "200+",
-     "lo": 200,
-     "hi": null,
-     "market": 0.0005,
-     "token": "97710578803738223886030809831474496121538408532861998648817027910945278292176",
-     "closed": false,
-     "depth": null
-    }
-   ]
-  },
-  {
-   "id": "dfc5c3db-89d2-4416-ba2f-7ed6e87b1564",
-   "handle": "ZelenskyyUa",
-   "name": "Volodymyr Zelenskyy / Володимир Зеленський",
-   "title": "Zelenskyy # posts September 25 - October 2, 2026?",
-   "slug": "zelenskyy-of-tweets-september-25-october-2-2026",
-   "start": "2026-09-25T16:00:00.000Z",
-   "end": "2026-10-02T15:59:59.000Z",
-   "counterTotal": 89,
-   "counterStats": {
-    "pace": 89,
-    "percentComplete": 100,
-    "daysRemaining": 1
-   },
-   "histCount": 89,
-   "volume": 8351.208744,
-   "liquidity": 3278.41096,
-   "ranges": [
-    {
-     "label": "<20",
-     "lo": null,
-     "hi": 19,
-     "market": 0.0,
-     "token": "57334904175129780024175704229419265820677192678936413492465497788492935934797",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "20-39",
-     "lo": 20,
-     "hi": 39,
-     "market": 0.0,
-     "token": "28123912904382586071285780393102289610717345174968620861855539871951132861662",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "40-59",
-     "lo": 40,
-     "hi": 59,
-     "market": 0.0,
-     "token": "68196830190301295394187273170261424491726561018054190168294577133414794191565",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "60-79",
-     "lo": 60,
-     "hi": 79,
-     "market": 0.0,
-     "token": "38244377220567549581275698069319225603764127032893364381232947818651115701082",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "80-99",
-     "lo": 80,
-     "hi": 99,
-     "market": 0.87,
-     "token": "67352096436599878580219561120204548833206256469042344040764407303299461699886",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.88,
-      "best_bid": 0.86,
-      "usd_at_best": 17.6,
-      "usd_within_1c": 57.65,
-      "usd_within_2c": 57.65,
-      "avg_fill_10": 0.88,
-      "avg_fill_25": 0.8829,
-      "bid_usd_within_2c": 10.32
-     }
-    },
-    {
-     "label": "100-119",
-     "lo": 100,
-     "hi": 119,
-     "market": 0.137,
-     "token": "105711000228424422262149853368082267403415879236021201748496609904613335081475",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.14,
-      "best_bid": 0.134,
-      "usd_at_best": 0.84,
-      "usd_within_1c": 1.56,
-      "usd_within_2c": 1.56,
-      "avg_fill_10": 0.1639,
-      "avg_fill_25": 0.1723,
-      "bid_usd_within_2c": 7.25
-     }
-    },
-    {
-     "label": "120-139",
-     "lo": 120,
-     "hi": 139,
-     "market": 0.0145,
-     "token": "81238406958025633258461161363004712471379076069627042213926439496981241052877",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.027,
-      "best_bid": 0.002,
-      "usd_at_best": 3.02,
-      "usd_within_1c": 3.81,
-      "usd_within_2c": 3.81,
-      "avg_fill_10": 0.0482,
-      "avg_fill_25": 0.0837,
-      "bid_usd_within_2c": 0.64
-     }
-    },
-    {
-     "label": "140-159",
-     "lo": 140,
-     "hi": 159,
-     "market": 0.004,
-     "token": "27780958817120670325408601384325359766863747399680978323750079061808017921144",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "160-179",
-     "lo": 160,
-     "hi": 179,
-     "market": 0.002,
-     "token": "3044171507917351350810413185198344175358695041142709700322272801554188923828",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "180-199",
-     "lo": 180,
-     "hi": 199,
-     "market": 0.001,
-     "token": "8727249378117626796319255296525398731046083430021248942600589367406286609436",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "200+",
-     "lo": 200,
-     "hi": null,
-     "market": 0.001,
-     "token": "56477942990876849508524737823369870024523492187890946345027460672997870127215",
-     "closed": false,
-     "depth": null
-    }
-   ]
-  },
-  {
-   "id": "2e3f4f95-bc1b-4bfe-b98d-0e212f964d9f",
-   "handle": "cz_binance",
-   "name": "CZ 🔶 BNB",
-   "title": "CZ # posts September 25 - October 2, 2026?",
-   "slug": "cz-binance-of-tweets-september-25-october-2-2026",
-   "start": "2026-09-25T16:00:00.000Z",
-   "end": "2026-10-02T15:59:59.000Z",
-   "counterTotal": 12,
-   "counterStats": {
-    "pace": 12,
-    "percentComplete": 100,
-    "daysRemaining": 1
-   },
-   "histCount": 12,
-   "volume": 5460.023155000001,
-   "liquidity": 2886.21302,
-   "ranges": [
-    {
-     "label": "<20",
-     "lo": null,
-     "hi": 19,
-     "market": 0.981,
-     "token": "64244172274429724230016861697620229563142771481854551125546689468065640930134",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "20-39",
-     "lo": 20,
-     "hi": 39,
-     "market": 0.0195,
-     "token": "14858156667896449864819724201901901468721885973136783092856408137160173670260",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.038,
-      "best_bid": 0.001,
-      "usd_at_best": 0.76,
-      "usd_within_1c": 2.57,
-      "usd_within_2c": 3.37,
-      "avg_fill_10": 0.0796,
-      "avg_fill_25": 0.1472,
-      "bid_usd_within_2c": 0.04
-     }
-    },
-    {
-     "label": "40-59",
-     "lo": 40,
-     "hi": 59,
-     "market": 0.003,
-     "token": "33500405904686753335283370985194531138136566133494082948797618261571616223637",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "60-79",
-     "lo": 60,
-     "hi": 79,
-     "market": 0.0005,
-     "token": "16688160992416377865120976485643580645683876109258416616222694486393238060182",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "80-99",
-     "lo": 80,
-     "hi": 99,
-     "market": 0.005,
-     "token": "41122817256781105988027299270440525872488774217282193124833609283062593826139",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": null,
-      "usd_at_best": 0.22,
-      "usd_within_1c": 0.22,
-      "usd_within_2c": 4.81,
-      "avg_fill_10": 0.0469,
-      "avg_fill_25": 0.0993,
-      "bid_usd_within_2c": 0.0
-     }
-    },
-    {
-     "label": "100-119",
-     "lo": 100,
-     "hi": 119,
-     "market": 0.01,
-     "token": "104315116678972644004491708536185163453271258156093311093823925877256375759605",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.02,
-      "best_bid": null,
-      "usd_at_best": 0.6,
-      "usd_within_1c": 0.6,
-      "usd_within_2c": 0.6,
-      "avg_fill_10": 0.0481,
-      "avg_fill_25": 0.0877,
-      "bid_usd_within_2c": 0.0
-     }
-    },
-    {
-     "label": "120-139",
-     "lo": 120,
-     "hi": 139,
-     "market": 0.005,
-     "token": "38067954744931403898373696962929394402677729142738375573348237561463345782064",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": null,
-      "usd_at_best": 0.22,
-      "usd_within_1c": 0.22,
-      "usd_within_2c": 4.81,
-      "avg_fill_10": 0.0464,
-      "avg_fill_25": 0.0991,
-      "bid_usd_within_2c": 0.0
-     }
-    },
-    {
-     "label": "140-159",
-     "lo": 140,
-     "hi": 159,
-     "market": 0.005,
-     "token": "102696300013412013059082008661181387926955278292267038475459547284571445499858",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": null,
-      "usd_at_best": 0.22,
-      "usd_within_1c": 0.22,
-      "usd_within_2c": 4.81,
-      "avg_fill_10": 0.0464,
-      "avg_fill_25": 0.099,
-      "bid_usd_within_2c": 0.0
-     }
-    },
-    {
-     "label": "160-179",
-     "lo": 160,
-     "hi": 179,
-     "market": 0.0045,
-     "token": "29531170090481588318172920033706206384499549496716218528197296049844042170421",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "180-199",
-     "lo": 180,
-     "hi": 199,
-     "market": 0.0045,
-     "token": "69662012929782056167318779129844595110412984305448658649483839740648091296288",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "200+",
-     "lo": 200,
-     "hi": null,
-     "market": 0.005,
-     "token": "45451367372563256602710697796837858747151580271351129340014049660481609432584",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.01,
-      "best_bid": null,
-      "usd_at_best": 0.22,
-      "usd_within_1c": 0.22,
-      "usd_within_2c": 4.81,
-      "avg_fill_10": 0.0464,
-      "avg_fill_25": 0.0991,
-      "bid_usd_within_2c": 0.0
-     }
-    }
-   ]
-  },
-  {
-   "id": "7fa5f317-bee6-4dff-b81d-e4507730d655",
-   "handle": "elonmusk",
-   "name": "Elon Musk",
-   "title": "Elon Musk # tweets September 25 - October 2, 2026?",
-   "slug": "elon-musk-of-tweets-september-25-october-2-2026",
-   "start": "2026-09-25T16:00:00.000Z",
-   "end": "2026-10-02T15:59:59.000Z",
-   "counterTotal": 220,
-   "counterStats": {
-    "pace": 220,
-    "percentComplete": 100,
-    "daysRemaining": 1
-   },
-   "histCount": 220,
-   "volume": 2843829.4427320003,
-   "liquidity": 1000209.20237,
-   "ranges": [
-    {
-     "label": "<20",
-     "lo": null,
-     "hi": 19,
-     "market": 0.0,
-     "token": "79777768889926989819258242566390443750378603172075395776835647823231920826158",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "20-39",
-     "lo": 20,
-     "hi": 39,
-     "market": 0.0,
-     "token": "103136855362407970090742452309281818569870777891108056986349551674080100805241",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "40-59",
-     "lo": 40,
-     "hi": 59,
-     "market": 0.0,
-     "token": "2591059894640321925676166439665049971839309128744661447938146411318916984104",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "60-79",
-     "lo": 60,
-     "hi": 79,
-     "market": 0.0,
-     "token": "25878619768994593163315940448395884309184702616936953130584412637828639186737",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "80-99",
-     "lo": 80,
-     "hi": 99,
-     "market": 0.0,
-     "token": "14817860240664850074840245694458039039573489357400873965826498619207715293579",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "100-119",
-     "lo": 100,
-     "hi": 119,
-     "market": 0.0,
-     "token": "77959522567460560735830391000482348476111695541716776236867328538629531591879",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "120-139",
-     "lo": 120,
-     "hi": 139,
-     "market": 0.0,
-     "token": "21702370729925945967592221080783302507917532576393325789501153458613325755430",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "140-159",
-     "lo": 140,
-     "hi": 159,
-     "market": 0.0,
-     "token": "75376439328748576721633805328718354879202370830647344028994650229017773519845",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "160-179",
-     "lo": 160,
-     "hi": 179,
-     "market": 0.0,
-     "token": "1343174981312953898785758049068124060487640027810026008064586483706085721108",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "180-199",
-     "lo": 180,
-     "hi": 199,
-     "market": 0.0,
-     "token": "19638304048016334959093293673094953243191744192991383970333167564326458049285",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "200-219",
-     "lo": 200,
-     "hi": 219,
-     "market": 0.0,
-     "token": "62502808924408551925754599335577749856191621836318105938428309702908159508114",
-     "closed": true,
-     "depth": null
-    },
-    {
-     "label": "220-239",
-     "lo": 220,
-     "hi": 239,
-     "market": 0.964,
-     "token": "77471885259316945332641029947731012500832911649220661470738209182948989486344",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.966,
-      "best_bid": 0.961,
-      "usd_at_best": 67.62,
-      "usd_within_1c": 6212.0,
-      "usd_within_2c": 10990.58,
-      "avg_fill_10": 0.966,
-      "avg_fill_25": 0.966,
-      "bid_usd_within_2c": 1205.49
-     }
-    },
-    {
-     "label": "240-259",
-     "lo": 240,
-     "hi": 259,
-     "market": 0.0325,
-     "token": "93871631709319915874537469480190304641191057865307618742007431536944104631635",
-     "closed": false,
-     "depth": {
-      "best_ask": 0.034,
-      "best_bid": 0.031,
-      "usd_at_best": 5.78,
-      "usd_within_1c": 80.31,
-      "usd_within_2c": 100.45,
-      "avg_fill_10": 0.0348,
-      "avg_fill_25": 0.0376,
-      "bid_usd_within_2c": 337.6
-     }
-    },
-    {
-     "label": "260-279",
-     "lo": 260,
-     "hi": 279,
-     "market": 0.001,
-     "token": "105803886424079306570674723870243482210077686190321187065080229464485101873871",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "280-299",
-     "lo": 280,
-     "hi": 299,
-     "market": 0.0005,
-     "token": "17428674906941018467040230541987317089690734174828953505487796858960731703564",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "300-319",
-     "lo": 300,
-     "hi": 319,
-     "market": 0.0005,
-     "token": "85156773094552261397634315455412866760867408428272691463692784006373422181437",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "320-339",
-     "lo": 320,
-     "hi": 339,
-     "market": 0.0005,
-     "token": "42117078822022643156392443602587976552705278447461597524525089639425257367416",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "340-359",
-     "lo": 340,
-     "hi": 359,
-     "market": 0.0005,
-     "token": "72412383940549336617354561439777529807829272206261890511894234626011756104041",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "360-379",
-     "lo": 360,
-     "hi": 379,
-     "market": 0.0005,
-     "token": "14185664013884769049860289810296491303133996535999508058806329744298175730544",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "380-399",
-     "lo": 380,
-     "hi": 399,
-     "market": 0.0005,
-     "token": "60584164632450616790017260572477718140804524567118750095924086236019866246643",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "400-419",
-     "lo": 400,
-     "hi": 419,
-     "market": 0.0005,
-     "token": "87238607069182097052557382689440079623861548810143903579080496306605508021892",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "420-439",
-     "lo": 420,
-     "hi": 439,
-     "market": 0.0005,
-     "token": "109292238480738811988634797137106249707577917445938124850808648527611298834240",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "440-459",
-     "lo": 440,
-     "hi": 459,
-     "market": 0.0005,
-     "token": "50278054645235986050668708367981224684817425501851562850382511533784532079844",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "460-479",
-     "lo": 460,
-     "hi": 479,
-     "market": 0.0005,
-     "token": "84252357329394845419069386388545209820951960945809512450694943194979877733531",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "480-499",
-     "lo": 480,
-     "hi": 499,
-     "market": 0.0005,
-     "token": "109365579560289005320171412033428439102738257983866146394772103987911765125226",
-     "closed": false,
-     "depth": null
-    },
-    {
-     "label": "500+",
-     "lo": 500,
-     "hi": null,
-     "market": 0.0005,
-     "token": "90050018973899346670418183422052770363656182057365055833501304021102053535146",
-     "closed": false,
-     "depth": null
-    }
-   ]
-  }
- ],
- "resolved": [
   {
    "handle": "NYCMayor",
    "title": "NYC Mayor # posts September 22 - September 29, 2026?",
@@ -5581,13 +4497,13 @@
    "settled": true
   },
   {
-   "handle": "NYCMayor",
-   "title": "NYC Mayor # posts September 15 - September 22, 2026?",
-   "slug": "nyc-mayor-of-tweets-september-15-september-22-2026",
-   "start": "2026-09-15T16:00:00.000Z",
-   "end": "2026-09-22T15:59:59.000Z",
-   "histCount": 34,
-   "winner": "20-39",
+   "handle": "WhiteHouse",
+   "title": "White House # posts September 25 - October 2, 2026?",
+   "slug": "white-house-of-tweets-september-25-october-2-2026",
+   "start": "2026-09-25T16:00:00.000Z",
+   "end": "2026-10-02T15:59:59.000Z",
+   "histCount": 261,
+   "winner": "200+",
    "settled": true
   },
   {
@@ -5611,14 +4527,14 @@
    "settled": true
   },
   {
-   "handle": "WhiteHouse",
-   "title": "White House # posts September 15 - September 22, 2026?",
-   "slug": "white-house-of-tweets-september-15-september-22-2026",
-   "start": "2026-09-15T16:00:00.000Z",
-   "end": "2026-09-22T15:59:59.000Z",
-   "histCount": 206,
-   "winner": "200+",
-   "settled": true
+   "handle": "ZelenskyyUa",
+   "title": "Zelenskyy # posts September 25 - October 2, 2026?",
+   "slug": "zelenskyy-of-tweets-september-25-october-2-2026",
+   "start": "2026-09-25T16:00:00.000Z",
+   "end": "2026-10-02T15:59:59.000Z",
+   "histCount": 93,
+   "winner": "80-99",
+   "settled": false
   },
   {
    "handle": "ZelenskyyUa",
@@ -5641,14 +4557,14 @@
    "settled": true
   },
   {
-   "handle": "ZelenskyyUa",
-   "title": "Zelenskyy # posts September 15 - September 22, 2026?",
-   "slug": "zelenskyy-of-tweets-september-15-september-22-2026",
-   "start": "2026-09-15T16:00:00.000Z",
-   "end": "2026-09-22T15:59:59.000Z",
-   "histCount": 93,
-   "winner": "80-99",
-   "settled": true
+   "handle": "cz_binance",
+   "title": "CZ # posts September 25 - October 2, 2026?",
+   "slug": "cz-binance-of-tweets-september-25-october-2-2026",
+   "start": "2026-09-25T16:00:00.000Z",
+   "end": "2026-10-02T15:59:59.000Z",
+   "histCount": 15,
+   "winner": "<20",
+   "settled": false
   },
   {
    "handle": "cz_binance",
@@ -5671,14 +4587,14 @@
    "settled": true
   },
   {
-   "handle": "cz_binance",
-   "title": "CZ # posts September 15 - September 22, 2026?",
-   "slug": "cz-binance-of-tweets-september-15-september-22-2026",
-   "start": "2026-09-15T16:00:00.000Z",
-   "end": "2026-09-22T15:59:59.000Z",
-   "histCount": 24,
-   "winner": "20-39",
-   "settled": true
+   "handle": "elonmusk",
+   "title": "Elon Musk # tweets September 25 - October 2, 2026?",
+   "slug": "elon-musk-of-tweets-september-25-october-2-2026",
+   "start": "2026-09-25T16:00:00.000Z",
+   "end": "2026-10-02T15:59:59.000Z",
+   "histCount": 222,
+   "winner": "220-239",
+   "settled": false
   },
   {
    "handle": "elonmusk",
@@ -5741,14 +4657,14 @@
    "settled": true
   },
   {
-   "handle": "elonmusk",
-   "title": "Elon Musk # tweets September 15 - September 22, 2026?",
-   "slug": "elon-musk-of-tweets-september-15-september-22-2026",
-   "start": "2026-09-15T16:00:00.000Z",
-   "end": "2026-09-22T15:59:59.000Z",
-   "histCount": 222,
-   "winner": "220-239",
-   "settled": true
+   "handle": "khamenei_ir",
+   "title": "Khamenei # posts September 25 - October 2, 2026?",
+   "slug": "khamenei-of-tweets-september-25-october-2-2026",
+   "start": "2026-09-25T16:00:00.000Z",
+   "end": "2026-10-02T15:59:59.000Z",
+   "histCount": 1,
+   "winner": "<5",
+   "settled": false
   },
   {
    "handle": "khamenei_ir",
@@ -5771,14 +4687,14 @@
    "settled": true
   },
   {
-   "handle": "khamenei_ir",
-   "title": "Khamenei # posts September 15 - September 22, 2026?",
-   "slug": "khamenei-of-tweets-september-15-september-22-2026",
-   "start": "2026-09-15T16:00:00.000Z",
-   "end": "2026-09-22T15:59:59.000Z",
-   "histCount": 0,
-   "winner": "<5",
-   "settled": true
+   "handle": "realDonaldTrump",
+   "title": "Donald Trump # Truth Social posts September 25 - October 2, 2026?",
+   "slug": "donald-trump-of-truth-social-posts-september-25-october-2-2026",
+   "start": "2026-09-25T16:00:00.000Z",
+   "end": "2026-10-02T15:59:59.000Z",
+   "histCount": 193,
+   "winner": "180-199",
+   "settled": false
   },
   {
    "handle": "realDonaldTrump",
@@ -5801,14 +4717,14 @@
    "settled": true
   },
   {
-   "handle": "realDonaldTrump",
-   "title": "Donald Trump # Truth Social posts September 15 - September 22, 2026?",
-   "slug": "donald-trump-of-truth-social-posts-september-15-september-22-2026",
-   "start": "2026-09-15T16:00:00.000Z",
-   "end": "2026-09-22T15:59:59.000Z",
-   "histCount": 98,
+   "handle": "tedcruz",
+   "title": "Ted Cruz # posts September 25 - October 2, 2026?",
+   "slug": "ted-cruz-of-tweets-september-25-october-2-2026",
+   "start": "2026-09-25T16:00:00.000Z",
+   "end": "2026-10-02T15:59:59.000Z",
+   "histCount": 90,
    "winner": "80-99",
-   "settled": true
+   "settled": false
   },
   {
    "handle": "tedcruz",
@@ -5827,16 +4743,6 @@
    "start": "2026-09-18T16:00:00.000Z",
    "end": "2026-09-25T15:59:59.000Z",
    "histCount": 116,
-   "winner": "100-119",
-   "settled": true
-  },
-  {
-   "handle": "tedcruz",
-   "title": "Ted Cruz # posts September 15 - September 22, 2026?",
-   "slug": "ted-cruz-of-tweets-september-15-september-22-2026",
-   "start": "2026-09-15T16:00:00.000Z",
-   "end": "2026-09-22T15:59:59.000Z",
-   "histCount": 101,
    "winner": "100-119",
    "settled": true
   }
