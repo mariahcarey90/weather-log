@@ -188,13 +188,16 @@ def main():
                "payoutIfWin": round(stake / ask, 2) if stake >= cfg["min_stake"] else 0,
                "expectedValue": round(stake * (ps / ask - 1), 2) if stake >= cfg["min_stake"] else 0,
                "maxLoss": stake if stake >= cfg["min_stake"] else 0, "leadHours": s.get("leadHours"),
-               "alreadyHeld": round(held_usd, 2)}
+               "alreadyHeld": round(held_usd, 2),
+               # walk-away price: the most worth paying when the price runs while you buy. Above it the
+               # bet no longer clears the entry rule (our odds 8+ points over the price) or the sizing odds.
+               "walkAway": round(max(ask, min(p - cfg["edge_min"], ps - 0.02)), 3)}
         if rec["stake"]:
             budget_left -= rec["stake"]
         slip.append(rec)
         lines.append(
             f"{s['city']} {s['marketDate']} {b['label']} [{s.get('stability')}]: "
-            + (f"{blevel.upper()} ${rec['stake']:.0f} as a limit order at {ask*100:.0f}c (pays ${rec['payoutIfWin']:.0f}, "
+            + (f"{blevel.upper()} ${rec['stake']:.0f} as a limit order at {ask*100:.0f}c, walk away above {rec['walkAway']*100:.0f}c (pays ${rec['payoutIfWin']:.0f}, "
                f"expected {rec['expectedValue']:+.2f}, max loss ${rec['maxLoss']:.0f}); "
                if rec["stake"] else ("SKIP (already held at the cap); " if held and room < cfg["min_stake"] else "SKIP (sized under the minimum); "))
             + f"our odds {p*100:.0f}%, sizing odds {ps*100:.0f}% vs {ask*100:.0f}c; limited by {limiter}"
