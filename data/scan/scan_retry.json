@@ -1,0 +1,559 @@
+{
+ "generated": "2026-10-02T13:51:59Z",
+ "cities": [
+  {
+   "key": "paris",
+   "current": false,
+   "notes": [],
+   "avg_daily_volume": 94520,
+   "unit": "C",
+   "icao": "LFPB",
+   "resolution_source": "NOAA",
+   "rules_excerpt": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Paris-Le Bourget Airport Station in degrees Celsius on 1 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" co",
+   "book_tomorrow": {
+    "liquidity": 44763,
+    "volume_so_far": 9331,
+    "live_buckets": 3,
+    "median_ask_2c": 118,
+    "min_ask_2c": 97,
+    "total_ask_2c": 1020,
+    "median_slip_25_c": 0.0,
+    "buckets": [
+     {
+      "label": "22\u00b0C",
+      "yes": 0.185,
+      "ask_2c": 118.37,
+      "bid_2c": 72.58,
+      "fill25": 0.1942
+     },
+     {
+      "label": "23\u00b0C",
+      "yes": 0.55,
+      "ask_2c": 805.25,
+      "bid_2c": 3789.34,
+      "fill25": 0.56
+     },
+     {
+      "label": "24\u00b0C",
+      "yes": 0.235,
+      "ask_2c": 96.84,
+      "bid_2c": 107.13,
+      "fill25": 0.25
+     }
+    ]
+   },
+   "station": "Paris/Le Bourge Arpt",
+   "lat": 48.967,
+   "lon": 2.428,
+   "tz": "Europe/Paris",
+   "regime": {
+    "Settled": 0.27,
+    "Mixed": 0.23,
+    "Unsettled": 0.5
+   },
+   "climate": {
+    "wind_mean_kmh": 10.3,
+    "windy_days_pct": 3,
+    "wind_shift_front_pct": 0,
+    "heavy_cloud_pct": 42,
+    "rain_pct": 15,
+    "storm_pct": 0,
+    "pressure_front_pct": 15,
+    "fog_pct": 2
+   },
+   "backtest_day1": {
+    "days": 60,
+    "top_hit": 0.433,
+    "within_one": 0.867,
+    "avg_p_win": 0.321,
+    "brier": 0.672
+   },
+   "backtest_day2": {
+    "days": 60,
+    "top_hit": 0.383,
+    "within_one": 0.8,
+    "avg_p_win": 0.273,
+    "brier": 0.741
+   },
+   "hit_by_regime": {
+    "Settled": {
+     "days": 16,
+     "top_hit": 0.5
+    },
+    "Mixed": {
+     "days": 14,
+     "top_hit": 0.71
+    },
+    "Unsettled": {
+     "days": 30,
+     "top_hit": 0.27
+    }
+   },
+   "obs_days": 61
+  },
+  {
+   "key": "guangzhou",
+   "current": false,
+   "notes": [],
+   "avg_daily_volume": 45819,
+   "unit": "C",
+   "icao": "ZGGG",
+   "resolution_source": "NOAA",
+   "rules_excerpt": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Guangzhou Baiyun International Airport Station in degrees Celsius on 1 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under",
+   "book_tomorrow": {
+    "liquidity": 30471,
+    "volume_so_far": 9431,
+    "live_buckets": 4,
+    "median_ask_2c": 122,
+    "min_ask_2c": 22,
+    "total_ask_2c": 583,
+    "median_slip_25_c": 0.0,
+    "buckets": [
+     {
+      "label": "30\u00b0C",
+      "yes": 0.146,
+      "ask_2c": 21.69,
+      "bid_2c": 46.45,
+      "fill25": 0.1611
+     },
+     {
+      "label": "31\u00b0C",
+      "yes": 0.325,
+      "ask_2c": 317.65,
+      "bid_2c": 154.42,
+      "fill25": 0.33
+     },
+     {
+      "label": "32\u00b0C",
+      "yes": 0.305,
+      "ask_2c": 84.15,
+      "bid_2c": 316.34,
+      "fill25": 0.31
+     },
+     {
+      "label": "33\u00b0C",
+      "yes": 0.2,
+      "ask_2c": 159.81,
+      "bid_2c": 233.66,
+      "fill25": 0.22
+     }
+    ]
+   },
+   "station": "Guangzhou/Baiyun Intl",
+   "lat": 23.392,
+   "lon": 113.307,
+   "tz": "Asia/Shanghai",
+   "regime": {
+    "Settled": 0.12,
+    "Mixed": 0.1,
+    "Unsettled": 0.78
+   },
+   "climate": {
+    "wind_mean_kmh": 6.5,
+    "windy_days_pct": 2,
+    "wind_shift_front_pct": 0,
+    "heavy_cloud_pct": 43,
+    "rain_pct": 78,
+    "storm_pct": 72,
+    "pressure_front_pct": 0,
+    "fog_pct": 0
+   },
+   "backtest_day1": {
+    "days": 60,
+    "top_hit": 0.367,
+    "within_one": 0.717,
+    "avg_p_win": 0.254,
+    "brier": 0.82
+   },
+   "backtest_day2": {
+    "days": 9,
+    "top_hit": 0.0,
+    "within_one": 0.0,
+    "avg_p_win": 0.002,
+    "brier": 1.379
+   },
+   "hit_by_regime": {
+    "Settled": {
+     "days": 7,
+     "top_hit": 0.57
+    },
+    "Mixed": {
+     "days": 6,
+     "top_hit": 0.5
+    },
+    "Unsettled": {
+     "days": 47,
+     "top_hit": 0.32
+    }
+   },
+   "obs_days": 61
+  },
+  {
+   "key": "chicago",
+   "current": false,
+   "notes": [],
+   "avg_daily_volume": 39931,
+   "unit": "F",
+   "icao": "KORD",
+   "resolution_source": "NOAA",
+   "rules_excerpt": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Chicago O'Hare Intl Airport Station in degrees Fahrenheit on 1 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Te",
+   "book_tomorrow": {
+    "liquidity": 42541,
+    "volume_so_far": 7976,
+    "live_buckets": 3,
+    "median_ask_2c": 283,
+    "min_ask_2c": 14,
+    "total_ask_2c": 3504,
+    "median_slip_25_c": 0.78,
+    "buckets": [
+     {
+      "label": "66-67\u00b0F",
+      "yes": 0.49,
+      "ask_2c": 3206.26,
+      "bid_2c": 338.01,
+      "fill25": 0.5
+     },
+     {
+      "label": "68-69\u00b0F",
+      "yes": 0.42,
+      "ask_2c": 283.22,
+      "bid_2c": 353.58,
+      "fill25": 0.4378
+     },
+     {
+      "label": "70-71\u00b0F",
+      "yes": 0.05,
+      "ask_2c": 14.5,
+      "bid_2c": 5.86,
+      "fill25": 0.0796
+     }
+    ]
+   },
+   "station": "Chicago/O'Hare Intl",
+   "lat": 41.96017,
+   "lon": -87.93161,
+   "tz": "America/Chicago",
+   "regime": {
+    "Settled": 0.3,
+    "Mixed": 0.22,
+    "Unsettled": 0.48
+   },
+   "climate": {
+    "wind_mean_kmh": 11.8,
+    "windy_days_pct": 0,
+    "wind_shift_front_pct": 3,
+    "heavy_cloud_pct": 40,
+    "rain_pct": 18,
+    "storm_pct": 12,
+    "pressure_front_pct": 10,
+    "fog_pct": 5
+   },
+   "backtest_day1": {
+    "days": 60,
+    "top_hit": 0.383,
+    "within_one": 0.85,
+    "avg_p_win": 0.269,
+    "brier": 0.753
+   },
+   "backtest_day2": {
+    "days": 60,
+    "top_hit": 0.367,
+    "within_one": 0.867,
+    "avg_p_win": 0.255,
+    "brier": 0.754
+   },
+   "hit_by_regime": {
+    "Settled": {
+     "days": 18,
+     "top_hit": 0.33
+    },
+    "Mixed": {
+     "days": 13,
+     "top_hit": 0.15
+    },
+    "Unsettled": {
+     "days": 29,
+     "top_hit": 0.52
+    }
+   },
+   "obs_days": 61
+  },
+  {
+   "key": "shenzhen",
+   "current": false,
+   "notes": [],
+   "avg_daily_volume": 35808,
+   "unit": "C",
+   "icao": "ZGSZ",
+   "resolution_source": "NOAA",
+   "rules_excerpt": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Shenzhen Bao'an International Airport Station in degrees Celsius on 1 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under ",
+   "book_tomorrow": {
+    "liquidity": 33337,
+    "volume_so_far": 12432,
+    "live_buckets": 4,
+    "median_ask_2c": 101,
+    "min_ask_2c": 22,
+    "total_ask_2c": 478,
+    "median_slip_25_c": 1.06,
+    "buckets": [
+     {
+      "label": "28\u00b0C",
+      "yes": 0.11,
+      "ask_2c": 22.46,
+      "bid_2c": 26.7,
+      "fill25": 0.1325
+     },
+     {
+      "label": "29\u00b0C",
+      "yes": 0.335,
+      "ask_2c": 76.68,
+      "bid_2c": 1981.62,
+      "fill25": 0.3575
+     },
+     {
+      "label": "30\u00b0C",
+      "yes": 0.355,
+      "ask_2c": 254.35,
+      "bid_2c": 356.6,
+      "fill25": 0.36
+     },
+     {
+      "label": "31\u00b0C",
+      "yes": 0.18,
+      "ask_2c": 124.53,
+      "bid_2c": 158.67,
+      "fill25": 0.1986
+     }
+    ]
+   },
+   "station": "Shenzhen/Boan Intl",
+   "lat": 22.639,
+   "lon": 113.803,
+   "tz": "Asia/Shanghai",
+   "regime": {
+    "Settled": 0.22,
+    "Mixed": 0.07,
+    "Unsettled": 0.72
+   },
+   "climate": {
+    "wind_mean_kmh": 8.4,
+    "windy_days_pct": 0,
+    "wind_shift_front_pct": 0,
+    "heavy_cloud_pct": 42,
+    "rain_pct": 63,
+    "storm_pct": 65,
+    "pressure_front_pct": 0,
+    "fog_pct": 8
+   },
+   "backtest_day1": {
+    "days": 60,
+    "top_hit": 0.4,
+    "within_one": 0.833,
+    "avg_p_win": 0.289,
+    "brier": 0.748
+   },
+   "backtest_day2": {
+    "days": 60,
+    "top_hit": 0.35,
+    "within_one": 0.833,
+    "avg_p_win": 0.267,
+    "brier": 0.76
+   },
+   "hit_by_regime": {
+    "Settled": {
+     "days": 13,
+     "top_hit": 0.23
+    },
+    "Mixed": {
+     "days": 4,
+     "top_hit": 0.0
+    },
+    "Unsettled": {
+     "days": 43,
+     "top_hit": 0.49
+    }
+   },
+   "obs_days": 61
+  },
+  {
+   "key": "wuhan",
+   "current": false,
+   "notes": [],
+   "avg_daily_volume": 33445,
+   "unit": "C",
+   "icao": "ZHHH",
+   "resolution_source": "NOAA",
+   "rules_excerpt": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Wuhan Tianhe International Airport Station in degrees Celsius on 1 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the",
+   "book_tomorrow": {
+    "liquidity": 41078,
+    "volume_so_far": 11157,
+    "live_buckets": 3,
+    "median_ask_2c": 182,
+    "min_ask_2c": 128,
+    "total_ask_2c": 3923,
+    "median_slip_25_c": 0.83,
+    "buckets": [
+     {
+      "label": "17\u00b0C",
+      "yes": 0.235,
+      "ask_2c": 128.46,
+      "bid_2c": 4844.72,
+      "fill25": 0.2595
+     },
+     {
+      "label": "18\u00b0C",
+      "yes": 0.515,
+      "ask_2c": 3611.79,
+      "bid_2c": 307.59,
+      "fill25": 0.527
+     },
+     {
+      "label": "19\u00b0C",
+      "yes": 0.195,
+      "ask_2c": 182.36,
+      "bid_2c": 120.68,
+      "fill25": 0.2183
+     }
+    ]
+   },
+   "station": "Wuhan/Tianhe Intl",
+   "lat": 30.783,
+   "lon": 114.205,
+   "tz": "Asia/Shanghai",
+   "regime": {
+    "Settled": 0.2,
+    "Mixed": 0.27,
+    "Unsettled": 0.53
+   },
+   "climate": {
+    "wind_mean_kmh": 11.7,
+    "windy_days_pct": 13,
+    "wind_shift_front_pct": 0,
+    "heavy_cloud_pct": 40,
+    "rain_pct": 38,
+    "storm_pct": 22,
+    "pressure_front_pct": 2,
+    "fog_pct": 2
+   },
+   "backtest_day1": {
+    "days": 60,
+    "top_hit": 0.383,
+    "within_one": 0.733,
+    "avg_p_win": 0.223,
+    "brier": 0.775
+   },
+   "backtest_day2": {
+    "days": 60,
+    "top_hit": 0.283,
+    "within_one": 0.65,
+    "avg_p_win": 0.182,
+    "brier": 0.83
+   },
+   "hit_by_regime": {
+    "Settled": {
+     "days": 12,
+     "top_hit": 0.33
+    },
+    "Mixed": {
+     "days": 16,
+     "top_hit": 0.31
+    },
+    "Unsettled": {
+     "days": 32,
+     "top_hit": 0.44
+    }
+   },
+   "obs_days": 61
+  },
+  {
+   "key": "qingdao",
+   "current": false,
+   "notes": [],
+   "avg_daily_volume": 32500,
+   "unit": "C",
+   "icao": "ZSQD",
+   "resolution_source": "NOAA",
+   "rules_excerpt": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Qingdao Jiaodong International Airport Station in degrees Celsius on 1 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under",
+   "book_tomorrow": {
+    "liquidity": 50450,
+    "volume_so_far": 8931,
+    "live_buckets": 3,
+    "median_ask_2c": 150,
+    "min_ask_2c": 24,
+    "total_ask_2c": 6923,
+    "median_slip_25_c": 0.93,
+    "buckets": [
+     {
+      "label": "22\u00b0C",
+      "yes": 0.33,
+      "ask_2c": 150.21,
+      "bid_2c": 14432.53,
+      "fill25": 0.3493
+     },
+     {
+      "label": "23\u00b0C",
+      "yes": 0.615,
+      "ask_2c": 6748.57,
+      "bid_2c": 143.67,
+      "fill25": 0.6257
+     },
+     {
+      "label": "24\u00b0C",
+      "yes": 0.05,
+      "ask_2c": 24.29,
+      "bid_2c": 5.51,
+      "fill25": 0.0844
+     }
+    ]
+   },
+   "station": "Qingdao/Jiaodong Arpt",
+   "lat": 36.362,
+   "lon": 120.087,
+   "tz": "Asia/Shanghai",
+   "regime": {
+    "Settled": 0.27,
+    "Mixed": 0.25,
+    "Unsettled": 0.48
+   },
+   "climate": {
+    "wind_mean_kmh": 11.0,
+    "windy_days_pct": 7,
+    "wind_shift_front_pct": 0,
+    "heavy_cloud_pct": 28,
+    "rain_pct": 32,
+    "storm_pct": 23,
+    "pressure_front_pct": 3,
+    "fog_pct": 12
+   },
+   "backtest_day1": {
+    "days": 60,
+    "top_hit": 0.433,
+    "within_one": 0.867,
+    "avg_p_win": 0.304,
+    "brier": 0.694
+   },
+   "backtest_day2": {
+    "days": 60,
+    "top_hit": 0.35,
+    "within_one": 0.833,
+    "avg_p_win": 0.268,
+    "brier": 0.739
+   },
+   "hit_by_regime": {
+    "Settled": {
+     "days": 16,
+     "top_hit": 0.62
+    },
+    "Mixed": {
+     "days": 15,
+     "top_hit": 0.27
+    },
+    "Unsettled": {
+     "days": 29,
+     "top_hit": 0.41
+    }
+   },
+   "obs_days": 61
+  }
+ ]
+}
