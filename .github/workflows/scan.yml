@@ -3,7 +3,7 @@ name: Scan candidate cities (research)
 on:
   push:
     branches: [scan-cities]
-    paths: ["scan_cities.py", ".github/workflows/scan.yml"]
+    paths: ["scan_cities.py", "scan_only.txt", ".github/workflows/scan.yml"]
   workflow_dispatch:
 
 permissions:
@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: Scan
-        run: python3 scan_cities.py
+        run: python3 scan_cities.py $(cat scan_only.txt 2>/dev/null)
       - name: Commit results to this branch only
         run: |
           git config user.name "weather-log bot"

@@ -171,6 +171,7 @@ def city(key):
     st = {"key": key, "icao": mi["icao"], "lat": lat, "lon": lon, "tz": tz, "unit": mi["unit"] or "C"}
     end = date.today() - timedelta(days=1)
     start = end - timedelta(days=DAYS)
+    import time; time.sleep(20 if sys.argv[1:] else 0)  # IEM rate limit
     try:
         obs = observed_highs(dict(st, icao=st["icao"][1:] if st["icao"].startswith("K") else st["icao"]),
                              start, end + timedelta(days=1))
@@ -229,14 +230,14 @@ def city(key):
 
 def main():
     only = sys.argv[1:] or CITIES
-    with cf.ThreadPoolExecutor(4) as ex:
+    with cf.ThreadPoolExecutor(1 if sys.argv[1:] else 4) as ex:
         recs = list(ex.map(city, only))
     os.makedirs("data/scan", exist_ok=True)
     for r in recs:
         for b in ((r.get("book_tomorrow") or {}).get("buckets") or []):
             b.pop("best_ask", None)
     json.dump({"generated": datetime.utcnow().isoformat(timespec="seconds") + "Z", "cities": recs},
-              open("data/scan/scan.json", "w"), indent=1)
+              open("data/scan/scan_retry.json" if sys.argv[1:] else "data/scan/scan.json", "w"), indent=1)
     print(f"{'city':14s} {'vol/day':>8s} {'book2c':>7s} {'slip25':>6s} {'hit1':>5s} {'hitSet':>6s} {'Set':>4s} {'Mix':>4s} {'Uns':>4s} {'wind':>5s} station")
     for r in sorted(recs, key=lambda r: -(r.get("avg_daily_volume") or 0)):
         b = r.get("book_tomorrow") or {}
