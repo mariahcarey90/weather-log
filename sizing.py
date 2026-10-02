@@ -170,8 +170,16 @@ def main():
             if s["city"] in cfg["weak_cities"]:
                 raw *= 0.5; cuts.append("weaker city: half")
         depth_cap = float(d.get("usd_within_2c") or 0)
-        stake = min(raw, tier_cap, cfg["max_stake"], depth_cap, budget_left)
-        limiter = min(((blevel, raw), ("tier cap", tier_cap), ("max", cfg["max_stake"]),
+        # bets the owner already holds in this market count against the per-market cap
+        held = [x for x in bets.values() if x.get("status", "open") == "open"
+                and x.get("city") == s["city"] and x.get("marketDate") == s["marketDate"]]
+        held_usd = sum(float(x.get("stake") or 0) for x in held)
+        room = max(0.0, tier_cap - held_usd)
+        if held:
+            same = [x for x in held if x.get("bucket") == b["label"]]
+            cuts.append(f"you already hold ${held_usd:.0f} in this market" + (" on this bucket" if same else ""))
+        stake = min(raw, room, cfg["max_stake"], depth_cap, budget_left)
+        limiter = min(((blevel, raw), ("tier cap" if not held else "tier cap less what you hold", room), ("max", cfg["max_stake"]),
                        ("order book", depth_cap), ("daily risk budget", budget_left)), key=lambda x: x[1])[0]
         stake = round(stake) if cfg["mode"] in ("flat", "scaled") else (round(stake / 5) * 5 if stake >= 10 else round(stake, 0))
         rec = {"level": blevel, "city": s["city"], "marketDate": s["marketDate"], "bucket": b["label"], "stability": s.get("stability"),
@@ -179,7 +187,8 @@ def main():
                "stake": stake if stake >= cfg["min_stake"] else 0, "limitedBy": limiter, "cuts": cuts,
                "payoutIfWin": round(stake / ask, 2) if stake >= cfg["min_stake"] else 0,
                "expectedValue": round(stake * (ps / ask - 1), 2) if stake >= cfg["min_stake"] else 0,
-               "maxLoss": stake if stake >= cfg["min_stake"] else 0, "leadHours": s.get("leadHours")}
+               "maxLoss": stake if stake >= cfg["min_stake"] else 0, "leadHours": s.get("leadHours"),
+               "alreadyHeld": round(held_usd, 2)}
         if rec["stake"]:
             budget_left -= rec["stake"]
         slip.append(rec)
@@ -187,7 +196,7 @@ def main():
             f"{s['city']} {s['marketDate']} {b['label']} [{s.get('stability')}]: "
             + (f"{blevel.upper()} ${rec['stake']:.0f} as a limit order at {ask*100:.0f}c (pays ${rec['payoutIfWin']:.0f}, "
                f"expected {rec['expectedValue']:+.2f}, max loss ${rec['maxLoss']:.0f}); "
-               if rec["stake"] else "SKIP (sized under the minimum); ")
+               if rec["stake"] else ("SKIP (already held at the cap); " if held and room < cfg["min_stake"] else "SKIP (sized under the minimum); "))
             + f"our odds {p*100:.0f}%, sizing odds {ps*100:.0f}% vs {ask*100:.0f}c; limited by {limiter}"
             + (f"; {', '.join(cuts)}" if cuts else ""))
 
