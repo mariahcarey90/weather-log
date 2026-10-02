@@ -44,6 +44,8 @@ DEFAULTS = {
     ],
     "drawdown_brake": 0.20,
     "weak_cities": {"mexico-city": 0.38, "lucknow": 0.37},  # day-ahead backtest top-pick hit rate
+    # trial cities: paper trades only, never on the slip, and not counted toward tier unlocks
+    "paper_only_cities": ["dallas", "seattle", "toronto"],
     # "flat": the owner's fixed stake levels; "kelly": quarter Kelly as described above
     "mode": "kelly",
     "flat": {"confident": 50.0, "standard": 25.0, "longshot": 10.0, "longshot_settled": 15.0},
@@ -60,7 +62,9 @@ def load_dir(path):
 
 
 def tier_state(cfg, paper, results):
-    settled = [results[k] for k, p in paper.items() if p.get("variant") == "current" and k in results]
+    trial = set(cfg.get("paper_only_cities") or [])
+    settled = [results[k] for k, p in paper.items()
+               if p.get("variant") == "current" and k in results and p.get("city") not in trial]
     n = len(settled)
     staked = sum(r["stake"] for r in settled)
     roi = sum(r["pnl"] for r in settled) / staked if staked else None
@@ -117,6 +121,8 @@ def main():
         s = e["data"]
         if s.get("stability") == "Unsettled" or (s.get("leadHours") or 0) < -2:
             continue
+        if s.get("paperOnly") or s["city"] in cfg.get("paper_only_cities", []):
+            continue  # trial city: paper trades only until promoted
         msum = sum(b.get("market") or 0 for b in s.get("buckets", [])) or 1
         best = None
         for b in s.get("buckets", []):

@@ -468,6 +468,7 @@ def main():
                 "sigma": round(ku, 2), "sources": sources, "buckets": buckets, "gaps": gaps,
                 "volume": mk.get("volume"), "liquidity": mk.get("liquidity"), "note": note,
                 "stability": stab, "stabilityReasons": stab_why,
+                "paperOnly": bool(st.get("paper_only")),
                 "modelSpread": round(spread_c * (9 / 5 if fahrenheit else 1), 2) if spread_c is not None else None,
                 "conditions": day.get("conditions"),
             }

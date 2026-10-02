@@ -32,6 +32,14 @@ STATIONS = [
      "tz": "Asia/Shanghai", "unit": "C", "slug": "shanghai"},
     {"key": "ankara", "name": "Ankara", "icao": "LTAC", "lat": 40.128, "lon": 32.995,
      "tz": "Europe/Istanbul", "unit": "C", "slug": "ankara"},
+    # paper-only trial cities (2 Oct 2026, after the regime scan on branch scan-cities):
+    # forecasts, paper trades and scoring only; sizing.py never puts them on the bet slip
+    {"key": "dallas", "name": "Dallas", "icao": "KDAL", "lat": 32.8384, "lon": -96.8358,
+     "tz": "America/Chicago", "unit": "F", "slug": "dallas", "paper_only": True},
+    {"key": "seattle", "name": "Seattle", "icao": "KSEA", "lat": 47.4447, "lon": -122.3144,
+     "tz": "America/Los_Angeles", "unit": "F", "slug": "seattle", "paper_only": True},
+    {"key": "toronto", "name": "Toronto", "icao": "CYYZ", "lat": 43.679, "lon": -79.629,
+     "tz": "America/Toronto", "unit": "C", "slug": "toronto", "paper_only": True},
 ]
 
 DET_MODELS = ["ecmwf_ifs025", "ecmwf_aifs025_single", "gfs_seamless", "icon_seamless",
@@ -456,6 +464,7 @@ def main():
         local_now = now.astimezone(tz)
         dates = [(local_now.date() + timedelta(days=i)).isoformat() for i in (-1, 0, 1)]
         rec = {k: st[k] for k in ("name", "icao", "lat", "lon", "tz", "unit")}
+        rec["paper_only"] = bool(st.get("paper_only"))
         rec["local_now"] = local_now.isoformat(timespec="minutes")
         NOW_LOCAL[st["key"]] = local_now.strftime("%Y-%m-%dT%H:00")
         try:

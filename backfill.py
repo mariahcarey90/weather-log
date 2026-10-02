@@ -11,7 +11,7 @@ Writes data/calibration.json: per city and lead (day1 = ~12-36 h ahead,
 day2 = ~36-60 h), per model and for the model median: bias (forecast - observed,
 deg C), sd of the error, mean absolute error, n. Standard library only.
 """
-import csv, io, json, statistics, urllib.parse
+import csv, io, json, statistics, time, urllib.parse
 from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 
@@ -34,7 +34,7 @@ FC_LOWS = {}    # station key -> {lead: {model: {date: forecast daily min}}}; fi
 
 
 def observed_highs(st, start, end):
-    q = [("station", st["icao"] if st["icao"] != "KATL" else "ATL"), ("data", "tmpf"),
+    q = [("station", st["icao"][1:] if st["icao"].startswith("K") else st["icao"]), ("data", "tmpf"),
          ("year1", start.year), ("month1", start.month), ("day1", start.day),
          ("year2", end.year), ("month2", end.month), ("day2", end.day),
          ("tz", st["tz"]), ("format", "onlycomma"), ("latlon", "no"), ("missing", "empty"),
@@ -123,7 +123,9 @@ def main():
     cal = {"generated": datetime.utcnow().isoformat(timespec="seconds") + "Z",
            "window": [start.isoformat(), end.isoformat()], "cities": {}}
     daily_rows = {}
-    for st in STATIONS:
+    for i, st in enumerate(STATIONS):
+        if i:
+            time.sleep(8)  # the IEM archive rate-limits rapid requests
         print(st["key"])
         obs = observed_highs(st, start, end + timedelta(days=1))
         fc = past_forecasts(st)
