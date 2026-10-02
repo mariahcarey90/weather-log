@@ -23,10 +23,18 @@ MODELS = ["ecmwf_ifs025", "gfs_seamless", "icon_seamless", "gem_seamless",
           "meteofrance_seamless", "ukmo_seamless", "jma_seamless"]
 
 
-def get_text(url):
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=90) as r:
-        return r.read().decode("utf-8", "replace")
+def get_text(url, tries=4):
+    """The IEM archive sometimes answers 429/503 under load: back off and retry."""
+    for k in range(tries):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=90) as r:
+                return r.read().decode("utf-8", "replace")
+        except Exception as e:
+            if k == tries - 1:
+                raise
+            print(f"  retry {k + 1} after {e}")
+            time.sleep(30 * (k + 1))
 
 
 OBS_LOWS = {}   # station key -> {date: observed daily low, market unit}; filled by observed_highs
@@ -123,11 +131,28 @@ def main():
     cal = {"generated": datetime.utcnow().isoformat(timespec="seconds") + "Z",
            "window": [start.isoformat(), end.isoformat()], "cities": {}}
     daily_rows = {}
+    # if a station's observations can't be fetched, keep its previous calibration
+    def prev(path):
+        try:
+            return json.load(open(path)).get("cities", {})
+        except Exception:
+            return {}
+    prev_cal, prev_daily = prev("data/calibration.json"), prev("data/backfill_daily.json")
+    prev_cal_low, prev_rows_low = prev("data/calibration_low.json"), prev("data/backfill_daily_low.json")
+    kept = set()
     for i, st in enumerate(STATIONS):
         if i:
             time.sleep(8)  # the IEM archive rate-limits rapid requests
         print(st["key"])
-        obs = observed_highs(st, start, end + timedelta(days=1))
+        try:
+            obs = observed_highs(st, start, end + timedelta(days=1))
+        except Exception as e:
+            print(f"  observations failed ({e}); keeping the previous calibration for {st['key']}")
+            if st["key"] in prev_cal and st["key"] in prev_daily:
+                cal["cities"][st["key"]] = prev_cal[st["key"]]
+                daily_rows[st["key"]] = prev_daily[st["key"]]
+                kept.add(st["key"])
+            continue
         fc = past_forecasts(st)
         city = {"obs_days": len(obs)}
         daily_rows[st["key"]] = {"unit": st["unit"], "obs": obs,
@@ -162,6 +187,11 @@ def main():
     cal_low = {"generated": cal["generated"], "window": cal["window"], "cities": {}}
     rows_low = {}
     for st in STATIONS:
+        if st["key"] in kept:
+            if st["key"] in prev_cal_low and st["key"] in prev_rows_low:
+                cal_low["cities"][st["key"]] = prev_cal_low[st["key"]]
+                rows_low[st["key"]] = prev_rows_low[st["key"]]
+            continue
         obs, fc = OBS_LOWS.get(st["key"], {}), FC_LOWS.get(st["key"], {})
         if not obs or not fc:
             continue
