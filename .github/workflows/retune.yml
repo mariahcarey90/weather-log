@@ -1,0 +1,51 @@
+name: Re-tune Posts and Music models (weekly)
+
+# Refreshes the settled-window history and re-tunes both paper-track models, so the
+# parameters and the per-account record (which pauses losing accounts in
+# markets/posts_score.py) keep learning from new results. Runs before the Monday
+# weekly review (08:55 Melbourne).
+on:
+  schedule:
+    - cron: "35 19 * * 0"   # Sunday 19:35 UTC = Monday ~06:35 Melbourne
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/retune.yml", "markets/posts_backtest.py", "markets/music_backtest.py"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: retune
+  cancel-in-progress: false
+
+jobs:
+  retune:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+      - name: Posts history and re-tune
+        run: |
+          python3 markets/posts_fetch.py --backfill
+          # tune on the older half, score on the newer half (honest per-account record)
+          python3 markets/posts_backtest.py --grid --split
+      - name: Music history and re-tune
+        run: |
+          python3 markets/music_fetch.py --backfill
+          # older weeks lack price history, so tune on all settled weeks
+          python3 markets/music_backtest.py --grid
+      - name: Commit the re-tuned files only
+        run: |
+          git config user.name "weather-log bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add markets/data/posts_backfill.json markets/data/posts_backtest.json \
+                  markets/data/music_backfill.json markets/data/music_backtest.json
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "retune: $(date -u +%Y-%m-%dT%H:%MZ)"
+          git checkout -- . && git clean -fdq markets/data
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 10
+          done
+          exit 1

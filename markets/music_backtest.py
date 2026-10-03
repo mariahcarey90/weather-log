@@ -124,8 +124,11 @@ def main():
             sc = score(rows_for({"markets": tune, "tracks": bf["tracks"]}, Q), "ours")
             if sc and (best is None or sc["logloss"] < best[0]):
                 best = (sc["logloss"], Q)
-        P = dict(best[1], sims=4000)
-        print("best by log loss on the tuning set:", best)
+        if best is None:  # nothing scorable in the tuning set: keep the defaults
+            print("grid: no scorable tuning markets; keeping the default parameters")
+        else:
+            P = dict(best[1], sims=4000)
+            print("best by log loss on the tuning set:", best)
     rows = rows_for({"markets": test, "tracks": bf["tracks"]}, P)
     print("params", P)
     for k in ("ours", "mkt", "blend"):

@@ -19,6 +19,10 @@ Model versions (paper-trade side by side, like weather):
 Paper rule, as weather: one $25 trade per version per market, on the range with the
 biggest edge where our odds minus the average price of a $25 order >= 8 points,
 best ask >= 5c and the market 3-97%. Paper only; never trades.
+Paused accounts: no new paper trades for an account whose backtest paper trading
+(markets/data/posts_backtest.json, re-tuned weekly by retune.yml) lost money over at
+least PAUSE_MIN_TRADES trades, so the live record only covers accounts we would bet on.
+Their markets are still scored and logged, and open paper trades still settle.
 Standard library only.
 """
 import argparse, glob, json, os, re, sys, time
@@ -28,6 +32,17 @@ import posts_model as pm  # noqa: E402
 
 D = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 EDGE, MIN_ASK, STAKE = 0.08, 0.05, 25.0
+PAUSE_MIN_TRADES = 8
+
+
+def paused_handles(by_handle):
+    """Accounts whose backtest paper trades lost money over enough trades."""
+    out = set()
+    for hd, v in (by_handle or {}).items():
+        pp = v.get("paper") or {}
+        if (pp.get("trades") or 0) >= PAUSE_MIN_TRADES and (pp.get("roi") is not None and pp["roi"] < 0):
+            out.add(hd)
+    return out
 
 
 def ts(s):
@@ -61,6 +76,7 @@ def main():
     bt = json.load(open(bt_path)) if os.path.exists(bt_path) else {}
     params = bt.get("params") or pm.DEFAULT
     by_handle = bt.get("by_handle") or {}
+    paused = paused_handles(by_handle)
     hist = {}
 
     def H(hd):
@@ -111,7 +127,7 @@ def main():
                "range80": [max(t.get("counterTotal") or 0, round(mean - 1.28 * sd)) if s <= now else max(0, round(mean - 1.28 * sd)), round(mean + 1.28 * sd)],
                "paceRatio": info.get("paceRatio"), "samples": info.get("n"),
                "volume": t.get("volume"), "liquidity": t.get("liquidity"),
-               "backtest": by_handle.get(t["handle"]), "buckets": buckets,
+               "backtest": by_handle.get(t["handle"]), "paused": t["handle"] in paused, "buckets": buckets,
                "topPick": top["label"], "marketTop": None if unformed else mtop["label"],
                "pricesUnformed": unformed}
         doc_id = f"{t['slug'][:120]}_{stamp}"
@@ -143,7 +159,7 @@ def main():
     taken = {(p["variant"], p.get("slug") or p["city"] + p["marketDate"]) for p in paper.values()}
     for sn in snaps:
         s = sn["data"]
-        if s["hoursLeft"] < 1:
+        if s["hoursLeft"] < 1 or s.get("paused"):
             continue
         best = {}
         for b in s["buckets"]:
@@ -196,6 +212,8 @@ def main():
     print(f"posts data fetched {latest['fetched_at']}; params {params}")
     for l in lines:
         print("  ", l)
+    if paused:
+        print("paused for paper trading (backtest paper losses): " + ", ".join(sorted(paused)))
     print(f"paper trades opened: {len(opened)}")
     for l in opened:
         print("  +", l)
