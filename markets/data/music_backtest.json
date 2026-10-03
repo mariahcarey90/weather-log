@@ -1,92 +1,92 @@
 {
  "params": {
-  "sigma": 0.07,
+  "sigma": 0.03,
   "sigma_min": 0.08,
-  "decay": 0.98,
+  "decay": 0.97,
   "new_week_other": 0.15
  },
  "ours": {
-  "n": 72,
-  "logloss": 0.484,
-  "brier": 0.281,
-  "top_hit": 0.764
+  "n": 96,
+  "logloss": 0.442,
+  "brier": 0.295,
+  "top_hit": 0.76
  },
  "market": {
-  "n": 72,
-  "logloss": 0.245,
-  "brier": 0.12,
-  "top_hit": 0.917
+  "n": 96,
+  "logloss": 0.236,
+  "brier": 0.114,
+  "top_hit": 0.927
  },
  "blend": {
-  "n": 72,
-  "logloss": 0.333,
-  "brier": 0.167,
-  "top_hit": 0.931
+  "n": 96,
+  "logloss": 0.298,
+  "brier": 0.166,
+  "top_hit": 0.865
  },
  "paper_ours": {
-  "trades": 7,
-  "wins": 2,
-  "pnl": 338.39,
-  "roi": 1.934
+  "trades": 10,
+  "wins": 3,
+  "pnl": 299.5,
+  "roi": 1.198
  },
  "paper_blend": {
-  "trades": 7,
-  "wins": 2,
-  "pnl": 338.39,
-  "roi": 1.934
+  "trades": 10,
+  "wins": 3,
+  "pnl": 299.5,
+  "roi": 1.198
  },
  "by_market": {
   "global_1": {
    "ours": {
-    "n": 18,
-    "logloss": 0.018,
-    "brier": 0.003,
-    "top_hit": 1.0
+    "n": 24,
+    "logloss": 0.197,
+    "brier": 0.155,
+    "top_hit": 0.875
    },
    "market": {
-    "n": 18,
-    "logloss": 0.033,
-    "brier": 0.002,
+    "n": 24,
+    "logloss": 0.066,
+    "brier": 0.025,
     "top_hit": 1.0
    },
    "paper": {
-    "trades": 0,
+    "trades": 1,
     "wins": 0,
-    "pnl": 0.0,
-    "roi": null
+    "pnl": -25.0,
+    "roi": -1.0
    }
   },
   "global_2": {
    "ours": {
-    "n": 18,
-    "logloss": 0.6,
-    "brier": 0.285,
-    "top_hit": 0.889
+    "n": 24,
+    "logloss": 0.501,
+    "brier": 0.292,
+    "top_hit": 0.833
    },
    "market": {
-    "n": 18,
-    "logloss": 0.328,
-    "brier": 0.155,
-    "top_hit": 0.889
+    "n": 24,
+    "logloss": 0.308,
+    "brier": 0.144,
+    "top_hit": 0.917
    },
    "paper": {
-    "trades": 2,
+    "trades": 3,
     "wins": 1,
-    "pnl": 106.25,
-    "roi": 2.125
+    "pnl": -25.5,
+    "roi": -0.34
    }
   },
   "us_1": {
    "ours": {
-    "n": 18,
-    "logloss": 0.474,
-    "brier": 0.312,
-    "top_hit": 0.722
+    "n": 24,
+    "logloss": 0.377,
+    "brier": 0.27,
+    "top_hit": 0.792
    },
    "market": {
-    "n": 18,
-    "logloss": 0.113,
-    "brier": 0.041,
+    "n": 24,
+    "logloss": 0.091,
+    "brier": 0.031,
     "top_hit": 1.0
    },
    "paper": {
@@ -98,22 +98,22 @@
   },
   "us_2": {
    "ours": {
-    "n": 18,
-    "logloss": 0.844,
-    "brier": 0.522,
-    "top_hit": 0.444
+    "n": 24,
+    "logloss": 0.691,
+    "brier": 0.462,
+    "top_hit": 0.542
    },
    "market": {
-    "n": 18,
-    "logloss": 0.506,
-    "brier": 0.28,
-    "top_hit": 0.778
+    "n": 24,
+    "logloss": 0.479,
+    "brier": 0.254,
+    "top_hit": 0.792
    },
    "paper": {
-    "trades": 3,
-    "wins": 1,
-    "pnl": 282.14,
-    "roi": 3.762
+    "trades": 4,
+    "wins": 2,
+    "pnl": 400.0,
+    "roi": 4.0
    }
   }
  }
