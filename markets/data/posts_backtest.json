@@ -6,28 +6,28 @@
   "weeks": 8
  },
  "ours": {
-  "n": 465,
-  "logloss": 0.903,
-  "brier": 0.443,
-  "top_hit": 0.645
- },
- "market": {
-  "n": 465,
-  "logloss": 0.91,
-  "brier": 0.444,
+  "n": 470,
+  "logloss": 0.898,
+  "brier": 0.441,
   "top_hit": 0.647
  },
+ "market": {
+  "n": 470,
+  "logloss": 0.906,
+  "brier": 0.443,
+  "top_hit": 0.649
+ },
  "blend": {
-  "n": 465,
-  "logloss": 0.879,
-  "brier": 0.433,
-  "top_hit": 0.645
+  "n": 470,
+  "logloss": 0.875,
+  "brier": 0.431,
+  "top_hit": 0.647
  },
  "paper_ours": {
-  "trades": 80,
+  "trades": 81,
   "wins": 25,
-  "pnl": 1000.09,
-  "roi": 0.5
+  "pnl": 975.09,
+  "roi": 0.482
  },
  "paper_blend": {
   "trades": 49,
@@ -118,22 +118,22 @@
   },
   "elonmusk": {
    "ours": {
-    "n": 115,
-    "logloss": 0.999,
-    "brier": 0.506,
-    "top_hit": 0.626
+    "n": 120,
+    "logloss": 0.976,
+    "brier": 0.495,
+    "top_hit": 0.633
    },
    "market": {
-    "n": 115,
-    "logloss": 0.931,
-    "brier": 0.453,
-    "top_hit": 0.643
+    "n": 120,
+    "logloss": 0.913,
+    "brier": 0.447,
+    "top_hit": 0.65
    },
    "paper": {
-    "trades": 19,
+    "trades": 20,
     "wins": 3,
-    "pnl": -223.03,
-    "roi": -0.47
+    "pnl": -248.03,
+    "roi": -0.496
    }
   },
   "khamenei_ir": {
