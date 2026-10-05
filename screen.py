@@ -18,6 +18,7 @@ from fetch import get
 
 CANDIDATES = [
     # key (Polymarket slug), fallback ICAO if the rules can't be parsed, IANA tz
+    # first screen (1 Oct 2026)
     ("ankara", "LTAC", "Europe/Istanbul"),
     ("paris", "LFPB", "Europe/Paris"),          # rules: Paris-Le Bourget Airport
     ("london", "EGLC", "Europe/London"),        # rules: London City Airport
@@ -25,6 +26,38 @@ CANDIDATES = [
     ("munich", "EDDM", "Europe/Berlin"),
     ("shanghai", "ZSPD", "Asia/Shanghai"),
     ("miami", "KMIA", "America/New_York"),
+    # wider scan (5 Oct 2026): every city seen with a daily high market, plus the current ones
+    # for a like-for-like comparison. A key with no recent market still gets a forecast-skill score.
+    ("madrid", "LEMD", "Europe/Madrid"),
+    ("atlanta", "KATL", "America/New_York"),
+    ("mexico-city", "MMMX", "America/Mexico_City"),
+    ("lucknow", "VILK", "Asia/Kolkata"),
+    ("dallas", "KDAL", "America/Chicago"),
+    ("seattle", "KSEA", "America/Los_Angeles"),
+    ("toronto", "CYYZ", "America/Toronto"),
+    ("nyc", "KLGA", "America/New_York"),
+    ("chicago", "KORD", "America/Chicago"),
+    ("los-angeles", "KLAX", "America/Los_Angeles"),
+    ("denver", "KBKF", "America/Denver"),
+    ("houston", "KHOU", "America/Chicago"),
+    ("austin", "KAUS", "America/Chicago"),
+    ("phoenix", "KPHX", "America/Phoenix"),
+    ("warsaw", "EPWA", "Europe/Warsaw"),
+    ("milan", "LIMC", "Europe/Rome"),
+    ("tel-aviv", "LLBG", "Asia/Jerusalem"),
+    ("istanbul", "LTFM", "Europe/Istanbul"),
+    ("seoul", "RKSI", "Asia/Seoul"),
+    ("busan", "RKPK", "Asia/Seoul"),
+    ("tokyo", "RJTT", "Asia/Tokyo"),
+    ("beijing", "ZBAA", "Asia/Shanghai"),
+    ("guangzhou", "ZGGG", "Asia/Shanghai"),
+    ("shenzhen", "ZGSZ", "Asia/Shanghai"),
+    ("chengdu", "ZUUU", "Asia/Shanghai"),
+    ("wuhan", "ZHHH", "Asia/Shanghai"),
+    ("singapore", "WSSS", "Asia/Singapore"),
+    ("wellington", "NZWN", "Pacific/Auckland"),
+    ("buenos-aires", "SAEZ", "America/Argentina/Buenos_Aires"),
+    ("sao-paulo", "SBGR", "America/Sao_Paulo"),
     # hong-kong settles on the Hong Kong Observatory, not an airport METAR: not testable this way
 ]
 
@@ -55,9 +88,10 @@ def market_info(key):
             info["rules"] = text
             labels = " ".join((m.get("groupItemTitle") or "") for m in ev.get("markets", []))
             info["unit"] = "F" if "°F" in labels else "C"
-            m = re.search(r"wunderground\.com/\S*?/([A-Z]{4})\b", text)
+            m = re.search(r"wunderground\.com/\S*?/([A-Z]{4})\b", text) or \
+                re.search(r"timeseries\?site=([A-Za-z]{4})\b", text)
             if m:
-                info["icao"] = m.group(1)
+                info["icao"] = m.group(1).upper()
             else:
                 m = re.search(r"\b([A-Z]{4})\b(?=[^.]*(?:airport|station|Airport|Station))", text)
                 info["icao"] = m.group(1) if m and m.group(1) not in ("NOAA", "NWS", "METAR") else None
