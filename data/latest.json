@@ -1,7 +1,7 @@
 {
  "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), NOAA/NWS, aviationweather.gov",
  "errors": [],
- "fetched_at": "2026-10-05T10:45:53+00:00",
+ "fetched_at": "2026-10-05T10:53:29+00:00",
  "stations": {
   "amsterdam": {
    "days": {
@@ -479,75 +479,66 @@
         "yes": 0.0005
        },
        {
-        "bestAsk": 0.011,
-        "bestBid": 0.002,
+        "bestAsk": 0.002,
+        "bestBid": 0.001,
         "closed": false,
         "depth": null,
         "label": "19\u00b0C",
-        "lastTrade": 0.027,
+        "lastTrade": 0.013,
         "threshold": "4",
-        "volume": 1111.6344940000001,
-        "yes": 0.0065
+        "volume": 1542.8444940000002,
+        "yes": 0.0015
        },
        {
         "bestAsk": 0.56,
-        "bestBid": 0.5,
+        "bestBid": 0.48,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.56,
-         "avg_fill_25": 0.5678,
-         "best_ask": 0.56,
-         "best_bid": 0.49,
-         "bid_usd_within_2c": 57.39,
-         "usd_at_best": 15.01,
-         "usd_within_1c": 15.01,
-         "usd_within_2c": 31.33
+         "avg_fill_10": 0.55,
+         "avg_fill_25": 0.5505,
+         "best_ask": 0.55,
+         "best_bid": 0.44,
+         "bid_usd_within_2c": 2.2,
+         "usd_at_best": 23.64,
+         "usd_within_1c": 30.26,
+         "usd_within_2c": 36.53
         },
         "label": "20\u00b0C",
-        "lastTrade": 0.55,
+        "lastTrade": 0.49,
         "threshold": "5",
-        "volume": 3693.8823439999983,
-        "yes": 0.53
+        "volume": 3731.6123439999983,
+        "yes": 0.52
        },
        {
-        "bestAsk": 0.43,
-        "bestBid": 0.37,
+        "bestAsk": 0.49,
+        "bestBid": 0.41,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.4949,
-         "avg_fill_25": 0.4979,
-         "best_ask": 0.49,
-         "best_bid": 0.4,
-         "bid_usd_within_2c": 89.6,
-         "usd_at_best": 5.1,
-         "usd_within_1c": 65.1,
-         "usd_within_2c": 85.85
+         "avg_fill_10": 0.5,
+         "avg_fill_25": 0.5,
+         "best_ask": 0.5,
+         "best_bid": 0.41,
+         "bid_usd_within_2c": 96.4,
+         "usd_at_best": 50.0,
+         "usd_within_1c": 50.0,
+         "usd_within_2c": 50.0
         },
         "label": "21\u00b0C",
-        "lastTrade": 0.37,
+        "lastTrade": 0.43,
         "threshold": "6",
-        "volume": 4006.8496649999997,
-        "yes": 0.4
+        "volume": 4011.9096649999997,
+        "yes": 0.45
        },
        {
-        "bestAsk": 0.033,
-        "bestBid": 0.019,
+        "bestAsk": 0.022,
+        "bestBid": 0.015,
         "closed": false,
-        "depth": {
-         "avg_fill_10": 0.0462,
-         "avg_fill_25": 0.0628,
-         "best_ask": 0.022,
-         "best_bid": 0.019,
-         "bid_usd_within_2c": 5.11,
-         "usd_at_best": 0.33,
-         "usd_within_1c": 0.83,
-         "usd_within_2c": 2.84
-        },
+        "depth": null,
         "label": "22\u00b0C",
-        "lastTrade": 0.017,
+        "lastTrade": 0.033,
         "threshold": "7",
-        "volume": 657.5812309999999,
-        "yes": 0.026
+        "volume": 662.6412309999998,
+        "yes": 0.0185
        },
        {
         "bestAsk": 0.003,
@@ -557,7 +548,7 @@
         "label": "23\u00b0C",
         "lastTrade": 0.003,
         "threshold": "8",
-        "volume": 289.1649,
+        "volume": 294.2249,
         "yes": 0.0025
        },
        {
@@ -585,11 +576,11 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 67700.39894,
+      "liquidity": 68750.18831,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Amsterdam Airport Schiphol Station in degrees Celsius on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=eham\n\n",
       "slug": "highest-temperature-in-amsterdam-on-october-5-2026",
       "title": "Highest temperature in Amsterdam on October 5?",
-      "volume": 11368.073200999997
+      "volume": 11852.193200999998
      },
      "models": {
       "cma_grapes_global": 19.1,
@@ -1047,7 +1038,7 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.08,
-         "avg_fill_25": 0.1042,
+         "avg_fill_25": 0.1039,
          "best_ask": 0.08,
          "best_bid": 0.07,
          "bid_usd_within_2c": 5.4,
@@ -1066,19 +1057,19 @@
         "bestBid": 0.44,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.4524,
-         "avg_fill_25": 0.4569,
+         "avg_fill_10": 0.45,
+         "avg_fill_25": 0.4516,
          "best_ask": 0.45,
          "best_bid": 0.44,
-         "bid_usd_within_2c": 422.63,
-         "usd_at_best": 7.53,
-         "usd_within_1c": 183.89,
-         "usd_within_2c": 3506.88
+         "bid_usd_within_2c": 306.98,
+         "usd_at_best": 20.82,
+         "usd_within_1c": 236.3,
+         "usd_within_2c": 347.0
         },
         "label": "20\u00b0C",
         "lastTrade": 0.45,
         "threshold": "5",
-        "volume": 230.055324,
+        "volume": 233.95532400000002,
         "yes": 0.445
        },
        {
@@ -1090,15 +1081,15 @@
          "avg_fill_25": 0.39,
          "best_ask": 0.39,
          "best_bid": 0.38,
-         "bid_usd_within_2c": 26.58,
-         "usd_at_best": 44.76,
-         "usd_within_1c": 114.76,
-         "usd_within_2c": 141.41
+         "bid_usd_within_2c": 33.78,
+         "usd_at_best": 40.17,
+         "usd_within_1c": 110.17,
+         "usd_within_2c": 145.02
         },
         "label": "21\u00b0C",
         "lastTrade": 0.39,
         "threshold": "6",
-        "volume": 1857.407742,
+        "volume": 1919.8477420000002,
         "yes": 0.385
        },
        {
@@ -1107,7 +1098,7 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.0834,
-         "avg_fill_25": 0.1179,
+         "avg_fill_25": 0.1149,
          "best_ask": 0.04,
          "best_bid": 0.03,
          "bid_usd_within_2c": 5.23,
@@ -1157,11 +1148,11 @@
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 30255.56039,
+      "liquidity": 29977.16569,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Amsterdam Airport Schiphol Station in degrees Celsius on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=eham\n\n",
       "slug": "highest-temperature-in-amsterdam-on-october-6-2026",
       "title": "Highest temperature in Amsterdam on October 6?",
-      "volume": 3575.491051
+      "volume": 3641.831051
      },
      "models": {
       "cma_grapes_global": 19.1,
@@ -1178,7 +1169,7 @@
    },
    "icao": "EHAM",
    "lat": 52.315,
-   "local_now": "2026-10-05T12:45+02:00",
+   "local_now": "2026-10-05T12:53+02:00",
    "lon": 4.79,
    "low_days": {
     "2026-10-04": {
@@ -2151,7 +2142,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 6866.81818,
+      "liquidity": 6631.01718,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Amsterdam Airport Schiphol Station in degrees Celsius on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=eham\n\nIf",
       "slug": "lowest-temperature-in-amsterdam-on-october-6-2026",
       "title": "Lowest temperature in Amsterdam on October 6?",
@@ -3079,9 +3070,9 @@
       "meteofrance_seamless": 18.0,
       "ukmo_seamless": 17.2
      },
-     "obs_count": 7,
+     "obs_count": 6,
      "obs_last": "2026-10-04T20:50:00+00:00",
-     "obs_max_so_far": 11
+     "obs_max_so_far": 10
     },
     "2026-10-05": {
      "conditions": {
@@ -3412,64 +3403,64 @@
         "yes": 0.0005
        },
        {
-        "bestAsk": 0.25,
-        "bestBid": 0.19,
+        "bestAsk": 0.24,
+        "bestBid": 0.16,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.2534,
-         "avg_fill_25": 0.2735,
-         "best_ask": 0.25,
-         "best_bid": 0.17,
-         "bid_usd_within_2c": 10.2,
-         "usd_at_best": 8.75,
-         "usd_within_1c": 8.75,
-         "usd_within_2c": 8.75
+         "avg_fill_10": 0.2431,
+         "avg_fill_25": 0.2517,
+         "best_ask": 0.24,
+         "best_bid": 0.16,
+         "bid_usd_within_2c": 6.58,
+         "usd_at_best": 6.77,
+         "usd_within_1c": 13.3,
+         "usd_within_2c": 40.63
         },
         "label": "20\u00b0C",
-        "lastTrade": 0.27,
+        "lastTrade": 0.17,
         "threshold": "5",
         "volume": 6602.405396,
-        "yes": 0.22
+        "yes": 0.2
        },
        {
         "bestAsk": 0.74,
-        "bestBid": 0.69,
+        "bestBid": 0.7,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.74,
-         "avg_fill_25": 0.7421,
+         "avg_fill_10": 0.7451,
+         "avg_fill_25": 0.7481,
          "best_ask": 0.74,
-         "best_bid": 0.69,
-         "bid_usd_within_2c": 25.79,
-         "usd_at_best": 19.62,
-         "usd_within_1c": 25.62,
-         "usd_within_2c": 31.95
+         "best_bid": 0.7,
+         "bid_usd_within_2c": 27.87,
+         "usd_at_best": 4.82,
+         "usd_within_1c": 25.82,
+         "usd_within_2c": 32.15
         },
         "label": "21\u00b0C",
         "lastTrade": 0.74,
         "threshold": "6",
         "volume": 14712.594305000004,
-        "yes": 0.715
+        "yes": 0.72
        },
        {
-        "bestAsk": 0.055,
-        "bestBid": 0.035,
+        "bestAsk": 0.099,
+        "bestBid": 0.051,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0999,
-         "avg_fill_25": 0.1115,
+         "avg_fill_10": 0.1015,
+         "avg_fill_25": 0.1214,
          "best_ask": 0.099,
-         "best_bid": 0.038,
-         "bid_usd_within_2c": 14.11,
+         "best_bid": 0.051,
+         "bid_usd_within_2c": 9.82,
          "usd_at_best": 0.99,
-         "usd_within_1c": 16.13,
-         "usd_within_2c": 18.33
+         "usd_within_1c": 9.63,
+         "usd_within_2c": 12.96
         },
         "label": "22\u00b0C",
-        "lastTrade": 0.036,
+        "lastTrade": 0.085,
         "threshold": "7",
-        "volume": 2778.1465540000004,
-        "yes": 0.045
+        "volume": 2848.8165540000005,
+        "yes": 0.075
        },
        {
         "bestAsk": 0.006,
@@ -3507,11 +3498,11 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 84687.04036,
+      "liquidity": 82080.17105,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Esenbo\u011fa Intl Airport Station in degrees Celsius on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=ltac\n\nIf NO",
       "slug": "highest-temperature-in-ankara-on-october-5-2026",
       "title": "Highest temperature in Ankara on October 5?",
-      "volume": 31835.211139000003
+      "volume": 31905.881139000005
      },
      "models": {
       "cma_grapes_global": 17.9,
@@ -3992,10 +3983,10 @@
          "avg_fill_25": 0.5492,
          "best_ask": 0.54,
          "best_bid": 0.53,
-         "bid_usd_within_2c": 540.8,
+         "bid_usd_within_2c": 541.4,
          "usd_at_best": 1.9,
-         "usd_within_1c": 115.23,
-         "usd_within_2c": 377.04
+         "usd_within_1c": 66.8,
+         "usd_within_2c": 327.68
         },
         "label": "20\u00b0C",
         "lastTrade": 0.54,
@@ -4009,13 +4000,13 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.36,
-         "avg_fill_25": 0.3627,
+         "avg_fill_25": 0.3635,
          "best_ask": 0.36,
          "best_bid": 0.34,
-         "bid_usd_within_2c": 121.57,
-         "usd_at_best": 18.0,
-         "usd_within_1c": 124.61,
-         "usd_within_2c": 362.16
+         "bid_usd_within_2c": 265.89,
+         "usd_at_best": 16.2,
+         "usd_within_1c": 118.78,
+         "usd_within_2c": 2279.65
         },
         "label": "21\u00b0C",
         "lastTrade": 0.31,
@@ -4028,11 +4019,11 @@
         "bestBid": 0.016,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0525,
-         "avg_fill_25": 0.067,
+         "avg_fill_10": 0.0514,
+         "avg_fill_25": 0.0648,
          "best_ask": 0.03,
          "best_bid": 0.016,
-         "bid_usd_within_2c": 3.2,
+         "bid_usd_within_2c": 2.28,
          "usd_at_best": 0.48,
          "usd_within_1c": 0.64,
          "usd_within_2c": 3.66
@@ -4079,7 +4070,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 40652.17851,
+      "liquidity": 43568.52573,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Esenbo\u011fa Intl Airport Station in degrees Celsius on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=ltac\n\nIf NO",
       "slug": "highest-temperature-in-ankara-on-october-6-2026",
       "title": "Highest temperature in Ankara on October 6?",
@@ -4100,7 +4091,7 @@
    },
    "icao": "LTAC",
    "lat": 40.128,
-   "local_now": "2026-10-05T13:45+03:00",
+   "local_now": "2026-10-05T13:53+03:00",
    "lon": 32.995,
    "low_days": {
     "2026-10-04": {
@@ -4255,7 +4246,7 @@
       "meteofrance_seamless": 5.9,
       "ukmo_seamless": 4.7
      },
-     "obs_count": 7,
+     "obs_count": 6,
      "obs_last": "2026-10-04T20:50:00+00:00",
      "obs_min_so_far": 8
     },
@@ -4678,7 +4669,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 84465.78158,
+      "liquidity": 84463.22158,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Esenbo\u011fa Intl Airport Station in degrees Celsius on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=ltac\n\nIf NOAA",
       "slug": "lowest-temperature-in-ankara-on-october-5-2026",
       "title": "Lowest temperature in Ankara on October 5?",
@@ -5559,12 +5550,6 @@
      "raw": "METAR LTAC 041820Z 04007KT CAVOK 09/M01 Q1024 NOSIG",
      "t": "2026-10-04T18:20:00+00:00",
      "temp": 9
-    },
-    {
-     "maxT": null,
-     "raw": "METAR LTAC 041750Z 02007KT CAVOK 11/M01 Q1024 NOSIG",
-     "t": "2026-10-04T17:50:00+00:00",
-     "temp": 11
     }
    ],
    "name": "Ankara",
@@ -6301,35 +6286,44 @@
         "yes": 0.0025
        },
        {
-        "bestAsk": 0.019,
-        "bestBid": 0.01,
+        "bestAsk": 0.031,
+        "bestBid": 0.011,
         "closed": false,
-        "depth": null,
+        "depth": {
+         "avg_fill_10": 0.0721,
+         "avg_fill_25": 0.1023,
+         "best_ask": 0.031,
+         "best_bid": 0.011,
+         "bid_usd_within_2c": 0.66,
+         "usd_at_best": 0.31,
+         "usd_within_1c": 1.75,
+         "usd_within_2c": 1.75
+        },
         "label": "72-73\u00b0F",
         "lastTrade": 0.016,
         "threshold": "2",
         "volume": 699.851753,
-        "yes": 0.0145
+        "yes": 0.021
        },
        {
         "bestAsk": 0.149,
-        "bestBid": 0.119,
+        "bestBid": 0.122,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1495,
-         "avg_fill_25": 0.1552,
+         "avg_fill_10": 0.1551,
+         "avg_fill_25": 0.1582,
          "best_ask": 0.149,
-         "best_bid": 0.119,
-         "bid_usd_within_2c": 146.63,
-         "usd_at_best": 6.08,
-         "usd_within_1c": 20.96,
-         "usd_within_2c": 99.27
+         "best_bid": 0.122,
+         "bid_usd_within_2c": 31.83,
+         "usd_at_best": 0.87,
+         "usd_within_1c": 4.62,
+         "usd_within_2c": 44.57
         },
         "label": "74-75\u00b0F",
         "lastTrade": 0.14,
         "threshold": "3",
-        "volume": 2055.2994240000003,
-        "yes": 0.134
+        "volume": 2059.524491,
+        "yes": 0.1355
        },
        {
         "bestAsk": 0.39,
@@ -6337,18 +6331,18 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.39,
-         "avg_fill_25": 0.3915,
+         "avg_fill_25": 0.39,
          "best_ask": 0.39,
          "best_bid": 0.35,
-         "bid_usd_within_2c": 310.43,
-         "usd_at_best": 21.06,
-         "usd_within_1c": 263.06,
-         "usd_within_2c": 265.11
+         "bid_usd_within_2c": 146.3,
+         "usd_at_best": 97.5,
+         "usd_within_1c": 115.5,
+         "usd_within_2c": 119.6
         },
         "label": "76-77\u00b0F",
         "lastTrade": 0.39,
         "threshold": "4",
-        "volume": 4083.6647479999983,
+        "volume": 4086.7547479999985,
         "yes": 0.37
        },
        {
@@ -6360,36 +6354,36 @@
          "avg_fill_25": 0.36,
          "best_ask": 0.36,
          "best_bid": 0.32,
-         "bid_usd_within_2c": 82.05,
-         "usd_at_best": 91.54,
-         "usd_within_1c": 96.13,
-         "usd_within_2c": 98.03
+         "bid_usd_within_2c": 74.59,
+         "usd_at_best": 82.54,
+         "usd_within_1c": 87.13,
+         "usd_within_2c": 97.77
         },
         "label": "78-79\u00b0F",
         "lastTrade": 0.34,
         "threshold": "5",
-        "volume": 5118.252505,
+        "volume": 5121.3425050000005,
         "yes": 0.34
        },
        {
-        "bestAsk": 0.147,
-        "bestBid": 0.117,
+        "bestAsk": 0.126,
+        "bestBid": 0.103,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1274,
-         "avg_fill_25": 0.1298,
+         "avg_fill_10": 0.1271,
+         "avg_fill_25": 0.1288,
          "best_ask": 0.126,
-         "best_bid": 0.093,
-         "bid_usd_within_2c": 63.0,
+         "best_bid": 0.105,
+         "bid_usd_within_2c": 6.25,
          "usd_at_best": 5.04,
-         "usd_within_1c": 101.21,
-         "usd_within_2c": 115.21
+         "usd_within_1c": 96.07,
+         "usd_within_2c": 96.07
         },
         "label": "80-81\u00b0F",
         "lastTrade": 0.103,
         "threshold": "6",
-        "volume": 3327.534857999999,
-        "yes": 0.132
+        "volume": 3330.624857999999,
+        "yes": 0.1145
        },
        {
         "bestAsk": 0.003,
@@ -6399,7 +6393,7 @@
         "label": "82-83\u00b0F",
         "lastTrade": 0.005,
         "threshold": "7",
-        "volume": 2365.7119369999996,
+        "volume": 2385.7119369999996,
         "yes": 0.0025
        },
        {
@@ -6438,7 +6432,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 35596.30849,
+      "liquidity": 35323.66839,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Hartsfield-Jackson International Airport Station in degrees Fahrenheit on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/times",
       "slug": "highest-temperature-in-atlanta-on-october-5-2026",
       "title": "Highest temperature in Atlanta on October 5?",
@@ -6928,10 +6922,10 @@
          "avg_fill_25": 0.2233,
          "best_ask": 0.22,
          "best_bid": 0.21,
-         "bid_usd_within_2c": 146.36,
+         "bid_usd_within_2c": 151.36,
          "usd_at_best": 16.52,
-         "usd_within_1c": 35.83,
-         "usd_within_2c": 191.6
+         "usd_within_1c": 54.23,
+         "usd_within_2c": 210.0
         },
         "label": "76-77\u00b0F",
         "lastTrade": 0.24,
@@ -6948,10 +6942,10 @@
          "avg_fill_25": 0.57,
          "best_ask": 0.57,
          "best_bid": 0.55,
-         "bid_usd_within_2c": 182.11,
-         "usd_at_best": 99.4,
-         "usd_within_1c": 246.8,
-         "usd_within_2c": 4080.03
+         "bid_usd_within_2c": 156.16,
+         "usd_at_best": 56.65,
+         "usd_within_1c": 209.74,
+         "usd_within_2c": 434.5
         },
         "label": "78-79\u00b0F",
         "lastTrade": 0.57,
@@ -6968,10 +6962,10 @@
          "avg_fill_25": 0.25,
          "best_ask": 0.25,
          "best_bid": 0.22,
-         "bid_usd_within_2c": 224.94,
-         "usd_at_best": 62.07,
-         "usd_within_1c": 256.87,
-         "usd_within_2c": 299.9
+         "bid_usd_within_2c": 180.9,
+         "usd_at_best": 47.07,
+         "usd_within_1c": 278.85,
+         "usd_within_2c": 342.27
         },
         "label": "80-81\u00b0F",
         "lastTrade": 0.24,
@@ -7004,7 +6998,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 42071.70526,
+      "liquidity": 41312.12442,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Hartsfield-Jackson International Airport Station in degrees Fahrenheit on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/times",
       "slug": "highest-temperature-in-atlanta-on-october-6-2026",
       "title": "Highest temperature in Atlanta on October 6?",
@@ -7027,7 +7021,7 @@
    },
    "icao": "KATL",
    "lat": 33.6367,
-   "local_now": "2026-10-05T06:45-04:00",
+   "local_now": "2026-10-05T06:53-04:00",
    "lon": -84.4281,
    "low_days": {
     "2026-10-04": {
@@ -7511,33 +7505,33 @@
         "yes": 0.495
        },
        {
-        "bestAsk": 1,
+        "bestAsk": 0.93,
         "bestBid": 0.02,
         "closed": false,
         "depth": {
-         "best_ask": null,
+         "avg_fill_10": 0.9561,
+         "avg_fill_25": 0.9703,
+         "best_ask": 0.95,
          "best_bid": 0.02,
-         "bid_usd_within_2c": 0.15
+         "bid_usd_within_2c": 0.15,
+         "usd_at_best": 4.75,
+         "usd_within_1c": 9.55,
+         "usd_within_2c": 9.55
         },
         "label": "64-65\u00b0F",
         "lastTrade": null,
         "threshold": "3",
         "volume": 2.3469,
-        "yes": 0.51
+        "yes": 0.475
        },
        {
         "bestAsk": 0.97,
         "bestBid": 0.02,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.9751,
-         "avg_fill_25": 0.978,
-         "best_ask": 0.97,
+         "best_ask": null,
          "best_bid": 0.02,
-         "bid_usd_within_2c": 0.2,
-         "usd_at_best": 4.85,
-         "usd_within_1c": 53.85,
-         "usd_within_2c": 53.85
+         "bid_usd_within_2c": 0.2
         },
         "label": "66-67\u00b0F",
         "lastTrade": null,
@@ -7551,8 +7545,8 @@
         "closed": false,
         "depth": {
          "best_ask": null,
-         "best_bid": 0.68,
-         "bid_usd_within_2c": 6.8
+         "best_bid": 0.03,
+         "bid_usd_within_2c": 3.68
         },
         "label": "68-69\u00b0F",
         "lastTrade": null,
@@ -7618,7 +7612,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 62100.36805,
+      "liquidity": 62106.35775,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Hartsfield-Jackson International Airport Station in degrees Fahrenheit on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeser",
       "slug": "lowest-temperature-in-atlanta-on-october-5-2026",
       "title": "Lowest temperature in Atlanta on October 5?",
@@ -7996,29 +7990,29 @@
         "yes": 0.34
        },
        {
-        "bestAsk": 0.96,
+        "bestAsk": 0.92,
         "bestBid": null,
         "closed": false,
         "depth": {
          "avg_fill_10": 0.93,
-         "avg_fill_25": 0.935,
+         "avg_fill_25": 0.93,
          "best_ask": 0.93,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
-         "usd_at_best": 18.6,
-         "usd_within_1c": 18.6,
-         "usd_within_2c": 28.1
+         "usd_at_best": 37.2,
+         "usd_within_1c": 37.2,
+         "usd_within_2c": 37.2
         },
         "label": "74\u00b0F or higher",
         "lastTrade": null,
         "threshold": "10",
         "volume": 0.0,
-        "yes": 0.48
+        "yes": 0.46
        }
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 1016.5855,
+      "liquidity": 1034.2555,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Hartsfield-Jackson International Airport Station in degrees Fahrenheit on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeser",
       "slug": "lowest-temperature-in-atlanta-on-october-6-2026",
       "title": "Lowest temperature in Atlanta on October 6?",
@@ -8909,7 +8903,7 @@
       "cloud_mean": 5.0,
       "morning_vis_min_m": 13700.0,
       "pressure_change_hpa": 0.6,
-      "rain_chance_max": 2,
+      "rain_chance_max": 1,
       "tmax_change_c": 4.8,
       "wind_mean_kmh": 22.9,
       "wind_shift_deg": 8
@@ -9236,14 +9230,14 @@
         "bestBid": 0.022,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0713,
-         "avg_fill_25": 0.1153,
+         "avg_fill_10": 0.0712,
+         "avg_fill_25": 0.1202,
          "best_ask": 0.028,
          "best_bid": 0.022,
-         "bid_usd_within_2c": 2.57,
-         "usd_at_best": 0.86,
-         "usd_within_1c": 1.77,
-         "usd_within_2c": 1.77
+         "bid_usd_within_2c": 1.62,
+         "usd_at_best": 0.72,
+         "usd_within_1c": 1.48,
+         "usd_within_2c": 2.02
         },
         "label": "82-83\u00b0F",
         "lastTrade": 0.023,
@@ -9253,7 +9247,7 @@
        },
        {
         "bestAsk": 0.26,
-        "bestBid": 0.19,
+        "bestBid": 0.2,
         "closed": false,
         "depth": {
          "avg_fill_10": 0.26,
@@ -9261,19 +9255,19 @@
          "best_ask": 0.26,
          "best_bid": 0.2,
          "bid_usd_within_2c": 68.15,
-         "usd_at_best": 60.32,
-         "usd_within_1c": 111.91,
-         "usd_within_2c": 111.91
+         "usd_at_best": 59.02,
+         "usd_within_1c": 110.61,
+         "usd_within_2c": 112.39
         },
         "label": "84-85\u00b0F",
         "lastTrade": 0.25,
         "threshold": "6",
-        "volume": 7079.904761999999,
-        "yes": 0.225
+        "volume": 7094.904761999999,
+        "yes": 0.23
        },
        {
-        "bestAsk": 0.65,
-        "bestBid": 0.58,
+        "bestAsk": 0.63,
+        "bestBid": 0.59,
         "closed": false,
         "depth": {
          "avg_fill_10": 0.63,
@@ -9288,28 +9282,28 @@
         "label": "86-87\u00b0F",
         "lastTrade": 0.63,
         "threshold": "7",
-        "volume": 5498.6176129999985,
-        "yes": 0.615
+        "volume": 5518.6176129999985,
+        "yes": 0.61
        },
        {
-        "bestAsk": 0.15,
+        "bestAsk": 0.14,
         "bestBid": 0.11,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1584,
-         "avg_fill_25": 0.1594,
-         "best_ask": 0.15,
-         "best_bid": 0.11,
-         "bid_usd_within_2c": 46.81,
-         "usd_at_best": 1.5,
-         "usd_within_1c": 36.49,
-         "usd_within_2c": 37.34
+         "avg_fill_10": 0.1374,
+         "avg_fill_25": 0.1447,
+         "best_ask": 0.13,
+         "best_bid": 0.09,
+         "bid_usd_within_2c": 11.17,
+         "usd_at_best": 5.52,
+         "usd_within_1c": 6.45,
+         "usd_within_2c": 37.5
         },
         "label": "88-89\u00b0F",
         "lastTrade": 0.12,
         "threshold": "8",
-        "volume": 4833.278396,
-        "yes": 0.13
+        "volume": 5053.278396,
+        "yes": 0.125
        },
        {
         "bestAsk": 0.009,
@@ -9336,11 +9330,11 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 29423.67738,
+      "liquidity": 30520.73234,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Austin-Bergstrom International Airport Station in degrees Fahrenheit on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeser",
       "slug": "highest-temperature-in-austin-on-october-5-2026",
       "title": "Highest temperature in Austin on October 5?",
-      "volume": 23466.370402999997
+      "volume": 23721.370402999997
      },
      "models": {
       "cma_grapes_global": 30.2,
@@ -9611,7 +9605,7 @@
       "cloud_mean": 8.0,
       "morning_vis_min_m": 17900.0,
       "pressure_change_hpa": -2.4,
-      "rain_chance_max": 2,
+      "rain_chance_max": 1,
       "tmax_change_c": 1.2,
       "wind_mean_kmh": 15.1,
       "wind_shift_deg": 12
@@ -9805,14 +9799,14 @@
        },
        {
         "bestAsk": 0.021,
-        "bestBid": 0.02,
+        "bestBid": 0.019,
         "closed": false,
         "depth": {
          "avg_fill_10": 0.0732,
-         "avg_fill_25": 0.1057,
+         "avg_fill_25": 0.1074,
          "best_ask": 0.021,
-         "best_bid": 0.02,
-         "bid_usd_within_2c": 7.19,
+         "best_bid": 0.019,
+         "bid_usd_within_2c": 6.71,
          "usd_at_best": 0.82,
          "usd_within_1c": 0.98,
          "usd_within_2c": 1.14
@@ -9821,27 +9815,27 @@
         "lastTrade": 0.021,
         "threshold": "5",
         "volume": 253.226279,
-        "yes": 0.0205
+        "yes": 0.02
        },
        {
         "bestAsk": 0.17,
-        "bestBid": 0.15,
+        "bestBid": 0.14,
         "closed": false,
         "depth": {
          "avg_fill_10": 0.1718,
          "avg_fill_25": 0.1766,
          "best_ask": 0.17,
-         "best_bid": 0.15,
-         "bid_usd_within_2c": 202.63,
+         "best_bid": 0.14,
+         "bid_usd_within_2c": 868.33,
          "usd_at_best": 8.14,
-         "usd_within_1c": 41.94,
-         "usd_within_2c": 126.02
+         "usd_within_1c": 101.4,
+         "usd_within_2c": 109.38
         },
         "label": "84-85\u00b0F",
         "lastTrade": 0.17,
         "threshold": "6",
         "volume": 1721.1965029999997,
-        "yes": 0.16
+        "yes": 0.155
        },
        {
         "bestAsk": 0.44,
@@ -9852,10 +9846,10 @@
          "avg_fill_25": 0.44,
          "best_ask": 0.44,
          "best_bid": 0.43,
-         "bid_usd_within_2c": 913.67,
-         "usd_at_best": 115.33,
-         "usd_within_1c": 175.23,
-         "usd_within_2c": 536.17
+         "bid_usd_within_2c": 5018.13,
+         "usd_at_best": 93.33,
+         "usd_within_1c": 162.23,
+         "usd_within_2c": 703.49
         },
         "label": "86-87\u00b0F",
         "lastTrade": 0.44,
@@ -9865,23 +9859,23 @@
        },
        {
         "bestAsk": 0.31,
-        "bestBid": 0.29,
+        "bestBid": 0.3,
         "closed": false,
         "depth": {
          "avg_fill_10": 0.3184,
          "avg_fill_25": 0.3194,
          "best_ask": 0.31,
-         "best_bid": 0.29,
-         "bid_usd_within_2c": 256.48,
+         "best_bid": 0.3,
+         "bid_usd_within_2c": 1896.94,
          "usd_at_best": 1.55,
-         "usd_within_1c": 89.34,
-         "usd_within_2c": 170.19
+         "usd_within_1c": 52.78,
+         "usd_within_2c": 161.2
         },
         "label": "88-89\u00b0F",
         "lastTrade": 0.3,
         "threshold": "8",
         "volume": 2266.202143,
-        "yes": 0.3
+        "yes": 0.305
        },
        {
         "bestAsk": 0.039,
@@ -9892,7 +9886,7 @@
          "avg_fill_25": 0.0735,
          "best_ask": 0.039,
          "best_bid": 0.019,
-         "bid_usd_within_2c": 2.34,
+         "bid_usd_within_2c": 2.32,
          "usd_at_best": 1.43,
          "usd_within_1c": 2.59,
          "usd_within_2c": 6.97
@@ -9917,7 +9911,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 35385.04271,
+      "liquidity": 35753.02204,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Austin-Bergstrom International Airport Station in degrees Fahrenheit on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeser",
       "slug": "highest-temperature-in-austin-on-october-6-2026",
       "title": "Highest temperature in Austin on October 6?",
@@ -9938,7 +9932,7 @@
    },
    "icao": "KAUS",
    "lat": 30.1831,
-   "local_now": "2026-10-05T05:45-05:00",
+   "local_now": "2026-10-05T05:53-05:00",
    "lon": -97.6806,
    "low_days": {
     "2026-10-04": {
@@ -10103,7 +10097,7 @@
       "cloud_mean": 5.0,
       "morning_vis_min_m": 13700.0,
       "pressure_change_hpa": 0.6,
-      "rain_chance_max": 2,
+      "rain_chance_max": 1,
       "tmax_change_c": 4.8,
       "wind_mean_kmh": 22.9,
       "wind_shift_deg": 8
@@ -10446,7 +10440,7 @@
         "yes": 0.5
        },
        {
-        "bestAsk": 1,
+        "bestAsk": 0.97,
         "bestBid": 0.02,
         "closed": false,
         "depth": {
@@ -10458,47 +10452,33 @@
         "lastTrade": null,
         "threshold": "4",
         "volume": 0.0,
-        "yes": 0.51
+        "yes": 0.495
        },
        {
-        "bestAsk": 0.91,
+        "bestAsk": 0.96,
         "bestBid": 0.03,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.9023,
-         "avg_fill_25": 0.9417,
-         "best_ask": 0.89,
-         "best_bid": 0.03,
-         "bid_usd_within_2c": 1.52,
-         "usd_at_best": 4.45,
-         "usd_within_1c": 8.95,
-         "usd_within_2c": 8.95
+         "best_ask": null,
+         "best_bid": 0.58,
+         "bid_usd_within_2c": 5.8
         },
         "label": "70-71\u00b0F",
         "lastTrade": null,
         "threshold": "5",
         "volume": 0.0,
-        "yes": 0.47
+        "yes": 0.495
        },
        {
-        "bestAsk": 0.96,
-        "bestBid": 0.11,
+        "bestAsk": 0.001,
+        "bestBid": null,
         "closed": false,
-        "depth": {
-         "avg_fill_10": 0.9652,
-         "avg_fill_25": 0.9681,
-         "best_ask": 0.96,
-         "best_bid": 0.11,
-         "bid_usd_within_2c": 1.1,
-         "usd_at_best": 4.8,
-         "usd_within_1c": 57.18,
-         "usd_within_2c": 68.94
-        },
+        "depth": null,
         "label": "72-73\u00b0F",
         "lastTrade": null,
         "threshold": "6",
         "volume": 0.0,
-        "yes": 0.535
+        "yes": 0.0005
        },
        {
         "bestAsk": 0.001,
@@ -10547,7 +10527,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 44938.45385,
+      "liquidity": 46126.14385,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Austin-Bergstrom International Airport Station in degrees Fahrenheit on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeserie",
       "slug": "lowest-temperature-in-austin-on-october-5-2026",
       "title": "Lowest temperature in Austin on October 5?",
@@ -10586,7 +10566,7 @@
       "cloud_mean": 8.0,
       "morning_vis_min_m": 17900.0,
       "pressure_change_hpa": -2.4,
-      "rain_chance_max": 2,
+      "rain_chance_max": 1,
       "tmax_change_c": 1.2,
       "wind_mean_kmh": 15.1,
       "wind_shift_deg": 12
@@ -10937,7 +10917,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 1296.61894,
+      "liquidity": 1298.53894,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Austin-Bergstrom International Airport Station in degrees Fahrenheit on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeserie",
       "slug": "lowest-temperature-in-austin-on-october-6-2026",
       "title": "Lowest temperature in Austin on October 6?",
@@ -12111,11 +12091,11 @@
         "label": "76-77\u00b0F",
         "lastTrade": 0.004,
         "threshold": "3",
-        "volume": 1753.6921989999996,
+        "volume": 1758.6921989999996,
         "yes": 0.003
        },
        {
-        "bestAsk": 0.014,
+        "bestAsk": 0.018,
         "bestBid": 0.013,
         "closed": false,
         "depth": null,
@@ -12123,7 +12103,7 @@
         "lastTrade": 0.016,
         "threshold": "4",
         "volume": 1824.4830309999995,
-        "yes": 0.0135
+        "yes": 0.0155
        },
        {
         "bestAsk": 0.19,
@@ -12134,10 +12114,10 @@
          "avg_fill_25": 0.2042,
          "best_ask": 0.19,
          "best_bid": 0.17,
-         "bid_usd_within_2c": 81.26,
+         "bid_usd_within_2c": 118.75,
          "usd_at_best": 0.95,
          "usd_within_1c": 13.03,
-         "usd_within_2c": 92.2
+         "usd_within_2c": 123.7
         },
         "label": "80-81\u00b0F",
         "lastTrade": 0.19,
@@ -12146,18 +12126,18 @@
         "yes": 0.18
        },
        {
-        "bestAsk": 0.6,
-        "bestBid": 0.57,
+        "bestAsk": 0.61,
+        "bestBid": 0.56,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.6169,
-         "avg_fill_25": 0.6198,
-         "best_ask": 0.61,
-         "best_bid": 0.55,
-         "bid_usd_within_2c": 129.59,
-         "usd_at_best": 3.05,
-         "usd_within_1c": 22.27,
-         "usd_within_2c": 38.22
+         "avg_fill_10": 0.6269,
+         "avg_fill_25": 0.6287,
+         "best_ask": 0.62,
+         "best_bid": 0.56,
+         "bid_usd_within_2c": 67.49,
+         "usd_at_best": 3.1,
+         "usd_within_1c": 30.63,
+         "usd_within_2c": 62.78
         },
         "label": "82-83\u00b0F",
         "lastTrade": 0.6,
@@ -12166,35 +12146,35 @@
         "yes": 0.585
        },
        {
-        "bestAsk": 0.23,
-        "bestBid": 0.21,
+        "bestAsk": 0.22,
+        "bestBid": 0.2,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.23,
-         "avg_fill_25": 0.23,
-         "best_ask": 0.23,
-         "best_bid": 0.19,
-         "bid_usd_within_2c": 48.63,
-         "usd_at_best": 48.3,
-         "usd_within_1c": 58.21,
-         "usd_within_2c": 71.96
+         "avg_fill_10": 0.2289,
+         "avg_fill_25": 0.2295,
+         "best_ask": 0.22,
+         "best_bid": 0.2,
+         "bid_usd_within_2c": 41.14,
+         "usd_at_best": 1.1,
+         "usd_within_1c": 49.4,
+         "usd_within_2c": 51.87
         },
         "label": "84-85\u00b0F",
         "lastTrade": 0.21,
         "threshold": "7",
-        "volume": 5975.791655999999,
-        "yes": 0.22
+        "volume": 5979.266223999999,
+        "yes": 0.21
        },
        {
-        "bestAsk": 0.02,
-        "bestBid": 0.019,
+        "bestAsk": 0.022,
+        "bestBid": 0.012,
         "closed": false,
         "depth": null,
         "label": "86-87\u00b0F",
         "lastTrade": 0.022,
         "threshold": "8",
-        "volume": 4444.596134999998,
-        "yes": 0.0195
+        "volume": 4449.596134999998,
+        "yes": 0.017
        },
        {
         "bestAsk": 0.001,
@@ -12221,11 +12201,11 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 18302.56963,
+      "liquidity": 16728.47496,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Dallas Love Field Station in degrees Fahrenheit on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=kdal\n\nThis m",
       "slug": "highest-temperature-in-dallas-on-october-5-2026",
       "title": "Highest temperature in Dallas on October 5?",
-      "volume": 32153.652943999994
+      "volume": 32167.127511999992
      },
      "models": {
       "cma_grapes_global": 29.8,
@@ -12736,7 +12716,7 @@
         "label": "82-83\u00b0F",
         "lastTrade": 0.32,
         "threshold": "7",
-        "volume": 2031.2397939999998,
+        "volume": 2033.7297939999999,
         "yes": 0.33
        },
        {
@@ -12748,10 +12728,10 @@
          "avg_fill_25": 0.45,
          "best_ask": 0.45,
          "best_bid": 0.44,
-         "bid_usd_within_2c": 203.94,
+         "bid_usd_within_2c": 194.91,
          "usd_at_best": 27.0,
-         "usd_within_1c": 121.3,
-         "usd_within_2c": 161.25
+         "usd_within_1c": 112.1,
+         "usd_within_2c": 152.05
         },
         "label": "84-85\u00b0F",
         "lastTrade": 0.45,
@@ -12793,11 +12773,11 @@
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 27325.17702,
+      "liquidity": 27186.15722,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Dallas Love Field Station in degrees Fahrenheit on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=kdal\n\nThis m",
       "slug": "highest-temperature-in-dallas-on-october-6-2026",
       "title": "Highest temperature in Dallas on October 6?",
-      "volume": 5648.286064
+      "volume": 5650.776064
      },
      "models": {
       "cma_grapes_global": 29.4,
@@ -12814,7 +12794,7 @@
    },
    "icao": "KDAL",
    "lat": 32.8384,
-   "local_now": "2026-10-05T05:45-05:00",
+   "local_now": "2026-10-05T05:53-05:00",
    "lon": -96.8358,
    "low_days": {
     "2026-10-04": {
@@ -13409,7 +13389,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 38659.8355,
+      "liquidity": 38724.0805,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Dallas Love Field Station in degrees Fahrenheit on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=kdal\n\nThis mar",
       "slug": "lowest-temperature-in-dallas-on-october-5-2026",
       "title": "Lowest temperature in Dallas on October 5?",
@@ -13799,7 +13779,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 1669.9528,
+      "liquidity": 1671.0828,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Dallas Love Field Station in degrees Fahrenheit on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=kdal\n\nThis mar",
       "slug": "lowest-temperature-in-dallas-on-october-6-2026",
       "title": "Lowest temperature in Dallas on October 6?",
@@ -14999,7 +14979,7 @@
         "label": "34\u00b0C",
         "lastTrade": 0.995,
         "threshold": "7",
-        "volume": 2244.8254110000003,
+        "volume": 2253.9154110000004,
         "yes": 0.9965
        },
        {
@@ -15038,11 +15018,11 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 106419.9789,
+      "liquidity": 106469.76386,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Chaudhary Charan Singh Intl Airport Station in degrees Celsius on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?si",
       "slug": "highest-temperature-in-lucknow-on-october-5-2026",
       "title": "Highest temperature in Lucknow on October 5?",
-      "volume": 20239.733920000002
+      "volume": 20248.823920000003
      },
      "models": {
       "cma_grapes_global": 34.8,
@@ -15500,7 +15480,7 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.0664,
-         "avg_fill_25": 0.0919,
+         "avg_fill_25": 0.091,
          "best_ask": 0.048,
          "best_bid": 0.003,
          "bid_usd_within_2c": 1.07,
@@ -15519,11 +15499,11 @@
         "bestBid": 0.03,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1052,
-         "avg_fill_25": 0.1348,
+         "avg_fill_10": 0.1055,
+         "avg_fill_25": 0.1342,
          "best_ask": 0.057,
          "best_bid": 0.03,
-         "bid_usd_within_2c": 9.09,
+         "bid_usd_within_2c": 9.12,
          "usd_at_best": 0.57,
          "usd_within_1c": 1.2,
          "usd_within_2c": 1.58
@@ -15535,24 +15515,24 @@
         "yes": 0.0435
        },
        {
-        "bestAsk": 0.17,
-        "bestBid": 0.12,
+        "bestAsk": 0.14,
+        "bestBid": 0.11,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1791,
-         "avg_fill_25": 0.1796,
-         "best_ask": 0.17,
-         "best_bid": 0.12,
-         "bid_usd_within_2c": 201.26,
-         "usd_at_best": 0.85,
-         "usd_within_1c": 43.46,
-         "usd_within_2c": 46.82
+         "avg_fill_10": 0.1476,
+         "avg_fill_25": 0.149,
+         "best_ask": 0.14,
+         "best_bid": 0.11,
+         "bid_usd_within_2c": 144.38,
+         "usd_at_best": 2.26,
+         "usd_within_1c": 69.71,
+         "usd_within_2c": 74.51
         },
         "label": "30\u00b0C",
         "lastTrade": 0.15,
         "threshold": "6",
-        "volume": 563.7962789999999,
-        "yes": 0.145
+        "volume": 586.5235449999999,
+        "yes": 0.125
        },
        {
         "bestAsk": 0.39,
@@ -15560,13 +15540,13 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.3936,
-         "avg_fill_25": 0.3974,
+         "avg_fill_25": 0.4015,
          "best_ask": 0.39,
          "best_bid": 0.37,
-         "bid_usd_within_2c": 206.79,
+         "bid_usd_within_2c": 229.89,
          "usd_at_best": 6.38,
-         "usd_within_1c": 34.18,
-         "usd_within_2c": 2563.72
+         "usd_within_1c": 14.38,
+         "usd_within_2c": 18634.12
         },
         "label": "31\u00b0C",
         "lastTrade": 0.4,
@@ -15579,14 +15559,14 @@
         "bestBid": 0.36,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.398,
-         "avg_fill_25": 0.3992,
-         "best_ask": 0.39,
+         "avg_fill_10": 0.4118,
+         "avg_fill_25": 0.4167,
+         "best_ask": 0.41,
          "best_bid": 0.36,
-         "bid_usd_within_2c": 182.81,
-         "usd_at_best": 1.95,
-         "usd_within_1c": 219.97,
-         "usd_within_2c": 23438.8
+         "bid_usd_within_2c": 214.4,
+         "usd_at_best": 8.2,
+         "usd_within_1c": 4276.38,
+         "usd_within_2c": 4280.5
         },
         "label": "32\u00b0C",
         "lastTrade": 0.38,
@@ -15596,23 +15576,23 @@
        },
        {
         "bestAsk": 0.069,
-        "bestBid": 0.04,
+        "bestBid": 0.044,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0713,
-         "avg_fill_25": 0.0756,
+         "avg_fill_10": 0.0882,
+         "avg_fill_25": 0.1216,
          "best_ask": 0.069,
-         "best_bid": 0.04,
-         "bid_usd_within_2c": 6.28,
+         "best_bid": 0.044,
+         "bid_usd_within_2c": 2.44,
          "usd_at_best": 1.73,
-         "usd_within_1c": 13.11,
-         "usd_within_2c": 39.75
+         "usd_within_1c": 4.47,
+         "usd_within_2c": 4.47
         },
         "label": "33\u00b0C",
         "lastTrade": 0.041,
         "threshold": "9",
         "volume": 174.040872,
-        "yes": 0.0545
+        "yes": 0.0565
        },
        {
         "bestAsk": 0.004,
@@ -15628,11 +15608,11 @@
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 59927.39832,
+      "liquidity": 69232.53281,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Chaudhary Charan Singh Intl Airport Station in degrees Celsius on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?si",
       "slug": "highest-temperature-in-lucknow-on-october-6-2026",
       "title": "Highest temperature in Lucknow on October 6?",
-      "volume": 3749.241016
+      "volume": 3771.968282
      },
      "models": {
       "cma_grapes_global": 34.3,
@@ -15649,7 +15629,7 @@
    },
    "icao": "VILK",
    "lat": 26.7606,
-   "local_now": "2026-10-05T16:15+05:30",
+   "local_now": "2026-10-05T16:23+05:30",
    "lon": 80.8893,
    "low_days": {
     "2026-10-04": {
@@ -16236,7 +16216,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 53986.61587,
+      "liquidity": 53986.61594,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Chaudhary Charan Singh Intl Airport Station in degrees Celsius on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site",
       "slug": "lowest-temperature-in-lucknow-on-october-5-2026",
       "title": "Lowest temperature in Lucknow on October 5?",
@@ -16501,7 +16481,7 @@
          "avg_fill_25": 0.7086,
          "best_ask": 0.67,
          "best_bid": 0.15,
-         "bid_usd_within_2c": 63.84,
+         "bid_usd_within_2c": 63.09,
          "usd_at_best": 3.35,
          "usd_within_1c": 7.6,
          "usd_within_2c": 7.6
@@ -16521,7 +16501,7 @@
          "avg_fill_25": 0.7086,
          "best_ask": 0.67,
          "best_bid": 0.06,
-         "bid_usd_within_2c": 51.99,
+         "bid_usd_within_2c": 60.09,
          "usd_at_best": 3.35,
          "usd_within_1c": 7.6,
          "usd_within_2c": 7.6
@@ -16613,29 +16593,29 @@
         "yes": 0.34
        },
        {
-        "bestAsk": 0.91,
+        "bestAsk": 0.9,
         "bestBid": null,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.91,
-         "avg_fill_25": 0.91,
-         "best_ask": 0.91,
+         "avg_fill_10": 0.8614,
+         "avg_fill_25": 0.8784,
+         "best_ask": 0.86,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
-         "usd_at_best": 113.75,
-         "usd_within_1c": 315.23,
-         "usd_within_2c": 315.23
+         "usd_at_best": 8.6,
+         "usd_within_1c": 17.3,
+         "usd_within_2c": 17.3
         },
         "label": "30\u00b0C or higher",
         "lastTrade": null,
         "threshold": "10",
         "volume": 0.0,
-        "yes": 0.455
+        "yes": 0.45
        }
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 1029.9492,
+      "liquidity": 833.1562,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Chaudhary Charan Singh Intl Airport Station in degrees Celsius on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site",
       "slug": "lowest-temperature-in-lucknow-on-october-6-2026",
       "title": "Lowest temperature in Lucknow on October 6?",
@@ -17886,14 +17866,14 @@
        },
        {
         "bestAsk": 0.003,
-        "bestBid": 0.001,
+        "bestBid": null,
         "closed": false,
         "depth": null,
         "label": "21\u00b0C",
         "lastTrade": 0.001,
         "threshold": "4",
         "volume": 2565.8413189999997,
-        "yes": 0.002
+        "yes": 0.0015
        },
        {
         "bestAsk": 0.002,
@@ -17915,7 +17895,7 @@
          "avg_fill_25": 0.0659,
          "best_ask": 0.025,
          "best_bid": 0.024,
-         "bid_usd_within_2c": 6.67,
+         "bid_usd_within_2c": 6.7,
          "usd_at_best": 0.5,
          "usd_within_1c": 2.38,
          "usd_within_2c": 2.94
@@ -17927,78 +17907,78 @@
         "yes": 0.0245
        },
        {
-        "bestAsk": 0.14,
+        "bestAsk": 0.13,
         "bestBid": 0.08,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1499,
-         "avg_fill_25": 0.1764,
+         "avg_fill_10": 0.144,
+         "avg_fill_25": 0.1725,
          "best_ask": 0.13,
          "best_bid": 0.08,
-         "bid_usd_within_2c": 15.29,
+         "bid_usd_within_2c": 17.94,
          "usd_at_best": 0.65,
-         "usd_within_1c": 5.31,
-         "usd_within_2c": 7.37
+         "usd_within_1c": 5.13,
+         "usd_within_2c": 11.47
         },
         "label": "24\u00b0C",
         "lastTrade": 0.12,
         "threshold": "7",
         "volume": 4997.6433590000015,
-        "yes": 0.11
+        "yes": 0.105
        },
        {
-        "bestAsk": 0.34,
+        "bestAsk": 0.35,
         "bestBid": 0.3,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.3547,
-         "avg_fill_25": 0.3619,
-         "best_ask": 0.35,
-         "best_bid": 0.3,
-         "bid_usd_within_2c": 13.67,
-         "usd_at_best": 5.25,
-         "usd_within_1c": 17.85,
-         "usd_within_2c": 21.68
+         "avg_fill_10": 0.3645,
+         "avg_fill_25": 0.374,
+         "best_ask": 0.36,
+         "best_bid": 0.31,
+         "bid_usd_within_2c": 17.7,
+         "usd_at_best": 5.4,
+         "usd_within_1c": 14.65,
+         "usd_within_2c": 19.8
         },
         "label": "25\u00b0C",
         "lastTrade": 0.35,
         "threshold": "8",
         "volume": 3776.104338,
-        "yes": 0.32
+        "yes": 0.325
        },
        {
         "bestAsk": 0.49,
-        "bestBid": 0.47,
+        "bestBid": 0.42,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.478,
-         "avg_fill_25": 0.489,
-         "best_ask": 0.47,
+         "avg_fill_10": 0.4975,
+         "avg_fill_25": 0.5206,
+         "best_ask": 0.49,
          "best_bid": 0.42,
-         "bid_usd_within_2c": 13.87,
-         "usd_at_best": 2.35,
-         "usd_within_1c": 9.55,
-         "usd_within_2c": 15.13
+         "bid_usd_within_2c": 27.04,
+         "usd_at_best": 2.45,
+         "usd_within_1c": 10.46,
+         "usd_within_2c": 13.01
         },
         "label": "26\u00b0C",
         "lastTrade": 0.5,
         "threshold": "9",
         "volume": 5522.560703999998,
-        "yes": 0.48
+        "yes": 0.455
        },
        {
-        "bestAsk": 0.15,
-        "bestBid": 0.121,
+        "bestAsk": 0.149,
+        "bestBid": 0.122,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.16,
-         "avg_fill_25": 0.1921,
-         "best_ask": 0.149,
-         "best_bid": 0.122,
-         "bid_usd_within_2c": 22.48,
-         "usd_at_best": 0.74,
-         "usd_within_1c": 7.74,
-         "usd_within_2c": 7.74
+         "avg_fill_10": 0.1364,
+         "avg_fill_25": 0.1644,
+         "best_ask": 0.133,
+         "best_bid": 0.12,
+         "bid_usd_within_2c": 0.64,
+         "usd_at_best": 2.96,
+         "usd_within_1c": 11.1,
+         "usd_within_2c": 11.1
         },
         "label": "27\u00b0C or higher",
         "lastTrade": 0.145,
@@ -18009,7 +17989,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 64153.88692,
+      "liquidity": 63745.09016,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Adolfo Su\u00e1rez Madrid-Barajas Airport Station in degrees Celsius on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?s",
       "slug": "highest-temperature-in-madrid-on-october-5-2026",
       "title": "Highest temperature in Madrid on October 5?",
@@ -18469,68 +18449,68 @@
        },
        {
         "bestAsk": 0.006,
-        "bestBid": 0.002,
+        "bestBid": 0.003,
         "closed": false,
         "depth": null,
         "label": "18\u00b0C",
         "lastTrade": 0.062,
         "threshold": "4",
         "volume": 465.95748199999997,
-        "yes": 0.004
+        "yes": 0.0045
        },
        {
-        "bestAsk": 0.07,
+        "bestAsk": 0.06,
         "bestBid": 0.04,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.07,
-         "avg_fill_25": 0.0717,
-         "best_ask": 0.07,
+         "avg_fill_10": 0.0751,
+         "avg_fill_25": 0.0897,
+         "best_ask": 0.06,
          "best_bid": 0.04,
-         "bid_usd_within_2c": 19.84,
-         "usd_at_best": 20.23,
-         "usd_within_1c": 46.4,
-         "usd_within_2c": 46.4
+         "bid_usd_within_2c": 12.97,
+         "usd_at_best": 1.2,
+         "usd_within_1c": 2.95,
+         "usd_within_2c": 15.47
         },
         "label": "19\u00b0C",
         "lastTrade": 0.04,
         "threshold": "5",
         "volume": 266.069328,
-        "yes": 0.055
+        "yes": 0.05
        },
        {
-        "bestAsk": 0.22,
-        "bestBid": 0.21,
+        "bestAsk": 0.21,
+        "bestBid": 0.18,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.22,
-         "avg_fill_25": 0.22,
-         "best_ask": 0.22,
-         "best_bid": 0.21,
-         "bid_usd_within_2c": 123.88,
-         "usd_at_best": 49.5,
-         "usd_within_1c": 116.89,
-         "usd_within_2c": 1486.33
+         "avg_fill_10": 0.2189,
+         "avg_fill_25": 0.2196,
+         "best_ask": 0.21,
+         "best_bid": 0.18,
+         "bid_usd_within_2c": 241.43,
+         "usd_at_best": 1.05,
+         "usd_within_1c": 128.08,
+         "usd_within_2c": 131.77
         },
         "label": "20\u00b0C",
         "lastTrade": 0.22,
         "threshold": "6",
         "volume": 711.24218,
-        "yes": 0.215
+        "yes": 0.195
        },
        {
         "bestAsk": 0.36,
         "bestBid": 0.35,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.36,
-         "avg_fill_25": 0.36,
-         "best_ask": 0.36,
+         "avg_fill_10": 0.37,
+         "avg_fill_25": 0.37,
+         "best_ask": 0.37,
          "best_bid": 0.35,
-         "bid_usd_within_2c": 6058.95,
-         "usd_at_best": 27.32,
-         "usd_within_1c": 198.96,
-         "usd_within_2c": 509.06
+         "bid_usd_within_2c": 599.78,
+         "usd_at_best": 97.1,
+         "usd_within_1c": 271.52,
+         "usd_within_2c": 435.73
         },
         "label": "21\u00b0C",
         "lastTrade": 0.35,
@@ -18547,10 +18527,10 @@
          "avg_fill_25": 0.3293,
          "best_ask": 0.32,
          "best_bid": 0.3,
-         "bid_usd_within_2c": 326.64,
+         "bid_usd_within_2c": 350.59,
          "usd_at_best": 1.6,
          "usd_within_1c": 58.41,
-         "usd_within_2c": 179.02
+         "usd_within_2c": 180.72
         },
         "label": "22\u00b0C",
         "lastTrade": 0.32,
@@ -18560,31 +18540,31 @@
        },
        {
         "bestAsk": 0.079,
-        "bestBid": 0.051,
+        "bestBid": 0.057,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0827,
-         "avg_fill_25": 0.0887,
+         "avg_fill_10": 0.0844,
+         "avg_fill_25": 0.0888,
          "best_ask": 0.079,
-         "best_bid": 0.055,
-         "bid_usd_within_2c": 2.61,
+         "best_bid": 0.057,
+         "bid_usd_within_2c": 3.38,
          "usd_at_best": 2.64,
-         "usd_within_1c": 12.46,
-         "usd_within_2c": 32.15
+         "usd_within_1c": 12.76,
+         "usd_within_2c": 37.93
         },
         "label": "23\u00b0C",
         "lastTrade": 0.051,
         "threshold": "9",
         "volume": 65.872965,
-        "yes": 0.065
+        "yes": 0.068
        },
        {
         "bestAsk": 0.036,
         "bestBid": 0.021,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0688,
-         "avg_fill_25": 0.093,
+         "avg_fill_10": 0.0687,
+         "avg_fill_25": 0.095,
          "best_ask": 0.036,
          "best_bid": 0.021,
          "bid_usd_within_2c": 9.91,
@@ -18601,7 +18581,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 37096.47539,
+      "liquidity": 38464.49968,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Adolfo Su\u00e1rez Madrid-Barajas Airport Station in degrees Celsius on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?s",
       "slug": "highest-temperature-in-madrid-on-october-6-2026",
       "title": "Highest temperature in Madrid on October 6?",
@@ -18622,7 +18602,7 @@
    },
    "icao": "LEMD",
    "lat": 40.4719,
-   "local_now": "2026-10-05T12:45+02:00",
+   "local_now": "2026-10-05T12:53+02:00",
    "lon": -3.5626,
    "low_days": {
     "2026-10-04": {
@@ -19186,7 +19166,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 114990.64541,
+      "liquidity": 114992.58941,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Adolfo Su\u00e1rez Madrid-Barajas Airport Station in degrees Celsius on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?sit",
       "slug": "lowest-temperature-in-madrid-on-october-5-2026",
       "title": "Lowest temperature in Madrid on October 5?",
@@ -19553,7 +19533,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 5430.5522,
+      "liquidity": 5428.5772,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Adolfo Su\u00e1rez Madrid-Barajas Airport Station in degrees Celsius on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?sit",
       "slug": "lowest-temperature-in-madrid-on-october-6-2026",
       "title": "Lowest temperature in Madrid on October 6?",
@@ -20842,18 +20822,18 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.0754,
-         "avg_fill_25": 0.0849,
+         "avg_fill_25": 0.0852,
          "best_ask": 0.06,
          "best_bid": 0.03,
-         "bid_usd_within_2c": 7.51,
+         "bid_usd_within_2c": 7.46,
          "usd_at_best": 1.11,
          "usd_within_1c": 5.15,
          "usd_within_2c": 6.91
         },
         "label": "21\u00b0C",
-        "lastTrade": 0.04,
+        "lastTrade": 0.03,
         "threshold": "7",
-        "volume": 653.036106,
+        "volume": 654.686106,
         "yes": 0.045
        },
        {
@@ -20865,7 +20845,7 @@
          "avg_fill_25": 0.4122,
          "best_ask": 0.41,
          "best_bid": 0.39,
-         "bid_usd_within_2c": 293.35,
+         "bid_usd_within_2c": 255.71,
          "usd_at_best": 19.45,
          "usd_within_1c": 275.69,
          "usd_within_2c": 277.85
@@ -20873,11 +20853,11 @@
         "label": "22\u00b0C",
         "lastTrade": 0.41,
         "threshold": "8",
-        "volume": 2630.34255,
+        "volume": 2631.99255,
         "yes": 0.4
        },
        {
-        "bestAsk": 0.39,
+        "bestAsk": 0.38,
         "bestBid": 0.37,
         "closed": false,
         "depth": {
@@ -20885,16 +20865,16 @@
          "avg_fill_25": 0.38,
          "best_ask": 0.38,
          "best_bid": 0.37,
-         "bid_usd_within_2c": 137.75,
+         "bid_usd_within_2c": 242.17,
          "usd_at_best": 32.3,
-         "usd_within_1c": 227.34,
-         "usd_within_2c": 2960.03
+         "usd_within_1c": 188.34,
+         "usd_within_2c": 2677.91
         },
         "label": "23\u00b0C",
         "lastTrade": 0.37,
         "threshold": "9",
-        "volume": 1110.53362,
-        "yes": 0.38
+        "volume": 1122.08362,
+        "yes": 0.375
        },
        {
         "bestAsk": 0.12,
@@ -20902,24 +20882,24 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.12,
-         "avg_fill_25": 0.1258,
+         "avg_fill_25": 0.12,
          "best_ask": 0.12,
          "best_bid": 0.09,
-         "bid_usd_within_2c": 10.89,
-         "usd_at_best": 10.58,
-         "usd_within_1c": 24.24,
-         "usd_within_2c": 36.84
+         "bid_usd_within_2c": 30.2,
+         "usd_at_best": 34.59,
+         "usd_within_1c": 35.24,
+         "usd_within_2c": 47.84
         },
         "label": "24\u00b0C or higher",
         "lastTrade": 0.11,
         "threshold": "10",
-        "volume": 2800.517756999999,
+        "volume": 2802.1677569999993,
         "yes": 0.105
        }
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 43880.61938,
+      "liquidity": 44219.34322,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Benito Ju\u00e1rez International Airport Station in degrees Celsius on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?si",
       "slug": "highest-temperature-in-mexico-city-on-october-5-2026",
       "title": "Highest temperature in Mexico City on October 5?",
@@ -21382,14 +21362,14 @@
         "bestBid": 0.012,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0907,
-         "avg_fill_25": 0.1227,
+         "avg_fill_10": 0.0982,
+         "avg_fill_25": 0.1317,
          "best_ask": 0.04,
          "best_bid": 0.012,
          "bid_usd_within_2c": 3.33,
-         "usd_at_best": 0.61,
-         "usd_within_1c": 1.06,
-         "usd_within_2c": 3.28
+         "usd_at_best": 0.41,
+         "usd_within_1c": 0.83,
+         "usd_within_2c": 2.75
         },
         "label": "19\u00b0C",
         "lastTrade": null,
@@ -21402,14 +21382,14 @@
         "bestBid": 0.08,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.11,
-         "avg_fill_25": 0.1123,
+         "avg_fill_10": 0.1121,
+         "avg_fill_25": 0.1167,
          "best_ask": 0.11,
          "best_bid": 0.08,
-         "bid_usd_within_2c": 39.58,
-         "usd_at_best": 18.81,
-         "usd_within_1c": 65.24,
-         "usd_within_2c": 71.35
+         "bid_usd_within_2c": 38.57,
+         "usd_at_best": 7.7,
+         "usd_within_1c": 66.25,
+         "usd_within_2c": 72.36
         },
         "label": "20\u00b0C",
         "lastTrade": 0.11,
@@ -21426,10 +21406,10 @@
          "avg_fill_25": 0.39,
          "best_ask": 0.39,
          "best_bid": 0.35,
-         "bid_usd_within_2c": 2778.11,
-         "usd_at_best": 56.08,
-         "usd_within_1c": 309.49,
-         "usd_within_2c": 311.54
+         "bid_usd_within_2c": 2564.84,
+         "usd_at_best": 182.05,
+         "usd_within_1c": 571.87,
+         "usd_within_2c": 573.92
         },
         "label": "21\u00b0C",
         "lastTrade": 0.38,
@@ -21446,10 +21426,10 @@
          "avg_fill_25": 0.3521,
          "best_ask": 0.35,
          "best_bid": 0.34,
-         "bid_usd_within_2c": 6645.01,
+         "bid_usd_within_2c": 171.07,
          "usd_at_best": 19.6,
          "usd_within_1c": 29.15,
-         "usd_within_2c": 203.08
+         "usd_within_2c": 242.74
         },
         "label": "22\u00b0C",
         "lastTrade": 0.36,
@@ -21463,13 +21443,13 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.12,
-         "avg_fill_25": 0.1233,
+         "avg_fill_25": 0.1228,
          "best_ask": 0.12,
          "best_bid": 0.09,
-         "bid_usd_within_2c": 32.93,
-         "usd_at_best": 16.32,
-         "usd_within_1c": 52.35,
-         "usd_within_2c": 52.35
+         "bid_usd_within_2c": 31.83,
+         "usd_at_best": 17.52,
+         "usd_within_1c": 50.3,
+         "usd_within_2c": 50.3
         },
         "label": "23\u00b0C",
         "lastTrade": 0.16,
@@ -21483,7 +21463,7 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.0808,
-         "avg_fill_25": 0.1121,
+         "avg_fill_25": 0.1132,
          "best_ask": 0.06,
          "best_bid": 0.03,
          "bid_usd_within_2c": 2.45,
@@ -21511,7 +21491,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 31458.81957,
+      "liquidity": 35473.93117,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Benito Ju\u00e1rez International Airport Station in degrees Celsius on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?si",
       "slug": "highest-temperature-in-mexico-city-on-october-6-2026",
       "title": "Highest temperature in Mexico City on October 6?",
@@ -21532,7 +21512,7 @@
    },
    "icao": "MMMX",
    "lat": 19.4363,
-   "local_now": "2026-10-05T04:45-06:00",
+   "local_now": "2026-10-05T04:53-06:00",
    "lon": -99.0721,
    "low_days": {
     "2026-10-04": {
@@ -22040,7 +22020,7 @@
         "yes": 0.5
        },
        {
-        "bestAsk": 1,
+        "bestAsk": 0.99,
         "bestBid": null,
         "closed": false,
         "depth": {
@@ -22057,7 +22037,7 @@
         "lastTrade": null,
         "threshold": "4",
         "volume": 0.0,
-        "yes": 0.5
+        "yes": 0.495
        },
        {
         "bestAsk": 0.92,
@@ -22104,9 +22084,14 @@
         "bestBid": 0.02,
         "closed": false,
         "depth": {
-         "best_ask": null,
+         "avg_fill_10": 0.9851,
+         "avg_fill_25": 0.988,
+         "best_ask": 0.98,
          "best_bid": 0.02,
-         "bid_usd_within_2c": 0.2
+         "bid_usd_within_2c": 0.2,
+         "usd_at_best": 4.9,
+         "usd_within_1c": 202.9,
+         "usd_within_2c": 202.9
         },
         "label": "15\u00b0C",
         "lastTrade": null,
@@ -22115,15 +22100,15 @@
         "yes": 0.51
        },
        {
-        "bestAsk": 0.01,
-        "bestBid": null,
+        "bestAsk": 0.002,
+        "bestBid": 0.001,
         "closed": false,
         "depth": null,
         "label": "16\u00b0C",
         "lastTrade": null,
         "threshold": "8",
         "volume": 0.0,
-        "yes": 0.005
+        "yes": 0.0015
        },
        {
         "bestAsk": 0.001,
@@ -22150,7 +22135,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 15853.17699,
+      "liquidity": 17302.67949,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Benito Ju\u00e1rez International Airport Station in degrees Celsius on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site",
       "slug": "lowest-temperature-in-mexico-city-on-october-5-2026",
       "title": "Lowest temperature in Mexico City on October 5?",
@@ -22541,7 +22526,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 881.7314,
+      "liquidity": 883.7114,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Benito Ju\u00e1rez International Airport Station in degrees Celsius on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site",
       "slug": "lowest-temperature-in-mexico-city-on-october-6-2026",
       "title": "Lowest temperature in Mexico City on October 6?",
@@ -23669,26 +23654,26 @@
      "market": {
       "buckets": [
        {
-        "bestAsk": 0.018,
-        "bestBid": null,
+        "bestAsk": 0.01,
+        "bestBid": 0.002,
         "closed": false,
         "depth": null,
         "label": "59\u00b0F or below",
         "lastTrade": 0.016,
         "threshold": "0",
         "volume": 1667.1731219999997,
-        "yes": 0.009
+        "yes": 0.006
        },
        {
         "bestAsk": 0.007,
-        "bestBid": 0.003,
+        "bestBid": 0.004,
         "closed": false,
         "depth": null,
         "label": "60-61\u00b0F",
         "lastTrade": 0.006,
         "threshold": "1",
-        "volume": 1943.420831,
-        "yes": 0.005
+        "volume": 1948.420831,
+        "yes": 0.0055
        },
        {
         "bestAsk": 0.023,
@@ -23702,24 +23687,24 @@
         "yes": 0.017
        },
        {
-        "bestAsk": 0.27,
+        "bestAsk": 0.28,
         "bestBid": 0.24,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.2786,
-         "avg_fill_25": 0.2794,
-         "best_ask": 0.27,
+         "avg_fill_10": 0.28,
+         "avg_fill_25": 0.28,
+         "best_ask": 0.28,
          "best_bid": 0.24,
-         "bid_usd_within_2c": 103.12,
-         "usd_at_best": 1.35,
-         "usd_within_1c": 117.4,
-         "usd_within_2c": 118.85
+         "bid_usd_within_2c": 86.82,
+         "usd_at_best": 62.16,
+         "usd_within_1c": 214.75,
+         "usd_within_2c": 214.75
         },
         "label": "64-65\u00b0F",
         "lastTrade": 0.22,
         "threshold": "3",
         "volume": 3721.955305999999,
-        "yes": 0.255
+        "yes": 0.26
        },
        {
         "bestAsk": 0.42,
@@ -23727,13 +23712,13 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.4249,
-         "avg_fill_25": 0.4317,
+         "avg_fill_25": 0.428,
          "best_ask": 0.42,
          "best_bid": 0.38,
-         "bid_usd_within_2c": 151.68,
+         "bid_usd_within_2c": 3492.12,
          "usd_at_best": 4.99,
-         "usd_within_1c": 15.31,
-         "usd_within_2c": 105.93
+         "usd_within_1c": 90.99,
+         "usd_within_2c": 137.61
         },
         "label": "66-67\u00b0F",
         "lastTrade": 0.4,
@@ -23742,38 +23727,38 @@
         "yes": 0.4
        },
        {
-        "bestAsk": 0.26,
-        "bestBid": 0.24,
+        "bestAsk": 0.24,
+        "bestBid": 0.21,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.2628,
-         "avg_fill_25": 0.271,
-         "best_ask": 0.26,
-         "best_bid": 0.24,
-         "bid_usd_within_2c": 13.24,
-         "usd_at_best": 7.09,
-         "usd_within_1c": 14.65,
-         "usd_within_2c": 73.21
+         "avg_fill_10": 0.2424,
+         "avg_fill_25": 0.2484,
+         "best_ask": 0.24,
+         "best_bid": 0.21,
+         "bid_usd_within_2c": 65.79,
+         "usd_at_best": 7.56,
+         "usd_within_1c": 21.06,
+         "usd_within_2c": 74.88
         },
         "label": "68-69\u00b0F",
-        "lastTrade": 0.25,
+        "lastTrade": 0.23,
         "threshold": "5",
-        "volume": 3940.1853530000008,
-        "yes": 0.25
+        "volume": 3944.1853530000008,
+        "yes": 0.225
        },
        {
         "bestAsk": 0.06,
         "bestBid": 0.05,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0761,
-         "avg_fill_25": 0.0784,
-         "best_ask": 0.06,
+         "avg_fill_10": 0.0888,
+         "avg_fill_25": 0.0952,
+         "best_ask": 0.07,
          "best_bid": 0.05,
-         "bid_usd_within_2c": 32.84,
-         "usd_at_best": 0.36,
-         "usd_within_1c": 3.07,
-         "usd_within_2c": 35.67
+         "bid_usd_within_2c": 68.75,
+         "usd_at_best": 0.63,
+         "usd_within_1c": 4.19,
+         "usd_within_2c": 5.13
         },
         "label": "70-71\u00b0F",
         "lastTrade": 0.05,
@@ -23789,7 +23774,7 @@
         "label": "72-73\u00b0F",
         "lastTrade": 0.004,
         "threshold": "7",
-        "volume": 1353.5092240000006,
+        "volume": 1358.5092240000006,
         "yes": 0.0025
        },
        {
@@ -23828,11 +23813,11 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 25763.98372,
+      "liquidity": 28929.20176,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Seattle-Tacoma International Airport Station in degrees Fahrenheit on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeserie",
       "slug": "highest-temperature-in-seattle-on-october-5-2026",
       "title": "Highest temperature in Seattle on October 5?",
-      "volume": 25062.402619
+      "volume": 25076.402619
      },
      "models": {
       "cma_grapes_global": 19.7,
@@ -24315,13 +24300,13 @@
          "best_bid": 0.43,
          "bid_usd_within_2c": 98.84,
          "usd_at_best": 81.56,
-         "usd_within_1c": 203.06,
-         "usd_within_2c": 2951.21
+         "usd_within_1c": 156.06,
+         "usd_within_2c": 396.54
         },
         "label": "64-65\u00b0F",
         "lastTrade": 0.45,
         "threshold": "5",
-        "volume": 246.62054999999998,
+        "volume": 255.62054999999998,
         "yes": 0.445
        },
        {
@@ -24333,10 +24318,10 @@
          "avg_fill_25": 0.43,
          "best_ask": 0.43,
          "best_bid": 0.42,
-         "bid_usd_within_2c": 101.11,
+         "bid_usd_within_2c": 116.61,
          "usd_at_best": 36.03,
-         "usd_within_1c": 117.43,
-         "usd_within_2c": 120.31
+         "usd_within_1c": 161.43,
+         "usd_within_2c": 186.81
         },
         "label": "66-67\u00b0F",
         "lastTrade": 0.46,
@@ -24400,11 +24385,11 @@
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 28997.83017,
+      "liquidity": 28899.92446,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Seattle-Tacoma International Airport Station in degrees Fahrenheit on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeserie",
       "slug": "highest-temperature-in-seattle-on-october-6-2026",
       "title": "Highest temperature in Seattle on October 6?",
-      "volume": 1791.057332
+      "volume": 1800.057332
      },
      "models": {
       "cma_grapes_global": 19.5,
@@ -24421,7 +24406,7 @@
    },
    "icao": "KSEA",
    "lat": 47.4447,
-   "local_now": "2026-10-05T03:45-07:00",
+   "local_now": "2026-10-05T03:53-07:00",
    "lon": -122.3144,
    "low_days": {
     "2026-10-04": {
@@ -25022,7 +25007,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 62927.11352,
+      "liquidity": 62925.85352,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Seattle-Tacoma International Airport Station in degrees Fahrenheit on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?",
       "slug": "lowest-temperature-in-seattle-on-october-5-2026",
       "title": "Lowest temperature in Seattle on October 5?",
@@ -25287,7 +25272,7 @@
          "avg_fill_25": 0.7086,
          "best_ask": 0.67,
          "best_bid": 0.12,
-         "bid_usd_within_2c": 63.72,
+         "bid_usd_within_2c": 58.92,
          "usd_at_best": 3.35,
          "usd_within_1c": 7.6,
          "usd_within_2c": 7.6
@@ -25399,29 +25384,29 @@
         "yes": 0.34
        },
        {
-        "bestAsk": 0.93,
+        "bestAsk": 0.91,
         "bestBid": null,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.92,
-         "avg_fill_25": 0.92,
-         "best_ask": 0.92,
+         "avg_fill_10": 0.91,
+         "avg_fill_25": 0.91,
+         "best_ask": 0.91,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
-         "usd_at_best": 174.8,
-         "usd_within_1c": 631.43,
-         "usd_within_2c": 631.43
+         "usd_at_best": 27.3,
+         "usd_within_1c": 243.5,
+         "usd_within_2c": 243.5
         },
         "label": "64\u00b0F or higher",
         "lastTrade": null,
         "threshold": "10",
         "volume": 0.0,
-        "yes": 0.465
+        "yes": 0.455
        }
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 1341.40605,
+      "liquidity": 1284.58785,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Seattle-Tacoma International Airport Station in degrees Fahrenheit on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?",
       "slug": "lowest-temperature-in-seattle-on-october-6-2026",
       "title": "Lowest temperature in Seattle on October 6?",
@@ -26129,8 +26114,8 @@
     }
    },
    "taf": {
-    "issued": "2026-10-05T10:32:00.000Z",
-    "raw": "TAF KSEA 051032Z 0511/0612 20004KT P6SM BKN002 FM051115 18004KT 1/2SM FG OVC002 FM051800 23005KT 2SM BR BKN004 FM052000 24008KT P6SM SCT250 FM060300 34004KT P6SM BKN250 FM060900 01005KT 6SM BR BKN008"
+    "issued": "2026-10-05T10:47:00.000Z",
+    "raw": "TAF KSEA 051047Z 0511/0612 02005KT 1/2SM FG VV001 FM051800 23005KT 2SM BR BKN004 FM052000 24008KT P6SM SCT250 FM060300 34004KT P6SM BKN250 FM060900 01005KT 6SM BR BKN008"
    },
    "tz": "America/Los_Angeles",
    "unit": "F"
@@ -26626,7 +26611,7 @@
         "label": "23\u00b0C",
         "lastTrade": 0.001,
         "threshold": "5",
-        "volume": 17101.917876000003,
+        "volume": 17129.297876000004,
         "yes": 0.0005
        },
        {
@@ -26637,7 +26622,7 @@
         "label": "24\u00b0C",
         "lastTrade": 0.999,
         "threshold": "6",
-        "volume": 15622.585475999993,
+        "volume": 15660.225475999992,
         "yes": 0.9995
        },
        {
@@ -26687,7 +26672,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 191408.33648,
+      "liquidity": 191260.8815,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Shanghai Pudong International Airport Station in degrees Celsius on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?",
       "slug": "highest-temperature-in-shanghai-on-october-5-2026",
       "title": "Highest temperature in Shanghai on October 5?",
@@ -27149,13 +27134,13 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.04,
-         "avg_fill_25": 0.0515,
+         "avg_fill_25": 0.0502,
          "best_ask": 0.04,
          "best_bid": 0.039,
-         "bid_usd_within_2c": 24.59,
+         "bid_usd_within_2c": 23.31,
          "usd_at_best": 10.54,
-         "usd_within_1c": 12.92,
-         "usd_within_2c": 12.92
+         "usd_within_1c": 13.44,
+         "usd_within_2c": 16.26
         },
         "label": "22\u00b0C",
         "lastTrade": 0.079,
@@ -27168,54 +27153,54 @@
         "bestBid": 0.23,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.2469,
-         "avg_fill_25": 0.2488,
+         "avg_fill_10": 0.2458,
+         "avg_fill_25": 0.2483,
          "best_ask": 0.24,
          "best_bid": 0.23,
-         "bid_usd_within_2c": 3407.65,
-         "usd_at_best": 2.99,
-         "usd_within_1c": 55.97,
-         "usd_within_2c": 333.85
+         "bid_usd_within_2c": 2812.3,
+         "usd_at_best": 4.08,
+         "usd_within_1c": 116.31,
+         "usd_within_2c": 1617.54
         },
         "label": "23\u00b0C",
         "lastTrade": 0.26,
         "threshold": "5",
-        "volume": 4029.6627399999998,
+        "volume": 4030.9614399999996,
         "yes": 0.235
        },
        {
-        "bestAsk": 0.63,
-        "bestBid": 0.62,
+        "bestAsk": 0.64,
+        "bestBid": 0.63,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.6368,
-         "avg_fill_25": 0.6387,
-         "best_ask": 0.63,
-         "best_bid": 0.62,
-         "bid_usd_within_2c": 598.34,
-         "usd_at_best": 3.15,
-         "usd_within_1c": 44.38,
-         "usd_within_2c": 677.11
+         "avg_fill_10": 0.64,
+         "avg_fill_25": 0.64,
+         "best_ask": 0.64,
+         "best_bid": 0.63,
+         "bid_usd_within_2c": 368.32,
+         "usd_at_best": 41.23,
+         "usd_within_1c": 425.44,
+         "usd_within_2c": 39298.34
         },
         "label": "24\u00b0C",
         "lastTrade": 0.63,
         "threshold": "6",
         "volume": 2104.534347,
-        "yes": 0.625
+        "yes": 0.635
        },
        {
         "bestAsk": 0.12,
         "bestBid": 0.1,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1265,
-         "avg_fill_25": 0.1286,
+         "avg_fill_10": 0.12,
+         "avg_fill_25": 0.1229,
          "best_ask": 0.12,
          "best_bid": 0.1,
-         "bid_usd_within_2c": 77.37,
-         "usd_at_best": 3.35,
-         "usd_within_1c": 60.76,
-         "usd_within_2c": 849.99
+         "bid_usd_within_2c": 80.03,
+         "usd_at_best": 17.23,
+         "usd_within_1c": 64.23,
+         "usd_within_2c": 135.81
         },
         "label": "25\u00b0C",
         "lastTrade": 0.12,
@@ -27259,11 +27244,11 @@
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 56433.26898,
+      "liquidity": 54752.87193,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Shanghai Pudong International Airport Station in degrees Celsius on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?",
       "slug": "highest-temperature-in-shanghai-on-october-6-2026",
       "title": "Highest temperature in Shanghai on October 6?",
-      "volume": 12026.181132
+      "volume": 12027.479831999999
      },
      "models": {
       "cma_grapes_global": 21.5,
@@ -27282,7 +27267,7 @@
    },
    "icao": "ZSPD",
    "lat": 31.146,
-   "local_now": "2026-10-05T18:45+08:00",
+   "local_now": "2026-10-05T18:53+08:00",
    "lon": 121.8,
    "low_days": {
     "2026-10-04": {
@@ -27795,14 +27780,14 @@
        },
        {
         "bestAsk": 0.68,
-        "bestBid": 0.44,
+        "bestBid": 0.46,
         "closed": false,
         "depth": {
          "avg_fill_10": 0.6905,
          "avg_fill_25": 0.6962,
          "best_ask": 0.68,
-         "best_bid": 0.46,
-         "bid_usd_within_2c": 5.3,
+         "best_bid": 0.44,
+         "bid_usd_within_2c": 4.35,
          "usd_at_best": 2.46,
          "usd_within_1c": 6.91,
          "usd_within_2c": 28.66
@@ -27811,7 +27796,7 @@
         "lastTrade": 0.2,
         "threshold": "5",
         "volume": 569.5330969999999,
-        "yes": 0.56
+        "yes": 0.57
        },
        {
         "bestAsk": 0.42,
@@ -27889,7 +27874,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 40969.23423,
+      "liquidity": 40967.84723,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Shanghai Pudong International Airport Station in degrees Celsius on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?si",
       "slug": "lowest-temperature-in-shanghai-on-october-5-2026",
       "title": "Lowest temperature in Shanghai on October 5?",
@@ -28066,28 +28051,28 @@
      "market": {
       "buckets": [
        {
-        "bestAsk": 0.09,
-        "bestBid": 0.002,
+        "bestAsk": 0.088,
+        "bestBid": 0.001,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1148,
-         "avg_fill_25": 0.1179,
-         "best_ask": 0.09,
-         "best_bid": 0.002,
-         "bid_usd_within_2c": 0.02,
-         "usd_at_best": 0.9,
-         "usd_within_1c": 1.4,
-         "usd_within_2c": 1.95
+         "avg_fill_10": 0.1109,
+         "avg_fill_25": 0.1162,
+         "best_ask": 0.088,
+         "best_bid": 0.001,
+         "bid_usd_within_2c": 0.01,
+         "usd_at_best": 0.44,
+         "usd_within_1c": 2.37,
+         "usd_within_2c": 2.91
         },
         "label": "12\u00b0C or below",
         "lastTrade": null,
         "threshold": "0",
         "volume": 31.0,
-        "yes": 0.046
+        "yes": 0.0445
        },
        {
         "bestAsk": 0.09,
-        "bestBid": 0.002,
+        "bestBid": 0.001,
         "closed": false,
         "depth": {
          "avg_fill_10": 0.1429,
@@ -28103,21 +28088,21 @@
         "lastTrade": null,
         "threshold": "1",
         "volume": 10.0,
-        "yes": 0.046
+        "yes": 0.0455
        },
        {
         "bestAsk": 0.15,
         "bestBid": 0.1,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1592,
-         "avg_fill_25": 0.1597,
+         "avg_fill_10": 0.1561,
+         "avg_fill_25": 0.1584,
          "best_ask": 0.15,
          "best_bid": 0.1,
-         "bid_usd_within_2c": 126.23,
-         "usd_at_best": 0.75,
-         "usd_within_1c": 28.18,
-         "usd_within_2c": 29.03
+         "bid_usd_within_2c": 140.43,
+         "usd_at_best": 3.75,
+         "usd_within_1c": 31.18,
+         "usd_within_2c": 32.03
         },
         "label": "14\u00b0C",
         "lastTrade": 0.3,
@@ -28126,24 +28111,24 @@
         "yes": 0.125
        },
        {
-        "bestAsk": 0.34,
+        "bestAsk": 0.35,
         "bestBid": 0.31,
         "closed": false,
         "depth": {
          "avg_fill_10": 0.35,
          "avg_fill_25": 0.35,
          "best_ask": 0.35,
-         "best_bid": 0.31,
-         "bid_usd_within_2c": 155.49,
-         "usd_at_best": 26.21,
-         "usd_within_1c": 202.81,
-         "usd_within_2c": 204.66
+         "best_bid": 0.32,
+         "bid_usd_within_2c": 195.51,
+         "usd_at_best": 31.46,
+         "usd_within_1c": 199.06,
+         "usd_within_2c": 199.06
         },
         "label": "15\u00b0C",
         "lastTrade": 0.39,
         "threshold": "3",
         "volume": 566.445641,
-        "yes": 0.325
+        "yes": 0.33
        },
        {
         "bestAsk": 0.33,
@@ -28154,10 +28139,10 @@
          "avg_fill_25": 0.33,
          "best_ask": 0.33,
          "best_bid": 0.3,
-         "bid_usd_within_2c": 75.74,
-         "usd_at_best": 29.7,
-         "usd_within_1c": 31.4,
-         "usd_within_2c": 47.73
+         "bid_usd_within_2c": 87.54,
+         "usd_at_best": 34.65,
+         "usd_within_1c": 41.45,
+         "usd_within_2c": 56.03
         },
         "label": "16\u00b0C",
         "lastTrade": 0.34,
@@ -28166,64 +28151,64 @@
         "yes": 0.315
        },
        {
-        "bestAsk": 0.2,
+        "bestAsk": 0.19,
         "bestBid": 0.11,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.2489,
-         "avg_fill_25": 0.2932,
-         "best_ask": 0.2,
+         "avg_fill_10": 0.1625,
+         "avg_fill_25": 0.1669,
+         "best_ask": 0.16,
          "best_bid": 0.11,
-         "bid_usd_within_2c": 4.5,
-         "usd_at_best": 2.0,
-         "usd_within_1c": 3.05,
-         "usd_within_2c": 4.15
+         "bid_usd_within_2c": 13.88,
+         "usd_at_best": 7.36,
+         "usd_within_1c": 93.31,
+         "usd_within_2c": 94.21
         },
         "label": "17\u00b0C",
         "lastTrade": 0.12,
         "threshold": "5",
         "volume": 55.084616,
-        "yes": 0.155
+        "yes": 0.15
        },
        {
-        "bestAsk": 0.091,
-        "bestBid": 0.048,
+        "bestAsk": 0.086,
+        "bestBid": 0.03,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0952,
-         "avg_fill_25": 0.1186,
+         "avg_fill_10": 0.085,
+         "avg_fill_25": 0.116,
          "best_ask": 0.077,
-         "best_bid": 0.046,
-         "bid_usd_within_2c": 1.06,
-         "usd_at_best": 1.55,
-         "usd_within_1c": 1.55,
-         "usd_within_2c": 2.0
+         "best_bid": 0.033,
+         "bid_usd_within_2c": 10.15,
+         "usd_at_best": 0.39,
+         "usd_within_1c": 14.99,
+         "usd_within_2c": 15.47
         },
         "label": "18\u00b0C",
         "lastTrade": 0.03,
         "threshold": "6",
         "volume": 56.0,
-        "yes": 0.0695
+        "yes": 0.058
        },
        {
-        "bestAsk": 0.089,
+        "bestAsk": 0.088,
         "bestBid": 0.001,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.129,
-         "avg_fill_25": 0.1975,
-         "best_ask": 0.089,
+         "avg_fill_10": 0.1226,
+         "avg_fill_25": 0.1688,
+         "best_ask": 0.088,
          "best_bid": 0.001,
          "bid_usd_within_2c": 0.24,
-         "usd_at_best": 0.98,
-         "usd_within_1c": 2.91,
-         "usd_within_2c": 3.46
+         "usd_at_best": 1.14,
+         "usd_within_1c": 3.6,
+         "usd_within_2c": 4.14
         },
         "label": "19\u00b0C",
         "lastTrade": 0.001,
         "threshold": "7",
         "volume": 113.0,
-        "yes": 0.045
+        "yes": 0.0445
        },
        {
         "bestAsk": 0.02,
@@ -28261,7 +28246,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 11133.04548,
+      "liquidity": 11632.34642,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Shanghai Pudong International Airport Station in degrees Celsius on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?si",
       "slug": "lowest-temperature-in-shanghai-on-october-6-2026",
       "title": "Lowest temperature in Shanghai on October 6?",
@@ -29510,25 +29495,25 @@
        },
        {
         "bestAsk": 1,
-        "bestBid": 0.998,
+        "bestBid": 0.999,
         "closed": false,
         "depth": null,
         "label": "32\u00b0C",
         "lastTrade": 0.996,
         "threshold": "4",
         "volume": 7585.864316999998,
-        "yes": 0.999
+        "yes": 0.9995
        },
        {
-        "bestAsk": 0.002,
+        "bestAsk": 0.001,
         "bestBid": null,
         "closed": false,
         "depth": null,
         "label": "33\u00b0C",
         "lastTrade": 0.01,
         "threshold": "5",
-        "volume": 6827.350145000002,
-        "yes": 0.001
+        "volume": 6864.140145000002,
+        "yes": 0.0005
        },
        {
         "bestAsk": 0.001,
@@ -29588,11 +29573,11 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 99097.7384,
+      "liquidity": 99656.19997,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Singapore Changi Airport Station in degrees Celsius on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=wsss\n\nIf",
       "slug": "highest-temperature-in-singapore-on-october-5-2026",
       "title": "Highest temperature in Singapore on October 5?",
-      "volume": 34835.54905300001
+      "volume": 34872.339053
      },
      "models": {
       "cma_grapes_global": 32.7,
@@ -30053,10 +30038,10 @@
          "avg_fill_25": 0.16,
          "best_ask": 0.16,
          "best_bid": 0.14,
-         "bid_usd_within_2c": 88.8,
-         "usd_at_best": 41.99,
-         "usd_within_1c": 88.38,
-         "usd_within_2c": 1037.3
+         "bid_usd_within_2c": 29.59,
+         "usd_at_best": 39.11,
+         "usd_within_1c": 107.6,
+         "usd_within_2c": 1045.54
         },
         "label": "32\u00b0C",
         "lastTrade": 0.16,
@@ -30073,15 +30058,15 @@
          "avg_fill_25": 0.6937,
          "best_ask": 0.69,
          "best_bid": 0.68,
-         "bid_usd_within_2c": 40.53,
+         "bid_usd_within_2c": 58.35,
          "usd_at_best": 15.77,
          "usd_within_1c": 130.37,
-         "usd_within_2c": 6849.76
+         "usd_within_2c": 8335.27
         },
         "label": "33\u00b0C",
         "lastTrade": 0.69,
         "threshold": "5",
-        "volume": 4281.445892999999,
+        "volume": 4303.051418999999,
         "yes": 0.685
        },
        {
@@ -30089,14 +30074,14 @@
         "bestBid": 0.16,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1781,
-         "avg_fill_25": 0.1795,
+         "avg_fill_10": 0.1726,
+         "avg_fill_25": 0.177,
          "best_ask": 0.17,
          "best_bid": 0.16,
-         "bid_usd_within_2c": 181.59,
-         "usd_at_best": 1.85,
-         "usd_within_1c": 24.18,
-         "usd_within_2c": 69.65
+         "bid_usd_within_2c": 210.07,
+         "usd_at_best": 7.27,
+         "usd_within_1c": 26.0,
+         "usd_within_2c": 94.08
         },
         "label": "34\u00b0C",
         "lastTrade": 0.15,
@@ -30151,11 +30136,11 @@
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 53612.16551,
+      "liquidity": 52038.25424,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Singapore Changi Airport Station in degrees Celsius on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=wsss\n\nIf",
       "slug": "highest-temperature-in-singapore-on-october-6-2026",
       "title": "Highest temperature in Singapore on October 6?",
-      "volume": 18605.406871
+      "volume": 18627.012397
      },
      "models": {
       "cma_grapes_global": 32.6,
@@ -30172,7 +30157,7 @@
    },
    "icao": "WSSS",
    "lat": 1.368,
-   "local_now": "2026-10-05T18:45+08:00",
+   "local_now": "2026-10-05T18:53+08:00",
    "lon": 103.982,
    "low_days": {
     "2026-10-04": {
@@ -31722,44 +31707,44 @@
         "yes": 0.0005
        },
        {
-        "bestAsk": 0.95,
-        "bestBid": 0.86,
+        "bestAsk": 0.9,
+        "bestBid": 0.73,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.9524,
-         "avg_fill_25": 0.9569,
-         "best_ask": 0.95,
-         "best_bid": 0.88,
-         "bid_usd_within_2c": 21.89,
-         "usd_at_best": 7.6,
-         "usd_within_1c": 86.78,
-         "usd_within_2c": 205.58
+         "avg_fill_10": 0.8929,
+         "avg_fill_25": 0.9082,
+         "best_ask": 0.89,
+         "best_bid": 0.77,
+         "bid_usd_within_2c": 4.73,
+         "usd_at_best": 7.12,
+         "usd_within_1c": 11.62,
+         "usd_within_2c": 11.62
         },
         "label": "28\u00b0C",
         "lastTrade": 0.9,
         "threshold": "2",
-        "volume": 10930.637442000007,
-        "yes": 0.905
+        "volume": 11021.380702000006,
+        "yes": 0.815
        },
        {
-        "bestAsk": 0.13,
-        "bestBid": 0.04,
+        "bestAsk": 0.18,
+        "bestBid": 0.08,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1336,
-         "avg_fill_25": 0.1693,
-         "best_ask": 0.13,
-         "best_bid": 0.04,
-         "bid_usd_within_2c": 2.79,
-         "usd_at_best": 6.26,
-         "usd_within_1c": 10.2,
-         "usd_within_2c": 13.22
+         "avg_fill_10": 0.3121,
+         "avg_fill_25": 0.411,
+         "best_ask": 0.18,
+         "best_bid": 0.08,
+         "bid_usd_within_2c": 2.63,
+         "usd_at_best": 1.06,
+         "usd_within_1c": 1.06,
+         "usd_within_2c": 1.06
         },
         "label": "29\u00b0C",
         "lastTrade": 0.08,
         "threshold": "3",
-        "volume": 5831.284784000002,
-        "yes": 0.085
+        "volume": 5876.0585340000025,
+        "yes": 0.13
        },
        {
         "bestAsk": 0.015,
@@ -31769,7 +31754,7 @@
         "label": "30\u00b0C",
         "lastTrade": 0.014,
         "threshold": "4",
-        "volume": 1751.8933919999997,
+        "volume": 1815.5583919999997,
         "yes": 0.0095
        },
        {
@@ -31780,7 +31765,7 @@
         "label": "31\u00b0C",
         "lastTrade": 0.005,
         "threshold": "5",
-        "volume": 1695.4502129999994,
+        "volume": 1733.5802129999993,
         "yes": 0.003
        },
        {
@@ -31841,11 +31826,11 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 34047.0652,
+      "liquidity": 33593.94179,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Ben Gurion International Airport in degrees Celsius on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=LLBG\n\nIf",
       "slug": "highest-temperature-in-tel-aviv-on-october-5-2026",
       "title": "Highest temperature in Tel Aviv on October 5?",
-      "volume": 24577.664975000007
+      "volume": 24814.97698500001
      },
      "models": {
       "cma_grapes_global": 25.9,
@@ -32105,8 +32090,8 @@
       "meteofrance_seamless": 29.7,
       "ukmo_seamless": 28.1
      },
-     "obs_count": 27,
-     "obs_last": "2026-10-05T10:20:00+00:00",
+     "obs_count": 28,
+     "obs_last": "2026-10-05T10:50:00+00:00",
      "obs_max_so_far": 28,
      "rest_of_day_from": "2026-10-05T13:00",
      "taf_issued": "2026-10-05T05:01:00.000Z",
@@ -32286,10 +32271,10 @@
          "avg_fill_25": 0.2371,
          "best_ask": 0.23,
          "best_bid": 0.19,
-         "bid_usd_within_2c": 160.18,
+         "bid_usd_within_2c": 89.95,
          "usd_at_best": 7.04,
-         "usd_within_1c": 71.05,
-         "usd_within_2c": 85.79
+         "usd_within_1c": 78.25,
+         "usd_within_2c": 95.88
         },
         "label": "27\u00b0C",
         "lastTrade": 0.21,
@@ -32306,10 +32291,10 @@
          "avg_fill_25": 0.6287,
          "best_ask": 0.62,
          "best_bid": 0.61,
-         "bid_usd_within_2c": 241.1,
+         "bid_usd_within_2c": 501.61,
          "usd_at_best": 3.1,
-         "usd_within_1c": 135.4,
-         "usd_within_2c": 568.69
+         "usd_within_1c": 107.05,
+         "usd_within_2c": 1679.57
         },
         "label": "28\u00b0C",
         "lastTrade": 0.61,
@@ -32322,14 +32307,14 @@
         "bestBid": 0.15,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1835,
-         "avg_fill_25": 0.1911,
-         "best_ask": 0.18,
+         "avg_fill_10": 0.1767,
+         "avg_fill_25": 0.1839,
+         "best_ask": 0.17,
          "best_bid": 0.15,
-         "bid_usd_within_2c": 80.42,
-         "usd_at_best": 6.42,
-         "usd_within_1c": 14.97,
-         "usd_within_2c": 40.98
+         "bid_usd_within_2c": 115.98,
+         "usd_at_best": 3.16,
+         "usd_within_1c": 12.78,
+         "usd_within_2c": 23.42
         },
         "label": "29\u00b0C",
         "lastTrade": 0.17,
@@ -32406,7 +32391,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 36652.04919,
+      "liquidity": 37612.0805,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Ben Gurion International Airport in degrees Celsius on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=LLBG\n\nIf",
       "slug": "highest-temperature-in-tel-aviv-on-october-6-2026",
       "title": "Highest temperature in Tel Aviv on October 6?",
@@ -32427,7 +32412,7 @@
    },
    "icao": "LLBG",
    "lat": 32.011,
-   "local_now": "2026-10-05T13:45+03:00",
+   "local_now": "2026-10-05T13:53+03:00",
    "lon": 34.887,
    "low_days": {
     "2026-10-04": {
@@ -32860,44 +32845,35 @@
      "market": {
       "buckets": [
        {
-        "bestAsk": 0.042,
+        "bestAsk": 0.018,
         "bestBid": null,
         "closed": false,
-        "depth": {
-         "avg_fill_10": 0.1227,
-         "avg_fill_25": 0.2127,
-         "best_ask": 0.042,
-         "best_bid": null,
-         "bid_usd_within_2c": 0.0,
-         "usd_at_best": 1.54,
-         "usd_within_1c": 1.54,
-         "usd_within_2c": 1.54
-        },
+        "depth": null,
         "label": "17\u00b0C or below",
         "lastTrade": null,
         "threshold": "0",
         "volume": 72.982866,
-        "yes": 0.021
+        "yes": 0.009
        },
        {
-        "bestAsk": 0.14,
-        "bestBid": 0.001,
+        "bestAsk": 0.066,
+        "bestBid": null,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.1531,
-         "avg_fill_25": 0.2786,
-         "best_ask": 0.15,
+         "avg_fill_10": 0.1399,
+         "avg_fill_25": 0.2559,
+         "best_ask": 0.066,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
-         "usd_at_best": 9.6,
-         "usd_within_1c": 9.6,
-         "usd_within_2c": 9.6
+         "usd_at_best": 0.56,
+         "usd_within_1c": 0.56,
+         "usd_within_2c": 0.56
         },
         "label": "18\u00b0C",
         "lastTrade": null,
         "threshold": "1",
         "volume": 29.994,
-        "yes": 0.0705
+        "yes": 0.033
        },
        {
         "bestAsk": 0.94,
@@ -32910,8 +32886,8 @@
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
          "usd_at_best": 783.02,
-         "usd_within_1c": 1068.02,
-         "usd_within_2c": 1068.02
+         "usd_within_1c": 1125.02,
+         "usd_within_2c": 1125.02
         },
         "label": "19\u00b0C",
         "lastTrade": null,
@@ -33023,7 +32999,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 29177.11869,
+      "liquidity": 29188.05721,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Ben Gurion International Airport in degrees Celsius on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=LLBG\n\nIf N",
       "slug": "lowest-temperature-in-tel-aviv-on-october-5-2026",
       "title": "Lowest temperature in Tel Aviv on October 5?",
@@ -33051,8 +33027,8 @@
       "meteofrance_seamless": 23.2,
       "ukmo_seamless": 24.0
      },
-     "obs_count": 27,
-     "obs_last": "2026-10-05T10:20:00+00:00",
+     "obs_count": 28,
+     "obs_last": "2026-10-05T10:50:00+00:00",
      "obs_min_so_far": 21,
      "rest_of_day_from": "2026-10-05T13:00"
     },
@@ -33204,8 +33180,8 @@
         "bestBid": 0.001,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.3712,
-         "avg_fill_25": 0.5853,
+         "avg_fill_10": 0.3726,
+         "avg_fill_25": 0.5892,
          "best_ask": 0.04,
          "best_bid": 0.001,
          "bid_usd_within_2c": 0.02,
@@ -33328,7 +33304,7 @@
          "avg_fill_25": 0.7086,
          "best_ask": 0.67,
          "best_bid": 0.05,
-         "bid_usd_within_2c": 52.73,
+         "bid_usd_within_2c": 50.13,
          "usd_at_best": 3.35,
          "usd_within_1c": 7.6,
          "usd_within_2c": 7.6
@@ -33400,29 +33376,29 @@
         "yes": 0.34
        },
        {
-        "bestAsk": 0.92,
+        "bestAsk": 0.87,
         "bestBid": null,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.88,
-         "avg_fill_25": 0.88,
-         "best_ask": 0.88,
+         "avg_fill_10": 0.8515,
+         "avg_fill_25": 0.8801,
+         "best_ask": 0.85,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
-         "usd_at_best": 35.2,
-         "usd_within_1c": 204.3,
-         "usd_within_2c": 393.3
+         "usd_at_best": 8.5,
+         "usd_within_1c": 17.1,
+         "usd_within_2c": 17.1
         },
         "label": "27\u00b0C or higher",
         "lastTrade": null,
         "threshold": "10",
         "volume": 0.0,
-        "yes": 0.46
+        "yes": 0.435
        }
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 666.0261,
+      "liquidity": 663.5761,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Ben Gurion International Airport in degrees Celsius on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=LLBG\n\nIf N",
       "slug": "lowest-temperature-in-tel-aviv-on-october-6-2026",
       "title": "Lowest temperature in Tel Aviv on October 6?",
@@ -33713,6 +33689,12 @@
     }
    },
    "metar": [
+    {
+     "maxT": null,
+     "raw": "METAR LLBG 051050Z 32009KT 9999 FEW050 28/13 Q1016 NOSIG",
+     "t": "2026-10-05T10:50:00+00:00",
+     "temp": 28
+    },
     {
      "maxT": null,
      "raw": "METAR LLBG 051020Z 28008KT 9999 SCT050 28/12 Q1016 NOSIG RMK SCT060",
@@ -34679,34 +34661,34 @@
        },
        {
         "bestAsk": 0.06,
-        "bestBid": 0.044,
+        "bestBid": 0.045,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0715,
-         "avg_fill_25": 0.0947,
+         "avg_fill_10": 0.0702,
+         "avg_fill_25": 0.0961,
          "best_ask": 0.06,
-         "best_bid": 0.044,
-         "bid_usd_within_2c": 7.6,
+         "best_bid": 0.045,
+         "bid_usd_within_2c": 6.12,
          "usd_at_best": 4.8,
-         "usd_within_1c": 4.8,
-         "usd_within_2c": 7.22
+         "usd_within_1c": 5.41,
+         "usd_within_2c": 7.91
         },
         "label": "14\u00b0C",
         "lastTrade": 0.044,
         "threshold": "5",
         "volume": 1957.3783329999999,
-        "yes": 0.052
+        "yes": 0.0525
        },
        {
-        "bestAsk": 0.5,
-        "bestBid": 0.48,
+        "bestAsk": 0.51,
+        "bestBid": 0.5,
         "closed": false,
         "depth": {
          "avg_fill_10": 0.5157,
          "avg_fill_25": 0.5262,
          "best_ask": 0.51,
-         "best_bid": 0.49,
-         "bid_usd_within_2c": 150.37,
+         "best_bid": 0.5,
+         "bid_usd_within_2c": 155.58,
          "usd_at_best": 5.1,
          "usd_within_1c": 9.1,
          "usd_within_2c": 19.84
@@ -34715,11 +34697,11 @@
         "lastTrade": 0.51,
         "threshold": "6",
         "volume": 4399.878721000001,
-        "yes": 0.49
+        "yes": 0.505
        },
        {
         "bestAsk": 0.43,
-        "bestBid": 0.42,
+        "bestBid": 0.41,
         "closed": false,
         "depth": {
          "avg_fill_10": 0.43,
@@ -34728,45 +34710,45 @@
          "best_bid": 0.41,
          "bid_usd_within_2c": 96.05,
          "usd_at_best": 14.84,
-         "usd_within_1c": 116.04,
-         "usd_within_2c": 164.03
+         "usd_within_1c": 129.45,
+         "usd_within_2c": 148.33
         },
         "label": "16\u00b0C",
         "lastTrade": 0.44,
         "threshold": "7",
         "volume": 3632.3983539999995,
-        "yes": 0.425
+        "yes": 0.42
        },
        {
         "bestAsk": 0.05,
         "bestBid": 0.041,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.0714,
-         "avg_fill_25": 0.0801,
+         "avg_fill_10": 0.0694,
+         "avg_fill_25": 0.079,
          "best_ask": 0.05,
          "best_bid": 0.041,
-         "bid_usd_within_2c": 21.19,
-         "usd_at_best": 0.68,
-         "usd_within_1c": 1.47,
-         "usd_within_2c": 1.47
+         "bid_usd_within_2c": 6.76,
+         "usd_at_best": 0.93,
+         "usd_within_1c": 1.72,
+         "usd_within_2c": 4.52
         },
         "label": "17\u00b0C",
         "lastTrade": 0.041,
         "threshold": "8",
-        "volume": 2517.140728,
+        "volume": 2524.430728,
         "yes": 0.0455
        },
        {
         "bestAsk": 0.012,
-        "bestBid": 0.003,
+        "bestBid": 0.004,
         "closed": false,
         "depth": null,
         "label": "18\u00b0C",
         "lastTrade": 0.008,
         "threshold": "9",
         "volume": 958.6669860000002,
-        "yes": 0.0075
+        "yes": 0.008
        },
        {
         "bestAsk": 0.001,
@@ -34782,11 +34764,11 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 79913.32881,
+      "liquidity": 80028.88398,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Toronto Pearson Intl Airport Station in degrees Celsius on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=cyyz",
       "slug": "highest-temperature-in-toronto-on-october-5-2026",
       "title": "Highest temperature in Toronto on October 5?",
-      "volume": 15547.747451000001
+      "volume": 15555.037451
      },
      "models": {
       "cma_grapes_global": 13.9,
@@ -35233,10 +35215,10 @@
         "closed": false,
         "depth": {
          "avg_fill_10": 0.065,
-         "avg_fill_25": 0.0729,
+         "avg_fill_25": 0.0734,
          "best_ask": 0.048,
          "best_bid": 0.02,
-         "bid_usd_within_2c": 6.35,
+         "bid_usd_within_2c": 6.32,
          "usd_at_best": 0.63,
          "usd_within_1c": 1.74,
          "usd_within_2c": 4.61
@@ -35248,24 +35230,24 @@
         "yes": 0.034
        },
        {
-        "bestAsk": 0.27,
+        "bestAsk": 0.29,
         "bestBid": 0.26,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.27,
-         "avg_fill_25": 0.27,
-         "best_ask": 0.27,
+         "avg_fill_10": 0.29,
+         "avg_fill_25": 0.29,
+         "best_ask": 0.29,
          "best_bid": 0.26,
-         "bid_usd_within_2c": 203.75,
-         "usd_at_best": 25.65,
-         "usd_within_1c": 82.56,
-         "usd_within_2c": 93.98
+         "bid_usd_within_2c": 166.12,
+         "usd_at_best": 57.52,
+         "usd_within_1c": 215.17,
+         "usd_within_2c": 264.0
         },
         "label": "15\u00b0C",
         "lastTrade": 0.3,
         "threshold": "4",
         "volume": 1359.9425520000002,
-        "yes": 0.265
+        "yes": 0.275
        },
        {
         "bestAsk": 0.57,
@@ -35276,10 +35258,10 @@
          "avg_fill_25": 0.5786,
          "best_ask": 0.57,
          "best_bid": 0.56,
-         "bid_usd_within_2c": 4848.76,
+         "bid_usd_within_2c": 4655.47,
          "usd_at_best": 3.42,
-         "usd_within_1c": 221.07,
-         "usd_within_2c": 650.91
+         "usd_within_1c": 258.45,
+         "usd_within_2c": 815.49
         },
         "label": "16\u00b0C",
         "lastTrade": 0.55,
@@ -35296,10 +35278,10 @@
          "avg_fill_25": 0.1652,
          "best_ask": 0.16,
          "best_bid": 0.13,
-         "bid_usd_within_2c": 144.21,
+         "bid_usd_within_2c": 684.08,
          "usd_at_best": 11.69,
-         "usd_within_1c": 141.98,
-         "usd_within_2c": 204.56
+         "usd_within_1c": 147.68,
+         "usd_within_2c": 208.82
         },
         "label": "17\u00b0C",
         "lastTrade": 0.11,
@@ -35354,7 +35336,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 44886.43923,
+      "liquidity": 35715.13643,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Toronto Pearson Intl Airport Station in degrees Celsius on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=cyyz",
       "slug": "highest-temperature-in-toronto-on-october-6-2026",
       "title": "Highest temperature in Toronto on October 6?",
@@ -35375,7 +35357,7 @@
    },
    "icao": "CYYZ",
    "lat": 43.679,
-   "local_now": "2026-10-05T06:45-04:00",
+   "local_now": "2026-10-05T06:53-04:00",
    "lon": -79.629,
    "low_days": {
     "2026-10-04": {
@@ -35913,38 +35895,28 @@
         "yes": 0.51
        },
        {
-        "bestAsk": 0.98,
+        "bestAsk": 1,
         "bestBid": 0.02,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.9851,
-         "avg_fill_25": 0.988,
-         "best_ask": 0.98,
+         "best_ask": null,
          "best_bid": 0.02,
-         "bid_usd_within_2c": 0.2,
-         "usd_at_best": 4.9,
-         "usd_within_1c": 202.9,
-         "usd_within_2c": 202.9
+         "bid_usd_within_2c": 0.2
         },
         "label": "8\u00b0C",
         "lastTrade": null,
         "threshold": "6",
         "volume": 0.0,
-        "yes": 0.5
+        "yes": 0.51
        },
        {
         "bestAsk": 0.95,
         "bestBid": 0.02,
         "closed": false,
         "depth": {
-         "avg_fill_10": null,
-         "avg_fill_25": null,
-         "best_ask": 0.95,
+         "best_ask": null,
          "best_bid": 0.02,
-         "bid_usd_within_2c": 0.2,
-         "usd_at_best": 4.75,
-         "usd_within_1c": 9.55,
-         "usd_within_2c": 9.55
+         "bid_usd_within_2c": 0.2
         },
         "label": "9\u00b0C",
         "lastTrade": null,
@@ -35957,14 +35929,14 @@
         "bestBid": 0.03,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.8955,
-         "avg_fill_25": 0.8982,
-         "best_ask": 0.89,
-         "best_bid": 0.03,
-         "bid_usd_within_2c": 1.32,
-         "usd_at_best": 4.45,
-         "usd_within_1c": 440.46,
-         "usd_within_2c": 440.46
+         "avg_fill_10": 0.9,
+         "avg_fill_25": 0.9,
+         "best_ask": 0.9,
+         "best_bid": null,
+         "bid_usd_within_2c": 0.0,
+         "usd_at_best": 436.01,
+         "usd_within_1c": 436.01,
+         "usd_within_2c": 436.01
         },
         "label": "10\u00b0C",
         "lastTrade": null,
@@ -35997,7 +35969,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 20416.53731,
+      "liquidity": 20418.29231,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Toronto Pearson Intl Airport Station in degrees Celsius on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=cyyz\n\n",
       "slug": "lowest-temperature-in-toronto-on-october-5-2026",
       "title": "Lowest temperature in Toronto on October 5?",
@@ -36234,24 +36206,24 @@
         "yes": 0.335
        },
        {
-        "bestAsk": 0.67,
+        "bestAsk": 0.66,
         "bestBid": null,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.67,
-         "avg_fill_25": 0.67,
-         "best_ask": 0.67,
+         "avg_fill_10": 0.66,
+         "avg_fill_25": 0.6647,
+         "best_ask": 0.66,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
-         "usd_at_best": 26.8,
-         "usd_within_1c": 31.05,
-         "usd_within_2c": 31.05
+         "usd_at_best": 13.2,
+         "usd_within_1c": 40.0,
+         "usd_within_2c": 44.25
         },
         "label": "3\u00b0C",
         "lastTrade": null,
         "threshold": "3",
         "volume": 30.0,
-        "yes": 0.335
+        "yes": 0.33
        },
        {
         "bestAsk": 0.67,
@@ -36274,7 +36246,7 @@
         "yes": 0.51
        },
        {
-        "bestAsk": 0.67,
+        "bestAsk": 0.66,
         "bestBid": null,
         "closed": false,
         "depth": {
@@ -36291,10 +36263,10 @@
         "lastTrade": null,
         "threshold": "5",
         "volume": 0.0,
-        "yes": 0.335
+        "yes": 0.33
        },
        {
-        "bestAsk": 0.67,
+        "bestAsk": 0.66,
         "bestBid": null,
         "closed": false,
         "depth": {
@@ -36311,10 +36283,10 @@
         "lastTrade": null,
         "threshold": "6",
         "volume": 0.0,
-        "yes": 0.335
+        "yes": 0.33
        },
        {
-        "bestAsk": 0.67,
+        "bestAsk": 0.66,
         "bestBid": null,
         "closed": false,
         "depth": {
@@ -36331,21 +36303,21 @@
         "lastTrade": null,
         "threshold": "7",
         "volume": 0.0,
-        "yes": 0.335
+        "yes": 0.33
        },
        {
         "bestAsk": 0.67,
         "bestBid": null,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.66,
-         "avg_fill_25": 0.6647,
-         "best_ask": 0.66,
+         "avg_fill_10": 0.67,
+         "avg_fill_25": 0.67,
+         "best_ask": 0.67,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
-         "usd_at_best": 13.2,
-         "usd_within_1c": 40.0,
-         "usd_within_2c": 44.25
+         "usd_at_best": 26.8,
+         "usd_within_1c": 31.05,
+         "usd_within_2c": 31.05
         },
         "label": "8\u00b0C",
         "lastTrade": null,
@@ -36358,14 +36330,14 @@
         "bestBid": null,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.66,
-         "avg_fill_25": 0.6647,
-         "best_ask": 0.66,
+         "avg_fill_10": 0.67,
+         "avg_fill_25": 0.67,
+         "best_ask": 0.67,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
-         "usd_at_best": 13.2,
-         "usd_within_1c": 40.0,
-         "usd_within_2c": 44.25
+         "usd_at_best": 26.8,
+         "usd_within_1c": 31.05,
+         "usd_within_2c": 31.05
         },
         "label": "9\u00b0C",
         "lastTrade": null,
@@ -36374,29 +36346,29 @@
         "yes": 0.335
        },
        {
-        "bestAsk": 0.84,
+        "bestAsk": 0.93,
         "bestBid": null,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.67,
-         "avg_fill_25": 0.67,
-         "best_ask": 0.67,
+         "avg_fill_10": 0.9505,
+         "avg_fill_25": 0.9562,
+         "best_ask": 0.95,
          "best_bid": null,
          "bid_usd_within_2c": 0.0,
-         "usd_at_best": 58.29,
-         "usd_within_1c": 58.29,
-         "usd_within_2c": 58.29
+         "usd_at_best": 9.5,
+         "usd_within_1c": 81.5,
+         "usd_within_2c": 110.6
         },
         "label": "10\u00b0C or higher",
         "lastTrade": null,
         "threshold": "10",
         "volume": 0.0,
-        "yes": 0.42
+        "yes": 0.465
        }
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 1111.9332,
+      "liquidity": 1134.9132,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Toronto Pearson Intl Airport Station in degrees Celsius on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=cyyz\n\n",
       "slug": "lowest-temperature-in-toronto-on-october-6-2026",
       "title": "Lowest temperature in Toronto on October 6?",
@@ -37518,68 +37490,68 @@
         "label": "16\u00b0C",
         "lastTrade": 0.028,
         "threshold": "1",
-        "volume": 1414.9009930000002,
+        "volume": 1541.9009930000002,
         "yes": 0.0005
        },
        {
-        "bestAsk": 0.203,
-        "bestBid": 0.135,
+        "bestAsk": 0.214,
+        "bestBid": 0.141,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.2284,
-         "avg_fill_25": 0.2821,
-         "best_ask": 0.189,
-         "best_bid": 0.137,
-         "bid_usd_within_2c": 6.02,
-         "usd_at_best": 2.84,
-         "usd_within_1c": 2.84,
-         "usd_within_2c": 2.84
+         "avg_fill_10": 0.2941,
+         "avg_fill_25": 0.3433,
+         "best_ask": 0.214,
+         "best_bid": 0.141,
+         "bid_usd_within_2c": 4.83,
+         "usd_at_best": 2.14,
+         "usd_within_1c": 3.21,
+         "usd_within_2c": 3.21
         },
         "label": "17\u00b0C",
-        "lastTrade": 0.221,
+        "lastTrade": 0.205,
         "threshold": "2",
-        "volume": 1369.2144529999998,
-        "yes": 0.169
+        "volume": 1419.1579,
+        "yes": 0.1775
        },
        {
-        "bestAsk": 0.66,
-        "bestBid": 0.63,
+        "bestAsk": 0.68,
+        "bestBid": 0.65,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.6739,
-         "avg_fill_25": 0.6835,
-         "best_ask": 0.66,
+         "avg_fill_10": 0.6857,
+         "avg_fill_25": 0.691,
+         "best_ask": 0.68,
          "best_bid": 0.65,
          "bid_usd_within_2c": 16.42,
-         "usd_at_best": 3.88,
-         "usd_within_1c": 3.88,
-         "usd_within_2c": 8.13
+         "usd_at_best": 4.25,
+         "usd_within_1c": 18.05,
+         "usd_within_2c": 33.21
         },
         "label": "18\u00b0C",
-        "lastTrade": 0.56,
+        "lastTrade": 0.66,
         "threshold": "3",
         "volume": 5740.728597000005,
-        "yes": 0.645
+        "yes": 0.665
        },
        {
         "bestAsk": 0.2,
-        "bestBid": 0.18,
+        "bestBid": 0.17,
         "closed": false,
         "depth": {
          "avg_fill_10": 0.2,
-         "avg_fill_25": 0.2035,
+         "avg_fill_25": 0.2053,
          "best_ask": 0.2,
-         "best_bid": 0.18,
-         "bid_usd_within_2c": 2.29,
-         "usd_at_best": 18.91,
-         "usd_within_1c": 21.64,
-         "usd_within_2c": 35.0
+         "best_bid": 0.17,
+         "bid_usd_within_2c": 0.85,
+         "usd_at_best": 17.86,
+         "usd_within_1c": 17.86,
+         "usd_within_2c": 31.22
         },
         "label": "19\u00b0C",
         "lastTrade": 0.18,
         "threshold": "4",
-        "volume": 4446.274888999998,
-        "yes": 0.19
+        "volume": 4481.274888999998,
+        "yes": 0.185
        },
        {
         "bestAsk": 0.005,
@@ -37650,11 +37622,11 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 50934.01825,
+      "liquidity": 49643.83906,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Warsaw Chopin Airport Station in degrees Celsius on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=epwa\n\nIf NO",
       "slug": "highest-temperature-in-warsaw-on-october-5-2026",
       "title": "Highest temperature in Warsaw on October 5?",
-      "volume": 18454.812847
+      "volume": 18666.756294000003
      },
      "models": {
       "cma_grapes_global": 16.6,
@@ -38108,68 +38080,68 @@
        },
        {
         "bestAsk": 0.015,
-        "bestBid": 0.002,
+        "bestBid": 0.001,
         "closed": false,
         "depth": null,
         "label": "19\u00b0C",
         "lastTrade": 0.017,
         "threshold": "4",
         "volume": 1021.0010720000001,
-        "yes": 0.0085
-       },
-       {
-        "bestAsk": 0.21,
-        "bestBid": 0.2,
-        "closed": false,
-        "depth": {
-         "avg_fill_10": 0.2189,
-         "avg_fill_25": 0.2229,
-         "best_ask": 0.21,
-         "best_bid": 0.2,
-         "bid_usd_within_2c": 48.4,
-         "usd_at_best": 1.06,
-         "usd_within_1c": 16.31,
-         "usd_within_2c": 56.79
-        },
-        "label": "20\u00b0C",
-        "lastTrade": 0.21,
-        "threshold": "5",
-        "volume": 6095.737138999996,
-        "yes": 0.205
-       },
-       {
-        "bestAsk": 0.59,
-        "bestBid": 0.57,
-        "closed": false,
-        "depth": {
-         "avg_fill_10": 0.59,
-         "avg_fill_25": 0.5961,
-         "best_ask": 0.59,
-         "best_bid": 0.58,
-         "bid_usd_within_2c": 359.53,
-         "usd_at_best": 11.25,
-         "usd_within_1c": 23.25,
-         "usd_within_2c": 353.57
-        },
-        "label": "21\u00b0C",
-        "lastTrade": 0.62,
-        "threshold": "6",
-        "volume": 4574.6357579999985,
-        "yes": 0.58
+        "yes": 0.008
        },
        {
         "bestAsk": 0.22,
         "bestBid": 0.2,
         "closed": false,
         "depth": {
-         "avg_fill_10": 0.2258,
-         "avg_fill_25": 0.2283,
+         "avg_fill_10": 0.2185,
+         "avg_fill_25": 0.2194,
+         "best_ask": 0.21,
+         "best_bid": 0.2,
+         "bid_usd_within_2c": 23.3,
+         "usd_at_best": 1.4,
+         "usd_within_1c": 27.65,
+         "usd_within_2c": 70.43
+        },
+        "label": "20\u00b0C",
+        "lastTrade": 0.21,
+        "threshold": "5",
+        "volume": 6120.112377999996,
+        "yes": 0.21
+       },
+       {
+        "bestAsk": 0.61,
+        "bestBid": 0.59,
+        "closed": false,
+        "depth": {
+         "avg_fill_10": 0.58,
+         "avg_fill_25": 0.5858,
+         "best_ask": 0.58,
+         "best_bid": 0.57,
+         "bid_usd_within_2c": 493.52,
+         "usd_at_best": 10.44,
+         "usd_within_1c": 25.19,
+         "usd_within_2c": 61.19
+        },
+        "label": "21\u00b0C",
+        "lastTrade": 0.61,
+        "threshold": "6",
+        "volume": 4611.923893999999,
+        "yes": 0.6
+       },
+       {
+        "bestAsk": 0.22,
+        "bestBid": 0.2,
+        "closed": false,
+        "depth": {
+         "avg_fill_10": 0.2303,
+         "avg_fill_25": 0.236,
          "best_ask": 0.22,
          "best_bid": 0.2,
-         "bid_usd_within_2c": 113.61,
+         "bid_usd_within_2c": 115.46,
          "usd_at_best": 4.11,
-         "usd_within_1c": 51.26,
-         "usd_within_2c": 86.57
+         "usd_within_1c": 5.26,
+         "usd_within_2c": 140.2
         },
         "label": "22\u00b0C",
         "lastTrade": 0.22,
@@ -38213,11 +38185,11 @@
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 55071.25297,
+      "liquidity": 50839.93699,
       "rules": "This market will resolve to the temperature range that contains the highest temperature recorded by NOAA at the Warsaw Chopin Airport Station in degrees Celsius on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the highest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=epwa\n\nIf NO",
       "slug": "highest-temperature-in-warsaw-on-october-6-2026",
       "title": "Highest temperature in Warsaw on October 6?",
-      "volume": 17806.628032999994
+      "volume": 17868.291407999994
      },
      "models": {
       "cma_grapes_global": 17.5,
@@ -38234,7 +38206,7 @@
    },
    "icao": "EPWA",
    "lat": 52.163,
-   "local_now": "2026-10-05T12:45+02:00",
+   "local_now": "2026-10-05T12:53+02:00",
    "lon": 20.961,
    "low_days": {
     "2026-10-04": {
@@ -38803,7 +38775,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-05T12:00:00Z",
-      "liquidity": 79648.55151,
+      "liquidity": 79639.03691,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Warsaw Chopin Airport Station in degrees Celsius on 5 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=epwa\n\nIf NOAA",
       "slug": "lowest-temperature-in-warsaw-on-october-5-2026",
       "title": "Lowest temperature in Warsaw on October 5?",
@@ -39197,7 +39169,7 @@
       ],
       "closed": false,
       "endDate": "2026-10-06T12:00:00Z",
-      "liquidity": 287.0362,
+      "liquidity": 285.0562,
       "rules": "This market will resolve to the temperature range that contains the lowest temperature recorded by NOAA at the Warsaw Chopin Airport Station in degrees Celsius on 6 Oct '26.\n\nThe resolution source for this market will be information from NOAA, specifically the lowest reading under the \"Temp\" column for all times on this day, available here: https://www.weather.gov/wrh/timeseries?site=epwa\n\nIf NOAA",
       "slug": "lowest-temperature-in-warsaw-on-october-6-2026",
       "title": "Lowest temperature in Warsaw on October 6?",
