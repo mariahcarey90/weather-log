@@ -35,7 +35,8 @@ not a location error, before the parent's bias correction is applied.
 
 Learning from results: every logged run records each source's forecast. Once
 days are scored, each source's bias and typical miss per city (one run per day,
-12-36 h ahead) are blended with its prior: the 60-day backfill for the models,
+12-36 h ahead) are blended with its prior: the 60-day backfill for the models (worth at most
+PRIOR_N_MODEL_MAX days, so live misses count quickly),
 and "no bias, as accurate as the best model" for the airport TAF and NWS
 forecasts, worth PRIOR_N_STATION days. Weights follow the blended accuracy.
 
@@ -67,6 +68,8 @@ MIN_KERNEL_C = 0.5
 MIN_RESOLVED = 5
 MIN_LIVE = 30
 PRIOR_N_STATION = 8    # how many scored days the TAF/NWS starting assumption is worth
+PRIOR_N_MODEL_MAX = 10  # cap on how many scored days the 60-day backfill bias is worth (5 Oct 2026: was the
+                        # full 60, so a week of live misses moved the bias under 10%; capped so it learns faster)
 STATION_SOURCES = {"taf_max": "airport forecast (TAF) max", "nws_grid": "nws_grid",
                    "nws_hourly_rest": "nws hourly max"}
 BLEND_W_OURS = 0.5      # "blend" challenger: share of our odds vs the market's
@@ -295,7 +298,8 @@ def main():
                 parent = ENS_PARENT.get(model, model)
                 pm = per_model.get(parent)
                 if pm:
-                    b, sd, n = blend_stats(pm["bias"], pm["sd"], pm.get("n", 60), src_errs.get((city, parent)))
+                    b, sd, n = blend_stats(pm["bias"], pm["sd"], min(pm.get("n", 60), PRIOR_N_MODEL_MAX),
+                                          src_errs.get((city, parent)))
                     if n:
                         learned[(city, parent)] = (b, sd, n)
                     return b, 1.0 / max(sd, 0.5) ** 2

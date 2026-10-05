@@ -19,6 +19,8 @@ Model versions (paper-trade side by side, like weather):
 Paper rule, as weather: one $25 trade per version per market, on the range with the
 biggest edge where our odds minus the average price of a $25 order >= 8 points,
 best ask >= 5c and the market 3-97%. Paper only; never trades.
+Focus (5 Oct 2026): only accounts in PAPER_FOCUS open new paper trades; REST_SCALE trims an
+account's rest-of-window forecast; SKIP_HANDLES are not scored at all.
 Paused accounts: no new paper trades for an account whose backtest paper trading
 (markets/data/posts_backtest.json, re-tuned weekly by retune.yml) lost money over at
 least PAUSE_MIN_TRADES trades, so the live record only covers accounts we would bet on.
@@ -33,6 +35,14 @@ import posts_model as pm  # noqa: E402
 D = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 EDGE, MIN_ASK, STAKE = 0.08, 0.05, 25.0
 PAUSE_MIN_TRADES = 8
+# 5 Oct 2026 tuning, from the first live fortnight (63 scored snapshots):
+# - our odds beat the market's overall almost entirely on Trump (log loss 0.43 vs 0.77; top pick 7/7 vs 3/7),
+#   so only these accounts open new paper trades; the rest are still scored and logged.
+PAPER_FOCUS = {"realDonaldTrump"}
+# - Ted Cruz's final counts came in ~9% under our expected final: scale his rest-of-window forecast.
+REST_SCALE = {"tedcruz": 0.91}
+# - Khamenei posts ~0-1 a week: nothing to learn or trade, so his markets are no longer scored or logged.
+SKIP_HANDLES = {"khamenei_ir"}
 
 
 def paused_handles(by_handle):
@@ -88,10 +98,21 @@ def main():
     snaps, lines = [], []
     for t in latest["trackings"]:
         s, e = ts(t["start"]), ts(t["end"])
-        if now >= e:
+        if now >= e or t["handle"] in SKIP_HANDLES:
             continue
         times, hfrom = H(t["handle"])
         mean, var, dist, info = pm.predict(times, hfrom, s, e, now, params)
+        k = REST_SCALE.get(t["handle"])
+        if k:  # scale the posts still to come (not the ones already counted)
+            base = info["soFar"]
+            scaled = {}
+            for c, p in dist.items():
+                c2 = base + round((c - base) * k)
+                scaled[c2] = scaled.get(c2, 0.0) + p
+            dist = scaled
+            mean = base + (mean - base) * k
+            var = var * k * k
+            info["restScale"] = k
         # the counter's own live total is what settles the market: shift our count to it
         if t.get("counterTotal") is not None and s <= now:
             shift = t["counterTotal"] - info["soFar"]
@@ -125,7 +146,7 @@ def main():
                "runAt": run_at, "hoursLeft": hours_left, "started": s <= now,
                "count": t.get("counterTotal") if s <= now else 0, "expectedFinal": round(mean, 1),
                "range80": [max(t.get("counterTotal") or 0, round(mean - 1.28 * sd)) if s <= now else max(0, round(mean - 1.28 * sd)), round(mean + 1.28 * sd)],
-               "paceRatio": info.get("paceRatio"), "samples": info.get("n"),
+               "paceRatio": info.get("paceRatio"), "samples": info.get("n"), "restScale": info.get("restScale"),
                "volume": t.get("volume"), "liquidity": t.get("liquidity"),
                "backtest": by_handle.get(t["handle"]), "paused": t["handle"] in paused, "buckets": buckets,
                "topPick": top["label"], "marketTop": None if unformed else mtop["label"],
@@ -159,7 +180,7 @@ def main():
     taken = {(p["variant"], p.get("slug") or p["city"] + p["marketDate"]) for p in paper.values()}
     for sn in snaps:
         s = sn["data"]
-        if s["hoursLeft"] < 1 or s.get("paused"):
+        if s["hoursLeft"] < 1 or s.get("paused") or s["handle"] not in PAPER_FOCUS:
             continue
         best = {}
         for b in s["buckets"]:
@@ -212,6 +233,7 @@ def main():
     print(f"posts data fetched {latest['fetched_at']}; params {params}")
     for l in lines:
         print("  ", l)
+    print("paper trading focus: " + ", ".join(sorted(PAPER_FOCUS)) + "; not scored: " + ", ".join(sorted(SKIP_HANDLES)))
     if paused:
         print("paused for paper trading (backtest paper losses): " + ", ".join(sorted(paused)))
     print(f"paper trades opened: {len(opened)}")

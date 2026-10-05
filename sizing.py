@@ -11,6 +11,11 @@ Usage:
 --out       optional: write the slip as JSON.
 
 How a stake is sized, for each market's best edge for the live ("current") model:
+ 0. (5 Oct 2026) Edges are measured on our odds shrunk toward the market's price
+    (shrink_to_market, 40%): entry needs shrunk odds - price >= EDGE_MIN. Cities in
+    slip_excluded_cities stay off the slip. Side rule: where past picks keep missing on
+    one side (e.g. the actual high keeps coming in warmer), no bet on the other side of
+    the market's top pick.
  1. Sizing odds: half our odds, half the market's price (the market is a strong
     prior until our record says otherwise). No bet unless our own odds beat the
     price by EDGE_MIN and the sizing odds still beat it.
@@ -32,7 +37,7 @@ score built from the edge and the weather (x0.6 in a weaker city). Whole dollars
 The same skips and caps apply (no Unsettled days, tier cap, order book, daily budget).
 Prints the slip and a JSON summary on the last line. Standard library only.
 """
-import argparse, glob, json, os
+import argparse, glob, json, os, re
 
 DEFAULTS = {
     "bankroll_start": 2500.0, "kelly_fraction": 0.25, "max_stake": 250.0, "min_stake": 5.0,
@@ -50,6 +55,19 @@ DEFAULTS = {
     "mode": "kelly",
     "flat": {"confident": 50.0, "standard": 25.0, "longshot": 10.0, "longshot_settled": 15.0},
     "confident_edge": 0.12,
+    # 5 Oct 2026 tuning, from the first two weeks of settled trades:
+    # our odds ran overconfident (paper picks averaged 32% odds, won 22%), so every edge is
+    # measured on odds shrunk this far toward the market's price before anything else.
+    "shrink_to_market": 0.4,
+    # cities left off the slip (still scored and paper-traded): the market's day-ahead top pick
+    # in Mexico City was right 97% of the time vs our 62%, so there is no edge to find there.
+    "slip_excluded_cities": ["mexico-city"],
+    # skip a bet on the side of the market's pick where a city keeps missing: if at least
+    # side_skip_min_misses past picks (real and paper, one per market and bucket) missed, and at
+    # least side_skip_share of them landed on the same side (actual warmer, or actual colder),
+    # don't back a bucket on the other side of the market's top pick there.
+    "side_skip_min_misses": 2,  # low on purpose: it only ever removes bets, and one opposite miss lifts it
+    "side_skip_share": 0.75,
 }
 
 
@@ -59,6 +77,43 @@ def load_dir(path):
         d = json.load(open(f))
         out[os.path.splitext(os.path.basename(f))[0]] = d.get("data", d)
     return out
+
+
+def bucket_key(label):
+    """A sortable temperature for a bucket label ('18°C', '82-83°F', '25°C or higher')."""
+    m = re.search(r"-?\d+", label or "")
+    return int(m.group()) if m else None
+
+
+def miss_sides(cfg, paper, results, bets, outcomes):
+    """Per city: 'warmer' or 'colder' when past picks keep missing on one side, else absent.
+    Uses settled paper trades (every version) and settled real bets, one per market and bucket."""
+    picks = {}
+    for k, r in results.items():
+        p = paper.get(k, {})
+        if p.get("kind", "high") != "high" or k.startswith(("posts_", "music_", "low_")):
+            continue
+        picks[(r["city"], r["marketDate"], r["bucket"])] = 1
+    for b in bets.values():
+        if b.get("status") in ("won", "lost"):
+            picks[(b["city"], b["marketDate"], b["bucket"])] = 1
+    sides, detail = {}, {}
+    for (city, date, bucket) in picks:
+        o = outcomes.get((city, date))
+        if not o or not o.get("resolvedBucket") or o["resolvedBucket"] == bucket:
+            continue
+        a, w = bucket_key(bucket), bucket_key(o["resolvedBucket"])
+        if a is None or w is None or a == w:
+            continue
+        detail.setdefault(city, [0, 0])[0 if w > a else 1] += 1
+    for city, (warm, cold) in detail.items():
+        n = warm + cold
+        if n >= cfg["side_skip_min_misses"]:
+            if warm / n >= cfg["side_skip_share"]:
+                sides[city] = ("warmer", warm, n)
+            elif cold / n >= cfg["side_skip_share"]:
+                sides[city] = ("colder", cold, n)
+    return sides
 
 
 def tier_state(cfg, paper, results):
@@ -108,6 +163,8 @@ def main():
     bets = load_dir(os.path.join(a.db, "bets"))
     paper = load_dir(os.path.join(a.db, "paper"))
     results = load_dir(os.path.join(a.db, "paper_results"))
+    outcomes = {(o["city"], o["date"]): o for o in load_dir(os.path.join(a.db, "outcomes")).values()}
+    sides = miss_sides(cfg, paper, results, bets, outcomes)
     level, evidence = tier_state(cfg, paper, results)
     bank, peak, open_stake = bankroll_state(cfg, bets)
     braked = peak > 0 and (peak - bank) / peak >= cfg["drawdown_brake"]
@@ -123,23 +180,39 @@ def main():
             continue
         if s.get("paperOnly") or s["city"] in cfg.get("paper_only_cities", []):
             continue  # trial city: paper trades only until promoted
+        if s["city"] in cfg.get("slip_excluded_cities", []):
+            continue  # scored and paper-traded, but kept off the slip
         msum = sum(b.get("market") or 0 for b in s.get("buckets", [])) or 1
+        mtop = max(s.get("buckets", []), key=lambda b: b.get("market") or 0, default=None)
+        side = sides.get(s["city"])
+        skipped_side = None
         best = None
         for b in s.get("buckets", []):
             d = b.get("depth") or {}
             ask, mkt, p = d.get("best_ask"), b.get("market"), b.get("model")
             if ask is None or mkt is None or ask < 0.05 or not (0.03 <= mkt <= 0.97):
                 continue
-            if p - ask < cfg["edge_min"]:
+            q = (1 - cfg["shrink_to_market"]) * p + cfg["shrink_to_market"] * mkt / msum  # shrunk odds
+            if q - ask < cfg["edge_min"]:
                 continue
             ps = (1 - cfg["market_weight"]) * p + cfg["market_weight"] * mkt / msum
             if ps <= ask:
                 continue
-            if best is None or p - ask > best[0]:
-                best = (p - ask, b, ask, p, ps, d)
+            if side and mtop is not None and b is not mtop:
+                kb, km = bucket_key(b["label"]), bucket_key(mtop["label"])
+                if kb is not None and km is not None and (
+                        (side[0] == "warmer" and kb < km) or (side[0] == "colder" and kb > km)):
+                    skipped_side = skipped_side or (b["label"], mtop["label"])
+                    continue
+            if best is None or q - ask > best[0]:
+                best = (q - ask, b, ask, p, ps, d, q)
         if not best:
+            if skipped_side:
+                lines.append(f"{s['city']} {s['marketDate']} {skipped_side[0]}: SKIP (side rule: our pick is "
+                             f"{'colder' if side[0] == 'warmer' else 'warmer'} than the market's {skipped_side[1]}, and "
+                             f"{side[1]} of the last {side[2]} missed picks here came in {side[0]})")
             continue
-        edge, b, ask, p, ps, d = best
+        edge, b, ask, p, ps, d, q = best
         cuts = []
         if cfg["mode"] in ("flat", "scaled"):
             # The owner's guide: Confident ~$50, Standard ~$25 (the median), Long shot $10-15.
@@ -189,7 +262,7 @@ def main():
                        ("order book", depth_cap), ("daily risk budget", budget_left)), key=lambda x: x[1])[0]
         stake = round(stake) if cfg["mode"] in ("flat", "scaled") else (round(stake / 5) * 5 if stake >= 10 else round(stake, 0))
         rec = {"level": blevel, "city": s["city"], "marketDate": s["marketDate"], "bucket": b["label"], "stability": s.get("stability"),
-               "ourOdds": round(p, 3), "sizingOdds": round(ps, 3), "market": b.get("market"), "limitPrice": ask,
+               "ourOdds": round(p, 3), "shrunkOdds": round(q, 3), "sizingOdds": round(ps, 3), "market": b.get("market"), "limitPrice": ask,
                "stake": stake if stake >= cfg["min_stake"] else 0, "limitedBy": limiter, "cuts": cuts,
                "payoutIfWin": round(stake / ask, 2) if stake >= cfg["min_stake"] else 0,
                "expectedValue": round(stake * (ps / ask - 1), 2) if stake >= cfg["min_stake"] else 0,
@@ -197,7 +270,7 @@ def main():
                "alreadyHeld": round(held_usd, 2),
                # walk-away price: the most worth paying when the price runs while you buy. Above it the
                # bet no longer clears the entry rule (our odds 8+ points over the price) or the sizing odds.
-               "walkAway": round(max(ask, min(p - cfg["edge_min"], ps - 0.02)), 3)}
+               "walkAway": round(max(ask, min(q - cfg["edge_min"], ps - 0.02)), 3)}
         if rec["stake"]:
             budget_left -= rec["stake"]
         slip.append(rec)
@@ -206,7 +279,7 @@ def main():
             + (f"{blevel.upper()} ${rec['stake']:.0f} as a limit order at {ask*100:.0f}c, walk away above {rec['walkAway']*100:.0f}c (pays ${rec['payoutIfWin']:.0f}, "
                f"expected {rec['expectedValue']:+.2f}, max loss ${rec['maxLoss']:.0f}); "
                if rec["stake"] else ("SKIP (already held at the cap); " if held and room < cfg["min_stake"] else "SKIP (sized under the minimum); "))
-            + f"our odds {p*100:.0f}%, sizing odds {ps*100:.0f}% vs {ask*100:.0f}c; limited by {limiter}"
+            + f"our odds {p*100:.0f}% (shrunk {q*100:.0f}%), sizing odds {ps*100:.0f}% vs {ask*100:.0f}c; limited by {limiter}"
             + (f"; {', '.join(cuts)}" if cuts else ""))
 
     head = (f"Bankroll ${bank:,.0f} (start ${cfg['bankroll_start']:,.0f}, peak ${peak:,.0f}); open stakes ${open_stake:,.0f}; "
@@ -218,11 +291,13 @@ def main():
     nxt = cfg["tiers"][level + 1] if level + 1 < len(cfg["tiers"]) else None
     unlock = (f"Next cap ${nxt['cap']:.0f}: needs {max(0, nxt['min_settled'] - evidence['settled'])} more settled paper trades"
               f" with return above {nxt['min_roi']*100:+.0f}% and a non-negative average price move" if nxt else "Top cap unlocked")
+    if sides:
+        head += "; side rule on: " + ", ".join(f"{c} (misses ran {v[0]}, {v[1]} of {v[2]})" for c, v in sorted(sides.items()))
     print(head)
     print(unlock)
     print("\n".join(lines) if lines else "No bets pass the rules this run.")
     summary = {"bankroll": round(bank, 2), "peak": round(peak, 2), "open_stake": open_stake, "tier": level + 1,
-               "tier_cap": tier_cap, "braked": braked, "evidence": evidence, "unlock": unlock, "slip": slip}
+               "tier_cap": tier_cap, "braked": braked, "sideRule": {c: list(v) for c, v in sides.items()}, "evidence": evidence, "unlock": unlock, "slip": slip}
     if a.out:
         json.dump(summary, open(a.out, "w"), ensure_ascii=False, indent=1)
     print(json.dumps(summary, ensure_ascii=False))

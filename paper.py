@@ -16,7 +16,7 @@ the biggest edge where
   best ask >= 5c, the market still open (3-97%), the weather label not Unsettled,
   and the book can fill $25.
 Stake $25 at that average fill price. A version gets one entry per market, ever,
-so repeated runs don't pile in.
+so repeated runs don't pile in. Versions in RETIRED open no new trades.
 
 Settlement: once `outcomes` has the city+date, a result doc (same id) in
 `paper_results`: won/lost, payout, pnl, and the closing price move (last logged
@@ -30,6 +30,9 @@ from datetime import datetime, timezone
 EDGE = 0.08
 MIN_ASK = 0.05
 STAKE = 25.0
+# Retired versions: no new paper trades (open ones still settle). 5 Oct 2026: "blend" (half our
+# odds, half the market's) went 0 for 6, -$150; its lows twin goes with it.
+RETIRED = {"blend", "low_blend"}
 
 
 def load_dir(path):
@@ -75,6 +78,8 @@ def main():
             if fill is None or ask is None or mkt is None or ask < MIN_ASK or not (0.03 <= mkt <= 0.97):
                 continue
             for v, p in (b.get("variants") or {}).items():
+                if v in RETIRED:
+                    continue
                 edge = p - fill
                 if edge >= EDGE and (v not in best or edge > best[v][0]):
                     best[v] = (edge, b, fill, ask, p)
