@@ -40,6 +40,16 @@ STATIONS = [
      "tz": "America/Los_Angeles", "unit": "F", "slug": "seattle", "paper_only": True},
     {"key": "toronto", "name": "Toronto", "icao": "CYYZ", "lat": 43.679, "lon": -79.629,
      "tz": "America/Toronto", "unit": "C", "slug": "toronto", "paper_only": True},
+    # paper-only trial cities (5 Oct 2026): best day-ahead hit rates in the 37-city screen
+    # (data/screen/summary.json): Tel Aviv 67%, Singapore 57%, Austin 56%, Warsaw 55%
+    {"key": "tel-aviv", "name": "Tel Aviv", "icao": "LLBG", "lat": 32.011, "lon": 34.887,
+     "tz": "Asia/Jerusalem", "unit": "C", "slug": "tel-aviv", "paper_only": True},
+    {"key": "singapore", "name": "Singapore", "icao": "WSSS", "lat": 1.368, "lon": 103.982,
+     "tz": "Asia/Singapore", "unit": "C", "slug": "singapore", "paper_only": True},
+    {"key": "austin", "name": "Austin", "icao": "KAUS", "lat": 30.1831, "lon": -97.6806,
+     "tz": "America/Chicago", "unit": "F", "slug": "austin", "paper_only": True},
+    {"key": "warsaw", "name": "Warsaw", "icao": "EPWA", "lat": 52.163, "lon": 20.961,
+     "tz": "Europe/Warsaw", "unit": "C", "slug": "warsaw", "paper_only": True},
 ]
 
 DET_MODELS = ["ecmwf_ifs025", "ecmwf_aifs025_single", "gfs_seamless", "icon_seamless",
