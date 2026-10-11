@@ -1,51 +1,51 @@
 {
  "params": {
-  "sigma": 0.03,
+  "sigma": 0.06,
   "sigma_min": 0.08,
   "decay": 0.97,
   "new_week_other": 0.15
  },
  "ours": {
   "n": 96,
-  "logloss": 0.441,
-  "brier": 0.295,
+  "logloss": 0.513,
+  "brier": 0.314,
   "top_hit": 0.76
  },
  "market": {
   "n": 96,
-  "logloss": 0.236,
-  "brier": 0.114,
-  "top_hit": 0.927
+  "logloss": 0.474,
+  "brier": 0.236,
+  "top_hit": 0.865
  },
  "blend": {
   "n": 96,
-  "logloss": 0.298,
-  "brier": 0.166,
-  "top_hit": 0.865
+  "logloss": 0.432,
+  "brier": 0.24,
+  "top_hit": 0.854
  },
  "paper_ours": {
   "trades": 10,
-  "wins": 3,
-  "pnl": 299.5,
-  "roi": 1.198
+  "wins": 4,
+  "pnl": 592.12,
+  "roi": 2.368
  },
  "paper_blend": {
-  "trades": 10,
-  "wins": 3,
-  "pnl": 299.5,
-  "roi": 1.198
+  "trades": 9,
+  "wins": 4,
+  "pnl": 704.47,
+  "roi": 3.131
  },
  "by_market": {
   "global_1": {
    "ours": {
     "n": 24,
-    "logloss": 0.197,
-    "brier": 0.155,
+    "logloss": 0.161,
+    "brier": 0.123,
     "top_hit": 0.875
    },
    "market": {
     "n": 24,
-    "logloss": 0.066,
+    "logloss": 0.064,
     "brier": 0.025,
     "top_hit": 1.0
    },
@@ -59,34 +59,34 @@
   "global_2": {
    "ours": {
     "n": 24,
-    "logloss": 0.498,
-    "brier": 0.29,
-    "top_hit": 0.833
+    "logloss": 0.796,
+    "brier": 0.447,
+    "top_hit": 0.708
    },
    "market": {
     "n": 24,
-    "logloss": 0.308,
-    "brier": 0.144,
-    "top_hit": 0.917
+    "logloss": 0.996,
+    "brier": 0.46,
+    "top_hit": 0.75
    },
    "paper": {
     "trades": 3,
     "wins": 1,
-    "pnl": -25.5,
-    "roi": -0.34
+    "pnl": 81.25,
+    "roi": 1.083
    }
   },
   "us_1": {
    "ours": {
     "n": 24,
-    "logloss": 0.378,
-    "brier": 0.27,
-    "top_hit": 0.792
+    "logloss": 0.323,
+    "brier": 0.209,
+    "top_hit": 0.833
    },
    "market": {
     "n": 24,
-    "logloss": 0.091,
-    "brier": 0.031,
+    "logloss": 0.096,
+    "brier": 0.033,
     "top_hit": 1.0
    },
    "paper": {
@@ -99,21 +99,21 @@
   "us_2": {
    "ours": {
     "n": 24,
-    "logloss": 0.692,
-    "brier": 0.463,
-    "top_hit": 0.542
+    "logloss": 0.773,
+    "brier": 0.477,
+    "top_hit": 0.625
    },
    "market": {
     "n": 24,
-    "logloss": 0.479,
-    "brier": 0.254,
-    "top_hit": 0.792
+    "logloss": 0.741,
+    "brier": 0.428,
+    "top_hit": 0.708
    },
    "paper": {
     "trades": 4,
-    "wins": 2,
-    "pnl": 400.0,
-    "roi": 4.0
+    "wins": 3,
+    "pnl": 585.87,
+    "roi": 5.859
    }
   }
  }
