@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-05T09:38:15Z",
+ "generated": "2026-10-12T09:49:09Z",
  "window": [
-  "2026-08-05",
-  "2026-10-04"
+  "2026-08-12",
+  "2026-10-11"
  ],
  "cities": {
   "madrid": {
@@ -10,104 +10,104 @@
    "day1": {
     "median": {
      "n": 60,
-     "bias": 0.54,
-     "sd": 1.03,
-     "mae": 0.9
+     "bias": 0.59,
+     "sd": 1.01,
+     "mae": 0.89
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": 1.04,
-      "sd": 1.21,
-      "mae": 1.29
+      "bias": 0.87,
+      "sd": 1.2,
+      "mae": 1.17
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": 3.63,
-      "sd": 1.97,
-      "mae": 3.69
+      "bias": 3.67,
+      "sd": 2.0,
+      "mae": 3.74
      },
      "icon_seamless": {
       "n": 60,
-      "bias": 0.9,
-      "sd": 1.17,
-      "mae": 1.17
+      "bias": 0.99,
+      "sd": 1.23,
+      "mae": 1.22
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -2.91,
-      "sd": 2.09,
-      "mae": 3.21
+      "bias": -2.62,
+      "sd": 2.05,
+      "mae": 2.95
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": 0.64,
-      "sd": 1.31,
-      "mae": 1.1
+      "bias": 0.49,
+      "sd": 1.44,
+      "mae": 1.16
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": -0.47,
-      "sd": 1.43,
-      "mae": 1.14
+      "bias": -0.23,
+      "sd": 1.39,
+      "mae": 1.07
      },
      "jma_seamless": {
       "n": 60,
-      "bias": -0.64,
-      "sd": 2.06,
-      "mae": 1.78
+      "bias": -0.09,
+      "sd": 2.21,
+      "mae": 1.83
      }
     }
    },
    "day2": {
     "median": {
      "n": 60,
-     "bias": 0.73,
-     "sd": 1.15,
-     "mae": 1.11
+     "bias": 0.93,
+     "sd": 1.11,
+     "mae": 1.16
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": 1.18,
-      "sd": 1.2,
-      "mae": 1.41
+      "bias": 1.02,
+      "sd": 1.24,
+      "mae": 1.32
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": 3.74,
-      "sd": 1.98,
-      "mae": 3.81
+      "bias": 3.81,
+      "sd": 2.0,
+      "mae": 3.88
      },
      "icon_seamless": {
       "n": 60,
-      "bias": 0.88,
+      "bias": 1.04,
       "sd": 1.35,
-      "mae": 1.25
+      "mae": 1.31
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -2.96,
-      "sd": 2.16,
-      "mae": 3.12
+      "bias": -2.65,
+      "sd": 2.17,
+      "mae": 2.89
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": 4.54,
-      "sd": 1.86,
-      "mae": 4.54
+      "bias": 4.19,
+      "sd": 2.01,
+      "mae": 4.2
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": -0.82,
-      "sd": 1.62,
-      "mae": 1.39
+      "bias": -0.47,
+      "sd": 1.61,
+      "mae": 1.27
      },
      "jma_seamless": {
       "n": 60,
-      "bias": -0.44,
-      "sd": 1.86,
-      "mae": 1.62
+      "bias": 0.03,
+      "sd": 1.97,
+      "mae": 1.67
      }
     }
    }
@@ -117,51 +117,51 @@
    "day1": {
     "median": {
      "n": 60,
-     "bias": -0.46,
-     "sd": 0.95,
+     "bias": -0.52,
+     "sd": 0.93,
      "mae": 0.88
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": -0.97,
-      "sd": 1.06,
+      "bias": -1.0,
+      "sd": 1.03,
       "mae": 1.2
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": -0.62,
-      "sd": 1.13,
-      "mae": 1.07
+      "bias": -0.7,
+      "sd": 1.08,
+      "mae": 1.06
      },
      "icon_seamless": {
       "n": 60,
-      "bias": -0.65,
-      "sd": 1.09,
-      "mae": 1.04
+      "bias": -0.69,
+      "sd": 1.13,
+      "mae": 1.1
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -1.28,
-      "sd": 1.42,
-      "mae": 1.51
+      "bias": -1.36,
+      "sd": 1.4,
+      "mae": 1.53
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": 0.24,
+      "bias": 0.22,
       "sd": 1.45,
-      "mae": 1.15
+      "mae": 1.14
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": 0.88,
-      "sd": 1.15,
-      "mae": 1.1
+      "bias": 0.79,
+      "sd": 1.14,
+      "mae": 1.03
      },
      "jma_seamless": {
       "n": 60,
-      "bias": -0.2,
-      "sd": 1.16,
+      "bias": -0.24,
+      "sd": 1.15,
       "mae": 0.95
      }
     }
@@ -169,34 +169,34 @@
    "day2": {
     "median": {
      "n": 60,
-     "bias": -0.18,
-     "sd": 1.05,
+     "bias": -0.21,
+     "sd": 1.03,
      "mae": 0.87
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": -0.86,
+      "bias": -0.81,
       "sd": 1.17,
       "mae": 1.16
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": 0.91,
-      "sd": 1.36,
-      "mae": 1.3
+      "bias": 0.92,
+      "sd": 1.43,
+      "mae": 1.37
      },
      "icon_seamless": {
       "n": 60,
-      "bias": -0.63,
-      "sd": 1.27,
-      "mae": 1.16
+      "bias": -0.67,
+      "sd": 1.23,
+      "mae": 1.14
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -1.08,
-      "sd": 1.66,
-      "mae": 1.48
+      "bias": -1.16,
+      "sd": 1.68,
+      "mae": 1.55
      },
      "meteofrance_seamless": {
       "n": 60,
@@ -206,15 +206,15 @@
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": 0.88,
-      "sd": 1.23,
-      "mae": 1.18
+      "bias": 0.76,
+      "sd": 1.24,
+      "mae": 1.1
      },
      "jma_seamless": {
       "n": 60,
-      "bias": -0.13,
-      "sd": 1.15,
-      "mae": 0.94
+      "bias": -0.1,
+      "sd": 1.16,
+      "mae": 0.96
      }
     }
    }
@@ -224,104 +224,104 @@
    "day1": {
     "median": {
      "n": 60,
-     "bias": 0.11,
-     "sd": 0.97,
-     "mae": 0.81
+     "bias": 0.03,
+     "sd": 0.94,
+     "mae": 0.78
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": -0.11,
-      "sd": 1.16,
-      "mae": 0.96
+      "bias": -0.16,
+      "sd": 1.13,
+      "mae": 0.95
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": 0.51,
+      "bias": 0.5,
       "sd": 0.96,
-      "mae": 0.86
+      "mae": 0.87
      },
      "icon_seamless": {
       "n": 60,
-      "bias": 0.74,
-      "sd": 1.1,
-      "mae": 1.13
+      "bias": 0.58,
+      "sd": 1.11,
+      "mae": 1.05
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -2.16,
-      "sd": 1.45,
-      "mae": 2.21
+      "bias": -2.2,
+      "sd": 1.43,
+      "mae": 2.24
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": 0.04,
-      "sd": 1.11,
-      "mae": 0.88
+      "bias": -0.13,
+      "sd": 1.12,
+      "mae": 0.9
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": 0.9,
+      "bias": 0.8,
       "sd": 1.11,
-      "mae": 1.18
+      "mae": 1.11
      },
      "jma_seamless": {
       "n": 60,
-      "bias": -1.19,
-      "sd": 1.24,
-      "mae": 1.32
+      "bias": -1.17,
+      "sd": 1.18,
+      "mae": 1.25
      }
     }
    },
    "day2": {
     "median": {
      "n": 60,
-     "bias": 0.14,
-     "sd": 1.04,
-     "mae": 0.87
+     "bias": 0.01,
+     "sd": 1.03,
+     "mae": 0.85
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": -0.21,
-      "sd": 1.16,
-      "mae": 0.92
+      "bias": -0.3,
+      "sd": 1.21,
+      "mae": 0.96
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": 0.48,
-      "sd": 1.06,
-      "mae": 0.94
+      "bias": 0.47,
+      "sd": 1.01,
+      "mae": 0.89
      },
      "icon_seamless": {
       "n": 60,
-      "bias": 0.85,
-      "sd": 1.11,
-      "mae": 1.18
+      "bias": 0.64,
+      "sd": 1.13,
+      "mae": 1.08
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -2.44,
-      "sd": 1.52,
-      "mae": 2.49
+      "bias": -2.4,
+      "sd": 1.55,
+      "mae": 2.45
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": 0.28,
-      "sd": 1.14,
-      "mae": 0.94
+      "bias": 0.16,
+      "sd": 1.15,
+      "mae": 0.9
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": 0.73,
-      "sd": 1.12,
-      "mae": 1.1
+      "bias": 0.62,
+      "sd": 1.13,
+      "mae": 1.05
      },
      "jma_seamless": {
       "n": 60,
-      "bias": -1.08,
-      "sd": 1.36,
-      "mae": 1.35
+      "bias": -1.18,
+      "sd": 1.29,
+      "mae": 1.37
      }
     }
    }
@@ -331,104 +331,104 @@
    "day1": {
     "median": {
      "n": 60,
-     "bias": -0.19,
-     "sd": 0.85,
-     "mae": 0.7
+     "bias": -0.09,
+     "sd": 0.87,
+     "mae": 0.71
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": -0.84,
-      "sd": 0.79,
-      "mae": 0.99
+      "bias": -0.82,
+      "sd": 0.78,
+      "mae": 0.97
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": 0.41,
-      "sd": 1.32,
-      "mae": 1.05
+      "bias": 0.48,
+      "sd": 1.28,
+      "mae": 1.03
      },
      "icon_seamless": {
       "n": 60,
-      "bias": -0.16,
-      "sd": 0.85,
-      "mae": 0.69
+      "bias": -0.09,
+      "sd": 0.83,
+      "mae": 0.67
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -1.61,
-      "sd": 0.98,
-      "mae": 1.65
+      "bias": -1.54,
+      "sd": 1.0,
+      "mae": 1.6
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": -0.28,
-      "sd": 0.95,
+      "bias": -0.16,
+      "sd": 0.99,
       "mae": 0.84
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": 0.43,
-      "sd": 0.99,
-      "mae": 0.8
+      "bias": 0.54,
+      "sd": 0.95,
+      "mae": 0.81
      },
      "jma_seamless": {
       "n": 60,
-      "bias": 0.12,
-      "sd": 0.94,
-      "mae": 0.72
+      "bias": 0.34,
+      "sd": 1.12,
+      "mae": 0.87
      }
     }
    },
    "day2": {
     "median": {
      "n": 60,
-     "bias": -0.32,
-     "sd": 0.86,
-     "mae": 0.74
+     "bias": -0.18,
+     "sd": 0.9,
+     "mae": 0.75
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": -0.96,
-      "sd": 1.01,
-      "mae": 1.2
+      "bias": -0.88,
+      "sd": 0.97,
+      "mae": 1.12
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": 0.08,
-      "sd": 1.19,
-      "mae": 0.93
+      "bias": 0.23,
+      "sd": 1.23,
+      "mae": 1.0
      },
      "icon_seamless": {
       "n": 60,
-      "bias": -0.32,
-      "sd": 0.79,
-      "mae": 0.7
+      "bias": -0.2,
+      "sd": 0.8,
+      "mae": 0.68
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -1.61,
-      "sd": 0.93,
-      "mae": 1.67
+      "bias": -1.57,
+      "sd": 0.96,
+      "mae": 1.64
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": -0.39,
+      "bias": -0.19,
       "sd": 1.06,
-      "mae": 0.92
+      "mae": 0.87
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": 0.42,
+      "bias": 0.56,
       "sd": 0.94,
-      "mae": 0.77
+      "mae": 0.81
      },
      "jma_seamless": {
       "n": 60,
-      "bias": 0.33,
-      "sd": 0.96,
-      "mae": 0.76
+      "bias": 0.57,
+      "sd": 1.13,
+      "mae": 0.92
      }
     }
    }
@@ -438,104 +438,104 @@
    "day1": {
     "median": {
      "n": 60,
-     "bias": 0.69,
-     "sd": 0.96,
-     "mae": 0.91
+     "bias": 0.64,
+     "sd": 0.92,
+     "mae": 0.88
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": 0.73,
-      "sd": 1.04,
-      "mae": 0.97
+      "bias": 0.56,
+      "sd": 1.03,
+      "mae": 0.88
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": 1.07,
-      "sd": 1.43,
-      "mae": 1.41
+      "bias": 1.0,
+      "sd": 1.37,
+      "mae": 1.36
      },
      "icon_seamless": {
       "n": 60,
-      "bias": 0.38,
-      "sd": 0.95,
-      "mae": 0.82
+      "bias": 0.36,
+      "sd": 0.92,
+      "mae": 0.8
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -0.79,
-      "sd": 1.22,
-      "mae": 1.18
+      "bias": -0.66,
+      "sd": 1.14,
+      "mae": 1.07
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": -0.3,
-      "sd": 1.39,
-      "mae": 1.04
+      "bias": -0.35,
+      "sd": 1.33,
+      "mae": 1.0
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": 2.12,
-      "sd": 1.31,
-      "mae": 2.17
+      "bias": 2.0,
+      "sd": 1.3,
+      "mae": 2.07
      },
      "jma_seamless": {
       "n": 60,
-      "bias": 1.35,
-      "sd": 1.3,
-      "mae": 1.48
+      "bias": 1.4,
+      "sd": 1.28,
+      "mae": 1.52
      }
     }
    },
    "day2": {
     "median": {
      "n": 60,
-     "bias": 0.84,
-     "sd": 1.12,
-     "mae": 1.12
+     "bias": 0.73,
+     "sd": 1.09,
+     "mae": 1.04
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": 0.7,
-      "sd": 1.3,
-      "mae": 1.09
+      "bias": 0.53,
+      "sd": 1.28,
+      "mae": 1.02
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": 1.04,
-      "sd": 1.48,
-      "mae": 1.4
+      "bias": 0.98,
+      "sd": 1.42,
+      "mae": 1.34
      },
      "icon_seamless": {
       "n": 60,
-      "bias": 0.54,
-      "sd": 1.16,
-      "mae": 0.98
+      "bias": 0.55,
+      "sd": 1.1,
+      "mae": 0.94
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -0.57,
-      "sd": 1.51,
-      "mae": 1.26
+      "bias": -0.51,
+      "sd": 1.44,
+      "mae": 1.18
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": 0.77,
-      "sd": 1.42,
-      "mae": 1.3
+      "bias": 0.52,
+      "sd": 1.23,
+      "mae": 1.09
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": 2.01,
-      "sd": 1.44,
-      "mae": 2.09
+      "bias": 1.89,
+      "sd": 1.37,
+      "mae": 1.97
      },
      "jma_seamless": {
       "n": 60,
-      "bias": 1.37,
-      "sd": 1.4,
-      "mae": 1.54
+      "bias": 1.39,
+      "sd": 1.39,
+      "mae": 1.58
      }
     }
    }
@@ -545,104 +545,104 @@
    "day1": {
     "median": {
      "n": 60,
-     "bias": 0.24,
-     "sd": 0.8,
-     "mae": 0.58
+     "bias": 0.26,
+     "sd": 0.79,
+     "mae": 0.59
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": 0.29,
-      "sd": 0.82,
-      "mae": 0.62
+      "bias": 0.36,
+      "sd": 0.8,
+      "mae": 0.63
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": -1.23,
-      "sd": 0.79,
-      "mae": 1.26
+      "bias": -1.26,
+      "sd": 0.8,
+      "mae": 1.3
      },
      "icon_seamless": {
       "n": 60,
-      "bias": 0.07,
-      "sd": 0.81,
-      "mae": 0.63
+      "bias": -0.02,
+      "sd": 0.89,
+      "mae": 0.69
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -0.31,
-      "sd": 1.04,
-      "mae": 0.81
+      "bias": -0.29,
+      "sd": 1.12,
+      "mae": 0.86
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": 1.07,
-      "sd": 0.86,
-      "mae": 1.14
+      "bias": 1.27,
+      "sd": 1.05,
+      "mae": 1.34
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": 0.2,
-      "sd": 0.9,
-      "mae": 0.66
+      "bias": 0.22,
+      "sd": 0.89,
+      "mae": 0.67
      },
      "jma_seamless": {
       "n": 60,
-      "bias": 1.35,
-      "sd": 0.96,
-      "mae": 1.4
+      "bias": 1.39,
+      "sd": 0.99,
+      "mae": 1.44
      }
     }
    },
    "day2": {
     "median": {
      "n": 60,
-     "bias": 0.32,
-     "sd": 0.82,
+     "bias": 0.37,
+     "sd": 0.8,
      "mae": 0.61
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": 0.37,
-      "sd": 0.89,
-      "mae": 0.72
+      "bias": 0.45,
+      "sd": 0.9,
+      "mae": 0.74
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": -1.3,
-      "sd": 0.89,
-      "mae": 1.4
+      "bias": -1.31,
+      "sd": 0.92,
+      "mae": 1.43
      },
      "icon_seamless": {
       "n": 60,
-      "bias": 0.24,
-      "sd": 0.93,
-      "mae": 0.71
+      "bias": 0.12,
+      "sd": 0.99,
+      "mae": 0.72
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -0.45,
-      "sd": 1.05,
+      "bias": -0.36,
+      "sd": 1.08,
       "mae": 0.85
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": 1.26,
-      "sd": 1.05,
-      "mae": 1.33
+      "bias": 1.45,
+      "sd": 1.2,
+      "mae": 1.52
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": 0.28,
-      "sd": 0.88,
-      "mae": 0.66
+      "bias": 0.33,
+      "sd": 0.87,
+      "mae": 0.67
      },
      "jma_seamless": {
       "n": 60,
-      "bias": 1.39,
-      "sd": 1.08,
-      "mae": 1.41
+      "bias": 1.47,
+      "sd": 1.24,
+      "mae": 1.5
      }
     }
    }
@@ -652,104 +652,104 @@
    "day1": {
     "median": {
      "n": 60,
-     "bias": 1.29,
-     "sd": 1.7,
-     "mae": 1.56
+     "bias": 1.54,
+     "sd": 1.86,
+     "mae": 1.81
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": 1.12,
-      "sd": 1.83,
-      "mae": 1.55
+      "bias": 1.48,
+      "sd": 2.14,
+      "mae": 1.9
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": 2.48,
-      "sd": 2.0,
-      "mae": 2.7
+      "bias": 2.98,
+      "sd": 2.49,
+      "mae": 3.19
      },
      "icon_seamless": {
       "n": 60,
-      "bias": 0.22,
-      "sd": 1.17,
-      "mae": 0.91
+      "bias": 0.32,
+      "sd": 1.27,
+      "mae": 1.03
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -1.49,
-      "sd": 1.3,
-      "mae": 1.68
+      "bias": -1.39,
+      "sd": 1.43,
+      "mae": 1.69
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": 3.18,
-      "sd": 1.74,
-      "mae": 3.21
+      "bias": 3.05,
+      "sd": 1.73,
+      "mae": 3.08
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": -1.1,
-      "sd": 1.76,
-      "mae": 1.68
+      "bias": -0.67,
+      "sd": 1.87,
+      "mae": 1.57
      },
      "jma_seamless": {
       "n": 60,
-      "bias": 4.62,
-      "sd": 2.1,
-      "mae": 4.62
+      "bias": 4.82,
+      "sd": 2.31,
+      "mae": 4.82
      }
     }
    },
    "day2": {
     "median": {
      "n": 60,
-     "bias": 1.33,
-     "sd": 1.71,
-     "mae": 1.66
+     "bias": 1.57,
+     "sd": 1.9,
+     "mae": 1.89
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": 1.24,
-      "sd": 1.79,
-      "mae": 1.63
+      "bias": 1.55,
+      "sd": 2.08,
+      "mae": 1.94
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": 2.48,
-      "sd": 2.08,
-      "mae": 2.71
+      "bias": 2.95,
+      "sd": 2.58,
+      "mae": 3.18
      },
      "icon_seamless": {
       "n": 60,
-      "bias": 0.12,
-      "sd": 1.33,
-      "mae": 1.04
+      "bias": 0.27,
+      "sd": 1.47,
+      "mae": 1.17
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -1.34,
-      "sd": 1.45,
-      "mae": 1.65
+      "bias": -1.32,
+      "sd": 1.55,
+      "mae": 1.73
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": 3.43,
-      "sd": 1.86,
-      "mae": 3.47
+      "bias": 3.26,
+      "sd": 1.85,
+      "mae": 3.29
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": -1.45,
-      "sd": 1.86,
-      "mae": 1.99
+      "bias": -0.99,
+      "sd": 2.03,
+      "mae": 1.86
      },
      "jma_seamless": {
       "n": 60,
-      "bias": 4.58,
-      "sd": 2.21,
-      "mae": 4.58
+      "bias": 4.76,
+      "sd": 2.38,
+      "mae": 4.76
      }
     }
    }
@@ -759,104 +759,104 @@
    "day1": {
     "median": {
      "n": 60,
-     "bias": -0.17,
-     "sd": 0.96,
-     "mae": 0.74
+     "bias": -0.31,
+     "sd": 0.91,
+     "mae": 0.72
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": -0.37,
-      "sd": 0.99,
-      "mae": 0.77
+      "bias": -0.5,
+      "sd": 0.95,
+      "mae": 0.8
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": -2.62,
-      "sd": 1.05,
-      "mae": 2.64
+      "bias": -2.57,
+      "sd": 1.13,
+      "mae": 2.58
      },
      "icon_seamless": {
       "n": 60,
-      "bias": -0.65,
+      "bias": -0.68,
       "sd": 0.96,
-      "mae": 0.96
+      "mae": 0.97
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -1.09,
-      "sd": 1.4,
-      "mae": 1.39
+      "bias": -1.72,
+      "sd": 1.8,
+      "mae": 1.91
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": 1.41,
-      "sd": 1.58,
-      "mae": 1.86
+      "bias": 1.04,
+      "sd": 1.67,
+      "mae": 1.66
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": 0.6,
-      "sd": 1.03,
-      "mae": 0.92
+      "bias": 0.73,
+      "sd": 1.27,
+      "mae": 1.05
      },
      "jma_seamless": {
       "n": 60,
-      "bias": 1.41,
-      "sd": 1.39,
-      "mae": 1.66
+      "bias": 1.13,
+      "sd": 1.33,
+      "mae": 1.4
      }
     }
    },
    "day2": {
     "median": {
      "n": 60,
-     "bias": 0.35,
-     "sd": 1.04,
-     "mae": 0.85
+     "bias": 0.2,
+     "sd": 1.01,
+     "mae": 0.75
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": -0.22,
-      "sd": 1.19,
-      "mae": 0.95
+      "bias": -0.43,
+      "sd": 1.18,
+      "mae": 1.0
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": 1.17,
-      "sd": 1.43,
-      "mae": 1.61
+      "bias": 1.36,
+      "sd": 1.62,
+      "mae": 1.8
      },
      "icon_seamless": {
       "n": 60,
-      "bias": -0.65,
-      "sd": 1.03,
-      "mae": 0.98
+      "bias": -0.76,
+      "sd": 0.99,
+      "mae": 1.02
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -1.26,
-      "sd": 1.64,
-      "mae": 1.58
+      "bias": -1.91,
+      "sd": 1.91,
+      "mae": 2.05
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": 1.66,
-      "sd": 1.94,
-      "mae": 2.27
+      "bias": 1.18,
+      "sd": 2.03,
+      "mae": 2.03
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": 0.56,
-      "sd": 1.07,
-      "mae": 0.93
+      "bias": 0.66,
+      "sd": 1.24,
+      "mae": 1.02
      },
      "jma_seamless": {
       "n": 60,
-      "bias": 1.46,
-      "sd": 1.36,
-      "mae": 1.6
+      "bias": 1.22,
+      "sd": 1.3,
+      "mae": 1.35
      }
     }
    }
@@ -866,51 +866,51 @@
    "day1": {
     "median": {
      "n": 60,
-     "bias": 0.22,
-     "sd": 0.86,
-     "mae": 0.71
+     "bias": 0.06,
+     "sd": 0.83,
+     "mae": 0.66
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": 0.2,
-      "sd": 1.0,
-      "mae": 0.85
+      "bias": 0.05,
+      "sd": 0.97,
+      "mae": 0.8
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": -0.75,
-      "sd": 1.03,
-      "mae": 1.03
+      "bias": -0.88,
+      "sd": 1.06,
+      "mae": 1.11
      },
      "icon_seamless": {
       "n": 60,
-      "bias": 0.32,
+      "bias": 0.19,
       "sd": 1.01,
-      "mae": 0.87
+      "mae": 0.83
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -0.53,
-      "sd": 1.24,
-      "mae": 1.12
+      "bias": -0.75,
+      "sd": 1.1,
+      "mae": 1.1
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": 0.8,
-      "sd": 1.16,
-      "mae": 1.11
+      "bias": 0.6,
+      "sd": 1.07,
+      "mae": 0.95
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": 1.33,
-      "sd": 1.0,
-      "mae": 1.35
+      "bias": 1.07,
+      "sd": 1.05,
+      "mae": 1.18
      },
      "jma_seamless": {
       "n": 60,
-      "bias": 0.0,
-      "sd": 1.15,
+      "bias": -0.17,
+      "sd": 1.17,
       "mae": 0.95
      }
     }
@@ -918,52 +918,52 @@
    "day2": {
     "median": {
      "n": 60,
-     "bias": 0.2,
-     "sd": 0.91,
-     "mae": 0.74
+     "bias": 0.07,
+     "sd": 0.86,
+     "mae": 0.68
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": 0.28,
-      "sd": 0.99,
-      "mae": 0.8
+      "bias": 0.12,
+      "sd": 0.9,
+      "mae": 0.69
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": -1.2,
-      "sd": 1.15,
-      "mae": 1.42
+      "bias": -1.11,
+      "sd": 1.17,
+      "mae": 1.34
      },
      "icon_seamless": {
       "n": 60,
-      "bias": 0.35,
-      "sd": 1.18,
-      "mae": 0.95
+      "bias": 0.25,
+      "sd": 1.14,
+      "mae": 0.9
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -2.19,
-      "sd": 1.82,
-      "mae": 2.38
+      "bias": -2.32,
+      "sd": 1.8,
+      "mae": 2.5
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": 0.96,
-      "sd": 1.41,
-      "mae": 1.34
+      "bias": 0.62,
+      "sd": 1.22,
+      "mae": 1.06
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": 1.45,
-      "sd": 1.09,
-      "mae": 1.46
+      "bias": 1.25,
+      "sd": 1.12,
+      "mae": 1.33
      },
      "jma_seamless": {
       "n": 60,
-      "bias": 0.01,
+      "bias": -0.11,
       "sd": 1.04,
-      "mae": 0.84
+      "mae": 0.83
      }
     }
    }
@@ -973,104 +973,104 @@
    "day1": {
     "median": {
      "n": 60,
-     "bias": -0.12,
-     "sd": 0.88,
-     "mae": 0.66
+     "bias": -0.02,
+     "sd": 0.94,
+     "mae": 0.72
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": -0.77,
-      "sd": 1.01,
-      "mae": 0.99
+      "bias": -0.59,
+      "sd": 1.05,
+      "mae": 0.94
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": -1.49,
-      "sd": 1.26,
-      "mae": 1.56
+      "bias": -1.5,
+      "sd": 1.27,
+      "mae": 1.61
      },
      "icon_seamless": {
       "n": 60,
-      "bias": 0.62,
-      "sd": 1.14,
-      "mae": 1.03
+      "bias": 0.79,
+      "sd": 1.31,
+      "mae": 1.18
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -1.83,
+      "bias": -1.64,
       "sd": 1.2,
-      "mae": 1.87
+      "mae": 1.75
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": -0.19,
-      "sd": 1.14,
+      "bias": -0.1,
+      "sd": 1.12,
       "mae": 0.89
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": 0.96,
-      "sd": 1.14,
-      "mae": 1.16
+      "bias": 1.13,
+      "sd": 1.2,
+      "mae": 1.28
      },
      "jma_seamless": {
       "n": 60,
-      "bias": 1.54,
-      "sd": 1.52,
-      "mae": 1.79
+      "bias": 1.89,
+      "sd": 1.57,
+      "mae": 2.1
      }
     }
    },
    "day2": {
     "median": {
      "n": 60,
-     "bias": -0.06,
-     "sd": 1.06,
-     "mae": 0.82
+     "bias": 0.15,
+     "sd": 1.13,
+     "mae": 0.84
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": -0.6,
-      "sd": 1.12,
-      "mae": 0.97
+      "bias": -0.45,
+      "sd": 1.14,
+      "mae": 0.9
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": -0.78,
-      "sd": 1.11,
-      "mae": 1.06
+      "bias": -0.47,
+      "sd": 1.32,
+      "mae": 1.08
      },
      "icon_seamless": {
       "n": 60,
-      "bias": 0.56,
-      "sd": 1.39,
-      "mae": 1.16
+      "bias": 0.8,
+      "sd": 1.41,
+      "mae": 1.21
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -2.32,
-      "sd": 1.56,
-      "mae": 2.35
+      "bias": -2.18,
+      "sd": 1.48,
+      "mae": 2.22
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": -0.17,
-      "sd": 1.35,
-      "mae": 1.1
+      "bias": -0.16,
+      "sd": 1.28,
+      "mae": 1.06
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": 1.08,
-      "sd": 1.26,
-      "mae": 1.31
+      "bias": 1.32,
+      "sd": 1.25,
+      "mae": 1.42
      },
      "jma_seamless": {
       "n": 60,
-      "bias": 1.52,
-      "sd": 1.57,
-      "mae": 1.83
+      "bias": 1.92,
+      "sd": 1.62,
+      "mae": 2.14
      }
     }
    }
@@ -1080,104 +1080,104 @@
    "day1": {
     "median": {
      "n": 60,
-     "bias": -1.08,
-     "sd": 0.81,
-     "mae": 1.08
+     "bias": -1.06,
+     "sd": 0.83,
+     "mae": 1.09
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": -1.55,
-      "sd": 1.23,
-      "mae": 1.68
+      "bias": -1.53,
+      "sd": 1.1,
+      "mae": 1.61
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": -0.29,
-      "sd": 1.13,
-      "mae": 0.95
+      "bias": -0.12,
+      "sd": 1.11,
+      "mae": 0.9
      },
      "icon_seamless": {
       "n": 60,
-      "bias": -1.43,
-      "sd": 0.85,
-      "mae": 1.43
+      "bias": -1.41,
+      "sd": 0.86,
+      "mae": 1.41
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -3.96,
-      "sd": 0.94,
-      "mae": 3.96
+      "bias": -3.89,
+      "sd": 0.95,
+      "mae": 3.89
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": -0.07,
-      "sd": 0.89,
-      "mae": 0.61
+      "bias": 0.05,
+      "sd": 0.92,
+      "mae": 0.65
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": -0.49,
+      "bias": -0.47,
       "sd": 0.9,
-      "mae": 0.72
+      "mae": 0.7
      },
      "jma_seamless": {
       "n": 60,
-      "bias": -1.44,
-      "sd": 0.95,
-      "mae": 1.48
+      "bias": -1.42,
+      "sd": 0.94,
+      "mae": 1.45
      }
     }
    },
    "day2": {
     "median": {
      "n": 60,
-     "bias": -1.22,
-     "sd": 0.86,
+     "bias": -1.19,
+     "sd": 0.88,
      "mae": 1.23
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": -1.67,
-      "sd": 1.14,
-      "mae": 1.75
+      "bias": -1.65,
+      "sd": 1.11,
+      "mae": 1.72
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": -0.45,
-      "sd": 1.12,
-      "mae": 0.97
+      "bias": -0.35,
+      "sd": 1.15,
+      "mae": 0.95
      },
      "icon_seamless": {
       "n": 60,
-      "bias": -1.63,
-      "sd": 1.08,
-      "mae": 1.64
+      "bias": -1.68,
+      "sd": 1.07,
+      "mae": 1.68
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -4.03,
+      "bias": -4.0,
       "sd": 1.03,
-      "mae": 4.03
+      "mae": 4.0
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": -0.0,
-      "sd": 0.94,
-      "mae": 0.67
+      "bias": 0.09,
+      "sd": 0.96,
+      "mae": 0.7
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": -0.63,
-      "sd": 0.95,
-      "mae": 0.88
+      "bias": -0.58,
+      "sd": 0.94,
+      "mae": 0.84
      },
      "jma_seamless": {
       "n": 60,
-      "bias": -1.44,
-      "sd": 1.05,
-      "mae": 1.51
+      "bias": -1.48,
+      "sd": 1.01,
+      "mae": 1.53
      }
     }
    }
@@ -1187,51 +1187,51 @@
    "day1": {
     "median": {
      "n": 60,
-     "bias": -0.25,
-     "sd": 1.24,
-     "mae": 1.07
+     "bias": -0.31,
+     "sd": 1.25,
+     "mae": 1.09
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": -1.02,
-      "sd": 1.24,
-      "mae": 1.32
+      "bias": -1.13,
+      "sd": 1.26,
+      "mae": 1.42
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": 0.7,
-      "sd": 1.29,
-      "mae": 1.05
+      "bias": 0.69,
+      "sd": 1.26,
+      "mae": 1.04
      },
      "icon_seamless": {
       "n": 60,
-      "bias": -0.22,
-      "sd": 1.42,
-      "mae": 1.22
+      "bias": -0.27,
+      "sd": 1.45,
+      "mae": 1.25
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -0.13,
-      "sd": 1.24,
-      "mae": 0.89
+      "bias": -0.15,
+      "sd": 1.14,
+      "mae": 0.86
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": 1.4,
-      "sd": 1.24,
+      "bias": 1.37,
+      "sd": 1.25,
       "mae": 1.41
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": -1.28,
-      "sd": 1.2,
-      "mae": 1.55
+      "bias": -1.51,
+      "sd": 1.36,
+      "mae": 1.78
      },
      "jma_seamless": {
       "n": 60,
-      "bias": -0.61,
-      "sd": 1.25,
+      "bias": -0.67,
+      "sd": 1.22,
       "mae": 1.25
      }
     }
@@ -1239,52 +1239,52 @@
    "day2": {
     "median": {
      "n": 60,
-     "bias": -0.25,
-     "sd": 1.24,
-     "mae": 1.08
+     "bias": -0.31,
+     "sd": 1.26,
+     "mae": 1.1
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": -1.13,
-      "sd": 1.43,
-      "mae": 1.54
+      "bias": -1.27,
+      "sd": 1.48,
+      "mae": 1.66
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": 0.72,
-      "sd": 1.35,
+      "bias": 0.71,
+      "sd": 1.32,
       "mae": 1.04
      },
      "icon_seamless": {
       "n": 60,
-      "bias": -0.29,
-      "sd": 1.4,
-      "mae": 1.23
+      "bias": -0.32,
+      "sd": 1.43,
+      "mae": 1.24
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -0.13,
-      "sd": 1.23,
-      "mae": 0.91
+      "bias": -0.2,
+      "sd": 1.26,
+      "mae": 0.94
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": 1.45,
+      "bias": 1.41,
       "sd": 1.3,
-      "mae": 1.47
+      "mae": 1.43
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": -1.09,
-      "sd": 1.44,
-      "mae": 1.58
+      "bias": -1.24,
+      "sd": 1.52,
+      "mae": 1.73
      },
      "jma_seamless": {
       "n": 60,
-      "bias": -0.49,
-      "sd": 1.23,
-      "mae": 1.18
+      "bias": -0.56,
+      "sd": 1.24,
+      "mae": 1.21
      }
     }
    }
@@ -1294,104 +1294,104 @@
    "day1": {
     "median": {
      "n": 60,
-     "bias": 1.55,
-     "sd": 1.17,
-     "mae": 1.68
+     "bias": 1.62,
+     "sd": 1.21,
+     "mae": 1.75
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": 1.49,
-      "sd": 1.24,
-      "mae": 1.65
+      "bias": 1.57,
+      "sd": 1.28,
+      "mae": 1.74
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": 0.75,
-      "sd": 1.16,
-      "mae": 1.13
+      "bias": 0.87,
+      "sd": 1.23,
+      "mae": 1.24
      },
      "icon_seamless": {
       "n": 60,
-      "bias": 1.11,
-      "sd": 1.06,
-      "mae": 1.28
+      "bias": 1.14,
+      "sd": 1.12,
+      "mae": 1.31
      },
      "gem_seamless": {
       "n": 60,
-      "bias": 0.18,
-      "sd": 0.97,
-      "mae": 0.83
+      "bias": 0.22,
+      "sd": 1.02,
+      "mae": 0.88
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": 3.65,
-      "sd": 1.8,
-      "mae": 3.76
+      "bias": 3.51,
+      "sd": 1.86,
+      "mae": 3.62
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": 2.06,
-      "sd": 1.21,
-      "mae": 2.15
+      "bias": 2.19,
+      "sd": 1.35,
+      "mae": 2.29
      },
      "jma_seamless": {
       "n": 60,
-      "bias": 2.41,
-      "sd": 1.63,
-      "mae": 2.52
+      "bias": 2.46,
+      "sd": 1.68,
+      "mae": 2.57
      }
     }
    },
    "day2": {
     "median": {
      "n": 60,
-     "bias": 1.52,
-     "sd": 1.2,
-     "mae": 1.67
+     "bias": 1.65,
+     "sd": 1.33,
+     "mae": 1.8
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": 1.6,
-      "sd": 1.32,
-      "mae": 1.77
+      "bias": 1.64,
+      "sd": 1.38,
+      "mae": 1.82
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": 0.47,
-      "sd": 1.57,
-      "mae": 1.35
+      "bias": 0.91,
+      "sd": 1.99,
+      "mae": 1.69
      },
      "icon_seamless": {
       "n": 60,
-      "bias": 1.17,
-      "sd": 1.18,
-      "mae": 1.32
+      "bias": 1.21,
+      "sd": 1.24,
+      "mae": 1.37
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -0.19,
-      "sd": 1.08,
-      "mae": 0.83
+      "bias": -0.15,
+      "sd": 1.2,
+      "mae": 0.93
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": 3.9,
-      "sd": 2.11,
-      "mae": 4.12
+      "bias": 3.78,
+      "sd": 2.17,
+      "mae": 4.0
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": 1.81,
-      "sd": 1.36,
-      "mae": 1.99
+      "bias": 1.93,
+      "sd": 1.48,
+      "mae": 2.1
      },
      "jma_seamless": {
       "n": 60,
-      "bias": 2.41,
-      "sd": 1.55,
-      "mae": 2.53
+      "bias": 2.46,
+      "sd": 1.6,
+      "mae": 2.58
      }
     }
    }
@@ -1401,104 +1401,104 @@
    "day1": {
     "median": {
      "n": 60,
-     "bias": 1.78,
+     "bias": 1.73,
      "sd": 1.23,
-     "mae": 1.89
+     "mae": 1.83
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": 1.23,
-      "sd": 1.32,
-      "mae": 1.45
+      "bias": 1.31,
+      "sd": 1.35,
+      "mae": 1.53
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": 2.96,
-      "sd": 1.89,
-      "mae": 3.03
+      "bias": 3.08,
+      "sd": 1.95,
+      "mae": 3.15
      },
      "icon_seamless": {
       "n": 60,
-      "bias": 1.51,
+      "bias": 1.44,
       "sd": 1.28,
-      "mae": 1.63
+      "mae": 1.55
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -0.44,
-      "sd": 1.27,
-      "mae": 1.05
+      "bias": -0.26,
+      "sd": 1.29,
+      "mae": 1.0
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": 1.53,
-      "sd": 1.37,
-      "mae": 1.76
+      "bias": 1.39,
+      "sd": 1.28,
+      "mae": 1.62
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": 2.48,
-      "sd": 1.38,
-      "mae": 2.52
+      "bias": 2.39,
+      "sd": 1.41,
+      "mae": 2.43
      },
      "jma_seamless": {
       "n": 60,
-      "bias": 2.77,
+      "bias": 2.81,
       "sd": 1.32,
-      "mae": 2.77
+      "mae": 2.81
      }
     }
    },
    "day2": {
     "median": {
      "n": 60,
-     "bias": 1.91,
-     "sd": 1.27,
-     "mae": 2.01
+     "bias": 1.85,
+     "sd": 1.26,
+     "mae": 1.95
     },
     "models": {
      "ecmwf_ifs025": {
       "n": 60,
-      "bias": 1.45,
-      "sd": 1.34,
-      "mae": 1.66
+      "bias": 1.46,
+      "sd": 1.35,
+      "mae": 1.67
      },
      "gfs_seamless": {
       "n": 60,
-      "bias": 3.06,
-      "sd": 2.06,
-      "mae": 3.16
+      "bias": 3.17,
+      "sd": 2.15,
+      "mae": 3.27
      },
      "icon_seamless": {
       "n": 60,
-      "bias": 1.62,
-      "sd": 1.36,
-      "mae": 1.7
+      "bias": 1.49,
+      "sd": 1.34,
+      "mae": 1.56
      },
      "gem_seamless": {
       "n": 60,
-      "bias": -0.26,
-      "sd": 1.2,
-      "mae": 0.99
+      "bias": -0.15,
+      "sd": 1.16,
+      "mae": 0.93
      },
      "meteofrance_seamless": {
       "n": 60,
-      "bias": 1.71,
-      "sd": 1.53,
-      "mae": 1.95
+      "bias": 1.53,
+      "sd": 1.46,
+      "mae": 1.78
      },
      "ukmo_seamless": {
       "n": 60,
-      "bias": 2.56,
+      "bias": 2.53,
       "sd": 1.61,
-      "mae": 2.68
+      "mae": 2.64
      },
      "jma_seamless": {
       "n": 60,
-      "bias": 2.71,
-      "sd": 1.44,
-      "mae": 2.72
+      "bias": 2.79,
+      "sd": 1.43,
+      "mae": 2.8
      }
     }
    }
