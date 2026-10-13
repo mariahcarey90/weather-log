@@ -65,6 +65,7 @@ from zoneinfo import ZoneInfo
 
 DEFAULT_KERNEL_C = {"same": 0.7, "day": 0.8, "far": 1.0}
 MIN_KERNEL_C = 0.5
+WARM_SHIFT_C = 0.4  # "filtered" challenger: shift toward warmer outcomes (13 Oct 2026)
 MIN_RESOLVED = 5
 MIN_LIVE = 30
 PRIOR_N_STATION = 8    # how many scored days the TAF/NWS starting assumption is worth
@@ -430,8 +431,26 @@ def main():
                     ep.append(max(0.0, ncdf(hi_, mu_u, sg_u) - ncdf(lo_, mu_u, sg_u)))
                 es = sum(ep) or 1
                 ep = [x / es for x in ep]
+            # "filtered" challenger (13 Oct 2026, paper only): the current odds shifted WARM_SHIFT_C
+            # warmer (settled losses ran warm 58 vs 41); paper.py adds its entry rules.
+            fp = None
+            if not LOW and mem_u:
+                sh = WARM_SHIFT_C * (9 / 5 if fahrenheit else 1)
+                def cdf_w(x):
+                    if obs_u is not None and x < obs_u:
+                        return 0.0
+                    return sum(wi * ncdf(x, m + sh, ku) for m, wi in zip(mem_u, weights)) / sum(weights)
+                fp = []
+                for b in buckets:
+                    lo_ = -1e9 if b["lo"] is None else b["lo"] - 0.5
+                    hi_ = 1e9 if b["hi"] is None else b["hi"] + 0.5
+                    fp.append(max(0.0, cdf_w(hi_) - cdf_w(lo_)))
+                fs = sum(fp) or 1
+                fp = [x / fs for x in fp]
             for i, b in enumerate(buckets):
                 v = {"current": b["model"]}
+                if fp is not None:
+                    v["filtered"] = round(fp[i], 4)
                 if mk_sum > 0 and b["market"] is not None:
                     v["blend"] = round(BLEND_W_OURS * b["model"] + (1 - BLEND_W_OURS) * b["market"] / mk_sum, 4)
                 if ep is not None:

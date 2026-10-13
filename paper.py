@@ -33,6 +33,11 @@ STAKE = 25.0
 # Retired versions: no new paper trades (open ones still settle). 5 Oct 2026: "blend" (half our
 # odds, half the market's) went 0 for 6, -$150; its lows twin goes with it.
 RETIRED = {"blend", "low_blend"}
+# "filtered" challenger (13 Oct 2026), from the first fortnight's settled trades: skip entries under
+# 10c (2 wins in 31) and edges of 18+ points (won 15% vs 42% claimed), trade only within 30 h of the
+# market day's afternoon (12-30 h ahead returned +56%, 30 h+ +5%), and skip Austin and Warsaw (0 wins).
+# Its odds are the current model's shifted warmer (score.py WARM_SHIFT_C). Paper only.
+FILTERED = {"min_price": 0.10, "max_edge": 0.18, "max_lead_h": 30.0, "skip_cities": {"austin", "warsaw"}}
 
 
 def load_dir(path):
@@ -81,6 +86,10 @@ def main():
                 if v in RETIRED:
                     continue
                 edge = p - fill
+                if v == "filtered" and (fill < FILTERED["min_price"] or edge >= FILTERED["max_edge"]
+                                        or (s.get("leadHours") or 0) > FILTERED["max_lead_h"]
+                                        or s.get("city") in FILTERED["skip_cities"]):
+                    continue
                 if edge >= EDGE and (v not in best or edge > best[v][0]):
                     best[v] = (edge, b, fill, ask, p)
         for v, (edge, b, fill, ask, p) in best.items():
