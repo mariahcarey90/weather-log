@@ -47,7 +47,10 @@ def main():
                "dataAgeHours": round(age_h, 1), **info, "climSource": m.get("climSource"),
                "volume": m.get("volume"), "liquidity": m.get("liquidity"), "buckets": buckets,
                "topPick": top["label"], "marketTop": mtop["label"],
-               "noTrade": age_h > 6 or not info["members"]}
+               # no paper trades when the rain so far is only a model estimate, or the station is 4+ days behind:
+               # mid-month the measured part drives the answer, and a stand-in can be badly off
+               "noTrade": age_h > 6 or not info["members"] or (info["obsSource"] or "model").startswith("model")
+                          or (m.get("daysFilled") or 0) >= 4}
         snaps.append({"doc_id": f"{m['slug'][:120]}_{stamp}", "data": doc})
         gaps = [(b["model"] - (b["market"] or 0), b) for b in buckets if b["market"] is not None]
         g, gb = max(gaps, key=lambda x: x[0]) if gaps else (0, None)

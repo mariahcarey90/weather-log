@@ -12,15 +12,16 @@ Observed rainfall, best source first:
   1. NOAA ACIS (data.rcc-acis.org) station data: US stations and GHCN-Daily international
      stations (Heathrow, Seoul) - the same station the market names
   2. Hong Kong Observatory open data (Hong Kong)
-  3. Open-Meteo's model analysis at the station's coordinates ("model-approx": a stand-in,
+  3. Meteostat's free station archive (bulk.meteostat.net, WMO station id; usually 1-3 days behind)
+  4. Open-Meteo's model analysis at the station's coordinates ("model-approx": a stand-in,
      flagged in the output, used only when the station hasn't reported)
 """
-import json, os, re, sys, time, urllib.parse
+import csv, gzip, io, json, os, re, sys, time, urllib.parse, urllib.request
 from datetime import date, datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from fetch import get, book_depth  # noqa: E402
+from fetch import get, book_depth, UA  # noqa: E402
 
 D = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 LATEST = os.path.join(D, "rain_latest.json")
@@ -35,13 +36,15 @@ CITIES = {
     "nyc": {"names": ["nyc", "new york", "new york city"], "station": "Central Park, NY (NOAA)", "lat": 40.779,
             "lon": -73.969, "tz": "America/New_York", "unit": "in", "acis": "USW00094728"},
     "london": {"names": ["london"], "station": "Heathrow (Met Office)", "lat": 51.479, "lon": -0.449,
-               "tz": "Europe/London", "unit": "mm", "acis": "UKM00003772"},
+               "tz": "Europe/London", "unit": "mm", "acis": "UKM00003772", "wmo": "03772"},
     "seoul": {"names": ["seoul"], "station": "Seoul (KMA)", "lat": 37.571, "lon": 126.966,
-              "tz": "Asia/Seoul", "unit": "mm", "acis": "KSM00047108"},
+              "tz": "Asia/Seoul", "unit": "mm", "acis": "KSM00047108", "wmo": "47108"},
     "hong-kong": {"names": ["hong kong"], "station": "Hong Kong Observatory", "lat": 22.302, "lon": 114.174,
-                  "tz": "Asia/Hong_Kong", "unit": "mm", "hko": "HKO", "acis": "CHM00045005"},
+                  "tz": "Asia/Hong_Kong", "unit": "mm", "hko": "HKO", "acis": "CHM00045005", "wmo": "45005"},
+    "seattle": {"names": ["seattle"], "station": "Seattle-Tacoma Intl (NOAA; check market rules)", "lat": 47.4447,
+                "lon": -122.3144, "tz": "America/Los_Angeles", "unit": "in", "acis": "USW00024233"},
     "tokyo": {"names": ["tokyo"], "station": "Tokyo (JMA)", "lat": 35.692, "lon": 139.750,
-              "tz": "Asia/Tokyo", "unit": "mm", "acis": "JA000047662"},
+              "tz": "Asia/Tokyo", "unit": "mm", "acis": "JA000047662", "wmo": "47662"},
 }
 
 
@@ -70,16 +73,32 @@ def acis_daily(sid, sdate, edate, unit):
     return out
 
 
+def get_bytes(url, timeout=60):
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read()
+
+
 def hko_daily(station, y, m):
-    q = {"dataType": "CLMRAIN", "rformat": "json", "station": station, "year": y, "month": m}
-    r = get("https://data.weather.gov.hk/weatherAPI/opendata/opendata.php?" + urllib.parse.urlencode(q))
+    q = {"dataType": "CLMRAIN", "rformat": "csv", "station": station, "year": y, "month": m}
+    txt = get_bytes("https://data.weather.gov.hk/weatherAPI/opendata/opendata.php?" + urllib.parse.urlencode(q)).decode("utf-8-sig", "replace")
     out = {}
-    for row in (r or {}).get("data", []):
+    for row in csv.reader(io.StringIO(txt)):
         try:
-            yy, mm, dd, val = int(row[0]), int(row[1]), int(row[2]), row[3]
+            yy, mm, dd, val = int(row[0]), int(row[1]), int(row[2]), row[3].strip()
             out[f"{yy:04d}-{mm:02d}-{dd:02d}"] = 0.0 if str(val).lower().startswith("trace") else float(val)
         except Exception:
             continue
+    return out
+
+
+def meteostat_daily(wmo, first, last, unit):
+    """{date: value} from Meteostat's bulk daily file (prcp in mm); skips days with no value."""
+    raw = gzip.decompress(get_bytes(f"https://bulk.meteostat.net/v2/daily/{wmo}.csv.gz"))
+    out = {}
+    for row in csv.reader(io.StringIO(raw.decode("utf-8", "replace"))):
+        if len(row) > 4 and first <= row[0] <= last and row[4] not in ("", None):
+            out[row[0]] = to_unit(float(row[4]), unit)
     return out
 
 
@@ -249,6 +268,12 @@ def main():
                         src = f"station via NOAA ACIS ({c['acis']})" if obs else None
                     except Exception as e:
                         ERRORS.append(f"{key} ACIS obs: {e}")
+                if src is None and c.get("wmo"):
+                    try:
+                        obs = meteostat_daily(c["wmo"], first.isoformat(), end_obs.isoformat(), c["unit"])
+                        src = f"station via Meteostat (WMO {c['wmo']})" if obs else None
+                    except Exception as e:
+                        ERRORS.append(f"{key} Meteostat obs: {e}")
                 approx = {}
                 try:
                     approx = {d: v for d, v in openmeteo_past(c, (local_today - first).days + 1).items()
@@ -262,6 +287,7 @@ def main():
                         if d.isoformat() in approx:
                             obs[d.isoformat()] = approx[d.isoformat()]
                     src = (src + f"; {len(missing)} day(s) filled from model analysis") if src else "model-approx"
+                rec["daysFilled"] = len(missing)
                 rec["obsApprox"] = approx
             rec["obs"] = obs
             rec["obsSource"] = src
