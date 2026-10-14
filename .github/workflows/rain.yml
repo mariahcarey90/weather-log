@@ -1,0 +1,44 @@
+name: Fetch monthly rainfall market data
+
+on:
+  schedule:
+    - cron: "55 1-23/2 * * *"
+  workflow_dispatch:
+    inputs:
+      backfill:
+        description: "Rebuild the climatology cache"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: ["markets/rain_fetch.py", ".github/workflows/rain.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rain
+  cancel-in-progress: false
+
+jobs:
+  rain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - name: Fetch
+        run: |
+          if [ "${{ inputs.backfill }}" = "true" ]; then rm -rf markets/data/rain_clim; fi
+          python3 markets/rain_fetch.py
+      - name: Commit data
+        run: |
+          git config user.name "weather-log bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add markets/data
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "rain data: $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 5
+          done
+          exit 1
