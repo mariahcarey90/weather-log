@@ -50,7 +50,8 @@ DEFAULTS = {
     "drawdown_brake": 0.20,
     "weak_cities": {"mexico-city": 0.38, "lucknow": 0.37},  # day-ahead backtest top-pick hit rate
     # trial cities: paper trades only, never on the slip, and not counted toward tier unlocks
-    "paper_only_cities": ["dallas", "seattle", "toronto", "tel-aviv", "singapore", "austin", "warsaw"],
+    "paper_only_cities": ["dallas", "seattle", "toronto", "tel-aviv", "singapore", "austin", "warsaw",
+                          "paris", "istanbul", "wellington", "munich", "milan"],
     # "flat": the owner's fixed stake levels; "kelly": quarter Kelly as described above
     "mode": "kelly",
     "flat": {"confident": 50.0, "standard": 25.0, "longshot": 10.0, "longshot_settled": 15.0},

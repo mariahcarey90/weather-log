@@ -50,6 +50,18 @@ STATIONS = [
      "tz": "America/Chicago", "unit": "F", "slug": "austin", "paper_only": True},
     {"key": "warsaw", "name": "Warsaw", "icao": "EPWA", "lat": 52.163, "lon": 20.961,
      "tz": "Europe/Warsaw", "unit": "C", "slug": "warsaw", "paper_only": True},
+    # paper-only trial cities (15 Oct 2026): decent day-ahead skill in the 38-city screen, good
+    # volume and not yet tracked (Paris 50%, Istanbul 52%, Wellington 53%, Munich 53%, Milan 42%)
+    {"key": "paris", "name": "Paris", "icao": "LFPB", "lat": 48.967, "lon": 2.428,
+     "tz": "Europe/Paris", "unit": "C", "slug": "paris", "paper_only": True},
+    {"key": "istanbul", "name": "Istanbul", "icao": "LTFM", "lat": 41.262, "lon": 28.74,
+     "tz": "Europe/Istanbul", "unit": "C", "slug": "istanbul", "paper_only": True},
+    {"key": "wellington", "name": "Wellington", "icao": "NZWN", "lat": -41.331, "lon": 174.806,
+     "tz": "Pacific/Auckland", "unit": "C", "slug": "wellington", "paper_only": True},
+    {"key": "munich", "name": "Munich", "icao": "EDDM", "lat": 48.348, "lon": 11.813,
+     "tz": "Europe/Berlin", "unit": "C", "slug": "munich", "paper_only": True},
+    {"key": "milan", "name": "Milan", "icao": "LIMC", "lat": 45.631, "lon": 8.728,
+     "tz": "Europe/Rome", "unit": "C", "slug": "milan", "paper_only": True},
 ]
 
 DET_MODELS = ["ecmwf_ifs025", "ecmwf_aifs025_single", "gfs_seamless", "icon_seamless",
