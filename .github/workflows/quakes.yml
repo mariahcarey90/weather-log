@@ -1,0 +1,48 @@
+name: Fetch earthquake-count market data
+
+on:
+  schedule:
+    - cron: "50 1-23/2 * * *"
+  workflow_dispatch:
+    inputs:
+      backfill:
+        description: "Rebuild the USGS catalogue history and re-run the backtest"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: ["markets/quakes_fetch.py", "markets/quakes_model.py", "markets/quakes_backtest.py", ".github/workflows/quakes.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: quakes
+  cancel-in-progress: false
+
+jobs:
+  quakes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - name: Fetch
+        run: |
+          if [ "${{ github.event_name }}" = "push" ] || [ "${{ inputs.backfill }}" = "true" ] || [ ! -f markets/data/quakes_hist.json ]; then
+            python3 markets/quakes_fetch.py --backfill
+            python3 markets/quakes_backtest.py
+          else
+            python3 markets/quakes_fetch.py
+          fi
+      - name: Commit data
+        run: |
+          git config user.name "weather-log bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add markets/data
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "quakes data: $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 5
+          done
+          exit 1
