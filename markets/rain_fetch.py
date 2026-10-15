@@ -37,15 +37,15 @@ CITIES = {
     "nyc": {"names": ["nyc", "new york", "new york city"], "station": "Central Park, NY (NOAA)", "lat": 40.779,
             "lon": -73.969, "tz": "America/New_York", "unit": "in", "acis": "USW00094728"},
     "london": {"names": ["london"], "station": "Heathrow (Met Office)", "lat": 51.479, "lon": -0.449,
-               "tz": "Europe/London", "unit": "mm", "acis": "UKM00003772", "wmo": "03772"},
+               "tz": "Europe/London", "unit": "mm", "acis": "UKM00003772"},
     "seoul": {"names": ["seoul"], "station": "Seoul (KMA)", "lat": 37.571, "lon": 126.966,
-              "tz": "Asia/Seoul", "unit": "mm", "acis": "KSM00047108", "wmo": "47108"},
+              "tz": "Asia/Seoul", "unit": "mm", "acis": "KSM00047108"},
     "hong-kong": {"names": ["hong kong"], "station": "Hong Kong Observatory", "lat": 22.302, "lon": 114.174,
-                  "tz": "Asia/Hong_Kong", "unit": "mm", "hko": "HKO", "acis": "CHM00045005", "wmo": "45005"},
+                  "tz": "Asia/Hong_Kong", "unit": "mm", "hko": "HKO", "acis": "CHM00045005"},
     "seattle": {"names": ["seattle"], "station": "Seattle-Tacoma Intl (NOAA; check market rules)", "lat": 47.4447,
                 "lon": -122.3144, "tz": "America/Los_Angeles", "unit": "in", "acis": "USW00024233"},
     "tokyo": {"names": ["tokyo"], "station": "Tokyo (JMA)", "lat": 35.692, "lon": 139.750,
-              "tz": "Asia/Tokyo", "unit": "mm", "acis": "JA000047662", "wmo": "47662"},
+              "tz": "Asia/Tokyo", "unit": "mm", "acis": "JA000047662"},
 }
 
 
