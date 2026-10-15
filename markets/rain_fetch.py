@@ -27,6 +27,7 @@ D = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 LATEST = os.path.join(D, "rain_latest.json")
 CLIM_DIR = os.path.join(D, "rain_clim")
 ERRORS = []
+DEBUG = {}
 BOOK_MIN_YES, BOOK_MAX_YES = 0.02, 0.98
 MONTHS = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october",
           "november", "december"]
@@ -82,6 +83,7 @@ def get_bytes(url, timeout=60):
 def hko_daily(station, y, m):
     q = {"dataType": "CLMRAIN", "rformat": "csv", "station": station, "year": y, "month": m}
     txt = get_bytes("https://data.weather.gov.hk/weatherAPI/opendata/opendata.php?" + urllib.parse.urlencode(q)).decode("utf-8-sig", "replace")
+    DEBUG[f"hko_{station}"] = txt[:400]
     out = {}
     for row in csv.reader(io.StringIO(txt)):
         try:
@@ -94,9 +96,11 @@ def hko_daily(station, y, m):
 
 def meteostat_daily(wmo, first, last, unit):
     """{date: value} from Meteostat's bulk daily file (prcp in mm); skips days with no value."""
-    raw = gzip.decompress(get_bytes(f"https://bulk.meteostat.net/v2/daily/{wmo}.csv.gz"))
+    raw = gzip.decompress(get_bytes(f"https://bulk.meteostat.net/v2/daily/{wmo}.csv.gz")).decode("utf-8", "replace")
+    lines = raw.strip().splitlines()
+    DEBUG[f"meteostat_{wmo}"] = {"rows": len(lines), "first": lines[:1], "last": lines[-3:]}
     out = {}
-    for row in csv.reader(io.StringIO(raw.decode("utf-8", "replace"))):
+    for row in csv.reader(io.StringIO(raw)):
         if len(row) > 4 and first <= row[0] <= last and row[4] not in ("", None):
             out[row[0]] = to_unit(float(row[4]), unit)
     return out
@@ -265,6 +269,7 @@ def main():
                 if src is None and c.get("acis"):
                     try:
                         obs = acis_daily(c["acis"], first.isoformat(), end_obs.isoformat(), c["unit"])
+                        DEBUG[f"acis_{c['acis']}"] = len(obs)
                         src = f"station via NOAA ACIS ({c['acis']})" if obs else None
                     except Exception as e:
                         ERRORS.append(f"{key} ACIS obs: {e}")
@@ -305,7 +310,7 @@ def main():
             open_m.append(rec)
         except Exception as e:
             ERRORS.append(f"event {ev.get('slug')}: {e}")
-    out = {"fetched_at": now.isoformat(timespec="seconds"), "open": open_m, "resolved": resolved, "errors": ERRORS}
+    out = {"fetched_at": now.isoformat(timespec="seconds"), "open": open_m, "resolved": resolved, "errors": ERRORS, "sourceDebug": DEBUG}
     os.makedirs(D, exist_ok=True)
     json.dump(out, open(LATEST, "w"), indent=1)
     print(json.dumps({"open": [(o["title"], o["obsSource"], round(sum(o["obs"].values()), 2), len(o["ensemble"]),
