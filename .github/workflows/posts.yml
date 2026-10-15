@@ -42,7 +42,7 @@ jobs:
           if git diff --cached --quiet; then echo "no changes"; exit 0; fi
           git commit -m "posts data: $(date -u +%Y-%m-%dT%H:%MZ)"
           for i in 1 2 3; do
-            git pull --rebase origin main && git push origin HEAD:main && exit 0
-            sleep 5
+            { git pull --rebase --autostash -X theirs origin main || { git rebase --abort 2>/dev/null; false; }; } && git push origin HEAD:main && exit 0
+            sleep $((5 + RANDOM % 10))
           done
           exit 1
