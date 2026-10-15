@@ -423,6 +423,156 @@
     "current_top_hit": 0.339,
     "current_p_win": 0.292
    }
+  },
+  "paris": {
+   "day1": {
+    "a": 0.9435,
+    "b": 0.9613,
+    "c": 0.3213,
+    "d": 1.0131,
+    "crps": 0.4645,
+    "n": 59,
+    "cv_brier": 0.6303,
+    "cv_top_hit": 0.475,
+    "cv_p_win": 0.365,
+    "current_brier": 0.6313,
+    "current_top_hit": 0.492,
+    "current_p_win": 0.355
+   },
+   "day2": {
+    "a": 1.2872,
+    "b": 0.945,
+    "c": 0.6259,
+    "d": 0.8418,
+    "crps": 0.566,
+    "n": 59,
+    "cv_brier": 0.7167,
+    "cv_top_hit": 0.407,
+    "cv_p_win": 0.283,
+    "current_brier": 0.6996,
+    "current_top_hit": 0.458,
+    "current_p_win": 0.295
+   }
+  },
+  "istanbul": {
+   "day1": {
+    "a": 2.9677,
+    "b": 0.8731,
+    "c": 0.6494,
+    "d": 0.5136,
+    "crps": 0.4247,
+    "n": 59,
+    "cv_brier": 0.6386,
+    "cv_top_hit": 0.508,
+    "cv_p_win": 0.367,
+    "current_brier": 0.6486,
+    "current_top_hit": 0.508,
+    "current_p_win": 0.392
+   },
+   "day2": {
+    "a": 2.8148,
+    "b": 0.8794,
+    "c": 0.3881,
+    "d": 1.1143,
+    "crps": 0.4603,
+    "n": 59,
+    "cv_brier": 0.6354,
+    "cv_top_hit": 0.508,
+    "cv_p_win": 0.371,
+    "current_brier": 0.6406,
+    "current_top_hit": 0.492,
+    "current_p_win": 0.387
+   }
+  },
+  "wellington": {
+   "day1": {
+    "a": -1.4775,
+    "b": 1.1019,
+    "c": 0.7012,
+    "d": 0.0031,
+    "crps": 0.4377,
+    "n": 59,
+    "cv_brier": 0.6123,
+    "cv_top_hit": 0.492,
+    "cv_p_win": 0.38,
+    "current_brier": 0.639,
+    "current_top_hit": 0.525,
+    "current_p_win": 0.371
+   },
+   "day2": {
+    "a": -1.3932,
+    "b": 1.0964,
+    "c": 0.7511,
+    "d": 0.1148,
+    "crps": 0.4714,
+    "n": 59,
+    "cv_brier": 0.6471,
+    "cv_top_hit": 0.458,
+    "cv_p_win": 0.352,
+    "current_brier": 0.6688,
+    "current_top_hit": 0.458,
+    "current_p_win": 0.342
+   }
+  },
+  "munich": {
+   "day1": {
+    "a": -1.162,
+    "b": 1.0542,
+    "c": 0.3482,
+    "d": 1.1224,
+    "crps": 0.4983,
+    "n": 59,
+    "cv_brier": 0.6252,
+    "cv_top_hit": 0.492,
+    "cv_p_win": 0.363,
+    "current_brier": 0.6287,
+    "current_top_hit": 0.525,
+    "current_p_win": 0.348
+   },
+   "day2": {
+    "a": -1.0599,
+    "b": 1.0488,
+    "c": 0.7038,
+    "d": 0.7015,
+    "crps": 0.5923,
+    "n": 59,
+    "cv_brier": 0.7041,
+    "cv_top_hit": 0.39,
+    "cv_p_win": 0.294,
+    "current_brier": 0.7094,
+    "current_top_hit": 0.407,
+    "current_p_win": 0.281
+   }
+  },
+  "milan": {
+   "day1": {
+    "a": 0.6727,
+    "b": 0.9739,
+    "c": 0.6242,
+    "d": 0.4658,
+    "crps": 0.427,
+    "n": 59,
+    "cv_brier": 0.6501,
+    "cv_top_hit": 0.492,
+    "cv_p_win": 0.354,
+    "current_brier": 0.6398,
+    "current_top_hit": 0.492,
+    "current_p_win": 0.348
+   },
+   "day2": {
+    "a": 1.4463,
+    "b": 0.9435,
+    "c": 0.6161,
+    "d": 0.6944,
+    "crps": 0.5335,
+    "n": 59,
+    "cv_brier": 0.6737,
+    "cv_top_hit": 0.39,
+    "cv_p_win": 0.33,
+    "current_brier": 0.654,
+    "current_top_hit": 0.475,
+    "current_p_win": 0.323
+   }
   }
  }
 }
