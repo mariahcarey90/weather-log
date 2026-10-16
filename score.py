@@ -65,6 +65,7 @@ from zoneinfo import ZoneInfo
 
 DEFAULT_KERNEL_C = {"same": 0.7, "day": 0.8, "far": 1.0}
 MIN_KERNEL_C = 0.5
+STALE_H = 3.0  # data older than this (hours) is logged but never traded
 WARM_SHIFT_C = 0.4  # "filtered" challenger: shift toward warmer outcomes (13 Oct 2026)
 MIN_RESOLVED = 5
 MIN_LIVE = 30
@@ -490,6 +491,8 @@ def main():
                 "bias": round(bias_c * (9 / 5 if fahrenheit else 1), 2),
                 "sigma": round(ku, 2), "sources": sources, "buckets": buckets, "gaps": gaps,
                 "volume": mk.get("volume"), "liquidity": mk.get("liquidity"), "note": note,
+                # prices and forecasts older than this are not traded on (paper or slip)
+                "dataAgeHours": round(age_h, 1), "stale": age_h > STALE_H,
                 "stability": stab, "stabilityReasons": stab_why,
                 "paperOnly": bool(st.get("paper_only")),
                 "modelSpread": round(spread_c * (9 / 5 if fahrenheit else 1), 2) if spread_c is not None else None,

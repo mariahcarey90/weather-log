@@ -177,7 +177,7 @@ def main():
     slip, lines = [], []
     for e in json.load(open(a.snaps)):
         s = e["data"]
-        if s.get("stability") == "Unsettled" or (s.get("leadHours") or 0) < -2:
+        if s.get("stability") == "Unsettled" or s.get("stale") or (s.get("leadHours") or 0) < -2:
             continue
         if s.get("paperOnly") or s["city"] in cfg.get("paper_only_cities", []):
             continue  # trial city: paper trades only until promoted

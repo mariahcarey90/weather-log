@@ -74,7 +74,7 @@ def main():
     # --- new entries
     taken = {(p["variant"], p["city"], p["marketDate"]) for p in paper.values()}
     for s in run:
-        if s.get("stability") == "Unsettled":
+        if s.get("stability") == "Unsettled" or s.get("stale"):
             continue
         best = {}
         for b in s.get("buckets", []):
