@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-19T21:45:40+00:00",
+ "fetched_at": "2026-10-20T00:09:32+00:00",
  "histFrom": 1609461635,
  "histEvents": 10979,
  "open": [
@@ -9,8 +9,8 @@
    "threshold": 5.5,
    "start": "2026-10-19T00:00:00-04:00",
    "end": "2026-10-26T00:00:00-04:00",
-   "volume": 2755.854405,
-   "liquidity": 9343.8184,
+   "volume": 2946.052291,
+   "liquidity": 10747.4057,
    "closed": false,
    "rules": "This market will resolve according to the total number of earthquakes with a magnitude of 5.5 or higher that occur anywhere on Earth between October 19, 2026, 12:00 AM ET and October 25, 2026, 11:59 PM ET.\n\nThe resolution source for this market is the United States Geological Survey (USGS) Earthquake Hazards Program, with the minimum magnitude set to 5.5 and the date parameters set to the relevant dates for this market's timeframe (https://earthquake.usgs.gov/earthquakes/search/).\n\nIf an earthquake of substantial size has occurred within this market's timeframe but not yet appeared on the resolution source, this market may remain open until 48 hours after the market's closing time, or until the earthquake in question otherwise appears on the resolution source. If such an earthquake has not appeared on the resolution source by that time, another credible resolution source will be used.\n\nThis market may not resolve until the timeframe of this market has concluded. If a qualifying earthquake has been recorded on the final day, this market may remain open for 24 hours to allow for revisions to the recorded magnitude. After 24 hours, this market will resolve according to the latest provided data.\n\nIf no earthquake data for this market's timeframe has been published on the resolution source by 48 hours after the market's closing time, this market will resolve to the lowest bracket.",
    "buckets": [
@@ -18,54 +18,54 @@
      "label": "\u22646",
      "lo": null,
      "hi": 6,
-     "yes": 0.075,
+     "yes": 0.08,
      "closed": false,
      "volume": 506.18616700000007,
      "depth": {
-      "best_ask": 0.11,
+      "best_ask": 0.12,
       "best_bid": 0.04,
-      "usd_at_best": 44.0,
-      "usd_within_1c": 44.0,
-      "usd_within_2c": 44.0,
-      "avg_fill_10": 0.11,
-      "avg_fill_25": 0.11,
-      "bid_usd_within_2c": 10.18
+      "usd_at_best": 48.0,
+      "usd_within_1c": 48.0,
+      "usd_within_2c": 48.0,
+      "avg_fill_10": 0.12,
+      "avg_fill_25": 0.12,
+      "bid_usd_within_2c": 18.25
      }
     },
     {
      "label": "7",
      "lo": 7,
      "hi": 7,
-     "yes": 0.08,
+     "yes": 0.065,
      "closed": false,
-     "volume": 275.874215,
+     "volume": 276.915865,
      "depth": {
-      "best_ask": 0.11,
-      "best_bid": 0.04,
-      "usd_at_best": 2.2,
-      "usd_within_1c": 50.2,
-      "usd_within_2c": 50.2,
-      "avg_fill_10": 0.1176,
-      "avg_fill_25": 0.119,
-      "bid_usd_within_2c": 19.45
+      "best_ask": 0.12,
+      "best_bid": 0.05,
+      "usd_at_best": 48.0,
+      "usd_within_1c": 48.0,
+      "usd_within_2c": 48.0,
+      "avg_fill_10": 0.12,
+      "avg_fill_25": 0.12,
+      "bid_usd_within_2c": 18.38
      }
     },
     {
      "label": "8",
      "lo": 8,
      "hi": 8,
-     "yes": 0.07,
+     "yes": 0.11,
      "closed": false,
-     "volume": 109.604023,
+     "volume": 161.83872300000002,
      "depth": {
-      "best_ask": 0.09,
-      "best_bid": 0.05,
-      "usd_at_best": 4.06,
-      "usd_within_1c": 4.06,
-      "usd_within_2c": 50.7,
-      "avg_fill_10": 0.1009,
-      "avg_fill_25": 0.1062,
-      "bid_usd_within_2c": 35.48
+      "best_ask": 0.13,
+      "best_bid": 0.09,
+      "usd_at_best": 7.8,
+      "usd_within_1c": 75.0,
+      "usd_within_2c": 75.0,
+      "avg_fill_10": 0.1321,
+      "avg_fill_25": 0.1367,
+      "bid_usd_within_2c": 58.26
      }
     },
     {
@@ -78,66 +78,66 @@
      "depth": {
       "best_ask": 0.14,
       "best_bid": 0.09,
-      "usd_at_best": 17.36,
-      "usd_within_1c": 89.36,
-      "usd_within_2c": 89.36,
+      "usd_at_best": 28.56,
+      "usd_within_1c": 88.56,
+      "usd_within_2c": 88.56,
       "avg_fill_10": 0.14,
-      "avg_fill_25": 0.1429,
-      "bid_usd_within_2c": 37.53
+      "avg_fill_25": 0.14,
+      "bid_usd_within_2c": 44.82
      }
     },
     {
      "label": "10",
      "lo": 10,
      "hi": 10,
-     "yes": 0.125,
+     "yes": 0.12,
      "closed": false,
      "volume": 202.0,
      "depth": {
-      "best_ask": 0.15,
+      "best_ask": 0.14,
       "best_bid": 0.1,
-      "usd_at_best": 3.0,
-      "usd_within_1c": 95.8,
-      "usd_within_2c": 95.8,
-      "avg_fill_10": 0.1569,
-      "avg_fill_25": 0.1587,
-      "bid_usd_within_2c": 52.8
+      "usd_at_best": 2.8,
+      "usd_within_1c": 98.82,
+      "usd_within_2c": 98.82,
+      "avg_fill_10": 0.1471,
+      "avg_fill_25": 0.1488,
+      "bid_usd_within_2c": 62.98
      }
     },
     {
      "label": "11",
      "lo": 11,
      "hi": 11,
-     "yes": 0.125,
+     "yes": 0.13,
      "closed": false,
      "volume": 186.775759,
      "depth": {
       "best_ask": 0.15,
-      "best_bid": 0.1,
-      "usd_at_best": 7.5,
-      "usd_within_1c": 84.3,
-      "usd_within_2c": 84.3,
-      "avg_fill_10": 0.1524,
-      "avg_fill_25": 0.1569,
-      "bid_usd_within_2c": 43.81
+      "best_bid": 0.12,
+      "usd_at_best": 15.75,
+      "usd_within_1c": 47.75,
+      "usd_within_2c": 115.75,
+      "avg_fill_10": 0.15,
+      "avg_fill_25": 0.1536,
+      "bid_usd_within_2c": 74.87
      }
     },
     {
      "label": "12",
      "lo": 12,
      "hi": 12,
-     "yes": 0.11,
+     "yes": 0.115,
      "closed": false,
-     "volume": 200.0,
+     "volume": 240.0,
      "depth": {
       "best_ask": 0.14,
-      "best_bid": 0.08,
-      "usd_at_best": 64.4,
-      "usd_within_1c": 64.4,
-      "usd_within_2c": 64.4,
+      "best_bid": 0.09,
+      "usd_at_best": 15.96,
+      "usd_within_1c": 90.96,
+      "usd_within_2c": 90.96,
       "avg_fill_10": 0.14,
-      "avg_fill_25": 0.14,
-      "bid_usd_within_2c": 36.8
+      "avg_fill_25": 0.1435,
+      "bid_usd_within_2c": 55.66
      }
     },
     {
@@ -148,32 +148,32 @@
      "closed": false,
      "volume": 100.0,
      "depth": {
-      "best_ask": 0.08,
+      "best_ask": 0.09,
       "best_bid": 0.03,
-      "usd_at_best": 1.6,
-      "usd_within_1c": 3.4,
-      "usd_within_2c": 3.4,
-      "avg_fill_10": 0.1,
-      "avg_fill_25": 0.1058,
-      "bid_usd_within_2c": 18.35
+      "usd_at_best": 5.4,
+      "usd_within_1c": 5.4,
+      "usd_within_2c": 49.4,
+      "avg_fill_10": 0.0982,
+      "avg_fill_25": 0.105,
+      "bid_usd_within_2c": 17.05
      }
     },
     {
      "label": "more than 13",
      "lo": 14,
      "hi": null,
-     "yes": 0.24,
+     "yes": 0.2,
      "closed": false,
-     "volume": 1025.414241,
+     "volume": 1122.335777,
      "depth": {
-      "best_ask": 0.26,
-      "best_bid": 0.22,
-      "usd_at_best": 57.8,
-      "usd_within_1c": 57.8,
-      "usd_within_2c": 57.8,
-      "avg_fill_10": 0.26,
-      "avg_fill_25": 0.26,
-      "bid_usd_within_2c": 115.06
+      "best_ask": 0.23,
+      "best_bid": 0.19,
+      "usd_at_best": 34.96,
+      "usd_within_1c": 34.96,
+      "usd_within_2c": 34.96,
+      "avg_fill_10": 0.23,
+      "avg_fill_25": 0.23,
+      "bid_usd_within_2c": 84.11
      }
     }
    ]
@@ -185,7 +185,7 @@
    "start": "2026-10-19T00:00:00-04:00",
    "end": "2026-10-26T00:00:00-04:00",
    "volume": 1447.6638309999998,
-   "liquidity": 6242.9137,
+   "liquidity": 7012.37087,
    "closed": false,
    "rules": "This market will resolve according to the total number of earthquakes with a magnitude of 6.5 or higher that occur anywhere on Earth between October 19, 2026, 12:00 AM ET and October 25, 2026, 11:59 PM ET.\n\nThe resolution source for this market is the United States Geological Survey (USGS) Earthquake Hazards Program, with the minimum magnitude set to 6.5 and the date parameters set to the relevant dates for this market's timeframe (https://earthquake.usgs.gov/earthquakes/search/).\n\nIf an earthquake of substantial size has occurred within this market's timeframe but not yet appeared on the resolution source, this market may remain open until 48 hours after the market's closing time, or until the earthquake in question otherwise appears on the resolution source. If such an earthquake has not appeared on the resolution source by that time, another credible resolution source will be used.\n\nThis market may not resolve until the timeframe of this market has concluded. If a qualifying earthquake has been recorded on the final day, this market may remain open for 24 hours to allow for revisions to the recorded magnitude. After 24 hours, this market will resolve according to the latest provided data.\n\nIf no earthquake data for this market's timeframe has been published on the resolution source by 48 hours after the market's closing time, this market will resolve to the lowest bracket.",
    "buckets": [
@@ -193,36 +193,36 @@
      "label": "0",
      "lo": 0,
      "hi": 0,
-     "yes": 0.46,
+     "yes": 0.465,
      "closed": false,
      "volume": 500.24511399999994,
      "depth": {
-      "best_ask": 0.48,
-      "best_bid": 0.44,
-      "usd_at_best": 85.39,
-      "usd_within_1c": 134.39,
-      "usd_within_2c": 294.39,
-      "avg_fill_10": 0.48,
-      "avg_fill_25": 0.48,
-      "bid_usd_within_2c": 29.54
+      "best_ask": 0.49,
+      "best_bid": 0.45,
+      "usd_at_best": 49.0,
+      "usd_within_1c": 259.0,
+      "usd_within_2c": 259.0,
+      "avg_fill_10": 0.49,
+      "avg_fill_25": 0.49,
+      "bid_usd_within_2c": 13.33
      }
     },
     {
      "label": "1",
      "lo": 1,
      "hi": 1,
-     "yes": 0.345,
+     "yes": 0.33,
      "closed": false,
      "volume": 294.34074499999997,
      "depth": {
-      "best_ask": 0.37,
-      "best_bid": 0.32,
-      "usd_at_best": 12.58,
-      "usd_within_1c": 66.42,
-      "usd_within_2c": 79.14,
-      "avg_fill_10": 0.37,
-      "avg_fill_25": 0.3749,
-      "bid_usd_within_2c": 189.73
+      "best_ask": 0.34,
+      "best_bid": 0.31,
+      "usd_at_best": 27.74,
+      "usd_within_1c": 27.74,
+      "usd_within_2c": 27.74,
+      "avg_fill_10": 0.34,
+      "avg_fill_25": 0.34,
+      "bid_usd_within_2c": 174.65
      }
     },
     {
@@ -234,13 +234,13 @@
      "volume": 161.678242,
      "depth": {
       "best_ask": 0.18,
-      "best_bid": 0.13,
-      "usd_at_best": 30.54,
-      "usd_within_1c": 49.54,
-      "usd_within_2c": 52.01,
-      "avg_fill_10": 0.18,
-      "avg_fill_25": 0.18,
-      "bid_usd_within_2c": 61.48
+      "best_bid": 0.12,
+      "usd_at_best": 3.6,
+      "usd_within_1c": 18.8,
+      "usd_within_2c": 26.07,
+      "avg_fill_10": 0.1863,
+      "avg_fill_25": 0.1908,
+      "bid_usd_within_2c": 64.15
      }
     },
     {
@@ -253,12 +253,12 @@
      "depth": {
       "best_ask": 0.11,
       "best_bid": 0.04,
-      "usd_at_best": 20.9,
-      "usd_within_1c": 20.9,
-      "usd_within_2c": 27.14,
-      "avg_fill_10": 0.11,
-      "avg_fill_25": 0.1128,
-      "bid_usd_within_2c": 20.25
+      "usd_at_best": 9.9,
+      "usd_within_1c": 9.9,
+      "usd_within_2c": 11.2,
+      "avg_fill_10": 0.1102,
+      "avg_fill_25": 0.1259,
+      "bid_usd_within_2c": 19.65
      }
     },
     {
@@ -271,12 +271,12 @@
      "depth": {
       "best_ask": 0.059,
       "best_bid": 0.011,
-      "usd_at_best": 7.08,
-      "usd_within_1c": 8.28,
-      "usd_within_2c": 36.28,
-      "avg_fill_10": 0.0608,
-      "avg_fill_25": 0.066,
-      "bid_usd_within_2c": 1.35
+      "usd_at_best": 5.9,
+      "usd_within_1c": 7.1,
+      "usd_within_2c": 35.1,
+      "avg_fill_10": 0.0619,
+      "avg_fill_25": 0.0665,
+      "bid_usd_within_2c": 1.41
      }
     },
     {
@@ -306,7 +306,7 @@
    "start": "2026-01-01T00:00:00-05:00",
    "end": "2027-01-01T00:00:00-05:00",
    "volume": 1477696.8733699995,
-   "liquidity": 2620.9009,
+   "liquidity": 2420.17986,
    "closed": false,
    "rules": "This market will resolve according to the total number of earthquakes with a magnitude of 7.0 or higher that occur anywhere on Earth between January 1 and December 31, 2026, 11:59 PM ET.\n\nThe resolution source for this market is the United States Geological Survey (USGS) Earthquake Hazards Program (https://earthquake.usgs.gov/earthquakes/browse/significant.php#sigdef).\n\nIf an earthquake of substantial size has occurred within this market's timeframe but not yet appeared on the resolution source, this market may remain open until January 7, 2027, 11:59 PM ET, or until the earthquake in question otherwise appears on the resolution source. If such an earthquake has not appeared on the resolution source by that date, another credible resolution source will be used.",
    "buckets": [
@@ -341,18 +341,18 @@
      "label": "11\u201313",
      "lo": 11,
      "hi": 13,
-     "yes": 0.205,
+     "yes": 0.175,
      "closed": false,
      "volume": 421060.885435,
      "depth": {
-      "best_ask": 0.29,
-      "best_bid": 0.14,
-      "usd_at_best": 17.93,
-      "usd_within_1c": 32.27,
-      "usd_within_2c": 32.27,
-      "avg_fill_10": 0.29,
-      "avg_fill_25": 0.2928,
-      "bid_usd_within_2c": 17.84
+      "best_ask": 0.22,
+      "best_bid": 0.11,
+      "usd_at_best": 15.4,
+      "usd_within_1c": 15.4,
+      "usd_within_2c": 15.4,
+      "avg_fill_10": 0.22,
+      "avg_fill_25": 0.2451,
+      "bid_usd_within_2c": 8.8
      }
     },
     {
@@ -410,8 +410,8 @@
    "threshold": 6.5,
    "start": "2026-10-12T00:00:00-04:00",
    "end": "2026-10-19T00:00:00-04:00",
-   "volume": 12779.517719000001,
-   "liquidity": 13181.7079,
+   "volume": 14652.018196,
+   "liquidity": 8633.86847,
    "closed": false,
    "rules": "This market will resolve according to the total number of earthquakes with a magnitude of 6.5 or higher that occur anywhere on Earth between October 12, 2026, 12:00 AM ET and October 18, 2026, 11:59 PM ET.\n\nThe resolution source for this market is the United States Geological Survey (USGS) Earthquake Hazards Program, with the minimum magnitude set to 6.5 and the date parameters set to the relevant dates for this market's timeframe (https://earthquake.usgs.gov/earthquakes/search/).\n\nIf an earthquake of substantial size has occurred within this market's timeframe but not yet appeared on the resolution source, this market may remain open until 48 hours after the market's closing time, or until the earthquake in question otherwise appears on the resolution source. If such an earthquake has not appeared on the resolution source by that time, this market will resolve according to the data published at that time.\n\nThis market may not resolve until the timeframe of this market has concluded. If a qualifying earthquake has been recorded on the final day, this market may remain open for 24 hours to allow for revisions to the recorded magnitude. After 24 hours, this market will resolve according to the latest provided data.\n\nIf no earthquake data for this market's timeframe has been published on the resolution source by 48 hours after the market's closing time, this market will resolve to the lowest bracket.",
    "buckets": [
@@ -419,67 +419,67 @@
      "label": "0",
      "lo": 0,
      "hi": 0,
-     "yes": 0.001,
+     "yes": 0.0035,
      "closed": false,
-     "volume": 3105.172243,
+     "volume": 3340.725577,
      "depth": null
     },
     {
      "label": "1",
      "lo": 1,
      "hi": 1,
-     "yes": 0.0015,
+     "yes": 0.0025,
      "closed": false,
-     "volume": 3703.3410710000003,
+     "volume": 3953.3410710000003,
      "depth": null
     },
     {
      "label": "2",
      "lo": 2,
      "hi": 2,
-     "yes": 0.003,
+     "yes": 0.0045,
      "closed": false,
-     "volume": 2555.737164,
+     "volume": 2698.5943070000003,
      "depth": null
     },
     {
      "label": "3",
      "lo": 3,
      "hi": 3,
-     "yes": 0.999,
+     "yes": 0.935,
      "closed": false,
-     "volume": 1659.921725,
+     "volume": 1930.2517249999999,
      "depth": null
     },
     {
      "label": "4",
      "lo": 4,
      "hi": 4,
-     "yes": 0.001,
+     "yes": 0.1,
      "closed": false,
-     "volume": 382.89232000000004,
+     "volume": 682.89232,
      "depth": null
     },
     {
      "label": "5",
      "lo": 5,
      "hi": 5,
-     "yes": 0.001,
+     "yes": 0.0395,
      "closed": false,
-     "volume": 925.023196,
+     "volume": 1225.023196,
      "depth": null
     },
     {
      "label": "more than 5",
      "lo": 6,
      "hi": null,
-     "yes": 0.0005,
+     "yes": 0.025,
      "closed": false,
-     "volume": 447.43000000000006,
+     "volume": 821.19,
      "depth": null
     }
    ],
-   "winner": "3",
+   "winner": null,
    "countUSGS": 3
   },
   {
