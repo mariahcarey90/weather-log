@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-22T12:09:34+00:00",
+ "fetched_at": "2026-10-22T14:43:12+00:00",
  "open": [
   {
    "slug": "precipitation-in-seoul-in-october-20260925t160000000z",
@@ -11,17 +11,17 @@
    "last": "2026-10-31",
    "tz": "Asia/Seoul",
    "localToday": "2026-10-22",
-   "volume": 47912.864731999995,
-   "liquidity": 7576.75932,
+   "volume": 48174.284732,
+   "liquidity": 7257.52927,
    "rules": "This market will resolve according to the total precipitation in mm in Seoul in October, 2026, according to the Korea Meteorological Administration's information for the region/branch of \"Seoul\".\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nThe resolution source for this market will be the Korea Meteorological Administration, specifically the figure for monthly precipitation in mm when the classification is set for \"ground\", the region/branch is set for \"Seoul\", the element is set for \"precipitation\", and the period is set for the month of October at the https://data.kma.go.kr/climate/RankState/selectRankStatisticsDivisionList.do link once the figure is finalized for the whole month of October 2026.\n\nIf the relevant data is not available by January 7, 2027, 11:59 PM ET, another credible resolution source will be chosen.\n\nThe resolution source for this market measures precipitation to 1 decimal place (e.g., 1.5), thus, this is the level of precision that will be used when resolving this market. Any revisions to precipitation recorded after data is finalized for this market's timeframe will not be considered for this market's resolution.",
    "buckets": [
     {
      "label": "<20mm",
      "lo": null,
      "hi": 20.0,
-     "yes": 0.0055,
+     "yes": 0.0045,
      "closed": false,
-     "volume": 9978.309468,
+     "volume": 10099.379468,
      "depth": null
     },
     {
@@ -30,16 +30,16 @@
      "hi": 30.0,
      "yes": 0.0055,
      "closed": false,
-     "volume": 4622.472508,
+     "volume": 4624.472508,
      "depth": null
     },
     {
      "label": "30-40mm",
      "lo": 30.0,
      "hi": 40.0,
-     "yes": 0.007,
+     "yes": 0.005,
      "closed": false,
-     "volume": 5164.20753,
+     "volume": 5228.8675299999995,
      "depth": null
     },
     {
@@ -55,45 +55,45 @@
      "label": "50-70mm",
      "lo": 50.0,
      "hi": 70.0,
-     "yes": 0.0045,
+     "yes": 0.003,
      "closed": false,
-     "volume": 7379.030329,
+     "volume": 7432.720329,
      "depth": null
     },
     {
      "label": "70-85mm",
      "lo": 70.0,
      "hi": 85.0,
-     "yes": 0.6375,
+     "yes": 0.5965,
      "closed": false,
-     "volume": 5018.990426999999,
+     "volume": 5038.990426999999,
      "depth": {
-      "best_ask": 0.676,
-      "best_bid": 0.606,
-      "usd_at_best": 13.52,
-      "usd_within_1c": 27.06,
-      "usd_within_2c": 112.07,
-      "avg_fill_10": 0.676,
-      "avg_fill_25": 0.6765,
-      "bid_usd_within_2c": 36.22
+      "best_ask": 0.686,
+      "best_bid": 0.507,
+      "usd_at_best": 35.09,
+      "usd_within_1c": 84.61,
+      "usd_within_2c": 84.61,
+      "avg_fill_10": 0.686,
+      "avg_fill_25": 0.686,
+      "bid_usd_within_2c": 10.14
      }
     },
     {
      "label": "85mm+",
      "lo": 85.0,
      "hi": null,
-     "yes": 0.335,
+     "yes": 0.415,
      "closed": false,
      "volume": 9129.756880999998,
      "depth": {
-      "best_ask": 0.36,
-      "best_bid": 0.31,
-      "usd_at_best": 36.0,
-      "usd_within_1c": 72.54,
-      "usd_within_2c": 72.54,
-      "avg_fill_10": 0.36,
-      "avg_fill_25": 0.36,
-      "bid_usd_within_2c": 24.8
+      "best_ask": 0.51,
+      "best_bid": 0.32,
+      "usd_at_best": 79.66,
+      "usd_within_1c": 86.32,
+      "usd_within_2c": 86.32,
+      "avg_fill_10": 0.51,
+      "avg_fill_25": 0.51,
+      "bid_usd_within_2c": 19.2
      }
     }
    ],
@@ -1483,7 +1483,7 @@
    "tz": "Europe/London",
    "localToday": "2026-10-22",
    "volume": 37750.883939,
-   "liquidity": 2737.3604,
+   "liquidity": 2003.73508,
    "rules": "This market will resolve according to the total precipitation in mm at Heathrow (London Airport) in October, 2026, according to the Met Office.\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nThe resolution source for this market will be the Met Office, specifically the figure for October 2026 under \"rain mm\" at the https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/heathrowdata.txt link once the Provisional figure for the whole month of October 2026 is released.\n\nIf the relevant data is not available by January 7, 2027, 11:59 PM ET, another credible resolution source will be chosen.\n\nThe resolution source for this market measures precipitation to 1 decimal place (e.g., 1.5), thus, this is the level of precision that will be used when resolving this market. Any revisions to precipitation recorded after Provisional data is released for this market's timeframe will not be considered for this market's resolution.",
    "buckets": [
     {
@@ -1499,8 +1499,8 @@
       "usd_at_best": 4.25,
       "usd_within_1c": 4.25,
       "usd_within_2c": 7.61,
-      "avg_fill_10": 0.0826,
-      "avg_fill_25": 0.1446,
+      "avg_fill_10": 0.0808,
+      "avg_fill_25": 0.1303,
       "bid_usd_within_2c": 0.81
      }
     },
@@ -1508,36 +1508,36 @@
      "label": "35-45mm",
      "lo": 35.0,
      "hi": 45.0,
-     "yes": 0.0345,
+     "yes": 0.035,
      "closed": false,
      "volume": 8027.399112,
      "depth": {
-      "best_ask": 0.059,
+      "best_ask": 0.06,
       "best_bid": 0.01,
-      "usd_at_best": 5.9,
-      "usd_within_1c": 14.37,
-      "usd_within_2c": 14.37,
-      "avg_fill_10": 0.0594,
-      "avg_fill_25": 0.0703,
-      "bid_usd_within_2c": 3.44
+      "usd_at_best": 8.47,
+      "usd_within_1c": 8.47,
+      "usd_within_2c": 8.47,
+      "avg_fill_10": 0.0641,
+      "avg_fill_25": 0.0901,
+      "bid_usd_within_2c": 3.49
      }
     },
     {
      "label": "45-60mm",
      "lo": 45.0,
      "hi": 60.0,
-     "yes": 0.13,
+     "yes": 0.155,
      "closed": false,
      "volume": 4991.892204,
      "depth": {
-      "best_ask": 0.18,
+      "best_ask": 0.3,
       "best_bid": 0.08,
-      "usd_at_best": 22.42,
-      "usd_within_1c": 22.42,
-      "usd_within_2c": 22.42,
-      "avg_fill_10": 0.18,
-      "avg_fill_25": 0.1848,
-      "bid_usd_within_2c": 5.03
+      "usd_at_best": 25.48,
+      "usd_within_1c": 44.08,
+      "usd_within_2c": 44.08,
+      "avg_fill_10": 0.3,
+      "avg_fill_25": 0.3,
+      "bid_usd_within_2c": 8.53
      }
     },
     {
@@ -1548,49 +1548,49 @@
      "closed": false,
      "volume": 2143.6493410000003,
      "depth": {
-      "best_ask": 0.079,
-      "best_bid": 0.012,
-      "usd_at_best": 3.56,
-      "usd_within_1c": 6.81,
-      "usd_within_2c": 6.81,
-      "avg_fill_10": 0.1006,
-      "avg_fill_25": 0.1894,
-      "bid_usd_within_2c": 3.52
+      "best_ask": 0.08,
+      "best_bid": 0.011,
+      "usd_at_best": 3.6,
+      "usd_within_1c": 3.6,
+      "usd_within_2c": 3.6,
+      "avg_fill_10": 0.1477,
+      "avg_fill_25": 0.2674,
+      "bid_usd_within_2c": 3.35
      }
     },
     {
      "label": "70-85mm",
      "lo": 70.0,
      "hi": 85.0,
-     "yes": 0.414,
+     "yes": 0.41,
      "closed": false,
      "volume": 4473.645743,
      "depth": {
-      "best_ask": 0.624,
-      "best_bid": 0.204,
-      "usd_at_best": 126.2,
-      "usd_within_1c": 138.72,
-      "usd_within_2c": 138.72,
-      "avg_fill_10": 0.624,
-      "avg_fill_25": 0.624,
-      "bid_usd_within_2c": 15.38
+      "best_ask": 0.614,
+      "best_bid": 0.206,
+      "usd_at_best": 97.19,
+      "usd_within_1c": 102.11,
+      "usd_within_2c": 102.11,
+      "avg_fill_10": 0.614,
+      "avg_fill_25": 0.614,
+      "bid_usd_within_2c": 21.52
      }
     },
     {
      "label": "85-110mm",
      "lo": 85.0,
      "hi": 110.0,
-     "yes": 0.401,
+     "yes": 0.4835,
      "closed": false,
      "volume": 3879.492704,
      "depth": {
-      "best_ask": 0.523,
+      "best_ask": 0.688,
       "best_bid": 0.279,
-      "usd_at_best": 82.64,
-      "usd_within_1c": 87.88,
-      "usd_within_2c": 87.88,
-      "avg_fill_10": 0.523,
-      "avg_fill_25": 0.523,
+      "usd_at_best": 162.53,
+      "usd_within_1c": 186.73,
+      "usd_within_2c": 186.73,
+      "avg_fill_10": 0.688,
+      "avg_fill_25": 0.688,
       "bid_usd_within_2c": 5.58
      }
     },
@@ -1598,18 +1598,18 @@
      "label": "110mm+",
      "lo": 110.0,
      "hi": null,
-     "yes": 0.0495,
+     "yes": 0.0455,
      "closed": false,
      "volume": 1337.9156839999998,
      "depth": {
-      "best_ask": 0.088,
-      "best_bid": 0.011,
-      "usd_at_best": 5.02,
-      "usd_within_1c": 5.02,
-      "usd_within_2c": 5.02,
-      "avg_fill_10": 0.108,
-      "avg_fill_25": 0.1977,
-      "bid_usd_within_2c": 13.67
+      "best_ask": 0.085,
+      "best_bid": 0.006,
+      "usd_at_best": 3.15,
+      "usd_within_1c": 3.15,
+      "usd_within_2c": 7.19,
+      "avg_fill_10": 0.1223,
+      "avg_fill_25": 0.2354,
+      "bid_usd_within_2c": 11.94
      }
     }
    ],
@@ -2998,79 +2998,70 @@
    "last": "2026-10-31",
    "tz": "America/Los_Angeles",
    "localToday": "2026-10-22",
-   "volume": 34490.102206,
-   "liquidity": 4335.85997,
+   "volume": 34536.152206,
+   "liquidity": 3612.77658,
    "rules": "This market will resolve according to the total precipitation in inches in Seattle between October 1 and October 31, 2026, 11:59PM ET according to the National Oceanic and Atmospheric Administration (NOAA).\n\nIf the reported data falls exactly between two brackets, this market will resolve to the higher bracket.\n\nThe resolution source for this market will be NOAA, specifically the figure for October 2026 when the \"Monthly summarized data\" for \"Seattle City Area\" is selected with the variable set to \"Precipitation\" at the https://www.weather.gov/wrh/climate?wfo=sew link once that figure is finalized for the whole month of October 2026.\n\nIf the relevant data is not available by January 7, 2027, 11:59 PM ET, another credible resolution source will be chosen.\n\nThe resolution source for this market measures precipitation to 2 decimal places (e.g., 1.54), thus, this is the level of precision that will be used when resolving this market. Any revisions to precipitation recorded after data is finalized for this market's timeframe will not be considered for this market's resolution.",
    "buckets": [
     {
      "label": "<1.75\"",
      "lo": null,
      "hi": 1.75,
-     "yes": 0.74,
+     "yes": 0.76,
      "closed": false,
-     "volume": 11472.090692000002,
+     "volume": 11477.080692000001,
      "depth": {
-      "best_ask": 0.76,
-      "best_bid": 0.72,
-      "usd_at_best": 15.2,
-      "usd_within_1c": 30.6,
-      "usd_within_2c": 30.6,
-      "avg_fill_10": 0.76,
-      "avg_fill_25": 0.7639,
-      "bid_usd_within_2c": 91.64
+      "best_ask": 0.85,
+      "best_bid": 0.67,
+      "usd_at_best": 8.5,
+      "usd_within_1c": 15.38,
+      "usd_within_2c": 32.78,
+      "avg_fill_10": 0.8515,
+      "avg_fill_25": 0.8604,
+      "bid_usd_within_2c": 138.23
      }
     },
     {
      "label": "1.75-2.5\"",
      "lo": 1.75,
      "hi": 2.5,
-     "yes": 0.215,
+     "yes": 0.245,
      "closed": false,
      "volume": 7016.709182,
      "depth": {
-      "best_ask": 0.28,
-      "best_bid": 0.15,
-      "usd_at_best": 2.8,
-      "usd_within_1c": 49.69,
-      "usd_within_2c": 49.69,
-      "avg_fill_10": 0.2871,
-      "avg_fill_25": 0.2888,
-      "bid_usd_within_2c": 13.3
+      "best_ask": 0.33,
+      "best_bid": 0.16,
+      "usd_at_best": 81.19,
+      "usd_within_1c": 103.29,
+      "usd_within_2c": 103.29,
+      "avg_fill_10": 0.33,
+      "avg_fill_25": 0.33,
+      "bid_usd_within_2c": 2.63
      }
     },
     {
      "label": "2.5-3\"",
      "lo": 2.5,
      "hi": 3.0,
-     "yes": 0.026,
+     "yes": 0.0155,
      "closed": false,
-     "volume": 4334.620102,
-     "depth": {
-      "best_ask": 0.049,
-      "best_bid": 0.003,
-      "usd_at_best": 0.9,
-      "usd_within_1c": 3.0,
-      "usd_within_2c": 4.2,
-      "avg_fill_10": 0.0857,
-      "avg_fill_25": 0.1481,
-      "bid_usd_within_2c": 2.52
-     }
+     "volume": 4354.620102,
+     "depth": null
     },
     {
      "label": "3-3.75\"",
      "lo": 3.0,
      "hi": 3.75,
-     "yes": 0.022,
+     "yes": 0.021,
      "closed": false,
      "volume": 6080.123926999999,
      "depth": {
-      "best_ask": 0.041,
+      "best_ask": 0.039,
       "best_bid": 0.003,
-      "usd_at_best": 6.5,
-      "usd_within_1c": 8.19,
-      "usd_within_2c": 8.19,
-      "avg_fill_10": 0.0447,
-      "avg_fill_25": 0.0775,
+      "usd_at_best": 0.78,
+      "usd_within_1c": 2.36,
+      "usd_within_2c": 2.36,
+      "avg_fill_10": 0.0748,
+      "avg_fill_25": 0.1433,
       "bid_usd_within_2c": 3.44
      }
     },
@@ -3080,7 +3071,7 @@
      "hi": 4.75,
      "yes": 0.005,
      "closed": false,
-     "volume": 1982.189219,
+     "volume": 2003.249219,
      "depth": null
     },
     {
@@ -4405,8 +4396,8 @@
    "last": "2026-10-31",
    "tz": "Asia/Hong_Kong",
    "localToday": "2026-10-22",
-   "volume": 58623.739861999995,
-   "liquidity": 9020.71343,
+   "volume": 58680.93986199999,
+   "liquidity": 6868.25554,
    "rules": "This market will resolve according to the total precipitation in mm in Hong Kong between October 1 and October 31, 2026, according to the Hong Kong Observatory.\n\nIf the reported data falls exactly between two brackets, this market will resolve to the higher bracket.\n\nThe resolution source for this market will be the Hong Kong Observatory, specifically the \"Total Rainfall (mm)\" figure for all days in October 2026 under the \"Daily Extract\" at the https://www.weather.gov.hk/en/cis/climat.htm link once figures are finalized for the specified range.\n\nIf the relevant data is not available by January 7, 2027, 11:59 PM ET, another credible resolution source will be chosen.\n\nThe resolution source for this market measures precipitation to 1 decimal place (e.g., 1.5), thus, this is the level of precision that will be used when resolving this market. Any revisions to precipitation recorded after data is finalized for this market's timeframe will not be considered for this market's resolution.",
    "buckets": [
     {
@@ -4449,45 +4440,36 @@
      "label": "70-120mm",
      "lo": 70.0,
      "hi": 120.0,
-     "yes": 0.9615,
+     "yes": 0.964,
      "closed": false,
      "volume": 28256.540107999997,
      "depth": {
       "best_ask": 0.986,
-      "best_bid": 0.937,
+      "best_bid": 0.942,
       "usd_at_best": 89.87,
-      "usd_within_1c": 4128.46,
-      "usd_within_2c": 4323.26,
+      "usd_within_1c": 4209.48,
+      "usd_within_2c": 10353.33,
       "avg_fill_10": 0.986,
       "avg_fill_25": 0.986,
-      "bid_usd_within_2c": 9.37
+      "bid_usd_within_2c": 17.9
      }
     },
     {
      "label": "120-210mm",
      "lo": 120.0,
      "hi": 210.0,
-     "yes": 0.0245,
+     "yes": 0.0125,
      "closed": false,
      "volume": 14096.166524999995,
-     "depth": {
-      "best_ask": 0.044,
-      "best_bid": 0.005,
-      "usd_at_best": 3.92,
-      "usd_within_1c": 5.5,
-      "usd_within_2c": 10.88,
-      "avg_fill_10": 0.0502,
-      "avg_fill_25": 0.0776,
-      "bid_usd_within_2c": 6.68
-     }
+     "depth": null
     },
     {
      "label": "210mm+",
      "lo": 210.0,
      "hi": null,
-     "yes": 0.0145,
+     "yes": 0.012,
      "closed": false,
-     "volume": 4060.6023730000006,
+     "volume": 4117.802373,
      "depth": null
     }
    ],
@@ -5876,26 +5858,26 @@
    "last": "2026-10-31",
    "tz": "America/New_York",
    "localToday": "2026-10-22",
-   "volume": 41192.88735,
-   "liquidity": 9020.24832,
+   "volume": 41292.68735,
+   "liquidity": 3089.67127,
    "rules": "This market will resolve according to the total precipitation in inches in Central Park, New York City between October 1 and October 31, 2026, 11:59PM ET according to the National Oceanic and Atmospheric Administration (NOAA).\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nThe resolution source for this market will be NOAA, specifically the figure for October 2026 when the \"Monthly summarized data\" for \"Central Park NY\" is selected with the variable set to \"Precipitation\" at the https://www.weather.gov/wrh/climate?wfo=okx link once that figure is finalized for the whole month of October 2026.\n\nIf the relevant data is not available by January 7, 2027, 11:59 PM ET, another credible resolution source will be chosen.\n\nThe resolution source for this market measures precipitation to 2 decimal places (e.g., 1.54), thus, this is the level of precision that will be used when resolving this market. Any revisions to precipitation recorded after data is finalized for this market's timeframe will not be considered for this market's resolution.",
    "buckets": [
     {
      "label": "<3\"",
      "lo": null,
      "hi": 3.0,
-     "yes": 0.885,
+     "yes": 0.895,
      "closed": false,
-     "volume": 22045.526853,
+     "volume": 22145.326853,
      "depth": {
-      "best_ask": 0.89,
-      "best_bid": 0.88,
-      "usd_at_best": 103.52,
-      "usd_within_1c": 193.52,
-      "usd_within_2c": 253.58,
-      "avg_fill_10": 0.89,
-      "avg_fill_25": 0.89,
-      "bid_usd_within_2c": 548.96
+      "best_ask": 0.9,
+      "best_bid": 0.89,
+      "usd_at_best": 77.59,
+      "usd_within_1c": 96.7,
+      "usd_within_2c": 116.02,
+      "avg_fill_10": 0.9,
+      "avg_fill_25": 0.9,
+      "bid_usd_within_2c": 68.1
      }
     },
     {
@@ -5906,14 +5888,14 @@
      "closed": false,
      "volume": 9737.899595,
      "depth": {
-      "best_ask": 0.089,
-      "best_bid": 0.012,
-      "usd_at_best": 7.14,
-      "usd_within_1c": 11.61,
-      "usd_within_2c": 11.61,
-      "avg_fill_10": 0.0893,
-      "avg_fill_25": 0.1005,
-      "bid_usd_within_2c": 4.9
+      "best_ask": 0.09,
+      "best_bid": 0.011,
+      "usd_at_best": 4.47,
+      "usd_within_1c": 9.95,
+      "usd_within_2c": 10.48,
+      "avg_fill_10": 0.0953,
+      "avg_fill_25": 0.1247,
+      "bid_usd_within_2c": 4.53
      }
     },
     {
@@ -5938,7 +5920,7 @@
      "label": "5.25-6.25\"",
      "lo": 5.25,
      "hi": 6.25,
-     "yes": 0.0095,
+     "yes": 0.0105,
      "closed": false,
      "volume": 1116.924007,
      "depth": null
