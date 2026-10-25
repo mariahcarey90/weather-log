@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-25T06:08:28+00:00",
+ "fetched_at": "2026-10-25T08:46:08+00:00",
  "open": [
   {
    "slug": "precipitation-in-london-in-october-20260925t160000000z",
@@ -12,7 +12,7 @@
    "tz": "Europe/London",
    "localToday": "2026-10-25",
    "volume": 43911.181437,
-   "liquidity": 3803.19814,
+   "liquidity": 4242.2181,
    "rules": "This market will resolve according to the total precipitation in mm at Heathrow (London Airport) in October, 2026, according to the Met Office.\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nThe resolution source for this market will be the Met Office, specifically the figure for October 2026 under \"rain mm\" at the https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/heathrowdata.txt link once the Provisional figure for the whole month of October 2026 is released.\n\nIf the relevant data is not available by January 7, 2027, 11:59 PM ET, another credible resolution source will be chosen.\n\nThe resolution source for this market measures precipitation to 1 decimal place (e.g., 1.5), thus, this is the level of precision that will be used when resolving this market. Any revisions to precipitation recorded after Provisional data is released for this market's timeframe will not be considered for this market's resolution.",
    "buckets": [
     {
@@ -28,7 +28,7 @@
      "label": "35-45mm",
      "lo": 35.0,
      "hi": 45.0,
-     "yes": 0.01,
+     "yes": 0.008,
      "closed": false,
      "volume": 8596.598445,
      "depth": null
@@ -37,18 +37,18 @@
      "label": "45-60mm",
      "lo": 45.0,
      "hi": 60.0,
-     "yes": 0.0365,
+     "yes": 0.037,
      "closed": false,
      "volume": 5773.69187,
      "depth": {
       "best_ask": 0.07,
-      "best_bid": 0.003,
+      "best_bid": 0.004,
       "usd_at_best": 1.14,
       "usd_within_1c": 1.14,
       "usd_within_2c": 24.53,
       "avg_fill_10": 0.0838,
-      "avg_fill_25": 0.0856,
-      "bid_usd_within_2c": 1.64
+      "avg_fill_25": 0.0854,
+      "bid_usd_within_2c": 2.24
      }
     },
     {
@@ -64,36 +64,36 @@
      "label": "70-85mm",
      "lo": 70.0,
      "hi": 85.0,
-     "yes": 0.373,
+     "yes": 0.485,
      "closed": false,
      "volume": 6167.725492,
      "depth": {
-      "best_ask": 0.618,
-      "best_bid": 0.128,
-      "usd_at_best": 128.28,
-      "usd_within_1c": 128.28,
-      "usd_within_2c": 128.28,
-      "avg_fill_10": 0.618,
-      "avg_fill_25": 0.618,
-      "bid_usd_within_2c": 24.64
+      "best_ask": 0.586,
+      "best_bid": 0.384,
+      "usd_at_best": 107.67,
+      "usd_within_1c": 118.23,
+      "usd_within_2c": 118.23,
+      "avg_fill_10": 0.586,
+      "avg_fill_25": 0.586,
+      "bid_usd_within_2c": 21.29
      }
     },
     {
      "label": "85-110mm",
      "lo": 85.0,
      "hi": 110.0,
-     "yes": 0.4105,
+     "yes": 0.4315,
      "closed": false,
      "volume": 5052.492704,
      "depth": {
-      "best_ask": 0.491,
-      "best_bid": 0.33,
-      "usd_at_best": 9.82,
-      "usd_within_1c": 9.82,
-      "usd_within_2c": 9.82,
-      "avg_fill_10": 0.4939,
-      "avg_fill_25": 0.6115,
-      "bid_usd_within_2c": 25.24
+      "best_ask": 0.476,
+      "best_bid": 0.387,
+      "usd_at_best": 9.52,
+      "usd_within_1c": 9.52,
+      "usd_within_2c": 9.52,
+      "avg_fill_10": 0.4775,
+      "avg_fill_25": 0.4965,
+      "bid_usd_within_2c": 7.74
      }
     },
     {
@@ -109,8 +109,8 @@
       "usd_at_best": 0.39,
       "usd_within_1c": 1.39,
       "usd_within_2c": 1.39,
-      "avg_fill_10": 0.0996,
-      "avg_fill_25": 0.1982,
+      "avg_fill_10": 0.0923,
+      "avg_fill_25": 0.1819,
       "bid_usd_within_2c": 1.74
      }
     }
@@ -1403,70 +1403,70 @@
    "first": "2026-10-01",
    "last": "2026-10-31",
    "tz": "America/Los_Angeles",
-   "localToday": "2026-10-24",
-   "volume": 38660.006729,
-   "liquidity": 4635.50422,
+   "localToday": "2026-10-25",
+   "volume": 39054.303987,
+   "liquidity": 4516.58858,
    "rules": "This market will resolve according to the total precipitation in inches in Seattle between October 1 and October 31, 2026, 11:59PM ET according to the National Oceanic and Atmospheric Administration (NOAA).\n\nIf the reported data falls exactly between two brackets, this market will resolve to the higher bracket.\n\nThe resolution source for this market will be NOAA, specifically the figure for October 2026 when the \"Monthly summarized data\" for \"Seattle City Area\" is selected with the variable set to \"Precipitation\" at the https://www.weather.gov/wrh/climate?wfo=sew link once that figure is finalized for the whole month of October 2026.\n\nIf the relevant data is not available by January 7, 2027, 11:59 PM ET, another credible resolution source will be chosen.\n\nThe resolution source for this market measures precipitation to 2 decimal places (e.g., 1.54), thus, this is the level of precision that will be used when resolving this market. Any revisions to precipitation recorded after data is finalized for this market's timeframe will not be considered for this market's resolution.",
    "buckets": [
     {
      "label": "<1.75\"",
      "lo": null,
      "hi": 1.75,
-     "yes": 0.655,
+     "yes": 0.665,
      "closed": false,
-     "volume": 13411.250028,
+     "volume": 13701.811911,
      "depth": {
-      "best_ask": 0.69,
-      "best_bid": 0.63,
-      "usd_at_best": 41.4,
-      "usd_within_1c": 41.4,
-      "usd_within_2c": 41.4,
-      "avg_fill_10": 0.69,
-      "avg_fill_25": 0.69,
-      "bid_usd_within_2c": 37.8
+      "best_ask": 0.76,
+      "best_bid": 0.57,
+      "usd_at_best": 36.41,
+      "usd_within_1c": 201.42,
+      "usd_within_2c": 207.66,
+      "avg_fill_10": 0.76,
+      "avg_fill_25": 0.76,
+      "bid_usd_within_2c": 47.86
      }
     },
     {
      "label": "1.75-2.5\"",
      "lo": 1.75,
      "hi": 2.5,
-     "yes": 0.295,
+     "yes": 0.3,
      "closed": false,
-     "volume": 8414.704369,
+     "volume": 8477.629744,
      "depth": {
-      "best_ask": 0.4,
+      "best_ask": 0.37,
       "best_bid": 0.23,
-      "usd_at_best": 42.81,
-      "usd_within_1c": 73.56,
-      "usd_within_2c": 81.96,
-      "avg_fill_10": 0.4,
-      "avg_fill_25": 0.4,
-      "bid_usd_within_2c": 10.49
+      "usd_at_best": 7.4,
+      "usd_within_1c": 7.4,
+      "usd_within_2c": 7.4,
+      "avg_fill_10": 0.3839,
+      "avg_fill_25": 0.4103,
+      "bid_usd_within_2c": 12.89
      }
     },
     {
      "label": "2.5-3\"",
      "lo": 2.5,
      "hi": 3.0,
-     "yes": 0.0275,
+     "yes": 0.028,
      "closed": false,
-     "volume": 4800.630102,
+     "volume": 4841.4401020000005,
      "depth": {
       "best_ask": 0.05,
-      "best_bid": 0.005,
-      "usd_at_best": 15.0,
-      "usd_within_1c": 15.0,
-      "usd_within_2c": 15.0,
+      "best_bid": 0.006,
+      "usd_at_best": 13.98,
+      "usd_within_1c": 13.98,
+      "usd_within_2c": 13.98,
       "avg_fill_10": 0.05,
-      "avg_fill_25": 0.068,
-      "bid_usd_within_2c": 2.46
+      "avg_fill_25": 0.0735,
+      "bid_usd_within_2c": 3.11
      }
     },
     {
      "label": "3-3.75\"",
      "lo": 3.0,
      "hi": 3.75,
-     "yes": 0.0045,
+     "yes": 0.006,
      "closed": false,
      "volume": 6272.963926999999,
      "depth": null
@@ -1475,7 +1475,7 @@
      "label": "3.75-4.75\"",
      "lo": 3.75,
      "hi": 4.75,
-     "yes": 0.0055,
+     "yes": 0.006,
      "closed": false,
      "volume": 2156.089219,
      "depth": null
@@ -1493,13 +1493,13 @@
      "label": ">6\"",
      "lo": 6.0,
      "hi": null,
-     "yes": 0.0015,
+     "yes": 0.001,
      "closed": false,
      "volume": 2398.2985839999997,
      "depth": null
     }
    ],
-   "daysFilled": 0,
+   "daysFilled": 1,
    "obsApprox": {
     "2026-10-01": 0.0,
     "2026-10-02": 0.0,
@@ -1523,7 +1523,8 @@
     "2026-10-20": 0.0,
     "2026-10-21": 0.0,
     "2026-10-22": 0.0,
-    "2026-10-23": 0.0
+    "2026-10-23": 0.0,
+    "2026-10-24": 0.0
    },
    "obs": {
     "2026-10-01": 0.0,
@@ -1548,13 +1549,13 @@
     "2026-10-20": 0.0,
     "2026-10-21": 0.0,
     "2026-10-22": 0.0,
-    "2026-10-23": 0.0
+    "2026-10-23": 0.0,
+    "2026-10-24": 0.0
    },
-   "obsSource": "station via NOAA ACIS (USW00024233)",
-   "obsThrough": "2026-10-23",
+   "obsSource": "station via NOAA ACIS (USW00024233); 1 day(s) filled from model analysis",
+   "obsThrough": "2026-10-24",
    "ensemble": {
     "precipitation_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0118,
      "2026-10-25": 0.4606,
      "2026-10-26": 0.0236,
      "2026-10-27": 0.4606,
@@ -1570,7 +1571,6 @@
      "2026-11-06": 0.9921
     },
     "precipitation_member01_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0118,
      "2026-10-25": 0.5079,
      "2026-10-26": 0.1654,
      "2026-10-27": 0.3307,
@@ -1586,7 +1586,6 @@
      "2026-11-06": 0.4724
     },
     "precipitation_member02_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.4252,
      "2026-10-26": 0.0945,
      "2026-10-27": 0.1063,
@@ -1602,7 +1601,6 @@
      "2026-11-06": 0.685
     },
     "precipitation_member03_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.3425,
      "2026-10-26": 0.1063,
      "2026-10-27": 0.0118,
@@ -1618,7 +1616,6 @@
      "2026-11-06": 0.0
     },
     "precipitation_member04_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0118,
      "2026-10-25": 0.9331,
      "2026-10-26": 0.3307,
      "2026-10-27": 0.3543,
@@ -1634,7 +1631,6 @@
      "2026-11-06": 0.2126
     },
     "precipitation_member05_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.248,
      "2026-10-26": 0.0709,
      "2026-10-27": 0.1299,
@@ -1650,7 +1646,6 @@
      "2026-11-06": 0.4016
     },
     "precipitation_member06_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0354,
      "2026-10-25": 0.4252,
      "2026-10-26": 0.2126,
      "2026-10-27": 0.1299,
@@ -1666,7 +1661,6 @@
      "2026-11-06": 0.1181
     },
     "precipitation_member07_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0236,
      "2026-10-25": 0.6142,
      "2026-10-26": 0.0709,
      "2026-10-27": 0.2126,
@@ -1682,7 +1676,6 @@
      "2026-11-06": 0.1654
     },
     "precipitation_member08_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.6496,
      "2026-10-26": 0.0354,
      "2026-10-27": 0.0236,
@@ -1698,7 +1691,6 @@
      "2026-11-06": 0.0
     },
     "precipitation_member09_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.2244,
      "2026-10-26": 0.0354,
      "2026-10-27": 0.0591,
@@ -1714,7 +1706,6 @@
      "2026-11-06": 0.7087
     },
     "precipitation_member10_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0118,
      "2026-10-25": 0.3425,
      "2026-10-26": 0.0945,
      "2026-10-27": 0.248,
@@ -1730,7 +1721,6 @@
      "2026-11-06": 1.7244
     },
     "precipitation_member11_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.5197,
      "2026-10-26": 0.0472,
      "2026-10-27": 0.2008,
@@ -1746,7 +1736,6 @@
      "2026-11-06": 0.0236
     },
     "precipitation_member12_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0118,
      "2026-10-25": 0.5433,
      "2026-10-26": 0.0354,
      "2026-10-27": 0.0945,
@@ -1762,7 +1751,6 @@
      "2026-11-06": 0.1181
     },
     "precipitation_member13_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.3661,
      "2026-10-26": -0.0118,
      "2026-10-27": 0.1063,
@@ -1778,7 +1766,6 @@
      "2026-11-06": 0.0709
     },
     "precipitation_member14_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0118,
      "2026-10-25": 0.2835,
      "2026-10-26": 0.0354,
      "2026-10-27": 0.2598,
@@ -1794,7 +1781,6 @@
      "2026-11-06": 0.378
     },
     "precipitation_member15_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0118,
      "2026-10-25": 0.5551,
      "2026-10-26": 0.0945,
      "2026-10-27": 0.437,
@@ -1810,7 +1796,6 @@
      "2026-11-06": 0.0
     },
     "precipitation_member16_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.3189,
      "2026-10-26": 0.0236,
      "2026-10-27": 0.189,
@@ -1826,7 +1811,6 @@
      "2026-11-06": 0.0472
     },
     "precipitation_member17_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0118,
      "2026-10-25": 0.4843,
      "2026-10-26": 0.1772,
      "2026-10-27": 0.1181,
@@ -1842,7 +1826,6 @@
      "2026-11-06": 0.6378
     },
     "precipitation_member18_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0236,
      "2026-10-25": 0.4134,
      "2026-10-26": 0.0,
      "2026-10-27": 0.1417,
@@ -1858,7 +1841,6 @@
      "2026-11-06": 0.0
     },
     "precipitation_member19_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.5315,
      "2026-10-26": 0.0354,
      "2026-10-27": 0.1063,
@@ -1874,7 +1856,6 @@
      "2026-11-06": 0.2835
     },
     "precipitation_member20_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0591,
      "2026-10-25": 0.9094,
      "2026-10-26": 0.0,
      "2026-10-27": 0.0945,
@@ -1890,7 +1871,6 @@
      "2026-11-06": 0.4724
     },
     "precipitation_member21_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.4724,
      "2026-10-26": 0.0118,
      "2026-10-27": 0.0472,
@@ -1906,7 +1886,6 @@
      "2026-11-06": 1.4409
     },
     "precipitation_member22_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0236,
      "2026-10-25": 0.5433,
      "2026-10-26": -0.0118,
      "2026-10-27": 0.1654,
@@ -1922,7 +1901,6 @@
      "2026-11-06": 0.3071
     },
     "precipitation_member23_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0118,
      "2026-10-25": 0.2008,
      "2026-10-26": 0.0472,
      "2026-10-27": 0.0354,
@@ -1938,7 +1916,6 @@
      "2026-11-06": 0.0709
     },
     "precipitation_member24_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0118,
      "2026-10-25": 0.6732,
      "2026-10-26": 0.0,
      "2026-10-27": 0.0709,
@@ -1954,7 +1931,6 @@
      "2026-11-06": 0.2126
     },
     "precipitation_member25_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.5551,
      "2026-10-26": 0.0,
      "2026-10-27": 0.0236,
@@ -1970,7 +1946,6 @@
      "2026-11-06": 0.0
     },
     "precipitation_member26_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0118,
      "2026-10-25": 0.437,
      "2026-10-26": 0.0,
      "2026-10-27": 0.0945,
@@ -1986,7 +1961,6 @@
      "2026-11-06": 0.1654
     },
     "precipitation_member27_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0118,
      "2026-10-25": 0.5906,
      "2026-10-26": 0.0472,
      "2026-10-27": 0.0591,
@@ -2002,7 +1976,6 @@
      "2026-11-06": 0.5669
     },
     "precipitation_member28_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0118,
      "2026-10-25": 0.7441,
      "2026-10-26": 0.5551,
      "2026-10-27": 0.3071,
@@ -2018,7 +1991,6 @@
      "2026-11-06": 0.1181
     },
     "precipitation_member29_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0118,
      "2026-10-25": 0.6378,
      "2026-10-26": 0.2362,
      "2026-10-27": 0.2126,
@@ -2034,7 +2006,6 @@
      "2026-11-06": 0.2126
     },
     "precipitation_member30_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0709,
      "2026-10-25": 0.6969,
      "2026-10-26": 0.0236,
      "2026-10-27": 0.0591,
@@ -2050,7 +2021,6 @@
      "2026-11-06": 0.8504
     },
     "precipitation_member31_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0827,
      "2026-10-25": 0.6614,
      "2026-10-26": 0.1417,
      "2026-10-27": 0.189,
@@ -2066,7 +2036,6 @@
      "2026-11-06": 0.0236
     },
     "precipitation_member32_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0118,
      "2026-10-25": 0.7913,
      "2026-10-26": 0.0118,
      "2026-10-27": 0.0827,
@@ -2082,7 +2051,6 @@
      "2026-11-06": 0.4488
     },
     "precipitation_member33_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0827,
      "2026-10-25": 0.1654,
      "2026-10-26": 0.1772,
      "2026-10-27": 0.0945,
@@ -2098,7 +2066,6 @@
      "2026-11-06": 0.0
     },
     "precipitation_member34_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0118,
      "2026-10-25": 0.4488,
      "2026-10-26": 0.0236,
      "2026-10-27": 0.0945,
@@ -2114,7 +2081,6 @@
      "2026-11-06": 0.0
     },
     "precipitation_member35_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.4606,
      "2026-10-26": 0.0591,
      "2026-10-27": 0.1181,
@@ -2130,7 +2096,6 @@
      "2026-11-06": 0.3307
     },
     "precipitation_member36_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0472,
      "2026-10-25": 0.2244,
      "2026-10-26": 0.0118,
      "2026-10-27": 0.1772,
@@ -2146,7 +2111,6 @@
      "2026-11-06": 0.0
     },
     "precipitation_member37_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.5079,
      "2026-10-26": 0.0118,
      "2026-10-27": 0.0354,
@@ -2162,7 +2126,6 @@
      "2026-11-06": 0.3543
     },
     "precipitation_member38_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0118,
      "2026-10-25": 0.4134,
      "2026-10-26": 0.0354,
      "2026-10-27": 0.1772,
@@ -2178,7 +2141,6 @@
      "2026-11-06": 0.3307
     },
     "precipitation_member39_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0118,
      "2026-10-25": 0.3307,
      "2026-10-26": 0.0118,
      "2026-10-27": 0.1535,
@@ -2194,7 +2156,6 @@
      "2026-11-06": 0.2362
     },
     "precipitation_member40_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.6496,
      "2026-10-26": 0.248,
      "2026-10-27": 0.0118,
@@ -2210,7 +2171,6 @@
      "2026-11-06": 0.5197
     },
     "precipitation_member41_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0,
      "2026-10-25": 1.0394,
      "2026-10-26": 0.0236,
      "2026-10-27": 0.0,
@@ -2226,7 +2186,6 @@
      "2026-11-06": 0.0
     },
     "precipitation_member42_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0118,
      "2026-10-25": 1.1457,
      "2026-10-26": 0.0118,
      "2026-10-27": 0.0591,
@@ -2242,7 +2201,6 @@
      "2026-11-06": 0.3543
     },
     "precipitation_member43_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.5787,
      "2026-10-26": 0.3425,
      "2026-10-27": 0.1063,
@@ -2258,7 +2216,6 @@
      "2026-11-06": 0.5197
     },
     "precipitation_member44_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0827,
      "2026-10-25": 0.2008,
      "2026-10-26": 0.2598,
      "2026-10-27": 0.2717,
@@ -2274,7 +2231,6 @@
      "2026-11-06": 0.7795
     },
     "precipitation_member45_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.4134,
      "2026-10-26": 0.0945,
      "2026-10-27": 0.0118,
@@ -2290,7 +2246,6 @@
      "2026-11-06": 0.2126
     },
     "precipitation_member46_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0945,
      "2026-10-25": 0.4016,
      "2026-10-26": 0.3425,
      "2026-10-27": 0.1772,
@@ -2306,7 +2261,6 @@
      "2026-11-06": 0.3543
     },
     "precipitation_member47_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0591,
      "2026-10-25": 0.4488,
      "2026-10-26": 0.0354,
      "2026-10-27": 0.248,
@@ -2322,7 +2276,6 @@
      "2026-11-06": 0.0709
     },
     "precipitation_member48_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0118,
      "2026-10-25": 0.3543,
      "2026-10-26": 0.0,
      "2026-10-27": 0.0945,
@@ -2338,7 +2291,6 @@
      "2026-11-06": 0.1181
     },
     "precipitation_member49_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.2835,
      "2026-10-26": 0.0709,
      "2026-10-27": 0.1181,
@@ -2354,7 +2306,6 @@
      "2026-11-06": 0.1417
     },
     "precipitation_member50_ecmwf_ifs025_ensemble": {
-     "2026-10-24": 0.0236,
      "2026-10-25": 0.3661,
      "2026-10-26": 0.0236,
      "2026-10-27": 0.1063,
@@ -2370,7 +2321,6 @@
      "2026-11-06": 0.4252
     },
     "precipitation_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.4961,
      "2026-10-26": 0.0354,
      "2026-10-27": 0.0827,
@@ -2383,7 +2333,6 @@
      "2026-11-03": 0.378
     },
     "precipitation_member01_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.5197,
      "2026-10-26": 0.0118,
      "2026-10-27": 0.0591,
@@ -2396,7 +2345,6 @@
      "2026-11-03": 0.1299
     },
     "precipitation_member02_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.4961,
      "2026-10-26": 0.0354,
      "2026-10-27": 0.2244,
@@ -2409,7 +2357,6 @@
      "2026-11-03": 0.0
     },
     "precipitation_member03_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.7441,
      "2026-10-26": 0.0591,
      "2026-10-27": 0.1535,
@@ -2422,7 +2369,6 @@
      "2026-11-03": 0.0
     },
     "precipitation_member04_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.5551,
      "2026-10-26": 0.0118,
      "2026-10-27": 0.0236,
@@ -2435,7 +2381,6 @@
      "2026-11-03": 0.0472
     },
     "precipitation_member05_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.2244,
      "2026-10-26": 0.1772,
      "2026-10-27": 0.0472,
@@ -2448,7 +2393,6 @@
      "2026-11-03": 0.0
     },
     "precipitation_member06_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.2953,
      "2026-10-26": 0.0,
      "2026-10-27": 0.1299,
@@ -2461,7 +2405,6 @@
      "2026-11-03": 0.0
     },
     "precipitation_member07_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.4488,
      "2026-10-26": 0.0,
      "2026-10-27": 0.0472,
@@ -2474,7 +2417,6 @@
      "2026-11-03": 0.0118
     },
     "precipitation_member08_ncep_gefs025": {
-     "2026-10-24": 0.0118,
      "2026-10-25": 0.6024,
      "2026-10-26": 0.0354,
      "2026-10-27": 0.0354,
@@ -2487,7 +2429,6 @@
      "2026-11-03": 0.378
     },
     "precipitation_member09_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.0118,
      "2026-10-26": 0.1181,
      "2026-10-27": 0.0709,
@@ -2500,7 +2441,6 @@
      "2026-11-03": 0.6142
     },
     "precipitation_member10_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.6732,
      "2026-10-26": 0.0118,
      "2026-10-27": 0.0709,
@@ -2513,7 +2453,6 @@
      "2026-11-03": 0.0
     },
     "precipitation_member11_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.0827,
      "2026-10-26": 0.0118,
      "2026-10-27": 0.0827,
@@ -2526,7 +2465,6 @@
      "2026-11-03": 0.2953
     },
     "precipitation_member12_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.1299,
      "2026-10-26": 0.0236,
      "2026-10-27": 0.0354,
@@ -2539,7 +2477,6 @@
      "2026-11-03": 0.0354
     },
     "precipitation_member13_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.4961,
      "2026-10-26": 0.1181,
      "2026-10-27": 0.0236,
@@ -2552,7 +2489,6 @@
      "2026-11-03": 0.0236
     },
     "precipitation_member14_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.626,
      "2026-10-26": 0.1181,
      "2026-10-27": 0.0,
@@ -2565,7 +2501,6 @@
      "2026-11-03": 0.0
     },
     "precipitation_member15_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 1.0748,
      "2026-10-26": 0.0,
      "2026-10-27": 0.189,
@@ -2578,7 +2513,6 @@
      "2026-11-03": 0.0
     },
     "precipitation_member16_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.0354,
      "2026-10-26": 0.0118,
      "2026-10-27": 0.0236,
@@ -2591,7 +2525,6 @@
      "2026-11-03": 0.0
     },
     "precipitation_member17_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.9449,
      "2026-10-26": 0.0236,
      "2026-10-27": 0.0,
@@ -2604,7 +2537,6 @@
      "2026-11-03": 0.0
     },
     "precipitation_member18_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.1654,
      "2026-10-26": 0.1535,
      "2026-10-27": 0.0354,
@@ -2617,7 +2549,6 @@
      "2026-11-03": 0.1772
     },
     "precipitation_member19_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.4606,
      "2026-10-26": 0.1299,
      "2026-10-27": 0.0,
@@ -2630,7 +2561,6 @@
      "2026-11-03": 0.0
     },
     "precipitation_member20_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.685,
      "2026-10-26": 0.0354,
      "2026-10-27": 0.0354,
@@ -2643,7 +2573,6 @@
      "2026-11-03": 0.0118
     },
     "precipitation_member21_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.2717,
      "2026-10-26": 0.0827,
      "2026-10-27": 0.0236,
@@ -2656,7 +2585,6 @@
      "2026-11-03": 0.2126
     },
     "precipitation_member22_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.8031,
      "2026-10-26": 0.1063,
      "2026-10-27": 0.0709,
@@ -2669,7 +2597,6 @@
      "2026-11-03": 0.0118
     },
     "precipitation_member23_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.1063,
      "2026-10-26": 0.0236,
      "2026-10-27": 0.0236,
@@ -2682,7 +2609,6 @@
      "2026-11-03": 0.0
     },
     "precipitation_member24_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.1654,
      "2026-10-26": 0.0,
      "2026-10-27": 0.0118,
@@ -2695,7 +2621,6 @@
      "2026-11-03": 0.0
     },
     "precipitation_member25_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.1299,
      "2026-10-26": 0.0118,
      "2026-10-27": 0.1417,
@@ -2708,7 +2633,6 @@
      "2026-11-03": 0.0
     },
     "precipitation_member26_ncep_gefs025": {
-     "2026-10-24": 0.0118,
      "2026-10-25": 0.7441,
      "2026-10-26": 0.1063,
      "2026-10-27": 0.1181,
@@ -2721,7 +2645,6 @@
      "2026-11-03": 0.0
     },
     "precipitation_member27_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.2717,
      "2026-10-26": 0.0945,
      "2026-10-27": 0.0,
@@ -2734,7 +2657,6 @@
      "2026-11-03": 0.4016
     },
     "precipitation_member28_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.5433,
      "2026-10-26": 0.0591,
      "2026-10-27": 0.0591,
@@ -2747,7 +2669,6 @@
      "2026-11-03": 0.0
     },
     "precipitation_member29_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.5079,
      "2026-10-26": 0.0236,
      "2026-10-27": 0.0,
@@ -2760,7 +2681,6 @@
      "2026-11-03": 0.189
     },
     "precipitation_member30_ncep_gefs025": {
-     "2026-10-24": 0.0,
      "2026-10-25": 0.0472,
      "2026-10-26": 0.1772,
      "2026-10-27": 0.0591,
@@ -2786,44 +2706,44 @@
    "last": "2026-10-31",
    "tz": "America/New_York",
    "localToday": "2026-10-25",
-   "volume": 42665.353151,
-   "liquidity": 9536.97119,
+   "volume": 43127.293151,
+   "liquidity": 11635.34334,
    "rules": "This market will resolve according to the total precipitation in inches in Central Park, New York City between October 1 and October 31, 2026, 11:59PM ET according to the National Oceanic and Atmospheric Administration (NOAA).\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nThe resolution source for this market will be NOAA, specifically the figure for October 2026 when the \"Monthly summarized data\" for \"Central Park NY\" is selected with the variable set to \"Precipitation\" at the https://www.weather.gov/wrh/climate?wfo=okx link once that figure is finalized for the whole month of October 2026.\n\nIf the relevant data is not available by January 7, 2027, 11:59 PM ET, another credible resolution source will be chosen.\n\nThe resolution source for this market measures precipitation to 2 decimal places (e.g., 1.54), thus, this is the level of precision that will be used when resolving this market. Any revisions to precipitation recorded after data is finalized for this market's timeframe will not be considered for this market's resolution.",
    "buckets": [
     {
      "label": "<3\"",
      "lo": null,
      "hi": 3.0,
-     "yes": 0.947,
+     "yes": 0.939,
      "closed": false,
-     "volume": 22820.019836,
+     "volume": 23281.959835999998,
      "depth": {
       "best_ask": 0.954,
-      "best_bid": 0.94,
-      "usd_at_best": 51.52,
-      "usd_within_1c": 70.66,
-      "usd_within_2c": 467.96,
-      "avg_fill_10": 0.954,
-      "avg_fill_25": 0.954,
-      "bid_usd_within_2c": 685.36
+      "best_bid": 0.925,
+      "usd_at_best": 5.4,
+      "usd_within_1c": 967.88,
+      "usd_within_2c": 1286.24,
+      "avg_fill_10": 0.9545,
+      "avg_fill_25": 0.9548,
+      "bid_usd_within_2c": 1147.29
      }
     },
     {
      "label": "3-4.25\"",
      "lo": 3.0,
      "hi": 4.25,
-     "yes": 0.023,
+     "yes": 0.0235,
      "closed": false,
      "volume": 10046.523413,
      "depth": {
       "best_ask": 0.039,
-      "best_bid": 0.007,
+      "best_bid": 0.008,
       "usd_at_best": 0.39,
       "usd_within_1c": 4.39,
-      "usd_within_2c": 18.0,
+      "usd_within_2c": 14.39,
       "avg_fill_10": 0.045,
-      "avg_fill_25": 0.0523,
-      "bid_usd_within_2c": 2.62
+      "avg_fill_25": 0.0546,
+      "bid_usd_within_2c": 4.28
      }
     },
     {
@@ -2848,7 +2768,7 @@
      "label": "5.25-6.25\"",
      "lo": 5.25,
      "hi": 6.25,
-     "yes": 0.006,
+     "yes": 0.0055,
      "closed": false,
      "volume": 1215.6050070000001,
      "depth": null
@@ -4071,7 +3991,7 @@
    "tz": "Asia/Seoul",
    "localToday": "2026-10-25",
    "volume": 52211.806493,
-   "liquidity": 16179.48,
+   "liquidity": 14285.35716,
    "rules": "This market will resolve according to the total precipitation in mm in Seoul in October, 2026, according to the Korea Meteorological Administration's information for the region/branch of \"Seoul\".\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nThe resolution source for this market will be the Korea Meteorological Administration, specifically the figure for monthly precipitation in mm when the classification is set for \"ground\", the region/branch is set for \"Seoul\", the element is set for \"precipitation\", and the period is set for the month of October at the https://data.kma.go.kr/climate/RankState/selectRankStatisticsDivisionList.do link once the figure is finalized for the whole month of October 2026.\n\nIf the relevant data is not available by January 7, 2027, 11:59 PM ET, another credible resolution source will be chosen.\n\nThe resolution source for this market measures precipitation to 1 decimal place (e.g., 1.5), thus, this is the level of precision that will be used when resolving this market. Any revisions to precipitation recorded after data is finalized for this market's timeframe will not be considered for this market's resolution.",
    "buckets": [
     {
@@ -4129,30 +4049,30 @@
      "depth": {
       "best_ask": 0.949,
       "best_bid": 0.917,
-      "usd_at_best": 163.23,
-      "usd_within_1c": 915.35,
-      "usd_within_2c": 1184.44,
+      "usd_at_best": 77.82,
+      "usd_within_1c": 802.98,
+      "usd_within_2c": 1072.08,
       "avg_fill_10": 0.949,
       "avg_fill_25": 0.949,
-      "bid_usd_within_2c": 742.08
+      "bid_usd_within_2c": 676.97
      }
     },
     {
      "label": "85mm+",
      "lo": 85.0,
      "hi": null,
-     "yes": 0.0305,
+     "yes": 0.031,
      "closed": false,
      "volume": 10094.190439999997,
      "depth": {
       "best_ask": 0.058,
-      "best_bid": 0.003,
+      "best_bid": 0.004,
       "usd_at_best": 0.29,
       "usd_within_1c": 0.29,
-      "usd_within_2c": 3.55,
-      "avg_fill_10": 0.0804,
-      "avg_fill_25": 0.0825,
-      "bid_usd_within_2c": 7.55
+      "usd_within_2c": 0.29,
+      "avg_fill_10": 0.0807,
+      "avg_fill_25": 0.0831,
+      "bid_usd_within_2c": 13.71
      }
     }
    ],
@@ -5446,7 +5366,7 @@
    "tz": "Asia/Hong_Kong",
    "localToday": "2026-10-25",
    "volume": 59999.24986199999,
-   "liquidity": 7995.12723,
+   "liquidity": 7983.72023,
    "rules": "This market will resolve according to the total precipitation in mm in Hong Kong between October 1 and October 31, 2026, according to the Hong Kong Observatory.\n\nIf the reported data falls exactly between two brackets, this market will resolve to the higher bracket.\n\nThe resolution source for this market will be the Hong Kong Observatory, specifically the \"Total Rainfall (mm)\" figure for all days in October 2026 under the \"Daily Extract\" at the https://www.weather.gov.hk/en/cis/climat.htm link once figures are finalized for the specified range.\n\nIf the relevant data is not available by January 7, 2027, 11:59 PM ET, another credible resolution source will be chosen.\n\nThe resolution source for this market measures precipitation to 1 decimal place (e.g., 1.5), thus, this is the level of precision that will be used when resolving this market. Any revisions to precipitation recorded after data is finalized for this market's timeframe will not be considered for this market's resolution.",
    "buckets": [
     {
@@ -5494,13 +5414,13 @@
      "volume": 28262.420108,
      "depth": {
       "best_ask": 0.986,
-      "best_bid": 0.938,
+      "best_bid": 0.947,
       "usd_at_best": 39.44,
       "usd_within_1c": 4207.66,
       "usd_within_2c": 4402.47,
       "avg_fill_10": 0.986,
       "avg_fill_25": 0.986,
-      "bid_usd_within_2c": 9.38
+      "bid_usd_within_2c": 17.99
      }
     },
     {
@@ -5516,7 +5436,7 @@
      "label": "210mm+",
      "lo": 210.0,
      "hi": null,
-     "yes": 0.012,
+     "yes": 0.0125,
      "closed": false,
      "volume": 4117.802373,
      "depth": null
@@ -6883,7 +6803,7 @@
    "first": "2026-09-01",
    "last": "2026-09-30",
    "tz": "America/Los_Angeles",
-   "localToday": "2026-10-24",
+   "localToday": "2026-10-25",
    "volume": 64101.459103999994,
    "liquidity": 0.0,
    "rules": "This market will resolve according to the total precipitation in inches in Seattle between September 1 and September 30, 2026, 11:59PM ET according to the National Oceanic and Atmospheric Administration (NOAA).\n\nIf the reported data falls exactly between two brackets, this market will resolve to the higher bracket.\n\nThe resolution source for this market will be NOAA, specifically the figure for September 2026 when the \"Monthly summarized data\" for \"Seattle City Area\" is selected with the variable set to \"Precipitation\" at the https://www.weather.gov/wrh/climate?wfo=sew link once that figure is finalized for the whole month of September 2026.\n\nIf the relevant data is not available by December 7, 2026, 11:59 PM ET, another credible resolution source will be chosen.\n\nThe resolution source for this market measures precipitation to 2 decimal places (e.g., 1.54), thus, this is the level of precision that will be used when resolving this market. Any revisions to precipitation recorded after data is finalized for this market's timeframe will not be considered for this market's resolution.",
@@ -7586,7 +7506,7 @@
    "first": "2026-08-01",
    "last": "2026-08-31",
    "tz": "America/Los_Angeles",
-   "localToday": "2026-10-24",
+   "localToday": "2026-10-25",
    "volume": 2702.4363749999998,
    "liquidity": 0.0,
    "rules": "This market will resolve according to the total precipitation in inches in Seattle between August 1 and August 31, 2026, 11:59PM ET according to the National Oceanic and Atmospheric Administration (NOAA).\n\nIf the reported data falls exactly between two brackets, this market will resolve to the higher bracket.\n\nThe resolution source for this market will be NOAA, specifically the figure for August 2026 when the \"Monthly summarized data\" for \"Seattle City Area\" is selected with the variable set to \"Precipitation\" at the https://www.weather.gov/wrh/climate?wfo=sew link once that figure is finalized for the whole month of August 2026.\n\nIf the relevant data is not available by November 7, 2026, 11:59 PM ET, another credible resolution source will be chosen.\n\nThe resolution source for this market measures precipitation to 2 decimal places (e.g., 1.54), thus, this is the level of precision that will be used when resolving this market. Any revisions to precipitation recorded after data is finalized for this market's timeframe will not be considered for this market's resolution.",
