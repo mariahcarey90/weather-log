@@ -1,199 +1,199 @@
 {
  "params": {
-  "decay": 0.8,
+  "decay": 0.95,
   "pace_power": 0.0,
   "inflate": 1.0,
   "weeks": 8
  },
  "ours": {
   "n": 470,
-  "logloss": 1.309,
-  "brier": 0.517,
-  "top_hit": 0.585
+  "logloss": 1.337,
+  "brier": 0.547,
+  "top_hit": 0.557
  },
  "market": {
   "n": 470,
-  "logloss": 1.011,
-  "brier": 0.471,
-  "top_hit": 0.606
+  "logloss": 1.02,
+  "brier": 0.483,
+  "top_hit": 0.604
  },
  "blend": {
   "n": 470,
-  "logloss": 1.02,
-  "brier": 0.472,
-  "top_hit": 0.617
+  "logloss": 1.047,
+  "brier": 0.493,
+  "top_hit": 0.594
  },
  "paper_ours": {
-  "trades": 82,
-  "wins": 28,
-  "pnl": 984.03,
-  "roi": 0.48
+  "trades": 78,
+  "wins": 21,
+  "pnl": -375.84,
+  "roi": -0.193
  },
  "paper_blend": {
-  "trades": 47,
-  "wins": 21,
-  "pnl": 283.4,
-  "roi": 0.241
+  "trades": 50,
+  "wins": 17,
+  "pnl": 49.63,
+  "roi": 0.04
  },
  "by_handle": {
   "NYCMayor": {
    "ours": {
     "n": 50,
-    "logloss": 0.153,
-    "brier": 0.056,
+    "logloss": 0.134,
+    "brier": 0.045,
     "top_hit": 1.0
    },
    "market": {
     "n": 50,
-    "logloss": 0.216,
-    "brier": 0.08,
-    "top_hit": 0.98
+    "logloss": 0.174,
+    "brier": 0.054,
+    "top_hit": 1.0
    },
    "paper": {
-    "trades": 10,
+    "trades": 8,
     "wins": 3,
-    "pnl": -74.43,
-    "roi": -0.298
+    "pnl": -69.49,
+    "roi": -0.347
    }
   },
   "WhiteHouse": {
    "ours": {
     "n": 50,
-    "logloss": 0.927,
-    "brier": 0.44,
-    "top_hit": 0.68
+    "logloss": 0.845,
+    "brier": 0.378,
+    "top_hit": 0.76
    },
    "market": {
     "n": 50,
-    "logloss": 0.504,
-    "brier": 0.253,
-    "top_hit": 0.8
+    "logloss": 0.332,
+    "brier": 0.157,
+    "top_hit": 0.9
    },
    "paper": {
-    "trades": 8,
-    "wins": 2,
-    "pnl": 177.44,
-    "roi": 0.887
+    "trades": 7,
+    "wins": 0,
+    "pnl": -175.0,
+    "roi": -1.0
    }
   },
   "ZelenskyyUa": {
    "ours": {
     "n": 50,
-    "logloss": 1.84,
-    "brier": 0.785,
-    "top_hit": 0.28
+    "logloss": 1.83,
+    "brier": 0.77,
+    "top_hit": 0.3
    },
    "market": {
     "n": 50,
-    "logloss": 1.07,
-    "brier": 0.572,
-    "top_hit": 0.54
+    "logloss": 1.061,
+    "brier": 0.55,
+    "top_hit": 0.56
    },
    "paper": {
     "trades": 9,
-    "wins": 1,
-    "pnl": -25.0,
-    "roi": -0.111
+    "wins": 0,
+    "pnl": -225.0,
+    "roi": -1.0
    }
   },
   "cz_binance": {
    "ours": {
     "n": 50,
-    "logloss": 0.454,
-    "brier": 0.279,
-    "top_hit": 0.82
+    "logloss": 0.657,
+    "brier": 0.375,
+    "top_hit": 0.76
    },
    "market": {
     "n": 50,
-    "logloss": 0.679,
-    "brier": 0.398,
-    "top_hit": 0.64
+    "logloss": 0.803,
+    "brier": 0.451,
+    "top_hit": 0.62
    },
    "paper": {
     "trades": 9,
     "wins": 6,
-    "pnl": 247.03,
-    "roi": 1.098
+    "pnl": 208.02,
+    "roi": 0.925
    }
   },
   "elonmusk": {
    "ours": {
     "n": 120,
-    "logloss": 1.898,
-    "brier": 0.625,
-    "top_hit": 0.525
+    "logloss": 1.996,
+    "brier": 0.712,
+    "top_hit": 0.45
    },
    "market": {
     "n": 120,
-    "logloss": 1.258,
-    "brier": 0.561,
-    "top_hit": 0.558
+    "logloss": 1.406,
+    "brier": 0.649,
+    "top_hit": 0.458
    },
    "paper": {
-    "trades": 22,
-    "wins": 6,
-    "pnl": -80.89,
-    "roi": -0.147
+    "trades": 19,
+    "wins": 4,
+    "pnl": -155.11,
+    "roi": -0.327
    }
   },
   "khamenei_ir": {
    "ours": {
     "n": 50,
-    "logloss": 0.541,
-    "brier": 0.252,
+    "logloss": 0.54,
+    "brier": 0.257,
     "top_hit": 0.86
    },
    "market": {
     "n": 50,
-    "logloss": 0.525,
-    "brier": 0.236,
+    "logloss": 0.535,
+    "brier": 0.24,
     "top_hit": 0.86
    },
    "paper": {
-    "trades": 5,
+    "trades": 6,
     "wins": 4,
-    "pnl": 317.04,
-    "roi": 2.536
+    "pnl": -3.3,
+    "roi": -0.022
    }
   },
   "realDonaldTrump": {
    "ours": {
     "n": 50,
-    "logloss": 1.685,
-    "brier": 0.763,
+    "logloss": 1.758,
+    "brier": 0.779,
     "top_hit": 0.26
    },
    "market": {
     "n": 50,
-    "logloss": 1.925,
-    "brier": 0.825,
-    "top_hit": 0.24
+    "logloss": 1.754,
+    "brier": 0.801,
+    "top_hit": 0.3
    },
    "paper": {
     "trades": 10,
-    "wins": 5,
-    "pnl": 525.88,
-    "roi": 2.104
+    "wins": 1,
+    "pnl": -208.51,
+    "roi": -0.834
    }
   },
   "tedcruz": {
    "ours": {
     "n": 50,
-    "logloss": 2.147,
-    "brier": 0.783,
-    "top_hit": 0.34
+    "logloss": 2.014,
+    "brier": 0.828,
+    "top_hit": 0.22
    },
    "market": {
     "n": 50,
-    "logloss": 1.566,
-    "brier": 0.721,
-    "top_hit": 0.3
+    "logloss": 1.554,
+    "brier": 0.727,
+    "top_hit": 0.34
    },
    "paper": {
-    "trades": 9,
-    "wins": 1,
-    "pnl": -103.05,
-    "roi": -0.458
+    "trades": 10,
+    "wins": 3,
+    "pnl": 252.55,
+    "roi": 1.01
    }
   }
  }
