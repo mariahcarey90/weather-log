@@ -48,6 +48,10 @@ DEFAULTS = {
         {"cap": 250.0, "min_settled": 75, "min_roi": 0.05, "min_move": 0.0},
     ],
     "drawdown_brake": 0.20,
+    # 27 Oct 2026 (owner's decision): the slip is paused while the live model's last
+    # `pause_window` settled paper trades (non-trial cities) return `pause_min_roi` or less.
+    # Paper trading carries on, so the slip switches itself back on once that record recovers.
+    "pause_window": 50, "pause_min_roi": 0.05,
     "weak_cities": {"mexico-city": 0.38, "lucknow": 0.37},  # day-ahead backtest top-pick hit rate
     # trial cities: paper trades only, never on the slip, and not counted toward tier unlocks
     "paper_only_cities": ["dallas", "seattle", "toronto", "tel-aviv", "singapore", "austin", "warsaw",
@@ -138,6 +142,19 @@ def tier_state(cfg, paper, results):
     return level, {"settled": n, "roi": roi, "avg_move": move}
 
 
+def pause_state(cfg, paper, results):
+    """Return (paused, info) from the live model's most recent settled paper trades."""
+    trial = set(cfg.get("paper_only_cities") or [])
+    done = sorted((results[k] for k, p in paper.items()
+                   if p.get("variant") == "current" and k in results and p.get("city") not in trial),
+                  key=lambda r: r.get("settledAt") or "")
+    last = done[-cfg["pause_window"]:]
+    staked = sum(r["stake"] for r in last)
+    roi = sum(r["pnl"] for r in last) / staked if staked else None
+    paused = len(last) < cfg["pause_window"] or roi is None or roi <= cfg["pause_min_roi"]
+    return paused, {"window": len(last), "roi": roi, "wins": sum(r["status"] == "won" for r in last)}
+
+
 def bankroll_state(cfg, bets):
     done = sorted((b for b in bets.values() if b.get("status") in ("won", "lost", "sold")),
                   key=lambda b: b.get("settledAt") or b.get("placedAt") or "")
@@ -174,8 +191,9 @@ def main():
     tier_cap = cfg["tiers"][level]["cap"]
     budget_left = max(0.0, cfg["daily_risk"] * bank - open_stake)
 
+    paused, pinfo = pause_state(cfg, paper, results)
     slip, lines = [], []
-    for e in json.load(open(a.snaps)):
+    for e in ([] if paused else json.load(open(a.snaps))):
         s = e["data"]
         if s.get("stability") == "Unsettled" or s.get("stale") or (s.get("leadHours") or 0) < -2:
             continue
@@ -292,13 +310,18 @@ def main():
     nxt = cfg["tiers"][level + 1] if level + 1 < len(cfg["tiers"]) else None
     unlock = (f"Next cap ${nxt['cap']:.0f}: needs {max(0, nxt['min_settled'] - evidence['settled'])} more settled paper trades"
               f" with return above {nxt['min_roi']*100:+.0f}% and a non-negative average price move" if nxt else "Top cap unlocked")
+    if paused:
+        unlock = (f"Slip paused: the live model's last {pinfo['window']} settled paper trades "
+                  + (f"returned {pinfo['roi']*100:+.0f}% ({pinfo['wins']} won)" if pinfo["roi"] is not None else "are too few")
+                  + f". It switches back on by itself once its last {cfg['pause_window']} return above "
+                  f"{cfg['pause_min_roi']*100:+.0f}%. Paper trading carries on.")
     if sides:
         head += "; side rule on: " + ", ".join(f"{c} (misses ran {v[0]}, {v[1]} of {v[2]})" for c, v in sorted(sides.items()))
     print(head)
     print(unlock)
     print("\n".join(lines) if lines else "No bets pass the rules this run.")
     summary = {"bankroll": round(bank, 2), "peak": round(peak, 2), "open_stake": open_stake, "tier": level + 1,
-               "tier_cap": tier_cap, "braked": braked, "sideRule": {c: list(v) for c, v in sides.items()}, "evidence": evidence, "unlock": unlock, "slip": slip}
+               "tier_cap": tier_cap, "braked": braked, "sideRule": {c: list(v) for c, v in sides.items()}, "evidence": evidence, "unlock": unlock, "paused": paused, "pause": pinfo, "slip": slip}
     if a.out:
         json.dump(summary, open(a.out, "w"), ensure_ascii=False, indent=1)
     print(json.dumps(summary, ensure_ascii=False))

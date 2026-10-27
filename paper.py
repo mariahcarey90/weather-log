@@ -32,7 +32,8 @@ MIN_ASK = 0.05
 STAKE = 25.0
 # Retired versions: no new paper trades (open ones still settle). 5 Oct 2026: "blend" (half our
 # odds, half the market's) went 0 for 6, -$150; its lows twin goes with it.
-RETIRED = {"blend", "low_blend"}
+RETIRED = {"blend", "low_blend", "filtered"}
+# 27 Oct 2026: "filtered" retired too (9 won of 75, -$778, -41%: the worst of the three).
 # "filtered" challenger (13 Oct 2026), from the first fortnight's settled trades: skip entries under
 # 10c (2 wins in 31) and edges of 18+ points (won 15% vs 42% claimed), trade only within 30 h of the
 # market day's afternoon (12-30 h ahead returned +56%, 30 h+ +5%), and skip Austin and Warsaw (0 wins).
