@@ -68,7 +68,9 @@ MIN_KERNEL_C = 0.5
 STALE_H = 3.0  # data older than this (hours) is logged but never traded
 WARM_SHIFT_C = 0.4  # "filtered" challenger: shift toward warmer outcomes (13 Oct 2026)
 MIN_RESOLVED = 5
-MIN_LIVE = 30
+MIN_LIVE = 20  # (28 Oct 2026) scored market-days per city and lead band, no longer logged runs
+CAL_WINDOW_DAYS = 30  # live calibration uses the last 30 days only, so it follows the season
+BAND_CENTRE_H = {"same": 6, "day": 24, "far": 48}
 PRIOR_N_STATION = 8    # how many scored days the TAF/NWS starting assumption is worth
 PRIOR_N_MODEL_MAX = 10  # cap on how many scored days the 60-day backfill bias is worth (5 Oct 2026: was the
                         # full 60, so a week of live misses moved the bias under 10%; capped so it learns faster)
@@ -131,26 +133,29 @@ def load_db(dirpath, suffix=""):
     return snaps, outs
 
 
-def calibration(snaps, outs):
-    """Per city and lead band: bias (forecastRaw - observed, in market units) and
-    sd of misses, from resolved days. Returned in deg C."""
-    errs = {}
+def calibration(snaps, outs, run_at=None, window_days=CAL_WINDOW_DAYS):
+    """Per city and lead band: bias (forecastRaw - observed) and sd of misses, deg C.
+    (28 Oct 2026) One run per market-day (the one nearest the band's centre), from the last
+    `window_days` days: the ~4 runs logged per day share one error, so counting runs made
+    n about four times too big and switched cities to live calibration after ~7 days."""
+    since = (run_at - timedelta(days=window_days)).date().isoformat() if run_at else ""
+    pick = {}
     for s in snaps:
+        lh, raw = s.get("leadHours"), s.get("forecastRaw", s.get("forecastHigh"))
         o = outs.get((s["city"], s["marketDate"]))
-        if not o or o.get("observedHigh") is None:
+        if lh is None or raw is None or not o or o.get("observedHigh") is None or s["marketDate"] < since:
             continue
-        raw = s.get("forecastRaw", s.get("forecastHigh"))
-        if raw is None or s.get("leadHours") is None:
-            continue
-        e = raw - o["observedHigh"]
-        if s.get("unit") == "°F" or s["city"] == "atlanta":
+        k = (s["city"], s["marketDate"], lead_band(lh))
+        if k not in pick or abs(lh - BAND_CENTRE_H[k[2]]) < abs(pick[k]["leadHours"] - BAND_CENTRE_H[k[2]]):
+            pick[k] = s
+    errs = {}
+    for (city, d, b), s in pick.items():
+        e = s.get("forecastRaw", s.get("forecastHigh")) - outs[(city, d)]["observedHigh"]
+        if s.get("unit") == "°F" or city == "atlanta":
             e = e * 5 / 9
-        errs.setdefault((s["city"], lead_band(s["leadHours"])), []).append(e)
-    cal = {}
-    for k, es in errs.items():
-        if len(es) >= MIN_RESOLVED:
-            cal[k] = {"bias": statistics.fmean(es), "sd": statistics.stdev(es), "n": len(es)}
-    return cal
+        errs.setdefault((city, b), []).append(e)
+    return {k: {"bias": statistics.fmean(es), "sd": statistics.stdev(es), "n": len(es)}
+            for k, es in errs.items() if len(es) >= MIN_RESOLVED}
 
 
 def source_stats(snaps, outs):
@@ -248,13 +253,13 @@ def main():
             st_["days"] = mapped
     emos = {} if LOW else (json.load(open("data/emos.json")).get("cities", {}) if os.path.exists("data/emos.json") else {})
     snaps, outs = load_db(a.db, "_low" if LOW else "")
-    cal = calibration(snaps, outs)
+    run_at = datetime.fromisoformat(a.run_at.replace("Z", "+00:00")) if a.run_at else datetime.now(timezone.utc)
+    cal = calibration(snaps, outs, run_at=run_at)
     src_errs = source_stats(snaps, outs)
     learned = {}  # (city, source) -> (bias, sd, live_n), for the report
     prior = {}
     if os.path.exists(a.calib):
         prior = json.load(open(a.calib)).get("cities", {})
-    run_at = datetime.fromisoformat(a.run_at.replace("Z", "+00:00")) if a.run_at else datetime.now(timezone.utc)
     fetched = datetime.fromisoformat(latest["fetched_at"])
     age_h = (run_at - fetched).total_seconds() / 3600
 
@@ -280,9 +285,10 @@ def main():
             pcity = (prior.get(city) or {}).get(lead_key) or {}
             pc = pcity.get("median")
             pmodels = pcity.get("models", {})
-            if c and c["n"] >= MIN_LIVE:  # live log has plenty of resolved runs: single bias on the blend
+            if c and c["n"] >= MIN_LIVE:  # live log has enough scored days: single bias on the blend
                 bias_c, kern_c, per_model = c["bias"], max(0.7 * c["sd"], MIN_KERNEL_C), {}
-                cal_note = f"Calibrated from {c['n']} logged runs: bias {bias_c:+.2f}°C, kernel {kern_c:.2f}°C."
+                cal_note = (f"Calibrated from {c['n']} scored days (last {CAL_WINDOW_DAYS}): bias {bias_c:+.2f}°C, "
+                            f"kernel {kern_c:.2f}°C.")
             elif pc:  # 60-day backfill: correct each model by its own bias, weight by its accuracy
                 bias_c = pc["bias"]
                 kern_c = max(0.5 * pc["sd"] * (0.8 if band == "same" else 1.0), MIN_KERNEL_C)
@@ -356,8 +362,8 @@ def main():
                     v = v + NOWCAST_ALPHA * anomaly.get(m, mean_anom)
                 members.append(v - bm)
                 weights.append(wm)
-            if not per_model:
-                members = [x - bias_c for x in members]
+            # (28 Oct 2026) corr() already returns the city bias when per_model is empty, so the
+            # members above are corrected once; a second "members - bias_c" here doubled it.
             # station forecasts (made for the airport): prior of no bias and the best model's
             # accuracy, updated from scored days
             station_fc = {}

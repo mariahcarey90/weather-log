@@ -10,7 +10,7 @@ Standard library only. All temperatures stored in degrees Celsius.
 Weather data by Open-Meteo.com (CC BY 4.0), NOAA/NWS, aviationweather.gov
 (METARs and TAFs). Market data from Polymarket's public Gamma API.
 """
-import json, os, re, statistics, sys, time, urllib.parse, urllib.request
+import json, math, os, re, statistics, sys, time, urllib.parse, urllib.request
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
@@ -356,22 +356,37 @@ def fetch_taf(now):
     return out
 
 
-def fetch_metar():
-    ids = ",".join(s["icao"] for s in STATIONS)
-    rows = get(f"https://aviationweather.gov/api/data/metar?ids={ids}&format=json&hours=40")
+def settled_value(temp_c, unit):
+    """A reading as the markets settle it (rules since 23 Oct 2026): whole degrees in the
+    market's unit, exact halves rounded up; US markets convert to F before rounding.
+    Python's round() rounds halves to even, which disagrees on e.g. 72.5 F or 24.5 C."""
+    x = temp_c * 9 / 5 + 32 if unit == "F" else temp_c
+    return math.floor(round(x, 6) + 0.5)
+
+
+def fetch_metar(pause_s=1.0):
+    """Routine METARs for every station over the last 36 h: {icao: [{t, temp, maxT, raw}]}.
+    (28 Oct 2026) One request per station: the API returns at most 400 entries, and a single
+    request for all stations came back cut to ~12 h each. SPECI reports are skipped because
+    they never settle the markets. "temp" already carries the T-group tenths when present."""
     obs = {}
-    for r in rows:
-        icao = r.get("icaoId")
-        t = r.get("obsTime") or r.get("reportTime")
-        temp = r.get("temp")
-        if icao is None or temp is None or t is None:
+    for st in STATIONS:
+        try:
+            rows = get(f"https://aviationweather.gov/api/data/metar?ids={st['icao']}&format=json&hours=36")
+        except Exception as e:
+            ERRORS.append(f"metar {st['icao']}: {e}")
             continue
-        if isinstance(t, (int, float)):
-            ts = datetime.fromtimestamp(t, tz=timezone.utc)
-        else:
-            ts = datetime.fromisoformat(str(t).replace("Z", "+00:00"))
-        obs.setdefault(icao, []).append({"t": ts.isoformat(), "temp": temp,
-                                         "maxT": r.get("maxT"), "raw": r.get("rawOb")})
+        for r in rows or []:
+            raw, t, temp = r.get("rawOb") or "", r.get("obsTime") or r.get("reportTime"), r.get("temp")
+            if temp is None or t is None or raw.startswith("SPECI"):
+                continue
+            if isinstance(t, (int, float)):
+                ts = datetime.fromtimestamp(t, tz=timezone.utc)
+            else:
+                ts = datetime.fromisoformat(str(t).replace("Z", "+00:00"))
+            obs.setdefault(r.get("icaoId") or st["icao"], []).append(
+                {"t": ts.isoformat(), "temp": temp, "maxT": r.get("maxT"), "raw": raw})
+        time.sleep(pause_s)  # 19 requests stay well under the API's 100 a minute
     return obs
 
 

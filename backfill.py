@@ -15,7 +15,7 @@ import csv, io, json, statistics, time, urllib.parse
 from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 
-from fetch import STATIONS, get, UA
+from fetch import STATIONS, get, UA, settled_value
 import urllib.request
 
 DAYS = 60
@@ -60,7 +60,8 @@ def observed_highs(st, start, end):
         d = t[:10]
         highs[d] = max(highs.get(d, -999), f)
         lows[d] = min(lows.get(d, 999), f)
-    conv = lambda f: round(f) if st["unit"] == "F" else round((f - 32) * 5 / 9)
+    # (28 Oct 2026) round halves up, as the markets settle; round() rounded them to even
+    conv = lambda f: settled_value((f - 32) * 5 / 9, st["unit"])
     out = {d: conv(f) for d, f in highs.items()}
     OBS_LOWS[st["key"]] = {d: conv(f) for d, f in lows.items()}
     return out  # whole degrees in market unit
