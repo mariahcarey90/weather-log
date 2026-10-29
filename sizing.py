@@ -10,26 +10,35 @@ Usage:
             in `settings/sizing`).
 --out       optional: write the slip as JSON.
 
-How a stake is sized, for each market's best edge for the live ("current") model:
- 0. (5 Oct 2026) Edges are measured on our odds shrunk toward the market's price
-    (shrink_to_market, 40%): entry needs shrunk odds - price >= EDGE_MIN. Cities in
+The slip is off unless the accuracy gate is open (29 Oct 2026, replacing the switch that
+read the last 50 paper trades' profit, which a model with no edge passes ~4 times in 10):
+  - blend.py's gate: blended odds beat the market's log loss with 95% confidence, walk
+    forward, on 300+ day-ahead markets over 21+ dates since the 28 Oct bias fix, with a
+    fitted weight of at least 0.2;
+  - and the gate was already open on the data as of gate_paper_days (14) ago, so the
+    blended odds have been paper-traded that long;
+  - and at least gate_paper_min_trades (20) "blended" paper trades have settled.
+
+How a stake is sized, for each market's best edge:
+ 0. Odds are the blended odds: w * ours + (1 - w) * market, w fitted by blend.py (it
+    replaces the fixed 40% shrink and 50/50 sizing odds). The price is the best ask plus
+    the taker fee (fees.py). Entry needs blended odds - that price >= EDGE_MIN. Cities in
     slip_excluded_cities stay off the slip. Side rule: where past picks keep missing on
     one side (e.g. the actual high keeps coming in warmer), no bet on the other side of
     the market's top pick.
- 1. Sizing odds: half our odds, half the market's price (the market is a strong
-    prior until our record says otherwise). No bet unless our own odds beat the
-    price by EDGE_MIN and the sizing odds still beat it.
- 2. Quarter Kelly on the sizing odds: stake = 0.25 * (p - price) / (1 - price) * bankroll,
-    where bankroll = starting bankroll + settled profit/loss on real bets.
- 3. Risk cuts: half on Mixed weather; no bet on Unsettled; half for long shots
-    (price under 15c); half for cities under 45% day-ahead backtest accuracy.
- 4. Caps: the unlocked tier cap (below), the dollars on offer within 2c of the best
-    price (so the order doesn't walk the book), MAX_STAKE, and the daily risk budget
-    (open stakes at most DAILY_RISK of the bankroll). Under MIN_STAKE: skip.
- 5. Tiers unlock on the live model's settled paper trades:
-      $50 to start; $100 after 30 settled with positive return and a non-negative
-      average price move; $250 after 75 settled with return above +5%.
-    Drawdown brake: a real-money bankroll 20%+ below its peak drops one tier.
+ 1. Kelly mode: quarter Kelly on the blended odds, stake = 0.25 * (p - price) / (1 - price)
+    * bankroll, where bankroll = starting bankroll + settled profit/loss on real bets.
+ 2. Risk cuts: no bet on Unsettled; in Kelly mode half on Mixed weather, half for long
+    shots (price under 15c), half for cities under 45% day-ahead backtest accuracy.
+ 3. Caps: the tier cap (below), the dollars on offer within 2c of the best price (so the
+    order doesn't walk the book), MAX_STAKE, and the daily risk budget (open stakes at
+    most DAILY_RISK of the bankroll). Under MIN_STAKE: skip.
+ 4. Tiers grow with the gate's evidence: $50 once open; $100 once it holds on 600+
+    out-of-sample markets; $250 on 1,000+. (The old tiers in the saved settings, which
+    unlocked on paper profit, are no longer read.) Drawdown brake: a real-money bankroll
+    20%+ below its peak drops one tier.
+Rules frozen on 28 Oct 2026: change none of them on the evidence that set them. A new rule
+is judged only on markets settled after it was written.
 Scaled mode (settings "mode": "scaled"), the owner's guide points: long shots
 (under 15c) $10-15; everything else $15-50, about $25 for a typical signal and up
 to $50 for the strongest (Settled weather, edge 20+ points), from a confidence
@@ -38,20 +47,21 @@ The same skips and caps apply (no Unsettled days, tier cap, order book, daily bu
 Prints the slip and a JSON summary on the last line. Standard library only.
 """
 import argparse, glob, json, os, re
+from datetime import datetime, timedelta, timezone
+
+import blend, fees
 
 DEFAULTS = {
     "bankroll_start": 2500.0, "kelly_fraction": 0.25, "max_stake": 250.0, "min_stake": 5.0,
-    "edge_min": 0.08, "market_weight": 0.5, "daily_risk": 0.10,
-    "tiers": [
-        {"cap": 50.0, "min_settled": 0, "min_roi": None, "min_move": None},
-        {"cap": 100.0, "min_settled": 30, "min_roi": 0.0, "min_move": 0.0},
-        {"cap": 250.0, "min_settled": 75, "min_roi": 0.05, "min_move": 0.0},
+    "edge_min": 0.08, "daily_risk": 0.10,
+    # 29 Oct 2026: tiers unlock on the accuracy gate's out-of-sample markets, not paper profit
+    "gate_tiers": [
+        {"cap": 50.0, "min_markets": 0},
+        {"cap": 100.0, "min_markets": 600},
+        {"cap": 250.0, "min_markets": 1000},
     ],
     "drawdown_brake": 0.20,
-    # 27 Oct 2026 (owner's decision): the slip is paused while the live model's last
-    # `pause_window` settled paper trades (non-trial cities) return `pause_min_roi` or less.
-    # Paper trading carries on, so the slip switches itself back on once that record recovers.
-    "pause_window": 50, "pause_min_roi": 0.05,
+    "gate_paper_days": 14, "gate_paper_min_trades": 20,
     "weak_cities": {"mexico-city": 0.38, "lucknow": 0.37},  # day-ahead backtest top-pick hit rate
     # trial cities: paper trades only, never on the slip, and not counted toward tier unlocks
     "paper_only_cities": ["dallas", "seattle", "toronto", "tel-aviv", "singapore", "austin", "warsaw",
@@ -60,10 +70,6 @@ DEFAULTS = {
     "mode": "kelly",
     "flat": {"confident": 50.0, "standard": 25.0, "longshot": 10.0, "longshot_settled": 15.0},
     "confident_edge": 0.12,
-    # 5 Oct 2026 tuning, from the first two weeks of settled trades:
-    # our odds ran overconfident (paper picks averaged 32% odds, won 22%), so every edge is
-    # measured on odds shrunk this far toward the market's price before anything else.
-    "shrink_to_market": 0.4,
     # cities left off the slip (still scored and paper-traded): the market's day-ahead top pick
     # in Mexico City was right 97% of the time vs our 62%, so there is no edge to find there.
     "slip_excluded_cities": ["mexico-city"],
@@ -121,38 +127,43 @@ def miss_sides(cfg, paper, results, bets, outcomes):
     return sides
 
 
-def tier_state(cfg, paper, results):
+def blended_paper(cfg, paper, results):
+    """The "blended" version's settled paper trades outside the trial cities: count, return, price move."""
     trial = set(cfg.get("paper_only_cities") or [])
-    settled = [results[k] for k, p in paper.items()
-               if p.get("variant") == "current" and k in results and p.get("city") not in trial]
-    n = len(settled)
-    staked = sum(r["stake"] for r in settled)
-    roi = sum(r["pnl"] for r in settled) / staked if staked else None
-    moves = [r["priceMove"] for r in settled if r.get("priceMove") is not None]
-    move = sum(moves) / len(moves) if moves else None
-    level = 0
-    for i, t in enumerate(cfg["tiers"]):
-        ok = n >= t["min_settled"]
-        if t["min_roi"] is not None:
-            ok = ok and roi is not None and roi > t["min_roi"]
-        if t["min_move"] is not None:
-            ok = ok and move is not None and move >= t["min_move"]
-        if ok:
-            level = i
-    return level, {"settled": n, "roi": roi, "avg_move": move}
+    done = [results[k] for k, p in paper.items()
+            if p.get("variant") == "blended" and k in results and p.get("city") not in trial]
+    staked = sum(r["stake"] for r in done)
+    moves = [r["priceMove"] for r in done if r.get("priceMove") is not None]
+    return {"settled": len(done), "roi": sum(r["pnl"] for r in done) / staked if staked else None,
+            "avg_move": sum(moves) / len(moves) if moves else None}
 
 
-def pause_state(cfg, paper, results):
-    """Return (paused, info) from the live model's most recent settled paper trades."""
-    trial = set(cfg.get("paper_only_cities") or [])
-    done = sorted((results[k] for k, p in paper.items()
-                   if p.get("variant") == "current" and k in results and p.get("city") not in trial),
-                  key=lambda r: r.get("settledAt") or "")
-    last = done[-cfg["pause_window"]:]
-    staked = sum(r["stake"] for r in last)
-    roi = sum(r["pnl"] for r in last) / staked if staked else None
-    paused = len(last) < cfg["pause_window"] or roi is None or roi <= cfg["pause_min_roi"]
-    return paused, {"window": len(last), "roi": roi, "wins": sum(r["status"] == "won" for r in last)}
+def gate_state(cfg, rows, paper, results, now):
+    """(paused, message, gate info, tier level) from the accuracy gate and the blended paper record."""
+    is_open, info = blend.gate(rows)
+    cut = (now - timedelta(days=cfg["gate_paper_days"])).date().isoformat()
+    held, _ = blend.gate([r for r in rows if r[0] <= cut])
+    paper_rec = blended_paper(cfg, paper, results)
+    level = max(i for i, t in enumerate(cfg["gate_tiers"]) if info["oos_markets"] >= t["min_markets"])
+    if not is_open:
+        msg = "Slip paused: the accuracy gate is closed (" + blend.describe(info) + "). Needs " + "; ".join(info["needs"]) + "."
+    elif not held:
+        msg = (f"Slip paused: the gate is open but must stay open for {cfg['gate_paper_days']} days of paper "
+               f"trading on the blended odds first.")
+    elif paper_rec["settled"] < cfg["gate_paper_min_trades"]:
+        msg = (f"Slip paused: the gate is open; needs {cfg['gate_paper_min_trades'] - paper_rec['settled']} more "
+               f"settled blended paper trades.")
+    else:
+        return False, "Gate open: " + blend.describe(info) + ".", {**info, "paper": paper_rec}, level
+    return True, msg + " Paper trading carries on.", {**info, "paper": paper_rec}, level
+
+
+def walk_away(pb, ask, fee, edge_min):
+    """Highest price (to 0.1c) at which the blended odds still beat the price plus fee by edge_min."""
+    best, x = ask, ask
+    while x < 0.99 and pb - fees.effective_price(x, fee) >= edge_min:
+        best, x = x, round(x + 0.001, 3)
+    return round(best, 3)
 
 
 def bankroll_state(cfg, bets):
@@ -172,7 +183,9 @@ def main():
     ap.add_argument("--db", required=True)
     ap.add_argument("--settings")
     ap.add_argument("--out")
+    ap.add_argument("--now", help="ISO time to judge the gate at (default: now; for tests)")
     a = ap.parse_args()
+    now = datetime.fromisoformat(a.now.replace("Z", "+00:00")) if a.now else datetime.now(timezone.utc)
     cfg = dict(DEFAULTS)
     if a.settings and os.path.exists(a.settings):
         s = json.load(open(a.settings))
@@ -183,15 +196,16 @@ def main():
     results = load_dir(os.path.join(a.db, "paper_results"))
     outcomes = {(o["city"], o["date"]): o for o in load_dir(os.path.join(a.db, "outcomes")).values()}
     sides = miss_sides(cfg, paper, results, bets, outcomes)
-    level, evidence = tier_state(cfg, paper, results)
+    rows = blend.rows_from(list(load_dir(os.path.join(a.db, "snapshots")).values()), outcomes)
+    paused, unlock, ginfo, level = gate_state(cfg, rows, paper, results, now)
+    w = ginfo["weight"]
     bank, peak, open_stake = bankroll_state(cfg, bets)
     braked = peak > 0 and (peak - bank) / peak >= cfg["drawdown_brake"]
     if braked:
         level = max(0, level - 1)
-    tier_cap = cfg["tiers"][level]["cap"]
+    tier_cap = cfg["gate_tiers"][level]["cap"]
     budget_left = max(0.0, cfg["daily_risk"] * bank - open_stake)
 
-    paused, pinfo = pause_state(cfg, paper, results)
     slip, lines = [], []
     for e in ([] if paused else json.load(open(a.snaps))):
         s = e["data"]
@@ -211,11 +225,9 @@ def main():
             ask, mkt, p = d.get("best_ask"), b.get("market"), b.get("model")
             if ask is None or mkt is None or ask < 0.05 or not (0.03 <= mkt <= 0.97):
                 continue
-            q = (1 - cfg["shrink_to_market"]) * p + cfg["shrink_to_market"] * mkt / msum  # shrunk odds
-            if q - ask < cfg["edge_min"]:
-                continue
-            ps = (1 - cfg["market_weight"]) * p + cfg["market_weight"] * mkt / msum
-            if ps <= ask:
+            pb = w * p + (1 - w) * mkt / msum          # blended odds (blend.py)
+            eff = fees.effective_price(ask, b.get("fee"))  # best ask plus the taker fee
+            if pb - eff < cfg["edge_min"]:
                 continue
             if side and mtop is not None and b is not mtop:
                 kb, km = bucket_key(b["label"]), bucket_key(mtop["label"])
@@ -223,15 +235,15 @@ def main():
                         (side[0] == "warmer" and kb < km) or (side[0] == "colder" and kb > km)):
                     skipped_side = skipped_side or (b["label"], mtop["label"])
                     continue
-            if best is None or q - ask > best[0]:
-                best = (q - ask, b, ask, p, ps, d, q)
+            if best is None or pb - eff > best[0]:
+                best = (pb - eff, b, ask, p, pb, d, eff)
         if not best:
             if skipped_side:
                 lines.append(f"{s['city']} {s['marketDate']} {skipped_side[0]}: SKIP (side rule: our pick is "
                              f"{'colder' if side[0] == 'warmer' else 'warmer'} than the market's {skipped_side[1]}, and "
                              f"{side[1]} of the last {side[2]} missed picks here came in {side[0]})")
             continue
-        edge, b, ask, p, ps, d, q = best
+        edge, b, ask, p, pb, d, eff = best
         cuts = []
         if cfg["mode"] in ("flat", "scaled"):
             # The owner's guide: Confident ~$50, Standard ~$25 (the median), Long shot $10-15.
@@ -258,7 +270,7 @@ def main():
                 raw = f["longshot_settled"] + (f["confident"] - f["longshot_settled"]) * score
                 blevel = "Confident" if raw >= 40 else ("Standard" if raw >= 20 else "Small")
         else:
-            kelly = (ps - ask) / (1 - ask)
+            kelly = (pb - eff) / (1 - eff)
             raw = cfg["kelly_fraction"] * kelly * bank
             blevel = "Kelly"
             if s.get("stability") == "Mixed":
@@ -281,15 +293,16 @@ def main():
                        ("order book", depth_cap), ("daily risk budget", budget_left)), key=lambda x: x[1])[0]
         stake = round(stake) if cfg["mode"] in ("flat", "scaled") else (round(stake / 5) * 5 if stake >= 10 else round(stake, 0))
         rec = {"level": blevel, "city": s["city"], "marketDate": s["marketDate"], "bucket": b["label"], "stability": s.get("stability"),
-               "ourOdds": round(p, 3), "shrunkOdds": round(q, 3), "sizingOdds": round(ps, 3), "market": b.get("market"), "limitPrice": ask,
+               "ourOdds": round(p, 3), "blendedOdds": round(pb, 3), "sizingOdds": round(pb, 3), "blendWeight": w,
+               "market": b.get("market"), "limitPrice": ask, "priceWithFee": round(eff, 4),
                "stake": stake if stake >= cfg["min_stake"] else 0, "limitedBy": limiter, "cuts": cuts,
-               "payoutIfWin": round(stake / ask, 2) if stake >= cfg["min_stake"] else 0,
-               "expectedValue": round(stake * (ps / ask - 1), 2) if stake >= cfg["min_stake"] else 0,
+               "payoutIfWin": round(fees.net_shares(stake, ask, b.get("fee")), 2) if stake >= cfg["min_stake"] else 0,
+               "expectedValue": round(stake * (pb / eff - 1), 2) if stake >= cfg["min_stake"] else 0,
                "maxLoss": stake if stake >= cfg["min_stake"] else 0, "leadHours": s.get("leadHours"),
                "alreadyHeld": round(held_usd, 2),
                # walk-away price: the most worth paying when the price runs while you buy. Above it the
-               # bet no longer clears the entry rule (our odds 8+ points over the price) or the sizing odds.
-               "walkAway": round(max(ask, min(q - cfg["edge_min"], ps - 0.02)), 3)}
+               # blended odds no longer beat the price plus fee by the entry margin.
+               "walkAway": walk_away(pb, ask, b.get("fee"), cfg["edge_min"])}
         if rec["stake"]:
             budget_left -= rec["stake"]
         slip.append(rec)
@@ -298,30 +311,28 @@ def main():
             + (f"{blevel.upper()} ${rec['stake']:.0f} as a limit order at {ask*100:.0f}c, walk away above {rec['walkAway']*100:.0f}c (pays ${rec['payoutIfWin']:.0f}, "
                f"expected {rec['expectedValue']:+.2f}, max loss ${rec['maxLoss']:.0f}); "
                if rec["stake"] else ("SKIP (already held at the cap); " if held and room < cfg["min_stake"] else "SKIP (sized under the minimum); "))
-            + f"our odds {p*100:.0f}% (shrunk {q*100:.0f}%), sizing odds {ps*100:.0f}% vs {ask*100:.0f}c; limited by {limiter}"
+            + f"our odds {p*100:.0f}%, blended {pb*100:.0f}% (weight {w:.2f}) vs {ask*100:.0f}c ({eff*100:.1f}c with fee); limited by {limiter}"
             + (f"; {', '.join(cuts)}" if cuts else ""))
 
+    evidence = ginfo["paper"]
     head = (f"Bankroll ${bank:,.0f} (start ${cfg['bankroll_start']:,.0f}, peak ${peak:,.0f}); open stakes ${open_stake:,.0f}; "
-            f"stake cap now ${tier_cap:.0f} (tier {level + 1} of {len(cfg['tiers'])}"
+            f"stake cap ${tier_cap:.0f} (tier {level + 1} of {len(cfg['gate_tiers'])}"
             + (", drawdown brake on" if braked else "") + "); "
-            f"live-model paper record: {evidence['settled']} settled"
+            f"blended paper record: {evidence['settled']} settled"
             + (f", return {evidence['roi']*100:+.0f}%" if evidence["roi"] is not None else "")
             + (f", avg price move {evidence['avg_move']*100:+.1f} pts" if evidence["avg_move"] is not None else ""))
-    nxt = cfg["tiers"][level + 1] if level + 1 < len(cfg["tiers"]) else None
-    unlock = (f"Next cap ${nxt['cap']:.0f}: needs {max(0, nxt['min_settled'] - evidence['settled'])} more settled paper trades"
-              f" with return above {nxt['min_roi']*100:+.0f}% and a non-negative average price move" if nxt else "Top cap unlocked")
-    if paused:
-        unlock = (f"Slip paused: the live model's last {pinfo['window']} settled paper trades "
-                  + (f"returned {pinfo['roi']*100:+.0f}% ({pinfo['wins']} won)" if pinfo["roi"] is not None else "are too few")
-                  + f". It switches back on by itself once its last {cfg['pause_window']} return above "
-                  f"{cfg['pause_min_roi']*100:+.0f}%. Paper trading carries on.")
+    nxt = cfg["gate_tiers"][level + 1] if level + 1 < len(cfg["gate_tiers"]) else None
+    if not paused:
+        unlock += (f" Next cap ${nxt['cap']:.0f} once the gate holds on {nxt['min_markets']} out-of-sample markets"
+                   f" (now {ginfo['oos_markets']})." if nxt else " Top cap unlocked.")
     if sides:
         head += "; side rule on: " + ", ".join(f"{c} (misses ran {v[0]}, {v[1]} of {v[2]})" for c, v in sorted(sides.items()))
     print(head)
     print(unlock)
     print("\n".join(lines) if lines else "No bets pass the rules this run.")
     summary = {"bankroll": round(bank, 2), "peak": round(peak, 2), "open_stake": open_stake, "tier": level + 1,
-               "tier_cap": tier_cap, "braked": braked, "sideRule": {c: list(v) for c, v in sides.items()}, "evidence": evidence, "unlock": unlock, "paused": paused, "pause": pinfo, "slip": slip}
+               "tier_cap": tier_cap, "braked": braked, "sideRule": {c: list(v) for c, v in sides.items()}, "evidence": evidence,
+               "unlock": unlock, "paused": paused, "gate": {k: v for k, v in ginfo.items() if k != "paper"}, "slip": slip}
     if a.out:
         json.dump(summary, open(a.out, "w"), ensure_ascii=False, indent=1)
     print(json.dumps(summary, ensure_ascii=False))

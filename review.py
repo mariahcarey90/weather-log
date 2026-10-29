@@ -15,10 +15,15 @@ outcomes. For each model version ("current", "blend", "emos"):
 Then a verdict per challenger: promote only when it beats "current" on both paper
 profit/loss and Brier with at least --min-trades settled trades and --min-days
 scored market-days; otherwise say what evidence is still missing.
+(29 Oct 2026) First comes the accuracy gate from blend.py: the blend weight, log loss of
+the market, our odds and the blend, and whether the gate is open. The gate decides the
+bet slip; the version verdicts are for watching only.
 Prints a report and a JSON summary on the last line. Standard library only.
 """
 import argparse, glob, json, os, statistics
 from collections import defaultdict
+
+import blend
 
 
 def load_dir(path):
@@ -94,7 +99,18 @@ def main():
             brc[(v, city)].append(val)
             brd[v][(city, date)] = val
 
-    lines = ["MODEL VERSIONS"]
+    # accuracy gate (29 Oct 2026): this, not the paper verdicts below, decides the bet slip
+    rows = blend.rows_from(snaps, outs)
+    gate_open, ginfo = blend.gate(rows)
+    lines = ["ACCURACY GATE (decides the bet slip)", "  " + blend.describe(ginfo),
+             "  log loss on those markets: market alone {m}, ours alone {o}, blend {b} (lower is better)".format(
+                 m=ginfo["logloss_market"], o=ginfo["logloss_ours"], b=ginfo["logloss_blend"]),
+             "  " + ("OPEN" if gate_open else "closed: needs " + "; ".join(ginfo["needs"]))]
+    per_city = blend.weights_by_city(snaps, outs)
+    if per_city:
+        lines.append("  weight by city, for watching only (too few days each to act on): "
+                     + ", ".join(f"{c} {w:.2f} ({n})" for c, (w, n) in sorted(per_city.items(), key=lambda kv: -kv[1][0])))
+    lines.append("MODEL VERSIONS")
     versions = sorted(set(pt) | {v for v in br if v != "market"} | {"current"})
     summary = {}
     for v in versions:
@@ -147,6 +163,7 @@ def main():
                        "keep current: challenger does not beat it on both paper P/L and Brier")
         s["verdict"] = verdict
         lines.append(f"  {v}: {verdict}")
+    summary["gate"] = {"open": gate_open, **ginfo}
     print("\n".join(lines))
     print(json.dumps(summary))
 

@@ -429,6 +429,25 @@ def book_depth(token_id):
             "bid_usd_within_2c": bid_usd_2c}
 
 
+def fee_schedule(m):
+    """A market's taker fee schedule as Gamma reports it: {"rate", "exponent", "takerOnly", "type"},
+    or None when the market doesn't say. Fee per trade = shares * rate * (p * (1 - p)) ** exponent,
+    taken in shares on a buy. (29 Oct 2026: temperature markets have shown both a 0 rate and
+    the documented weather rate of 0.05, so it is read per market rather than assumed.)"""
+    fs = m.get("feeSchedule")
+    if isinstance(fs, str):
+        try:
+            fs = json.loads(fs)
+        except ValueError:
+            fs = None
+    if isinstance(fs, dict) and fs.get("rate") is not None:
+        return {"rate": float(fs["rate"]), "exponent": float(fs.get("exponent") or 1),
+                "takerOnly": fs.get("takerOnly", True), "type": m.get("feeType")}
+    if m.get("feesEnabled") is False:
+        return {"rate": 0.0, "exponent": 1.0, "takerOnly": True, "type": m.get("feeType")}
+    return None
+
+
 def fetch_market(st, d, with_books=False, kind="highest"):
     slug = f"{kind}-temperature-in-{st['slug']}-on-{month_name_slug(d)}"
     ev = get(f"https://gamma-api.polymarket.com/events?slug={slug}")
@@ -452,6 +471,7 @@ def fetch_market(st, d, with_books=False, kind="highest"):
                 ERRORS.append(f"{st['key']} book {d} {m.get('groupItemTitle')}: {e}")
         buckets.append({
             "depth": depth,
+            "fee": fee_schedule(m),
             "label": m.get("groupItemTitle") or m.get("question"),
             "yes": yes,
             "bestBid": m.get("bestBid"), "bestAsk": m.get("bestAsk"),

@@ -60,6 +60,8 @@ of airport readings (minus its usual bias) shifts its forecast for the rest of
 the day by NOWCAST_ALPHA of that error; ensembles follow their parent model.
 """
 import argparse, glob, json, math, os, re, statistics
+
+import blend
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
@@ -256,6 +258,7 @@ def main():
     run_at = datetime.fromisoformat(a.run_at.replace("Z", "+00:00")) if a.run_at else datetime.now(timezone.utc)
     cal = calibration(snaps, outs, run_at=run_at)
     src_errs = source_stats(snaps, outs)
+    blend_w = 0.0 if LOW else blend.fit_weight(blend.rows_from(snaps, outs))
     learned = {}  # (city, source) -> (bias, sd, live_n), for the report
     prior = {}
     if os.path.exists(a.calib):
@@ -420,7 +423,7 @@ def main():
                 sum_m += p
                 buckets.append({"label": bk["label"], "lo": lo, "hi": hi,
                                 "market": round(bk["yes"], 4) if bk.get("yes") is not None else None,
-                                "model": p, "depth": bk.get("depth")})
+                                "model": p, "depth": bk.get("depth"), "fee": bk.get("fee")})
             for bk in buckets:
                 bk["model"] = round(bk["model"] / sum_m, 4) if sum_m else 0
             # challengers
@@ -462,6 +465,10 @@ def main():
                     v["blend"] = round(BLEND_W_OURS * b["model"] + (1 - BLEND_W_OURS) * b["market"] / mk_sum, 4)
                 if ep is not None:
                     v["emos"] = round(ep[i], 4)
+                # "blended" (29 Oct 2026): our odds mixed with the market's at the weight fitted on
+                # settled markets since the bias fix (blend.py). At weight 0 it is the market itself.
+                if not LOW and mk_sum > 0 and b["market"] is not None:
+                    v["blended"] = round(blend_w * b["model"] + (1 - blend_w) * b["market"] / mk_sum, 4)
                 b["variants"] = {("low_" + k): val for k, val in v.items()} if LOW else v
             buckets.sort(key=lambda b: (-1e9 if b["lo"] is None else b["lo"]))
             gaps = [b["label"] for b in buckets if b["market"] is not None and abs(b["model"] - b["market"]) >= 0.10]
@@ -503,6 +510,7 @@ def main():
                 "paperOnly": bool(st.get("paper_only")),
                 "modelSpread": round(spread_c * (9 / 5 if fahrenheit else 1), 2) if spread_c is not None else None,
                 "conditions": day.get("conditions"),
+                "blendWeight": blend_w,
             }
             if LOW:
                 doc["kind"] = "low"

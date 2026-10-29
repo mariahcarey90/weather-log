@@ -12,7 +12,7 @@ Usage:
 
 New paper trade, per version and market (city + date), at most one: the bucket with
 the biggest edge where
-  our odds - the average price a $25 order would pay >= 8 points,
+  our odds - the average price a $25 order would pay, plus the taker fee (fees.py), >= 8 points,
   best ask >= 5c, the market still open (3-97%), the weather label not Unsettled,
   and the book can fill $25.
 Stake $25 at that average fill price. A version gets one entry per market, ever,
@@ -26,6 +26,8 @@ Standard library only.
 """
 import argparse, glob, json, os, re
 from datetime import datetime, timezone
+
+import fees
 
 EDGE = 0.08
 MIN_ASK = 0.05
@@ -83,17 +85,18 @@ def main():
             fill, ask, mkt = d.get("avg_fill_25"), d.get("best_ask"), b.get("market")
             if fill is None or ask is None or mkt is None or ask < MIN_ASK or not (0.03 <= mkt <= 0.97):
                 continue
+            eff = fees.effective_price(fill, b.get("fee"))  # the $25 fill plus the taker fee
             for v, p in (b.get("variants") or {}).items():
                 if v in RETIRED:
                     continue
-                edge = p - fill
+                edge = p - eff
                 if v == "filtered" and (fill < FILTERED["min_price"] or edge >= FILTERED["max_edge"]
                                         or (s.get("leadHours") or 0) > FILTERED["max_lead_h"]
                                         or s.get("city") in FILTERED["skip_cities"]):
                     continue
                 if edge >= EDGE and (v not in best or edge > best[v][0]):
-                    best[v] = (edge, b, fill, ask, p)
-        for v, (edge, b, fill, ask, p) in best.items():
+                    best[v] = (edge, b, fill, ask, p, eff)
+        for v, (edge, b, fill, ask, p, eff) in best.items():
             key = (v, s["city"], s["marketDate"])
             if key in taken:
                 continue
@@ -101,7 +104,9 @@ def main():
             doc_id = f"{v}_{s['city']}_{s['marketDate']}_{slug(b['label'])}"
             data = {"kind": a.kind, "variant": v, "city": s["city"], "marketDate": s["marketDate"], "bucket": b["label"],
                     "lo": b.get("lo"), "hi": b.get("hi"), "stake": STAKE, "price": round(fill, 4),
-                    "bestAsk": ask, "entryMid": b.get("market"), "shares": round(STAKE / fill, 2),
+                    "effectivePrice": round(eff, 4), "fee": b.get("fee") or {"rate": fees.DEFAULT_RATE, "assumed": True},
+                    "bestAsk": ask, "entryMid": b.get("market"),
+                    "shares": round(fees.net_shares(STAKE, fill, b.get("fee")), 2),
                     "ourOdds": round(p, 4), "edge": round(edge, 4), "stability": s.get("stability"),
                     "leadHours": s.get("leadHours"), "runAt": s.get("runAt"), "placedAt": now}
             writes.append({"op": "set", "collection": "paper", "doc_id": doc_id, "data": data})
