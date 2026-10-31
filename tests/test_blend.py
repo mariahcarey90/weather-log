@@ -56,6 +56,15 @@ def test_walk_forward_never_uses_the_scored_date():
     assert sum(gains["2026-11-11"]) <= 0
 
 
+def test_equally_close_runs_pick_the_later_one_whatever_the_order():
+    early = [{"label": "20°C", "model": 0.9, "market": 0.5}, {"label": "21°C", "model": 0.1, "market": 0.5}]
+    late = [{"label": "20°C", "model": 0.1, "market": 0.5}, {"label": "21°C", "model": 0.9, "market": 0.5}]
+    a = {"city": "x", "marketDate": "2026-11-02", "runAt": "2026-10-31T06:00:00Z", "leadHours": 27, "buckets": early}
+    b = {"city": "x", "marketDate": "2026-11-02", "runAt": "2026-10-31T12:00:00Z", "leadHours": 21, "buckets": late}
+    outs = {("x", "2026-11-02"): {"resolvedBucket": "21°C"}}
+    assert rows_from([a, b], outs)[0][1] == rows_from([b, a], outs)[0][1] == [0.1, 0.9]
+
+
 def test_rows_skip_old_stale_and_unsettled_runs():
     b = [{"label": "20°C", "model": 0.5, "market": 0.5}, {"label": "21°C", "model": 0.5, "market": 0.5}]
     snaps = [

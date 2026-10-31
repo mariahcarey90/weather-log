@@ -54,7 +54,10 @@ def rows_from(snaps, outs, since=FIX_TIME, model_key="model"):
         if not o or not o.get("resolvedBucket"):
             continue
         k = (s["city"], s["marketDate"])
-        if k not in best or abs(s["leadHours"] - 24) < abs(best[k]["leadHours"] - 24):
+        d0, prev = abs(s["leadHours"] - 24), best.get(k)
+        # nearest 24 h ahead; on a tie the later run, so the choice never depends on file order
+        if prev is None or d0 < abs(prev["leadHours"] - 24) or (
+                d0 == abs(prev["leadHours"] - 24) and (s.get("runAt") or "") > (prev.get("runAt") or "")):
             best[k] = s
     rows = []
     for (city, date), s in sorted(best.items()):
